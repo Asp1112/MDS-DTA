@@ -3,7 +3,7 @@
 ## Introduction
 
 This project provides MDS framework for robust affinity prediction and enzyme mining.
-It models compound structures as molecular graphs and protein sequences as tokenized inputs, then fuses both modalities to estimate binding affinity.
+It models compound structures as molecular graphs and protein sequences as tokenized inputs, then fuses both modalities to estimate affinity and aid in enzyme screening.
 
 The repository includes:
 
