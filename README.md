@@ -11,6 +11,15 @@ The repository includes:
 - A prediction script for single-sample and CSV-based inference
 - A unified model implementation in `models/MDS_DTA.py`
 
+## Source codes:
+The whole implementation of DeepDTAGen is based on PyTorch.  
+
+- train.py : Training script for loading data, training the model, evaluating performance, and saving checkpoints.
+- models/MDS_DTA.py : Core model definition. It takes drug molecular graphs and protein sequences as input and outputs affinity predictions.
+- utils.py : Utility module containing the TestbedDataset class and common evaluation metrics.
+- predict_affinity.py : Inference script for single-sample or batch affinity prediction using a trained model.
+- README.md : User guide with environment setup, training steps, and prediction instructions.
+
 ## Usage
 
 ### 1. Install Dependencies
