@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This project provides a deep learning framework for drug-target affinity (DTA) prediction.  
+This project provides MDS framework for robust affinity prediction and enzyme mining.
 It models compound structures as molecular graphs and protein sequences as tokenized inputs, then fuses both modalities to estimate binding affinity.
 
 The repository includes:
