@@ -64,8 +64,8 @@ Open `predict_affinity.py` and set input/output paths and checkpoint path, for e
 
 ```python
 CHECKPOINT_PATH = "results/MDSDTA_bindingdb_run001_YYYYMMDD-HHMMSS/best_model.pth"
-CSV_INPUT_PATH = "prediction/acetyl_all.csv"
-CSV_OUTPUT_PATH = "prediction/acetyl_all_bindingdb_pred.csv"
+CSV_INPUT_PATH = "prediction/XX.csv"
+CSV_OUTPUT_PATH = "prediction/XX_{DATASETS}_pred.csv"
 ```
 
 Then execute:
