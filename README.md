@@ -49,18 +49,20 @@ python train.py
 
 ### 5. Run Prediction
 
+After training, use the generated checkpoint in your run directory (for example, `results/MDSDTA_bindingdb_run001_xxxxxxxx/best_model.pth`).
+
 Open `predict_affinity.py` and set input/output paths and checkpoint path, for example:
 
 ```python
-CHECKPOINT_PATH = "models/best_model_pAAP_y.pth"
+CHECKPOINT_PATH = "results/MDSDTA_bindingdb_run001_YYYYMMDD-HHMMSS/best_model.pth"
 CSV_INPUT_PATH = "prediction/acetyl_all.csv"
-CSV_OUTPUT_PATH = "prediction/acetyl_all_pAAP_y_pred.csv"
+CSV_OUTPUT_PATH = "prediction/acetyl_all_bindingdb_pred.csv"
 ```
 
 Then execute:
 
 ```bash
-python predict_affinity.py
+python predict_affinity.py --mode csv
 ```
 
 ### 6. Output
