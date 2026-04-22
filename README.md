@@ -1,4 +1,4 @@
-# MDS-DTA Model Framework
+# MDS-DTA Model
 
 ## Introduction
 
