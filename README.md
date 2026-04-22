@@ -63,7 +63,7 @@ After training, use the generated checkpoint in your run directory (for example,
 Open `predict_affinity.py` and set input/output paths and checkpoint path, for example:
 
 ```python
-CHECKPOINT_PATH = "results/MDSDTA_bindingdb_run001_YYYYMMDD-HHMMSS/best_model.pth"
+CHECKPOINT_PATH = "models/best_model_{DATASETS}.pth"
 CSV_INPUT_PATH = "prediction/XX.csv"
 CSV_OUTPUT_PATH = "prediction/XX_{DATASETS}_pred.csv"
 ```
