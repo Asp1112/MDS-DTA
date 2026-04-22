@@ -1,10 +1,12 @@
+import argparse
+import os
 import re
 import torch
 from rdkit import Chem
 from rdkit.Chem import rdchem
 from torch_geometric.data import Data
 
-from models.combined_dta import CombinedDTA
+from models.MDS_DTA import MDSDTA
 
 
 SMILES = "CCOC(=O)C1=CC=CC=C1"
@@ -110,8 +112,8 @@ def _load_model():
     common_dim = int(state_dict["prot_encoder.proj.weight"].shape[0])
     graph_steps = int(state_dict["drug_encoder.conv.weight"].shape[0])
 
-    model = CombinedDTA(protein_vocab=protein_vocab, drug_atom_feat_dim=drug_atom_feat_dim, embed_dim=embed_dim,
-                        graph_hidden=graph_hidden, graph_steps=graph_steps, common_dim=common_dim)
+    model = MDSDTA(protein_vocab=protein_vocab, drug_atom_feat_dim=drug_atom_feat_dim, embed_dim=embed_dim,
+                   graph_hidden=graph_hidden, graph_steps=graph_steps, common_dim=common_dim)
     model.load_state_dict(state_dict, strict=True)
     model.eval()
     model.to(torch.device(DEVICE))
@@ -168,6 +170,10 @@ def predict_standard_dataset():
                 rows.append((idx, y_t, float(y_p)))
                 idx += 1
 
+    output_dir = os.path.dirname(OUTPUT_CSV)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+
     with open(OUTPUT_CSV, "w", encoding="utf-8") as f:
         f.write("index,y_true,y_pred\n")
         for i, y_t, y_p in rows:
@@ -184,6 +190,10 @@ def predict_csv_file():
     device = torch.device(DEVICE)
     atom_feat_dim = int(model.drug_encoder.in_proj.in_features)
     atom_feat_fn = ATOM_FEAT_FNS[atom_feat_dim]
+
+    output_dir = os.path.dirname(CSV_OUTPUT_PATH)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
 
     with open(CSV_INPUT_PATH, "r", encoding="utf-8", newline="") as f_in, open(
         CSV_OUTPUT_PATH, "w", encoding="utf-8", newline=""
@@ -256,5 +266,23 @@ def main_csv():
     predict_csv_file()
 
 
-RUN = main_csv
-RUN()
+def main():
+    parser = argparse.ArgumentParser(description="Predict drug-target affinity with MDS-DTA.")
+    parser.add_argument(
+        "--mode",
+        choices=["single", "batch", "csv"],
+        default="csv",
+        help="Prediction mode: single sample, standard dataset batch, or CSV file batch.",
+    )
+    args = parser.parse_args()
+
+    if args.mode == "single":
+        main_single()
+    elif args.mode == "batch":
+        main_batch()
+    else:
+        main_csv()
+
+
+if __name__ == "__main__":
+    main()
