@@ -1,4 +1,4 @@
-# MDS-DTA Model
+# MDSAffinity Model
 
 ## Introduction
 
@@ -9,13 +9,13 @@ The repository includes:
 
 - A training pipeline for benchmark datasets (`davis`, `kiba`, `bindingdb`)
 - A prediction script for single-sample and CSV-based inference
-- A unified model implementation in `models/MDS_DTA.py`
+- A unified model implementation in `models/MDSAffinity.py`
 
 ## Source codes:
-The whole implementation of DeepDTAGen is based on PyTorch.  
+The whole implementation is based on PyTorch.  
 
 - train.py : Training script for loading data, training the model, evaluating performance, and saving checkpoints.
-- models/MDS_DTA.py : Core model definition. It takes drug molecular graphs and protein sequences as input and outputs affinity predictions.
+- models/MDSAffinity.py : Core model definition. It takes drug molecular graphs and protein sequences as input and outputs affinity predictions.
 - utils.py : Utility module containing the TestbedDataset class and common evaluation metrics.
 - predict_affinity.py : Inference script for single-sample or batch affinity prediction using a trained model.
 - README.md : User guide with environment setup, training steps, and prediction instructions.
@@ -58,7 +58,7 @@ python train.py
 
 ### 5. Run Prediction
 
-After training, use the generated checkpoint in your run directory (for example, `results/MDSDTA_bindingdb_run001_xxxxxxxx/best_model.pth`).
+After training, use the generated checkpoint in your run directory (for example, `results/MDSAffinity_bindingdb_run001_xxxxxxxx/best_model.pth`).
 
 Open `predict_affinity.py` and set input/output paths and checkpoint path, for example:
 
