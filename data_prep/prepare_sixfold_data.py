@@ -35,7 +35,7 @@ EXPECTED_ATOM_DIM = 94
 
 
 def split_total(dataset):
-    path = os.path.join("splits", dataset, "fixed_six_part_split.json")
+    path = os.path.join("data", "splits", dataset, "fixed_six_part_split.json")
     with open(path, encoding="utf-8") as fh:
         split = json.load(fh)
     return sum(split["sizes"].values())

@@ -189,7 +189,23 @@ def resolve_model(model_spec):
 
         try:
 
-            module = importlib.import_module(model_spec)
+            module = importlib.import_module("models.ablation." + model_spec)
+
+        except ModuleNotFoundError:
+
+            try:
+
+                module = importlib.import_module(model_spec)
+
+            except ModuleNotFoundError as exc:
+
+                raise SystemExit(
+
+                    f"Model module not found: {model_spec!r} "
+
+                    f"(tried models.{model_spec}, models.ablation.{model_spec} "
+
+                    f"and {model_spec}).") from exc
 
         except ModuleNotFoundError as exc:
 
@@ -643,11 +659,11 @@ def main():
 
             raise SystemExit("--test-fold must be between 0 and 5.")
 
-        split_file = Path("splits") / dataset_name / f"fold_{args.test_fold}.json"
+        split_file = Path("data/splits") / dataset_name / f"fold_{args.test_fold}.json"
 
     else:
 
-        split_file = Path("splits") / dataset_name / "fixed_six_part_split.json"
+        split_file = Path("data/splits") / dataset_name / "fixed_six_part_split.json"
 
     train_loader, validation_loader, test_loader, sizes, split_file = make_loaders(
 

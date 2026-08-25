@@ -476,7 +476,7 @@ if __name__ == '__main__':
     parser.add_argument('--make-sixfold', action='store_true', help='Generate exact six-fold train/validation/test indices.')
     parser.add_argument('--prepare-sixfold-data', action='store_true', help='Build fresh canonical *_sixfold_all.pt data.')
     parser.add_argument('--datasets', nargs='+', default=['davis', 'kiba', 'bindingdb'])
-    parser.add_argument('--split-output', default='sixfold_splits')
+    parser.add_argument('--split-output', default='data/splits')
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--force-rebuild', action='store_true',
                         help='Delete an existing *_sixfold_all.pt before rebuilding '

@@ -184,7 +184,7 @@ def preflight(datasets, folds, model, entry):
         sys.exit(1)
     for dataset in datasets:
         for fold in folds:
-            if not os.path.isfile(os.path.join(ROOT, "splits", dataset,
+            if not os.path.isfile(os.path.join(ROOT, "data", "splits", dataset,
                                                "fold_%d.json" % fold)):
                 print("Missing split file: splits/%s/fold_%d.json" % (dataset, fold))
                 sys.exit(1)
