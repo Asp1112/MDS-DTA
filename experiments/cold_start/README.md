@@ -15,8 +15,8 @@
 ## 1. 生成数据集
 
 ```bash
-cd /root/mds/experiments/cold_start
-/root/mds/.venv_dta/bin/python prepare_cold_start.py --datasets davis kiba bindingdb
+cd experiments/cold_start
+python prepare_cold_start.py --datasets davis kiba bindingdb
 ```
 
 输出：
@@ -29,9 +29,9 @@ cd /root/mds/experiments/cold_start
 ## 2. DeepDTA 运行指令
 
 ```bash
-cd /root/mds/experiments/cold_start
+cd experiments/cold_start
 # 单个折（示例）
-/root/mds/.venv_dta/bin/python train_cold.py \
+python train_cold.py \
   --dataset davis --setting cold_drug --fold 0 --model deepdta
 
 # davis + kiba + bindingdb 全部设置、全部 6 折
@@ -44,9 +44,9 @@ bash run_cold_start.sh --model deepdta --datasets davis kiba bindingdb
 四个变体：
 
 ```bash
-cd /root/mds/experiments/cold_start
+cd experiments/cold_start
 # 单个折（示例）
-/root/mds/.venv_dta/bin/python train_cold.py \
+python train_cold.py \
   --dataset davis --setting cold_target --fold 0 --model graphdta_gcn
 
 # 全部数据集、全部 6 折（GCN 变体）
@@ -57,9 +57,9 @@ bash run_cold_start.sh --model graphdta_gcn --datasets davis kiba bindingdb
 ## 4. DeepDTAGen 运行指令
 
 ```bash
-cd /root/mds/experiments/cold_start
+cd experiments/cold_start
 # 单个折（示例）
-/root/mds/.venv_dta/bin/python train_cold.py \
+python train_cold.py \
   --dataset davis --setting cold_both --fold 0 --model deepdtagen
 
 # 全部数据集、全部 6 折
@@ -69,8 +69,8 @@ bash run_cold_start.sh --model deepdtagen --datasets davis kiba bindingdb
 ## 5. MDS 模型族运行指令
 
 ```bash
-cd /root/mds/experiments/cold_start
-/root/mds/.venv_dta/bin/python train_cold.py \
+cd experiments/cold_start
+python train_cold.py \
   --dataset davis --setting cold_drug --fold 0 --model combined_dta_edge
 bash run_cold_start.sh --model combined_dta_edge --datasets davis kiba bindingdb
 # 其他 MDS 模型：combined_dta / combined_dta_lstmdrop / combined_dta_token ...
@@ -80,7 +80,7 @@ bash run_cold_start.sh --model combined_dta_edge --datasets davis kiba bindingdb
 
 - `--dry`：2 个 epoch 的冒烟测试（验证代码与数据可跑通）。
 - `--results-root <路径>`：结果输出目录（默认
-  `/root/mds/results/experiments/cold_start`，即大容量数据盘）。
+  `experiments/results/cold_start`，即大容量数据盘）。
 - `--skip-done`：已有完整 `test_metrics.json` 的运行自动跳过，方便断点续跑。
 - `--epochs` / `--batch-size` / `--lr` / `--early-stopping-patience` 等与
   六折 CV 运行一致；DeepDTAGen 默认 batch=32、eval batch=128。

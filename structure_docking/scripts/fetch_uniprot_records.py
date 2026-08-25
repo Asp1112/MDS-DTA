@@ -6,8 +6,8 @@ import urllib.request
 from pathlib import Path
 
 
-DEDUP = Path(r"E:\total\docking_comparison\03_deduplicated\deduplication_result.json")
-OUT = Path(r"E:\total\docking_comparison\07_mechanism_screen\uniprot")
+DEDUP = Path(r"structure_docking/03_deduplicated\deduplication_result.json")
+OUT = Path(r"structure_docking/07_mechanism_screen\uniprot")
 OUT.mkdir(parents=True, exist_ok=True)
 
 

@@ -5,7 +5,7 @@ import urllib.request
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison\07_mechanism_screen")
+ROOT = Path(r"structure_docking/07_mechanism_screen")
 INPUT = ROOT / "empirical_screen.json"
 OUT = ROOT / "structures"
 OUT.mkdir(parents=True, exist_ok=True)

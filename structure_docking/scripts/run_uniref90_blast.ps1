@@ -1,7 +1,7 @@
 param(
     [Parameter(Mandatory = $true)][string]$Email,
-    [string]$InputJson = "E:\total\docking_comparison\01_rank_pool\rank_1_200_for_uniprot.json",
-    [string]$OutputDir = "E:\total\docking_comparison\02_uniref90_blast",
+    [string]$InputJson = "structure_docking/01_rank_pool\rank_1_200_for_uniprot.json",
+    [string]$OutputDir = "structure_docking/02_uniref90_blast",
     [int]$StartRank = 1,
     [int]$EndRank = 200,
     [int]$BatchSize = 30,

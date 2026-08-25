@@ -25,11 +25,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--dedup-json",
-        default=r"E:\total\docking_comparison\03_deduplicated\deduplication_result.json",
+        default=r"structure_docking/03_deduplicated\deduplication_result.json",
     )
     parser.add_argument(
         "--output-dir",
-        default=r"E:\total\docking_comparison\04_alphafold_structures",
+        default=r"structure_docking/04_alphafold_structures",
     )
     parser.add_argument("--minimum-identity", type=float, default=99.9)
     parser.add_argument("--minimum-query-coverage", type=float, default=95.0)

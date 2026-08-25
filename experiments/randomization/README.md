@@ -18,8 +18,8 @@
 ## 1. 生成数据集
 
 ```bash
-cd /root/mds/experiments/randomization
-/root/mds/.venv_dta/bin/python prepare_randomization.py --datasets davis kiba bindingdb
+cd experiments/randomization
+python prepare_randomization.py --datasets davis kiba bindingdb
 ```
 
 输出：
@@ -34,10 +34,10 @@ cd /root/mds/experiments/randomization
 ## 2. 训练
 
 ```bash
-cd /root/mds/experiments/randomization
+cd experiments/randomization
 
 # 单个折（示例）
-/root/mds/.venv_dta/bin/python train_random.py \
+python train_random.py \
   --dataset davis --mode x2 --fold 0 --model combined_dta_edge
 
 # davis + kiba + bindingdb、x1/x2/y、全部 6 折
@@ -47,7 +47,7 @@ bash run_randomization.sh --datasets davis kiba bindingdb
 ## 常用参数
 
 - `--dry`：2 个 epoch 冒烟测试。
-- `--results-root <路径>`：默认 `/root/mds/results/experiments/randomization`。
+- `--results-root <路径>`：默认 `experiments/results/randomization`。
 - `--skip-done`：断点续跑时跳过已完成运行。
 - `--model`：默认 `combined_dta`，可换任意 `models/` 下的 MDS 模型。
 

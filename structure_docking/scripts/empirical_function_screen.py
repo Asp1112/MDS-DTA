@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison\07_mechanism_screen")
+ROOT = Path(r"structure_docking/07_mechanism_screen")
 SUMMARY = ROOT / "uniprot" / "uniprot_summary.json"
 
 LONG_PROTEIN_RANKS = {

@@ -6,7 +6,7 @@ from collections import defaultdict
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total")
+ROOT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])))
 BASE = ROOT / "docking_comparison" / "11_additional_6"
 DEDUP = BASE / "03_deduplicated" / "deduplication_result.json"
 OLD_AUDIT = ROOT / "docking_comparison" / "10_gene_corrected_screen" / "gene_rule_audit_101_200.csv"

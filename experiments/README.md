@@ -1,7 +1,5 @@
 # 六折划分下的三类补充实验
 
-服务器上的部署位置：`/root/mds/experiments/`
-
 | 文件夹 | 实验 | 划分方式 | 设置 |
 | --- | --- | --- | --- |
 | `cold_start/` | 冷启动 | 实体级六折 | `cold_drug`、`cold_target`（两个单冷）+ `cold_both`（双冷） |
@@ -22,7 +20,7 @@
 只有 `cold_start/` 需要兼容 DeepDTA / GraphDTA / DeepDTAGen：
 
 ```bash
-cd /root/mds/experiments/cold_start
+cd experiments/cold_start
 bash run_cold_start.sh --model deepdta --datasets davis kiba bindingdb
 bash run_cold_start.sh --model graphdta_gcn --datasets davis kiba bindingdb
 bash run_cold_start.sh --model deepdtagen --datasets davis kiba bindingdb

@@ -20,9 +20,9 @@ import requests
 from crc64iso.crc64iso import crc64
 
 
-ROOT = Path(r"E:\total")
+ROOT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])))
 OUT = ROOT / "task_dataset_recon"
-CORE_CSV = r"E:\MDS\data\pAAP_y_train.csv"
+CORE_CSV = os.path.join(os.environ.get("MDS_WORK_ROOT", str(Path(__file__).resolve().parents[2])), "data", "pAAP_y_train.csv")
 CAND_CSV = ROOT / "Supplementary_Data_1_candidate_library_metadata_10026.csv"
 SCORE_CSV = ROOT / "打分结果.csv"
 HOMOLOG_CSV = OUT / "homolog_pool_top10.csv"

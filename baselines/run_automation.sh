@@ -14,13 +14,14 @@
 
 set -u
 
-cd /root/mds || exit 1
+cd "$(dirname "$0")/.." || exit 1
+ROOT="$(pwd)"
 
-PY=/root/miniconda3/envs/mds/bin/python
+PY="${MDS_PYTHON:-python}"
 MODEL="${MODEL:-combined_dta_lstmdrop}"
-LOG_DIR=/root/mds/automation_logs
-STATUS_FILE=/root/mds/automation_status.json
-LOCK_DIR=/root/mds/.automation.lock
+LOG_DIR="$ROOT/automation_logs"
+STATUS_FILE="$ROOT/automation_status.json"
+LOCK_DIR="$ROOT/.automation.lock"
 
 mkdir -p "$LOG_DIR"
 
@@ -48,7 +49,7 @@ status = {
     "detail": detail,
     "pid": pid,
 }
-with open("/root/mds/automation_status.json", "w") as fh:
+with open(os.environ["AUTOMATION_STATUS"], "w") as fh:
     json.dump(status, fh, indent=2)
 print(phase, "-", detail)
 PY

@@ -9,7 +9,7 @@ import pandas as pd
 from crc64iso.crc64iso import crc64
 
 
-ROOT = Path(r"E:\total")
+ROOT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])))
 OUT = ROOT / "task_dataset_1067"
 CAND_CSV = ROOT / "Supplementary_Data_1_candidate_library_metadata_10026.csv"
 SCORE_CSV = ROOT / "打分结果.csv"

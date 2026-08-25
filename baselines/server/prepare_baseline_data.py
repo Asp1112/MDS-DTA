@@ -3,7 +3,7 @@
 Runs on server2 with the mds environment (has rdkit + torch_geometric) from
 the project root:
 
-  /root/miniconda3/envs/mds/bin/python baselines/prepare_baseline_data.py
+  python baselines/prepare_baseline_data.py
 
 Builds (all in canonical davis_sixfold_all.csv order, i.e. the same index
 space as davis_sixfold_all.pt and splits/davis/fold_*.json):

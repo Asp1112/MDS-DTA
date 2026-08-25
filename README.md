@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 ### Processed benchmark datasets
 
-* `data/processed/davis_sixfold_all.csv` — 30,057 protein–ligand pairs with the
+* `data/processed/davis_sixfold_all.csv` — 30,056 protein–ligand pairs with the
   canonical Davis affinity values, in canonical DeepDTA-compatible form.
 * `data/processed/kiba_sixfold_all.csv` — 118,254 protein–ligand pairs with
   KIBA values.
@@ -92,7 +92,7 @@ benchmark comparison. The splits were generated deterministically by
 task-specific dataset (456 positive soft-labelled protein–p-aminophenol pairs
 and 611 negatives). Its construction, positive/negative pools, and the strict
 constraint that the ten experimentally validated top candidates are absent from
-the dataset are described in `data/task_dataset/README.md` (Chinese) and in
+the dataset are described in `data/task_dataset/README.md` and in
 `screening/scripts/recon_build_dataset.py`.
 
 ### Candidate library and screening scores
@@ -100,16 +100,22 @@ the dataset are described in `data/task_dataset/README.md` (Chinese) and in
 * `candidate_library/candidate_library_metadata_10026.csv` — the complete
   10,026-sequence candidate library (sequence, UniProt accessions, taxonomy,
   domain annotations, motif proxies).
-* `screening/screening_scores_10026.csv` — the original MDS screening scores.
-* `screening/library_ranking_10026.csv` and
-  `screening/library_ranking_with_metadata_10026.csv` — the re-scored 10,026
-  ranking and its merge with library metadata.
+* `screening/screening_scores_10026.csv` — the original MDS model scores of
+  the 10,026-record candidate library (unrounded model outputs; scores in
+  manuscript Table 3 are these values quoted to four decimal places).
 * `screening/top100_library_ranking.csv` and
-  `screening/top300_library_ranking.csv` — the Top-100/Top-300 lists
-  (100 unique sequences; duplicate rows reflect multiple library records
-  sharing the same sequence).
+  `screening/top300_library_ranking.csv` — the Top-100 / Top-300 ranked
+  unique sequences derived from the original scores, matching the manuscript
+  "MDS top 100" and "MDS 101-300" intervals.
 * `screening/final_20candidates_ranking.csv` — final ranks of the 20
-  experimentally tested candidates.
+  experimentally tested candidates (manuscript Table 3 + Supplementary
+  Table 16), with UniProt IDs.
+* `screening/reconstruction_20260825/` — archive of the 2026-08-25
+  strict-constraint reconstruction experiment (a re-trained task model and
+  its ranking). This is **not** the manuscript screening output and is kept
+  only for transparency.
+* `screening/make_paper_screening_files.py` — regenerates the Top-100 /
+  Top-300 lists and the 20-candidate list from the raw scores.
 
 ### Structure and docking files
 
@@ -117,6 +123,10 @@ the dataset are described in `data/task_dataset/README.md` (Chinese) and in
 rank pools, UniRef90 clustering, AlphaFold3 structures, AutoDock Vina docking
 results, mechanism/geometry screening, gene-corrected and additional-6 runs,
 and the final screening reports (`structure_docking/reports/*.xlsx`).
+The pipeline scripts under `structure_docking/scripts/` record the commands
+used during the study; file paths inside them refer to the development
+workspace layout and should be adjusted to this repository layout when
+re-running (see `structure_docking/README.md`).
 
 ### Raw HPLC and kinetic data
 
@@ -163,8 +173,7 @@ python predict_affinity.py --mode csv
 Reproduce the candidate-library scoring and the Top-100/Top-300 selection:
 
 ```bash
-python screening/scripts/run_1067_rank_selected.py
-python screening/make_topk_lists.py --ranking screening/library_ranking_with_metadata_10026.csv --out-dir screening
+python screening/make_paper_screening_files.py --scores screening/screening_scores_10026.csv --out-dir screening
 ```
 
 ## Reproducing every table and figure

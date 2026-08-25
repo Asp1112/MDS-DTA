@@ -13,8 +13,9 @@ repository. Fixed release commit: `cb578e2a80e8f8d7f6cdbcabbfcd7e8cb62d98b0`.
 | All experiment scripts | `experiments/cold_start/`, `experiments/randomization/`, `experiments/fewshot/`, `baselines/run_sixfold_cv*.py`, `screening/scripts/` |
 | Complete task-specific dataset | `data/task_dataset/task_dataset_recon_1067.csv` (1,067 samples; 456 positive / 611 negative) plus source pools in the same folder |
 | 10,026-sequence library | `candidate_library/candidate_library_metadata_10026.csv` |
-| All screening scores | `screening/screening_scores_10026.csv`, `screening/library_ranking_10026.csv`, `screening/library_ranking_with_metadata_10026.csv` |
-| Top-100 list | `screening/top100_library_ranking.csv` (rank ≤ 100; 100 unique sequences) |
+| All screening scores | `screening/screening_scores_10026.csv` (original MDS scores); reconstruction-experiment ranking archived in `screening/reconstruction_20260825/` |
+| Top-100 list | `screening/top100_library_ranking.csv` (top-100 unique sequences by the original MDS score; Top-300 in `top300_library_ranking.csv`) |
+| 20 experimentally tested candidates | `screening/final_20candidates_ranking.csv` (manuscript Table 3 + Supplementary Table 16) |
 | Structure and docking files | `structure_docking/` (AlphaFold3 structures, AutoDock Vina outputs, mechanism/geometry screening, reports) |
 | Raw HPLC data | `wetlab/HPLC_data.xlsx` |
 | Raw kinetic data | `wetlab/kinetics_raw_data.xlsx` |

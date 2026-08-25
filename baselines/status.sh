@@ -1,6 +1,6 @@
 #!/bin/bash
 # Quick status overview for the server training queue.
-cd /root/mds || exit 1
+cd "$(dirname "$0")/.." || exit 1
 
 echo "===== GPU ====="
 nvidia-smi --query-gpu=utilization.gpu,memory.used,memory.total,temperature.gpu --format=csv,noheader

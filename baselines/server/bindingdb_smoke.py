@@ -4,8 +4,9 @@ import os
 import sys
 
 os.environ.setdefault("CUDA_VISIBLE_DEVICES", "")
-sys.path.insert(0, "/root/mds")
-sys.path.insert(0, "/root/mds/baselines/deepdtagen_official")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, "baselines", "deepdtagen_official"))
 
 import torch
 
@@ -16,7 +17,7 @@ def check_graphdta():
     from torch.utils.data import Subset
     from torch_geometric.loader import DataLoader
     from baselines.graphdta_baseline import GCNNet
-    ds = SavedGraphDataset("/root/mds/data/baselines/bindingdb_graphdta_all.pt")
+    ds = SavedGraphDataset(os.path.join(ROOT, "data", "baselines", "bindingdb_graphdta_all.pt"))
     loader = DataLoader(Subset(ds, list(range(32))), batch_size=8)
     model = GCNNet()
     batch = next(iter(loader))
@@ -30,8 +31,8 @@ def check_gdilateddta():
     from torch.utils.data import Subset
     from torch_geometric.loader import DataLoader
     from baselines.gdilateddta_baseline import GDilatedDTAModel
-    meta = json.load(open("/root/mds/data/baselines/bindingdb_gdilateddta_meta.json"))
-    ds = SavedGraphDataset("/root/mds/data/baselines/bindingdb_gdilateddta_all.pt")
+    meta = json.load(open(os.path.join(ROOT, "data", "baselines", "bindingdb_gdilateddta_meta.json")))
+    ds = SavedGraphDataset(os.path.join(ROOT, "data", "baselines", "bindingdb_gdilateddta_all.pt"))
     loader = DataLoader(Subset(ds, list(range(32))), batch_size=8)
     model = GDilatedDTAModel(int(meta["atom_vocab_size"]))
     batch = next(iter(loader))
@@ -46,9 +47,9 @@ def check_deepdtagen():
     from torch_geometric.loader import DataLoader
     from utils import Tokenizer
     from model import DeepDTAGen
-    with open("/root/mds/data/baselines/bindingdb_tokenizer.pkl", "rb") as fh:
+    with open(os.path.join(ROOT, "data", "baselines", "bindingdb_tokenizer.pkl"), "rb") as fh:
         tokenizer = pickle.load(fh)
-    ds = SavedGraphDataset("/root/mds/data/baselines/bindingdb_deepdtagen_all.pt")
+    ds = SavedGraphDataset(os.path.join(ROOT, "data", "baselines", "bindingdb_deepdtagen_all.pt"))
     loader = DataLoader(Subset(ds, list(range(8))), batch_size=4)
     model = DeepDTAGen(tokenizer)
     batch = next(iter(loader))
@@ -75,8 +76,8 @@ def check_ssmdta():
     from baselines.ssmdta_baseline import build_model, encode_frame, pad_collate
     from torch.utils.data import DataLoader
     df = load_rows("bindingdb")
-    mol_dict = Dictionary.load("/root/mds/baselines/ssmdta_official/dict.mol.txt")
-    pro_dict = Dictionary.load("/root/mds/baselines/ssmdta_official/dict.pro.txt")
+    mol_dict = Dictionary.load(os.path.join(ROOT, "baselines", "ssmdta_official", "dict.mol.txt"))
+    pro_dict = Dictionary.load(os.path.join(ROOT, "baselines", "ssmdta_official", "dict.pro.txt"))
     mols, prots, ys = encode_frame(df, list(range(8)), mol_dict, pro_dict)
     loader = DataLoader(list(zip(mols, prots, ys)), batch_size=4,
                         collate_fn=pad_collate)

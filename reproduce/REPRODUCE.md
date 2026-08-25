@@ -30,7 +30,7 @@ command.
 | Artifact | Command / source | Fixed inputs | Regenerated output |
 | --- | --- | --- | --- |
 | Supplementary Tables 1–4 (fold results) | `python baselines/run_sixfold_cv*.py` outputs | `data/splits/*/` | per-fold metrics |
-| Supplementary Figure 5 (candidate-library funnel) | `python screening/make_topk_lists.py` + library metadata | `candidate_library/candidate_library_metadata_10026.csv`, `screening/library_ranking_with_metadata_10026.csv` | `figures/supplementary/Supplementary_Figure_5_candidate_library_statistics.png` |
+| Supplementary Figure 5 (candidate-library funnel) | plot from `candidate_library/candidate_library_metadata_10026.csv` and `screening/screening_scores_10026.csv` | `candidate_library/candidate_library_metadata_10026.csv`, `screening/screening_scores_10026.csv` | `figures/supplementary/Supplementary_Figure_5_candidate_library_statistics.png` |
 | Supplementary Figure 6 (score distribution) | plot from `screening/screening_scores_10026.csv` | `screening/screening_scores_10026.csv` | score-rank plots |
 | Supplementary Table 11 (ablation detail) | `python baselines/run_all_variants.py` | `baselines/models/*.py` | ablation table |
 | Supplementary Tables 16–18 (candidate/plasmid/strain lists) | `screening/final_20candidates_ranking.csv`, wet-lab records | — | lists |
@@ -48,8 +48,8 @@ python screening/scripts/recon_build_final.py
 # 2. Train the task model and re-score the 10,026 library
 python screening/scripts/recon_train_eval.py
 
-# 3. Reconstruct the full ranking and Top-100/Top-300 lists
-python screening/make_topk_lists.py --ranking screening/library_ranking_with_metadata_10026.csv --out-dir screening
+# 3. Regenerate the paper-consistent Top-100/Top-300 and 20-candidate lists
+python screening/make_paper_screening_files.py --scores screening/screening_scores_10026.csv --out-dir screening
 ```
 
 ## Structure-guided screening reproduction
@@ -68,3 +68,6 @@ python structure_docking/scripts/compile_final_screen.py
 
 Reports are committed under `structure_docking/reports/`; the final ten
 candidates and their ranks are in `screening/final_20candidates_ranking.csv`.
+Note: the pipeline scripts under `structure_docking/scripts/` were written
+against the original workspace layout; adjust the path constants at the top of
+each script to this repository layout before re-running.

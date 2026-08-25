@@ -53,9 +53,9 @@ def parse_blast_xml(path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input-json", default=r"E:\total\docking_comparison\01_rank_pool\rank_1_200_for_uniprot.json")
-    parser.add_argument("--blast-dir", default=r"E:\total\docking_comparison\02_uniref90_blast")
-    parser.add_argument("--output-dir", default=r"E:\total\docking_comparison\03_deduplicated")
+    parser.add_argument("--input-json", default=r"structure_docking/01_rank_pool\rank_1_200_for_uniprot.json")
+    parser.add_argument("--blast-dir", default=r"structure_docking/02_uniref90_blast")
+    parser.add_argument("--output-dir", default=r"structure_docking/03_deduplicated")
     parser.add_argument("--reference-end", type=int, default=100)
     parser.add_argument("--candidate-start", type=int, default=101)
     parser.add_argument("--candidate-end", type=int, default=200)

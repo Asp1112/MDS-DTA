@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison\11_additional_6")
+ROOT = Path(r"structure_docking/11_additional_6")
 RULES = ROOT / "04_rules" / "extension_rule_audit.json"
 MANIFEST = ROOT / "05_structures" / "structure_manifest.json"
 OUT = ROOT / "06_structure_analysis"

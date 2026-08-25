@@ -25,8 +25,8 @@ validation reference for the train region.
 
 Run with the mds environment on a server that has the pt file:
 
-  /root/miniconda3/envs/mds/bin/python reconstruct_bindingdb_csv.py \
-      --pt data/processed/bindingdb_sixfold_all.pt \
+  python reconstruct_bindingdb_csv.py \
+      --pt bindingdb_sixfold_all.pt \
       --tokenizer data/baselines/bindingdb_tokenizer.pkl \
       --out data/bindingdb_sixfold_all.csv
 """

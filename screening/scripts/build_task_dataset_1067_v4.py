@@ -11,7 +11,7 @@ import requests
 from crc64iso.crc64iso import crc64
 
 
-ROOT = Path(r"E:\total")
+ROOT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])))
 OUT = ROOT / "task_dataset_1067"
 ORIG = ROOT / "mds_pAAP.csv"
 CAND_CSV = ROOT / "Supplementary_Data_1_candidate_library_metadata_10026.csv"

@@ -1,18 +1,18 @@
 """Quick single-batch sanity check for the four baseline data paths.
 
 Runs a couple of forward/backward steps on the GPU without any checkpointing,
-just to confirm each model can consume the davis six-fold data.  Run with the
-dta_baselines venv python (which also sees the mds packages):
+just to confirm each model can consume the davis six-fold data:
 
-  /root/mds/.venv_dta/bin/python /root/mds/baselines/sanity_check.py
+  python baselines/server/sanity_check.py
 """
 
 import os
 import sys
 
-sys.path.insert(0, "/root/mds")
-sys.path.insert(0, "/root/mds/baselines")
-sys.path.insert(0, "/root/mds/baselines/deepdtagen_official")
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+sys.path.insert(0, ROOT)
+sys.path.insert(0, os.path.join(ROOT, "baselines"))
+sys.path.insert(0, os.path.join(ROOT, "baselines", "deepdtagen_official"))
 
 import torch
 
@@ -24,7 +24,7 @@ def check_graphdta():
     from torch_geometric.loader import DataLoader
     from baselines.graphdta_baseline import GCNNet
 
-    ds = SavedGraphDataset("/root/mds/data/baselines/davis_graphdta_all.pt")
+    ds = SavedGraphDataset(os.path.join(ROOT, "data", "baselines", "davis_graphdta_all.pt"))
     loader = DataLoader(Subset(ds, list(range(64))), batch_size=16, shuffle=True)
     model = GCNNet().cuda()
     opt = torch.optim.Adam(model.parameters(), lr=5e-4)
@@ -62,9 +62,9 @@ def check_deepdtagen():
     from model import DeepDTAGen
     from FetterGrad import FetterGrad
 
-    with open("/root/mds/data/baselines/davis_tokenizer.pkl", "rb") as fh:
+    with open(os.path.join(ROOT, "data", "baselines", "davis_tokenizer.pkl"), "rb") as fh:
         tokenizer = pickle.load(fh)
-    ds = SavedGraphDataset("/root/mds/data/baselines/davis_deepdtagen_all.pt")
+    ds = SavedGraphDataset(os.path.join(ROOT, "data", "baselines", "davis_deepdtagen_all.pt"))
     loader = DataLoader(Subset(ds, list(range(16))), batch_size=4, shuffle=True)
     model = DeepDTAGen(tokenizer).cuda()
     optimizer = FetterGrad(torch.optim.Adam(model.parameters(), lr=2e-4))
@@ -108,8 +108,8 @@ def check_gdilateddta():
     from torch_geometric.loader import DataLoader
     from baselines.gdilateddta_baseline import GDilatedDTAModel
 
-    meta = json.load(open("/root/mds/data/baselines/davis_gdilateddta_meta.json"))
-    ds = SavedGraphDataset("/root/mds/data/baselines/davis_gdilateddta_all.pt")
+    meta = json.load(open(os.path.join(ROOT, "data", "baselines", "davis_gdilateddta_meta.json")))
+    ds = SavedGraphDataset(os.path.join(ROOT, "data", "baselines", "davis_gdilateddta_all.pt"))
     loader = DataLoader(Subset(ds, list(range(64))), batch_size=16, shuffle=True)
     model = GDilatedDTAModel(int(meta["atom_vocab_size"])).cuda()
     opt = torch.optim.Adam(model.parameters(), lr=5e-4)
@@ -128,8 +128,8 @@ def check_ssmdta():
     from torch.utils.data import DataLoader
 
     df = load_rows("davis")
-    mol_dict = Dictionary.load("/root/mds/baselines/ssmdta_official/dict.mol.txt")
-    pro_dict = Dictionary.load("/root/mds/baselines/ssmdta_official/dict.pro.txt")
+    mol_dict = Dictionary.load(os.path.join(ROOT, "baselines", "ssmdta_official", "dict.mol.txt"))
+    pro_dict = Dictionary.load(os.path.join(ROOT, "baselines", "ssmdta_official", "dict.pro.txt"))
     mols, prots, ys = encode_frame(df, list(range(8)), mol_dict, pro_dict)
     loader = DataLoader(list(zip(mols, prots, ys)), batch_size=4,
                         collate_fn=pad_collate)

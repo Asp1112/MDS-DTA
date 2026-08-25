@@ -9,6 +9,11 @@
   Menten fits (Origin, Levenberg–Marquardt), kinetic constants (Km, Vmax,
   kcat) with 95% CIs, residuals, and fitting methodology.
 
+The kinetics workbook uses placeholder labels ("Supplementary Table S/Y/Z")
+in its sheet titles; the corresponding manuscript tables are Supplementary
+Tables 19–22 (fitting methodology, raw initial rates, kinetic parameters, and
+residuals).
+
 Fermentation product concentrations (p-aminophenol consumption and
 acetaminophen production per strain) are reported in the manuscript Fig. 5
 and the supplementary HPLC tables; the underlying replicate values are in

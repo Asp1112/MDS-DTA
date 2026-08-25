@@ -16,3 +16,14 @@ MDS-prioritized candidates:
 * `corrected_screen/` — gene-corrected and additional-6 screening runs.
 * `reports/` — final screening reports (`batch_docking_report.xlsx`,
   `mechanism_screening_report.xlsx`) and per-stage assessment JSONs.
+
+## Note on script paths
+
+The pipeline scripts in `scripts/` were executed during the study and record
+the original development-workspace layout (e.g. a `docking_comparison/`
+top-level folder). In this repository the same data is reorganized under
+`structure_docking/` (e.g. `05_vina/` → `vina/05_vina/`). Before re-running a
+script, update the `ROOT` path constant at the top of the script to the
+corresponding directory in this repository. The committed inputs and outputs
+(PDB structures, PDBQT files, Vina logs, screening reports) are already
+provided in the expected subdirectories.

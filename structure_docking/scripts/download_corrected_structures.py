@@ -5,7 +5,7 @@ import urllib.request
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison")
+ROOT = Path(os.environ.get("DOCKING_ROOT", str(Path(__file__).resolve().parents[2])))
 INPUT = ROOT / "09_corrected_screen" / "corrected_rule_application.json"
 OLD = ROOT / "07_mechanism_screen" / "structures"
 OUT = ROOT / "09_corrected_screen" / "structures"

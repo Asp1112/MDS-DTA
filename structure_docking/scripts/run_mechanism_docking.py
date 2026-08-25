@@ -7,14 +7,14 @@ import subprocess
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison\07_mechanism_screen")
+ROOT = Path(r"structure_docking/07_mechanism_screen")
 MOTIFS = ROOT / "motif_screen" / "motif_screen.json"
 OUT = ROOT / "mechanism_docking"
 MGL_PYTHON = Path(r"E:\MGLTools\python.exe")
 PREP_RECEPTOR = Path(r"E:\MGLTools\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py")
-VINA = Path(r"E:\autodock\vina.exe")
-PAP = Path(r"E:\total\4_Aminophenol.pdbqt")
-ACCOA = Path(r"E:\total\acetyl_CoA.pdbqt")
+VINA = Path(r"vina")
+PAP = Path(r"ligands/4_Aminophenol.pdbqt")
+ACCOA = Path(r"ligands/acetyl_CoA.pdbqt")
 SCORES = re.compile(r"REMARK VINA RESULT:\s+(-?\d+(?:\.\d+)?)")
 
 

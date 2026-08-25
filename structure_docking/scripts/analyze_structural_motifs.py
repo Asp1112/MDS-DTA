@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 
 
-ROOT = Path(r"E:\total\docking_comparison\07_mechanism_screen")
+ROOT = Path(r"structure_docking/07_mechanism_screen")
 MANIFEST = ROOT / "structures" / "structure_manifest.json"
 EMPIRICAL = ROOT / "empirical_screen.json"
 OUT = ROOT / "motif_screen"

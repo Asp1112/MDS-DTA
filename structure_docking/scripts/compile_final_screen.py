@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison")
+ROOT = Path(os.environ.get("DOCKING_ROOT", str(Path(__file__).resolve().parents[2])))
 EMPIRICAL = ROOT / "07_mechanism_screen" / "empirical_screen.csv"
 MOTIFS = ROOT / "07_mechanism_screen" / "motif_screen" / "motif_screen.csv"
 DOCKING = ROOT / "07_mechanism_screen" / "mechanism_docking" / "mechanism_docking_to_rank_200.json"

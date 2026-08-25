@@ -19,8 +19,8 @@ from torch.utils.data import Subset
 from torch_geometric.loader import DataLoader
 
 
-MDS_ROOT = Path(r"E:\MDS")
-ROOT = Path(r"E:\total")
+MDS_ROOT = Path(os.environ.get("MDS_WORK_ROOT", str(Path(__file__).resolve().parents[2])))
+ROOT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])))
 OUT = ROOT / "task_dataset_1067"
 RUNTIME = OUT / "runtime"
 CAND_CSV = ROOT / "Supplementary_Data_1_candidate_library_metadata_10026.csv"

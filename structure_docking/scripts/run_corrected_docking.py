@@ -6,13 +6,13 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison")
+ROOT = Path(os.environ.get("DOCKING_ROOT", str(Path(__file__).resolve().parents[2])))
 ANALYSIS = ROOT / "09_corrected_screen" / "structure_analysis" / "corrected_structure_analysis.json"
 OLD_RESULTS = ROOT / "07_mechanism_screen" / "mechanism_docking" / "mechanism_docking_to_rank_200.json"
 OUT = ROOT / "09_corrected_screen" / "docking"
 MGL_PYTHON = Path(r"E:\MGLTools\python.exe")
 PREP_RECEPTOR = Path(r"E:\MGLTools\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py")
-PAP = Path(r"E:\total\4_Aminophenol.pdbqt")
+PAP = Path(r"ligands/4_Aminophenol.pdbqt")
 ACCOA = Path(r"E:\autodockvina\acetyl_CoA.pdbqt")
 
 sys.path.insert(0, str(ROOT))

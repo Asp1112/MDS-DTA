@@ -3,8 +3,8 @@ import json
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison")
-PAIR_CSV = Path(r"E:\total\mds_pAAP.csv")
+ROOT = Path(os.environ.get("DOCKING_ROOT", str(Path(__file__).resolve().parents[2])))
+PAIR_CSV = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2]))) / "mds_pAAP.csv"
 DEDUP_JSON = ROOT / "03_deduplicated" / "deduplication_result.json"
 UNIPROT_CSV = ROOT / "07_mechanism_screen" / "uniprot" / "uniprot_summary.csv"
 OUT = ROOT / "09_corrected_screen"

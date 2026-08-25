@@ -31,7 +31,7 @@ from pathlib import Path
 import pandas as pd
 
 
-MDS_ROOT = Path(os.environ.get("MDS_ROOT", "/root/mds")).resolve()
+MDS_ROOT = Path(os.environ.get("MDS_ROOT", str(Path(__file__).resolve().parents[2]))).resolve()
 HERE = Path(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_ROOT = HERE / "data"
 SETTINGS = ["cold_drug", "cold_target", "cold_both"]

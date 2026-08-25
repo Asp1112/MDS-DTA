@@ -4,8 +4,8 @@ import pathlib
 import re
 
 
-BASE = pathlib.Path(
-    "/root/mds/.venv_dta/lib/python3.9/site-packages/fairseq")
+import os
+BASE = pathlib.Path(os.environ.get("FAIRSEQ_DIR", "fairseq"))
 
 
 def patch(name, patterns):

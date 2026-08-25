@@ -10,8 +10,8 @@
 ## 1. 生成数据集
 
 ```bash
-cd /root/mds/experiments/fewshot
-/root/mds/.venv_dta/bin/python prepare_fewshot.py --datasets davis kiba bindingdb
+cd experiments/fewshot
+python prepare_fewshot.py --datasets davis kiba bindingdb
 ```
 
 输出：
@@ -26,10 +26,10 @@ cd /root/mds/experiments/fewshot
 ## 2. 训练
 
 ```bash
-cd /root/mds/experiments/fewshot
+cd experiments/fewshot
 
 # 单个折（示例）
-/root/mds/.venv_dta/bin/python train_fewshot.py \
+python train_fewshot.py \
   --dataset davis --setting fs25 --fold 0 --model combined_dta_edge
 
 # davis + kiba + bindingdb、fs50/fs25/fs10、全部 6 折
@@ -39,7 +39,7 @@ bash run_fewshot.sh --datasets davis kiba bindingdb
 ## 常用参数
 
 - `--dry`：2 个 epoch 冒烟测试。
-- `--results-root <路径>`：默认 `/root/mds/results/experiments/fewshot`。
+- `--results-root <路径>`：默认 `experiments/results/fewshot`。
 - `--skip-done`：断点续跑时跳过已完成运行。
 - `--model`：默认 `combined_dta`，可换任意 `models/` 下的 MDS 模型。
 

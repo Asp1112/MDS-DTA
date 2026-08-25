@@ -24,7 +24,7 @@ import random
 from pathlib import Path
 
 
-MDS_ROOT = Path(os.environ.get("MDS_ROOT", "/root/mds")).resolve()
+MDS_ROOT = Path(os.environ.get("MDS_ROOT", str(Path(__file__).resolve().parents[2]))).resolve()
 HERE = Path(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_ROOT = HERE / "data"
 MODES = ["x1", "x2", "y"]

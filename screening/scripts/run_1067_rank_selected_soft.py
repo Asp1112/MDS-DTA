@@ -20,8 +20,8 @@ from torch.utils.data import Subset
 from torch_geometric.loader import DataLoader
 
 
-MDS_ROOT = Path(r"E:\MDS")
-ROOT = Path(r"E:\total")
+MDS_ROOT = Path(os.environ.get("MDS_WORK_ROOT", str(Path(__file__).resolve().parents[2])))
+ROOT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])))
 OUT = ROOT / "task_dataset_1067"
 RUNTIME = OUT / "runtime"
 SELECTED_CSV = ROOT / "docking_comparison" / "09_corrected_screen" / "corrected_rule_application.csv"

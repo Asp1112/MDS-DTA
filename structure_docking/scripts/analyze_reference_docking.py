@@ -56,7 +56,7 @@ for name in REFERENCES:
                 "nearest_cys_resnum": distances[0][1] if distances else None,
             })
 
-Path(r"E:\total\docking_comparison\07_mechanism_screen\reference_docking_geometry.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
+Path(r"structure_docking/07_mechanism_screen\reference_docking_geometry.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
 for name in REFERENCES:
     subset = [row for row in results if row["reference"] == name and row["ligand"] == "acetyl_CoA"]
     if subset:

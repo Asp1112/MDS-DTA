@@ -37,8 +37,8 @@ import sys
 import time
 
 
-ROOT = "/root/mds"
-PYTHON = "/root/mds/.venv_dta/bin/python"
+ROOT = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
+PYTHON = os.environ.get("MDS_PYTHON", "python")
 LOG_DIR = os.path.join(ROOT, "sixfold_logs")
 STATUS_FILE = os.path.join(ROOT, "sixfold_status.json")
 LOCK_FILE = os.path.join(ROOT, ".sixfold.lock")

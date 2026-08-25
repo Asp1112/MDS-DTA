@@ -11,3 +11,8 @@
 
 Commands that regenerate these figures from the committed data are listed in
 `reproduce/REPRODUCE.md`.
+
+Resolution check (2026-08-25): Figure 3, Figure 4c and the supplementary
+figures are exported at 300 dpi. Figure 1 and Figure 4a/4b are exported at
+~72–200 dpi; re-export these panels at 300 dpi (TIFF or high-resolution PNG)
+for the journal submission.

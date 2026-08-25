@@ -4,7 +4,7 @@ import urllib.request
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison")
+ROOT = Path(os.environ.get("DOCKING_ROOT", str(Path(__file__).resolve().parents[2])))
 SOURCE = ROOT / "11_additional_6" / "04_rules" / "extension_rule_audit.json"
 OUT = ROOT / "11_additional_6" / "05_structures"
 OLD_DIRS = [ROOT / "09_corrected_screen" / "structures", ROOT / "07_mechanism_screen" / "structures"]

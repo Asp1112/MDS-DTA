@@ -4,7 +4,7 @@ from collections import defaultdict
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total")
+ROOT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])))
 SOURCE = ROOT / "outputs" / "corrected_structure_screen" / "corrected_full_assessment.csv"
 UNIPROT = ROOT / "docking_comparison" / "07_mechanism_screen" / "uniprot"
 OUT = ROOT / "docking_comparison" / "10_gene_corrected_screen"

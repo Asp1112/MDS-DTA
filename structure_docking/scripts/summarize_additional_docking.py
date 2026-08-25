@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 
-path = Path(r"E:\total\docking_comparison\11_additional_6\07_docking\corrected_docking_results.json")
+path = Path(r"structure_docking/11_additional_6\07_docking\corrected_docking_results.json")
 data = json.loads(path.read_text(encoding="utf-8"))
 for row in data["candidates"]:
     if row.get("docking_status") != "completed":

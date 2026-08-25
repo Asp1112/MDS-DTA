@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison")
+ROOT = Path(os.environ.get("DOCKING_ROOT", str(Path(__file__).resolve().parents[2])))
 RULES = ROOT / "09_corrected_screen" / "corrected_rule_application.json"
 MANIFEST = ROOT / "09_corrected_screen" / "structures" / "structure_manifest.json"
 OUT = ROOT / "09_corrected_screen" / "structure_analysis"

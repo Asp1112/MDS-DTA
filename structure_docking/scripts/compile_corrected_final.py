@@ -3,12 +3,12 @@ import json
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison")
+ROOT = Path(os.environ.get("DOCKING_ROOT", str(Path(__file__).resolve().parents[2])))
 RULES = ROOT / "09_corrected_screen" / "corrected_rule_application.json"
 STRUCTURES = ROOT / "09_corrected_screen" / "structure_analysis" / "corrected_structure_analysis.json"
 DOCKING = ROOT / "09_corrected_screen" / "docking" / "corrected_docking_results.json"
 RESCUE = ROOT / "09_corrected_screen" / "docking" / "acyl_cys_rescue_results.json"
-OUT = Path(r"E:\total\outputs\corrected_structure_screen")
+OUT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2]))) / "outputs" / "corrected_structure_screen"
 
 SELECTED_RANKS = {110, 112, 127, 141, 152, 154, 156, 178, 179, 189}
 EVIDENCE = {

@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total")
+ROOT = Path(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])))
 AUDIT = ROOT / "docking_comparison" / "10_gene_corrected_screen" / "gene_rule_audit_101_200.csv"
 OUT = ROOT / "outputs" / "gene_corrected_structure_screen"
 OUT.mkdir(parents=True, exist_ok=True)

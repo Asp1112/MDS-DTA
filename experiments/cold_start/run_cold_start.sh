@@ -12,7 +12,7 @@
 set -u
 
 cd "$(dirname "$0")" || exit 1
-PY="${PY:-/root/mds/.venv_dta/bin/python}"
+PY="${PY:-python}"
 MODEL="combined_dta"
 DATASETS=(davis)
 SETTINGS=(cold_drug cold_target cold_both)

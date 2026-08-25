@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pandas as pd
 
-OUT = Path(r"E:\total\task_dataset_recon\final_deliverables")
-CAND = pd.read_csv(r"E:\total\Supplementary_Data_1_candidate_library_metadata_10026.csv", dtype=str)
+OUT = Path(os.path.join(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])), "screening", "reconstruction_20260825"))
+CAND = pd.read_csv(os.path.join(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])), "candidate_library", "candidate_library_metadata_10026.csv"), dtype=str)
 
 TOP10 = ["Q72X44", "P40353", "O31995", "Q66165", "P48026",
          "Q5NHR0", "D2Z028", "Q8P051", "Q9KL03", "P26825"]
@@ -46,7 +46,7 @@ def main() -> None:
     cand_df.to_csv(OUT / "final_20candidates_ranking.csv", index=False, encoding="utf-8-sig")
 
     # merged 10026 metadata + ranking
-    lib = pd.read_csv(r"E:\total\Supplementary_Data_1_candidate_library_metadata_10026.csv", dtype=str)
+    lib = pd.read_csv(os.path.join(os.environ.get("MDS_REPO_ROOT", str(Path(__file__).resolve().parents[2])), "candidate_library", "candidate_library_metadata_10026.csv"), dtype=str)
     merged = lib.merge(
         rank[["crc", "y_pred", "new_y_pred", "new_rank"]],
         left_on=lib["sequence_crc64"].str.upper().str.strip(),

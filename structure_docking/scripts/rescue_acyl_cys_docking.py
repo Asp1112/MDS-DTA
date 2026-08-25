@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(r"E:\total\docking_comparison")
+ROOT = Path(os.environ.get("DOCKING_ROOT", str(Path(__file__).resolve().parents[2])))
 STRUCTURES = ROOT / "09_corrected_screen" / "structure_analysis" / "corrected_structure_analysis.json"
 DOCKING = ROOT / "09_corrected_screen" / "docking"
 ACCOA = Path(r"E:\autodockvina\acetyl_CoA.pdbqt")

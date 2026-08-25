@@ -102,13 +102,13 @@ def run_one(job):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--structure-manifest", default=r"E:\total\docking_comparison\04_alphafold_structures\structure_manifest.json")
-    parser.add_argument("--output-dir", default=r"E:\total\docking_comparison\05_vina")
+    parser.add_argument("--structure-manifest", default=r"structure_docking/04_alphafold_structures\structure_manifest.json")
+    parser.add_argument("--output-dir", default=r"structure_docking/05_vina")
     parser.add_argument("--mgl-python", default=r"E:\MGLTools\python.exe")
     parser.add_argument("--prepare-receptor", default=r"E:\MGLTools\Lib\site-packages\AutoDockTools\Utilities24\prepare_receptor4.py")
-    parser.add_argument("--vina", default=r"E:\autodock\vina.exe")
-    parser.add_argument("--pap-ligand", default=r"E:\total\4_Aminophenol.pdbqt")
-    parser.add_argument("--accoa-ligand", default=r"E:\total\acetyl_CoA.pdbqt")
+    parser.add_argument("--vina", default=r"vina")
+    parser.add_argument("--pap-ligand", default=r"ligands/4_Aminophenol.pdbqt")
+    parser.add_argument("--accoa-ligand", default=r"ligands/acetyl_CoA.pdbqt")
     parser.add_argument("--parallel-jobs", type=int, default=2)
     parser.add_argument("--cpu-per-job", type=int, default=5)
     parser.add_argument("--exhaustiveness", type=int, default=8)
