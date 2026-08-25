@@ -19,37 +19,21 @@ from utils import TestbedDataset, ci, mae, mse, pearson, r2, rm2, rmse, spearman
 
 
 SEED = 42
-
 DEVICE = "cuda:0"
-
 EPOCHS = 1000
-
 BATCH_SIZE = 256
-
 EVAL_BATCH_SIZE = 256
-
 LEARNING_RATE = 1e-4
-
 WEIGHT_DECAY = 1e-5
-
 GRAD_CLIP_NORM = 5.0
-
 SCHEDULER = "plateau"
-
 WARMUP_EPOCHS = 5
-
 COSINE_TMAX = 300
-
 ETA_MIN = 1e-5
-
 SCHEDULER_PATIENCE = 60
-
 EARLY_STOPPING_PATIENCE = 100
-
 TOP_K = 3
-
 NUM_WORKERS = 4
-
 
 DEFAULT_MODEL_PARAMS = {
     "dropout": 0.1,
