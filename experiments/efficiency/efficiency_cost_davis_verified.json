@@ -1,0 +1,25 @@
+{
+  "trainable_parameters": 5573125,
+  "flops_per_pair_profiler_estimate": 2113119433.865625,
+  "flops_per_pair_batch_sd": 103926.85834181652,
+  "macs_per_pair_estimate": 1056559716.9328125,
+  "model_file_size_mb": 21.298994064331055,
+  "training_time_per_epoch_s_mean": 9.282226720647774,
+  "training_time_per_epoch_s_std": 0.2976607602783881,
+  "epochs_completed": 494,
+  "total_training_time_h": 1.2737277777777778,
+  "inference_latency_ms_per_pair_median": 0.11982399970293045,
+  "inference_latency_ms_per_pair_iqr": 0.00014406628906726837,
+  "inference_throughput_pairs_s": 8345.573528501935,
+  "peak_gpu_memory_gb_training_step_batch256": 5.588654041290283,
+  "gpu_model": "NVIDIA GeForce RTX 4090",
+  "cpu_model": "Intel(R) Xeon(R) Platinum 8358P CPU @ 2.60GHz",
+  "batch_size": 256,
+  "software_environment": {
+    "python": "3.9.25",
+    "pytorch": "2.5.1",
+    "cuda": "12.4",
+    "cudnn": 90100
+  },
+  "measurement_notes": "Existing completed Davis fold 0 history; 5 test batches x 20 latency repeats; FLOPs averaged across 5 batches for supported profiler operators; training memory is one AMP forward/backward step at batch 256 without optimizer update."
+}

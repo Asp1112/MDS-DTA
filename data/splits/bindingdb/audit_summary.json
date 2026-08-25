@@ -1,0 +1,20 @@
+{
+  "dataset": "bindingdb",
+  "n_samples": 53824,
+  "fold_sizes": [
+    8971,
+    8971,
+    8971,
+    8971,
+    8970,
+    8970
+  ],
+  "provenance": "deterministic_seeded_balanced_pair_folds_from_processed_train_plus_test",
+  "audit": {
+    "complete_coverage": true,
+    "pairwise_disjoint_folds": true,
+    "each_sample_test_once": true,
+    "each_sample_validation_once": true,
+    "train_validation_test_disjoint_per_run": true
+  }
+}

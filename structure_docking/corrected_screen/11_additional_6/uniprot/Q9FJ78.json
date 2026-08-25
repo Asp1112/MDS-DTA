@@ -1,0 +1,830 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q9FJ78",
+  "uniProtkbId": "WAXS7_ARATH",
+  "entryAudit": {
+    "firstPublicDate": "2009-07-28",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "2001-03-01",
+    "entryVersion": 113,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 2.0,
+  "organism": {
+    "scientificName": "Arabidopsis thaliana",
+    "commonName": "Mouse-ear cress",
+    "taxonId": 3702,
+    "lineage": [
+      "Eukaryota",
+      "Viridiplantae",
+      "Streptophyta",
+      "Embryophyta",
+      "Tracheophyta",
+      "Spermatophyta",
+      "Magnoliopsida",
+      "eudicotyledons",
+      "Gunneridae",
+      "Pentapetalae",
+      "rosids",
+      "malvids",
+      "Brassicales",
+      "Brassicaceae",
+      "Camelineae",
+      "Arabidopsis"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Probable long-chain-alcohol O-fatty-acyltransferase 7"
+      },
+      "ecNumbers": [
+        {
+          "value": "2.3.1.75"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "value": "Wax synthase 7"
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "AT7"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "At5g55320"
+        }
+      ],
+      "orfNames": [
+        {
+          "value": "MTE17.3"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250"
+            }
+          ],
+          "value": "Catalyzes the final step in the synthesis of long-chain linear esters (waxes)"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "a long chain fatty alcohol + a fatty acyl-CoA = a long-chain alcohol wax ester + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:38443"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:17135"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:77636"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:235323"
+          }
+        ],
+        "ecNumber": "2.3.1.75"
+      }
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000305"
+              }
+            ],
+            "value": "Membrane",
+            "id": "SL-0162"
+          },
+          "topology": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000305"
+              }
+            ],
+            "value": "Multi-pass membrane protein",
+            "id": "SL-9909"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the wax synthase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 339,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Probable long-chain-alcohol O-fatty-acyltransferase 7",
+      "featureId": "PRO_0000380683"
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 7,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 27,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 39,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 59,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 113,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 133,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 143,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 163,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 226,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 246,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 254,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 274,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 287,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 307,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0444",
+      "category": "Biological process",
+      "name": "Lipid biosynthesis"
+    },
+    {
+      "id": "KW-0443",
+      "category": "Biological process",
+      "name": "Lipid metabolism"
+    },
+    {
+      "id": "KW-0472",
+      "category": "Cellular component",
+      "name": "Membrane"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    },
+    {
+      "id": "KW-0812",
+      "category": "Domain",
+      "name": "Transmembrane"
+    },
+    {
+      "id": "KW-1133",
+      "category": "Domain",
+      "name": "Transmembrane helix"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "9872454",
+        "citationType": "journal article",
+        "authors": [
+          "Nakamura Y.",
+          "Sato S.",
+          "Asamizu E.",
+          "Kaneko T.",
+          "Kotani H.",
+          "Miyajima N.",
+          "Tabata S."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9872454"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1093/dnares/5.5.297"
+          }
+        ],
+        "title": "Structural analysis of Arabidopsis thaliana chromosome 5. VII. Sequence features of the regions of 1,013,767 bp covered by sixteen physically assigned P1 and TAC clones.",
+        "publicationDate": "1998",
+        "journal": "DNA Res.",
+        "firstPage": "297",
+        "lastPage": "308",
+        "volume": "5"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "cv. Columbia",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "27862469",
+        "citationType": "journal article",
+        "authors": [
+          "Cheng C.Y.",
+          "Krishnakumar V.",
+          "Chan A.P.",
+          "Thibaud-Nissen F.",
+          "Schobel S.",
+          "Town C.D."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "27862469"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1111/tpj.13415"
+          }
+        ],
+        "title": "Araport11: a complete reannotation of the Arabidopsis thaliana reference genome.",
+        "publicationDate": "2017",
+        "journal": "Plant J.",
+        "firstPage": "789",
+        "lastPage": "804",
+        "volume": "89"
+      },
+      "referencePositions": [
+        "GENOME REANNOTATION"
+      ],
+      "referenceComments": [
+        {
+          "value": "cv. Columbia",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 3,
+      "citation": {
+        "id": "10712527",
+        "citationType": "journal article",
+        "authors": [
+          "Lardizabal K.D.",
+          "Metz J.G.",
+          "Sakamoto T.",
+          "Hutton W.C.",
+          "Pollard M.R.",
+          "Lassner M.W."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "10712527"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1104/pp.122.3.645"
+          }
+        ],
+        "title": "Purification of a jojoba embryo wax synthase, cloning of its cDNA, and production of high levels of wax in seeds of transgenic arabidopsis.",
+        "publicationDate": "2000",
+        "journal": "Plant Physiol.",
+        "firstPage": "645",
+        "lastPage": "655",
+        "volume": "122"
+      },
+      "referencePositions": [
+        "IDENTIFICATION"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "AB015479",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "BAB08549.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "CP002688",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AED96616.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_200343.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_124914.2"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q9FJ78",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "3702.Q9FJ78",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "iPTMnet",
+      "id": "Q9FJ78",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "3702-Q9FJ78",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "835625",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "ath:AT5G55320",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Araport",
+      "id": "AT5G55320",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "TAIR",
+      "id": "AT5G55320",
+      "properties": [
+        {
+          "key": "GeneName",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "ENOG502SGJ4",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Eukaryota"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_045902_0_0_1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "InParanoid",
+      "id": "Q9FJ78",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OMA",
+      "id": "QANEPYL",
+      "properties": [
+        {
+          "key": "Fingerprint",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PhylomeDB",
+      "id": "Q9FJ78",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioCyc",
+      "id": "ARA:AT5G55320-MONOMER",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BRENDA",
+      "id": "2.3.1.75",
+      "properties": [
+        {
+          "key": "OrganismId",
+          "value": "399"
+        }
+      ]
+    },
+    {
+      "database": "PRO",
+      "id": "PR:Q9FJ78",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000006548",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome 5"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0016020",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0047196",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:long-chain-alcohol O-fatty-acyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-EC"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0006629",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:lipid metabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-KW"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR044851",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Wax_synthase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR032805",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Wax_synthase_dom"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR017088",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Wax_synthase_Magnoliopsida"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR31595",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LONG-CHAIN-ALCOHOL O-FATTY-ACYLTRANSFERASE 3-RELATED"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR31595:SF31",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LONG-CHAIN-ALCOHOL O-FATTY-ACYLTRANSFERASE 7-RELATED"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF13813",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "MBOAT_2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PIRSF",
+      "id": "PIRSF037006",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Wax_synthase"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MEEEIKSLINVGFLTIISVSYCYCLPPRIKSGVLRLLSIFPVCVLLVVLPLFFSFSIFTSTTAFFLSAIANSRLILFSFDQGPLFPLPSNLFRFTCFTCFPIQRQQNPKSQDHLSTYVFPVKIAIFVVLLYVHNDIQNLPRTFLLCLHPLYVYLLLEILLTLLRILMTIILGCDLEPHFHEPYLATSLQDFWGRRWNLIVSASLRAIVYTPVRRVCQRVMSSDYAMLIGVFATFVTSGVAHEVVFFYITRAMPTGEVALFFLLHGVCTVAEVAAKRTAFVRRWPVRPVVSWMFTIAFVNVTAGWLFFPQLIRNNLGERCSNEISLLIDFFRSKLFYFPQ",
+    "length": 339,
+    "molWeight": 38978,
+    "crc64": "DFCBDA2FF3A07D9E",
+    "md5": "49B5994DE59BFE4310C8017541A97D6C"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Transmembrane": 7
+    },
+    "uniParcId": "UPI0000048C71"
+  }
+}

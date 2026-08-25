@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-124300-0375-63019354-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-124300-0375-63019354-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="213"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:43:00+01:00" end="2026-08-06T12:49:09+01:00" search="P0Y0M0DT0H0M369.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_P22615" ac="UniRef90_P22615" length="213" description="Chloramphenicol acetyltransferase 2 n=82 Tax=Bacteria TaxID=2 RepID=CAT2_ECOLX">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1142</score>
+      <bits>444.5</bits>
+      <expectation>4.2e-158</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</querySeq>
+      <pattern>MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</pattern>
+      <matchSeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_UPI001A29294D" ac="UniRef90_UPI001A29294D" length="213" description="type A chloramphenicol O-acetyltransferase n=1 Tax=Morganella morganii TaxID=582 RepID=UPI001A29294D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1036</score>
+      <bits>403.7</bits>
+      <expectation>6.2e-142</expectation>
+      <identity>89.7</identity>
+      <positives>93.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</querySeq>
+      <pattern>MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDIT LRTALAET YKFYP+MIYLIS  VNQFPEFRMA+KDN LIYWD++DPVFTVFHK+TETFSAL CRY PD+SEFMAGYNAV AEYQHDT LFPQG LPENHLNISSLPWVSFDGFNLNITG DDYFAPVFTM +FQQEGD VLLPVSVQVHHAVCDGFHAARFINTLQ+MC+NILK</pattern>
+      <matchSeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITVLRTALAETDYKFYPVMIYLISGVVNQFPEFRMAMKDNALIYWDRTDPVFTVFHKDTETFSALFCRYCPDISEFMAGYNAVMAEYQHDTALFPQGELPENHLNISSLPWVSFDGFNLNITGKDDYFAPVFTMGQFQQEGDCVLLPVSVQVHHAVCDGFHAARFINTLQMMCNNILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_UPI0007CCA507" ac="UniRef90_UPI0007CCA507" length="169" description="CatA-like O-acetyltransferase n=1 Tax=Klebsiella pneumoniae TaxID=573 RepID=UPI0007CCA507">
+    <alignments total="1">
+     <alignment number="1">
+      <score>840</score>
+      <bits>328.2</bits>
+      <expectation>9.8e-113</expectation>
+      <identity>77.9</identity>
+      <positives>79.3</positives>
+      <gaps>21</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</querySeq>
+      <pattern>MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALA+TGYKFYPLMIYLISRAVNQFPEFRMA+KDNELIYW+QSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDG                                            HAARFINTLQLMCDNILK</pattern>
+      <matchSeq start="1" end="169">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAKTGYKFYPLMIYLISRAVNQFPEFRMAMKDNELIYWEQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDG--------------------------------------------HAARFINTLQLMCDNILK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A1B8H831" ac="UniRef90_A0A1B8H831" length="213" description="Chloramphenicol acetyltransferase n=1 Tax=Morganella psychrotolerans TaxID=368603 RepID=A0A1B8H831_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>826</score>
+      <bits>322.8</bits>
+      <expectation>6.2e-110</expectation>
+      <identity>69.0</identity>
+      <positives>82.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</querySeq>
+      <pattern>MN+T++DLNTW+R+EHF  YR +++CGFSLT KLDITALR +LAET Y FYP+MIYLI+R VNQ P FR+A+K+NELI W+  DPVFTVFHK+TETFSAL  RY  D++ FM+ Y  V  E++ +TR+FPQGNLPENHLNISSLPWV FDGFNLNI    DYF+P FTMAK  QEGDR+LLP+SVQVHHA CDGFH A+FIN LQ  CDN +K</pattern>
+      <matchSeq start="1" end="213">MNYTKVDLNTWDRKEHFEFYRHRVRCGFSLTKKLDITALRASLAETPYPFYPVMIYLITRVVNQLPAFRLAIKENELICWESVDPVFTVFHKKTETFSALWSRYSADIACFMSDYTRVMTEHKDNTRMFPQGNLPENHLNISSLPWVEFDGFNLNIADFTDYFSPTFTMAKLYQEGDRILLPLSVQVHHAACDGFHVAKFINELQYACDNFMK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_P00484" ac="UniRef90_P00484" length="213" description="Chloramphenicol acetyltransferase 3 n=19 Tax=Gammaproteobacteria TaxID=1236 RepID=CAT3_ECOLX">
+    <alignments total="1">
+     <alignment number="1">
+      <score>789</score>
+      <bits>308.5</bits>
+      <expectation>2.6e-104</expectation>
+      <identity>65.7</identity>
+      <positives>80.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</querySeq>
+      <pattern>MN+T+ D+  W RREHF  YR ++ CGFSLT+K+DIT L+ +L ++ YKFYP+MIYLI++AVNQF E RMA+KD+ELI WD  DP FTVFH+ETETFSALSC Y  D+ +FM  Y +V   Y+ DT+LFPQG  PENHLNIS+LPWV+FD FNLN+    DYFAP+ TMAK+QQEGDR+LLP+SVQVHHAVCDGFH ARFIN LQ +C++ LK</pattern>
+      <matchSeq start="1" end="213">MNYTKFDVKNWVRREHFEFYRHRLPCGFSLTSKIDITTLKKSLDDSAYKFYPVMIYLIAQAVNQFDELRMAIKDDELIVWDSVDPQFTVFHQETETFSALSCPYSSDIDQFMVNYLSVMERYKSDTKLFPQGVTPENHLNISALPWVNFDSFNLNVANFTDYFAPIITMAKYQQEGDRLLLPLSVQVHHAVCDGFHVARFINRLQELCNSKLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_A0A2D0KQB4" ac="UniRef90_A0A2D0KQB4" length="213" description="Chloramphenicol acetyltransferase n=8 Tax=Xenorhabdus TaxID=626 RepID=A0A2D0KQB4_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>770</score>
+      <bits>301.2</bits>
+      <expectation>2.1e-101</expectation>
+      <identity>63.7</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNIL</querySeq>
+      <pattern>MN+T+IDLNTWNR EHFA YR  +KCGFSLTTK+DITAL  +LA+T YKFYP MIYL+++ VNQ+PEFR+A+KD ELI WD  DP++TVFHK+TETFS L   + PDL +FM  Y A    Y  +TRL+PQ   P+NH+NISS+PW+ FDGFNLNI+   DYF+P+FTM K+QQEG +VLLP+SVQVHHA CDG+H A FI  LQ +C++ L</pattern>
+      <matchSeq start="1" end="212">MNYTKIDLNTWNRGEHFAYYRHSVKCGFSLTTKIDITALCLSLAKTHYKFYPAMIYLLTKVVNQYPEFRLAIKDEELIIWDSIDPIYTVFHKKTETFSVLCTTFSPDLPQFMINYCADIERYGDNTRLYPQTEKPKNHINISSIPWIGFDGFNLNISDITDYFSPIFTMGKYQQEGGKVLLPLSVQVHHAACDGYHVALFIKKLQALCNDAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_A0A1Y2SFG4" ac="UniRef90_A0A1Y2SFG4" length="213" description="Chloramphenicol acetyltransferase n=1 Tax=Xenorhabdus beddingii TaxID=40578 RepID=A0A1Y2SFG4_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>761</score>
+      <bits>297.7</bits>
+      <expectation>4.8e-100</expectation>
+      <identity>60.8</identity>
+      <positives>78.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNIL</querySeq>
+      <pattern>MN+T++DL  WNRREHF  YR ++KCGFSLTTK+DIT L ++L++T YKFYP MIYLI++ VNQ PEFR+ +K+ ELI WD  +P+FT+FHKETETFS L   + PDLS+FMA Y+A    Y  DTRL+PQ  +P+NH+NISS+PW+ FDGFNLN+    DY  P+FTM K+QQEG++VLLP S+QVHHA CDG+H A +IN LQ +C+  L</pattern>
+      <matchSeq start="1" end="212">MNYTKVDLEKWNRREHFTHYRHRVKCGFSLTTKIDITTLLSSLSDTHYKFYPAMIYLITKVVNQHPEFRLTIKEEELIVWDSVNPIFTIFHKETETFSVLWTPFSPDLSQFMANYHADIERYGSDTRLYPQAEIPKNHINISSIPWIGFDGFNLNVVDITDYLTPIFTMGKYQQEGEKVLLPFSIQVHHAACDGYHVALYINELQTLCNGSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0A2X4V7V6" ac="UniRef90_A0A2X4V7V6" length="217" description="Chloramphenicol acetyltransferase 3 n=1 Tax=Leminorella richardii TaxID=158841 RepID=A0A2X4V7V6_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>728</score>
+      <bits>285.0</bits>
+      <expectation>5.8e-95</expectation>
+      <identity>59.4</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNIL</querySeq>
+      <pattern>MN+ + +++TWNRREHF+ YRQ++ CGFSLTTK+DITAL + L+ET YKFYP +IYL+++  NQ+PEFR+A+KD ELI WD  DP+FT+FH+ETETFSA+   Y  D++ FMA Y      Y+ D  LFPQ   P N LNISSLPW SFD FNLN+    DYF+P+ TM K+Q E DR+LLP+S+Q HHA CDGFH ARF+NTLQ +C+  L</pattern>
+      <matchSeq start="1" end="212">MNYKKYNVDTWNRREHFSFYRQRVPCGFSLTTKIDITALLSFLSETNYKFYPTIIYLLTKVANQYPEFRLAIKDEELIIWDSLDPLFTIFHQETETFSAVWTPYSSDIAYFMADYIVNVERYKSDLALFPQAEQPGNFLNISSLPWTSFDSFNLNVANFTDYFSPIITMGKYQSESDRILLPLSIQTHHATCDGFHVARFLNTLQTLCNQPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_A0A068QV88" ac="UniRef90_A0A068QV88" length="213" description="Chloramphenicol acetyltransferase n=3 Tax=Xenorhabdus doucetiae TaxID=351671 RepID=A0A068QV88_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>710</score>
+      <bits>278.1</bits>
+      <expectation>2.8e-92</expectation>
+      <identity>56.3</identity>
+      <positives>75.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</querySeq>
+      <pattern>MN+T+ D+  WNR+EHFA YR  ++CGFSLTTK+DIT L ++L E  YKFYP +IY++S+AVN + EF++A+KD++LI WD+ DP FT+FH+ETETFS+L   Y PD   F+A Y      Y+ D   FPQ N P NH +ISSLPWVSFDGFNLN+    DYFAP+FTM K+ ++ D+++LP+++QVHHA CDGFH AR +NT+Q MC+  L+</pattern>
+      <matchSeq start="1" end="213">MNYTKFDIENWNRKEHFAYYRHSVQCGFSLTTKIDITRLISSLTEKEYKFYPAIIYILSKAVNLYSEFKLAIKDDDLIIWDKVDPAFTIFHQETETFSSLWAEYSPDFHCFLANYATNFERYKADVSFFPQPNQPANHFHISSLPWVSFDGFNLNVANFTDYFAPIFTMGKYYKDSDQIILPLAIQVHHAACDGFHVARLMNTIQKMCNERLE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0ABZ3EQ78" ac="UniRef90_A0ABZ3EQ78" length="213" description="Chloramphenicol acetyltransferase n=12 Tax=Proteus TaxID=583 RepID=A0ABZ3EQ78_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>680</score>
+      <bits>266.5</bits>
+      <expectation>1e-87</expectation>
+      <identity>55.2</identity>
+      <positives>70.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNIL</querySeq>
+      <pattern>MN+ ++DL  WNR+EHF  YR  ++CGFSLTTK+DIT L+T L +  +KFYP+MIYLI++ VN +PE RMA+KDNEL+ WD  +P +T+FH +TETFS L   YF D   F  GYN    +Y+ +  L  + N PENH  IS +PWVSFDGFNLN+    DYF P+FTM K+  +  + LLP+S+QVHHA CDGFH AR IN LQ +CD  L</pattern>
+      <matchSeq start="1" end="212">MNYKKVDLEQWNRKEHFLHYRHNLQCGFSLTTKIDITVLKTVLDKNNFKFYPIMIYLIAKTVNSYPESRMAIKDNELVIWDYINPAYTIFHPKTETFSELWSEYFEDWHSFSQGYNQDYQKYKDNLSLSAKSNFPENHFCISMIPWVSFDGFNLNVANVKDYFPPIFTMGKYTHQSGKFLLPISIQVHHATCDGFHIARMINKLQELCDEFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0ABX6JKV4" ac="UniRef90_A0ABX6JKV4" length="213" description="Chloramphenicol acetyltransferase n=7 Tax=Proteus TaxID=583 RepID=A0ABX6JKV4_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>678</score>
+      <bits>265.8</bits>
+      <expectation>2e-87</expectation>
+      <identity>56.0</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCD</querySeq>
+      <pattern>MN+ +I L  WNR+EHF  YR  ++C FSLTTK+DITAL+T LA+   KFYP+MIYLI++ VN +PE RMA+KDN+L+ WD  +P +T+FH ETETFS L   YF +   F+ GYN    +Y+ +  L  + N PENH  IS +PWVSFDGFNLN+    DYF P+FTM K+ Q+ D+ LLP+S+QVHHA CDGFH AR +N LQ +CD</pattern>
+      <matchSeq start="1" end="209">MNYQKIKLEQWNRKEHFLHYRHDLQCSFSLTTKIDITALKTVLAKNNLKFYPVMIYLIAKTVNSYPESRMAIKDNDLVIWDYINPAYTIFHPETETFSELWSEYFENWCPFLEGYNQDYQKYKDNLSLSAKANFPENHFCISMIPWVSFDGFNLNVANIKDYFPPIFTMGKYTQQNDKFLLPISIQVHHATCDGFHIARMVNKLQELCD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0A081PDC0" ac="UniRef90_A0A081PDC0" length="216" description="Chloramphenicol acetyltransferase n=2 Tax=Pedobacter antarcticus TaxID=34086 RepID=A0A081PDC0_9SPHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>673</score>
+      <bits>263.8</bits>
+      <expectation>1.3e-86</expectation>
+      <identity>56.0</identity>
+      <positives>75.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="211">FTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>+  I++  W R+EHF  YR  +KCGFSLT KLDI+ +   + E GYKFYP+MIYL+S+A N+ PEF+MA+K+ ELI WD+ DPV+TV H ETETFSALSCRY  +L++F+  Y+    ++ +D R F +   PENH NIS++PW++FD FNLNI    DYFAP FTM K+Q++G+ +L+P+++QVHHAVCDGFH A+FI TLQ  C NI</pattern>
+      <matchSeq start="5" end="212">YQAINIEDWKRKEHFNAYRNAVKCGFSLTFKLDISRVIPFIKEQGYKFYPVMIYLLSKAANKHPEFKMAMKEGELIVWDRVDPVYTVLHPETETFSALSCRYTEELTKFVKAYDQTAEQHHNDYRFFSE-KAPENHFNISAIPWINFDSFNLNIADFTDYFAPSFTMGKYQKDGNNILMPMAIQVHHAVCDGFHVAKFIETLQEYCLNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_Q7N4A3" ac="UniRef90_Q7N4A3" length="212" description="Chloramphenicol acetyltransferase n=16 Tax=Photorhabdus TaxID=29487 RepID=Q7N4A3_PHOLL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>671</score>
+      <bits>263.1</bits>
+      <expectation>2.3e-86</expectation>
+      <identity>55.7</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNIL</querySeq>
+      <pattern>MN++++D++ W+R+EHF  YR  ++CGFSLT K+DIT L ++L E  YKFYP MIYLIS  VN + EFRMA+KD ELI WD  +P +T+FHKETETFSA+   +  DL+EFM  Y+A    Y+ D   F +  LPENH +ISS+PWVSFDGFNLN+    DYF P+FTM KF Q G++  LP+++QVHHA CDGFH  R IN LQ +C++ +</pattern>
+      <matchSeq start="1" end="212">MNYSKVDIDLWDRKEHFLHYRNVVQCGFSLTAKIDITHLLSSLVEKQYKFYPTMIYLISTVVNSYSEFRMAIKDEELIVWDGVNPAYTIFHKETETFSAIWTEFNSDLAEFMKNYSADYETYKDDLCFFSKPELPENHFHISSVPWVSFDGFNLNMASVMDYFPPIFTMGKFYQNGNQTQLPLAIQVHHATCDGFHVGRVINNLQELCNDFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A2D0LDB5" ac="UniRef90_A0A2D0LDB5" length="212" description="Chloramphenicol acetyltransferase n=1 Tax=Xenorhabdus kozodoii TaxID=351676 RepID=A0A2D0LDB5_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>669</score>
+      <bits>262.3</bits>
+      <expectation>4.6e-86</expectation>
+      <identity>56.7</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDN</querySeq>
+      <pattern>M++++ID+  W+R+ HF  YR   +CGFSLTTK+DIT L + L E  YKFYP MIYLIS+ VN +PEFRMA+K+ ELI WD  +P +T+FHKE ETFS++   +  +L+EFM  Y A    Y+ D   F +  LPENH +ISSLPWV+FDGFNLN+    DYF P+FTM KF + G RV LP+++QVHHAVCDGFH  R IN LQ +CDN</pattern>
+      <matchSeq start="1" end="210">MSYSKIDIEHWDRKTHFLYYRNAAQCGFSLTTKIDITHLLSLLVEKRYKFYPTMIYLISKVVNSYPEFRMAIKNEELIVWDSVNPAYTIFHKEAETFSSIWTEFNSNLTEFMESYIADYEIYKDDICFFSKPELPENHFHISSLPWVNFDGFNLNVANFTDYFPPIFTMGKFSKNGSRVQLPLAIQVHHAVCDGFHVGRVINKLQELCDN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_A0A6G6SKG4" ac="UniRef90_A0A6G6SKG4" length="213" description="Chloramphenicol acetyltransferase n=4 Tax=Proteus vulgaris TaxID=585 RepID=A0A6G6SKG4_PROVU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>667</score>
+      <bits>261.5</bits>
+      <expectation>9.6e-86</expectation>
+      <identity>54.3</identity>
+      <positives>71.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDN</querySeq>
+      <pattern>MN+ +IDL  W R+EHF  YR  ++CGFSLTTK+DITAL+  L +   KFYP M+YLI++ VN +PE RMA+K++EL+ WD ++P +T+FH ETETFS L   Y  D   F+ GYN    +Y+++  L  + N PENH  IS +PW+SFDGFNLNI    DY+ P+FTM KF Q+ D+ LLP+S+QVHHA CDGFH AR +N LQ +CD+</pattern>
+      <matchSeq start="1" end="210">MNYKKIDLEQWYRKEHFLHYRHNLQCGFSLTTKIDITALKAILTKNNLKFYPAMVYLIAKTVNYYPESRMAIKNDELVIWDYANPAYTIFHPETETFSELWSEYVEDFDTFLQGYNQDFQQYKNNLNLSAKPNFPENHFCISMIPWISFDGFNLNIANVKDYYPPIFTMGKFIQQNDKFLLPISIQVHHATCDGFHIARMVNKLQELCDD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_UPI0013E19878" ac="UniRef90_UPI0013E19878" length="213" description="type A chloramphenicol O-acetyltransferase n=6 Tax=Proteus TaxID=583 RepID=UPI0013E19878">
+    <alignments total="1">
+     <alignment number="1">
+      <score>666</score>
+      <bits>261.2</bits>
+      <expectation>1.4e-85</expectation>
+      <identity>55.5</identity>
+      <positives>71.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCD</querySeq>
+      <pattern>MN+ +I++  WNR+EHF  YR  ++CGFSLTTK+DIT L+T LA+   K YP MIYLI++ VN + E RMA+KD+EL+ WD  +P +T+FH ETETFS L   Y  D   F+ GYN    +Y+ +  L  + NLPENH  IS +PWVSFDGFNLN+    DYF P+FTM K+ Q+ D++LLP+S+QVHHA CDGFH AR IN LQ +CD</pattern>
+      <matchSeq start="1" end="209">MNYEKINVEQWNRKEHFLHYRHNLQCGFSLTTKIDITVLKTVLAKNNLKLYPAMIYLIAKTVNSYAESRMAIKDDELVIWDYINPAYTIFHPETETFSELWSEYVVDWGSFLEGYNQDYQKYKDNLSLSAKDNLPENHFCISMIPWVSFDGFNLNVANVKDYFPPIFTMGKYTQQSDKLLLPISIQVHHATCDGFHMARMINKLQELCD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_UPI001865F04D" ac="UniRef90_UPI001865F04D" length="213" description="type A chloramphenicol O-acetyltransferase n=1 Tax=Gammaproteobacteria TaxID=1236 RepID=UPI001865F04D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>1.9e-85</expectation>
+      <identity>55.0</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCD</querySeq>
+      <pattern>M + +IDL  WNR+EHF  YR  ++CGFSLTTK+DIT L+  LA+   +FYP MIYLI++ VN +PE RMA+KD+EL+ W+  +P +T+FH ETETFS L   Y  D   F+ GYN    +Y  +  L  + N PENH +IS +PWV FDGFNLNI    DYF P+FTM K+ Q+GD  LLP+S+QVHHA CDGFH AR +N LQ +CD</pattern>
+      <matchSeq start="1" end="209">MKYKKIDLEQWNRKEHFLHYRHNLQCGFSLTTKIDITVLKAVLAKNNLRFYPAMIYLIAKTVNSYPESRMAIKDDELVIWNYINPAYTIFHPETETFSELWSEYVEDWHSFLQGYNRDYQKYNDNLSLSAKPNFPENHFSISMIPWVDFDGFNLNIANVKDYFPPIFTMGKYTQQGDNFLLPISIQVHHATCDGFHMARMVNKLQELCD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0ABX7AJ18" ac="UniRef90_A0ABX7AJ18" length="213" description="Chloramphenicol acetyltransferase n=3 Tax=Providencia TaxID=586 RepID=A0ABX7AJ18_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>1.9e-85</expectation>
+      <identity>55.7</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDN</querySeq>
+      <pattern>M++T++++  WNR++HF  YRQ + CGFSLTT+LDITAL+T L   G+K YP MI++I++ VNQ+PE RMA+KDNELI WDQ +P +TVFH ETETFS L   Y  D S F+A Y      Y+ +  L  + NLPENH  IS +PWVSFDGFNLN+    DYF P+FT+ K+ Q  ++ LLP+S+QVHHA  DGFH AR +N LQ+ CDN</pattern>
+      <matchSeq start="1" end="210">MHYTKVNIEQWNRKQHFLFYRQTVPCGFSLTTQLDITALQTELRNKGHKLYPAMIHIIAQVVNQYPESRMAIKDNELILWDQVNPAYTVFHPETETFSQLWTEYDSDWSAFLANYQYDQRLYKDNIDLMAKPNLPENHFCISMIPWVSFDGFNLNVANFTDYFPPIFTLGKYYQSSEKCLLPLSIQVHHATIDGFHMARIVNQLQIRCDN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0ABS0W0W2" ac="UniRef90_A0ABS0W0W2" length="213" description="Chloramphenicol acetyltransferase n=4 Tax=Proteus TaxID=583 RepID=A0ABS0W0W2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>1.9e-85</expectation>
+      <identity>55.2</identity>
+      <positives>70.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDN</querySeq>
+      <pattern>MN+ ++DL  WNR+EHF  YR  ++CGFSLTTK+DIT L+  L +   K YP+MIYLI++ VN +PE RMA+KDNEL+ WD  +P +T+FH +TETFS L   YF D   F  GYN    +Y+ +  L  + N PENH  IS +PWVSFDGFNLNI    DYF P+FTM K+  +  + LLP+S+QVHHA CDGFH AR IN LQ +CDN</pattern>
+      <matchSeq start="1" end="210">MNYKKVDLEQWNRKEHFLHYRHNVQCGFSLTTKIDITVLKIVLDKNNLKLYPVMIYLIAKTVNSYPESRMAIKDNELVIWDYINPAYTIFHPKTETFSELWSEYFEDWHSFSQGYNQDYQKYKDNLSLSAKANFPENHFCISMIPWVSFDGFNLNIANVKDYFPPIFTMGKYTLQSGKFLLPISIQVHHATCDGFHIARMINKLQELCDN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_UPI00200AE18A" ac="UniRef90_UPI00200AE18A" length="213" description="type A chloramphenicol O-acetyltransferase n=2 Tax=Enterobacterales TaxID=91347 RepID=UPI00200AE18A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>664</score>
+      <bits>260.4</bits>
+      <expectation>2.8e-85</expectation>
+      <identity>54.1</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCD</querySeq>
+      <pattern>MN+ +IDL  WNR+EHF  YR  ++CGFSLTTK+DITAL+  L++   K YP MIYLI++ VN +PE RMA+K++EL+ WD+ +P +T+FH+ETETFS L  +YF D   F+ GYN     Y+ +  L  + + PENH  IS +PW+SFDGFNLN+    DYF P+FTM K+  + D+ LLP+S+QVHHA CDGFH AR IN LQ++C+</pattern>
+      <matchSeq start="1" end="209">MNYKKIDLEQWNRKEHFLHYRHNLQCGFSLTTKIDITALKVVLSKNNLKLYPAMIYLIAKVVNSYPESRMAIKNDELVIWDKINPAYTIFHQETETFSELWSQYFEDWHSFLQGYNQDYQNYKDNLSLSAKPDFPENHFCISMIPWISFDGFNLNVANVKDYFPPIFTMGKYSLQSDKFLLPISIQVHHATCDGFHMARMINKLQVLCN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_UPI000B416E1D" ac="UniRef90_UPI000B416E1D" length="213" description="type A chloramphenicol O-acetyltransferase n=2 Tax=Proteus TaxID=583 RepID=UPI000B416E1D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>661</score>
+      <bits>259.2</bits>
+      <expectation>7.9e-85</expectation>
+      <identity>54.5</identity>
+      <positives>71.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCD</querySeq>
+      <pattern>MN+ +IDL  WNR+EHF  YR  ++CGFSLTTK+DIT L+T L +   K YP++IYLI++ VN +P  RMA+K+++L+ WD  +P +T+FH ETETFS L   YF D   F+ GYN    +Y+ +  L  + N PENH  IS +PW+SFDGFNLNI    DYF P+FTM K+ Q+ ++VLLP+SVQVHHA CDGFH AR +N LQ +CD</pattern>
+      <matchSeq start="1" end="209">MNYKKIDLEQWNRKEHFLHYRHNLQCGFSLTTKIDITVLKTVLTKHNLKLYPVLIYLIAKTVNYYPGSRMAIKNDDLVIWDYINPAYTIFHPETETFSELWSEYFEDFCSFLEGYNQDYQQYKDNLNLSAKPNFPENHFCISMIPWISFDGFNLNIANVRDYFPPIFTMGKYTQQNNKVLLPLSVQVHHATCDGFHVARMVNKLQELCD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A0ABP7ZSX7" ac="UniRef90_A0ABP7ZSX7" length="223" description="Type A-1 chloramphenicol O-acetyltransferase n=2 Tax=Sphingobacterium TaxID=28453 RepID=A0ABP7ZSX7_9SPHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>660</score>
+      <bits>258.8</bits>
+      <expectation>1.6e-84</expectation>
+      <identity>55.7</identity>
+      <positives>73.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="211">NFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>++ +I+L  WNR+EHF++YR Q+KCGFSLTTK++IT L   + E GYKFYP+MIYLI+RAVN    F+MA+KD ELI WD  +P++TV H E ETFSALS  Y  D + FMA YN V   +  D R FP+   PENH NIS++PW++FD FNL+I    DYFAP FT+ K+QQ+ D +L+P+++QVHHAVCDG H A+ I TL+  C +I</pattern>
+      <matchSeq start="7" end="215">DYKKINLADWNRKEHFSVYRSQMKCGFSLTTKINITNLLPFIKENGYKFYPVMIYLITRAVNNHEAFKMAMKDGELIVWDYVNPIYTVLHPEAETFSALSTVYDADFAAFMANYNRVAERHADDLRFFPE-TPPENHFNISAIPWINFDSFNLHIADFTDYFAPSFTIGKYQQQADEILMPIAIQVHHAVCDGIHVAKLIATLEAYCKDI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_UPI001FFFC5C4" ac="UniRef90_UPI001FFFC5C4" length="213" description="type A chloramphenicol O-acetyltransferase n=4 Tax=Proteus TaxID=583 RepID=UPI001FFFC5C4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>657</score>
+      <bits>257.7</bits>
+      <expectation>3.2e-84</expectation>
+      <identity>55.5</identity>
+      <positives>71.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCD</querySeq>
+      <pattern>MN+ +IDL  W+R+EHF  YR  ++CGFSLTTKLDITALR  L +   KFYP+MIYLI++ VN +PE RMA+K++EL+ WD  +P +T+FH ETETFS L  +Y  D   F+  Y     +Y+ +  L  + NLPENH  IS +PWVSFDGFNLN+    DYF P+FTM K+ Q+ ++ LLP+S+QVHHA CDGFH AR IN LQ +CD</pattern>
+      <matchSeq start="1" end="209">MNYKKIDLEQWHRKEHFLHYRHNLQCGFSLTTKLDITALRDILTKNNLKFYPVMIYLIAKTVNYYPESRMAIKNDELVIWDYINPAYTIFHPETETFSELWSKYVEDWRSFLKEYKQDYQKYKDNLNLSAKPNLPENHFCISMIPWVSFDGFNLNVANVKDYFPPIFTMGKYIQQNEKFLLPISIQVHHATCDGFHIARMINKLQELCD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_A0ABW5L7H3" ac="UniRef90_A0ABW5L7H3" length="214" description="Type A chloramphenicol O-acetyltransferase n=2 Tax=Sphingobacterium TaxID=28453 RepID=A0ABW5L7H3_9SPHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>657</score>
+      <bits>257.7</bits>
+      <expectation>3.3e-84</expectation>
+      <identity>54.5</identity>
+      <positives>72.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="213">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNILK</querySeq>
+      <pattern>MN+ ++++  WNR+EHF  YR  +KCGFSLT K++IT + + + E G KFYP MIYL+S+AVN+  EFRMA+KD ELI WD+  P++TV H E+ETFSA S  Y  D + F+  Y     +Y+ D R +P+   PENH N+S+LPW+ FDGFNLNI    DYFAP FTM K+++ GD +LLP+++QVHHAVCDG H A+FI +LQ  CDNI K</pattern>
+      <matchSeq start="1" end="212">MNYKKVNIEGWNRKEHFIAYRDTVKCGFSLTVKIEITQVLSFIKEKGCKFYPTMIYLLSKAVNKHQEFRMAMKDEELIIWDEVHPIYTVLHTESETFSARSTPYTADFNRFLYDYAETDEKYKGDLRFYPKAP-PENHFNVSALPWIDFDGFNLNIADFTDYFAPSFTMGKYKRVGDEMLLPLAIQVHHAVCDGLHVAKFIQSLQDYCDNIHK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0AAX3S0F2" ac="UniRef90_A0AAX3S0F2" length="213" description="Chloramphenicol acetyltransferase n=4 Tax=Providencia TaxID=586 RepID=A0AAX3S0F2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>656</score>
+      <bits>257.3</bits>
+      <expectation>4.5e-84</expectation>
+      <identity>53.1</identity>
+      <positives>73.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+T+++++ WNR++HF+ YRQ + CGFSLTT+LDI+ L++A+ + GYK YP+MIYLIS+AVN +PE RMA+K+ EL+ WDQ +P +T+FH++TETFS L   Y  D S F++ Y      Y+    L  + + PENH  IS +PWVSF+GFNLN+    DYF P+FTM K+   G++VLLP+SVQVHHA  DGFH AR +N +Q +CDN+</pattern>
+      <matchSeq start="1" end="211">MNYTKVNIDEWNRKQHFSFYRQAMPCGFSLTTQLDISTLKSAIVKQGYKLYPVMIYLISKAVNHYPESRMAIKEGELVLWDQVNPAYTIFHQQTETFSQLWTEYNDDWSIFLSHYQQDQLLYKDCLDLMAKPDYPENHFCISMIPWVSFEGFNLNVANFTDYFPPIFTMGKYHYSGEKVLLPLSVQVHHATIDGFHMARMVNQIQTLCDNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_UPI0015620DE9" ac="UniRef90_UPI0015620DE9" length="212" description="type A chloramphenicol O-acetyltransferase n=1 Tax=Photorhabdus heterorhabditis TaxID=880156 RepID=UPI0015620DE9">
+    <alignments total="1">
+     <alignment number="1">
+      <score>650</score>
+      <bits>255.0</bits>
+      <expectation>3.6e-83</expectation>
+      <identity>52.8</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNIL</querySeq>
+      <pattern>M+++++D++ WNR+ HF  +R  ++CGFSLTTK+DIT L + L E  YKFYP MIYLIS+ VN + EFR+A+KD EL+ WD  +P +T+FH ETETFSA+   +  DL EFM  Y+A    Y+ D   F +  LPENH +ISS+PWVSFDGFNLN+    DYF P+FTM KF + G++  LP+++QVHHA CDGFH  R +N LQ +C++ +</pattern>
+      <matchSeq start="1" end="212">MSYSKVDIDLWNRKAHFLHFRNVVQCGFSLTTKIDITHLLSLLVEKKYKFYPTMIYLISKVVNSYSEFRVAIKDEELVVWDSVNPAYTIFHNETETFSAIWTEFNSDLPEFMKNYSADYEAYKDDLCFFSKPELPENHFHISSVPWVSFDGFNLNVANFTDYFPPIFTMGKFCKNGNQTQLPLAIQVHHATCDGFHVGRAMNKLQELCNDFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_UPI004043BE32" ac="UniRef90_UPI004043BE32" length="212" description="type A chloramphenicol O-acetyltransferase n=1 Tax=Photorhabdus sp. SF281 TaxID=3459527 RepID=UPI004043BE32">
+    <alignments total="1">
+     <alignment number="1">
+      <score>646</score>
+      <bits>253.4</bits>
+      <expectation>1.4e-82</expectation>
+      <identity>53.8</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNIL</querySeq>
+      <pattern>M++++ID++ W+R+EHF  Y    +CGFSLTTK+DIT L  +L    YKFYP MIYLIS  VN + EFRMA+KD ELI WD  +P +T+FHKETE FS +  ++  DLS FM  Y+A    Y++D   F +  LPENH +ISS+PWVSFDGFNLN+T   DYF P+FTM K+ ++G++  LP+++QVHHA CDGFH  R IN LQ +C++ +</pattern>
+      <matchSeq start="1" end="212">MSYSKIDIDRWDRKEHFLHYCNVAQCGFSLTTKIDITHLLFSLVGKQYKFYPTMIYLISTVVNSYSEFRMAIKDEELIVWDSVNPAYTIFHKETEAFSVIWTKFNSDLSGFMKNYSADYETYKYDLCFFSKPELPENHFHISSVPWVSFDGFNLNVTNFTDYFPPIFTMGKYYKKGNQTQLPLTIQVHHATCDGFHVGRVINKLQELCNDFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_A0AAJ3LU06" ac="UniRef90_A0AAJ3LU06" length="213" description="Chloramphenicol acetyltransferase n=2 Tax=Proteus hauseri TaxID=183417 RepID=A0AAJ3LU06_PROHU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>645</score>
+      <bits>253.1</bits>
+      <expectation>2.1e-82</expectation>
+      <identity>55.0</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCD</querySeq>
+      <pattern>MN+T++DL  WNR+EHF  YR  ++CGFSLTTKLDIT L+T L     K YP +I+LI++ VN +PE RMA+KD+ELI WDQ +P +T+FH+ETETFS +   Y  D   F+  Y      Y+ +  L  + + PENH  IS +PWVSFDGFNLNIT   DY+ P+FTM K+ Q   ++LLP+SVQVHHA CDGFH  R INTLQ +CD</pattern>
+      <matchSeq start="1" end="209">MNYTKVDLEQWNRKEHFLHYRHNLQCGFSLTTKLDITLLKTILTNKNLKLYPTLIFLIAKTVNSYPESRMAIKDDELIIWDQINPAYTLFHQETETFSEIWSEYSEDWMTFLQRYEQDYQHYKDNLALSAKPHHPENHFCISMIPWVSFDGFNLNITNVKDYYPPIFTMGKYYQVDGKILLPLSVQVHHATCDGFHMGRMINTLQALCD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0ABU6EB63" ac="UniRef90_A0ABU6EB63" length="213" description="Chloramphenicol acetyltransferase n=2 Tax=Proteus cibi TaxID=2050966 RepID=A0ABU6EB63_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>645</score>
+      <bits>253.1</bits>
+      <expectation>2.1e-82</expectation>
+      <identity>53.3</identity>
+      <positives>70.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDN</querySeq>
+      <pattern>MN+ +I+L  WNR+EHF  YR  ++CGFSLTTK+DITAL+  L +   K YP MIYLI++ VN +PE +MA+K++EL+ WD+ +P +T+FH ETETFS L   Y  D   F+  YN    +Y+ D  L  + N PENH  IS +PWVSFDGFNLN+    DYF P+FTM K+ Q+ D+ LLP+S+QVHHA CDGFH AR IN  Q +C++</pattern>
+      <matchSeq start="1" end="210">MNYKKINLEQWNRKEHFLHYRHNLQCGFSLTTKIDITALKVVLTKNNLKLYPAMIYLIAKMVNSYPESKMAIKNDELVIWDKINPAYTIFHPETETFSELWSEYCEDWCSFLQEYNQDHQKYKDDLSLSAKPNFPENHFCISMIPWVSFDGFNLNVANVRDYFPPIFTMGKYTQQNDKFLLPISIQVHHATCDGFHIARMINKFQELCND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0ACE2MGZ5" ac="UniRef90_A0ACE2MGZ5" length="223" description="Type A chloramphenicol O-acetyltransferase n=1 Tax=Sphingobacterium prati TaxID=2737006 RepID=A0ACE2MGZ5_9SPHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>644</score>
+      <bits>252.7</bits>
+      <expectation>4.2e-82</expectation>
+      <identity>54.5</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="211">FTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>+ +I+L  W R+EHF++YR Q+KC FSLTTK+DI  +   L E GYKFYP+MIYLI+RAVN+   F+MA+K+ ELI WD  +P++TV H ETETFSAL+  Y  D  +FMA YN V   Y  +   FP+   PENH NIS+LPW++FD FNL+I    DYFAP FT+ K+Q++ D +L+P+++QVHHAVCDG H A+ I TL+  C NI</pattern>
+      <matchSeq start="8" end="215">YRKINLADWKRKEHFSVYRSQMKCSFSLTTKIDIAKMLPFLKENGYKFYPVMIYLITRAVNKHEAFKMAMKEGELIVWDCVNPIYTVLHSETETFSALTALYEEDFKKFMANYNVVEERYADNLHFFPE-QPPENHFNISALPWINFDSFNLHIADFTDYFAPSFTIGKYQKQADEILMPIAIQVHHAVCDGIHVAQLIATLEEYCKNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_A0A363P0K7" ac="UniRef90_A0A363P0K7" length="223" description="Type A chloramphenicol O-acetyltransferase n=2 Tax=Sphingobacterium TaxID=28453 RepID=A0A363P0K7_9SPHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>640</score>
+      <bits>251.1</bits>
+      <expectation>1.7e-81</expectation>
+      <identity>53.6</identity>
+      <positives>73.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="211">FTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>+ +I+L  W R+EHFA+YR Q+KCGFSLTTK++I  +   + E GYKFYP+MIYLI+RAVN+   F+MA+K+ ELI WD  DP++TV H ETETFSAL+  Y  D + FMA YN V   +  +   FP+   PENH NIS++PW++FD FNL+I    DYFAP FT+ K++++ D +L+P+++QVHHAVCDG H A+ I TL+  C+NI</pattern>
+      <matchSeq start="8" end="215">YKKINLADWKRKEHFAVYRSQMKCGFSLTTKINIAKVLPFIKENGYKFYPVMIYLIARAVNKHDAFKMAMKEGELIVWDYVDPIYTVLHSETETFSALTAIYDKDFTRFMANYNDVGERHADNLHFFPE-QPPENHFNISAIPWINFDSFNLHIADFTDYFAPSFTIGKYKKQADEILMPIAIQVHHAVCDGIHVAQLIATLEEYCENI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0ACG7IRR9" ac="UniRef90_A0ACG7IRR9" length="215" description="Chloramphenicol O-acetyltransferase type A n=2 Tax=Sphingobacterium faecium TaxID=34087 RepID=A0ACG7IRR9_SPHFA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>639</score>
+      <bits>250.8</bits>
+      <expectation>1.9e-81</expectation>
+      <identity>54.1</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="211">FTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>+  I++  WNR+EHF  YR  IKCGFSLT KLDIT +   + ETG+KFYP+MIYL+S+AVNQ P F+M++K+ ELI WD+ DPV+TV H++TETFSALS  Y     +F+  YN V  + +++   FP+   P+NH NIS+LPW+ F+ FNLNI    DYFAP FT  K+Q EG ++L+P+++QVHHAVCDG H A+ I+TLQ  C  I</pattern>
+      <matchSeq start="4" end="211">YQTINIEEWNRKEHFNAYRDAIKCGFSLTVKLDITQVIPFVKETGFKFYPVMIYLLSQAVNQHPAFKMSMKEGELILWDRVDPVYTVLHQDTETFSALSVPYSDSFMDFIDSYNKVLQKNENNKSFFPE-QAPQNHFNISALPWIHFESFNLNIADFTDYFAPSFTFGKYQTEGSKILMPLAIQVHHAVCDGIHVAKLIDTLQQACTTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_A0ABW5YPZ4" ac="UniRef90_A0ABW5YPZ4" length="215" description="Type A chloramphenicol O-acetyltransferase n=2 Tax=Sphingobacterium TaxID=28453 RepID=A0ABW5YPZ4_9SPHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>639</score>
+      <bits>250.8</bits>
+      <expectation>1.9e-81</expectation>
+      <identity>54.1</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="211">FTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>+  +++  WNR+EHF  YR  IKCGFSLT KLDI+A+   + E  +KFYP+MIYL+S+AVNQ PEF+MA+KD +LI WD  +PV+TV H++TETFSALS  Y     +F+A YNAV    +++    P+   P+NH NIS+LPW+ F+ FNLNI    DYFAP FT  K+Q EG+++L+P+++QVHHAVCDG H A+ INTLQ  C  I</pattern>
+      <matchSeq start="4" end="211">YKTVNIEEWNRKEHFDAYRDAIKCGFSLTVKLDISAVIPFVKEQRFKFYPVMIYLLSKAVNQHPEFKMAMKDGDLIIWDSVNPVYTVLHQDTETFSALSVPYTDSFHDFIASYNAVLQRNENNRSFLPE-KAPKNHFNISALPWIHFESFNLNIADFTDYFAPSFTFGKYQTEGNKILMPLAIQVHHAVCDGLHVAKLINTLQEFCTTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0ABW4ID61" ac="UniRef90_A0ABW4ID61" length="215" description="Type A chloramphenicol O-acetyltransferase n=1 Tax=Pseudopedobacter beijingensis TaxID=1207056 RepID=A0ABW4ID61_9SPHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>635</score>
+      <bits>249.2</bits>
+      <expectation>7.5e-81</expectation>
+      <identity>54.9</identity>
+      <positives>72.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="208">FTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMC</querySeq>
+      <pattern>+  I+   W R+EHFA YR  +KCGFSLT KLDI+ L   + +  YKFYP+MIYL+++AVNQ PEF+MA+K  ELI WD+ +PV+TV H ETETFSAL+ R   +L EF+  Y+  T  Y++D R FP+   PENH NIS++PW+ FD FNLNI    DYFAP FT+ K+Q + ++++LP+++QVHHAVCDG H A+ INTLQ  C</pattern>
+      <matchSeq start="5" end="209">YQTINTEEWKRKEHFAAYRGPVKCGFSLTVKLDISPLIPFVKKQSYKFYPVMIYLLTKAVNQHPEFKMAMKAGELIVWDRVEPVYTVLHPETETFSALTSRCTGELDEFIKVYDETTERYRNDGRFFPE-QAPENHFNISAIPWIHFDSFNLNIADFTDYFAPSFTIGKYQTDNNKIMLPLAIQVHHAVCDGIHVAKLINTLQEYC</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_UPI000F7AE66E" ac="UniRef90_UPI000F7AE66E" length="213" description="type A chloramphenicol O-acetyltransferase n=1 Tax=Providencia TaxID=586 RepID=UPI000F7AE66E">
+    <alignments total="1">
+     <alignment number="1">
+      <score>625</score>
+      <bits>245.4</bits>
+      <expectation>2.3e-79</expectation>
+      <identity>51.2</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+T+ ++ TW R+EH+  Y + I CGFSLT+K+DIT L+  +   GYKFYP +IYL+SR  N + EFR A K+ ELI WD+ +P FT+FHKETETFS+L C Y  +++ FM  Y+     Y+ + +L+PQ    +N   +SSLPWVSFD FNLNI  + + + P+FTM K+  EG+++ LP+SVQVHHAVCDGFH  +F+ TLQ +CD +</pattern>
+      <matchSeq start="1" end="211">MNYTKFNIETWLRKEHYNTYEKTINCGFSLTSKIDITNLKKHIDSNGYKFYPTIIYLLSRVANTYKEFRFANKNGELILWDKVNPSFTIFHKETETFSSLWCEYSSEMTIFMDSYHQQVTLYKDNFKLYPQPQQIDNVFYVSSLPWVSFDSFNLNIADSRNIYTPIFTMGKYYSEGNKIWLPLSVQVHHAVCDGFHVGKFLTTLQKLCDEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0A4R7EMJ6" ac="UniRef90_A0A4R7EMJ6" length="218" description="Chloramphenicol O-acetyltransferase type A n=1 Tax=Myroides indicus TaxID=1323422 RepID=A0A4R7EMJ6_9FLAO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>623</score>
+      <bits>244.6</bits>
+      <expectation>5.5e-79</expectation>
+      <identity>53.1</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="211">FTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>+ +I++  W R+EHF  YR  +KCGFSLT KLDI+ +   + E  YKFYP+MIYL+S+AVN+  EF+MA+  +ELI WD+ DPV+TV H ETETFSALS ++   LS+F+  Y      YQ+    FP+   PENH N+S++PWV FD FNLNI    DYFAP FT+ K+Q E +R+LLP+++QVHHAVCDG H  + I+TLQ  C  I</pattern>
+      <matchSeq start="5" end="212">YQKINIEEWKRKEHFTAYRGAVKCGFSLTVKLDISQVIPFIKEQNYKFYPVMIYLLSKAVNRHSEFKMAMNTDELIVWDRVDPVYTVLHPETETFSALSVQHTEQLSDFVKAYETTGNRYQNSRHFFPE-KPPENHFNVSAIPWVHFDSFNLNIADFTDYFAPSFTIGKYQTENNRILLPLAIQVHHAVCDGIHVGKLIDTLQEYCTTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_A0ABS1R3V5" ac="UniRef90_A0ABS1R3V5" length="213" description="Type A chloramphenicol O-acetyltransferase n=1 Tax=Sphingobacterium faecale TaxID=2803775 RepID=A0ABS1R3V5_9SPHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>622</score>
+      <bits>244.2</bits>
+      <expectation>6.6e-79</expectation>
+      <identity>51.7</identity>
+      <positives>70.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>M++ +I++  W R+EHF +Y   ++CGFSLT K++I  + + + E GYKFYP MIYL+++AVN   EFRM +KD EL+ WD+  P++TV   ETETFSAL  +Y  D  EF++ Y     +Y  D R FP+  +PENH NIS+LPW+ FD FNLNI    DYFAP FT+ K+++ G  V+LP+++QVHHAVCDG H ARFI +LQ  CDN+</pattern>
+      <matchSeq start="1" end="210">MSYKKINIEDWKRKEHFKVYSTSVRCGFSLTVKVEINRVISFVKEKGYKFYPTMIYLLTKAVNNHAEFRMRMKDGELVVWDEVHPIYTVLKPETETFSALYTKYTMDFREFVSDYEQNVQKYNSDLRFFPE-VVPENHFNISALPWIDFDSFNLNIADFTDYFAPSFTVGKYKKVGAEVVLPLAIQVHHAVCDGIHVARFIESLQDYCDNV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0ACH2V552" ac="UniRef90_A0ACH2V552" length="213" description="Type A chloramphenicol O-acetyltransferase n=4 Tax=Providencia TaxID=586 RepID=A0ACH2V552_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>622</score>
+      <bits>244.2</bits>
+      <expectation>6.6e-79</expectation>
+      <identity>51.7</identity>
+      <positives>71.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>M++TR ++  W R+EH+ +Y +Q+ CGFSLT K+DIT+L + ++   Y+FYP MIYL+S  VN+  EF+++ K+NELI WD+  P FT+FH +TETFS+L C +  ++  FM  Y+   A Y+ D +L PQ    EN   ISSLPWVSFDGFNLNI      F P+FTM KF +EG+++LLP+S+QVHHAVCDGFH  RF+N LQ +C+ +</pattern>
+      <matchSeq start="1" end="211">MSYTRFNVEAWQRKEHYHVYNEQVNCGFSLTAKIDITSLYSFISLRDYRFYPTMIYLLSSIVNKHDEFKLSKKNNELILWDKVHPSFTIFHNQTETFSSLWCEHSDNIHIFMDNYHLQLALYKDDNKLAPQPVQAENIFYISSLPWVSFDGFNLNIANIASNFTPIFTMGKFYREGNKILLPLSIQVHHAVCDGFHVGRFVNELQTLCNQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0A1B7K380" ac="UniRef90_A0A1B7K380" length="213" description="Chloramphenicol acetyltransferase n=3 Tax=Providencia TaxID=586 RepID=A0A1B7K380_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>621</score>
+      <bits>243.8</bits>
+      <expectation>9.4e-79</expectation>
+      <identity>54.0</identity>
+      <positives>68.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+ + D+ TW R+EHF L+  Q+ CGFSLTTKLDIT L+  +  + Y FYP +IYL+S+ VN +PEFR A K+ ELI WD   P FT+FH+ TETFS+L   Y  D+S FMA YN   + ++ +  L PQ    EN   ISSLPWV FD FNLNI      FAP+FTM +F  E D+++LP++VQVHHAVCDGFH  R IN LQ +CD I</pattern>
+      <matchSeq start="1" end="211">MNYIKFDIETWQRKEHFQLFDAQLNCGFSLTTKLDITVLKKRIDSSDYAFYPTLIYLLSKIVNSYPEFRFAKKEGELILWDVVSPSFTLFHQNTETFSSLWSEYSDDISTFMANYNQQMSLFKDNLSLSPQPKQIENIFYISSLPWVVFDSFNLNIADITKNFAPIFTMGQFHYEQDKIVLPLAVQVHHAVCDGFHVGRLINQLQKLCDEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_A0A163X291" ac="UniRef90_A0A163X291" length="213" description="Chloramphenicol acetyltransferase n=1 Tax=Myroides marinus TaxID=703342 RepID=A0A163X291_9FLAO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>615</score>
+      <bits>241.5</bits>
+      <expectation>7.7e-78</expectation>
+      <identity>50.7</identity>
+      <positives>72.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+ + D+  WNR+EHF  ++ Q++CGFSLTTK+DI+ +   + E GYKFYP +IYLIS+AVN+  EF++A+KDNELI WD  +P +T+ H ETETFS L   Y  +L +F+  Y+ V  +Y+ +  + PQ  + EN  +IS +PWVSFDGFNLN+ G  DYFAP+FT+ K+    D VL+P+S+QVHHA CDG H ++ +N+LQ  C++I</pattern>
+      <matchSeq start="1" end="210">MNYQKFDIENWNRKEHFYHFKDQLRCGFSLTTKIDISQVIPFIKEHGYKFYPTIIYLISKAVNKHQEFKLAMKDNELIEWDTVNPAYTIMHTETETFSELCSMYTDNLKDFLKEYDRVQEKYKGNYAMSPQTGI-ENIFHISMIPWVSFDGFNLNVPGFGDYFAPIFTLGKYTVNKDEVLMPISIQVHHATCDGLHVSKLLNSLQEYCNSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_UPI001B799E6D" ac="UniRef90_UPI001B799E6D" length="213" description="type A chloramphenicol O-acetyltransferase n=1 Tax=unclassified Providencia TaxID=2633465 RepID=UPI001B799E6D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>614</score>
+      <bits>241.1</bits>
+      <expectation>1.1e-77</expectation>
+      <identity>51.7</identity>
+      <positives>68.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>M + + ++ TW R+EHF L+  Q+ CGFSLTTK+DIT L+  +   GY FYP +IYL+S+ VN++ EFR+A KD ELI WD   P FT+FH++TETFS+L C Y  D+  FM  YN   + Y  D  L PQ    +N   +SSLPW++FD FNLNI      +AP+FTM KF  + ++ LLP+++QVHHAVCDGFH ARFIN LQL C+ +</pattern>
+      <matchSeq start="1" end="211">MQYIKFNIETWQRKEHFQLFEDQLNCGFSLTTKIDITHLKKFIQSKGYGFYPTIIYLLSKTVNRYAEFRLAKKDTELILWDIVSPNFTIFHQDTETFSSLWCEYSDDIDIFMMNYNQQISLYSDDLSLSPQPKQIDNIFYVSSLPWLTFDSFNLNIADITKNYAPIFTMGKFFLDNEKYLLPLAIQVHHAVCDGFHVARFINQLQLFCNEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_UPI00098D6F5F" ac="UniRef90_UPI00098D6F5F" length="212" description="type A chloramphenicol O-acetyltransferase n=1 Tax=Wohlfahrtiimonas populi TaxID=1940240 RepID=UPI00098D6F5F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>613</score>
+      <bits>240.7</bits>
+      <expectation>1.5e-77</expectation>
+      <identity>53.3</identity>
+      <positives>71.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNIL</querySeq>
+      <pattern>M +  IDL +WNR+EH+  YRQ I+C FSLTT++D+T +        YKFYP+MIYLI++AVNQ P  +MALK+ +LI W+   P +T+FH E+ETFS+L   Y  DL+EFM  Y    AEYQ++  L P+ NLPENH NISSLPW+SF GFNL  +  +D+FAP+FTM KF ++  ++LLP+++QVHHAVCDGFH  RFI+ L    D ++</pattern>
+      <matchSeq start="1" end="211">MQYQIIDLASWNRQEHYNFYRQ-IQCNFSLTTEIDVTNVVAFYKHYHYKFYPVMIYLITQAVNQVPALKMALKNEQLIEWETVLPSYTIFHPESETFSSLWTEYHSDLTEFMRAYEEDFAEYQYNLALSPKPNLPENHFNISSLPWMSFSGFNLGFSEVNDHFAPIFTMEKFSEKDGKLLLPLAIQVHHAVCDGFHIGRFIDLLHECIDELI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_UPI001C5A9299" ac="UniRef90_UPI001C5A9299" length="213" description="type A chloramphenicol O-acetyltransferase n=1 Tax=Providencia TaxID=586 RepID=UPI001C5A9299">
+    <alignments total="1">
+     <alignment number="1">
+      <score>613</score>
+      <bits>240.7</bits>
+      <expectation>1.5e-77</expectation>
+      <identity>50.7</identity>
+      <positives>69.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>M++ R ++  W R+EH+ LY + + CGFSLT K+DIT+L   ++   Y+FYP MIYL+S  VN+  EF+++ KD ELI W++  P FT+FH +TETFS+L C Y  ++  FM  Y+     ++ D +L PQ N  EN   ISSLPWVSF+ FNLNI      F P+FTM KF +EGD++LLP+SVQVHHAVCDGFH  RF+N LQ +C+ +</pattern>
+      <matchSeq start="1" end="211">MSYIRFNVEKWQRKEHYHLYSEHVNCGFSLTAKIDITSLVNFISLRDYRFYPTMIYLLSSLVNRHDEFKLSKKDGELILWEKVHPSFTIFHNQTETFSSLWCEYSDNIQTFMGNYHHQLTLHKDDAKLTPQPNQAENIFYISSLPWVSFESFNLNIANTASNFTPIFTMGKFYREGDKILLPLSVQVHHAVCDGFHVGRFVNELQTLCNEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_A0ABY9Z4W7" ac="UniRef90_A0ABY9Z4W7" length="213" description="Chloramphenicol acetyltransferase n=16 Tax=Providencia TaxID=586 RepID=A0ABY9Z4W7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>613</score>
+      <bits>240.7</bits>
+      <expectation>1.5e-77</expectation>
+      <identity>50.7</identity>
+      <positives>70.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+T+ ++ TW RREH+ +Y + I CGFSLTTK+DIT L+  +   GY+FYP +IYL+SR VN + EFR A K++ELI WD+  P FT+FHK+TETFS+L C+Y  +++ FM  Y+     ++ +  L PQ    EN   +SSLPWVSFD FNLNI    + F P+FT+ K+  E +++ LP++VQVHHAVCDGFH  +F+ TLQ +CD +</pattern>
+      <matchSeq start="1" end="211">MNYTKFNIETWLRREHYNIYEKTINCGFSLTTKIDITNLKRYIDSNGYEFYPSVIYLLSRVVNTYKEFRFAKKNDELILWDEVHPSFTIFHKDTETFSSLWCKYSSEITTFMENYHQQLTLHKDNLDLHPQPQQVENVFYVSSLPWVSFDSFNLNIADITNVFTPIFTLGKYYSENNKMWLPLAVQVHHAVCDGFHVGQFLTTLQKLCDEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0ABU2IY85" ac="UniRef90_A0ABU2IY85" length="213" description="Chloramphenicol acetyltransferase n=3 Tax=Providencia TaxID=586 RepID=A0ABU2IY85_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>610</score>
+      <bits>239.6</bits>
+      <expectation>4.4e-77</expectation>
+      <identity>50.2</identity>
+      <positives>69.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+T+ ++ TW R+EH+  Y + I CGFSLTTK+DIT  +  +   GY+FYPL+IYL+SR  N + EFR A ++ ELI WD+ +P FT+FHK+TETFS+L C Y  +++ FM  Y+   A ++ +  L PQ    EN   +SSLPWVSFD FNLNI    + F P+FTM K+  E +++ LP++VQVHHAVCDGFH  +F+ TLQ +CD +</pattern>
+      <matchSeq start="1" end="211">MNYTKFNIETWLRKEHYNTYEKTINCGFSLTTKIDITNFKKHINSNGYEFYPLVIYLLSRVANTYKEFRFAKRNGELILWDEVNPSFTIFHKDTETFSSLWCEYSSEMTVFMENYHQQLALHKDNLNLQPQSQQIENVFYVSSLPWVSFDSFNLNIADITNAFTPIFTMGKYYSENNKIWLPLAVQVHHAVCDGFHVGKFLTTLQKLCDEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_UPI00215926B5" ac="UniRef90_UPI00215926B5" length="212" description="chloramphenicol acetyltransferase n=1 Tax=Myroides albus TaxID=2562892 RepID=UPI00215926B5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>609</score>
+      <bits>239.2</bits>
+      <expectation>6.1e-77</expectation>
+      <identity>51.2</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>M++   D++TWNR+EH+  Y+ Q++C FSL+TK++IT L +      +KFYP++I+L+++AVN  PEFR A+KD ELI W+  +P +TV H ETETFS  +  Y  DL+ FM  YN+V  E + +  +F Q  L EN  NIS LPWVSFDGFNLN+    DYFAP+FT+ K+  +  ++L+P+S+QVHHA CDG H A+FINTLQ +CD I</pattern>
+      <matchSeq start="1" end="210">MSYKVFDISTWNRKEHYNFYKNQVRCSFSLSTKINITELISFTKSKQHKFYPVIIHLLAKAVNTHPEFRFAIKDGELILWETLNPSYTVLHPETETFSEFTSLYCDDLNTFMEHYNSVELENKGNYNMFAQQRL-ENTFNISMLPWVSFDGFNLNLPDLGDYFAPIFTLGKYYTDNSKILMPISIQVHHATCDGLHVAKFINTLQELCDTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_A0AA42JYM7" ac="UniRef90_A0AA42JYM7" length="213" description="Chloramphenicol acetyltransferase n=4 Tax=Providencia TaxID=586 RepID=A0AA42JYM7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>608</score>
+      <bits>238.8</bits>
+      <expectation>8.9e-77</expectation>
+      <identity>52.2</identity>
+      <positives>70.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCD</querySeq>
+      <pattern>MN+ + +++TW R+EHF +Y Q I CGFSLTTK++IT L+  +  T Y FYP++IYL+S+  N + EF++A K+ ELI WD+ +P FT+FH+ETETFSAL C Y  D+ +FM  Y+     Y+ + +L PQ    +N   ISSLPWV FD FNLNI+     FAP+FT+ KF  E D +LLP++VQVHHAVCDGFH  RF+  LQ +CD</pattern>
+      <matchSeq start="1" end="209">MNYIKFNVDTWQRKEHFHVYDQLINCGFSLTTKINITNLKKQIDSTNYSFYPVIIYLLSQVANTYDEFKLAKKNGELILWDKINPSFTIFHQETETFSALWCEYSDDICQFMENYHQQLILYKDNPKLSPQPIQADNLFYISSLPWVEFDSFNLNISDITKNFAPIFTIGKFYSENDTLLLPLAVQVHHAVCDGFHVGRFLMRLQKLCD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_UPI000EFB78D2" ac="UniRef90_UPI000EFB78D2" length="214" description="CatA-like O-acetyltransferase n=1 Tax=Myroides sp. N17-2 TaxID=2030799 RepID=UPI000EFB78D2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>608</score>
+      <bits>238.8</bits>
+      <expectation>9.2e-77</expectation>
+      <identity>50.2</identity>
+      <positives>70.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+ + D+++WNR+EHF  Y+ Q++C FSLTTK+DIT +   + E  YKFYP++IYLI++AVN+ PEF+ A+KD ELI WD  +P +T  H ETETFS L   Y  DL  F+  Y+ V  +Y+ +    PQ  + +N  NIS LPW+SFDGFNLN+    +YFAP+FT+ K+    ++V++P+S+QVHHA CDG H AR +++LQ  CDNI</pattern>
+      <matchSeq start="1" end="210">MNYKKFDIDSWNRKEHFYHYKDQLRCSFSLTTKIDITKVIPFIKEHEYKFYPVIIYLIAKAVNKHPEFKFAMKDGELIQWDTVNPAYTTMHAETETFSELCTVYTDDLKSFLKEYDTVQQKYKGNYAFSPQSGI-DNTFNISMLPWISFDGFNLNLPDLGEYFAPIFTLGKYVTNAEQVVMPLSIQVHHATCDGLHVARLLHSLQEFCDNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_A0ABN0EDL2" ac="UniRef90_A0ABN0EDL2" length="214" description="Chloramphenicol O-acetyltransferase n=2 Tax=Myroides TaxID=76831 RepID=A0ABN0EDL2_9FLAO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>608</score>
+      <bits>238.8</bits>
+      <expectation>9.2e-77</expectation>
+      <identity>50.2</identity>
+      <positives>71.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+ + D+ +WNR+EHF  ++ Q++CGFSLTTK+DI+ +   + E  YKFYP +IYLI++AVN+  EF+ A+KD ELI WD  +P +T+ H ETETFS L   Y  D   F+  Y+ V  +Y+ D  + PQ  + EN  NIS +PWVSFDGFNLN+ G  DYFAP+FT+ K+ +  + +L+P+S+QVHHA CDG H A+ +++LQ +CDNI</pattern>
+      <matchSeq start="1" end="210">MNYKKFDVESWNRKEHFYHFKDQLRCGFSLTTKIDISKVIPFIKEHEYKFYPTIIYLITKAVNKHSEFKFAMKDGELIKWDTVNPAYTIMHPETETFSELCSVYKGDFKTFLEEYDRVHEKYKGDYAMSPQREI-ENIFNISMIPWVSFDGFNLNVPGFGDYFAPIFTLGKYIKNNEEILMPISIQVHHATCDGLHVAKLLHSLQELCDNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_UPI001B368027" ac="UniRef90_UPI001B368027" length="213" description="type A chloramphenicol O-acetyltransferase n=2 Tax=Providencia TaxID=586 RepID=UPI001B368027">
+    <alignments total="1">
+     <alignment number="1">
+      <score>598</score>
+      <bits>235.0</bits>
+      <expectation>2.9e-75</expectation>
+      <identity>49.8</identity>
+      <positives>68.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MNFTRIDLNTWNRREHFALYRQQIKCGFSLTTKLDITALRTALAETGYKFYPLMIYLISRAVNQFPEFRMALKDNELIYWDQSDPVFTVFHKETETFSALSCRYFPDLSEFMAGYNAVTAEYQHDTRLFPQGNLPENHLNISSLPWVSFDGFNLNITGNDDYFAPVFTMAKFQQEGDRVLLPVSVQVHHAVCDGFHAARFINTLQLMCDNI</querySeq>
+      <pattern>MN+T+ ++ TW R+EH+  Y++ I CGFSLTTK+DIT L+  +   GYKFYP MIYL++R  N   EFR A K++ELI WD+  P FT+FHKETETFS+L C Y  +++ FM  Y+     ++ +  L PQ    EN   +SSLPWVSFD FNLNI    + F P+FTM K+  + +++ LP+++QVHHAVCDGFH  +F+  LQ +CD +</pattern>
+      <matchSeq start="1" end="211">MNYTKFNIETWLRKEHYNTYQKTINCGFSLTTKIDITNLKKYINSMGYKFYPSMIYLLARVANNCKEFRFAKKNDELILWDEVHPSFTIFHKETETFSSLWCEYSSEMAIFMENYHHQLILHKDNLNLHPQSQQIENVFYVSSLPWVSFDSFNLNIADITNIFTPIFTMGKYYGDNNKIWLPLAIQVHHAVCDGFHVGKFLTELQKLCDEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

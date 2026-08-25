@@ -1,0 +1,1494 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "P50298",
+  "uniProtkbId": "ARY2_RAT",
+  "entryAudit": {
+    "firstPublicDate": "1996-10-01",
+    "lastAnnotationUpdateDate": "2026-01-28",
+    "lastSequenceUpdateDate": "1996-10-01",
+    "entryVersion": 132,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 5.0,
+  "organism": {
+    "scientificName": "Rattus norvegicus",
+    "commonName": "Rat",
+    "taxonId": 10116,
+    "lineage": [
+      "Eukaryota",
+      "Metazoa",
+      "Chordata",
+      "Craniata",
+      "Vertebrata",
+      "Euteleostomi",
+      "Mammalia",
+      "Eutheria",
+      "Euarchontoglires",
+      "Glires",
+      "Rodentia",
+      "Myomorpha",
+      "Muroidea",
+      "Muridae",
+      "Murinae",
+      "Rattus"
+    ]
+  },
+  "proteinExistence": "1: Evidence at protein level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000305"
+          }
+        ],
+        "value": "Arylamine N-acetyltransferase 2"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "7882993"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "8761433"
+            }
+          ],
+          "value": "2.3.1.5"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "value": "Arylamide acetylase 2"
+        }
+      },
+      {
+        "fullName": {
+          "value": "N-acetyltransferase type 2"
+        },
+        "shortNames": [
+          {
+            "value": "AT-2"
+          },
+          {
+            "value": "NAT-2"
+          }
+        ]
+      },
+      {
+        "fullName": {
+          "value": "N-hydroxyarylamine O-acetyltransferase"
+        },
+        "ecNumbers": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P11245"
+              }
+            ],
+            "value": "2.3.1.118"
+          }
+        ]
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "Nat2"
+      },
+      "synonyms": [
+        {
+          "value": "Aac2"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "7882993"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "8761433"
+            }
+          ],
+          "value": "Catalyzes the N- or O-acetylation of various arylamine and heterocyclic amine substrates. Participates in the detoxification of a plethora of hydrazine and arylamine drugs"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "an arylamine + acetyl-CoA = an N-acetylarylamine + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:16613"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:13790"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:50471"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          }
+        ],
+        "ecNumber": "2.3.1.5",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "7882993"
+          },
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "8761433"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:16614"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "7882993"
+            },
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "8761433"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "an N-hydroxyarylamine + acetyl-CoA = an N-acetoxyarylamine + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:20277"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:13792"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:21494"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          }
+        ],
+        "ecNumber": "2.3.1.118",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "P11245"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "BIOPHYSICOCHEMICAL PROPERTIES",
+      "kineticParameters": {
+        "maximumVelocities": [
+          {
+            "velocity": 59.0,
+            "unit": "nmol/min/mg",
+            "enzyme": "enzyme toward 4-aminoazobenzene",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "8761433"
+              }
+            ]
+          },
+          {
+            "velocity": 833.0,
+            "unit": "nmol/min/mg",
+            "enzyme": "enzyme toward 2-aminofluorene",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "8761433"
+              }
+            ]
+          }
+        ],
+        "michaelisConstants": [
+          {
+            "constant": 32.2,
+            "unit": "uM",
+            "substrate": "2-aminofluorene",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "8761433"
+              }
+            ]
+          },
+          {
+            "constant": 138.0,
+            "unit": "uM",
+            "substrate": "4-aminoazobenzene",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "8761433"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "value": "Cytoplasm",
+            "id": "SL-0086"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "value": "There are two forms of NAT2: a rapid isoform (NAT2*21A) and a slow isoform (NAT2*21B)"
+        }
+      ],
+      "commentType": "POLYMORPHISM"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the arylamine N-acetyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 290,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Arylamine N-acetyltransferase 2",
+      "featureId": "PRO_0000107912"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 68,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 68,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Acyl-thioester intermediate",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 107,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 107,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 122,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 122,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ]
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 103,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 103,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57287"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ],
+      "ligand": {
+        "name": "CoA",
+        "id": "ChEBI:CHEBI:57287"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 104,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 104,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57287"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ],
+      "ligand": {
+        "name": "CoA",
+        "id": "ChEBI:CHEBI:57287"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 106,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 107,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 208,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 208,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57287"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ],
+      "ligand": {
+        "name": "CoA",
+        "id": "ChEBI:CHEBI:57287"
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 121,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 121,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT2*21; slow acetylator",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "8528272"
+        }
+      ],
+      "featureId": "",
+      "alternativeSequence": {
+        "originalSequence": "V",
+        "alternativeSequences": [
+          "I"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 266,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 266,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT2*21; slow acetylator",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "8528272"
+        }
+      ],
+      "featureId": "",
+      "alternativeSequence": {
+        "originalSequence": "V",
+        "alternativeSequences": [
+          "I"
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0963",
+      "category": "Cellular component",
+      "name": "Cytoplasm"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "7882993",
+        "citationType": "journal article",
+        "authors": [
+          "Ebisawa T.",
+          "Sasaki Y.",
+          "Deguchi T."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "7882993"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1111/j.1432-1033.1995.tb20240.x"
+          }
+        ],
+        "title": "Complementary DNAs for two arylamine N-acetyltransferases with identical 5' non-coding regions from rat pineal gland.",
+        "publicationDate": "1995",
+        "journal": "Eur. J. Biochem.",
+        "firstPage": "129",
+        "lastPage": "137",
+        "volume": "228"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [MRNA]",
+        "CATALYTIC ACTIVITY",
+        "FUNCTION"
+      ],
+      "referenceComments": [
+        {
+          "value": "Wistar",
+          "type": "STRAIN"
+        },
+        {
+          "value": "Pineal gland",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "8528272",
+        "citationType": "journal article",
+        "authors": [
+          "Doll M.A.",
+          "Hein D.W."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "8528272"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1097/00008571-199508000-00009"
+          }
+        ],
+        "title": "Cloning, sequencing and expression of NAT1 and NAT2 encoding genes from rapid and slow acetylator inbred rats.",
+        "publicationDate": "1995",
+        "journal": "Pharmacogenetics",
+        "firstPage": "247",
+        "lastPage": "251",
+        "volume": "5"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "ALLELE NAT2*21"
+      ],
+      "referenceComments": [
+        {
+          "value": "WKY/NCRLBR",
+          "type": "STRAIN"
+        },
+        {
+          "value": "Heart",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 3,
+      "citation": {
+        "id": "8761433",
+        "citationType": "journal article",
+        "authors": [
+          "Jones R.F.",
+          "Land S.J.",
+          "King C.M."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "8761433"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1093/carcin/17.8.1729"
+          }
+        ],
+        "title": "Recombinant rat and hamster N-acetyltransferases-1 and -2: relative rates of N-acetylation of arylamines and N,O-acyltransfer with arylhydroxamic acids.",
+        "publicationDate": "1996",
+        "journal": "Carcinogenesis",
+        "firstPage": "1729",
+        "lastPage": "1733",
+        "volume": "17"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [MRNA]",
+        "FUNCTION",
+        "CATALYTIC ACTIVITY",
+        "BIOPHYSICOCHEMICAL PROPERTIES"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "U01348",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAA70161.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "U23418",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAB53956.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "U19272",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAB60501.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "U17261",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAA56772.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "I58425",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "I58425"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_446306.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_053854.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "P50298",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "P50298",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "FunCoup",
+      "id": "P50298",
+      "properties": [
+        {
+          "key": "Number of interactors",
+          "value": "148"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "10116.ENSRNOP00000051430",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "iPTMnet",
+      "id": "P50298",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PhosphoSitePlus",
+      "id": "P50298",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "10116-ENSRNOP00000051430",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00055006442",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00055004934"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00055004040"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00055006448",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00055004940"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00055004040"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00055006452",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00055004943"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00055004040"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00055006453",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00055004944"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00055004040"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00055006457",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00055004948"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00055004040"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00060027262",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00060021873"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00060015924"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00060027272",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00060021881"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00060015924"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00060027279",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00060021886"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00060015924"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00060027288",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00060021892"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00060015924"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00060027292",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00060021894"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00060015924"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00065007267",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00065005043"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00065004978"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSRNOT00065007268",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSRNOP00065005044"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSRNOG00065004978"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "116632",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "rno:116632",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "UCSC",
+      "id": "RGD:70492",
+      "properties": [
+        {
+          "key": "OrganismName",
+          "value": "rat"
+        }
+      ]
+    },
+    {
+      "database": "AGR",
+      "id": "RGD:70492",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "CTD",
+      "id": "10",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "RGD",
+      "id": "70492",
+      "properties": [
+        {
+          "key": "GeneName",
+          "value": "Nat2"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "ENOG502RD0D",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Eukaryota"
+        }
+      ]
+    },
+    {
+      "database": "InParanoid",
+      "id": "P50298",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "10260017at2759",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BRENDA",
+      "id": "2.3.1.56",
+      "properties": [
+        {
+          "key": "OrganismId",
+          "value": "5301"
+        }
+      ]
+    },
+    {
+      "database": "Reactome",
+      "id": "R-RNO-156582",
+      "properties": [
+        {
+          "key": "PathwayName",
+          "value": "Acetylation"
+        }
+      ]
+    },
+    {
+      "database": "Reactome",
+      "id": "R-RNO-9753281",
+      "properties": [
+        {
+          "key": "PathwayName",
+          "value": "Paracetamol ADME"
+        }
+      ]
+    },
+    {
+      "database": "SABIO-RK",
+      "id": "P50298",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PRO",
+      "id": "PR:P50298",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000002494",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Unplaced"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005737",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:cytoplasm"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0004060",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:arylamine N-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IDA:RGD"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "7882993"
+        },
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "8761433"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0008080",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:N-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IDA:RGD"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "16192314"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0046990",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:N-hydroxyarylamine O-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0048565",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:digestive tract development"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEP:RGD"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000270",
+          "source": "PubMed",
+          "id": "18799802"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0001666",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:response to hypoxia"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEP:RGD"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000270",
+          "source": "PubMed",
+          "id": "24557547"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0032496",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:response to lipopolysaccharide"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEP:RGD"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000270",
+          "source": "PubMed",
+          "id": "12071337"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0009410",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:response to xenobiotic stimulus"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEP:RGD"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000270",
+          "source": "PubMed",
+          "id": "18842621"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.30.2140.20:FF:000001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine N-acetyltransferase 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.30.2140.20",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001447",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine_N-AcTrfase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR053710",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine_NAT_domain_sf"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR038765",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Papain-like_cys_pep_sf"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11786:SF8",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ARYLAMINE N-ACETYLTRANSFERASE 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11786",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "N-HYDROXYARYLAMINE O-ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00797",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PRINTS",
+      "id": "PR01543",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ANATRNSFRASE"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF54001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Cysteine proteinases"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MDIEAYFERIGYQSSRNKLDLEELTEILQHQIRAIPFENLNIHCGESMELNLEVIFDQVVRKKRGGWCLQVNHLLYWALTKMGFEATMLGGYVFNTPANKYSSGMIHLLVQVTLSGKDYIVDAGFGRSYQMWEPLELTSGKDQPQVPAIFRLTEENGTWYLDQIRREQYVPNQEFVNSDLLEKNKYRKIYSFTLEPRTIEDFESINTYLQTSPASLFTSKSFCSLQTLEGVHCLVGSTLTYRRFSYKDNIDLVEFKSLTEEEIEDVLKTIFGVSLERKLVPKHGDRFFTI",
+    "length": 290,
+    "molWeight": 33756,
+    "crc64": "A02BF839A230F84D",
+    "md5": "8658A086F0274109122315739466A4EA"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 2,
+      "BIOPHYSICOCHEMICAL PROPERTIES": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "POLYMORPHISM": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Active site": 3,
+      "Binding site": 4,
+      "Natural variant": 2
+    },
+    "uniParcId": "UPI00001260D4"
+  }
+}

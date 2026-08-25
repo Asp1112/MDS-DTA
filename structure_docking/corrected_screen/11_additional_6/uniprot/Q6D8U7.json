@@ -1,0 +1,510 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q6D8U7",
+  "uniProtkbId": "Y875_PECAS",
+  "entryAudit": {
+    "firstPublicDate": "2007-08-21",
+    "lastAnnotationUpdateDate": "2026-01-28",
+    "lastSequenceUpdateDate": "2004-08-16",
+    "entryVersion": 102,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 1.0,
+  "organism": {
+    "scientificName": "Pectobacterium atrosepticum (strain SCRI 1043 / ATCC BAA-672)",
+    "commonName": "Erwinia carotovora subsp. atroseptica",
+    "taxonId": 218491,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Pseudomonadota",
+      "Gammaproteobacteria",
+      "Enterobacterales",
+      "Pectobacteriaceae",
+      "Pectobacterium"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_01127"
+          }
+        ],
+        "value": "Acetyltransferase ECA0875"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01127"
+            }
+          ],
+          "value": "2.3.1.-"
+        }
+      ]
+    }
+  },
+  "genes": [
+    {
+      "orderedLocusNames": [
+        {
+          "value": "ECA0875"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01127"
+            }
+          ],
+          "value": "Belongs to the acetyltransferase family. YpeA subfamily"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 141,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Acetyltransferase ECA0875",
+      "featureId": "PRO_0000298438"
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 141,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "N-acetyltransferase",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_01127"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "15263089",
+        "citationType": "journal article",
+        "authors": [
+          "Bell K.S.",
+          "Sebaihia M.",
+          "Pritchard L.",
+          "Holden M.T.G.",
+          "Hyman L.J.",
+          "Holeva M.C.",
+          "Thomson N.R.",
+          "Bentley S.D.",
+          "Churcher L.J.C.",
+          "Mungall K.",
+          "Atkin R.",
+          "Bason N.",
+          "Brooks K.",
+          "Chillingworth T.",
+          "Clark K.",
+          "Doggett J.",
+          "Fraser A.",
+          "Hance Z.",
+          "Hauser H.",
+          "Jagels K.",
+          "Moule S.",
+          "Norbertczak H.",
+          "Ormond D.",
+          "Price C.",
+          "Quail M.A.",
+          "Sanders M.",
+          "Walker D.",
+          "Whitehead S.",
+          "Salmond G.P.C.",
+          "Birch P.R.J.",
+          "Parkhill J.",
+          "Toth I.K."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "15263089"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1073/pnas.0402424101"
+          }
+        ],
+        "title": "Genome sequence of the enterobacterial phytopathogen Erwinia carotovora subsp. atroseptica and characterization of virulence factors.",
+        "publicationDate": "2004",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+        "firstPage": "11105",
+        "lastPage": "11110",
+        "volume": "101"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "SCRI 1043 / ATCC BAA-672",
+          "type": "STRAIN"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "BX950851",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAG73787.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_011092478.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_004547.2"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q6D8U7",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q6D8U7",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "218491.ECA0875",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "57207618",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "eca:ECA0875",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "COG0456",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_013985_34_1_6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "1821130at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000007966",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0016747",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:acyltransferase activity, transferring groups other than amino-acyl groups"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "CDD",
+      "id": "cd04301",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "NAT_SF"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.40.630.30",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "HAMAP",
+      "id": "MF_01127",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_YpeA"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR023072",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransferase_YpeA"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR016181",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl_CoA_acyltransferase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR000182",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT_dom"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF002959",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PRK03624.1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR43072:SF51",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ABC SUPERFAMILY TRANSPORT PROTEIN"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR43072",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "N-ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00583",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF55729",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl-CoA N-acyltransferases (Nat)"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS51186",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MEIRIFRQDDFEAVITLWERCDLLRPWNDPEMDIERKLNHDPDLFLVAEVNGEIVGSVMGGYDGHRGSAYYLGVHPDFRGRGIANALISRLEKKLIARGCPKIHLMVREDNDAVIGMYEKLEYETVDCITLGKRLIEDREY",
+    "length": 141,
+    "molWeight": 16341,
+    "crc64": "4A9374B6CE41F686",
+    "md5": "EA3F94C5A9E7A263380DFEB235C07993"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Domain": 1
+    },
+    "uniParcId": "UPI00003B82EF"
+  }
+}

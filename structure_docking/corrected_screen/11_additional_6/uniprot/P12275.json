@@ -1,0 +1,616 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "P12275",
+  "uniProtkbId": "ARYL_CHICK",
+  "entryAudit": {
+    "firstPublicDate": "1989-10-01",
+    "lastAnnotationUpdateDate": "2025-06-18",
+    "lastSequenceUpdateDate": "1989-10-01",
+    "entryVersion": 112,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 2.0,
+  "organism": {
+    "scientificName": "Gallus gallus",
+    "commonName": "Chicken",
+    "taxonId": 9031,
+    "lineage": [
+      "Eukaryota",
+      "Metazoa",
+      "Chordata",
+      "Craniata",
+      "Vertebrata",
+      "Euteleostomi",
+      "Archelosauria",
+      "Archosauria",
+      "Dinosauria",
+      "Saurischia",
+      "Theropoda",
+      "Coelurosauria",
+      "Aves",
+      "Neognathae",
+      "Galloanserae",
+      "Galliformes",
+      "Phasianidae",
+      "Phasianinae",
+      "Gallus"
+    ]
+  },
+  "proteinExistence": "1: Evidence at protein level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Arylamine N-acetyltransferase, liver isozyme"
+      },
+      "shortNames": [
+        {
+          "value": "Arylamine acetylase"
+        }
+      ],
+      "ecNumbers": [
+        {
+          "value": "2.3.1.5"
+        }
+      ]
+    }
+  },
+  "comments": [
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "an arylamine + acetyl-CoA = an N-acetylarylamine + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:16613"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:13790"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:50471"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          }
+        ],
+        "ecNumber": "2.3.1.5"
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the arylamine N-acetyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 287,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Arylamine N-acetyltransferase, liver isozyme",
+      "featureId": "PRO_0000107900"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 68,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 68,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Acyl-thioester intermediate",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 107,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 107,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 122,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 122,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0903",
+      "category": "Technical term",
+      "name": "Direct protein sequencing"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "2897360",
+        "citationType": "journal article",
+        "authors": [
+          "Ohsako S.",
+          "Ohtomi M.",
+          "Sakamoto Y.",
+          "Uyemura K.",
+          "Deguchi T."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "2897360"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1016/s0021-9258(18)68531-x"
+          }
+        ],
+        "title": "Arylamine N-acetyltransferase from chicken liver II. Cloning of cDNA and expression in Chinese hamster ovary cells.",
+        "publicationDate": "1988",
+        "journal": "J. Biol. Chem.",
+        "firstPage": "7534",
+        "lastPage": "7538",
+        "volume": "263"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [MRNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "Liver",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "2897359",
+        "citationType": "journal article",
+        "authors": [
+          "Deguchi T.",
+          "Sakamoto Y.",
+          "Sasaki Y.",
+          "Uyemura K."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "2897359"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1016/s0021-9258(18)68530-8"
+          }
+        ],
+        "title": "Arylamine N-acetyltransferase from chicken liver. I. Monoclonal antibodies, immunoaffinity purification, and amino acid sequences.",
+        "publicationDate": "1988",
+        "journal": "J. Biol. Chem.",
+        "firstPage": "7528",
+        "lastPage": "7533",
+        "volume": "263"
+      },
+      "referencePositions": [
+        "PARTIAL PROTEIN SEQUENCE"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "J03737",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAA48590.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "A28168",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "A28168"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_990857.2",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_205526.2"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "P12275",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "P12275",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "FunCoup",
+      "id": "P12275",
+      "properties": [
+        {
+          "key": "Number of interactors",
+          "value": "26"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "9031.ENSGALP00000008778",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "9031-ENSGALP00000008778",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "396537",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "gga:396537",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "CTD",
+      "id": "396537",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "VEuPathDB",
+      "id": "HostDB:geneid_396537",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "ENOG502RVZB",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Eukaryota"
+        }
+      ]
+    },
+    {
+      "database": "InParanoid",
+      "id": "P12275",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "10260017at2759",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PhylomeDB",
+      "id": "P12275",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PRO",
+      "id": "PR:P12275",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000000539",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Unassembled WGS sequence"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0004060",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:arylamine N-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.30.2140.20:FF:000001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine N-acetyltransferase 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.30.2140.20",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001447",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine_N-AcTrfase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR053710",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine_NAT_domain_sf"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR038765",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Papain-like_cys_pep_sf"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11786:SF8",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ARYLAMINE N-ACETYLTRANSFERASE 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11786",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "N-HYDROXYARYLAMINE O-ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00797",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PRINTS",
+      "id": "PR01543",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ANATRNSFRASE"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF54001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Cysteine proteinases"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MNIQEYFSRISFDGSHKDADLQTLTAIFQHHIQAIPFENLSMHCGETIDLDLQATYNKIVKKKRGGWCMETNYLLFWALKEMGYDICVLGGNSYEPAKKAYTDEINHILLKVVIKGSSYIVDAGFGGGPYQTWLPMLLISGKDQPQIPGIFRFIEDNGIWYLEKVKRKHYVPEGSVPLTDNPEMGNIRKLYSFTLEPKHIDDFQELNAYLQVAPDTILQKKSICSLQTTDGFYALVGWTFSEMKYKYKEDADLLQTTTLTDEEVEKTLKDKFNIVLENKLIPVNVRG",
+    "length": 287,
+    "molWeight": 32915,
+    "crc64": "6E2919AD2979E210",
+    "md5": "F4A10F62FFA281FE3DF9BF1E54363ED8"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "CATALYTIC ACTIVITY": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Active site": 3
+    },
+    "uniParcId": "UPI00001260D9"
+  }
+}

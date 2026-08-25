@@ -1,0 +1,678 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "O35573",
+  "uniProtkbId": "LCAT_ELIQU",
+  "entryAudit": {
+    "firstPublicDate": "2000-05-30",
+    "lastAnnotationUpdateDate": "2025-02-05",
+    "lastSequenceUpdateDate": "1998-01-01",
+    "entryVersion": 80,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Eliomys quercinus",
+    "commonName": "Garden dormouse",
+    "taxonId": 53277,
+    "lineage": [
+      "Eukaryota",
+      "Metazoa",
+      "Chordata",
+      "Craniata",
+      "Vertebrata",
+      "Euteleostomi",
+      "Mammalia",
+      "Eutheria",
+      "Euarchontoglires",
+      "Glires",
+      "Rodentia",
+      "Sciuromorpha",
+      "Gliridae",
+      "Leithiinae",
+      "Eliomys"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Phosphatidylcholine-sterol acyltransferase"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P04180"
+            }
+          ],
+          "value": "2.3.1.43"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "value": "Lecithin-cholesterol acyltransferase"
+        }
+      },
+      {
+        "fullName": {
+          "value": "Phospholipid-cholesterol acyltransferase"
+        }
+      }
+    ],
+    "flag": "Fragment"
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "LCAT"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P04180"
+            }
+          ],
+          "value": "Central enzyme in the extracellular metabolism of plasma lipoproteins. Synthesized mainly in the liver and secreted into plasma where it converts cholesterol and phosphatidylcholines (lecithins) to cholesteryl esters and lysophosphatidylcholines on the surface of high and low density lipoproteins (HDLs and LDLs). The cholesterol ester is then transported back to the liver. Has a preference for plasma 16:0-18:2 or 18:O-18:2 phosphatidylcholines. Also produced in the brain by primary astrocytes, and esterifies free cholesterol on nascent APOE-containing lipoproteins secreted from glia and influences cerebral spinal fluid (CSF) APOE- and APOA1 levels. Together with APOE and the cholesterol transporter ABCA1, plays a key role in the maturation of glial-derived, nascent lipoproteins. Required for remodeling high-density lipoprotein particles into their spherical forms (By similarity)"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "a sterol + a 1,2-diacyl-sn-glycero-3-phosphocholine = a sterol ester + a 1-acyl-sn-glycero-3-phosphocholine",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:21204"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15889"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:35915"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57643"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:58168"
+          }
+        ],
+        "ecNumber": "2.3.1.43",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "P04180"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250"
+            }
+          ],
+          "value": "APOA1 is the most potent activator in plasma. Also activated by APOE, APOC1 and APOA4 (By similarity)"
+        }
+      ],
+      "commentType": "ACTIVITY REGULATION"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "note": {
+        "texts": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P04180"
+              }
+            ],
+            "value": "Secreted into blood plasma. Produced in astrocytes and secreted into cerebral spinal fluid (CSF) (By similarity)"
+          }
+        ]
+      },
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P04180"
+              }
+            ],
+            "value": "Secreted",
+            "id": "SL-0243"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the AB hydrolase superfamily. Lipase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "OUTSIDE"
+        },
+        "end": {
+          "value": 299,
+          "modifier": "OUTSIDE"
+        }
+      },
+      "description": "Phosphatidylcholine-sterol acyltransferase",
+      "featureId": "PRO_0000090359"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 127,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 127,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Nucleophile",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P04180"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 258,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 258,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Charge relay system",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P04180"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 290,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 290,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Charge relay system",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P04180"
+        }
+      ]
+    },
+    {
+      "type": "Site",
+      "location": {
+        "start": {
+          "value": 95,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 95,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Determinant for substrate specificity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P04180"
+        }
+      ]
+    },
+    {
+      "type": "Glycosylation",
+      "location": {
+        "start": {
+          "value": 30,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 30,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "N-linked (GlcNAc...) asparagine",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ],
+      "featureId": ""
+    },
+    {
+      "type": "Glycosylation",
+      "location": {
+        "start": {
+          "value": 185,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 185,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "N-linked (GlcNAc...) asparagine",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ],
+      "featureId": ""
+    },
+    {
+      "type": "Disulfide bond",
+      "location": {
+        "start": {
+          "value": 226,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 269,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P04180"
+        }
+      ]
+    },
+    {
+      "type": "Non-terminal residue",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1,
+          "modifier": "EXACT"
+        }
+      },
+      "description": ""
+    },
+    {
+      "type": "Non-terminal residue",
+      "location": {
+        "start": {
+          "value": 299,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 299,
+          "modifier": "EXACT"
+        }
+      },
+      "description": ""
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0153",
+      "category": "Biological process",
+      "name": "Cholesterol metabolism"
+    },
+    {
+      "id": "KW-1015",
+      "category": "PTM",
+      "name": "Disulfide bond"
+    },
+    {
+      "id": "KW-0325",
+      "category": "PTM",
+      "name": "Glycoprotein"
+    },
+    {
+      "id": "KW-0443",
+      "category": "Biological process",
+      "name": "Lipid metabolism"
+    },
+    {
+      "id": "KW-0964",
+      "category": "Cellular component",
+      "name": "Secreted"
+    },
+    {
+      "id": "KW-0753",
+      "category": "Biological process",
+      "name": "Steroid metabolism"
+    },
+    {
+      "id": "KW-1207",
+      "category": "Biological process",
+      "name": "Sterol metabolism"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "9417899",
+        "citationType": "journal article",
+        "authors": [
+          "Robinson M.",
+          "Catzeflis F.",
+          "Briolay J.",
+          "Mouchiroud D."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9417899"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1006/mpev.1997.0424"
+          }
+        ],
+        "title": "Molecular phylogeny of rodents, with special emphasis on murids: evidence from nuclear gene LCAT.",
+        "publicationDate": "1997",
+        "journal": "Mol. Phylogenet. Evol.",
+        "firstPage": "423",
+        "lastPage": "434",
+        "volume": "8"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "AH005254",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAB58999.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "O35573",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "O35573",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GlyCosmos",
+      "id": "O35573",
+      "properties": [
+        {
+          "key": "glycosylation",
+          "value": "2 sites, No reported glycans"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005576",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:extracellular region"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0004607",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:phosphatidylcholine-sterol O-acyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0008203",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:cholesterol metabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0046470",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:phosphatidylcholine metabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.40.50.1820:FF:000720",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Phosphatidylcholine-sterol acyltransferase"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.40.50.1820",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "alpha/beta hydrolase"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR029058",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "AB_hydrolase_fold"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR003386",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LACT/PDAT_acylTrfase"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11440",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LECITHIN-CHOLESTEROL ACYLTRANSFERASE-RELATED"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF02450",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LCAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF53474",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "alpha/beta-Hydrolases"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "EDCFTIWLDLNIFLSLGVDCWIDNTRVIYNRSSGYMSNAPGVQIRVPGFGKTYSIEYLDDNKLAGYMHTLVQNLVNNAYVRDETVRAPPYDWRLEPRHQEEYYLKLAGLVEEMYATYGKPVFLIGHSLGFCHLLYFLLLQPQGIPIMSSIKLVEEQRITTTSPWMFPSHQVWPEDHVFISTPNFNYTFSDFQRFFADLHFEDGWYMWLQSRDLLAGLPAPGVEVYCLYGVGLPTPHTYMYDHGFPYTDPVGIIYEDGDDTVTTHSIELCSHWQGRQPQPVHLLPLRGTQHLNMVFSNKT",
+    "length": 299,
+    "molWeight": 34653,
+    "crc64": "9C2041F7E79A2CEF",
+    "md5": "4682DB1D78D4D692096296AC2621BF02"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "ACTIVITY REGULATION": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Active site": 3,
+      "Site": 1,
+      "Glycosylation": 2,
+      "Disulfide bond": 1,
+      "Non-terminal residue": 2
+    },
+    "uniParcId": "UPI000012E25F"
+  }
+}

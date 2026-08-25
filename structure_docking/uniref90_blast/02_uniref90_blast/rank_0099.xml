@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-125751-0888-38536708-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-125751-0888-38536708-p2m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="191"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:57:51+01:00" end="2026-08-06T13:00:38+01:00" search="P0Y0M0DT0H0M167.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q2NSM3" ac="UniRef90_Q2NSM3" length="191" description="Lipid A acyltransferase PagP n=4 Tax=Sodalis TaxID=84565 RepID=PAGP_SODGM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1085</score>
+      <bits>422.6</bits>
+      <expectation>3.8e-150</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MRLFYQRISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>MRLFYQRISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</pattern>
+      <matchSeq start="1" end="191">MRLFYQRISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_A0ABS5Y973" ac="UniRef90_A0ABS5Y973" length="191" description="Lipid A acyltransferase PagP n=2 Tax=Candidatus Sodalis endolongispinus TaxID=2812662 RepID=A0ABS5Y973_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1026</score>
+      <bits>399.8</bits>
+      <expectation>3.8e-141</expectation>
+      <identity>93.7</identity>
+      <positives>96.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MRLFYQRISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>MRLFYQRI LLI LCGFFSAAWA+D  PA+STGLWQ+FT NVAETWHHSP+QDLYV AITWHNR+TYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYL+AFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</pattern>
+      <matchSeq start="1" end="191">MRLFYQRILLLIGLCGFFSAAWATDDPPAASTGLWQQFTHNVAETWHHSPNQDLYVSAITWHNRYTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLMAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0A448S1K7" ac="UniRef90_A0A448S1K7" length="196" description="Lipid A acyltransferase PagP n=14 Tax=Enterobacterales TaxID=91347 RepID=A0A448S1K7_SERRU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>751</score>
+      <bits>293.9</bits>
+      <expectation>3.8e-99</expectation>
+      <identity>76.8</identity>
+      <positives>86.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="191">SDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>S V PA   GLWQRFT NVAETW++SP+ DLY+PAITWHNR+TYDDEHI +YNERPWGAGYGISR+D+ G+WH IY++AFKDSFNKWEP GGYA+EK WRP D  +D   G GFTA VTARDNW YIP+PA LPLASVGYK+LTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="30" end="196">STVAPAEKPGLWQRFTDNVAETWNNSPNHDLYIPAITWHNRWTYDDEHIDKYNERPWGAGYGISRFDQDGDWHGIYIMAFKDSFNKWEPIGGYAYEKIWRPLDD-KDFRLGLGFTASVTARDNWNYIPIPAPLPLASVGYKKLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A240B409" ac="UniRef90_A0A240B409" length="196" description="Lipid A acyltransferase PagP n=4 Tax=Serratia TaxID=613 RepID=A0A240B409_SERFI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>746</score>
+      <bits>292.0</bits>
+      <expectation>2.2e-98</expectation>
+      <identity>68.0</identity>
+      <positives>78.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="191">LFYQRISLLISLCGFFSA--------AWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>+F++R  L  SL   F          A  S+   A   GLWQRFT NVAETW++SP+ DLY+PAITWHNR+TYDDEHI +YNERPWGAGYGISRYD  G+WH IYL+AFKDSFNKWEP GGYA+EK WRP D  +D   G GFTA VTARDNW YIP+PA LPLAS+GY++LTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="1" end="196">MFFKRTILACSLALIFPTLPSYAEVGAENSNAAQAEKPGLWQRFTDNVAETWNNSPNHDLYIPAITWHNRWTYDDEHIDKYNERPWGAGYGISRYDSDGDWHGIYLMAFKDSFNKWEPIGGYAYEKIWRPLDD-KDFRLGLGFTASVTARDNWNYIPIPAPLPLASIGYRRLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0A9X9BZS5" ac="UniRef90_A0A9X9BZS5" length="196" description="Lipid A acyltransferase PagP n=23 Tax=Enterobacterales TaxID=91347 RepID=A0A9X9BZS5_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>740</score>
+      <bits>289.7</bits>
+      <expectation>1.8e-97</expectation>
+      <identity>67.0</identity>
+      <positives>78.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="191">LFYQRISLLISLCGFFSA--------AWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>+F +R  L  SL   F A          + +   A   GLWQRFT NV+ETW++SP+ DLY+PAITWHNR+TYDDEHI +YNERPWGAGYGISRYD  G+WH IY++AFKDSFNKWEP GGYA+EK WRP D  +D   G GFTA VTARDNWKYIP+PA LPLAS+GY++LTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="1" end="196">MFLKRTLLACSLALIFPALPSYAEVSTESGNTAQAEKPGLWQRFTHNVSETWNNSPNHDLYIPAITWHNRWTYDDEHIDKYNERPWGAGYGISRYDSDGDWHGIYIMAFKDSFNKWEPIGGYAYEKIWRPLDD-KDFRLGLGFTASVTARDNWKYIPIPAPLPLASIGYQRLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_D4DWI4" ac="UniRef90_D4DWI4" length="221" description="Lipid A acyltransferase PagP n=12 Tax=Serratia TaxID=613 RepID=D4DWI4_SEROD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>735</score>
+      <bits>287.7</bits>
+      <expectation>2.4e-96</expectation>
+      <identity>76.7</identity>
+      <positives>87.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="191">ASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>A   GLWQRFT NVAETW++SP++D+Y+PAITWHNR+TYDDEHI +YNERPWGAGYGISR+D+ G+WH IYL+AFKDSFNKWEP GGYA+EK WRP D  +D   G GFTA VTARDNW YIP+PA LPLAS+GYK LTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="60" end="221">AEQPGLWQRFTHNVAETWNNSPNKDIYLPAITWHNRWTYDDEHIDKYNERPWGAGYGISRFDQDGDWHGIYLMAFKDSFNKWEPIGGYAYEKIWRPLDD-KDFRLGLGFTASVTARDNWNYIPIPAPLPLASIGYKSLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_A0A250AYL4" ac="UniRef90_A0A250AYL4" length="196" description="Lipid A acyltransferase PagP n=6 Tax=Yersiniaceae TaxID=1903411 RepID=A0A250AYL4_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>714</score>
+      <bits>279.6</bits>
+      <expectation>1.6e-93</expectation>
+      <identity>65.0</identity>
+      <positives>77.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="191">LFYQRISLLISLCGFFSA--------AWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>+F++R  L  SL   F A        A   +VQ   + GLWQRF  NVAETW++SP+ D+Y+PAITWHNR+TYD E I +YNERPWGAGYGISR+D+ G+WH IY++AFKDSFNKWEP GGYA+EK WRP D  +D   G GFT  VTAR NW YIP+PA LPLAS+GYK+LTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="1" end="196">MFFKRTLLACSLALIFPALPSYAEVSAENGNVQQTENPGLWQRFKSNVAETWNNSPNHDVYLPAITWHNRWTYDQEKIDKYNERPWGAGYGISRFDQDGDWHGIYIMAFKDSFNKWEPIGGYAYEKIWRPLDD-KDFRLGLGFTTSVTARHNWDYIPIPAPLPLASIGYKRLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0ABY9PQX8" ac="UniRef90_A0ABY9PQX8" length="196" description="Lipid A acyltransferase PagP n=11 Tax=Serratia TaxID=613 RepID=A0ABY9PQX8_SERFO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>9.4e-93</expectation>
+      <identity>73.8</identity>
+      <positives>84.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="191">SDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>S+V  A   G W RFT NVAETW++SP+++LY+PAITWHNR+TYD E    YNERPWGAGYGISR+D  G+WHAIYL+AFKDSFNKWEP GGYA+EK WRP +  +D   G GFTA VTARDNWKYIP+PA LPLAS+GYKQLTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="30" end="196">SNVAHAEDPGWWGRFTGNVAETWNNSPNKELYLPAITWHNRWTYDKEKTDEYNERPWGAGYGISRFDADGDWHAIYLMAFKDSFNKWEPIGGYAYEKIWRPIEG-EDFRLGLGFTASVTARDNWKYIPIPAPLPLASIGYKQLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_UPI001FEEE180" ac="UniRef90_UPI001FEEE180" length="191" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=Erwinia TaxID=551 RepID=UPI001FEEE180">
+    <alignments total="1">
+     <alignment number="1">
+      <score>700</score>
+      <bits>274.2</bits>
+      <expectation>1.9e-91</expectation>
+      <identity>67.0</identity>
+      <positives>78.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="191">RISLL-ISLCGFFSAAWASDVQPASS--TGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>R+SL  +SL G  S A     Q   S  +G WQ F+  VA TW      DLYVPAITWHNR+TYD +HI +YNERPWGAG GISRYDEKGNW+ +YL+AFKDSFNKWEPFGGY WEK WRP +  QD+  G G+TAGVTARDNWKYIPVPA+LPLAS+GY++ TFQ TYIPGT+NNGNV+FAWLR++F</pattern>
+      <matchSeq start="5" end="191">RLSLFTLSLSGVLSIATPLQAQTLGSAISGTWQDFSSKVATTWDQPQGYDLYVPAITWHNRWTYDQQHIDKYNERPWGAGGGISRYDEKGNWNGLYLMAFKDSFNKWEPFGGYGWEKIWRPLNN-QDVRLGLGYTAGVTARDNWKYIPVPAVLPLASIGYRKATFQMTYIPGTHNNGNVYFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0A2M9WAT7" ac="UniRef90_A0A2M9WAT7" length="190" description="Lipid A acyltransferase PagP n=13 Tax=Enterobacterales TaxID=91347 RepID=A0A2M9WAT7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>695</score>
+      <bits>272.3</bits>
+      <expectation>1e-90</expectation>
+      <identity>66.7</identity>
+      <positives>77.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="191">ISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>++L   FSA+  S  Q   S   W  F+ NVAETW    H DLY+PAITWHNR+TYD+EHI +YNERPWGAG G+SR+DEKGNWH +Y + FKDSFNKWEP GGY WE  WRP +  Q+ H GAG+TAGVTARDNW+YIPVP +LPLAS+GY   TFQ TYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="14" end="190">LTLLATFSASAVSTTQAIESG--WNTFSDNVAETWSQPQHNDLYLPAITWHNRWTYDEEHIEKYNERPWGAGGGVSRWDEKGNWHGLYAMVFKDSFNKWEPIGGYGWEATWRPLND-QNFHIGAGYTAGVTARDNWRYIPVPLVLPLASIGYGPATFQMTYIPGTYNNGNVFFAWLRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A6M8U9J2" ac="UniRef90_A0A6M8U9J2" length="192" description="Lipid A acyltransferase PagP n=2 Tax=Paramixta manurensis TaxID=2740817 RepID=A0A6M8U9J2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>694</score>
+      <bits>271.9</bits>
+      <expectation>1.6e-90</expectation>
+      <identity>75.2</identity>
+      <positives>84.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="191">WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>WQ F+ NV +TW  S   DLY+PAITWHNR+TYDDEHIRRYNERPWGAG GISRYD  GNW+ +YL+AFKDSFNKWEP GGY WEK WRPF    +IHFGAG+TAGVTARDNW YIP+P LLPLAS+GY   TFQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="37" end="192">WQTFSTNVHDTWTSSDSVDLYIPAITWHNRWTYDDEHIRRYNERPWGAGGGISRYDANGNWNGLYLMAFKDSFNKWEPIGGYGWEKTWRPFSD-DNIHFGAGYTAGVTARDNWHYIPIPVLLPLASIGYGPATFQMTYIPGTYNNGNVYFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0ABV4E4W3" ac="UniRef90_A0ABV4E4W3" length="191" description="Lipid A acyltransferase PagP n=3 Tax=Erwinia TaxID=551 RepID=A0ABV4E4W3_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>693</score>
+      <bits>271.6</bits>
+      <expectation>2.2e-90</expectation>
+      <identity>63.7</identity>
+      <positives>77.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="191">FYQRISLLISLCGFFSAAWASDVQP--ASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>F++   L +SL G  S +  +  Q   A+ +G WQ F+  V+ TW+   H DLYVPAITWHNR+TYD  HI +YNERPWGAG G+SRYDEKGNW+ +Y++AFKDSFNKWEPFGGY WEK W+P  R +D   G G+TAGVTARDNWKYIPVPA+LPLAS+G++  TFQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="3" end="191">FFRFFLLFLSLAGAGSLSATAQAQTLGAAISGGWQNFSDGVSTTWNEPQHYDLYVPAITWHNRWTYDQAHIDKYNERPWGAGGGMSRYDEKGNWNGLYVMAFKDSFNKWEPFGGYGWEKIWQPL-RNKDFRLGLGYTAGVTARDNWKYIPVPAVLPLASIGFRDATFQMTYIPGTYNNGNVYFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_A8GAF7" ac="UniRef90_A8GAF7" length="197" description="Lipid A acyltransferase PagP n=26 Tax=Serratia TaxID=613 RepID=PAGP_SERP5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>693</score>
+      <bits>271.6</bits>
+      <expectation>2.6e-90</expectation>
+      <identity>71.8</identity>
+      <positives>82.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="29" end="191">ASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>A   GLW+RFT NVAETW++SP++DLYVPAITWHNR TY  E I  YNERPWG GYGISRYD  G+WH +Y++ FKDSFNKWEP GGYA+EK WRP +  +D   G GFTA +TARDNW YIP+PA LPLAS+GYKQLTFQATYIPGTYNNGNVFF W R++F</pattern>
+      <matchSeq start="36" end="197">AEKPGLWKRFTSNVAETWNNSPNKDLYVPAITWHNRLTYSQEKIDSYNERPWGGGYGISRYDSDGDWHGLYMMVFKDSFNKWEPIGGYAYEKIWRPLED-KDFRLGLGFTASITARDNWNYIPIPAPLPLASIGYKQLTFQATYIPGTYNNGNVFFGWFRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_W0LGI7" ac="UniRef90_W0LGI7" length="197" description="Lipid A acyltransferase PagP n=2 Tax=Chania multitudinisentens TaxID=1639108 RepID=W0LGI7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>693</score>
+      <bits>271.6</bits>
+      <expectation>2.6e-90</expectation>
+      <identity>73.6</identity>
+      <positives>84.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="191">GLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>G W RF  NVAETW+HSP+++ Y+PAITWHNR+TYD E I  YNERPWGAGYGISR+DE+GNWH IY + FKDSFNKWEP GGYA+E  WRP D  +D   G GFTA VTARDNWKYIP+PA LP+AS+GY++LTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="40" end="197">GWWGRFKSNVAETWNHSPNKEFYLPAITWHNRWTYDQEKIDSYNERPWGAGYGISRFDEEGNWHTIYFMMFKDSFNKWEPIGGYAYENIWRPIDG-EDFRLGLGFTASVTARDNWKYIPIPAPLPMASIGYQRLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_A0A4R3Z7S2" ac="UniRef90_A0A4R3Z7S2" length="208" description="Lipid A acyltransferase PagP n=2 Tax=Biostraticola tofi TaxID=466109 RepID=A0A4R3Z7S2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>694</score>
+      <bits>271.9</bits>
+      <expectation>2.7e-90</expectation>
+      <identity>73.0</identity>
+      <positives>83.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="191">GLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>G+WQ    NV ETW HSP +DLY+P ITWHNRFTYD++HI+RYNERPWGAGYGISR+DE G+WH IYL+AFKDSFN WEPFGGYAWEKQW P    +    GAG+TAG T R+NWKY+PVPA+LPLASV Y  LTFQATYIPG+YNNGNVFF WLR+ F</pattern>
+      <matchSeq start="51" end="208">GIWQSLVSNVQETWQHSPQRDLYLPVITWHNRFTYDNDHIKRYNERPWGAGYGISRHDENGDWHGIYLMAFKDSFNHWEPFGGYAWEKQWYP-SANKKFRLGAGYTAGFTLRENWKYLPVPAVLPLASVSYGDLTFQATYIPGSYNNGNVFFGWLRWSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_A0ABX3URH5" ac="UniRef90_A0ABX3URH5" length="173" description="Lipid A acyltransferase PagP n=7 Tax=Pantoea TaxID=53335 RepID=A0ABX3URH5_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>690</score>
+      <bits>270.4</bits>
+      <expectation>3.3e-90</expectation>
+      <identity>75.2</identity>
+      <positives>82.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="191">WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>W  FT N+ +TW  S   DLY+PAITWHNR+TYDDEHI RYNERPWGAG GISRYDEKGNWH +YL+AFKDS+NKWEPF GY WE  W P D  +  HFGAG+TAGVTARDNW YIPVPALLPLASVGY  L FQ TYIPGTYNNGNV+FAWLR +F</pattern>
+      <matchSeq start="18" end="173">WNTFTNNLQQTWRQSQESDLYLPAITWHNRWTYDDEHIERYNERPWGAGGGISRYDEKGNWHGLYLMAFKDSYNKWEPFTGYGWEATWHPIDGSR-FHFGAGYTAGVTARDNWHYIPVPALLPLASVGYGPLNFQMTYIPGTYNNGNVYFAWLRLQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_A0A1X1ERZ7" ac="UniRef90_A0A1X1ERZ7" length="190" description="Lipid A acyltransferase PagP n=4 Tax=Pantoea TaxID=53335 RepID=A0A1X1ERZ7_PANCY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>691</score>
+      <bits>270.8</bits>
+      <expectation>4.2e-90</expectation>
+      <identity>64.7</identity>
+      <positives>77.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="191">ISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>+  +++L   FSA+ A+  Q   S   W  FT NVAETW    + D Y+PAITWHNR+TYD EHI RYNERPWGAG G+SR+D+KGNWH +YL+AFKDSFNKWEP GGY WE  WRP     + H GAG+TAGVTARDNWKYIP+P LLP+AS+GY  +TFQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="10" end="190">VGCILTLGSAFSASAATATQTIKSG--WNTFTDNVAETWSQPQNYDFYLPAITWHNRWTYDQEHIDRYNERPWGAGGGVSRWDDKGNWHGLYLMAFKDSFNKWEPIGGYGWEATWRPLSD-DNFHIGAGYTAGVTARDNWKYIPIPVLLPMASIGYGPVTFQMTYIPGTYNNGNVYFAWLRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0A1V9DIG1" ac="UniRef90_A0A1V9DIG1" length="190" description="Lipid A acyltransferase PagP n=2 Tax=Pantoea TaxID=53335 RepID=A0A1V9DIG1_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>689</score>
+      <bits>270.0</bits>
+      <expectation>8.5e-90</expectation>
+      <identity>65.0</identity>
+      <positives>76.0</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="191">SLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>S L+  C   +A  +  +Q       WQ F+ NV +TW    H+D Y+PAITWHNR+TYDD+HI RYNERPWGAG GISRYD+KGNWH +YL+AFKDSFNKWEPFGGY WE  WRP    Q  H GAG+TAGVTAR NW Y+PVPALLPLASVGY  + FQ TYIPGTYNNGNV+FAW+R++F</pattern>
+      <matchSeq start="14" end="190">SALVLTCSAQAATLSDHLQNG-----WQTFSDNVQQTWQQPQHKDFYLPAITWHNRWTYDDDHINRYNERPWGAGGGISRYDDKGNWHGLYLMAFKDSFNKWEPFGGYGWEATWRPLSD-QRFHLGAGYTAGVTARHNWDYVPVPALLPLASVGYGPVNFQMTYIPGTYNNGNVYFAWMRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0ABT8XXC6" ac="UniRef90_A0ABT8XXC6" length="204" description="Lipid A acyltransferase PagP n=3 Tax=Pantoea TaxID=53335 RepID=A0ABT8XXC6_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>690</score>
+      <bits>270.4</bits>
+      <expectation>9.6e-90</expectation>
+      <identity>69.4</identity>
+      <positives>79.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="191">SAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>S+A A     A  +G W  FT NVA+TW    + D Y+PAITWHNR+TYD EHI RYNERPWGAG GISR+D+KGNWH +YL+AFKDSFNKWEP GGY WE  WRP  R  + HFGAGFTAGVTARDNW YIP+P LLP+ASVGY  +TFQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="34" end="204">SSAQADTTTQAIKSG-WNTFTDNVAQTWSQPQNYDFYLPAITWHNRWTYDQEHIDRYNERPWGAGGGISRWDDKGNWHGLYLMAFKDSFNKWEPIGGYGWEATWRPL-RDDNFHFGAGFTAGVTARDNWNYIPIPVLLPMASVGYGPVTFQMTYIPGTYNNGNVYFAWLRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_A0AAJ5QLN2" ac="UniRef90_A0AAJ5QLN2" length="164" description="Lipid A acyltransferase PagP n=4 Tax=Pantoea TaxID=53335 RepID=A0AAJ5QLN2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>685</score>
+      <bits>268.5</bits>
+      <expectation>1.4e-89</expectation>
+      <identity>74.5</identity>
+      <positives>81.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="191">WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>W  F+ NV +TW    ++D Y+PAITWHNR+TYDDEHI RYNERPWGAG GISRYDEKGNWH +YL+AFKDSFNKWEPF GY WE  WRP    Q  H GAG+TAGVTAR NW YIPVPALLPLASVGY  L FQ TYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="9" end="164">WNTFSNNVQQTWEQPQNKDFYLPAITWHNRWTYDDEHINRYNERPWGAGGGISRYDEKGNWHGLYLMAFKDSFNKWEPFSGYGWEATWRPLSD-QRFHLGAGYTAGVTARHNWNYIPVPALLPLASVGYGPLNFQMTYIPGTYNNGNVFFAWLRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_UPI0039858407" ac="UniRef90_UPI0039858407" length="200" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=Serratia sp. UGAL515B_01 TaxID=2986763 RepID=UPI0039858407">
+    <alignments total="1">
+     <alignment number="1">
+      <score>687</score>
+      <bits>269.2</bits>
+      <expectation>2.4e-89</expectation>
+      <identity>68.3</identity>
+      <positives>82.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="24" end="190">SDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYR</querySeq>
+      <pattern>++V+ A   GLW  F  NVAETW++SP+++ Y+P ITWHNR+TYD E +  YNERPWGAGYGISR+D+ GNWHA+Y +AFKDSFNKWEP GGYA+EK WRP +R +D  FG GFT  +T RDNW YIP+PA LPL S+GY QLTFQATYIPGTYNNGNVFFAWLR++</pattern>
+      <matchSeq start="30" end="195">NNVKHAKDQGLWAHFKNNVAETWNNSPNKEFYLPVITWHNRWTYDQEKLDNYNERPWGAGYGISRFDKNGNWHAVYAMAFKDSFNKWEPIGGYAYEKIWRPIER-KDFRFGLGFTTSITTRDNWNYIPIPAPLPLVSIGYNQLTFQATYIPGTYNNGNVFFAWLRWQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A0ABV6ECK9" ac="UniRef90_A0ABV6ECK9" length="208" description="Lipid A acyltransferase PagP n=1 Tax=Serratia aquatilis TaxID=1737515 RepID=A0ABV6ECK9_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>687</score>
+      <bits>269.2</bits>
+      <expectation>3.1e-89</expectation>
+      <identity>66.7</identity>
+      <positives>76.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="190">RISLLISLCGFFSAA--------WASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYR</querySeq>
+      <pattern>RI L+ SL   F A          +S V  A   GLW RF  NVAETW++SP+++ Y+PAITWHNR+TYD E +  YNERPWGAGYGISR+D  GNWHAIY +AFKDSFNKWEP GGYA+EK  RP D  +D   G GFT  VTARDNWKYIP+PA LPLAS+GYKQLTFQATYIPGTYNNGNVFFAWLR++</pattern>
+      <matchSeq start="6" end="196">RILLVCSLALIFPALPLHAEAGRESSQVVHAEDPGLWGRFKGNVAETWNNSPNKEFYLPAITWHNRWTYDQEKLDNYNERPWGAGYGISRFDGDGNWHAIYAMAFKDSFNKWEPIGGYAYEKILRPSDN-KDFRLGIGFTLSVTARDNWKYIPIPAPLPLASIGYKQLTFQATYIPGTYNNGNVFFAWLRWQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_UPI0039B6D3CB" ac="UniRef90_UPI0039B6D3CB" length="193" description="lipid IV(A) palmitoyltransferase PagP n=4 Tax=unclassified Sodalis (in: enterobacteria) TaxID=2636512 RepID=UPI0039B6D3CB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>685</score>
+      <bits>268.5</bits>
+      <expectation>3.8e-89</expectation>
+      <identity>73.0</identity>
+      <positives>81.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="33" end="191">GLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>GLW+ FT N+A+TW+ SP QD+YVP ITWHNR+ YDDEHIRRYNERPWG GYGISR DE+ NWHA+Y +AFKDSFN+WEPF GYAWE QWRP     D   GAGFT GVTAR NW+Y P+PALLPLASV Y  +TFQ TYIPGT NNGNV FAWLR+RF</pattern>
+      <matchSeq start="36" end="193">GLWRNFTANIAKTWNASPDQDIYVPVITWHNRYFYDDEHIRRYNERPWGLGYGISRLDERDNWHALYAMAFKDSFNRWEPFAGYAWESQWRPL-ADNDFRLGAGFTLGVTARHNWRYYPIPALLPLASVSYHTITFQGTYIPGTRNNGNVVFAWLRWRF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_UPI003007FC7A" ac="UniRef90_UPI003007FC7A" length="191" description="lipid IV(A) palmitoyltransferase PagP n=2 Tax=Erwiniaceae TaxID=1903409 RepID=UPI003007FC7A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>683</score>
+      <bits>267.7</bits>
+      <expectation>7.2e-89</expectation>
+      <identity>66.3</identity>
+      <positives>77.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="191">LLISLCGFFSAAWASDVQP--ASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>LL+SL G   A  ++  Q   A+ +  WQ F+  V  TW+   H DLYVPAITWHNR TYD  HI +YNERPWGAG GISRYDEKGNW+ +YL+AFKDSFNKWEPFGGY WEK WRP D  +D   G G+TAGVTARDNWKYIPVPA+LPLAS+GY + TFQ TYIPGT+NNGNV+FAW R++F</pattern>
+      <matchSeq start="9" end="191">LLLSLAGTGGATASAQAQTLGAALSDGWQNFSGKVTTTWNEPQHYDLYVPAITWHNRATYDRAHIDKYNERPWGAGGGISRYDEKGNWNGLYLMAFKDSFNKWEPFGGYGWEKIWRPLDD-KDFRLGLGYTAGVTARDNWKYIPVPAVLPLASIGYSKATFQMTYIPGTHNNGNVYFAWFRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0A845SRR2" ac="UniRef90_A0A845SRR2" length="164" description="Lipid A acyltransferase PagP n=1 Tax=Acerihabitans arboris TaxID=2691583 RepID=A0A845SRR2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>680</score>
+      <bits>266.5</bits>
+      <expectation>8.2e-89</expectation>
+      <identity>69.9</identity>
+      <positives>82.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="190">PASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYR</querySeq>
+      <pattern>PA   GLW+ FT NVA+TWH SP QD+Y+PAI+WHNR+ Y DEHIRRYNERPWGAGYG+SR DE+ NWHA+Y++AFKDSFN+WEPF GYAWE +WRP    +    GAGFT GVTAR NW Y P+PA+LPLASV Y++ TFQ TYIPGT NNGNVFFAWLR++</pattern>
+      <matchSeq start="2" end="163">PARDNGLWRSFTANVAKTWHASPDQDIYLPAISWHNRYFYSDEHIRRYNERPWGAGYGVSRLDERDNWHALYMMAFKDSFNRWEPFAGYAWESRWRPL-ADKAFRVGAGFTLGVTARHNWGYYPIPAVLPLASVSYQKFTFQGTYIPGTRNNGNVFFAWLRWQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_UPI0036F1A8A5" ac="UniRef90_UPI0036F1A8A5" length="190" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=Winslowiella TaxID=2997349 RepID=UPI0036F1A8A5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>681</score>
+      <bits>266.9</bits>
+      <expectation>1.4e-88</expectation>
+      <identity>66.3</identity>
+      <positives>76.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="191">ISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>+ +++S C F S A A ++   S T LWQ FT NV +TW      DLYVPAITWHNR+TYD E   +YNERPWGAG GISR+DE GNW+ IYL+AFKDS+NKWEP GGY WEK WRPF   Q+   GAG+TAGVTARDNWKYIP+P LLPLAS+GY   TFQ TYIPGTYNNGNVFFAW R+ F</pattern>
+      <matchSeq start="9" end="190">LPVVLSSCLFSSVASAGEIIDQSKT-LWQTFTDNVEKTWTSPDSYDLYVPAITWHNRWTYDKEKTDKYNERPWGAGGGISRFDEHGNWNGIYLMAFKDSYNKWEPIGGYGWEKTWRPFSD-QNFRLGAGYTAGVTARDNWKYIPIPVLLPLASIGYGPATFQMTYIPGTYNNGNVFFAWARFSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_UPI0039A2447D" ac="UniRef90_UPI0039A2447D" length="190" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=Erwinia sp. MMLR14_017 TaxID=3093842 RepID=UPI0039A2447D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>681</score>
+      <bits>266.9</bits>
+      <expectation>1.4e-88</expectation>
+      <identity>63.6</identity>
+      <positives>75.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="191">YQRISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>Y  + L  + CGF ++A A  V  A +   WQ F+ NV+ETWH+    DLYVPAITWHNR TYD +   +YNERPWGAG GIS YDEKGNW+ +YL+AFKDS+NKWEP GGY WEK WRP     D   G G+TAGVTAR+NWKYIPVP LLPLAS+GY++ TFQ TYIPGTYNNGNV+FAW R++F</pattern>
+      <matchSeq start="6" end="190">YSLLFLTFASCGFANSAQAVTVATAVAN-TWQAFSDNVSETWHNPESYDLYVPAITWHNRLTYDSKKTDKYNERPWGAGGGISHYDEKGNWNGLYLMAFKDSYNKWEPIGGYGWEKSWRPLSD-PDFRLGLGYTAGVTARNNWKYIPVPVLLPLASIGYRKATFQMTYIPGTYNNGNVYFAWFRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_UPI0009E442AF" ac="UniRef90_UPI0009E442AF" length="208" description="lipid IV(A) palmitoyltransferase PagP n=2 Tax=Erwinia TaxID=551 RepID=UPI0009E442AF">
+    <alignments total="1">
+     <alignment number="1">
+      <score>681</score>
+      <bits>266.9</bits>
+      <expectation>2.6e-88</expectation>
+      <identity>65.6</identity>
+      <positives>76.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="191">RLFYQRISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPF--DRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>R F   I+LLIS  G FSA  A+  Q   ++  W  F+ NVA+TW  S   D+Y+PAITWHNR+TYDDEHI +YNERPWGAG G+SRYD+KGNWH +YL+AFKDSFNKWEPFGGY W   WRP   D++   H+GAG+TAG TARDNWKYIPV A+LPLA+VGY  L  Q TYIPGTYNNGNVFFAWL+Y F</pattern>
+      <matchSeq start="24" end="208">RGFALSIALLIS--GTFSAHSATVSQKIKNS--WNTFSDNVAQTWQQSDGGDIYLPAITWHNRWTYDDEHIEKYNERPWGAGGGVSRYDQKGNWHGLYLMAFKDSFNKWEPFGGYGWVATWRPLADDKF---HWGAGYTAGFTARDNWKYIPVSAVLPLAAVGYGNLDLQMTYIPGTYNNGNVFFAWLKYHF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0A1X1DA63" ac="UniRef90_A0A1X1DA63" length="190" description="Lipid A acyltransferase PagP n=10 Tax=Pantoea TaxID=53335 RepID=A0A1X1DA63_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>677</score>
+      <bits>265.4</bits>
+      <expectation>5.7e-88</expectation>
+      <identity>64.2</identity>
+      <positives>74.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="191">LLISLCGFFSAAWASDVQPASSTGL-----WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>LL +  G       S   PA++TG      W  F+ NVA+TW      DLYVPAITWHNR TYDDEHIR+YNERPWGAG G+SR+DEKGNWH +Y +AFKDSFNKWEP  GY WE  WRP +  Q+ H GAG+TAGVTARDNW YIP+P +LPLAS+GY   TFQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="5" end="190">LLAAFSGCILTLPVSFSTPAATTGEALKTGWNTFSGNVAQTWSQPQSYDLYVPAITWHNRLTYDDEHIRKYNERPWGAGGGVSRWDEKGNWHGLYAMAFKDSFNKWEPIAGYGWEATWRPLND-QNFHLGAGYTAGVTARDNWNYIPIPLVLPLASLGYGPATFQMTYIPGTYNNGNVYFAWLRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_E0SLJ5" ac="UniRef90_E0SLJ5" length="200" description="Lipid A acyltransferase PagP n=14 Tax=Dickeya TaxID=204037 RepID=PAGP_DICD3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>677</score>
+      <bits>265.4</bits>
+      <expectation>8e-88</expectation>
+      <identity>67.6</identity>
+      <positives>82.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="191">ASD-VQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>ASD V+  S  G+WQR   N+++TWHH   Q+LYVPA+TWHNR+TYD     RYNERPWGAGYG+SR D  G+WH++YL+AFKDSFNKWEP GGY +EK+WRP +  QD+  G GFTAGVT RDNWKYIP+P LLP+ASV Y++L+FQATYIPGT+NNGNVFFAWLR++F</pattern>
+      <matchSeq start="32" end="200">ASDAVERGSEPGIWQRAGNNLSDTWHHWQSQELYVPAMTWHNRWTYDKAKTDRYNERPWGAGYGVSRLDRDGDWHSLYLMAFKDSFNKWEPIGGYGYEKRWRPLEN-QDVQLGLGFTAGVTMRDNWKYIPIPVLLPMASVSYQRLSFQATYIPGTHNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_A0A1S8CP98" ac="UniRef90_A0A1S8CP98" length="195" description="Lipid A acyltransferase PagP n=2 Tax=Serratia oryzae TaxID=2034155 RepID=A0A1S8CP98_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>675</score>
+      <bits>264.6</bits>
+      <expectation>1.4e-87</expectation>
+      <identity>62.8</identity>
+      <positives>75.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="191">LFYQRISLLISLCGFFSA--AWASDVQPASSTGL-----WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>+F++R  L  SL     A  ++A     +S+T       W RF  NVAETW+ SP+++ Y+PAITWHNR+TYD E I  YNERPWGAGYGISR+D  G+WH IY + FKDSFNKWEP GGYA+E  WRP D  +D   G GFTA VTARDNWKYIP+PA LP+AS+GY+QLTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="1" end="195">MFFERTLLACSLALVLPALPSYAEVGAESSNTATKEQNWWGRFKSNVAETWNDSPNKEFYLPAITWHNRWTYDQEKIDSYNERPWGAGYGISRFDADGDWHTIYFMVFKDSFNKWEPIGGYAYENIWRPIDG-EDFRLGLGFTASVTARDNWKYIPIPAPLPMASIGYQQLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_D4GM10" ac="UniRef90_D4GM10" length="190" description="Lipid A acyltransferase PagP n=27 Tax=Pantoea TaxID=53335 RepID=PAGP_PANAM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>674</score>
+      <bits>264.2</bits>
+      <expectation>1.6e-87</expectation>
+      <identity>66.3</identity>
+      <positives>77.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="191">FFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>FFS +  + +        W  FT NV +TW      D+YVPAITWHNR+TYD+EHI RYNERPWGAG G+SRYDEKGNWH +YL+AFKDSFNKWEPFGGY WE  WRP  + Q+ H+G G+TAGVTAR NW Y PVPA+LPLAS+GY  L FQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="17" end="190">FFSFSLQAAMLSQEIKSGWDTFTGNVQQTWQQPDAIDVYVPAITWHNRWTYDEEHIHRYNERPWGAGGGVSRYDEKGNWHGLYLMAFKDSFNKWEPFGGYGWEATWRPL-QDQNFHYGLGYTAGVTARHNWGYYPVPAILPLASIGYGSLNFQMTYIPGTYNNGNVYFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_UPI000948DE18" ac="UniRef90_UPI000948DE18" length="182" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=Pantoea sp. 1.19 TaxID=1925589 RepID=UPI000948DE18">
+    <alignments total="1">
+     <alignment number="1">
+      <score>673</score>
+      <bits>263.8</bits>
+      <expectation>1.8e-87</expectation>
+      <identity>63.2</identity>
+      <positives>75.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="191">LLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>L+ SL    + A ++  +  +  G WQ FT NV ETW    H DLY+PAITWHNR TYD EHI +YNERPWGAG G+SR+DEKGNWH +Y++AFKDSFNKWEP GGY WE  WRP  + Q+ H G G+TAGVT RDNW YIP+P +LPLASVGY   TFQ TYIPGT+NNGNV+FAW R++F</pattern>
+      <matchSeq start="2" end="182">LVASLAAGSTCAASTHDREGADRGWWQTFTGNVKETWQSPQHGDLYIPAITWHNRLTYDQEHIDKYNERPWGAGAGMSRWDEKGNWHGLYVMAFKDSFNKWEPIGGYGWESTWRPL-QDQNFHLGLGYTAGVTMRDNWNYIPIPLVLPLASVGYGDATFQMTYIPGTWNNGNVYFAWFRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0A1I5EYX9" ac="UniRef90_A0A1I5EYX9" length="189" description="Lipid A acyltransferase PagP n=29 Tax=Pantoea TaxID=53335 RepID=A0A1I5EYX9_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>671</score>
+      <bits>263.1</bits>
+      <expectation>4.5e-87</expectation>
+      <identity>66.5</identity>
+      <positives>76.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="191">LLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>++ S+   FSA  A+ +Q  S+   W+ FT NVA TW      D Y+PAITWHNR TYD EHI +YNERPWGAG GISRYDEKGNW+ +YL+AFKDSFNKWEPFGGY W   WRP    Q+ H+GAG+TAGVTAR NW YIPVPALLPLAS+GY  L FQ TYIPGT+NNGNV+FAWLRY F</pattern>
+      <matchSeq start="11" end="189">MMTSVFSLFSAHSATLIQNVSAG--WENFTNNVATTWEQPEGIDFYLPAITWHNRATYDREHINKYNERPWGAGGGISRYDEKGNWNGLYLMAFKDSFNKWEPFGGYGWVATWRPL-ADQNFHWGAGYTAGVTARHNWDYIPVPALLPLASIGYGALDFQMTYIPGTHNNGNVYFAWLRYHF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_A0A3N0G9G0" ac="UniRef90_A0A3N0G9G0" length="200" description="Lipid A acyltransferase PagP n=15 Tax=Dickeya TaxID=204037 RepID=A0A3N0G9G0_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>672</score>
+      <bits>263.5</bits>
+      <expectation>4.6e-87</expectation>
+      <identity>67.6</identity>
+      <positives>80.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="191">ASD-VQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>ASD V+  S  G+WQR + N++ETWHH   QDLYVP +TWHNR+TYD     +YNERPWGAGYG+SR D  G+WH++YL+AFKDSFNKWEP GGY +EK+WRP +  QD   G GFTAGVT RDNW YIP+P LLPLASV Y++L+ QATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="32" end="200">ASDAVESGSEPGIWQRASNNLSETWHHWQSQDLYVPVMTWHNRWTYDRAKTDKYNERPWGAGYGVSRLDSDGDWHSLYLMAFKDSFNKWEPIGGYGYEKRWRPLEN-QDFQLGLGFTAGVTMRDNWHYIPIPVLLPLASVSYQRLSLQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0A443I9G8" ac="UniRef90_A0A443I9G8" length="198" description="Lipid A acyltransferase PagP n=1 Tax=[Pantoea] beijingensis TaxID=1324864 RepID=A0A443I9G8_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>671</score>
+      <bits>263.1</bits>
+      <expectation>6.1e-87</expectation>
+      <identity>65.2</identity>
+      <positives>76.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="190">LLISLCGFF--SAAWASDVQPASS-TGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYR</querySeq>
+      <pattern>+LI +   F  S+   ++ QP+   + LWQ FT NV +TW  S   DLYVPAITWHNR+TYD +    YNERPWGAG GISRYD +GNW+ IYL+AFKDSFNKWEP GGY WEK WRPF   ++IHFGAGFTAG+T RDNW YIP+P LLPLASVGY + +FQ TYIPGTYNNGNVFFAW R++</pattern>
+      <matchSeq start="15" end="197">ILIPVVSLFYASSGCTAETQPSGEISALWQTFTGNVKDTWTSSDSYDLYVPAITWHNRWTYDKDKTDSYNERPWGAGGGISRYDTRGNWNGIYLMAFKDSFNKWEPIGGYGWEKTWRPFSD-ENIHFGAGFTAGITMRDNWNYIPLPVLLPLASVGYGRASFQMTYIPGTYNNGNVFFAWFRWQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_UPI0031902E16" ac="UniRef90_UPI0031902E16" length="190" description="lipid IV(A) palmitoyltransferase PagP n=2 Tax=Erwiniaceae TaxID=1903409 RepID=UPI0031902E16">
+    <alignments total="1">
+     <alignment number="1">
+      <score>670</score>
+      <bits>262.7</bits>
+      <expectation>6.6e-87</expectation>
+      <identity>72.0</identity>
+      <positives>82.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="191">WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>WQ F+  VA TW+   H DLYVPAITWHNR TYD EHI +YNERPWGAG G+SRYD+KGNW+ +Y++AFKDSFNKWEPFGGY WEK WRP D   +   G G+TAG+TARDNWKYIPVPALLPLAS+GY + TFQ TYIPGT+NNGNVFFAW R++F</pattern>
+      <matchSeq start="35" end="190">WQSFSGKVATTWNEPEHYDLYVPAITWHNRATYDREHIDKYNERPWGAGGGMSRYDDKGNWNGLYVMAFKDSFNKWEPFGGYGWEKIWRPLDD-DNFRLGLGYTAGITARDNWKYIPVPALLPLASIGYNKATFQMTYIPGTHNNGNVFFAWFRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0A085JBL1" ac="UniRef90_A0A085JBL1" length="207" description="Lipid A acyltransferase PagP n=4 Tax=Tatumella TaxID=82986 RepID=A0A085JBL1_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>671</score>
+      <bits>263.1</bits>
+      <expectation>8.3e-87</expectation>
+      <identity>65.6</identity>
+      <positives>74.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="191">LLISLCGFFSAAWASDVQPASS-TGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>L + L G  SA +A         +G+W  F+ NVA TW  SP+ DLYVPAITWHNR TYD EHI RYNERPWGAG GISRYDEKGNW  +YL+AFKDSFNKWEP GGY WE  WRP +  Q  H GAG+TAGVT R+NW YIP+P +LPLASVGY   TFQ TYIPGT+NNGNV+FAW R++F</pattern>
+      <matchSeq start="26" end="207">LTMFLAGVCSAPFAHAATTGQDISGVWNTFSNNVATTWTSSPNVDLYVPAITWHNRMTYDREHIDRYNERPWGAGGGISRYDEKGNWQGLYLMAFKDSFNKWEPIGGYGWEATWRPLND-QRFHLGAGYTAGVTMRNNWNYIPIPLVLPLASVGYGPATFQMTYIPGTHNNGNVYFAWFRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0ABU8PUU5" ac="UniRef90_A0ABU8PUU5" length="195" description="Lipid A acyltransferase PagP n=19 Tax=Enterobacterales TaxID=91347 RepID=A0ABU8PUU5_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>669</score>
+      <bits>262.3</bits>
+      <expectation>1.1e-86</expectation>
+      <identity>63.0</identity>
+      <positives>77.2</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="191">ISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>+S +++    FSA+  +  Q   S   W  F+ NV++TW    + D Y+PAITWHNR+TYDDEHI +YNERPWGAG G+SR+DEKGNW+ +YL+AFKDSFNKWEP GGY WE  WRP +  Q+ H GAG+TAGVTARDNW+YIPVP +LPLAS+GY   TFQ TYIPGTYNNGNV+FAWLR+ F</pattern>
+      <matchSeq start="15" end="195">LSCILTSSVTFSASAVTASQAIKSG--WNTFSDNVSKTWSQPQNYDFYLPAITWHNRWTYDDEHIDKYNERPWGAGAGVSRWDEKGNWNGLYLMAFKDSFNKWEPIGGYGWEATWRPLND-QNFHVGAGYTAGVTARDNWRYIPVPLILPLASIGYGPATFQMTYIPGTYNNGNVYFAWLRFEF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_UPI000CDE39B8" ac="UniRef90_UPI000CDE39B8" length="168" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=Enterobacter agglomerans TaxID=549 RepID=UPI000CDE39B8">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>1.8e-86</expectation>
+      <identity>71.3</identity>
+      <positives>79.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="191">WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>W  F+ NV +TW    + D Y+PAITWHNR+TYDDEHI RYNERPWGAG GISRYDEKGNWH +YL+ FKDSFNKWEPF GY WE  W P D   D H GAG+TAGVT RDNW+YIPVPALLPLAS G   L FQ TY+PGTYNNGNV+FAWLR +F</pattern>
+      <matchSeq start="13" end="168">WHSFSNNVQQTWAQPQNSDFYLPAITWHNRWTYDDEHISRYNERPWGAGGGISRYDEKGNWHGLYLMTFKDSFNKWEPFAGYGWEATWHPVDG-SDFHLGAGYTAGVTTRDNWRYIPVPALLPLASTGLGPLNFQMTYVPGTYNNGNVYFAWLRLQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_A0A518XAT0" ac="UniRef90_A0A518XAT0" length="190" description="Lipid A acyltransferase PagP n=1 Tax=Candidatus Pantoea soli TaxID=3098669 RepID=A0A518XAT0_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>667</score>
+      <bits>261.5</bits>
+      <expectation>1.9e-86</expectation>
+      <identity>71.3</identity>
+      <positives>82.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="191">WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>W  F+ NVA+TW    + DLYVPAITWHNR+TYDD HI++YNERPWGAG G+SR+DEKGNWH +Y +AFKDSFNKWEP  GY WE  WRP +  Q+ H GAG+TAGVTARDNWKYIP+P +LPLASVGY   TFQ TYIPGTYNNGNV+FAWLR +F</pattern>
+      <matchSeq start="35" end="190">WNTFSDNVAQTWSAPENVDLYVPAITWHNRWTYDDAHIKKYNERPWGAGGGVSRWDEKGNWHGLYAMAFKDSFNKWEPIAGYGWEATWRPLND-QNFHLGAGYTAGVTARDNWKYIPIPLVLPLASVGYGPATFQMTYIPGTYNNGNVYFAWLRVQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_A0ABS1Z4L3" ac="UniRef90_A0ABS1Z4L3" length="182" description="Lipid A acyltransferase PagP n=6 Tax=Pantoea TaxID=53335 RepID=A0ABS1Z4L3_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>666</score>
+      <bits>261.2</bits>
+      <expectation>2e-86</expectation>
+      <identity>65.8</identity>
+      <positives>77.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="191">ISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>++LL+S    FSA+ A+    A   G W  F+ NVA+TW    H DLYVPAITWHNR+TYDD HIR+YNERPWGAG GISR+D+KGNW+ +Y++AFKDSFNKWEP  GY WE  WRP  + Q  H GAG+TAG TARDNWKYIPVP +LPLAS GY   TFQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="6" end="182">LTLLVS----FSAS-AATAGAALKAG-WNSFSDNVAQTWSAPQHYDLYVPAITWHNRWTYDDAHIRKYNERPWGAGGGISRWDDKGNWNGLYVMAFKDSFNKWEPIAGYGWEATWRPL-QDQRFHLGAGYTAGFTARDNWKYIPVPLVLPLASAGYGPATFQMTYIPGTYNNGNVYFAWLRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_A0A0A3ZXU6" ac="UniRef90_A0A0A3ZXU6" length="178" description="Lipid A acyltransferase PagP n=2 Tax=Erwinia typographi TaxID=371042 RepID=A0A0A3ZXU6_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>2.5e-86</expectation>
+      <identity>65.1</identity>
+      <positives>76.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="191">FFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>FF+    +       +  W  F+ NV+ETW++    DLY+PAITWHNR TYD E   RYNERPWGAG GIS YDEKGNW+ +YL+AFKDSFNKWEP GGY WEK WRP +  Q+ H G G+TAGVTARDNWKYIPVP +LPLASVGY + TFQ TYIPGTYNNGNV+FAW R++F</pattern>
+      <matchSeq start="5" end="178">FFTGCAQAITLATGISNTWHAFSDNVSETWNNPDSYDLYIPAITWHNRLTYDKEKTDRYNERPWGAGGGISHYDEKGNWNGLYLMAFKDSFNKWEPIGGYGWEKTWRPLND-QNFHLGLGYTAGVTARDNWKYIPVPLVLPLASVGYSKATFQMTYIPGTYNNGNVYFAWFRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_D2C1B0" ac="UniRef90_D2C1B0" length="219" description="Lipid A acyltransferase PagP n=24 Tax=Dickeya TaxID=204037 RepID=PAGP_DICZ5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>668</score>
+      <bits>261.9</bits>
+      <expectation>3.5e-86</expectation>
+      <identity>70.1</identity>
+      <positives>82.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="191">PASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>PA S   WQR + N++ETW H   QDLYVPAITWHNR+TYD     +YNERPWGAG+G+SR D  G+WHA+Y++AFKDSFNKWEP GGY +EK+WRP +  QDI FG GFTAGVT RDNW YIP+P LLPLASV Y++L+FQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="59" end="219">PAPS--FWQRASNNLSETWQHPQSQDLYVPAITWHNRWTYDRAKTDKYNERPWGAGFGVSRLDSDGDWHALYVMAFKDSFNKWEPIGGYGYEKRWRPLEN-QDIQFGLGFTAGVTMRDNWHYIPIPVLLPLASVSYQRLSFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0ABU8DA17" ac="UniRef90_A0ABU8DA17" length="189" description="Lipid A acyltransferase PagP n=2 Tax=Erwinia aphidicola TaxID=68334 RepID=A0ABU8DA17_ERWAP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>3.7e-86</expectation>
+      <identity>65.2</identity>
+      <positives>76.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="191">ISLLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>+S L++  G  +A  A+ V   S T  WQ F+ NV+ETW+     DLYVPAITWHNR+TYD E   +YNERPWGAG GIS YDEKGNW+ IYL+AFKDSFNKWEP GGY WEK WRP +  +D H G G+TAGVT RDNW YIP+P +LPLASVGY   TFQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="9" end="189">LSALVAGVGLQAAQAATLVDGISDT--WQAFSDNVSETWNDPQTVDLYVPAITWHNRWTYDKEKTDKYNERPWGAGGGISHYDEKGNWNGIYLMAFKDSFNKWEPIGGYGWEKTWRPLND-RDFHLGLGYTAGVTMRDNWNYIPIPLVLPLASVGYGPATFQMTYIPGTYNNGNVYFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_UPI00050501A7" ac="UniRef90_UPI00050501A7" length="195" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=unclassified Serratia (in: enterobacteria) TaxID=2647522 RepID=UPI00050501A7">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>4.5e-86</expectation>
+      <identity>60.7</identity>
+      <positives>73.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="191">LFYQRISLLISLCGFFSA-------AWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>++++R     SL   FSA          S+   A    LW RF  NVAETW+ SP+++LY+PAITWHNR+TY  E I  YNERPWG GYGISR+D  G+WH IY + FKDSFNKWEP GGYA+E  WRP +  +D   G GFTA +TARDNW YIP+PA LP+AS+GY+QLTFQATYIPGTYNNGNVFFAWLR++F</pattern>
+      <matchSeq start="1" end="195">MYFERTLSACSLALLFSALPSYAEVGTESNSTTAEEQSLWGRFKSNVAETWNDSPNKELYLPAITWHNRWTYSQEKIDSYNERPWGLGYGISRFDADGDWHTIYFMMFKDSFNKWEPIGGYAYENIWRPIEG-EDFRLGLGFTASITARDNWSYIPLPAPLPMASIGYQQLTFQATYIPGTYNNGNVFFAWLRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_UPI003EB7B8BD" ac="UniRef90_UPI003EB7B8BD" length="189" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=Candidatus Pantoea rara TaxID=1947037 RepID=UPI003EB7B8BD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>664</score>
+      <bits>260.4</bits>
+      <expectation>5.2e-86</expectation>
+      <identity>64.8</identity>
+      <positives>76.4</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="191">LLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>++ S+   FSA  A+ +Q  ++   W+ F+ NVA TWH     D Y+PAITWHNR TYD EHI +YNERPWGAG GISRYDEKGNWH +YL+AFKDSFNKWEPFGGY W   WRP    Q+ H+GAG+T GVTAR NW Y+PVPA+LPLAS+GY  L FQ TYIPGT+NNGNV+FAWLRY F</pattern>
+      <matchSeq start="11" end="189">MMTSVFSLFSAHAATLMQNVNAG--WESFSDNVATTWHQPEGIDFYLPAITWHNRATYDREHIDKYNERPWGAGGGISRYDEKGNWHGLYLMAFKDSFNKWEPFGGYGWVATWRPL-ADQNFHWGAGYTVGVTARHNWDYMPVPAVLPLASIGYGALDFQMTYIPGTHNNGNVYFAWLRYHF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0ABU5LGS1" ac="UniRef90_A0ABU5LGS1" length="174" description="Lipid A acyltransferase PagP n=3 Tax=Pantoea TaxID=53335 RepID=A0ABU5LGS1_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>662</score>
+      <bits>259.6</bits>
+      <expectation>6.4e-86</expectation>
+      <identity>70.7</identity>
+      <positives>80.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="191">WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>W  F+  V++TW      DLY+PAITWHNR+TYDDEHI RYNERPWGAG G+SR+DEKGNWH +Y +AFKDSFNKWEP  GY WE  WRP    Q+ H GAG+TAGVTARDNWKYIPVP +LPLAS+GY   TFQ TYIPGTYNNGNV+FAWLR++F</pattern>
+      <matchSeq start="19" end="174">WNTFSDGVSQTWSAPQSGDLYLPAITWHNRWTYDDEHIHRYNERPWGAGAGVSRWDEKGNWHGLYAMAFKDSFNKWEPIAGYGWEATWRPL-ADQNFHLGAGYTAGVTARDNWKYIPVPLVLPLASIGYGPATFQMTYIPGTYNNGNVYFAWLRFQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_A0AA50HP73" ac="UniRef90_A0AA50HP73" length="185" description="Lipid A acyltransferase PagP n=2 Tax=Erwinia pyri TaxID=3062598 RepID=A0AA50HP73_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>663</score>
+      <bits>260.0</bits>
+      <expectation>6.5e-86</expectation>
+      <identity>64.3</identity>
+      <positives>75.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="191">LLISLCGFFSAAWASDVQPASSTGLWQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>LL++L G  ++A A  V  A S   WQ  + NV+ETWH+    DLYVPA+TWHNR TYD E   +YNERPWGAG GIS YDEKGNW+ +YL+AFKDS+NKWEP GGY WEK WRP     +   G G+TAGVTARDNWKYIPVP +LPLAS+GY + TFQ TYIPGTYNNGNV+FAW R++F</pattern>
+      <matchSeq start="6" end="185">LLLTLAGCTNSAQAITVATAVSN-TWQALSDNVSETWHNPDSYDLYVPAVTWHNRLTYDREKTDKYNERPWGAGGGISHYDEKGNWNGLYLMAFKDSYNKWEPIGGYGWEKTWRPLSD-PNFRLGLGYTAGVTARDNWKYIPVPLVLPLASIGYSRATFQMTYIPGTYNNGNVYFAWFRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_UPI0004686359" ac="UniRef90_UPI0004686359" length="190" description="lipid IV(A) palmitoyltransferase PagP n=1 Tax=Pantoea sp. IMH TaxID=1267600 RepID=UPI0004686359">
+    <alignments total="1">
+     <alignment number="1">
+      <score>663</score>
+      <bits>260.0</bits>
+      <expectation>7.7e-86</expectation>
+      <identity>71.3</identity>
+      <positives>82.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="191">WQRFTQNVAETWHHSPHQDLYVPAITWHNRFTYDDEHIRRYNERPWGAGYGISRYDEKGNWHAIYLIAFKDSFNKWEPFGGYAWEKQWRPFDRYQDIHFGAGFTAGVTARDNWKYIPVPALLPLASVGYKQLTFQATYIPGTYNNGNVFFAWLRYRF</querySeq>
+      <pattern>WQ F+  V  TW+     DLYVPAITWHNR TYD EHI +YNERPWGAG GISRYDEKGNW+ +Y++AFKDSFNKWEPFGGY WEK WRP +  +D   G G+TAGVTARDNWKYIPVPA+LPLAS+GY + TFQ TYIPGT+NNGNV+FAW R++F</pattern>
+      <matchSeq start="35" end="190">WQSFSDKVTTTWNDPQQYDLYVPAITWHNRATYDREHINKYNERPWGAGGGISRYDEKGNWNGLYVMAFKDSFNKWEPFGGYGWEKIWRPVED-RDFRLGLGYTAGVTARDNWKYIPVPAVLPLASIGYSKATFQMTYIPGTHNNGNVYFAWFRWQF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

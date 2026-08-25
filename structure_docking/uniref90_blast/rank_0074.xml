@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-124922-0608-55364196-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-124922-0608-55364196-p2m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="154"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:49:23+01:00" end="2026-08-06T12:54:32+01:00" search="P0Y0M0DT0H0M309.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q8ZKE6" ac="UniRef90_Q8ZKE6" length="154" description="Aminoalkylphosphonate N-acetyltransferase n=33 Tax=Bacteria TaxID=2 RepID=PHNO_SALTY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>805</score>
+      <bits>314.7</bits>
+      <expectation>1.2e-108</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="154">MILMRRREDVMPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MILMRRREDVMPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</pattern>
+      <matchSeq start="1" end="154">MILMRRREDVMPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_UPI001AEBE0AF" ac="UniRef90_UPI001AEBE0AF" length="143" description="aminoalkylphosphonate N-acetyltransferase n=3 Tax=Enterobacteriaceae TaxID=543 RepID=UPI001AEBE0AF">
+    <alignments total="1">
+     <alignment number="1">
+      <score>748</score>
+      <bits>292.7</bits>
+      <expectation>3.9e-100</expectation>
+      <identity>99.3</identity>
+      <positives>99.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="153">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKA</querySeq>
+      <pattern>MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPN HYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKA</pattern>
+      <matchSeq start="1" end="143">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNFHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_UPI0009ADEDBC" ac="UniRef90_UPI0009ADEDBC" length="134" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Salmonella enterica TaxID=28901 RepID=UPI0009ADEDBC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>669</score>
+      <bits>262.3</bits>
+      <expectation>3.2e-88</expectation>
+      <identity>96.9</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="131">MILMRRREDVMPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKR</querySeq>
+      <pattern>MILM+RRED+MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPN+HYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIK+</pattern>
+      <matchSeq start="1" end="131">MILMKRREDIMPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNLHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0ABS0ZXN9" ac="UniRef90_A0ABS0ZXN9" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Citrobacter sedlakii TaxID=67826 RepID=A0ABS0ZXN9_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>602</score>
+      <bits>236.5</bits>
+      <expectation>7.4e-78</expectation>
+      <identity>79.2</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP CELR AT +DT +VYALICEL + E D+QAFR GFAANL D N+ Y+LAL +GEVVGMI LHMQFHLHHANWIGEIQELVV+P  RG KIGSQLLAWAE+EAR+AGAE+TELSTN+KR DAHRFYLREGY QSHFRFTKAL</pattern>
+      <matchSeq start="1" end="144">MPACELRRATADDTHAVYALICELKQAEFDHQAFRTGFAANLRDSNLRYQLALLDGEVVGMIGLHMQFHLHHANWIGEIQELVVMPQARGLKIGSQLLAWAEDEARRAGAEMTELSTNVKRLDAHRFYLREGYTQSHFRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A9MGJ0" ac="UniRef90_A9MGJ0" length="144" description="N-acetyltransferase domain-containing protein n=2 Tax=Salmonella enterica subsp. arizonae TaxID=59203 RepID=A9MGJ0_SALAR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>599</score>
+      <bits>235.3</bits>
+      <expectation>2.1e-77</expectation>
+      <identity>79.2</identity>
+      <positives>86.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MPVCELR AT EDTDSVYALICEL + EL+YQ   +GFAANL  P+  Y LAL NGEVVGMI LHMQFHLHHANWIGEIQELVV+P  RG K+GS+LLAWAEEEAR+AGAE+TELST+IKR DAHRFYLREGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MPVCELRRATAEDTDSVYALICELKQYELNYQTLSEGFAANLQAPHFRYHLALYNGEVVGMIGLHMQFHLHHANWIGEIQELVVMPQARGLKVGSKLLAWAEEEARRAGAEMTELSTSIKRHDAHRFYLREGYSQSHFRFTKML</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_A8AMZ0" ac="UniRef90_A8AMZ0" length="144" description="N-acetyltransferase domain-containing protein n=1 Tax=Citrobacter koseri (strain ATCC BAA-895 / CDC 4225-83 / SGSC4696) TaxID=290338 RepID=A8AMZ0_CITK8">
+    <alignments total="1">
+     <alignment number="1">
+      <score>594</score>
+      <bits>233.4</bits>
+      <expectation>1.2e-76</expectation>
+      <identity>77.1</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MPVCELR AT +DTD+VY LICEL + E D QAFR GFA+NL D  + Y+LALR+G+VVGMI LHMQ+HLHHANWIGEIQELVV+P  RG K+GS+LLAWAEEEARQAGAE+TELST++KR DAHRFYLREGY QSHFRFTKAL</pattern>
+      <matchSeq start="1" end="144">MPVCELRRATPDDTDAVYQLICELKQAEFDRQAFRAGFASNLQDRTIRYQLALRDGQVVGMIGLHMQYHLHHANWIGEIQELVVMPQARGLKVGSRLLAWAEEEARQAGAEMTELSTSVKRHDAHRFYLREGYAQSHFRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_P16691" ac="UniRef90_P16691" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=67 Tax=Pseudomonadota TaxID=1224 RepID=PHNO_ECOLI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>590</score>
+      <bits>231.9</bits>
+      <expectation>5e-76</expectation>
+      <identity>77.1</identity>
+      <positives>85.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP CELR AT  DTD+VYALICEL + E D+ AFR GF ANL DPN+ Y LAL +GEVVGMI LH+QFHLHH NWIGEIQELVV+P  RG  +GS+LLAWAEEEARQAGAE+TELSTN+KR DAHRFYLREGY+QSHFRFTKAL</pattern>
+      <matchSeq start="1" end="144">MPACELRPATQYDTDAVYALICELKQAEFDHHAFRVGFNANLRDPNMRYHLALLDGEVVGMIGLHLQFHLHHVNWIGEIQELVVMPQARGLNVGSKLLAWAEEEARQAGAEMTELSTNVKRHDAHRFYLREGYEQSHFRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0A4Z0KQC8" ac="UniRef90_A0A4Z0KQC8" length="124" description="Aminoalkylphosphonate N-acetyltransferase (Fragment) n=1 Tax=Salmonella enterica subsp. enterica serovar Poona TaxID=436295 RepID=A0A4Z0KQC8_SALET">
+    <alignments total="1">
+     <alignment number="1">
+      <score>565</score>
+      <bits>222.2</bits>
+      <expectation>1.7e-72</expectation>
+      <identity>87.5</identity>
+      <positives>93.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="120">MILMRRREDVMPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGA</querySeq>
+      <pattern>MILM+ RED+MPVCELRHATTEDTDSVYALICELLK+ELDYQAFRDGFAANLLDPN HYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLP  RG+K+G QLL WA E+AR+ GA</pattern>
+      <matchSeq start="1" end="120">MILMKHREDIMPVCELRHATTEDTDSVYALICELLKDELDYQAFRDGFAANLLDPNFHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPQRRGEKVGGQLLGWAGEDAREPGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_A0A0J8VMM8" ac="UniRef90_A0A0J8VMM8" length="144" description="Aminoalkylphosphonic acid N-acetyltransferase n=3 Tax=Enterobacteriaceae TaxID=543 RepID=A0A0J8VMM8_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>562</score>
+      <bits>221.1</bits>
+      <expectation>9.2e-72</expectation>
+      <identity>73.6</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MPVCELR ATTED+D+VYALICEL ++  D  AF  GF ANL DPN+ Y+LA R+GEVVGMI LH+QFHLHH NWIGEIQELVV+P  RG  +GSQLLAWAE +AR+AGAE+TELSTN+ R DAHRFY REGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MPVCELRRATTEDSDAVYALICELKQHAFDRHAFIVGFTANLSDPNLRYQLAQRDGEVVGMIGLHLQFHLHHVNWIGEIQELVVMPQARGLGVGSQLLAWAEAQAREAGAEMTELSTNVTRVDAHRFYQREGYTQSHFRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0ABT8PZ77" ac="UniRef90_A0ABT8PZ77" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Citrobacter enshiensis TaxID=2971264 RepID=A0ABT8PZ77_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>560</score>
+      <bits>220.3</bits>
+      <expectation>1.9e-71</expectation>
+      <identity>74.5</identity>
+      <positives>87.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="154">CELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>CELRHAT  DT++VYALICEL + E + QAF  GFAANL D N+ Y+LAL +G+VVGMI LH+QFHLHHANWIGEIQELVV+P  RG K+GS+LLAWAEEEARQAGAE+TELST++ R +AHRFYLREGY++SHFRFTKAL</pattern>
+      <matchSeq start="4" end="144">CELRHATLADTEAVYALICELKQAEFNRQAFSAGFAANLQDSNLRYQLALLDGQVVGMIGLHLQFHLHHANWIGEIQELVVMPHARGGKVGSRLLAWAEEEARQAGAEMTELSTSVTRHNAHRFYLREGYERSHFRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A6G9RTZ3" ac="UniRef90_A0A6G9RTZ3" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=2 Tax=Kluyvera TaxID=579 RepID=A0A6G9RTZ3_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>560</score>
+      <bits>220.3</bits>
+      <expectation>1.9e-71</expectation>
+      <identity>73.6</identity>
+      <positives>83.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MPVCELRHAT ED D VYAL+CEL + E D  AF  GFAANL DP++HY+LAL  GEVVG+ISLH+QFHLHHANWIGEIQELVV+P  RG  +GSQLL+WAEE AR+AGAE+TELST+ +R DAHRFY REGY  SH RFTKAL</pattern>
+      <matchSeq start="1" end="144">MPVCELRHATFEDIDDVYALMCELKQAEFDKDAFYTGFAANLQDPHLHYQLALLGGEVVGIISLHLQFHLHHANWIGEIQELVVMPCARGSGVGSQLLSWAEETAREAGAEMTELSTSTRRLDAHRFYQREGYAPSHIRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0ABV4A8W1" ac="UniRef90_A0ABV4A8W1" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Pseudenterobacter timonensis TaxID=1755099 RepID=A0ABV4A8W1_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>560</score>
+      <bits>220.3</bits>
+      <expectation>1.9e-71</expectation>
+      <identity>75.0</identity>
+      <positives>82.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP C+LR A  ED + VY LICEL + ELD  AF  GFAANL D N+ Y+LAL +  VVGMI LHMQFHLHHANWIGEIQELVVLP  RGQK+GSQLLAWAEEEAR+AGAE+TELST++KR DAHRFYLREGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MPACKLRPAAAEDVEIVYGLICELKQAELDRAAFHAGFAANLQDHNMRYQLALLDDSVVGMIGLHMQFHLHHANWIGEIQELVVLPQARGQKVGSQLLAWAEEEARKAGAEMTELSTSVKRVDAHRFYLREGYMQSHFRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_UPI001D725A7B" ac="UniRef90_UPI001D725A7B" length="107" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Salmonella enterica TaxID=28901 RepID=UPI001D725A7B">
+    <alignments total="1">
+     <alignment number="1">
+      <score>555</score>
+      <bits>218.4</bits>
+      <expectation>3.2e-71</expectation>
+      <identity>99.1</identity>
+      <positives>99.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="48" end="154">FAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>FAANLLDPN HYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</pattern>
+      <matchSeq start="1" end="107">FAANLLDPNFHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A9J6QEH2" ac="UniRef90_A0A9J6QEH2" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=5 Tax=Enterobacteriaceae TaxID=543 RepID=A0A9J6QEH2_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>554</score>
+      <bits>218.0</bits>
+      <expectation>1.5e-70</expectation>
+      <identity>72.9</identity>
+      <positives>81.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP C LR AT ED ++VY LICEL + ELD  AF  GF ANL D N+ Y+LA ++G +VGMI LHMQFHLHHANWIGEIQELVV+P  RG K+GSQLLAWAE EARQAGAE+TELST++KR DAHRFYLREGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MPECALRPATPEDVEAVYGLICELKQAELDRPAFHAGFTANLQDHNMRYQLAEQDGHIVGMIGLHMQFHLHHANWIGEIQELVVMPQARGLKVGSQLLAWAEHEARQAGAEMTELSTSVKRHDAHRFYLREGYAQSHFRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_A0A6L5ED54" ac="UniRef90_A0A6L5ED54" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=2 Tax=Citrobacter TaxID=544 RepID=A0A6L5ED54_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>553</score>
+      <bits>217.6</bits>
+      <expectation>2.2e-70</expectation>
+      <identity>70.8</identity>
+      <positives>84.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>M  CELR AT +DT++VYALICEL +   DY AFR GF ANL D  + Y+LAL +GE VG+I LH+Q+HLHHANWIGEIQELVV+P  R  KIGSQLLAWAE++AR+AGAE+TELST++KR +AHRFYLREGY+QSHFRFTKAL</pattern>
+      <matchSeq start="1" end="144">MSACELRRATAQDTEAVYALICELKQTTFDYPAFRAGFTANLQDARLRYQLALLDGEAVGLIGLHLQYHLHHANWIGEIQELVVMPQARSLKIGSQLLAWAEQKAREAGAEMTELSTSVKRHNAHRFYLREGYEQSHFRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_A0ABX5T595" ac="UniRef90_A0ABX5T595" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=2 Tax=Citrobacter TaxID=544 RepID=A0ABX5T595_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>549</score>
+      <bits>216.1</bits>
+      <expectation>8.8e-70</expectation>
+      <identity>72.2</identity>
+      <positives>82.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>M VCELR AT  D D+VYAL+CEL + + D QAF  G+AANL D N+ Y+LAL +G VVGMI LH+QFHLHHANWIGEIQELVV+P  RG K+GSQLL WAEE AR+AGAE+TELST+I+R DAHRFYLREGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MSVCELRRATLYDVDAVYALVCELKQGKFDLQAFSAGYAANLQDHNMSYQLALLDGLVVGMIGLHLQFHLHHANWIGEIQELVVMPQARGLKVGSQLLTWAEETAREAGAEMTELSTSIQRHDAHRFYLREGYSQSHFRFTKLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_A0ABX6DX39" ac="UniRef90_A0ABX6DX39" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Kluyvera intermedia TaxID=61648 RepID=A0ABX6DX39_KLUIN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>546</score>
+      <bits>214.9</bits>
+      <expectation>2.5e-69</expectation>
+      <identity>73.6</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP  ELRHAT ED D VYAL+CEL + E D  AF  GFAANL D N+HY+LAL  G VVGMISLH+QFHLHHANWIGEIQELVV+P  RG K+GS LLAWAEE AR+AGAE+TELST+ KR DAHRFY REGY  SH RFTKAL</pattern>
+      <matchSeq start="1" end="144">MPERELRHATFEDVDDVYALMCELKQAEFDRDAFYTGFAANLQDKNLHYQLALLEGHVVGMISLHLQFHLHHANWIGEIQELVVMPKARGSKVGSLLLAWAEETAREAGAEMTELSTSTKRLDAHRFYQREGYAPSHVRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0A4P6WHW1" ac="UniRef90_A0A4P6WHW1" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=14 Tax=Citrobacter TaxID=544 RepID=A0A4P6WHW1_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>542</score>
+      <bits>213.4</bits>
+      <expectation>1e-68</expectation>
+      <identity>70.8</identity>
+      <positives>82.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>M VCELR AT  DTD+VYALICEL + + D QAF  G+AANL D N+HY+LAL +G+VVG+I LH+QFHLHHANWIGEIQELVV+P  RG ++GSQLLAWAE  AR+AGAE+TELST+ +R DAHRFY REGY  SHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MSVCELRRATLYDTDAVYALICELKQGQFDLQAFSAGYAANLQDANMHYQLALIDGQVVGLIGLHLQFHLHHANWIGEIQELVVMPQARGLRVGSQLLAWAEAAAREAGAEVTELSTSTQRLDAHRFYQREGYTMSHFRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0AAP8P0F2" ac="UniRef90_A0AAP8P0F2" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=28 Tax=Enterobacteriaceae TaxID=543 RepID=A0AAP8P0F2_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>538</score>
+      <bits>211.8</bits>
+      <expectation>4.2e-68</expectation>
+      <identity>71.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP C LR AT +D   VY+LICEL + E D+QAF  G+ ANL D N+ Y+LA  +G+V+GMI LHMQFHLHHA WIGEIQELVV+P  RG K+GSQLLAWAEE ARQAGAELTELST++KR DAHRFYLREGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MPDCPLRPATPDDAQIVYSLICELKQAEFDHQAFHAGYLANLQDHNMRYQLAELDGQVIGMIGLHMQFHLHHARWIGEIQELVVMPQARGLKVGSQLLAWAEEVARQAGAELTELSTSVKRVDAHRFYLREGYTQSHFRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_UPI00296ACDDA" ac="UniRef90_UPI00296ACDDA" length="144" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Kluyvera cryocrescens TaxID=580 RepID=UPI00296ACDDA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>534</score>
+      <bits>210.3</bits>
+      <expectation>1.7e-67</expectation>
+      <identity>71.5</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP CELRHAT ED D VYAL+CEL + E D  AF  GFA NL D N+HY+LAL++G VVGMISLH+QFHLHHANWIGEIQELVV+P +R   IGSQLLAWAEE AR  GAE+TELST+ +R +AHRFY REGY  SH RFTKAL</pattern>
+      <matchSeq start="1" end="144">MPECELRHATFEDIDDVYALMCELKQAEYDRDAFYTGFATNLEDRNLHYQLALQDGNVVGMISLHLQFHLHHANWIGEIQELVVMPKVRSSGIGSQLLAWAEETARDQGAEMTELSTSTQRVNAHRFYQREGYVPSHLRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_A0ABU7U6Q3" ac="UniRef90_A0ABU7U6Q3" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=2 Tax=Enterobacteriaceae TaxID=543 RepID=A0ABU7U6Q3_LELAM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>533</score>
+      <bits>209.9</bits>
+      <expectation>2.4e-67</expectation>
+      <identity>69.4</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP CELR AT ED  +VY LICEL + E D  AF  GF ANL D ++HY+LA  +G+ VGMI LH+QFHLHH NWIGEIQELVVLP  RG K+GSQLLAWAE+EAR+ GAE+TELST++KR DAHRFY+REGY QSH+RFTK L</pattern>
+      <matchSeq start="1" end="144">MPACELRPATPEDAQAVYGLICELKQAEFDRDAFLAGFLANLQDRHMHYQLADLDGQTVGMIGLHLQFHLHHVNWIGEIQELVVLPQARGLKVGSQLLAWAEDEARKVGAEMTELSTSVKRIDAHRFYIREGYAQSHYRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_UPI000D48C399" ac="UniRef90_UPI000D48C399" length="144" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Enterobacter sp. RIT418 TaxID=2202164 RepID=UPI000D48C399">
+    <alignments total="1">
+     <alignment number="1">
+      <score>531</score>
+      <bits>209.1</bits>
+      <expectation>4.8e-67</expectation>
+      <identity>70.8</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP C LR AT +D   VY LICEL + E D +AFR GF ANL D N+ Y+LA  NGE+VGMI LH+QFHLHHA WIGEIQELVV+P  RG K+GS+LLAWAE+ ARQAGAELTELST++KR DAHRFY+REGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MPECVLRPATADDARVVYGLICELKQAEFDREAFRAGFLANLQDRNMRYQLAGLNGEIVGMIGLHLQFHLHHARWIGEIQELVVMPQARGLKVGSRLLAWAEDVARQAGAELTELSTSVKRVDAHRFYVREGYAQSHFRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_A0AB35XCQ4" ac="UniRef90_A0AB35XCQ4" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=2 Tax=Kluyvera TaxID=579 RepID=A0AB35XCQ4_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>531</score>
+      <bits>209.1</bits>
+      <expectation>4.8e-67</expectation>
+      <identity>71.5</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>M VCELRHAT ED + VYAL+CEL + E D  AF  GFAANL D N+HY+LA+ + EVVGM+SLH+QFHLHHANWIGEIQELVV+P +R   IGSQLLAWAEE AR+AGAE+TELST+ KR  AHRFY REGY  SH RFTKAL</pattern>
+      <matchSeq start="1" end="144">MLVCELRHATFEDIEDVYALMCELKQAEYDRDAFYTGFAANLQDRNLHYQLAVLDDEVVGMVSLHLQFHLHHANWIGEIQELVVMPQVRSTGIGSQLLAWAEETAREAGAEMTELSTSTKRLHAHRFYQREGYAPSHVRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_A0ABY0HYF4" ac="UniRef90_A0ABY0HYF4" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Citrobacter amalonaticus TaxID=35703 RepID=A0ABY0HYF4_CITAM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>529</score>
+      <bits>208.4</bits>
+      <expectation>9.8e-67</expectation>
+      <identity>68.8</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>M  CELR AT +D  +VYALICEL + + DY  F   F ANL D  + Y+LAL  G+ VG+I LH+Q+HLHHANWIGEIQELVV+P  RG KIGSQLLAWAE+EAR+AGAE+TELST++KR DAHRFY REGY+QSHFRFTKAL</pattern>
+      <matchSeq start="1" end="144">MSACELRRATGQDAGAVYALICELKQAQFDYPTFCARFTANLQDDRLRYQLALLEGQAVGLIGLHLQYHLHHANWIGEIQELVVMPQARGLKIGSQLLAWAEQEAREAGAEMTELSTSVKRHDAHRFYRREGYEQSHFRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0AAP4FY18" ac="UniRef90_A0AAP4FY18" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=3 Tax=Lelliottia TaxID=1330545 RepID=A0AAP4FY18_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>529</score>
+      <bits>208.4</bits>
+      <expectation>9.8e-67</expectation>
+      <identity>68.8</identity>
+      <positives>79.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP C+LR AT +D  +VY LICEL + E D +AF  G+  NL D N+HY LA  +G++VGMI LH+QFHLHHANWIGEIQELVVLP  RG K+GSQLLAWAE +AR  GAE+TELST++KR DAHRFYLREGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MPDCQLRTATPDDAQAVYGLICELKQAEFDQKAFHAGYLLNLQDRNMHYHLAELDGQIVGMIGLHLQFHLHHANWIGEIQELVVLPQARGLKVGSQLLAWAEAKARSVGAEMTELSTSVKRVDAHRFYLREGYAQSHFRFTKLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A0ABX2WD23" ac="UniRef90_A0ABX2WD23" length="161" description="PhnO family protein n=1 Tax=Buttiauxella ferragutiae ATCC 51602 TaxID=1354252 RepID=A0ABX2WD23_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>529</score>
+      <bits>208.4</bits>
+      <expectation>1.7e-66</expectation>
+      <identity>68.1</identity>
+      <positives>81.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="152">DVMPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTK</querySeq>
+      <pattern>+V  + ELR AT  D+D+VY LICEL + + D QAF +GFAANL + NVHY LAL NGEVVGM+ L +QFHLHH NW+GEIQELVV+P  RG  +GS+L+AWAE++AR AGAELTELST+ KR DAHRFYLREGY+Q+HFRFTK</pattern>
+      <matchSeq start="6" end="149">EVKHIVELRPATAADSDAVYRLICELKQAQFDRQAFNNGFAANLAERNVHYHLALLNGEVVGMVGLQLQFHLHHVNWVGEIQELVVMPQARGYGVGSKLMAWAEQQARTAGAELTELSTSTKRLDAHRFYLREGYQQTHFRFTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_UPI001E35DA5B" ac="UniRef90_UPI001E35DA5B" length="144" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Enterobacteriaceae TaxID=543 RepID=UPI001E35DA5B">
+    <alignments total="1">
+     <alignment number="1">
+      <score>527</score>
+      <bits>207.6</bits>
+      <expectation>2e-66</expectation>
+      <identity>68.1</identity>
+      <positives>82.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP C+LR AT ED   VYALICEL ++ELD+QAF  G+ ANL D N+ Y+LA  +G+ +G+I LHMQFHLHHA WIGEIQELVV+P +RG K+GS+LLAWAE  AR+AGAE+TELST++KR DAHRFY+REGY QSH+RFTK L</pattern>
+      <matchSeq start="1" end="144">MPDCQLRPATAEDATIVYALICELKQSELDHQAFHAGYLANLEDHNMRYQLAEVDGQAIGLIGLHMQFHLHHARWIGEIQELVVMPQVRGLKVGSRLLAWAENVAREAGAEMTELSTSVKRVDAHRFYVREGYTQSHYRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_A0AAW8H2X7" ac="UniRef90_A0AAW8H2X7" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Enterobacter soli TaxID=885040 RepID=A0AAW8H2X7_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>527</score>
+      <bits>207.6</bits>
+      <expectation>2e-66</expectation>
+      <identity>68.8</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP C+LR AT +D  +VY LICEL ++E D QAF  GF ANL D N+HY+LA+ +G ++GMI LHMQFHLHHA WIGEIQELVV+P  R   IGSQLLAWAE+ AR AGAELTELST++KR +AHRFY+REGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="144">MPDCQLRPATPDDASAVYGLICELKQSEFDRQAFHAGFLANLQDRNMHYQLAVLDGTIIGMIGLHMQFHLHHARWIGEIQELVVMPQARSLGIGSQLLAWAEDYARHAGAELTELSTSVKRTNAHRFYVREGYAQSHFRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0A2P8VN95" ac="UniRef90_A0A2P8VN95" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Siccibacter turicensis TaxID=357233 RepID=A0A2P8VN95_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>526</score>
+      <bits>207.2</bits>
+      <expectation>2.8e-66</expectation>
+      <identity>68.8</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP CELR AT +D D+VYALICEL + E D QAF  GFA NL D N  Y+LAL +G+ VG+I LHMQFHLHH NWIGEIQELVV+P +R Q IG QLLAWA E+AR+AGAE+TELST + R++AHRFY REGY+Q+HFRFT+AL</pattern>
+      <matchSeq start="1" end="144">MPDCELRLATLDDADAVYALICELKQQEFDRQAFNIGFATNLQDHNRRYQLALLDGQPVGLIGLHMQFHLHHVNWIGEIQELVVMPNVRDQGIGKQLLAWAHEQAREAGAEMTELSTGVARKEAHRFYEREGYQQTHFRFTRAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0A085GLT7" ac="UniRef90_A0A085GLT7" length="152" description="PhnO family protein n=2 Tax=Buttiauxella TaxID=82976 RepID=A0A085GLT7_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>1.7e-64</expectation>
+      <identity>72.5</identity>
+      <positives>82.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="152">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTK</querySeq>
+      <pattern>ELR AT  D+D+VYALICEL + E + QAF  GFAANL D N+ Y+LAL NG VVGMISLHMQFHLHH NW+GEIQELVV+P  RG  +GS+LLAWAEE+AR AGAELTELST+ KR DAHRFY REGY+ +HFRFTK</pattern>
+      <matchSeq start="3" end="140">ELRRATLADSDAVYALICELKQAEFNRQAFNVGFAANLDDRNLCYQLALLNGAVVGMISLHMQFHLHHVNWVGEIQELVVMPAARGHGVGSKLLAWAEEQARIAGAELTELSTSAKRLDAHRFYQREGYQNTHFRFTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_A0ABY6JCP6" ac="UniRef90_A0ABY6JCP6" length="146" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Siccibacter colletis TaxID=1505757 RepID=A0ABY6JCP6_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>513</score>
+      <bits>202.2</bits>
+      <expectation>2.8e-64</expectation>
+      <identity>66.7</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP C+LR AT +D D+VYALIC+L + ELD QAF  G+AANL D N  Y LA  N   VG++ LHMQFHLHH NWIGEIQELVV P  RGQ +G QLLAWA+E+AR+AGAELTELST + R++AHRFY REGY+Q+HFRFT+ L</pattern>
+      <matchSeq start="1" end="144">MPDCDLRLATLDDADTVYALICDLKEQELDRQAFNIGYAANLQDHNRRYLLAFLNDHPVGLLGLHMQFHLHHVNWIGEIQELVVTPSARGQGVGKQLLAWAQEQAREAGAELTELSTGVARKEAHRFYEREGYQQTHFRFTRPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0ABV3NUN7" ac="UniRef90_A0ABV3NUN7" length="159" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Buttiauxella gaviniae TaxID=82990 RepID=A0ABV3NUN7_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>514</score>
+      <bits>202.6</bits>
+      <expectation>3.1e-64</expectation>
+      <identity>70.7</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="154">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>E+R AT  DTD+VYALICEL + E + QAF  GFAANL D N+ Y+LA  NGEVVGM+SLHMQFHLHH NW+GEIQELVV+P  RG  +GS+LLAWAE++AR AGAELTELST+ KR DAHRFY REGY+ +HFRFTKA+</pattern>
+      <matchSeq start="3" end="142">EIRPATLADTDAVYALICELKQAEFNRQAFNVGFAANLQDHNLCYQLAELNGEVVGMVSLHMQFHLHHVNWVGEIQELVVVPQARGYGVGSKLLAWAEDKARIAGAELTELSTSAKRLDAHRFYQREGYQHTHFRFTKAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_A0A1B7HHM4" ac="UniRef90_A0A1B7HHM4" length="152" description="PhnO family protein n=1 Tax=Buttiauxella noackiae ATCC 51607 TaxID=1354255 RepID=A0A1B7HHM4_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>507</score>
+      <bits>199.9</bits>
+      <expectation>2.8e-63</expectation>
+      <identity>70.7</identity>
+      <positives>80.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="154">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>E R AT  DTD+VYALICEL + E + QAF  GFAANL D N+ Y+LA  NGEVVGMI LHMQFHLHH NW+GEIQELVV+P  RG  +GS+LL+WAEE AR AGAELTELST+ KR DAHRFY REGY+Q+HFRFTK +</pattern>
+      <matchSeq start="3" end="142">EFRPATLADTDAVYALICELKQAEFNRQAFNAGFAANLQDNNLCYQLAELNGEVVGMIGLHMQFHLHHVNWVGEIQELVVMPQARGFGVGSKLLSWAEEYARLAGAELTELSTSTKRYDAHRFYEREGYQQTHFRFTKPM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_UPI0022F0D51F" ac="UniRef90_UPI0022F0D51F" length="154" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Dryocola clanedunensis TaxID=2925396 RepID=UPI0022F0D51F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>507</score>
+      <bits>199.9</bits>
+      <expectation>3e-63</expectation>
+      <identity>72.5</identity>
+      <positives>79.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="152">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTK</querySeq>
+      <pattern>E R AT  D D VYALICEL + E D QAF  GFAANL D N+ Y+LAL NG+VVGMI LHMQFHLHH NWI EIQELVV+P  RG  +GS+LLAWAEE+AR AGAELTELST+  R DAHRFY REGYKQ+HFRFTK</pattern>
+      <matchSeq start="5" end="142">EFRRATIADGDIVYALICELKQAEFDRQAFNVGFAANLEDHNLCYQLALLNGDVVGMIGLHMQFHLHHVNWIAEIQELVVMPQARGHGVGSKLLAWAEEQARIAGAELTELSTSTGRLDAHRFYQREGYKQTHFRFTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_A0ABX0VRA0" ac="UniRef90_A0ABX0VRA0" length="155" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Cedecea colo TaxID=2552946 RepID=A0ABX0VRA0_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>505</score>
+      <bits>199.1</bits>
+      <expectation>6.3e-63</expectation>
+      <identity>71.0</identity>
+      <positives>82.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="152">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTK</querySeq>
+      <pattern>E R AT  D+D VYALICEL + E + QAF +GFAANL + ++ Y+LAL N EVVGMI LHMQFHLHHANWIGEIQELVV+P  RG  +GS+LLAWAEE+AR AGAELTELST+I R +AHRFY REGY+Q+HFRFTK</pattern>
+      <matchSeq start="6" end="143">EFRRATLADSDIVYALICELKQAEFNRQAFNNGFAANLEESSLRYQLALVNDEVVGMIGLHMQFHLHHANWIGEIQELVVMPQARGHGVGSKLLAWAEEQARIAGAELTELSTSIGRLEAHRFYEREGYQQTHFRFTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0A3N5D7N4" ac="UniRef90_A0A3N5D7N4" length="155" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Buttiauxella warmboldiae TaxID=82993 RepID=A0A3N5D7N4_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>505</score>
+      <bits>199.1</bits>
+      <expectation>6.3e-63</expectation>
+      <identity>68.6</identity>
+      <positives>80.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="154">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>E R AT  D++ VYALICEL + E + QAF  GFAANL D N+ Y+LA+ NGE VGM+ LHMQFHLHH NW+GEIQELVV+P  RG  +GS+LLAWAEE+AR AGAELTELST+ KR DAHRFY REGY+ +HFRFTKA+</pattern>
+      <matchSeq start="6" end="145">EFRRATLADSNDVYALICELKQAEFNRQAFNVGFAANLEDHNLCYQLAVLNGETVGMVGLHMQFHLHHVNWVGEIQELVVMPQARGHGVGSKLLAWAEEQARIAGAELTELSTSAKRLDAHRFYQREGYQHTHFRFTKAV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_A0A9X2WBI1" ac="UniRef90_A0A9X2WBI1" length="155" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Dryocola boscaweniae TaxID=2925397 RepID=A0A9X2WBI1_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>504</score>
+      <bits>198.7</bits>
+      <expectation>8.9e-63</expectation>
+      <identity>72.5</identity>
+      <positives>80.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="152">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTK</querySeq>
+      <pattern>E R AT  D+D+VYALICEL + E D QAF  GFAANL D N+ Y+LAL NG VVGMI LHMQFHLHHANWIGEIQELVV+P  RG  +GS+LLAWAE +AR AGAELTELST   R DAHRFY REGY+Q+HFRFTK</pattern>
+      <matchSeq start="6" end="143">EFRRATLADSDTVYALICELKQAEFDRQAFNVGFAANLEDHNLCYQLALVNGAVVGMIGLHMQFHLHHANWIGEIQELVVMPQARGYGVGSKLLAWAENKARIAGAELTELSTGKGRLDAHRFYEREGYQQTHFRFTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0A1B7IE88" ac="UniRef90_A0A1B7IE88" length="155" description="PhnO family protein n=1 Tax=Buttiauxella brennerae ATCC 51605 TaxID=1354251 RepID=A0A1B7IE88_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>502</score>
+      <bits>198.0</bits>
+      <expectation>1.8e-62</expectation>
+      <identity>69.8</identity>
+      <positives>81.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="154">LRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>LR AT  D+D+VY LICEL + + D QAF  GFAANL D N+ Y+LAL NG+VVGMI LHMQFHLHH NW+GEIQELVV+P  RG  +GS+LL+WAEE AR AGAELTELST+ KR DAHRFY REGY+Q+HFRFTK +</pattern>
+      <matchSeq start="7" end="145">LRPATAADSDAVYMLICELKQAQFDRQAFNVGFAANLQDNNLCYQLALINGDVVGMIGLHMQFHLHHVNWVGEIQELVVMPQARGFGVGSKLLSWAEEYARLAGAELTELSTSTKRYDAHRFYEREGYQQTHFRFTKPM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0A2T2XZN5" ac="UniRef90_A0A2T2XZN5" length="144" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Kluyvera genomosp. 2 TaxID=2774054 RepID=A0A2T2XZN5_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>496</score>
+      <bits>195.7</bits>
+      <expectation>1e-61</expectation>
+      <identity>66.0</identity>
+      <positives>79.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>M VCELR+AT +D D VYAL+CEL + E    AF  GFAANL + ++HY+LAL +  VVGM+SLH+QFHLHHANW+GEIQELVV+P  RG  +GS+LLAWAE+ AR AGAE+ ELST+ +R DAHRFY REGY  SH RFTKAL</pattern>
+      <matchSeq start="1" end="144">MSVCELRYATFDDIDDVYALMCELKQAEYCRDAFDTGFAANLQNHHLHYQLALIDDSVVGMVSLHLQFHLHHANWVGEIQELVVMPLTRGSGVGSRLLAWAEQTARDAGAEICELSTSTRRLDAHRFYQREGYAPSHVRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_A0ABY9SB27" ac="UniRef90_A0ABY9SB27" length="155" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Buttiauxella selenatireducens TaxID=3073902 RepID=A0ABY9SB27_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>496</score>
+      <bits>195.7</bits>
+      <expectation>1.5e-61</expectation>
+      <identity>68.8</identity>
+      <positives>79.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="152">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTK</querySeq>
+      <pattern>E R A   DTD+VYALICEL + E + QAF  GFAANL D ++HY+LA+ NGEVVGMI LHMQFHLHH NW+GEIQELVV+P  RG  +GS+LLAWAE+ AR  GAELTELST+ KR DAHRFY REGY+ +H RFTK</pattern>
+      <matchSeq start="6" end="143">EFRPANLADTDAVYALICELKQAEFNRQAFNAGFAANLADSHLHYQLAVLNGEVVGMIGLHMQFHLHHVNWVGEIQELVVMPQARGYGVGSKLLAWAEDHARLNGAELTELSTSKKRLDAHRFYEREGYQPTHVRFTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_A0A4P8YFZ8" ac="UniRef90_A0A4P8YFZ8" length="143" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Jejuibacter calystegiae TaxID=2579935 RepID=A0A4P8YFZ8_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>473</score>
+      <bits>186.8</bits>
+      <expectation>3.2e-58</expectation>
+      <identity>65.7</identity>
+      <positives>74.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="154">ELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>ELR AT  D  SVY LICEL + E D  AFR GFAANLLD    Y+LAL NG  V M+ LH+QFHLHH NWI EIQELVV+P  RG  IG +LLAWAE+EARQ GAE+ ELST+  R+DAHRFY RE Y+ +H RFTKAL</pattern>
+      <matchSeq start="4" end="143">ELRSATLNDWQSVYGLICELKQREFDRDAFRAGFAANLLDSRFRYQLALHNGHPVAMVGLHLQFHLHHVNWIAEIQELVVMPQGRGLGIGKRLLAWAEQEARQEGAEMIELSTSTGRQDAHRFYQREAYQPTHVRFTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_A0ABT2DXF1" ac="UniRef90_A0ABT2DXF1" length="143" description="Aminoalkylphosphonate N-acetyltransferase n=2 Tax=Scandinavium TaxID=2726810 RepID=A0ABT2DXF1_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>466</score>
+      <bits>184.1</bits>
+      <expectation>3.7e-57</expectation>
+      <identity>66.7</identity>
+      <positives>73.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="154">CELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>CELR AT  DTD+VY LICEL + E D Q F  GFAANL  P+  Y+LAL NGE+VG+I L M F L+   WIGEIQELV+LP MRG  IG QLL WAEEEARQ GA L ELS+   R DAHRFYLREGY+QSHFRF K L</pattern>
+      <matchSeq start="3" end="143">CELRPATPADTDAVYGLICELKQKEYDRQTFAAGFAANLNTPSQRYQLALVNGEIVGLIGLQMMFPLNLNCWIGEIQELVILPQMRGLNIGQQLLTWAEEEARQRGASLMELSSGKVRTDAHRFYLREGYQQSHFRFKKTL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_UPI0009AE83CF" ac="UniRef90_UPI0009AE83CF" length="110" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Salmonella enterica TaxID=28901 RepID=UPI0009AE83CF">
+    <alignments total="1">
+     <alignment number="1">
+      <score>452</score>
+      <bits>178.7</bits>
+      <expectation>1.7e-55</expectation>
+      <identity>77.3</identity>
+      <positives>86.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="120">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGA</querySeq>
+      <pattern>MP+CELR AT EDTDSVYALICEL +++L+YQ F +GFAANL DP+  Y LAL NGEVVGMI LHMQFHLHHANWIGEIQELVV+P  RG K+GS LLAWAEEEAR+AGA</pattern>
+      <matchSeq start="1" end="110">MPICELRRATAEDTDSVYALICELKQDKLNYQNFSEGFAANLQDPHFRYHLALYNGEVVGMIGLHMQFHLHHANWIGEIQELVVMPQARGLKVGSTLLAWAEEEARRAGA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_UPI002EDBA836" ac="UniRef90_UPI002EDBA836" length="143" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Enterobacterales TaxID=91347 RepID=UPI002EDBA836">
+    <alignments total="1">
+     <alignment number="1">
+      <score>454</score>
+      <bits>179.5</bits>
+      <expectation>2.5e-55</expectation>
+      <identity>63.8</identity>
+      <positives>75.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="154">CELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>CELR AT +DT++VY LICEL + + D Q F  GFAANL +PN HY+LA+ +G VVGMI L + F L+   WIGEIQELV+LP +RG  IG +LLAWAE+EAR  GA L ELS+   R DAHRFYLREGY QSHFRF KAL</pattern>
+      <matchSeq start="3" end="143">CELRRATLDDTEAVYGLICELKQKDYDRQIFAAGFAANLNNPNQHYQLAVLDGNVVGMIGLQIMFPLNLNCWIGEIQELVILPQVRGLNIGKKLLAWAEDEARAQGASLMELSSGKVRTDAHRFYLREGYLQSHFRFKKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_E3G1M4" ac="UniRef90_E3G1M4" length="144" description="GCN5-related N-acetyltransferase n=1 Tax=Enterobacter lignolyticus (strain SCF1) TaxID=701347 RepID=E3G1M4_ENTLS">
+    <alignments total="1">
+     <alignment number="1">
+      <score>451</score>
+      <bits>178.3</bits>
+      <expectation>7.2e-55</expectation>
+      <identity>61.8</identity>
+      <positives>74.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MP CELR AT +DT +VYALI EL + E D  AF  GFAANL +P   Y+LAL +G VVG+I + +QF L+  NWIGE+QELVVLP  RG  +G  LLAWAE+EAR++GA + ELS+   R DAHRFYLREGY+QSH RF KAL</pattern>
+      <matchSeq start="1" end="144">MPACELRDATLDDTHAVYALIAELKQKEYDRAAFAAGFAANLANPTQRYQLALVDGTVVGLIGMQLQFPLNFNNWIGEVQELVVLPRNRGLSVGQALLAWAEDEARRSGATMMELSSGRARPDAHRFYLREGYQQSHLRFKKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_A0AAJ2RZP2" ac="UniRef90_A0AAJ2RZP2" length="143" description="Aminoalkylphosphonate N-acetyltransferase n=1 Tax=Scandinavium lactucae TaxID=3095028 RepID=A0AAJ2RZP2_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>446</score>
+      <bits>176.4</bits>
+      <expectation>4e-54</expectation>
+      <identity>63.8</identity>
+      <positives>73.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="154">CELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>CELR AT +DTD+VY LICEL +   D Q F  GFAANL +P   Y+LA  NGEVVG+I L + F L+   WIGEIQELV+LP MRG  IG QLL WAE+EAR+ GA L ELS+   R DAHRFYLREGY+QSHFRF K L</pattern>
+      <matchSeq start="3" end="143">CELRRATLDDTDAVYGLICELKQKAYDRQTFATGFAANLNNPAQCYQLAWVNGEVVGLIGLQVMFPLNQNCWIGEIQELVILPQMRGLNIGQQLLRWAEDEARRRGASLMELSSGKVRPDAHRFYLREGYQQSHFRFKKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_UPI003F1A977F" ac="UniRef90_UPI003F1A977F" length="107" description="aminoalkylphosphonate N-acetyltransferase n=1 Tax=Raoultella ornithinolytica TaxID=54291 RepID=UPI003F1A977F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>441</score>
+      <bits>174.5</bits>
+      <expectation>7.4e-54</expectation>
+      <identity>77.6</identity>
+      <positives>86.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="48" end="154">FAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>F ANL D N+ Y+LA R G+V+GMI LHMQFHLHHA WIGEIQELVV+P  RG K+GSQLLAWAEE ARQAGAELTELST++KR DAHRFY+REGY QSHFRFTK L</pattern>
+      <matchSeq start="1" end="107">FLANLQDHNMRYQLAEREGQVIGMIGLHMQFHLHHARWIGEIQELVVMPQARGLKVGSQLLAWAEEVARQAGAELTELSTSVKRTDAHRFYVREGYTQSHFRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0AA91IQ88" ac="UniRef90_A0AA91IQ88" length="152" description="PhnO family protein n=2 Tax=Hafniaceae TaxID=1903412 RepID=A0AA91IQ88_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>445</score>
+      <bits>176.0</bits>
+      <expectation>7.6e-54</expectation>
+      <identity>57.1</identity>
+      <positives>69.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="154">EDVMPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>E   P   LR  T +D D+VY L+CEL + E D  AF  G+A NL +PN+HY LA +N EV+G ISLH+Q+HLHH NWI EIQEL++ P  RG  +G +LL WAE+ AR+ GAE TELST   R DAHRFY REGY  +HFRF K L</pattern>
+      <matchSeq start="3" end="149">ETTSPHIILRPTTAQDEDTVYHLMCELEQCEFDRLAFAKGYALNLANPNMHYALATQNNEVLGFISLHLQYHLHHVNWIAEIQELIITPQARGAGVGKRLLRWAEDTARELGAEQTELSTRATRYDAHRFYQREGYLHTHFRFVKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_A0ABX9RUF8" ac="UniRef90_A0ABX9RUF8" length="147" description="GNAT family acetyltransferase n=1 Tax=Yokenella regensburgei TaxID=158877 RepID=A0ABX9RUF8_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.9</bits>
+      <expectation>1.1e-52</expectation>
+      <identity>60.4</identity>
+      <positives>73.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="154">MPVCELRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>MPVC+LR AT EDT +VY LI EL + +    AF  GFAANLL+P +HY++A  + EVVG+I + +QF LHH++WIGEIQELVVLP  RG  IG +LL WAE EA+  GAE  ELS+   R +AHRFYLREGY QSH+RF K L</pattern>
+      <matchSeq start="1" end="144">MPVCKLRPATPEDTPAVYHLISELKQVQYPRDAFAAGFAANLLNPTLHYQVAEVDSEVVGLIGMQLQFQLHHSHWIGEIQELVVLPKQRGLNIGQRLLHWAEAEAQAHGAEGMELSSGKGRTEAHRFYLREGYLQSHYRFKKTL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0A370R198" ac="UniRef90_A0A370R198" length="150" description="GNAT family acetyltransferase n=1 Tax=Enterobacillus tribolii TaxID=1487935 RepID=A0A370R198_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>436</score>
+      <bits>172.6</bits>
+      <expectation>1.7e-52</expectation>
+      <identity>59.0</identity>
+      <positives>72.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="154">LRHATTEDTDSVYALICELLKNELDYQAFRDGFAANLLDPNVHYRLALRNGEVVGMISLHMQFHLHHANWIGEIQELVVLPPMRGQKIGSQLLAWAEEEARQAGAELTELSTNIKRRDAHRFYLREGYKQSHFRFTKAL</querySeq>
+      <pattern>LR AT+ DT+ VYALICEL +   D+  F  G+  NL DP+++Y LA  +   +G ISLH+QFHLHHANWI EIQELVV    RG+ +G +LL WAE  AR+ GAE TELST+++R DAHRFY REGYK +H RFTK L</pattern>
+      <matchSeq start="9" end="147">LRAATSADTEYVYALICELEQTRFDFHRFSAGYLNNLADPHLYYALAWEHDRPLGFISLHLQFHLHHANWIAEIQELVVAADARGKGVGKRLLGWAETTARKQGAEQTELSTSVRRHDAHRFYQREGYKNTHLRFTKPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

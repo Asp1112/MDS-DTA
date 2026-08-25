@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-124311-0996-99378499-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-124311-0996-99378499-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="148"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:43:12+01:00" end="2026-08-06T12:55:16+01:00" search="P0Y0M0DT0H0M724.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q8ZJW4" ac="UniRef90_Q8ZJW4" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=56 Tax=Gammaproteobacteria TaxID=1236 RepID=RIMI_SALTY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>755</score>
+      <bits>295.4</bits>
+      <expectation>3.1e-101</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_UPI0020CA3A6D" ac="UniRef90_UPI0020CA3A6D" length="131" description="ribosomal protein S18-alanine N-acetyltransferase n=1 Tax=Salmonella enterica TaxID=28901 RepID=UPI0020CA3A6D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>9.3e-88</expectation>
+      <identity>99.2</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="18" end="148">IEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>+EQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</pattern>
+      <matchSeq start="1" end="131">MEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0ABX9FZL9" ac="UniRef90_A0ABX9FZL9" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=5 Tax=Pseudocitrobacter TaxID=1504576 RepID=A0ABX9FZL9_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>662</score>
+      <bits>259.6</bits>
+      <expectation>4.7e-87</expectation>
+      <identity>86.5</identity>
+      <positives>91.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LSTTDLPAAWQIE+RAHAFPWSEKTF  NQGERYLNLKLT  D +AAFAITQVVLDEATLFNIAVDP +QRRGLGR LLEH+IDE+E RGV TLWLEVRASNA AIALYESLGFNEATIRRNYYPT  GHEDAI+MALP+SM</pattern>
+      <matchSeq start="1" end="148">MNTISTLSTTDLPAAWQIEKRAHAFPWSEKTFASNQGERYLNLKLTVGDELAAFAITQVVLDEATLFNIAVDPAYQRRGLGRELLEHVIDEVEKRGVATLWLEVRASNAPAIALYESLGFNEATIRRNYYPTVDGHEDAIVMALPLSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A7X1BQ09" ac="UniRef90_A0A7X1BQ09" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=63 Tax=Enterobacteriaceae TaxID=543 RepID=A0A7X1BQ09_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>656</score>
+      <bits>257.3</bits>
+      <expectation>3.9e-86</expectation>
+      <identity>87.2</identity>
+      <positives>91.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS L  TDLPAA+QIE+RAHAFPWSEKTF  NQG+RYLN +L  DD MAAFAITQVVLDEATLFNIAVDPDFQR+GLGR LLEHLIDELE RG++TLWLEVRASNAAAIALYESLGFNEATIRRNYYPTA GHEDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISSLEPTDLPAAFQIEKRAHAFPWSEKTFASNQGDRYLNFQLRVDDVMAAFAITQVVLDEATLFNIAVDPDFQRQGLGRELLEHLIDELEKRGILTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTADGHEDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0A248KCS1" ac="UniRef90_A0A248KCS1" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=2 Tax=Salmonella bongori TaxID=54736 RepID=A0A248KCS1_SALBN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>650</score>
+      <bits>255.0</bits>
+      <expectation>3.2e-85</expectation>
+      <identity>87.2</identity>
+      <positives>89.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS L+ TDLPAA+ IE+RAHAFPWSE TF  NQGERYLN +LT D  MAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELE R V TLWLEVRASN AAIALYESLGFNEATIRRNYYPTA GHEDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISFLNPTDLPAAFLIEKRAHAFPWSESTFASNQGERYLNYQLTVDGSMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELEKRDVATLWLEVRASNVAAIALYESLGFNEATIRRNYYPTADGHEDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_P0A944" ac="UniRef90_P0A944" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=120 Tax=Gammaproteobacteria TaxID=1236 RepID=RIMI_ECOLI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>649</score>
+      <bits>254.6</bits>
+      <expectation>4.6e-85</expectation>
+      <identity>86.5</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS L TTDLPAA+ IEQRAHAFPWSEKTF  NQGERYLN +LT + +MAAFAITQVVLDEATLFNIAVDPD+QR+GLGR LLEHLIDELE RGV TLWLEVRASNAAAIALYESLGFNEATIRRNYYPT  G EDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISSLETTDLPAAYHIEQRAHAFPWSEKTFASNQGERYLNFQLTQNGKMAAFAITQVVLDEATLFNIAVDPDYQRQGLGRALLEHLIDELEKRGVATLWLEVRASNAAAIALYESLGFNEATIRRNYYPTTDGREDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_E3GAT8" ac="UniRef90_E3GAT8" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=1 Tax=Enterobacter lignolyticus (strain SCF1) TaxID=701347 RepID=E3GAT8_ENTLS">
+    <alignments total="1">
+     <alignment number="1">
+      <score>642</score>
+      <bits>251.9</bits>
+      <expectation>5.3e-84</expectation>
+      <identity>84.5</identity>
+      <positives>89.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LS TDLP AWQIE+RAHAFPWSE+TF  NQGERYLN +LT D  MAAFAITQVVLDEATLFNIAVDP +QRRGLGR LLEH+IDE+E RGV TLWLEVRASN AAIALYESLGFNEATIRRNYYPTA+GHEDAIIMALP+ M</pattern>
+      <matchSeq start="1" end="148">MNTISSLSLTDLPRAWQIEKRAHAFPWSEQTFASNQGERYLNYQLTVDGEMAAFAITQVVLDEATLFNIAVDPAWQRRGLGRELLEHVIDEVEKRGVATLWLEVRASNVAAIALYESLGFNEATIRRNYYPTAEGHEDAIIMALPLKM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0A6L6IGH0" ac="UniRef90_A0A6L6IGH0" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=1 Tax=Intestinirhabdus alba TaxID=2899544 RepID=A0A6L6IGH0_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>639</score>
+      <bits>250.8</bits>
+      <expectation>1.5e-83</expectation>
+      <identity>85.8</identity>
+      <positives>89.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LS TDLPAA+QIE RAHAFPWSE+TF  +QGERYLN +LT   RMAAFAITQVVLDEATLFNIAVDPDFQRRGLGR LLEHLI  LE RG+VTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTA G EDAIIMALP+SM</pattern>
+      <matchSeq start="1" end="148">MNTISFLSPTDLPAAFQIETRAHAFPWSEQTFASSQGERYLNYQLTQGGRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRALLEHLIGALEARGIVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTADGREDAIIMALPVSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_A0ABS0ZT37" ac="UniRef90_A0ABS0ZT37" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=14 Tax=Enterobacterales TaxID=91347 RepID=A0ABS0ZT37_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>639</score>
+      <bits>250.8</bits>
+      <expectation>1.5e-83</expectation>
+      <identity>85.1</identity>
+      <positives>91.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LS  DLPAA+QIE+RAHAFPWSE+TF  NQGERYLN +LT D RMAAFAITQVV+DEATLFNIAVDPDFQR+G+G+ LLEHLIDELE RGV+TLWLEVRASN AAIALYESLGFNEATIRRNYYPTA G EDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISSLSQRDLPAAFQIEKRAHAFPWSEQTFTSNQGERYLNYQLTIDGRMAAFAITQVVVDEATLFNIAVDPDFQRQGVGKALLEHLIDELEKRGVLTLWLEVRASNVAAIALYESLGFNEATIRRNYYPTADGREDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0A2P5GJ53" ac="UniRef90_A0A2P5GJ53" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=5 Tax=Enterobacteriaceae TaxID=543 RepID=A0A2P5GJ53_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>638</score>
+      <bits>250.4</bits>
+      <expectation>2.2e-83</expectation>
+      <identity>84.5</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS L+TTDL  AW+IE+RAHAFPWSE TF  NQGERYLN +LT +  MAAFAITQ+VLDEATLFNIAVDP FQRRGLGR LLEHLIDELE RGVVTLWLEVRASNA AIALYES+GFNEATIRRNYYPTA G EDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISFLNTTDLSRAWEIEKRAHAFPWSETTFASNQGERYLNYQLTVEGEMAAFAITQIVLDEATLFNIAVDPAFQRRGLGRELLEHLIDELEKRGVVTLWLEVRASNATAIALYESIGFNEATIRRNYYPTADGREDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A1V2BME0" ac="UniRef90_A0A1V2BME0" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=85 Tax=Klebsiella/Raoultella group TaxID=2890311 RepID=A0A1V2BME0_RAOTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>632</score>
+      <bits>248.1</bits>
+      <expectation>1.8e-82</expectation>
+      <identity>83.1</identity>
+      <positives>88.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS L+T DLP AWQIE RAHAFPWSE+TF  NQGERYLNL+L  D  MAAFAITQ+VLDEATLFNIAVDP FQRRGLGR LLE +IDE+E RGV TLWLEVRASNAAAIALYESLGFNEATIRRNYYPTA G EDA+IMALP+SM</pattern>
+      <matchSeq start="1" end="148">MNTISTLNTADLPRAWQIESRAHAFPWSEQTFASNQGERYLNLQLAVDGEMAAFAITQIVLDEATLFNIAVDPAFQRRGLGRELLERVIDEVEKRGVATLWLEVRASNAAAIALYESLGFNEATIRRNYYPTADGREDALIMALPLSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0AB38FW87" ac="UniRef90_A0AB38FW87" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=1 Tax=Yokenella regensburgei TaxID=158877 RepID=A0AB38FW87_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <bits>246.9</bits>
+      <expectation>5.1e-82</expectation>
+      <identity>83.1</identity>
+      <positives>88.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MN IS LS TDLP AW IE+RAHAFPWSEKTF  NQGERY N KL A+  MAAFAITQ+VLDEATLFNIAVDPD+QRRG GR LLE+LIDELE RGVVTLWLEVRASNA AIALYESLGFNEATIR+NYYP+A+G EDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNMISSLSPTDLPRAWHIEKRAHAFPWSEKTFASNQGERYFNCKLEAEGEMAAFAITQIVLDEATLFNIAVDPDYQRRGFGRALLEYLIDELEKRGVVTLWLEVRASNAPAIALYESLGFNEATIRKNYYPSAEGREDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_A0A2T2Y478" ac="UniRef90_A0A2T2Y478" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=1 Tax=Kluyvera genomosp. 2 TaxID=2774054 RepID=A0A2T2Y478_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <bits>246.9</bits>
+      <expectation>5.1e-82</expectation>
+      <identity>82.4</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LSTTDLP A+ IE+RAHAFPWSEKTF  NQG+RYLN +++ D +MAAFAITQVVLDEATLFNIAVDP +QRRGLGR LLEHLI+ LETRGV+TLWLEVRASN AAIALYESLGFNEATIRRNYYPTA+G EDAI+MALPI M</pattern>
+      <matchSeq start="1" end="148">MNTISTLSTTDLPRAFDIERRAHAFPWSEKTFVSNQGDRYLNFQMSVDGKMAAFAITQVVLDEATLFNIAVDPAYQRRGLGRELLEHLIETLETRGVLTLWLEVRASNHAAIALYESLGFNEATIRRNYYPTAEGREDAIVMALPIGM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A6G9RPZ3" ac="UniRef90_A0A6G9RPZ3" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=10 Tax=Kluyvera TaxID=579 RepID=A0A6G9RPZ3_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <bits>246.9</bits>
+      <expectation>5.1e-82</expectation>
+      <identity>85.1</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LSTTDLP A+ IE RAHAFPWSE TF  NQGERYLNL+L+ D  MAAFAITQVVLDEATLFNIAVDP +QRRGLGR LLEHLID LE +GVVTLWLEVRASN AAIALYESLGFNEATIRRNYYPTA+G EDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISTLSTTDLPRAFAIETRAHAFPWSETTFASNQGERYLNLQLSVDGEMAAFAITQVVLDEATLFNIAVDPAYQRRGLGRELLEHLIDALEAQGVVTLWLEVRASNHAAIALYESLGFNEATIRRNYYPTAEGREDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_A0AAJ2S0S1" ac="UniRef90_A0AAJ2S0S1" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=10 Tax=Enterobacterales TaxID=91347 RepID=A0AAJ2S0S1_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <bits>246.9</bits>
+      <expectation>5.1e-82</expectation>
+      <identity>85.1</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LS TDLP A QIEQRAHAFPWSE+T   NQGERYLNL+LT D  MAAFAITQ+VLDEATLFNIAVDP +QRRGLGR LLE +IDE+E RGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTA G EDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISSLSQTDLPRALQIEQRAHAFPWSEQTLASNQGERYLNLQLTVDGEMAAFAITQIVLDEATLFNIAVDPAYQRRGLGRELLEQVIDEVEKRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTADGREDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_A0A0J5MBA7" ac="UniRef90_A0A0J5MBA7" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=3 Tax=Pluralibacter gergoviae TaxID=61647 RepID=A0A0J5MBA7_PLUGE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>627</score>
+      <bits>246.1</bits>
+      <expectation>1e-81</expectation>
+      <identity>83.1</identity>
+      <positives>88.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LSTTDLP A+QIE RAHAFPWSEKTF  NQGERYLNL+L  D  MAAFAITQ+VLDEATLFNIAVDP  QRRGLGR LLE +IDE+E RGV TLWLEVRASNAAAIALYESLGFNEA +RRNYYPTA GHEDAI+MALP+SM</pattern>
+      <matchSeq start="1" end="148">MNTISTLSTTDLPRAFQIETRAHAFPWSEKTFASNQGERYLNLQLAVDGEMAAFAITQIVLDEATLFNIAVDPAHQRRGLGRALLEAVIDEVEKRGVATLWLEVRASNAAAIALYESLGFNEADVRRNYYPTANGHEDAIVMALPLSM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_UPI003FCC58A6" ac="UniRef90_UPI003FCC58A6" length="146" description="ribosomal protein S18-alanine N-acetyltransferase n=1 Tax=Vagococcus sp. WN89Y TaxID=3457258 RepID=UPI003FCC58A6">
+    <alignments total="1">
+     <alignment number="1">
+      <score>626</score>
+      <bits>245.7</bits>
+      <expectation>1.4e-81</expectation>
+      <identity>83.6</identity>
+      <positives>87.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTISIL  TDLP AWQIE RAHAFPWSEKTF  NQG+RYLN +L+ DD M AFAITQVVLDEATLFNIAVDP  QRRG GR LLEHLI ELETRGV+TLWLEVRASN  AIALYESLGFNEATIRRNYYPTA+G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISILEATDLPRAWQIETRAHAFPWSEKTFASNQGDRYLNYRLSVDDEMVAFAITQVVLDEATLFNIAVDPACQRRGFGRQLLEHLIRELETRGVLTLWLEVRASNKGAIALYESLGFNEATIRRNYYPTAEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0A085AB31" ac="UniRef90_A0A085AB31" length="146" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=6 Tax=Trabulsiella TaxID=158851 RepID=A0A085AB31_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>622</score>
+      <bits>244.2</bits>
+      <expectation>5.6e-81</expectation>
+      <identity>84.1</identity>
+      <positives>90.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="148">ISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>IS LSTTDLP AWQIE+RAHAFPWSEKTF  NQG+RY NLKL  ++ +AAFAITQVVLDEATLFNIAVDP +QRRGLGR LLE+LID LE RGVVTLWLEVRASN AAIALYESLGFNEATIR+NYYPTA+G EDAIIMALPISM</pattern>
+      <matchSeq start="2" end="146">ISSLSTTDLPRAWQIEKRAHAFPWSEKTFASNQGDRYFNLKLETENEIAAFAITQVVLDEATLFNIAVDPAYQRRGLGRALLEYLIDALEKRGVVTLWLEVRASNVAAIALYESLGFNEATIRKNYYPTAEGREDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0A090UW13" ac="UniRef90_A0A090UW13" length="146" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=6 Tax=Enterobacteriaceae TaxID=543 RepID=A0A090UW13_PSEVU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>615</score>
+      <bits>241.5</bits>
+      <expectation>6.5e-80</expectation>
+      <identity>84.2</identity>
+      <positives>88.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS LST DL  A+ IEQRAHAFPWSEKTF  NQGERYLNL LT D+ +AAFAITQVVLDEATLFNIAVDP FQRRGLGR LLEHLI ELE R V+TLWLEVRASNAAAIALYESLGFNEATIRRNYYPTA G EDA+IMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISSLSTADLTHAFAIEQRAHAFPWSEKTFASNQGERYLNLGLTVDETLAAFAITQVVLDEATLFNIAVDPAFQRRGLGRALLEHLISELEKRDVLTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTADGREDAVIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_A0ACC8S804" ac="UniRef90_A0ACC8S804" length="146" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=5 Tax=Enterobacter TaxID=547 RepID=A0ACC8S804_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>611</score>
+      <bits>240.0</bits>
+      <expectation>2.6e-79</expectation>
+      <identity>84.2</identity>
+      <positives>89.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L+TTDL AA+QIE RAHAFPWSEKTF  NQGERYLN +L A D MAAFAITQVVLDEATLFNIAVDP FQR+GLG+MLL HLI ELE R V+TLWLEVRASNAAAIALYESLGFNEAT+RRNYYPTA G EDAIIMALPI</pattern>
+      <matchSeq start="1" end="146">MNTISSLTTTDLAAAFQIETRAHAFPWSEKTFASNQGERYLNFRLMAGDTMAAFAITQVVLDEATLFNIAVDPAFQRQGLGKMLLLHLIAELEKRDVLTLWLEVRASNAAAIALYESLGFNEATVRRNYYPTATGREDAIIMALPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_A0ABV4A932" ac="UniRef90_A0ABV4A932" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=1 Tax=Pseudenterobacter timonensis TaxID=1755099 RepID=A0ABV4A932_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>608</score>
+      <bits>238.8</bits>
+      <expectation>7.8e-79</expectation>
+      <identity>82.9</identity>
+      <positives>89.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L+T+DL +A+QIE RAHAFPWSEKTF  NQGERYLN +L  D  MAAFAITQVVLDEATLFNIAVDP FQRRGLGR LL+HLI ELE R V+TLWLEVRASNAAAIALYESLGFNEATIRRNYYPTA+G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISSLTTSDLASAYQIEARAHAFPWSEKTFASNQGERYLNYRLDVDGVMAAFAITQVVLDEATLFNIAVDPAFQRRGLGRALLDHLIGELEARDVMTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A0A0H3GHX5" ac="UniRef90_A0A0H3GHX5" length="148" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=62 Tax=Gammaproteobacteria TaxID=1236 RepID=A0A0H3GHX5_KLEPH">
+    <alignments total="1">
+     <alignment number="1">
+      <score>608</score>
+      <bits>238.8</bits>
+      <expectation>8.1e-79</expectation>
+      <identity>81.1</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="148">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPISM</querySeq>
+      <pattern>MNTIS LST DL  AW IE+RAHAFPWSE+T   NQGERY N +L+ D  MAAFAITQVVLDEATLFNIAVDP +QRRGLGR LLEH+IDE+E  GVVTLWLEVRASN AAIALYES+GFNEATIRRNYYPTA G EDAIIMALPISM</pattern>
+      <matchSeq start="1" end="148">MNTISTLSTADLTKAWHIEKRAHAFPWSEQTLASNQGERYRNYQLSVDGEMAAFAITQVVLDEATLFNIAVDPAYQRRGLGRALLEHVIDEVEKLGVVTLWLEVRASNVAAIALYESVGFNEATIRRNYYPTADGREDAIIMALPISM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_UPI000F46243C" ac="UniRef90_UPI000F46243C" length="146" description="ribosomal protein S18-alanine N-acetyltransferase n=1 Tax=unclassified Enterobacter TaxID=2608935 RepID=UPI000F46243C">
+    <alignments total="1">
+     <alignment number="1">
+      <score>606</score>
+      <bits>238.0</bits>
+      <expectation>1.5e-78</expectation>
+      <identity>80.8</identity>
+      <positives>89.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS LSTTDLPAA++IE RAHAFPWSEKT   NQG+RY NLKL+ ++ MAAFA+TQVVLDEATLFNIAVDP FQR+GLGR LLEHLI ELE R V+TLWLEVRASNAAAIALYESLGFNEAT+RRNYYPTA G EDA+IMALP+</pattern>
+      <matchSeq start="1" end="146">MNMISSLSTTDLPAAYRIETRAHAFPWSEKTLLSNQGDRYFNLKLSVNEEMAAFAVTQVVLDEATLFNIAVDPAFQRQGLGRSLLEHLIRELEQRDVLTLWLEVRASNAAAIALYESLGFNEATVRRNYYPTATGREDALIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_A0AB35RH26" ac="UniRef90_A0AB35RH26" length="146" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=3 Tax=Phytobacter TaxID=447792 RepID=A0AB35RH26_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>603</score>
+      <bits>236.9</bits>
+      <expectation>4.4e-78</expectation>
+      <identity>82.2</identity>
+      <positives>87.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L+TTDL  A++IE RAHAFPWSEKTF  NQGERYLN +L   D MAAFAITQVVLDEATLFNIAVDP +QR+GLGR LLEHLI ELE RGV+TLWLEVRASN AAIALYESLGFNE TIRRNYYPTAQG EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISSLTTTDLARAYEIETRAHAFPWSEKTFASNQGERYLNYRLRVGDVMAAFAITQVVLDEATLFNIAVDPAWQRQGLGRQLLEHLIGELEKRGVLTLWLEVRASNTAAIALYESLGFNEVTIRRNYYPTAQGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0A0J8VPW8" ac="UniRef90_A0A0J8VPW8" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=5 Tax=Franconibacter TaxID=1649295 RepID=A0A0J8VPW8_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>600</score>
+      <bits>235.7</bits>
+      <expectation>1.3e-77</expectation>
+      <identity>81.5</identity>
+      <positives>87.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>M TIS L  TDL AA+ IE R+HAFPWSEKTF  NQGERYLN +L   D+MAAFAITQVVLDEATLFNIAVDP +QRRGLGR LLEHLI ELETRGV+TLWLEVRASN AAIALYESLGFNEATIRRNYYPT +G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MMTISSLQPTDLAAAYAIETRSHAFPWSEKTFASNQGERYLNYRLDVADKMAAFAITQVVLDEATLFNIAVDPAYQRRGLGRQLLEHLISELETRGVLTLWLEVRASNVAAIALYESLGFNEATIRRNYYPTKEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A0ABU9PDN1" ac="UniRef90_A0ABU9PDN1" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=151 Tax=Bacteria TaxID=2 RepID=A0ABU9PDN1_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>599</score>
+      <bits>235.3</bits>
+      <expectation>1.8e-77</expectation>
+      <identity>82.9</identity>
+      <positives>86.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L+T DL  A+ IE RAHAFPWSEKTF  NQGERYLNL+L  D  +AAFAITQVVLDEATLFNIAVDP FQR GLGR LLEHLI ELETR V TLWLEVRASN AAIALYESLGFNEATIRRNYYPTA+G EDAIIMALPI</pattern>
+      <matchSeq start="1" end="146">MNTISSLTTADLTTAFAIETRAHAFPWSEKTFASNQGERYLNLRLDVDGTLAAFAITQVVLDEATLFNIAVDPAFQRSGLGRELLEHLIRELETRDVFTLWLEVRASNVAAIALYESLGFNEATIRRNYYPTAEGREDAIIMALPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_A0A807L9U0" ac="UniRef90_A0A807L9U0" length="146" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=25 Tax=Enterobacteriaceae TaxID=543 RepID=A0A807L9U0_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>598</score>
+      <bits>235.0</bits>
+      <expectation>2.5e-77</expectation>
+      <identity>81.5</identity>
+      <positives>86.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS LSTTDLP A++IE RAHAFPWSEKT   NQGERYLN +L   D MAAFAITQVVLDEATLFNIAVDP +QR+GLGR LLEHLI ELE R V+TLWLEVRASN  AIALYESLGFNEATIRRNYYPTA G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISSLSTTDLPRAYEIETRAHAFPWSEKTLASNQGERYLNYRLMVGDEMAAFAITQVVLDEATLFNIAVDPAWQRQGLGRQLLEHLISELEKRDVLTLWLEVRASNQPAIALYESLGFNEATIRRNYYPTAHGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_A0ABU4E1J6" ac="UniRef90_A0ABU4E1J6" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=7 Tax=Atlantibacter TaxID=1903434 RepID=A0ABU4E1J6_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>595</score>
+      <bits>233.8</bits>
+      <expectation>7.5e-77</expectation>
+      <identity>80.8</identity>
+      <positives>87.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS+L+++DL  A+ IEQRAHAFPWS+KTF  NQGERYLN +L   D+MAAFAITQVVLDEATLFNIAVDP +Q RGLGR LLEHLI ELE R V TLWLEVRASNAAAIALYESLGFNEATIRRNYYPTA G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISLLTSSDLDRAFAIEQRAHAFPWSQKTFASNQGERYLNFRLDVADQMAAFAITQVVLDEATLFNIAVDPAYQHRGLGRALLEHLIRELEQRDVFTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTADGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0A085G2F1" ac="UniRef90_A0A085G2F1" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=17 Tax=Enterobacteriaceae TaxID=543 RepID=A0A085G2F1_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>593</score>
+      <bits>233.0</bits>
+      <expectation>1.5e-76</expectation>
+      <identity>79.5</identity>
+      <positives>87.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>M TIS L+T+DL  A+ IE R+HAFPWSEKTF  N+GERYLNL+L  D +MAAFA+TQVVLDEATLFNIAVDPDFQR+GLGR LLEHLI ELE R V TLWLEVRASN AAIALYESLGFNEATIRRNYYPT +G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MKTISSLTTSDLSQAYAIELRSHAFPWSEKTFASNEGERYLNLRLDVDGKMAAFAVTQVVLDEATLFNIAVDPDFQRQGLGRQLLEHLISELEKRDVFTLWLEVRASNTAAIALYESLGFNEATIRRNYYPTKEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_UPI001927C813" ac="UniRef90_UPI001927C813" length="147" description="ribosomal protein S18-alanine N-acetyltransferase n=2 Tax=Dryocola clanedunensis TaxID=2925396 RepID=UPI001927C813">
+    <alignments total="1">
+     <alignment number="1">
+      <score>592</score>
+      <bits>232.6</bits>
+      <expectation>2.1e-76</expectation>
+      <identity>80.1</identity>
+      <positives>86.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L+  DLPAA+ IEQR+HAFPWSEKTF  NQGERY NL+L  D  MAAFA+TQVVLDEATLFNIAVDP +QRRGLGR LLEHLI ELE + V TLWLEVRASNAAAIALYESLGFNEATIRRNYYPT +G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNMISSLTPDDLPAAYVIEQRSHAFPWSEKTFASNQGERYFNLRLDVDGNMAAFAVTQVVLDEATLFNIAVDPAWQRRGLGRQLLEHLIRELEAKDVFTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTKEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_A0A9J6QAU0" ac="UniRef90_A0A9J6QAU0" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=1 Tax=Silvania hatchlandensis TaxID=2926469 RepID=A0A9J6QAU0_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>592</score>
+      <bits>232.6</bits>
+      <expectation>2.1e-76</expectation>
+      <identity>80.1</identity>
+      <positives>87.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L+TTDL  A+ IE+RAHAFPWSEKTF  NQGERYLN +L  D ++AAFAITQVVLDEATLFNIAVDP FQRRGLGR LLEHLI ELE R V TLWLEVRASN AAI LYESLGFN+AT+RRNYYPTA+G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISSLTTTDLAQAFDIEKRAHAFPWSEKTFASNQGERYLNYRLDVDSQLAAFAITQVVLDEATLFNIAVDPAFQRRGLGRELLEHLICELEARDVFTLWLEVRASNTAAIKLYESLGFNQATLRRNYYPTAEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0ABY1W117" ac="UniRef90_A0ABY1W117" length="145" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=35 Tax=Cronobacter TaxID=413496 RepID=A0ABY1W117_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>591</score>
+      <bits>232.3</bits>
+      <expectation>2.9e-76</expectation>
+      <identity>81.8</identity>
+      <positives>88.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="146">ISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>IS+L + DL AA+ IEQRAHAFPWSEKTF  NQGERYLNL+L  D +MAAFAITQVVLDEATLFNIAVDP FQRRGLGR LLEHLI+ LE RGV+TLWLEVRASN AA ALYESLGFNEATIRRNYYPT+ G EDAIIMALP+</pattern>
+      <matchSeq start="2" end="144">ISLLQSADLTAAFAIEQRAHAFPWSEKTFASNQGERYLNLRLDVDGKMAAFAITQVVLDEATLFNIAVDPAFQRRGLGRALLEHLIEALEARGVLTLWLEVRASNHAARALYESLGFNEATIRRNYYPTSDGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_A0A4P8YGH6" ac="UniRef90_A0A4P8YGH6" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=2 Tax=Jejuibacter TaxID=2815296 RepID=A0A4P8YGH6_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>587</score>
+      <bits>230.7</bits>
+      <expectation>1.2e-75</expectation>
+      <identity>78.8</identity>
+      <positives>84.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L+  DL  AW IEQR+HAFPWSEKTF  NQGERYLN++L  DD MAAFAITQVVLDEATLFNIAVDP +QRRGLGR LL HLI ELE R V+TLWLEVRASN AAIALYESLGFNE T+RRNYYPT  G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNRISSLNPEDLAQAWAIEQRSHAFPWSEKTFASNQGERYLNVRLDVDDEMAAFAITQVVLDEATLFNIAVDPAWQRRGLGRQLLTHLIGELEQRDVLTLWLEVRASNVAAIALYESLGFNEVTVRRNYYPTTDGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_UPI00073D55D9" ac="UniRef90_UPI00073D55D9" length="147" description="ribosomal protein S18-alanine N-acetyltransferase n=1 Tax=Entomohabitans teleogrylli TaxID=1384589 RepID=UPI00073D55D9">
+    <alignments total="1">
+     <alignment number="1">
+      <score>584</score>
+      <bits>229.6</bits>
+      <expectation>3.6e-75</expectation>
+      <identity>78.1</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS+L   DL AA+ IEQR+HAFPW+EKTF GNQGERYLN KL  D  +AAFAITQVVLDEATLFNIAVDP +QRRGLGR LL H+I ELE R V+TLWLEVRASNAAAIALYE LGFNEAT+RRNYYPTA G EDAI+MALP+</pattern>
+      <matchSeq start="1" end="146">MNKISLLLPADLAAAYAIEQRSHAFPWTEKTFSGNQGERYLNFKLETDGVIAAFAITQVVLDEATLFNIAVDPRYQRRGLGRALLSHIISELEARNVLTLWLEVRASNAAAIALYEDLGFNEATVRRNYYPTAGGREDAIVMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_A0ABY6JCR6" ac="UniRef90_A0ABY6JCR6" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=4 Tax=Siccibacter TaxID=1649298 RepID=A0ABY6JCR6_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>582</score>
+      <bits>228.8</bits>
+      <expectation>7.2e-75</expectation>
+      <identity>78.8</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS+L+ +DL AA+ IEQR+HAFPWSEKTF  NQG+RYLNL L  D  +AAFAITQVVLDEATLFNIAVDP +QRRG GR LLEHLI  LE R V TLWLEVRASNA AIALYESLGFNEATIRRNYYPTA G EDAI+MALP+</pattern>
+      <matchSeq start="1" end="146">MNTISLLTPSDLAAAFAIEQRSHAFPWSEKTFASNQGDRYLNLGLNVDGTLAAFAITQVVLDEATLFNIAVDPAYQRRGFGRELLEHLIQTLEQRDVFTLWLEVRASNAPAIALYESLGFNEATIRRNYYPTASGREDAIVMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0ABX0VM71" ac="UniRef90_A0ABX0VM71" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=3 Tax=Enterobacteriaceae TaxID=543 RepID=A0ABX0VM71_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>579</score>
+      <bits>227.6</bits>
+      <expectation>2.1e-74</expectation>
+      <identity>78.1</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTI  L  +DL AA+ IEQR+HAFPWSEKTF  NQGERY NL+L  D  MAAFA+TQVVLDEATLFNIAVDP +QR+GLGR LLE+LI ELE R V TLWLEVRASN+AAIALYESLGFNEATIRRNYYPT +G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTIYSLKPSDLAAAYAIEQRSHAFPWSEKTFASNQGERYFNLRLDVDGEMAAFAVTQVVLDEATLFNIAVDPAYQRKGLGRQLLEYLISELEKREVFTLWLEVRASNSAAIALYESLGFNEATIRRNYYPTKEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_A0A9Q2ERU9" ac="UniRef90_A0A9Q2ERU9" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=107 Tax=Pectobacterium TaxID=122277 RepID=A0A9Q2ERU9_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>572</score>
+      <bits>224.9</bits>
+      <expectation>2.4e-73</expectation>
+      <identity>75.3</identity>
+      <positives>86.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L+  DL  A++IEQ +HAFPWSEKTF  NQGERY NLKL  D ++AA+AITQVVLDEATLFNIAV PD QR+GLGR LLEHLIDE+E RG++TLWLEVR SNA AIALYESLGFNE ++RR+YYPTAQG EDAI+MALP+</pattern>
+      <matchSeq start="1" end="146">MNTISSLTPVDLAQAFKIEQVSHAFPWSEKTFISNQGERYFNLKLEHDGQLAAYAITQVVLDEATLFNIAVHPDHQRQGLGRQLLEHLIDEMERRGILTLWLEVRESNARAIALYESLGFNEVSVRRDYYPTAQGREDAILMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0A366I5L0" ac="UniRef90_A0A366I5L0" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=2 Tax=Brenneria TaxID=71655 RepID=A0A366I5L0_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>570</score>
+      <bits>224.2</bits>
+      <expectation>4.8e-73</expectation>
+      <identity>74.7</identity>
+      <positives>87.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L+ TDL  A+QIEQ +HAFPW+EKTF  NQGERY+NLKLT + R+AA+AITQVVLDEATLFNIAV PDFQR+G GR LL+HLI E+E RG++TLWLEVRASN  AIALYESLGFNE ++RR+YYP A+G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISSLTPTDLAQAFQIEQASHAFPWTEKTFVSNQGERYVNLKLTHNGRIAAYAITQVVLDEATLFNIAVHPDFQRQGFGRTLLDHLIQEMEKRGILTLWLEVRASNQRAIALYESLGFNEVSLRRDYYPAAEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0A1I7CDT3" ac="UniRef90_A0A1I7CDT3" length="146" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=1 Tax=Kosakonia arachidis TaxID=551989 RepID=A0A1I7CDT3_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>567</score>
+      <bits>223.0</bits>
+      <expectation>1.3e-72</expectation>
+      <identity>78.1</identity>
+      <positives>83.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS LST DL  A+QIE RAHAFPWSEKTF  NQG+RYLN +L   D MAAFAITQVVLDEATLFNIAVDP +QR+G GR LLEHLI ELE   V+TLWLEVRASN  AIALYES+GFNEATIRRNYYPTA G EDAI+MAL I</pattern>
+      <matchSeq start="1" end="146">MNTISSLSTADLARAYQIETRAHAFPWSEKTFASNQGDRYLNYRLMVGDEMAAFAITQVVLDEATLFNIAVDPAWQRKGFGRKLLEHLIRELEGCEVLTLWLEVRASNVGAIALYESVGFNEATIRRNYYPTANGREDAIVMALSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_UPI002B22BDDB" ac="UniRef90_UPI002B22BDDB" length="147" description="ribosomal protein S18-alanine N-acetyltransferase n=2 Tax=Enterobacterales TaxID=91347 RepID=UPI002B22BDDB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>567</score>
+      <bits>223.0</bits>
+      <expectation>1.4e-72</expectation>
+      <identity>75.3</identity>
+      <positives>84.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L+ +DL AAW IEQ +HAFPW+ KTF  NQGERYLNLKLT DD MAAFAITQ VLDEATLF+IAV PDFQRRGLGRMLLEH+I ELE RG++TLWLEVR SN  AI+LY SLGFN+ +IRR+YYP A G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNMISSLTVSDLTAAWHIEQASHAFPWTAKTFASNQGERYLNLKLTVDDTMAAFAITQTVLDEATLFDIAVHPDFQRRGLGRMLLEHVIAELEQRGMLTLWLEVRQSNQPAISLYRSLGFNDVSIRRDYYPAAVGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_UPI002169824A" ac="UniRef90_UPI002169824A" length="147" description="ribosomal protein S18-alanine N-acetyltransferase n=1 Tax=Klebsiella sp. BIGb0407 TaxID=2940603 RepID=UPI002169824A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>566</score>
+      <bits>222.6</bits>
+      <expectation>2e-72</expectation>
+      <identity>75.3</identity>
+      <positives>83.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L   DL AA+ IEQR+HAFPWSEKTF  NQG+RY NL+L  +  MAAFAITQVVLDEATLFNIAV PD+QR+GLGR LLE++I ELE RG+ TLWLEVRASN AAIALYESLGFNEATIRRNYYP   G EDAI+MALP+</pattern>
+      <matchSeq start="1" end="146">MNQISSLQPGDLAAAYAIEQRSHAFPWSEKTFASNQGDRYFNLRLDVEGSMAAFAITQVVLDEATLFNIAVSPDYQRQGLGRALLEYIISELENRGIATLWLEVRASNQAAIALYESLGFNEATIRRNYYPAKDGREDAIVMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_UPI0018EC9EA6" ac="UniRef90_UPI0018EC9EA6" length="147" description="ribosomal protein S18-alanine N-acetyltransferase n=1 Tax=Shimwellia pseudoproteus TaxID=570012 RepID=UPI0018EC9EA6">
+    <alignments total="1">
+     <alignment number="1">
+      <score>566</score>
+      <bits>222.6</bits>
+      <expectation>2e-72</expectation>
+      <identity>76.7</identity>
+      <positives>84.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN+IS LS  DL  A  IE+R+HAFPWSEKT   NQGERYLNL++ AD  MA FAITQ+VLDEATLFNIAVDP +QRRGLGR LL  LI +LE R V+TLWLEVRASNA AIALYESLGFNEATIRRNYYPTA+G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNSISTLSADDLATALAIERRSHAFPWSEKTLLSNQGERYLNLRIDADGVMAGFAITQIVLDEATLFNIAVDPAYQRRGLGRALLTELISQLEQRDVLTLWLEVRASNAGAIALYESLGFNEATIRRNYYPTAEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_A0ABS6DGM6" ac="UniRef90_A0ABS6DGM6" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=11 Tax=Enterobacteriaceae TaxID=543 RepID=A0ABS6DGM6_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>566</score>
+      <bits>222.6</bits>
+      <expectation>2e-72</expectation>
+      <identity>76.0</identity>
+      <positives>83.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L+  DL AA+ IEQR+HAFPWSEKTF  NQGERY NL+L  D +MAAFA+TQVVLDEATLFNIAVDP +QR+GLGR LLEHLI ELE R V TLWLEVRASN AA  LYESLGFNEAT+RRNYYP  +G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNKISSLTPNDLAAAYAIEQRSHAFPWSEKTFASNQGERYFNLRLDVDGKMAAFAVTQVVLDEATLFNIAVDPAYQRQGLGRALLEHLIQELEKRDVFTLWLEVRASNLAARELYESLGFNEATVRRNYYPAKEGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_A0ABY2SR15" ac="UniRef90_A0ABY2SR15" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=1 Tax=Martelella alba TaxID=2590451 RepID=A0ABY2SR15_9HYPH">
+    <alignments total="1">
+     <alignment number="1">
+      <score>564</score>
+      <bits>221.9</bits>
+      <expectation>4e-72</expectation>
+      <identity>74.7</identity>
+      <positives>82.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L+T D+ AAW IEQ +HAFPWS KTF  NQGERYLNLKL  D  +AAFAITQ VLDEATLFNIAV PDFQRRGLGR LLEHLI ELE R ++TLWLEVR SN AAIALY SLGFN+ T+RR+YYP A G EDAI+MALP+</pattern>
+      <matchSeq start="1" end="146">MNKISYLNTADMRAAWHIEQASHAFPWSAKTFADNQGERYLNLKLAVDGTLAAFAITQTVLDEATLFNIAVHPDFQRRGLGRALLEHLIGELEQRDILTLWLEVRQSNIAAIALYRSLGFNDVTVRRDYYPAAVGREDAIVMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0AAW7K113" ac="UniRef90_A0AAW7K113" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=4 Tax=Yersinia TaxID=629 RepID=A0AAW7K113_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>563</score>
+      <bits>221.5</bits>
+      <expectation>5.6e-72</expectation>
+      <identity>72.1</identity>
+      <positives>85.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="147">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPIS</querySeq>
+      <pattern>M  ISIL+  DL  A+QIEQ +H FPW+EKT   NQGERYLN KLT D +MA FAITQ+VLDEATLFNIA+DP +QR+G GR+LLEHLI++LETR VVTLWLEVRASNA AIALY+SLGFNE ++RRNYYP+A G EDAI+MALP++</pattern>
+      <matchSeq start="1" end="147">MKQISILTPADLVTAYQIEQASHEFPWTEKTLASNQGERYLNYKLTVDQQMAGFAITQIVLDEATLFNIAIDPQYQRQGCGRLLLEHLIEQLETRDVVTLWLEVRASNARAIALYDSLGFNEVSVRRNYYPSANGREDAIMMALPLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_A0ABT0MRC0" ac="UniRef90_A0ABT0MRC0" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=4 Tax=Brenneria TaxID=71655 RepID=A0ABT0MRC0_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>563</score>
+      <bits>221.5</bits>
+      <expectation>5.6e-72</expectation>
+      <identity>74.7</identity>
+      <positives>84.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L+  DL  A+QIEQ +HAFPW+ KTF GNQGERY NLKL+ + RMAA+AITQVVLDEATLFN+AV PD QRRG GR LLEH+I++LE RGVVTLWLEVRASN  AIALYESLGFNE T+RR+YYPTA G EDA+IMALP+</pattern>
+      <matchSeq start="1" end="146">MNVISPLTPADLAQAFQIEQASHAFPWTAKTFAGNQGERYFNLKLSHNGRMAAYAITQVVLDEATLFNLAVHPDHQRRGFGRQLLEHMINQLEQRGVVTLWLEVRASNQPAIALYESLGFNEVTLRRDYYPTAAGREDAVIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_UPI000DEF5B67" ac="UniRef90_UPI000DEF5B67" length="147" description="ribosomal protein S18-alanine N-acetyltransferase n=1 Tax=Edaphovirga cremea TaxID=2267246 RepID=UPI000DEF5B67">
+    <alignments total="1">
+     <alignment number="1">
+      <score>561</score>
+      <bits>220.7</bits>
+      <expectation>1.1e-71</expectation>
+      <identity>76.0</identity>
+      <positives>84.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L+  DL  A+QIE+ +HAFPW+EKTF  NQGERYLNLKLT D  +A FAITQVVLDEATLFNIA+DP FQR+GLGRMLLE LI++LE + VVTLWLEVRASN  AIALYESLGFNE +IRRNYYP AQG EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNNISSLTPADLARAFQIEKASHAFPWTEKTFDSNQGERYLNLKLTVDGVVAGFAITQVVLDEATLFNIAIDPQFQRQGLGRMLLEALIEQLEEKEVVTLWLEVRASNHRAIALYESLGFNEVSIRRNYYPAAQGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_UPI003965D248" ac="UniRef90_UPI003965D248" length="147" description="ribosomal protein S18-alanine N-acetyltransferase n=1 Tax=unclassified Sodalis (in: enterobacteria) TaxID=2636512 RepID=UPI003965D248">
+    <alignments total="1">
+     <alignment number="1">
+      <score>558</score>
+      <bits>219.6</bits>
+      <expectation>3.3e-71</expectation>
+      <identity>74.0</identity>
+      <positives>82.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MN IS L+ +DL AAW IEQ +HAFPW+ KTF  NQGERYLNLKLT  D +AAFAITQ VLDEATLFNIAV PDFQRRGLGR LLEHLI +LE R ++TLWLEVR SN  AIALY SLGFN+ T+RR+YYP+A G EDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNQISALTVSDLAAAWHIEQASHAFPWTAKTFASNQGERYLNLKLTVADTLAAFAITQTVLDEATLFNIAVHPDFQRRGLGRSLLEHLIAQLEQRDILTLWLEVRQSNRPAIALYRSLGFNDVTVRRDYYPSAVGREDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_UPI0018F098B2" ac="UniRef90_UPI0018F098B2" length="147" description="ribosomal protein S18-alanine N-acetyltransferase n=2 Tax=unclassified Brenneria TaxID=2634434 RepID=UPI0018F098B2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>557</score>
+      <bits>219.2</bits>
+      <expectation>4.6e-71</expectation>
+      <identity>72.6</identity>
+      <positives>84.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L   DL  A++IEQ +H FPW+++TF  NQGERY NLKLT   ++AA+AITQVVLDEATLFNIAV PD QR+GLGR LLEHLI E+ETRG+VTLWLEVRASN  A+ALY SLGFNE ++RR+YYPTA+GHEDAIIMALP+</pattern>
+      <matchSeq start="1" end="146">MNTISTLMPADLAQAFEIEQASHPFPWTKQTFASNQGERYFNLKLTRHGQLAAYAITQVVLDEATLFNIAVHPDHQRQGLGRRLLEHLIQEMETRGIVTLWLEVRASNQRALALYNSLGFNEVSLRRDYYPTAEGHEDAIIMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0A9X9C393" ac="UniRef90_A0A9X9C393" length="147" description="[Ribosomal protein bS18]-alanine N-acetyltransferase n=73 Tax=Enterobacterales TaxID=91347 RepID=A0A9X9C393_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>557</score>
+      <bits>219.2</bits>
+      <expectation>4.6e-71</expectation>
+      <identity>72.6</identity>
+      <positives>83.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="146">MNTISILSTTDLPAAWQIEQRAHAFPWSEKTFFGNQGERYLNLKLTADDRMAAFAITQVVLDEATLFNIAVDPDFQRRGLGRMLLEHLIDELETRGVVTLWLEVRASNAAAIALYESLGFNEATIRRNYYPTAQGHEDAIIMALPI</querySeq>
+      <pattern>MNTIS L+  DL  A+ IEQ +HAFPW+E TF  NQG+RYLNLKL+AD  MA FAITQ+VLDEATLFNIA+ P  QRRG GR+LL  LI++LE+RGVVTLWLEVRASN AAIALYE LGFNE T+RRNYYP+A G EDAI+MALP+</pattern>
+      <matchSeq start="1" end="146">MNTISTLTAADLATAFNIEQASHAFPWTETTFASNQGDRYLNLKLSADGEMAGFAITQIVLDEATLFNIAIHPQHQRRGFGRLLLNALIEQLESRGVVTLWLEVRASNQAAIALYEDLGFNEVTVRRNYYPSAHGREDAIVMALPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,639 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q04474",
+  "uniProtkbId": "RTX3C_ACTPL",
+  "entryAudit": {
+    "firstPublicDate": "1995-11-01",
+    "lastAnnotationUpdateDate": "2026-01-28",
+    "lastSequenceUpdateDate": "1995-11-01",
+    "entryVersion": 64,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Actinobacillus pleuropneumoniae",
+    "commonName": "Haemophilus pleuropneumoniae",
+    "taxonId": 715,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Pseudomonadota",
+      "Gammaproteobacteria",
+      "Pasteurellales",
+      "Pasteurellaceae",
+      "Actinobacillus"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "RTX-III toxin-activating lysine-acyltransferase ApxIIC"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P55132"
+            }
+          ],
+          "value": "2.3.1.-"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "value": "APX-IIIC"
+        }
+      },
+      {
+        "fullName": {
+          "value": "Cytolysin IIIC"
+        },
+        "shortNames": [
+          {
+            "value": "CLY-IIIC"
+          }
+        ]
+      },
+      {
+        "fullName": {
+          "value": "RTX-III toxin determinant C"
+        }
+      },
+      {
+        "fullName": {
+          "value": "Toxin RTX-III-activating protein C"
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "apxIIIC"
+      },
+      "synonyms": [
+        {
+          "value": "clyIIIC"
+        },
+        {
+          "value": "rtxC"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P55132"
+            }
+          ],
+          "value": "Protein-lysine acyltransferase that catalyzes fatty acylation of the protoxin, thereby converting it to the active toxin"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "a fatty acyl-[ACP] + L-lysyl-[protein] = N(6)-(fatty acyl)-L-lysyl-[protein] + holo-[ACP] + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:70667"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9685"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9752"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:14125"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:17946"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:29969"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:64479"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:138651"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:189854"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "P55132"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:70668"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P55132"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P55132"
+            }
+          ],
+          "value": "Homodimer"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000305"
+              }
+            ],
+            "value": "Cytoplasm",
+            "id": "SL-0086"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the RTX toxin acyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 173,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "RTX-III toxin-activating lysine-acyltransferase ApxIIC",
+      "featureId": "PRO_0000217886"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 29,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 29,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P55132"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 98,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 98,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P55132"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0204",
+      "category": "Biological process",
+      "name": "Cytolysis"
+    },
+    {
+      "id": "KW-0963",
+      "category": "Cellular component",
+      "name": "Cytoplasm"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "8432615",
+        "citationType": "journal article",
+        "authors": [
+          "Jansen R.",
+          "Briaire J.",
+          "Kamp E.M.",
+          "Gielkens A.L.J.",
+          "Smits M.A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "8432615"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/iai.61.3.947-954.1993"
+          }
+        ],
+        "title": "Cloning and characterization of the Actinobacillus pleuropneumoniae-RTX-toxin III (ApxIII) gene.",
+        "publicationDate": "1993",
+        "journal": "Infect. Immun.",
+        "firstPage": "947",
+        "lastPage": "954",
+        "volume": "61"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "405 / Serotype 8",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "8494611",
+        "citationType": "journal article",
+        "authors": [
+          "Chang Y.-F.",
+          "Shi J.",
+          "Ma D.-P.",
+          "Shin S.J.",
+          "Lein D.H."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "8494611"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1089/dna.1993.12.351"
+          }
+        ],
+        "title": "Molecular analysis of the Actinobacillus pleuropneumoniae RTX toxin-III gene cluster.",
+        "publicationDate": "1993",
+        "journal": "DNA Cell Biol.",
+        "firstPage": "351",
+        "lastPage": "362",
+        "volume": "12"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "Serotype 2",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 3,
+      "citation": {
+        "id": "7927703",
+        "citationType": "journal article",
+        "authors": [
+          "Jansen R.",
+          "Briaire J.",
+          "van Geel A.B.M.",
+          "Kamp E.M.",
+          "Gielkens A.L.J.",
+          "Smits M.A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "7927703"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/iai.62.10.4411-4418.1994"
+          }
+        ],
+        "title": "Genetic map of the Actinobacillus pleuropneumoniae RTX-toxin (Apx) operons: characterization of the ApxIII operons.",
+        "publicationDate": "1994",
+        "journal": "Infect. Immun.",
+        "firstPage": "4411",
+        "lastPage": "4418",
+        "volume": "62"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "405 / Serotype 8",
+          "type": "STRAIN"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "X68815",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAA48710.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "L12145",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAA21923.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "X80055",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAA56357.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "A49219",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "A49219"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_005605169.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NZ_CBDBSX010000027.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q04474",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q04474",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "8596436at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005737",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:cytoplasm"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0016746",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:acyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-KW"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0031640",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:killing of cells of another organism"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-KW"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0009404",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:toxin metabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:InterPro"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR003996",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "RTX_toxin-activating_protC_bac"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF02794",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "HlyC"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PRINTS",
+      "id": "PR01489",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "RTXTOXINC"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MSYKNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIVRG",
+    "length": 173,
+    "molWeight": 20422,
+    "crc64": "3E9AFDDB031E2192",
+    "md5": "3A0D3B2AC6C876524BECC81F9902AFC7"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "SUBUNIT": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Active site": 2
+    },
+    "uniParcId": "UPI00001352B5"
+  }
+}

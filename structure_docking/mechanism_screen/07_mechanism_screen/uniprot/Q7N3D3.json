@@ -1,0 +1,841 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q7N3D3",
+  "uniProtkbId": "PAGP_PHOLL",
+  "entryAudit": {
+    "firstPublicDate": "2011-12-14",
+    "lastAnnotationUpdateDate": "2026-01-28",
+    "lastSequenceUpdateDate": "2003-12-15",
+    "entryVersion": 91,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Photorhabdus laumondii subsp. laumondii (strain DSM 15139 / CIP 105565 / TT01)",
+    "commonName": "Photorhabdus luminescens subsp. laumondii",
+    "taxonId": 243265,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Pseudomonadota",
+      "Gammaproteobacteria",
+      "Enterobacterales",
+      "Morganellaceae",
+      "Photorhabdus"
+    ]
+  },
+  "proteinExistence": "2: Evidence at transcript level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00837"
+          }
+        ],
+        "value": "Lipid A acyltransferase PagP"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00837"
+            }
+          ],
+          "value": "2.3.1.251"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00837"
+            }
+          ],
+          "value": "Lipid A acylation protein"
+        }
+      }
+    ],
+    "flag": "Precursor"
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00837"
+          }
+        ],
+        "value": "pagP"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "plu2784"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00837"
+            }
+          ],
+          "value": "Transfers a fatty acid residue from the sn-1 position of a phospholipid to the N-linked hydroxyfatty acid chain on the proximal unit of lipid A or its precursors"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "a lipid A + a 1,2-diacyl-sn-glycero-3-phosphocholine = a hepta-acyl lipid A + a 2-acyl-sn-glycero-3-phosphocholine",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:74275"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57643"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57875"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:193141"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:193142"
+          }
+        ],
+        "ecNumber": "2.3.1.251",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00837"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "a lipid IVA + a 1,2-diacyl-sn-glycero-3-phosphocholine = a lipid IVB + a 2-acyl-sn-glycero-3-phosphocholine",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:74279"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57643"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57875"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:176425"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:193143"
+          }
+        ],
+        "ecNumber": "2.3.1.251",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00837"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "a lipid IIA + a 1,2-diacyl-sn-glycero-3-phosphocholine = a lipid IIB + a 2-acyl-sn-glycero-3-phosphocholine",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:74283"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57643"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57875"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:193144"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:193145"
+          }
+        ],
+        "ecNumber": "2.3.1.251",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00837"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00837"
+            }
+          ],
+          "value": "Homodimer"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_00837"
+              }
+            ],
+            "value": "Cell outer membrane",
+            "id": "SL-0040"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "14973084"
+            }
+          ],
+          "value": "Induced during magnesium-deficient conditions"
+        }
+      ],
+      "commentType": "INDUCTION"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00837"
+            },
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the lipid A palmitoyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Signal",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 24,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00837"
+        }
+      ]
+    },
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 25,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 207,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Lipid A acyltransferase PagP",
+      "featureId": "PRO_0000414468"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 79,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 79,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00837"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 122,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 122,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00837"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 123,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 123,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00837"
+        }
+      ]
+    },
+    {
+      "type": "Site",
+      "location": {
+        "start": {
+          "value": 88,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 88,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Role in lipopolysaccharide recognition",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00837"
+        }
+      ]
+    },
+    {
+      "type": "Site",
+      "location": {
+        "start": {
+          "value": 193,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 193,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Role in the phospholipid gating",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00837"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0998",
+      "category": "Cellular component",
+      "name": "Cell outer membrane"
+    },
+    {
+      "id": "KW-0472",
+      "category": "Cellular component",
+      "name": "Membrane"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0732",
+      "category": "Domain",
+      "name": "Signal"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "14528314",
+        "citationType": "journal article",
+        "authors": [
+          "Duchaud E.",
+          "Rusniok C.",
+          "Frangeul L.",
+          "Buchrieser C.",
+          "Givaudan A.",
+          "Taourit S.",
+          "Bocs S.",
+          "Boursaux-Eude C.",
+          "Chandler M.",
+          "Charles J.-F.",
+          "Dassa E.",
+          "Derose R.",
+          "Derzelle S.",
+          "Freyssinet G.",
+          "Gaudriault S.",
+          "Medigue C.",
+          "Lanois A.",
+          "Powell K.",
+          "Siguier P.",
+          "Vincent R.",
+          "Wingate V.",
+          "Zouine M.",
+          "Glaser P.",
+          "Boemare N.",
+          "Danchin A.",
+          "Kunst F."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "14528314"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1038/nbt886"
+          }
+        ],
+        "title": "The genome sequence of the entomopathogenic bacterium Photorhabdus luminescens.",
+        "publicationDate": "2003",
+        "journal": "Nat. Biotechnol.",
+        "firstPage": "1307",
+        "lastPage": "1313",
+        "volume": "21"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "DSM 15139 / CIP 105565 / TT01",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "14973084",
+        "citationType": "journal article",
+        "authors": [
+          "Derzelle S.",
+          "Turlin E.",
+          "Duchaud E.",
+          "Pages S.",
+          "Kunst F.",
+          "Givaudan A.",
+          "Danchin A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "14973084"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/jb.186.5.1270-1279.2004"
+          }
+        ],
+        "title": "The PhoP-PhoQ two-component regulatory system of Photorhabdus luminescens is essential for virulence in insects.",
+        "publicationDate": "2004",
+        "journal": "J. Bacteriol.",
+        "firstPage": "1270",
+        "lastPage": "1279",
+        "volume": "186"
+      },
+      "referencePositions": [
+        "INDUCTION"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "BX571868",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAE15158.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_011147004.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_005126.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q7N3D3",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q7N3D3",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "243265.plu2784",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "48849047",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "plu:plu2784",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "ENOG502Z7SY",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_104099_0_0_6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "9156803at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000002514",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0009279",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:cell outer membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0016416",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:O-palmitoyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0009245",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:lipid A biosynthetic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "2.40.160.20:FF:000002",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Lipid A palmitoyltransferase PagP"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "2.40.160.20",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "HAMAP",
+      "id": "MF_00837",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PagP_transferase"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR009746",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LipidA_acyl_PagP"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR011250",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "OMP/PagP_B-barrel"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF008271",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PRK11045.1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF07017",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PagP"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF56925",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "OMPA-like"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MKFDLTAACTLSATLLVSSGTVFATTANTANKSLTTIESHTPISYGNNSSSLWEKFNNNVALTWDAPNNELYLPVITWHNRHTYDKEKTDRYNERPWGFGYGKYRYDEDNDWHSLYAMAFMDSHNRLEPIVGYGFQKMWIPGDLEGFRMGIGFTLSVTARHDYYYVPIPLPLPLFSIEYDRLSFQGTYIPGTYNNGNVLFAWLRWQW",
+    "length": 207,
+    "molWeight": 24004,
+    "crc64": "297359D62912BAFA",
+    "md5": "5FCA6580A22AE71AABB498C220C7F557"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 3,
+      "SUBUNIT": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "INDUCTION": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Signal": 1,
+      "Chain": 1,
+      "Active site": 3,
+      "Site": 2
+    },
+    "uniParcId": "UPI00001D3741"
+  }
+}

@@ -1,0 +1,466 @@
+{
+  "entryType": "UniProtKB unreviewed (TrEMBL)",
+  "primaryAccession": "A0A6I9LSL2",
+  "uniProtkbId": "A0A6I9LSL2_PERMB",
+  "entryAudit": {
+    "firstPublicDate": "2020-10-07",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "2020-10-07",
+    "entryVersion": 24,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 1.0,
+  "organism": {
+    "scientificName": "Peromyscus maniculatus bairdii",
+    "commonName": "Prairie deer mouse",
+    "taxonId": 230844,
+    "evidences": [
+      {
+        "evidenceCode": "ECO:0000313",
+        "source": "Ensembl",
+        "id": "ENSPEMP00000029960.1"
+      },
+      {
+        "evidenceCode": "ECO:0000313",
+        "source": "Proteomes",
+        "id": "UP000694547"
+      }
+    ],
+    "lineage": [
+      "Eukaryota",
+      "Metazoa",
+      "Chordata",
+      "Craniata",
+      "Vertebrata",
+      "Euteleostomi",
+      "Mammalia",
+      "Eutheria",
+      "Euarchontoglires",
+      "Glires",
+      "Rodentia",
+      "Myomorpha",
+      "Muroidea",
+      "Cricetidae",
+      "Neotominae",
+      "Peromyscus"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000256",
+            "source": "ARBA",
+            "id": "ARBA00012701"
+          }
+        ],
+        "value": "arylamine N-acetyltransferase"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000256",
+              "source": "ARBA",
+              "id": "ARBA00012701"
+            }
+          ],
+          "value": "2.3.1.5"
+        }
+      ]
+    }
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "Ensembl",
+            "id": "ENSPEMP00000029960.1"
+          }
+        ],
+        "value": "LOC102906955"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000256",
+              "source": "ARBA",
+              "id": "ARBA00006547"
+            },
+            {
+              "evidenceCode": "ECO:0000256",
+              "source": "RuleBase",
+              "id": "RU003452"
+            }
+          ],
+          "value": "Belongs to the arylamine N-acetyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "keywords": [
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00023315"
+        },
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "RuleBase",
+          "id": "RU003452"
+        }
+      ],
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000313",
+          "source": "Proteomes",
+          "id": "UP000694547"
+        }
+      ],
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00022679"
+        },
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "RuleBase",
+          "id": "RU003452"
+        }
+      ],
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "CI-3DLED6OJBHPOJ",
+        "citationType": "submission",
+        "authors": [
+          "Lassance J.-M.",
+          "Hoekstra H.E."
+        ],
+        "title": "Improved assembly of the deer mouse Peromyscus maniculatus genome.",
+        "publicationDate": "OCT-2018",
+        "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000313",
+          "source": "Ensembl",
+          "id": "ENSPEMP00000029960.1"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "CI-20IMDPQG5KTS4",
+        "citationType": "submission",
+        "authoringGroup": [
+          "Ensembl"
+        ],
+        "publicationDate": "AUG-2025",
+        "submissionDatabase": "UniProtKB"
+      },
+      "referencePositions": [
+        "IDENTIFICATION"
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000313",
+          "source": "Ensembl",
+          "id": "ENSPEMP00000029960.1"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 3,
+      "citation": {
+        "id": "CI-20IMJ6JJ0DQF4",
+        "citationType": "submission",
+        "authoringGroup": [
+          "Ensembl"
+        ],
+        "publicationDate": "SEP-2025",
+        "submissionDatabase": "UniProtKB"
+      },
+      "referencePositions": [
+        "IDENTIFICATION"
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000313",
+          "source": "Ensembl",
+          "id": "ENSPEMP00000029960.1"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "RefSeq",
+      "id": "XP_042118661.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_042262727.2"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "A0A6I9LSL2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSPEMT00000039732.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSPEMP00000029960.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSPEMG00000029233.1"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "102906955",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "pmav:102906955",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneTree",
+      "id": "ENSGT00390000012054",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "10260017at2759",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000694547",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome 17"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0004060",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:arylamine N-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-EC"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.30.2140.20:FF:000001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine N-acetyltransferase 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.30.2140.20",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001447",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine_N-AcTrfase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR053710",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine_NAT_domain_sf"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR038765",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Papain-like_cys_pep_sf"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11786:SF8",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ARYLAMINE N-ACETYLTRANSFERASE 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11786",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "N-HYDROXYARYLAMINE O-ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00797",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PRINTS",
+      "id": "PR01543",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ANATRNSFRASE"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF54001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Cysteine proteinases"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MDIKAYFERIGYQNSRNKLDLQTLTEILQHQIQAIPFENLNIHCGESMELNLETIFDQIVRKKRGGWCLQVNHLLYWALTKMGFETTMLGGYVFNTPANKYSSGMIHLLVQVTIGDKDYIVDAGFGRSYQMWEPLELASGKDQPQVPAIFRLTEENGTWYLDQIRREQYVPNQEFVNSDLLEKNKYRKIYSFTLEPRTIEDFESMNTYLQTSPASVFTSKSFCSLQTPEGVHCLVGSTLTYRRFSYKDNVDLVEFKSLEEEEIEDILKTIFGVSLERKLVPRHGDKFFTI",
+    "length": 290,
+    "molWeight": 33785,
+    "crc64": "6E478C3A05DC0AF4",
+    "md5": "05430AA1CB39810216B1F15159C1A499"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "SIMILARITY": 1
+    },
+    "uniParcId": "UPI00042AF5C3"
+  }
+}

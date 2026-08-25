@@ -1,0 +1,479 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "P06135",
+  "uniProtkbId": "CAT3_STAAU",
+  "entryAudit": {
+    "firstPublicDate": "1988-01-01",
+    "lastAnnotationUpdateDate": "2026-01-28",
+    "lastSequenceUpdateDate": "1988-01-01",
+    "entryVersion": 95,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Staphylococcus aureus",
+    "taxonId": 1280,
+    "lineage": [
+      "Bacteria",
+      "Bacillati",
+      "Bacillota",
+      "Bacilli",
+      "Bacillales",
+      "Staphylococcaceae",
+      "Staphylococcus"
+    ]
+  },
+  "proteinExistence": "2: Evidence at transcript level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Chloramphenicol acetyltransferase"
+      },
+      "shortNames": [
+        {
+          "value": "CAT"
+        }
+      ],
+      "ecNumbers": [
+        {
+          "value": "2.3.1.28"
+        }
+      ]
+    }
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "cat"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "value": "This enzyme is an effector of chloramphenicol resistance in bacteria"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "chloramphenicol + acetyl-CoA = chloramphenicol 3-acetate + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:18421"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16730"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:17698"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          }
+        ],
+        "ecNumber": "2.3.1.28",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "PROSITE-ProRule",
+            "id": "PRU10021"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "value": "Homotrimer"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    },
+    {
+      "texts": [
+        {
+          "value": "By subinhibitory concentrations of chloramphenicol"
+        }
+      ],
+      "commentType": "INDUCTION"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the chloramphenicol acetyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 215,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Chloramphenicol acetyltransferase",
+      "featureId": "PRO_0000165872"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 189,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 189,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Proton acceptor",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU10021"
+        }
+      ]
+    }
+  ],
+  "geneLocations": [
+    {
+      "value": "pUB112",
+      "geneEncodingType": "Plasmid"
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0046",
+      "category": "Biological process",
+      "name": "Antibiotic resistance"
+    },
+    {
+      "id": "KW-0614",
+      "category": "Technical term",
+      "name": "Plasmid"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "3865770",
+        "citationType": "journal article",
+        "authors": [
+          "Brueckner R.",
+          "Matzura H."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "3865770"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1002/j.1460-2075.1985.tb03929.x"
+          }
+        ],
+        "title": "Regulation of the inducible chloramphenicol acetyltransferase gene of the Staphylococcus aureus plasmid pUB112.",
+        "publicationDate": "1985",
+        "journal": "EMBO J.",
+        "firstPage": "2295",
+        "lastPage": "2300",
+        "volume": "4"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "X02872",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAA26631.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_032488460.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NG_047565.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "P06135",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "P06135",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0008811",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:chloramphenicol O-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-EC"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0046677",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:response to antibiotic"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-KW"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.30.559.10",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Chloramphenicol acetyltransferase-like domain"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR023213",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT-like_dom_sf"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR018372",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Chloramphenicol_AcTrfase_AS"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001707",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Cmp_AcTrfase"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF000491",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "chloram_CatA"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR38474:SF2",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CHLORAMPHENICOL ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR38474",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "SLR0299 PROTEIN"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00302",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PIRSF",
+      "id": "PIRSF000440",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SMART",
+      "id": "SM01059",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF52777",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CoA-dependent acyltransferases"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS00100",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MTFNIIKLENWDRKEYFEHYFNQQTTYSITKEIDITLFKDMIKKKGYEIYPSLIYAIMEVVNKNKVFRTGINSENKLGYWDKLNPLYTVFNKQTEKFTNIWTESDNNFTSFYNNYKNDLFEYKDKEEMFPKKPIPENTIPISMIPWIDFSSFNLNIGNNSSFLLPIITIGKFYSENNKIYIPVALQLHHAVCDGYHASLFINEFQDIINKVDDWI",
+    "length": 215,
+    "molWeight": 25711,
+    "crc64": "44D598FDEA06114A",
+    "md5": "1EDB013CD16AD6904588BA876E59ABE6"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "SUBUNIT": 1,
+      "INDUCTION": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Active site": 1
+    },
+    "uniParcId": "UPI000012703A"
+  }
+}

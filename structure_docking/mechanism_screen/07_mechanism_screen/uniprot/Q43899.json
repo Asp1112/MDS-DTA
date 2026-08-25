@@ -1,0 +1,1108 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q43899",
+  "uniProtkbId": "AAC6_ACIBA",
+  "entryAudit": {
+    "firstPublicDate": "2012-04-18",
+    "lastAnnotationUpdateDate": "2026-01-28",
+    "lastSequenceUpdateDate": "1996-11-01",
+    "entryVersion": 80,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Acinetobacter baumannii",
+    "taxonId": 470,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Pseudomonadota",
+      "Gammaproteobacteria",
+      "Moraxellales",
+      "Moraxellaceae",
+      "Acinetobacter",
+      "Acinetobacter calcoaceticus/baumannii complex"
+    ]
+  },
+  "proteinExistence": "1: Evidence at protein level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000303",
+            "source": "PubMed",
+            "id": "7810994"
+          }
+        ],
+        "value": "Aminoglycoside N(6')-acetyltransferase type 1"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "7810994"
+            }
+          ],
+          "value": "2.3.1.82"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000312",
+              "source": "EMBL",
+              "id": "AAC41391.1"
+            }
+          ],
+          "value": "AAC(6')-Ih"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P50858"
+            }
+          ],
+          "value": "Aminoglycoside resistance protein"
+        }
+      }
+    ]
+  },
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "7810994"
+            }
+          ],
+          "value": "Catalyzes the transfer of an acetyl group from acetyl-CoA to the 6'-amino group of aminoglycoside molecules conferring resistance to antibiotics containing the purpurosamine ring including amikacin, kanamycin, tobramycin and netilmicin"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "kanamycin B + acetyl-CoA = N(6')-acetylkanamycin B + CoA + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:16449"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:58390"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:58549"
+          }
+        ],
+        "ecNumber": "2.3.1.82",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "7810994"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9R381"
+            }
+          ],
+          "value": "Homodimer"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 146,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Aminoglycoside N(6')-acetyltransferase type 1",
+      "featureId": "PRO_0000416833"
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 146,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "N-acetyltransferase",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00532"
+        }
+      ]
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 22,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 22,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9R381"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 25,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 25,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9R381"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 66,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 66,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9R381"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 79,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 79,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9R381"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 81,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 83,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57288"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9R381"
+        }
+      ],
+      "ligand": {
+        "name": "acetyl-CoA",
+        "id": "ChEBI:CHEBI:57288"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 115,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 115,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9R381"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 120,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 120,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57288"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9R381"
+        }
+      ],
+      "ligand": {
+        "name": "acetyl-CoA",
+        "id": "ChEBI:CHEBI:57288"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 136,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 136,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9R381"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 2,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 5,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 11,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 21,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 26,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 37,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 42,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 48,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 54,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 63,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 72,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 83,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 85,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 90,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 92,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 105,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Turn",
+      "location": {
+        "start": {
+          "value": 106,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 108,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 111,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 117,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 121,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 129,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 133,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 144,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "4E8O"
+        }
+      ]
+    }
+  ],
+  "geneLocations": [
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "7810994"
+        }
+      ],
+      "value": "pIP1858",
+      "geneEncodingType": "Plasmid"
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0002",
+      "category": "Technical term",
+      "name": "3D-structure"
+    },
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0046",
+      "category": "Biological process",
+      "name": "Antibiotic resistance"
+    },
+    {
+      "id": "KW-0614",
+      "category": "Technical term",
+      "name": "Plasmid"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "7810994",
+        "citationType": "journal article",
+        "authors": [
+          "Lambert T.",
+          "Gerbaud G.",
+          "Courvalin P."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "7810994"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/aac.38.9.1883"
+          }
+        ],
+        "title": "Characterization of the chromosomal aac(6')-Ij gene of Acinetobacter sp. 13 and the aac(6')-Ih plasmid gene of Acinetobacter baumannii.",
+        "publicationDate": "1994",
+        "journal": "Antimicrob. Agents Chemother.",
+        "firstPage": "1883",
+        "lastPage": "1889",
+        "volume": "38"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "FUNCTION",
+        "CATALYTIC ACTIVITY",
+        "SUBSTRATE SPECIFICITY"
+      ],
+      "referenceComments": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000312",
+              "source": "EMBL",
+              "id": "AAC41391.1"
+            }
+          ],
+          "value": "BM2686",
+          "type": "STRAIN"
+        },
+        {
+          "value": "pIP1858",
+          "type": "PLASMID"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000305"
+        },
+        {
+          "evidenceCode": "ECO:0000312",
+          "source": "EMBL",
+          "id": "AAC41391.1"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "L29044",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAC41391.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "I39503",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "I39503"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_016541245.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NG_047297.1"
+        }
+      ]
+    },
+    {
+      "database": "PDB",
+      "id": "4E8O",
+      "properties": [
+        {
+          "key": "Method",
+          "value": "X-ray"
+        },
+        {
+          "key": "Resolution",
+          "value": "2.14 A"
+        },
+        {
+          "key": "Chains",
+          "value": "A/B=1-146"
+        }
+      ]
+    },
+    {
+      "database": "PDBsum",
+      "id": "4E8O",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q43899",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q43899",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "CARD",
+      "id": "ARO:3002555",
+      "properties": [
+        {
+          "key": "CARD short name",
+          "value": "AAC(6')-Ih"
+        },
+        {
+          "key": "Resistance mechanism identifier",
+          "value": "ARO:0001004"
+        },
+        {
+          "key": "Resistance mechanism name",
+          "value": "antibiotic inactivation"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "ag:AAC41391",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BRENDA",
+      "id": "2.3.1.82",
+      "properties": [
+        {
+          "key": "OrganismId",
+          "value": "98"
+        }
+      ]
+    },
+    {
+      "database": "EvolutionaryTrace",
+      "id": "Q43899",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0047663",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:aminoglycoside 6'-N-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IDA:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "7810994"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0046677",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:response to antibiotic"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IDA:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "7810994"
+        }
+      ]
+    },
+    {
+      "database": "CDD",
+      "id": "cd04301",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "NAT_SF"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.40.630.30:FF:000071",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.40.630.30",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR016181",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl_CoA_acyltransferase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR024170",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Aminoglycoside_N6-AcTrfrase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR000182",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT_dom"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF000224",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "AAC_6p_Acine"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF043067",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "AAC_6p_group_E"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00583",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PIRSF",
+      "id": "PIRSF000452",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "6-N-acetyltransf"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF55729",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl-CoA N-acyltransferases (Nat)"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS51186",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MNIMPISESQLSDWLALRCLLWPDHEDVHLQEMRQLITQAHRLQLLAYTDTQQAIAMLEASIRYEYVNGTQTSPVAFLEGIFVLPEYRRSGIATGLVQQVEIWAKQFACTEFASDAALDNQISHAMHQALGFHETERVVYFKKNIG",
+    "length": 146,
+    "molWeight": 16709,
+    "crc64": "FAA8FBF093B7F1EA",
+    "md5": "75306436B5BFF0AB37C3E39A698EB892"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "SUBUNIT": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Domain": 1,
+      "Binding site": 8,
+      "Beta strand": 6,
+      "Helix": 5,
+      "Turn": 1
+    },
+    "uniParcId": "UPI00000B5D69"
+  }
+}

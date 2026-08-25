@@ -1,0 +1,552 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q0P8U4",
+  "uniProtkbId": "PSEH_CAMJE",
+  "entryAudit": {
+    "firstPublicDate": "2012-09-05",
+    "lastAnnotationUpdateDate": "2026-01-28",
+    "lastSequenceUpdateDate": "2006-09-19",
+    "entryVersion": 85,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 2.0,
+  "organism": {
+    "scientificName": "Campylobacter jejuni subsp. jejuni serotype O:2 (strain ATCC 700819 / NCTC 11168)",
+    "taxonId": 192222,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Campylobacterota",
+      "Epsilonproteobacteria",
+      "Campylobacterales",
+      "Campylobacteraceae",
+      "Campylobacter"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Acetyltransferase PseH"
+      },
+      "ecNumbers": [
+        {
+          "value": "2.3.1.-"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "value": "Pseudaminic acid biosynthesis protein H"
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "pseH"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "Cj1313"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250"
+            }
+          ],
+          "value": "Catalyzes the third step in the biosynthesis of pseudaminic acid, a sialic-acid-like sugar that is used to modify flagellin. Mediates N-4 acetylation of UDP-4-amino-4,6-dideoxy-beta-L-AltNAc to form UDP-2,4-diacetamido-2,4,6-trideoxy-beta-L-altropyranose (By similarity)"
+        }
+      ],
+      "commentType": "FUNCTION"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 157,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Acetyltransferase PseH",
+      "featureId": "PRO_0000418962"
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 5,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 152,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "N-acetyltransferase",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00532"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "10688204",
+        "citationType": "journal article",
+        "authors": [
+          "Parkhill J.",
+          "Wren B.W.",
+          "Mungall K.L.",
+          "Ketley J.M.",
+          "Churcher C.M.",
+          "Basham D.",
+          "Chillingworth T.",
+          "Davies R.M.",
+          "Feltwell T.",
+          "Holroyd S.",
+          "Jagels K.",
+          "Karlyshev A.V.",
+          "Moule S.",
+          "Pallen M.J.",
+          "Penn C.W.",
+          "Quail M.A.",
+          "Rajandream M.A.",
+          "Rutherford K.M.",
+          "van Vliet A.H.M.",
+          "Whitehead S.",
+          "Barrell B.G."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "10688204"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1038/35001088"
+          }
+        ],
+        "title": "The genome sequence of the food-borne pathogen Campylobacter jejuni reveals hypervariable sequences.",
+        "publicationDate": "2000",
+        "journal": "Nature",
+        "firstPage": "665",
+        "lastPage": "668",
+        "volume": "403"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "ATCC 700819 / NCTC 11168",
+          "type": "STRAIN"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "AL111168",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAL35427.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "F81274",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "F81274"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_002858467.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_002163.1"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "YP_002344703.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_002163.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q0P8U4",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q0P8U4",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "IntAct",
+      "id": "Q0P8U4",
+      "properties": [
+        {
+          "key": "Interactions",
+          "value": "17"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "192222.Cj1313",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "192222-Cj1313",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "DNASU",
+      "id": "905605",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "EnsemblBacteria",
+      "id": "CAL35427",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAL35427"
+        },
+        {
+          "key": "GeneId",
+          "value": "Cj1313"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "905605",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "cje:Cj1313",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PATRIC",
+      "id": "fig|192222.6.peg.1295",
+      "properties": [
+        {
+          "key": "GeneDesignation",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "COG1670",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_013985_20_1_7",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "5396834at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000000799",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0016747",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:acyltransferase activity, transferring groups other than amino-acyl groups"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:InterPro"
+        }
+      ]
+    },
+    {
+      "database": "CDD",
+      "id": "cd04301",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "NAT_SF"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.40.630.30",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR016181",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl_CoA_acyltransferase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR000182",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT_dom"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR020036",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PseH"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "TIGR03585",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PseH"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR43415:SF3",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT-FAMILY ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR43415",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "SPERMIDINE N(1)-ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF13302",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_3"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF55729",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl-CoA N-acyltransferases (Nat)"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS51186",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MIKLKNFAELNSQEIKLIFKWRNHPDISQFMKTKHIDFEEHLRFIRNLHQDSNKKYFLVFQDEQIIGVIDFVNITTKSCEFGLYAIPDLKGVGQVLMNEIKKYAFEILKVDTLKAYVFKDNHKALKLYQQNHFTIYDEDKDFYYVCLKQSHCKALPS",
+    "length": 157,
+    "molWeight": 18775,
+    "crc64": "5438B202B4BEDC67",
+    "md5": "5EC5A3D7C75A8B9940EF394916DC1986"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Domain": 1
+    },
+    "uniParcId": "UPI00000C1EB7"
+  }
+}

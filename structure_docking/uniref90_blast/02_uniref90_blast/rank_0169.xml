@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-131252-0097-9846105-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-131252-0097-9846105-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="207"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T13:12:52+01:00" end="2026-08-06T13:20:41+01:00" search="P0Y0M0DT0H0M469.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q3ZWB4" ac="UniRef90_Q3ZWB4" length="207" description="Glycerol-3-phosphate acyltransferase 1 n=4 Tax=Dehalococcoides TaxID=61434 RepID=PLSY1_DEHMC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1063</score>
+      <bits>414.1</bits>
+      <expectation>3e-146</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANRRNLIVDHWKRPDKG</querySeq>
+      <pattern>MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANRRNLIVDHWKRPDKG</pattern>
+      <matchSeq start="1" end="207">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANRRNLIVDHWKRPDKG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_Q3ZAI6" ac="UniRef90_Q3ZAI6" length="208" description="Glycerol-3-phosphate acyltransferase 1 n=6 Tax=Dehalococcoides TaxID=61434 RepID=PLSY1_DEHM1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>953</score>
+      <bits>371.7</bits>
+      <expectation>1.8e-129</expectation>
+      <identity>89.3</identity>
+      <positives>92.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="206">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANRRNLIVDHWKRPDK</querySeq>
+      <pattern>MSLL GY LGSIPSAYLVTRRL GRDIRQMGGGN+GGLNTFREVG GAG +V  +DL KG LAVSV+YYLL QNAQWVILTGF AVIGHNW +WLDFKGGKGLGPAFGAMLFLLPVYGLPQ L ILALLVFIPLA+TRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIG KFVLDNRK+LRDPANRRNLIVDHWKRPDK</pattern>
+      <matchSeq start="1" end="206">MSLLIGYFLGSIPSAYLVTRRLTGRDIRQMGGGNMGGLNTFREVGVGAGAAVVLMDLAKGALAVSVAYYLLIQNAQWVILTGFAAVIGHNWPIWLDFKGGKGLGPAFGAMLFLLPVYGLPQHLLILALLVFIPLAITRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGIKFVLDNRKNLRDPANRRNLIVDHWKRPDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_UPI000B60B457" ac="UniRef90_UPI000B60B457" length="208" description="glycerol-3-phosphate acyltransferase n=1 Tax=Dehalococcoides TaxID=61434 RepID=UPI000B60B457">
+    <alignments total="1">
+     <alignment number="1">
+      <score>946</score>
+      <bits>369.0</bits>
+      <expectation>2.1e-128</expectation>
+      <identity>88.3</identity>
+      <positives>92.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="206">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANRRNLIVDHWKRPDK</querySeq>
+      <pattern>MSLL GY LGSIPSAYLVTRRL GRDIRQMGGGN+GGLNTFREVG GAG +V  +DL KG LAVSV+YYLL QNAQWVILTGF AVIGHNW +WLDFKGGKGLGPAFGAMLFLLPVYGLPQ L ILALLVFIPLA+TRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIG KF LDNRK+LRDPANRRNLIVDHWKRPD+</pattern>
+      <matchSeq start="1" end="206">MSLLIGYFLGSIPSAYLVTRRLTGRDIRQMGGGNMGGLNTFREVGVGAGAAVVLMDLAKGALAVSVAYYLLIQNAQWVILTGFAAVIGHNWPIWLDFKGGKGLGPAFGAMLFLLPVYGLPQHLLILALLVFIPLAITRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGIKFALDNRKNLRDPANRRNLIVDHWKRPDR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A2P5P6B6" ac="UniRef90_A0A2P5P6B6" length="205" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Dehalogenimonas etheniformans TaxID=1536648 RepID=A0A2P5P6B6_9CHLR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>381</score>
+      <bits>151.4</bits>
+      <expectation>1.3e-42</expectation>
+      <identity>44.5</identity>
+      <positives>58.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="182">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLD</querySeq>
+      <pattern>++L+ GYL GSIP+A L+ R L G D+   GGGNVG LNT R VG G G++VA +D+ KG  AV  + YLL     WV+  G MAV+GHNW VWL FKGGKG+  A G++     +Y     +     ++ +   L RN+ L   + L SLP L W  SHS  ATL +  L  +IG K+  D</pattern>
+      <matchSeq start="4" end="181">LALMLGYLWGSIPTANLIAR-LSGGDL---GGGNVGTLNTIRRVGLGPGLAVATLDIAKGAAAVLTARYLLDVPTVWVLFAGVMAVVGHNWMVWLAFKGGKGMAAATGSVAAASIIYHEAWGIAAFVGIILVVWRLRRNLVLGNAVGLLSLPLLAWLASHSIEATLTAFALDAVIGAKYAPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0ABZ2JA53" ac="UniRef90_A0ABZ2JA53" length="206" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Candidatus Dehalogenimonas loeffleri TaxID=3127115 RepID=A0ABZ2JA53_9CHLR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>372</score>
+      <bits>147.9</bits>
+      <expectation>3e-41</expectation>
+      <identity>40.8</identity>
+      <positives>60.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="179">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKF</querySeq>
+      <pattern>++LL GYL GSIP+AYL+ R++ G     +G GN+GGLNT R +G  AG++VAFID+ KG  AV  +YY+L     +V+  G  AV GHNW VWL F+GGKG+  A GA+     +YG P  +  +  ++     ++RN+ L   ++L  LPF+ WY + S     ++ +L  +I  K+</pattern>
+      <matchSeq start="4" end="181">LALLLGYLWGSIPTAYLIARKVAGSG-DALGEGNIGGLNTLRRIGLKAGLAVAFIDVAKGAAAVLTAYYVLDVETGFVLAAGVAAVAGHNWMVWLRFRGGKGMAAAVGAVAGASFIYGYPAVIAAMMAVILGVWLVSRNLVLGNAVSLLLLPFITWYFTDSGLVAGLAAVLSGVIAVKY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_A0A0W0GGN9" ac="UniRef90_A0A0W0GGN9" length="203" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Dehalogenimonas TaxID=670486 RepID=A0A0W0GGN9_9CHLR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>356</score>
+      <bits>141.7</bits>
+      <expectation>7.1e-39</expectation>
+      <identity>44.5</identity>
+      <positives>56.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="182">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLD</querySeq>
+      <pattern>++LL+GYL GSIP+A LV R L G+ +     GNVG LNT R VG GAGI+VA +D+ KG  AV  + Y L  +A WV+  G   VIGHNW VWL FKGGKG+  A GA+L    +YG          ++     L RN+ L    AL  LP L W  SHS    L ++ L  +I  K+  D</pattern>
+      <matchSeq start="4" end="180">LALLSGYLWGSIPTARLVAR-LSGQRL----AGNVGALNTIRSVGLGAGIAVALLDVAKGAAAVLTARYALDASAGWVLFAGVGCVIGHNWMVWLGFKGGKGMAAAAGAVLAASLIYGYGWVFVAFVGIILAVWRLGRNLVLGNAAALLCLPGLAWLASHSTAVVLAALCLDAVIALKYAPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_UPI003218537D" ac="UniRef90_UPI003218537D" length="207" description="glycerol-3-phosphate acyltransferase n=1 Tax=Dehalogenimonas sp. THU2 TaxID=3151121 RepID=UPI003218537D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>339</score>
+      <bits>135.2</bits>
+      <expectation>2.9e-36</expectation>
+      <identity>42.7</identity>
+      <positives>58.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="182">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVY---GLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLD</querySeq>
+      <pattern>++L+ GYL GSIP+A +V R   G +   +GGGNVG LNT R+VG   G+ VAF D+ KG  AV  + YL+  +  +V+  G MAV GHNW VWL FKGGKG+  A GA++     Y   G+P     L L V+   AL RN+ L   + L +LP + W  + S  ATL++  L  +I  K++ D</pattern>
+      <matchSeq start="4" end="184">IALILGYLFGSIPTARIVARVSTG-EAEALGGGNVGTLNTIRQVGLWPGLVVAFFDIAKGAAAVLAAKYLIGADDVFVLGAGVMAVAGHNWMVWLGFKGGKGMAAATGAIIAASFAYGHGGIPVYFITLILFVW---ALRRNLVLGNAVGLLALPAITWMATASWTATLMAGALVGVIVIKYIPD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0A1P8F4L8" ac="UniRef90_A0A1P8F4L8" length="205" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Dehalogenimonas formicexedens TaxID=1839801 RepID=A0A1P8F4L8_9CHLR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>338</score>
+      <bits>134.8</bits>
+      <expectation>3.8e-36</expectation>
+      <identity>43.0</identity>
+      <positives>55.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="179">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKF</querySeq>
+      <pattern>++LL GYL GSIP+A +V R L G D+   GGGNVG LNT R VG G GI+VA +D+ KG  AV  + YLL     WV+  G  AVIGHNW VWL FKGGKG+  A GA+     +YG    L     ++     L +N+     + L  LP   W  SH     L ++ L  +I  K+</pattern>
+      <matchSeq start="4" end="178">LALLLGYLWGSIPTARIVAR-LSGGDL---GGGNVGTLNTIRRVGLGPGIAVATLDIAKGASAVLTARYLLDLAPLWVLFAGVFAVIGHNWMVWLGFKGGKGMAAATGAVAAASIIYGHAWVLAGFIGVILAVWRLGKNLVPGNAVGLICLPGFAWLASHCLGTVLAAIALDAVIAVKY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_B8CWZ0" ac="UniRef90_B8CWZ0" length="208" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Halothermothrix orenii (strain H 168 / OCM 544 / DSM 9562) TaxID=373903 RepID=B8CWZ0_HALOH">
+    <alignments total="1">
+     <alignment number="1">
+      <score>313</score>
+      <bits>125.2</bits>
+      <expectation>2.3e-32</expectation>
+      <identity>37.1</identity>
+      <positives>63.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="175">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQW--VILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLAL-TRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>+++  GY++GSIP AY+VTR + G+D+R+ G GNVG  N  R +G   G+ VA +D+ KG +AV ++ ++L     +  +IL G  A+IGHNWSV+L F GGKG+    G +L L+PV      + ++ +L++I + L TR ++LA+ +   +LPF+ +Y + +    +++  L ++I</pattern>
+      <matchSeq start="4" end="175">ITIAIGYIIGSIPFAYIVTRLISGKDVRKFGSGNVGATNATRVMGLPYGLMVAGLDIFKGYIAVLLARFILPVETPYYFIILAGVAAIIGHNWSVFLKFTGGKGVATTCGVLLNLIPV------IFLIYVLIWIVIVLSTRYVSLASILGGIALPFVTYYVNGNILNVILTAFLGILI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0A931APX8" ac="UniRef90_A0A931APX8" length="202" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Halonatronomonas betaini TaxID=2778430 RepID=A0A931APX8_9FIRM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>310</score>
+      <bits>124.0</bits>
+      <expectation>5.5e-32</expectation>
+      <identity>38.3</identity>
+      <positives>61.1</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="175">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVI-LTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALT-RNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>+L  YL+GSIP+ YL T+ ++  DIR  G GNVG  N  R++G   G +VA ID+ KG L V +   +L  + +++I + GF A+IGH+WSV+L F GGKG+   FG +L      GL     ++  ++++ +A T + ++LA+ I + SLP  +W+ + S   T ++ LLFL +</pattern>
+      <matchSeq start="7" end="175">ILVAYLIGSIPTGYLFTKAILNVDIRDYGSGNVGATNVARKLGFKMGAAVALIDIFKGFLPVMIGRNILYDSPEYLIFIIGFFAIIGHDWSVFLKFDGGKGVATTFGVIL------GLNFISFLILAIIWLSIAFTIKIVSLASIIGIGSLPISIWFLTGSGIETFMAFLLFLFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A081P5Y7" ac="UniRef90_A0A081P5Y7" length="199" description="Glycerol-3-phosphate acyltransferase n=12 Tax=Paenibacillus TaxID=44249 RepID=A0A081P5Y7_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>309</score>
+      <bits>123.6</bits>
+      <expectation>7.2e-32</expectation>
+      <identity>35.2</identity>
+      <positives>55.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="193">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANR</querySeq>
+      <pattern>+SLL GYLLGSI  +YL  + L G DIR+ G GN G  NT R +G G GI+V  +D++KG  AV +  +L   +  + +L G   ++GHNW ++  F+GGKG+    G M+ L  +  L     I  ++  I +A+TR ++L + +    LP  +W+   S    ++S+LLF+    K   +  K L+   N+</pattern>
+      <matchSeq start="5" end="192">LSLLIGYLLGSISFSYLAGKLLKGIDIREHGSGNAGATNTLRVLGKGPGIAVLLLDVLKGVAAVWIGTWLSGSDPLFEVLAGISVIVGHNWPIFFGFRGGKGIATTIGVMVTLAFLPAL-----IAGIVAIISIAITRYVSLGSLLFTALLPIFIWFMVDSREIFVLSLLLFVFAWVKHRSNIVKLLKGQENK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0A229UXR3" ac="UniRef90_A0A229UXR3" length="193" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Paenibacillus TaxID=44249 RepID=A0A229UXR3_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>307</score>
+      <bits>122.9</bits>
+      <expectation>1.2e-31</expectation>
+      <identity>39.5</identity>
+      <positives>58.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="172">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLF</querySeq>
+      <pattern>M ++ GYL+GSI  +YL  + L G DIR  G GN G  NT R +G G  I+V  +D VKG +AV +  +L   +A    L G  A+ GHNW ++  F+GGKG+    G MLFL P+  +    GI+A+L    +ALTR ++L + +    LP L+W+  + +    +S+LLF</pattern>
+      <matchSeq start="1" end="167">MPIIIGYLIGSISFSYLAGKLLKGIDIRNHGSGNAGATNTLRVLGKGPAITVLLLDAVKGLVAVWIGRWLSGGDALVETLCGLAAISGHNWPIYFGFRGGKGIATTIGVMLFLAPMPVV--YAGIVAILT---IALTRYVSLGSLLLTAILPILIWFMGYPKEVFWLSLLLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_UPI000DF237D1" ac="UniRef90_UPI000DF237D1" length="206" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=unclassified Halanaerobium TaxID=2641197 RepID=UPI000DF237D1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>305</score>
+      <bits>122.1</bits>
+      <expectation>3.4e-31</expectation>
+      <identity>36.7</identity>
+      <positives>59.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="175">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQ--WVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>+SLL  YL+GSIPS +L+T+ ++ +D+R+ G GN+G  N  R +G  AGI VA  D++KG +A+ V  Y+L  +A   +++L    ++ GH+WSV+L F GGKG+   FG +L L P         + A++  + +  TR ++L + +   +LPF V++  +S      +VLL L I</pattern>
+      <matchSeq start="5" end="176">ISLLLSYLIGSIPSGFLLTKFVMKKDVREYGSGNIGATNVARVMGLKAGILVAIFDILKGYIALMVGQYILGSSAPELYILLIAAASIAGHDWSVFLGFSGGKGVATTFGVILRLYPA-----AFVVYAVIWILIVFKTRYVSLGSILGSITLPFTVFFTGYSRINIYFAVLLSLFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A916JZ02" ac="UniRef90_A0A916JZ02" length="199" description="Glycerol-3-phosphate acyltransferase n=2 Tax=Paenibacillus TaxID=44249 RepID=A0A916JZ02_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>303</score>
+      <bits>121.3</bits>
+      <expectation>5.7e-31</expectation>
+      <identity>39.0</identity>
+      <positives>56.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="173">SLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFL</querySeq>
+      <pattern>SLL GYLLGS+  +YL  + L G DIRQ G GN G  NT R +G G GI+V  +D++KG  AV +   L   +A   +L G   + GHNW V+  F+GGKG+    G M+ L  +  L     I  L+    +ALTR ++L + +    LP L+W+  +     ++S+LLF+</pattern>
+      <matchSeq start="6" end="172">SLLIGYLLGSVSFSYLAGKLLKGIDIRQHGSGNAGATNTLRVLGKGPGITVLLLDMLKGVAAVWIGGLLSGGDALIQVLAGLCVIAGHNWPVFFGFRGGKGIATTIGVMVTLAFLPAL-----IAGLVAIATIALTRYVSLGSLLFTAILPILIWFMGYPVAIFILSLLLFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_UPI0035294D9A" ac="UniRef90_UPI0035294D9A" length="202" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=Aneurinibacillus baijiui TaxID=3237286 RepID=UPI0035294D9A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>301</score>
+      <bits>120.6</bits>
+      <expectation>1.2e-30</expectation>
+      <identity>37.7</identity>
+      <positives>60.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="176">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVI-LTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIG</querySeq>
+      <pattern>++  YLLGSI  + LV +++   DIR+ G GN G  NT R +G G GI+V  +D  KG LAV ++++L T  A WV+ L+G  A++GHNW V+  F+GGKG+    G +L L+P+ GL     I  ++  + +ALTR ++L + +  F+L  ++     +  A +I  LL  ++G</pattern>
+      <matchSeq start="6" end="173">IILSYLLGSISFSILVAKKVAKIDIREHGSGNAGATNTLRILGKGPGIAVLLLDAAKGALAVGIAHWL-TGGADWVVVLSGIAAILGHNWPVFFGFRGGKGVATTIGTLLALVPIPGL-----IAVVVTIVVIALTRYVSLGS-LVFFALIPIILIIKGAPLAYIIGTLLVAVLG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_A0A1I4EN20" ac="UniRef90_A0A1I4EN20" length="205" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Halanaerobium salsuginis TaxID=29563 RepID=A0A1I4EN20_9FIRM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>301</score>
+      <bits>120.6</bits>
+      <expectation>1.3e-30</expectation>
+      <identity>37.1</identity>
+      <positives>58.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="175">SLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQ-WVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>++L  YL+GSIPS +L+T+ L+ +D+R+ G GN+G  N  R +G  +GI VA  D++KG L V  +  +L  +A  WV++    A+ GHNWSV+L F GGKG+   FG +L L P+  L     I  L+    +  TR ++L + I   SLPF +++   +    + + LL L +</pattern>
+      <matchSeq start="6" end="175">AVLLSYLIGSIPSGFLLTKYLMKKDVRKYGSGNIGATNVARVMGLKSGIIVAVFDILKGYLGVLAAQLILANSAPIWVLIAAVAAIAGHNWSVFLGFSGGKGVATTFGVILRLYPLAFL-----IYGLIWLAFVLKTRYVSLGSIIGAISLPFTLYFSGFAAQDIIFACLLALFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_A0A972GVT5" ac="UniRef90_A0A972GVT5" length="196" description="Glycerol-3-phosphate acyltransferase n=4 Tax=Paenibacillus TaxID=44249 RepID=A0A972GVT5_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>298</score>
+      <bits>119.4</bits>
+      <expectation>2.9e-30</expectation>
+      <identity>40.4</identity>
+      <positives>59.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="156">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVW</querySeq>
+      <pattern>MS+L GYLLGSI  ++L  + L G DIR+ G GN G  NT R +G G G++V  +D +KG +AV +  ++   +A  ++L G  A+ GHNW V+  F+GGKG+    G ML L P+  L    GI+ +L  +   +TR ++L + +    LP LVW</pattern>
+      <matchSeq start="1" end="151">MSILIGYLLGSISFSFLAGKLLKGIDIRKHGSGNAGATNTLRVLGVGPGVTVLLLDAIKGVIAVLLGIWIGDGSALLLVLCGVAAIAGHNWPVYFGFRGGKGIATTIGVMLTLAPLPAL--YAGIVCILAIV---VTRYVSLGSLLFTAILPILVW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_UPI0021BD9F71" ac="UniRef90_UPI0021BD9F71" length="198" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=Marinilongibacter aquaticus TaxID=2975157 RepID=UPI0021BD9F71">
+    <alignments total="1">
+     <alignment number="1">
+      <score>298</score>
+      <bits>119.4</bits>
+      <expectation>3.1e-30</expectation>
+      <identity>39.4</identity>
+      <positives>59.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="175">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALT-RNIALATGIALFS-LPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>L+  YLLGSIPSA L  R   G D+R+ G GN G  N+ R +G  AG++V  ID++KG LAV + ++  T  A  +I+ GF AVIGH   V+ +F+GGKG+  +FG +L L P+        +  L+VF+ +  T + ++LA+  A FS L +  W      F  L+ ++LFL++</pattern>
+      <matchSeq start="8" end="176">LILAYLLGSIPSAVLYGRIFHGVDVREHGSGNAGATNSLRVLGKRAGLAVLIIDVLKGVLAVQIPHFFFTNEADTLIIFGFAAVIGHLLPVFANFRGGKGVATSFGIILALQPL------AAVFVLVVFLAVVYTSKYVSLASLSASFSFLVYCFWQMPGQRFYHLMCLVLFLLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0A8I1A6H3" ac="UniRef90_A0A8I1A6H3" length="202" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Thermoactinomyces TaxID=2023 RepID=A0A8I1A6H3_THEIN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>298</score>
+      <bits>119.4</bits>
+      <expectation>3.4e-30</expectation>
+      <identity>36.0</identity>
+      <positives>52.8</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="197">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANRRNLI</querySeq>
+      <pattern>+SLL  YLLGSI  +YL TR L G DIR+ G GN G  NT R +G G   +V  +D VKG  AV + ++L   +  W+++ G  A++GHNW V+L F+GGKG+    G        +G     GILA+L  +   +TR ++L + +    +P ++W   +S           ++IG   V+      R   N RNLI</pattern>
+      <matchSeq start="7" end="188">ISLLISYLLGSISFSYLFTRWLKGVDIREYGSGNAGATNTLRVLGAGPAAAVFVLDAVKGVAAVGLGHWLSHGDPVWMVVCGIAAIVGHNWPVFLRFRGGKGIATMVGVTATCF--FGATLVSGILAILFIV---ITRYVSLGSLVLALFIPVMMWILDYSG----------ILIGLMLVITVMSVWRHRVNIRNLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_A0A075R3Z1" ac="UniRef90_A0A075R3Z1" length="201" description="Glycerol-3-phosphate acyltransferase n=8 Tax=Brevibacillus TaxID=55080 RepID=A0A075R3Z1_BRELA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>297</score>
+      <bits>119.0</bits>
+      <expectation>4.7e-30</expectation>
+      <identity>34.5</identity>
+      <positives>57.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLL</querySeq>
+      <pattern>+SL+  YLLGS+  +YLV +++ G DIR  G GN G  NT R +G G  I V  +DL+KG LA+ ++++L   +      +G +A++GHNW ++  F+GGKG+    G  L L P+  L     I  +L  I +A+TR +++ + + +   P L+W+     +  LI++ +</pattern>
+      <matchSeq start="4" end="169">ISLVISYLLGSVSFSYLVAKKIAGIDIRSHGSGNAGATNTLRVLGKGPAIVVLLLDLLKGVLAMYITHWLTNGDPVAYAFSGILAIVGHNWPIFYGFRGGKGIATTVGVALALSPLAFL-----ICTILTIICIAITRYVSVGSLLFVTLFPILIWFFKQDIYIFLITLAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_H6NML2" ac="UniRef90_H6NML2" length="195" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Paenibacillus TaxID=44249 RepID=H6NML2_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>296</score>
+      <bits>118.6</bits>
+      <expectation>5.7e-30</expectation>
+      <identity>37.8</identity>
+      <positives>53.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="193">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANR</querySeq>
+      <pattern>MSLL GYLLGSI  ++L  + L G DIRQ G GN G  NT R +G G GI+V  +D++KG  AV +   L   +   ++L+G   +IGHNW V+  FKGGKG+    G M  L  +  L   L  +A +VF     TR ++L + +    LP  +W    S    ++S+LLF+    K   +  K L+   N+</pattern>
+      <matchSeq start="1" end="188">MSLLIGYLLGSISFSFLAGKLLKGIDIRQHGSGNAGATNTLRVLGKGPGIAVLLLDVLKGIAAVWIGNALSGGDTLIMVLSGVSVIIGHNWPVFFGFKGGKGIATTIGVMATLAFLPSLFAGLIAIAAIVF-----TRYVSLGSLLFTALLPLFIWGMDRSVEVLVLSLLLFVFAWVKHRTNIVKLLQGKENK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_UPI001AE2F731" ac="UniRef90_UPI001AE2F731" length="198" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=unclassified Paenibacillus TaxID=185978 RepID=UPI001AE2F731">
+    <alignments total="1">
+     <alignment number="1">
+      <score>295</score>
+      <bits>118.2</bits>
+      <expectation>8.7e-30</expectation>
+      <identity>37.5</identity>
+      <positives>56.8</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAM---LFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFL</querySeq>
+      <pattern>+SL+ GYLLGS+  +YL  + L G DIRQ G GN G  NT R +G G GI+V  +D++KG  AV +   L   ++ + +L G   +IGHNW ++  F+GGKG+    G M    FL  +Y      GI+A+L  +   LTR ++L + +    LP  +W+        ++S+LLF+</pattern>
+      <matchSeq start="4" end="171">LSLVIGYLLGSVSFSYLAGKLLKGIDIRQHGSGNAGATNTMRVLGKGPGIAVLLLDMIKGMAAVWIGSLLSGGDSLFEVLAGVSVIIGHNWPIFFGFRGGKGIATTVGVMATLAFLPTLYA-----GIIAVLTIV---LTRYVSLGSLLFTALLPIFIWFMDLPNEFLVLSLLLFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_A0A0U2U8K6" ac="UniRef90_A0A0U2U8K6" length="198" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Paenibacillus TaxID=44249 RepID=A0A0U2U8K6_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>295</score>
+      <bits>118.2</bits>
+      <expectation>8.7e-30</expectation>
+      <identity>35.8</identity>
+      <positives>54.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="193">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANR</querySeq>
+      <pattern>+SL+ GYLLGS+  + L  R L G DIRQ G GN G  NT R +G G GI+V  +D++KG  AV +  YL   ++ + +L G   ++GHNW ++  F+GGKG+    G M  L     L    GI+A+L    + LTR ++L + +    LP  +W+        ++S+LLF+    K   +  K L+   N+</pattern>
+      <matchSeq start="4" end="191">LSLVIGYLLGSVSFSCLAGRLLKGIDIRQHGSGNAGATNTMRVLGKGPGITVLLLDVIKGMSAVWIGSYLSGGSSLFEVLAGISVIVGHNWPIFFGFRGGKGIATTIGVMATLAFFPAL--YAGIIAIL---SIVLTRYVSLGSLLFTALLPIFIWFMGLPNEILVLSLLLFVFAWFKHRSNIVKLLKGNENK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_A0A285HUW3" ac="UniRef90_A0A285HUW3" length="202" description="Glycerol-3-phosphate acyltransferase n=2 Tax=Orenia metallireducens TaxID=1413210 RepID=A0A285HUW3_9FIRM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>295</score>
+      <bits>118.2</bits>
+      <expectation>9.7e-30</expectation>
+      <identity>35.3</identity>
+      <positives>58.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="175">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>+L  YLLGSIP A LV + + G DIR+ G GNVG  N FR +G G GISVA +D+ KG +AV+V+ +        +++ G +++ GHNW ++L FKGGKG+  + G ++ L      P+ +     +  I +  T+ ++LA+ IA   +P L++         +++VL+ + +</pattern>
+      <matchSeq start="8" end="175">MLFAYLLGSIPFALLVVKLVKGVDIREYGSGNVGATNAFRILGLGLGISVALLDIGKGFIAVAVARHFFADQPLLLLIAGLLSIAGHNWPIFLKFKGGKGVATSVGVLISL-----SPKTILFAFFIWMIVILTTQYVSLASIIAAIVIPILMYLFGQETIFIILAVLIAIFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0A9E6ZK30" ac="UniRef90_A0A9E6ZK30" length="202" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Alicyclobacillus TaxID=29330 RepID=A0A9E6ZK30_ALIAG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>295</score>
+      <bits>118.2</bits>
+      <expectation>9.7e-30</expectation>
+      <identity>36.9</identity>
+      <positives>58.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="174">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFL--VWYGSHSEFATLISVLLFLM</querySeq>
+      <pattern>+S++  YL+GSI ++ +V + + G+DIRQ G GN G  NT R +GT  GI+V  ID +KG +A+S+   L   N   + L+    V+GHNW ++  F+GGKG+    G +L++ P+  +     I  +L  + +ALTR ++L + I    +P L  VW  SH E A   S++L L+</pattern>
+      <matchSeq start="5" end="174">LSIIIAYLIGSISTSTIVVKMVSGKDIRQFGSGNAGATNTSRVLGTKWGIAVLVIDALKGMIALSIVSALAHANPVALALSAIAVVVGHNWPIYFGFRGGKGIATTIGVLLWMAPLMTI-----IAGILCLVVIALTRYVSLGSLIFAILIPILLGVWAPSH-EAALWASIVLALL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A0A1C4D6L8" ac="UniRef90_A0A1C4D6L8" length="218" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Chitinophaga TaxID=79328 RepID=A0A1C4D6L8_9BACT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>296</score>
+      <bits>118.6</bits>
+      <expectation>1e-29</expectation>
+      <identity>36.9</identity>
+      <positives>57.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="187">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYL--------LTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWY--GSHSEFATLISVLLFLMIGGKFVLDNRKSL</querySeq>
+      <pattern>L+  YL+GSIP+A  V++ + G DIR+ G GN G  NTFR +G  AG  V  ID++KG LAV +SY L        LT+   + I  G +AVIGH + +W  F+GGKG+   FG +L + P+  L   +G+  L++F    LTR ++L++ IA  + P L+ Y       +  + ++ + LM+    VL ++K++</pattern>
+      <matchSeq start="7" end="192">LICAYLIGSIPTAVWVSKGVFGMDIREYGSGNAGATNTFRVLGPKAGSFVMLIDMLKGVLAVRLSYMLNFYDNPDHLTELVNFQIGLGLVAVIGHIFPIWASFRGGKGIATLFGLVLAIQPLVAL-SCVGVFLLILF----LTRYVSLSSIIASIAFPVLILYIFNEQELYYRVFAIAVALMV----VLTHQKNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_A0ABS2Q7P1" ac="UniRef90_A0ABS2Q7P1" length="201" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Sporolactobacillus spathodeae TaxID=1465502 RepID=A0ABS2Q7P1_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>294</score>
+      <bits>117.9</bits>
+      <expectation>1.3e-29</expectation>
+      <identity>34.9</identity>
+      <positives>59.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="174">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFL-VWYGSHSEFATLISVLLFLM</querySeq>
+      <pattern>+S++  YL+G++  +YL+T+++   DIR+ G GN G  NT R +GTG  I V F+D++KG + + ++ +LL      V+ +GF A++GH++ V+  FKGGKG+    G    ++P+  L     I  L+    +ALTR ++L + I L   P L V++G+ S    LI  L+ ++</pattern>
+      <matchSeq start="5" end="174">LSIILSYLIGAVSFSYLITKKIKKIDIRKTGSGNAGATNTQRILGTGPAIGVLFLDILKGIVCILIARFLLAVPDWAVVFSGFAAILGHDFPVYYGFKGGKGVATTIGVFFMIMPIEAL-----IAGLVTLAVIALTRYVSLGSLIFLLLTPVLGVFFGTFSNAVLLIMFLITVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_UPI00106F0542" ac="UniRef90_UPI00106F0542" length="202" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=Brevibacillus migulae TaxID=1644114 RepID=UPI00106F0542">
+    <alignments total="1">
+     <alignment number="1">
+      <score>294</score>
+      <bits>117.9</bits>
+      <expectation>1.4e-29</expectation>
+      <identity>33.5</identity>
+      <positives>55.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="197">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANRRNLI</querySeq>
+      <pattern>+S +  YLLGSI  +YL+++++ G DIR  G GN G  NT R +GTG  I V  +D +KG  AV+ ++++   N     L G  A+IGHNW ++  F+GGKG+    G  L + P+  +     I  LL    +A+TR ++L + + + + P L+++ +H+    L  V+L + + G         +R  +N RNL+</pattern>
+      <matchSeq start="5" end="186">LSAVVSYLLGSISFSYLISKKVAGIDIRSHGSGNAGATNTLRVLGTGPAILVLLLDAIKGMAAVAFAWWISDSNTVIGALAGIFAIIGHNWPIFFQFRGGKGIATTIGVALLISPLAFI-----ISVLLCVAVIAITRYVSLGSLVFVTAFPILLYFLTHN--LPLCLVVLIITVFG--------FVRHYSNIRNLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0A2W1P4X1" ac="UniRef90_A0A2W1P4X1" length="193" description="Glycerol-3-phosphate acyltransferase n=2 Tax=Paenibacillus xerothermodurans TaxID=1977292 RepID=A0A2W1P4X1_PAEXE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>293</score>
+      <bits>117.5</bits>
+      <expectation>1.5e-29</expectation>
+      <identity>38.4</identity>
+      <positives>56.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="172">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLF</querySeq>
+      <pattern>M +L GYLLGSI  +YL  + L G DIR  G GN G  NT R +G G  I+V  +D VKG  AV +  +L   +A  ++L G  A+IGHNW ++  F+GGKG+    G M+ L  V  L    G+ A+L    +A+TR ++L + +    +P  +W+        ++SVL+F</pattern>
+      <matchSeq start="1" end="167">MPILLGYLLGSISFSYLAGKLLKGIDIRDHGSGNAGATNTLRVLGVGPAITVLVLDAVKGLAAVKIGQWLGDGSALLLVLCGIAAIIGHNWPIYFGFRGGKGIATTIGVMVTLALVPAL--CAGVFAILA---IAVTRYVSLGSLLFTALIPVFIWFMDLPIETFVLSVLVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0A6B8RLJ7" ac="UniRef90_A0A6B8RLJ7" length="197" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Paenibacillus psychroresistens TaxID=1778678 RepID=A0A6B8RLJ7_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>292</score>
+      <bits>117.1</bits>
+      <expectation>2.4e-29</expectation>
+      <identity>39.8</identity>
+      <positives>59.7</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFL--LPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLP-FLVWYGSHSEFATLISVLLFL</querySeq>
+      <pattern>++++  YLLGSI  ++L  + L G DIR+ G GN G  NT R +G G G+SV  +D+ KG LA+ ++ +L+    +  IL GF  V GHNW V+ +FKGGKG+    G ML L  LPV       GILA+LV   +A+TR +++ + +    LP F++W     E   L S+++F+</pattern>
+      <matchSeq start="5" end="172">IAIIVSYLLGSISFSFLAGKFLKGIDIREHGSGNAGATNTLRVLGKGPGLSVFVLDIFKGVLAIWIAAWLVPDTVRVEILCGFAVVAGHNWPVFFNFKGGKGIATTIGVMLTLCFLPVI----YAGILAILV---IAITRYVSVGSLLFATVLPLFILWMDKPHEILWL-SLIVFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_A0ABU9DEW1" ac="UniRef90_A0ABU9DEW1" length="199" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Paenibacillus TaxID=44249 RepID=A0ABU9DEW1_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>292</score>
+      <bits>117.1</bits>
+      <expectation>2.5e-29</expectation>
+      <identity>39.0</identity>
+      <positives>56.4</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="173">SLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFL</querySeq>
+      <pattern>SLL GYLLGSI  ++L  + L G DIRQ G GN G  NT R +G G GI+V  +D++KG  AV + Y L   +  +++L G   ++GHNW V+  F+GGKG+    G M+ L     LP  L  LA +  + +A TR ++L + +    LP  +W          +S+LLF+</pattern>
+      <matchSeq start="6" end="172">SLLLGYLLGSISFSFLAGKLLKGIDIRQHGSGNAGATNTLRVLGKGPGITVLVLDMLKGVAAVWLGYLLSGGDPLFLVLAGISVIVGHNWPVFFGFRGGKGIATTIGVMVSLA---FLPALLAGLAAI--LSIAWTRYVSLGSLLFTALLPLFIWLMGRPMEIFWLSLLLFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_E4RLQ2" ac="UniRef90_E4RLQ2" length="203" description="Glycerol-3-phosphate acyltransferase n=2 Tax=Halanaerobium TaxID=2330 RepID=E4RLQ2_HALHG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>292</score>
+      <bits>117.1</bits>
+      <expectation>2.8e-29</expectation>
+      <identity>36.4</identity>
+      <positives>58.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQ-WVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWY----GSHSEFATLISVLL</querySeq>
+      <pattern>+++L  YL+GSIPS  L+T+ ++ +D+R  G GN+G  N  R +G  AG+ VA  D++KG L V V   ++   A  +V+L    A+ GH+WS++L F GGKG+   FG +L L P+  L     + AL+    +  TR ++L + I   SLPF++++    G H  F  L+S+ +</pattern>
+      <matchSeq start="5" end="175">LAILISYLIGSIPSGLLLTKSVLKKDVRNYGSGNIGATNVARVMGLKAGVLVAVFDILKGFLGVLVGQAIIGDVASIFVLLVAMAAIAGHDWSIFLGFTGGKGVATTFGVILRLYPLAFL-----VYALIWLFLVIKTRYVSLGSIIGSLSLPFVIYFSGFEGPHIIFGALLSLFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_A0A6N8J4S1" ac="UniRef90_A0A6N8J4S1" length="213" description="Glycerol-3-phosphate acyltransferase n=3 Tax=Chitinophaga TaxID=79328 RepID=A0A6N8J4S1_9BACT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>292</score>
+      <bits>117.1</bits>
+      <expectation>3.6e-29</expectation>
+      <identity>36.4</identity>
+      <positives>57.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="187">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYL--------LTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWY--GSHSEFATLISVLLFLMIGGKFVLDNRKSL</querySeq>
+      <pattern>L   YL+GSIP+A  V++ + G DIR+ G GN G  NTFR +G+ AG  V  +D+ KG LAV +SY L        LTQ   + I  G  AV+GH + +W +F+GGKG+   FG +L + P+  +   +G+  L+    L+LTR ++L++ IA  + P L+ Y       F  + ++ + LM+    VL ++K++</pattern>
+      <matchSeq start="7" end="192">LFCAYLIGSIPTAVWVSKGIYGMDIREYGSGNAGATNTFRVLGSKAGTFVMIVDMFKGVLAVRLSYLLSYYHNPDHLTQLVNFQIGLGLAAVVGHIFPIWANFRGGKGIATLFGLVLAIQPLVAI-CCVGVFLLI----LSLTRYVSLSSIIASIAFPILILYIFNEPEVFYRIFAIAVALMV----VLTHQKNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0A939BQS0" ac="UniRef90_A0A939BQS0" length="202" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Brevibacillus fulvus TaxID=1125967 RepID=A0A939BQS0_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>291</score>
+      <bits>116.7</bits>
+      <expectation>3.8e-29</expectation>
+      <identity>35.5</identity>
+      <positives>54.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="173">SLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFL</querySeq>
+      <pattern>S++ GYLLGSI  +YL+ +++ G DIR  G GN G  NT R +G G  I V  +DL+KG  A+ ++Y +   +       G  A+IGHNW V+  F+GGKG+    G  L   P   L     I  ++  I +A+TR ++L + + +  LP L++  +H       S+L+ L</pattern>
+      <matchSeq start="6" end="172">SIVIGYLLGSISFSYLIAKKIAGIDIRSHGSGNAGATNTLRVLGKGPAILVLLLDLLKGLAALGIAYLISGGDTLAYAFAGIFAIIGHNWPVFFGFRGGKGIATTIGVALGYSPTAFL-----IAVIVTIIVIAITRYVSLGSLVFVTLLPILLYTVAHQPMLAAFSLLIML</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_Q2RIV5" ac="UniRef90_Q2RIV5" length="194" description="Glycerol-3-phosphate acyltransferase 2 n=6 Tax=Neomoorella thermoacetica TaxID=1525 RepID=PLSY2_MOOTA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <bits>116.3</bits>
+      <expectation>4.4e-29</expectation>
+      <identity>42.7</identity>
+      <positives>61.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="157">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWY</querySeq>
+      <pattern>++L+  YL+GSIP+AY+V R L G DIR+ G GNVG  NT R +GT  G+ V  +D +KG LAV +   L       VIL   MA++GHNWS++L+F+GG+G+    GA+L + P+      L  LA+++F     +R I+L + +A    PFLV Y</pattern>
+      <matchSeq start="4" end="153">LALVVAYLIGSIPTAYVVGRYLYGFDIRRRGSGNVGATNTLRTMGTIPGLVVLGVDALKGVLAVLLGQAL--GGPVLVILAALMAIVGHNWSIFLEFQGGRGVATTAGALLAMAPLALFWAFLIWLAVVIF-----SRYISLGSIVAAAVAPFLVIY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0A511V7P6" ac="UniRef90_A0A511V7P6" length="197" description="Glycerol-3-phosphate acyltransferase n=1 Tax=Aneurinibacillus danicus TaxID=267746 RepID=A0A511V7P6_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <bits>116.3</bits>
+      <expectation>4.7e-29</expectation>
+      <identity>34.4</identity>
+      <positives>55.2</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="194">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSLRDPANRR</querySeq>
+      <pattern>++  YLLGSI  + LV +++   DIRQ G GN G  NT R +G G GI+V  +D  KG +AV V+++L   N   ++L+G  A++GHNW V+  F+GGKG+    G +L L PV  L     I  ++    +A+TR ++L + +  F+L  ++   + +  A +I  L+   +G     +N K L     R+</pattern>
+      <matchSeq start="6" end="191">IILSYLLGSISFSILVAKKIAKIDIRQHGSGNAGATNTLRVLGKGPGIAVLLLDAAKGAIAVGVAHWLTGGNDWVIVLSGIAAILGHNWPVFFGFRGGKGVATTIGTLLALTPVPAL-----IAVVVTVAVIAVTRYVSLGS-LVFFTLIPVILIITGASLAYIIGTLIIAALGYIRHAENIKRLLQGTERK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_UPI000E0E0D02" ac="UniRef90_UPI000E0E0D02" length="199" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=2 Tax=unclassified Synechococcus TaxID=2626047 RepID=UPI000E0E0D02">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <bits>116.3</bits>
+      <expectation>5e-29</expectation>
+      <identity>40.2</identity>
+      <positives>55.3</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="175">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNA--QWV-ILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFI-PLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>+SLL GYLLGSIPS YL  R   G D+R++G G+ G  N  R+VG G  + V  ID+ KG  AV ++  +   NA   WV +L G  A+ GH W VWL FKGGK +   FG  L      GL   +G+    VF+  L++ R ++LA+ +   SLP L+  G H   A L   L+ + +</pattern>
+      <matchSeq start="4" end="175">LSLLLGYLLGSIPSGYLAGRWCKGLDLRELGSGSTGATNVLRQVGKGPALVVFVIDVSKGAAAVVLASAITQGNAFSDWVQVLAGLTALTGHIWPVWLGFKGGKAVATGFGMFL------GLAWPVGLACFGVFLATLSIFRTVSLASVVGAISLPLLMAAG-HGNKADLTVALVAMAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0ABY6YXA9" ac="UniRef90_A0ABY6YXA9" length="205" description="Glycerol-3-phosphate acyltransferase n=2 Tax=Alicyclobacillus dauci TaxID=1475485 RepID=A0ABY6YXA9_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <bits>116.3</bits>
+      <expectation>5.8e-29</expectation>
+      <identity>36.4</identity>
+      <positives>58.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="174">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFL--VWYGSHSEFATLISVLLFLM</querySeq>
+      <pattern>+ ++  YL+GSI ++ +V R + G+DIRQ G GN G  NT R +GT  GI V  ID +KG +A+ + Y +   N+  + L+    V+GHNW ++  F+GGKG+    G +L+L P+  +     I  ++  + +ALTR ++L + I    +P L  +W  SHS  A   SV+L L+</pattern>
+      <matchSeq start="8" end="177">LGIIVAYLVGSISTSTIVVRLVAGKDIRQHGSGNAGATNTLRMLGTAWGIIVLIIDGIKGMVALWIVYGMTGGNSVALALSSIAVVLGHNWPIFFGFRGGKGIATTIGVLLWLAPIMTI-----IAGVICIVVIALTRYVSLGSLILSVLIPILLAIWAPSHSA-ALWASVVLALL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0A2P7EEU1" ac="UniRef90_A0A2P7EEU1" length="212" description="Glycerol-3-phosphate acyltransferase n=5 Tax=Synechococcus TaxID=1129 RepID=A0A2P7EEU1_9SYNE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>290</score>
+      <bits>116.3</bits>
+      <expectation>7e-29</expectation>
+      <identity>40.8</identity>
+      <positives>58.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="162">YLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQ-WVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSE</querySeq>
+      <pattern>YLLGSIPS YL  R L G DIR+ G G+ G  N  R VG    + V  +D+ KG+ AV V+  L   +A  W++  G +A+ GH W +WL  KGGK +    G +L LLP  GL   LGI  L+    L+ +R ++L++ +A  +LP L+W   +S+</pattern>
+      <matchSeq start="13" end="164">YLLGSIPSGYLAGRWLAGIDIREHGSGSTGATNVLRHVGKTPALIVFLVDVFKGSAAVLVAKQLXGGDAHGWLVAAGLLALAGHIWPIWLKGKGGKAVATGLGMLLGLLPAVGL-ASLGIFLLV----LSFSRIVSLSSVVAALALPALIWIAGYSQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_A0A3M8D348" ac="UniRef90_A0A3M8D348" length="203" description="Glycerol-3-phosphate acyltransferase n=2 Tax=Brevibacillus fluminis TaxID=511487 RepID=A0A3M8D348_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>7.8e-29</expectation>
+      <identity>33.3</identity>
+      <positives>57.9</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLL</querySeq>
+      <pattern>++++  YL+GSI  +YL+ +++ G DIR  G GN G  NT R +G G GI V  +D +KG  A+ +++++   +       G  A++GHNW ++  F+GGKG+    G  L L P+  L     I A++  I +A+TR ++L + + +  LP L+W+ +      L+S+L+</pattern>
+      <matchSeq start="5" end="170">IAVIISYLIGSISFSYLIAKQIAGIDIRSHGSGNAGATNTLRVLGKGPGILVLVLDALKGLAAMGIAHWITGGDPVSYAFAGIFAIVGHNWPIFFGFRGGKGIATTLGVALGLSPLAFL-----IAAVITVIVIAITRYVSLGSLVFVTLLPVLLWFLTDHPIYPLVSLLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_UPI000D3CB1EB" ac="UniRef90_UPI000D3CB1EB" length="205" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=5 Tax=Halanaerobium saccharolyticum TaxID=43595 RepID=UPI000D3CB1EB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>8.2e-29</expectation>
+      <identity>37.4</identity>
+      <positives>58.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="174">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVIL-TGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWY----GSHSEFATLISVLLFLM</querySeq>
+      <pattern>+++L  YL+GSIPS +L+T+ ++ +D+R+ G GN+G  N  R +G  AG+ VA  D++KG L V V   +L  +    IL     A+ GH+WS++L F GGKG+   FG +L L P+  L     I A++  + +  TR ++L + I   SLP  +++    G H  FA L+S  LF+M</pattern>
+      <matchSeq start="5" end="176">IAILLSYLIGSIPSGFLLTKYVMKKDVREYGSGNIGATNVARVMGIKAGVLVAVFDILKGYLGVMVGQMILGSSLSTAILFVAVAAIAGHDWSIFLGFSGGKGVATTFGVILRLYPLAFL-----IYAVIWILLVFTTRYVSLGSIIGSMSLPLTLYFSSFEGKHVFFAALLS--LFVM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_UPI00311CDDF4" ac="UniRef90_UPI00311CDDF4" length="195" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=Fretibacterium fastidiosum TaxID=651822 RepID=UPI00311CDDF4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>288</score>
+      <bits>115.5</bits>
+      <expectation>8.9e-29</expectation>
+      <identity>35.6</identity>
+      <positives>56.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="175">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVW-YGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>+L  YL+GS+P+ YLV R   G DIR +G G++G  N  R +G G  + V  +D+ KG LA+ ++ +  T + + V L+ F AV+GHN+ +WL F+GGKG+   +G M F+ P       L +   + +  ++ TR ++LA+ ++L  LP   W  G+  +F  L   L  L I</pattern>
+      <matchSeq start="5" end="177">MLISYLIGSLPTGYLVVRLTRGIDIRTVGSGSIGATNVRRALGQGWAVFVTIVDMSKGALALLLAAHAGTTSHELVALSAFAAVVGHNYPIWLKFRGGKGVATTYGTMFFVWPYNSFAIVL-MCGAIWYGVMSCTRYVSLASMLSLLMLPVFFWMLGAPWQFQLLALALALLSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_UPI002543C819" ac="UniRef90_UPI002543C819" length="200" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=2 Tax=Paenibacillus TaxID=44249 RepID=UPI002543C819">
+    <alignments total="1">
+     <alignment number="1">
+      <score>288</score>
+      <bits>115.5</bits>
+      <expectation>1e-28</expectation>
+      <identity>36.0</identity>
+      <positives>54.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAM--LFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFL</querySeq>
+      <pattern>+ +L GYLLGSI  ++L  + L G DIR  G GN G  NT R +G G  I+V  +D +KG  AV +   L   +A   +L+G   ++GHNW V+  F+GGKG+    G M  L  LP         +  ++  I + +TR ++L + +    LP L+W+  H  +   +S+LLFL</pattern>
+      <matchSeq start="6" end="173">LPVLVGYLLGSISFSFLAGKLLKGIDIRNHGSGNAGATNTLRVLGKGPAIAVLLLDALKGVAAVWIGSRLSGGDALITVLSGVSVIVGHNWPVFFGFRGGKGIATTIGVMATLSFLPAL-------LAGIVAIISIVITRYVSLGSLLFTALLPVLIWFMGHDVYVFGLSLLLFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_UPI00155B7B89" ac="UniRef90_UPI00155B7B89" length="195" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=Thermanaeromonas sp. C210 TaxID=2731925 RepID=UPI00155B7B89">
+    <alignments total="1">
+     <alignment number="1">
+      <score>287</score>
+      <bits>115.2</bits>
+      <expectation>1.3e-28</expectation>
+      <identity>42.2</identity>
+      <positives>59.7</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="155">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWV-ILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLV</querySeq>
+      <pattern>LL  YLLGS+P+AY+V R L G DIR+ G GN+G  N FR +GTG G++V  +D++KGT+ V +   +      W+ +L G  A+ GHNWSV+L F GG+G+  A G  L L P       L    LL  + L  TR ++L++ +A  S P L+</pattern>
+      <matchSeq start="7" end="152">LLVSYLLGSVPTAYVVARYLKGFDIRRRGSGNIGATNAFRTMGTGPGLAVLAVDVLKGTIPVLLGRAV---GGDWLAVLAGLAAMAGHNWSVFLSFHGGRGVATAAGVFLGLAPA-----ALFWAFLLWLLVLLATRYVSLSSVVAAASAPVLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_UPI002AD2FAAC" ac="UniRef90_UPI002AD2FAAC" length="209" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=2 Tax=unclassified Synechococcus TaxID=2626047 RepID=UPI002AD2FAAC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>288</score>
+      <bits>115.5</bits>
+      <expectation>1.3e-28</expectation>
+      <identity>36.1</identity>
+      <positives>54.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="175">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLL------TQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIP-LALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>LL GYLLGSIPS YL  R + G DIR +G G+ G  N  R++G    + V  +D++KGT AV ++  LL       Q+  WV+  G  A+ GH W VWL ++GGK +    G +L      GL   +G+    +F+  +AL R ++L++ IA   LP L+W          I+++  L++</pattern>
+      <matchSeq start="12" end="185">LLAGYLLGSIPSGYLAGRWIKGVDIRSLGSGSTGATNVLRQIGKAPALVVFLVDVLKGTAAVRLAMALLQPLGSTPQSEWWVVAAGLAALAGHIWPVWLGWRGGKAVATGLGMLL------GLAWPVGLACFGIFMAVIALFRIVSLSSVIAALCLPVLMWGAGGGAADLSIAIVAMLLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_A0A1I5TDY1" ac="UniRef90_A0A1I5TDY1" length="198" description="Glycerol-3-phosphate acyltransferase n=2 Tax=Caldicoprobacter TaxID=715222 RepID=A0A1I5TDY1_9FIRM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>287</score>
+      <bits>115.2</bits>
+      <expectation>1.4e-28</expectation>
+      <identity>35.6</identity>
+      <positives>57.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="187">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLP-FLVWYGSHSEFATLISVLLFLMIGGKFVLDNRKSL</querySeq>
+      <pattern>+++L GYLLGSIP ++L  + +   DIRQ G GN G  N  R +G  AGI+V   D++KG LA  +  ++  +      L GF A++GHNW V+L+F+GGKG+  +FG +L L P+  +     IL ++  I +A+TR ++L +  A    P  LV +G   +      VL  +++GG  +  +R ++</pattern>
+      <matchSeq start="5" end="180">IAVLAGYLLGSIPPSFLAGKIVRNIDIRQYGSGNAGATNVLRVLGVKAGIAVFLADILKGVLAALIGRWMGGETG--AALAGFAAIVGHNWPVFLNFRGGKGIATSFGVLLVLFPLISI-----ILFVIGVIIIAVTRYVSLGSITAAILFPILLVMFGYDWKM-----VLFGVLVGGLALYRHRSNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_A0A1U9K9B1" ac="UniRef90_A0A1U9K9B1" length="200" description="Glycerol-3-phosphate acyltransferase n=2 Tax=Novibacillus thermophilus TaxID=1471761 RepID=A0A1U9K9B1_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>287</score>
+      <bits>115.2</bits>
+      <expectation>1.4e-28</expectation>
+      <identity>36.9</identity>
+      <positives>54.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="174">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFG--AMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLM</querySeq>
+      <pattern>++L+  YLLGSI S+YLV ++  G DIRQ G GN G  NT R VG  A + V  +D+ K  +AV +  Y LTQ+   +   GF A++GHNW V+  F+GGKG+    G  AM+   P         I+ ++  + + +TR ++L + I    LPF VW  +       IS  + L+</pattern>
+      <matchSeq start="5" end="172">VALIGAYLLGSISSSYLVAKKWAGIDIRQHGSGNAGATNTLRVVGKWAALLVFVLDIAKAMIAVGLG-YALTQDETVMFACGFAAIVGHNWPVFFQFRGGKGVAATIGVAAMMVFFPAL-------IVGVIAVLSIVVTRYVSLGSIIFAVGLPFSVWLANEPPSFVWISAGIALL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0A1H8JI38" ac="UniRef90_A0A1H8JI38" length="216" description="Glycerol-3-phosphate acyltransferase n=6 Tax=Chitinophaga TaxID=79328 RepID=A0A1H8JI38_9BACT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>288</score>
+      <bits>115.5</bits>
+      <expectation>1.5e-28</expectation>
+      <identity>34.9</identity>
+      <positives>56.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="187">LLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYL--------LTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWY--GSHSEFATLISVLLFLMIGGKFVLDNRKSL</querySeq>
+      <pattern>L+  YL+GS+P+A  V++ + G DIR+ G GN G  NTFR +G  AG  V  +D++KG +AV +SY L        LTQ   + I  G  AV+GH + +W  FKGGKG+   FG +L + P+  +   +G+  +++F     TR ++L++ IA  + P L+ Y       F  + ++ + LM+    VL ++K++</pattern>
+      <matchSeq start="7" end="192">LICAYLIGSVPTAVWVSKGVFGMDIREYGSGNAGATNTFRVLGPKAGTFVMVVDMLKGVIAVRLSYLLPYYQNSDHLTQLVNFQIGLGLAAVVGHIFPIWAGFKGGKGIATLFGLVLAIQPIVAV-CCVGVFLMILF----FTRYVSLSSIIASIAFPILILYIFNEPEVFYRIFAIAVALMV----VLTHQKNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_UPI0021DF4D37" ac="UniRef90_UPI0021DF4D37" length="203" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=Granulicella aggregans TaxID=474949 RepID=UPI0021DF4D37">
+    <alignments total="1">
+     <alignment number="1">
+      <score>287</score>
+      <bits>115.2</bits>
+      <expectation>1.5e-28</expectation>
+      <identity>37.9</identity>
+      <positives>53.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="193">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLLTQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIPLALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFL--MIGGKFVLDNRKSLRDPANR</querySeq>
+      <pattern>+SL T YLLGSIP  YL+ R     DIR+ G GN+G  N  R    G GI+   +DL K   AV ++  +   N    + +G  AV+GH + VWL F+GGKG+  A G  L L      P  L IL++ + + + LTR ++LA+ IA  +LPF  +Y        +IS  LFL  +I GK   + R+ L    +R</pattern>
+      <matchSeq start="6" end="195">ISLTTAYLLGSIPFGYLLVRTFKHEDIRKTGSGNIGATNVLRSGAKGLGIATLLLDLGKACGAVWIAMLIAPGNYDLAVASGVAAVVGHVFPVWLGFRGGKGVASALGVFLALT----WPSALCILSVFIVV-VMLTRFVSLASIIAAATLPFFAYYFVPERSPIVISGFLFLSVLIIGKHHQNIRRLLAGTESR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_UPI0020CF2B1A" ac="UniRef90_UPI0020CF2B1A" length="231" description="glycerol-3-phosphate 1-O-acyltransferase PlsY n=1 Tax=Cyanobium sp. Morenito 9A2 TaxID=2823718 RepID=UPI0020CF2B1A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>289</score>
+      <bits>115.9</bits>
+      <expectation>1.6e-28</expectation>
+      <identity>37.4</identity>
+      <positives>56.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="175">MSLLTGYLLGSIPSAYLVTRRLIGRDIRQMGGGNVGGLNTFREVGTGAGISVAFIDLVKGTLAVSVSYYLL------TQNAQWVILTGFMAVIGHNWSVWLDFKGGKGLGPAFGAMLFLLPVYGLPQQLGILALLVFIP-LALTRNIALATGIALFSLPFLVWYGSHSEFATLISVLLFLMI</querySeq>
+      <pattern>++LL GYLLGSIPS +L  R L G D+R +G G+ G  N  REVG G  + V  +D+ KG  AV ++  LL        +  WV+ +G  A+ GH+WS+WL +KGGK +    G +L      GL   +G+  L +F+  L+L+R ++L++ +A  SLP L+     +E + L    L L +</pattern>
+      <matchSeq start="9" end="184">LTLLAGYLLGSIPSGWLAGRWLKGLDLRLVGSGSTGATNVLREVGKGPALVVFLVDVFKGAAAVLLAKTLLPPLDLGAASDWWVVASGLAALAGHSWSIWLGWKGGKAVATGLGMLL------GLVSLVGLACLGIFLTVLSLSRIVSLSSVVAALSLPLLMLGSFTAEGSGLRPAYLLLAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

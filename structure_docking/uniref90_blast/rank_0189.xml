@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-131950-0635-18801622-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-131950-0635-18801622-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="184"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T13:19:50+01:00" end="2026-08-06T13:23:32+01:00" search="P0Y0M0DT0H0M222.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_C0H559" ac="UniRef90_C0H559" length="184" description="Alpha-tubulin N-acetyltransferase n=2 Tax=Plasmodium (Laverania) TaxID=418107 RepID=ATAT_PLAF7">
+    <alignments total="1">
+     <alignment number="1">
+      <score>985</score>
+      <bits>384.0</bits>
+      <expectation>4e-135</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="184">METFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKVYERISN</querySeq>
+      <pattern>METFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKVYERISN</pattern>
+      <matchSeq start="1" end="184">METFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKVYERISN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_A0ABY1UM59" ac="UniRef90_A0ABY1UM59" length="190" description="Alpha-tubulin N-acetyltransferase n=2 Tax=Plasmodium gaboni TaxID=647221 RepID=A0ABY1UM59_9APIC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>889</score>
+      <bits>347.1</bits>
+      <expectation>2.2e-120</expectation>
+      <identity>91.2</identity>
+      <positives>95.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="181">METFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKVYER</querySeq>
+      <pattern>ME FNH DIKK+TREDLLYL+N N VLF MFQKQVDEIACLSSKEQKL G+LTSINNIINENYTIYCL+H DGLIGFIKIG+KNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDIS FCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVS +K+YER</pattern>
+      <matchSeq start="1" end="181">MEIFNHNDIKKFTREDLLYLKNNNYVLFNMFQKQVDEIACLSSKEQKLYGSLTSINNIINENYTIYCLLHKDGLIGFIKIGQKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISPFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSRRKLYER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0A1J1GWH9" ac="UniRef90_A0A1J1GWH9" length="204" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Plasmodium gallinaceum TaxID=5849 RepID=A0A1J1GWH9_PLAGA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>627</score>
+      <bits>246.1</bits>
+      <expectation>2.8e-80</expectation>
+      <identity>69.2</identity>
+      <positives>82.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="170">ETFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>E    +DIKKYT+ DLLYLR+ ++  F+  +K+++EI  LSS++QKL GTLTSINNII++NYT+YCLI  + LIG +KIG KNLYLYDK  LHY +CTCVLDFYIL  FQK GLGIK+FNFMLKDN+I+   LCYDNPS KLQNFLKKYFSPC LIKQPN+FVIFS YF</pattern>
+      <matchSeq start="11" end="179">EKLKKLDIKKYTKNDLLYLRDYSSFSFQKLEKEIEEIGRLSSEDQKLYGTLTSINNIIDQNYTLYCLIIENNLIGILKIGSKNLYLYDKKNLHYQRCTCVLDFYILNNFQKMGLGIKLFNFMLKDNNIAPSKLCYDNPSKKLQNFLKKYFSPCNLIKQPNNFVIFSEYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A1J1H7A4" ac="UniRef90_A0A1J1H7A4" length="203" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Plasmodium relictum TaxID=85471 RepID=A0A1J1H7A4_PLARL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>626</score>
+      <bits>245.7</bits>
+      <expectation>3.9e-80</expectation>
+      <identity>67.5</identity>
+      <positives>83.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="170">ETFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>E    +DI+KYT+ +LLYLR+ N++ F+  +K+++EI  LSS++Q+L  +LTSI+NIIN+NYT+YCLI  + +IG +KIGEKNLYLYDK  LHY KCTCVLDFYIL+ FQKRGLGIK+FNFMLKDN+I+   LCYDNPS KL NFLKKYFSPC LIKQPN+FVIFS YF</pattern>
+      <matchSeq start="10" end="178">EELKKLDIRKYTKNELLYLRDYNSISFQKLEKEIEEIGLLSSRDQRLYSSLTSISNIINQNYTLYCLIMENNIIGILKIGEKNLYLYDKKNLHYQKCTCVLDFYILKNFQKRGLGIKLFNFMLKDNNITPSKLCYDNPSNKLLNFLKKYFSPCDLIKQPNNFVIFSEYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0A1Y1JHS4" ac="UniRef90_A0A1Y1JHS4" length="190" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Plasmodium gonderi TaxID=77519 RepID=A0A1Y1JHS4_PLAGO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>591</score>
+      <bits>232.3</bits>
+      <expectation>5.3e-75</expectation>
+      <identity>64.1</identity>
+      <positives>80.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="171">ETFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFK</querySeq>
+      <pattern>E  ++++IKKYTR+DLLYLRN +  LF   ++ V+EI  LSS EQ L   LTS+ NI++ N+T+YCLIH D LIG +KIG K LYLY++ +LH  +C C+LDFYIL+KFQ RGLGI++FNFML+DN I+   LCYDNPSYKLQNFLKKYFSPC LIKQPN+FVIFS YF+</pattern>
+      <matchSeq start="11" end="180">EKMDNVEIKKYTRDDLLYLRNYHLSLFWKLERDVEEIGLLSSAEQHLSDILTSLTNIVDNNHTLYCLIHQDELIGILKIGVKKLYLYNQNELHCEQCACLLDFYILKKFQNRGLGIELFNFMLRDNSITPSSLCYDNPSYKLQNFLKKYFSPCNLIKQPNNFVIFSGYFR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_A0A1D3JMY8" ac="UniRef90_A0A1D3JMY8" length="171" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Plasmodium malariae TaxID=5858 RepID=A0A1D3JMY8_PLAMA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>545</score>
+      <bits>214.5</bits>
+      <expectation>2.8e-68</expectation>
+      <identity>63.4</identity>
+      <positives>77.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="170">IDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>+ IKK+TR+DLL+ R  N+V          +I+ LSSK+QKL G LTS+ NI++ +Y +YCL H + LIG +KIG KNLYLYDK KLHY  CTCVLDFYI++ FQKRGLGI++FN ML+DN IS   LCYDNPSYK+QNFLKKYF+PC LIKQPN+FV F NYF</pattern>
+      <matchSeq start="16" end="170">LQIKKFTRDDLLFRRLENDV---------HKISHLSSKDQKLYGVLTSLVNIMDNDYKLYCLTHQNNLIGILKIGTKNLYLYDKKKLHYRSCTCVLDFYIMKDFQKRGLGIELFNCMLRDNTISPSNLCYDNPSYKMQNFLKKYFAPCNLIKQPNNFVTFDNYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_B3L2R5" ac="UniRef90_B3L2R5" length="184" description="Alpha-tubulin N-acetyltransferase n=4 Tax=Plasmodium TaxID=5820 RepID=ATAT_PLAKH">
+    <alignments total="1">
+     <alignment number="1">
+      <score>509</score>
+      <bits>200.7</bits>
+      <expectation>1.3e-62</expectation>
+      <identity>56.8</identity>
+      <positives>74.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="170">ETFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>E  ++++IKK++R DLL LR+++   F+  Q+ VDE+  LSS EQ L G LT+++NI +++ T+YCL     LIG +KIG K LYLY+   LH   C C+LDFYI   F+KRGLG+++FNFMLKD  IS   LCYDNPSYKLQ+FLKK+FSPC LIKQPN+FVIF+ YF</pattern>
+      <matchSeq start="6" end="174">EKMHNLEIKKHSRVDLLLLRSSDFHSFRKLQRDVDEMGLLSSTEQHLSGILTTLDNITDQDNTLYCLTQEGELIGMLKIGTKRLYLYNGKDLHCRSCACLLDFYIQRNFRKRGLGLELFNFMLKDKAISPSRLCYDNPSYKLQSFLKKHFSPCALIKQPNNFVIFAEYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0A1D3U7W9" ac="UniRef90_A0A1D3U7W9" length="178" description="Alpha-tubulin N-acetyltransferase, putative n=1 Tax=Plasmodium ovale TaxID=36330 RepID=A0A1D3U7W9_PLAOA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>498</score>
+      <bits>196.4</bits>
+      <expectation>4.8e-61</expectation>
+      <identity>58.2</identity>
+      <positives>74.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="172">DIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+IKK+ R DLL+L+N +   +++ ++ V+EI  LSSK+QKL G+LTS+NNI+ +NYT+Y             IG K+LYLY++ KLHY +CTCVLDFYI  +FQKRGLGIK+FNFML DN  S   LCYDNPS KLQNFLKK+F+P  LIKQPN+FVIF  YF +</pattern>
+      <matchSeq start="17" end="168">EIKKFDRRDLLHLKNYDFPSYRLLEEDVEEIGLLSSKDQKLTGSLTSLNNIMEKNYTLY-------------IGTKDLYLYEEKKLHYRRCTCVLDFYIRARFQKRGLGIKLFNFMLTDNATSPSSLCYDNPSTKLQNFLKKHFAPRCLIKQPNNFVIFGEYFND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_A5K6W4" ac="UniRef90_A5K6W4" length="184" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Plasmodium vivax (strain Salvador I) TaxID=126793 RepID=ATAT_PLAVS">
+    <alignments total="1">
+     <alignment number="1">
+      <score>491</score>
+      <bits>193.7</bits>
+      <expectation>6.8e-60</expectation>
+      <identity>53.8</identity>
+      <positives>74.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="170">ETFNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>E   +++IKK++R DLL LR+++   F+  Q++VD++  LSS EQ L G LT++ N+ +++ T+YCL     LIG +KIG K LYLY+   LH   C C+LDFYI   F+KRGLG+++FNFML+D  IS   LCYDNPS+KL++FLKK+FSPC LIKQPN+FVIF+ YF</pattern>
+      <matchSeq start="6" end="174">EKMKNLEIKKHSRGDLLLLRSSDLHSFRKLQREVDKMGLLSSAEQHLSGILTTLENVADQDNTLYCLTQRGELIGMLKIGTKRLYLYNGKDLHCRSCACLLDFYIRRDFRKRGLGLELFNFMLRDKAISPSRLCYDNPSHKLRSFLKKHFSPCALIKQPNNFVIFAEYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_W7A4S2" ac="UniRef90_W7A4S2" length="199" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Plasmodium inui San Antonio 1 TaxID=1237626 RepID=W7A4S2_9APIC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>412</score>
+      <bits>163.3</bits>
+      <expectation>1e-47</expectation>
+      <identity>45.3</identity>
+      <positives>64.2</positives>
+      <gaps>15</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="170">NHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGI------------------------KIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>++++IK+++R DLL LR+++   F+  Q+ VD++  LSS EQ L G LT+++++ +++ T+YCL     LIG +KIG K LYLY+   LH G       FYI   F+KRGLG+                        ++FNFML+D  IS   LCYDNPSYKL++FLKK+FSPCVLI+QPN+FVIF+ YF</pattern>
+      <matchSeq start="2" end="186">HNLEIKRHSRGDLLLLRSSDLHSFRKIQRDVDDMGLLSSAEQHLSGILTTLDSVTDQDNTLYCLTQQGELIGMLKIGTKRLYLYNGKDLHCGSY-----FYIQRDFRKRGLGLVSTTPTHVERKEMNVEKGVNVLIAELFNFMLRDKAISPSRLCYDNPSYKLRSFLKKHFSPCVLIRQPNNFVIFAEYF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A1A8YQ07" ac="UniRef90_A0A1A8YQ07" length="354" description="N-acetyltransferase domain-containing protein n=1 Tax=Plasmodium ovale wallikeri TaxID=864142 RepID=A0A1A8YQ07_PLAOA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>351</score>
+      <bits>139.8</bits>
+      <expectation>7.6e-37</expectation>
+      <identity>45.7</identity>
+      <positives>61.6</positives>
+      <gaps>18</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="171">DIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFK</querySeq>
+      <pattern>+IKK+ R DLL+L+N + + +++ +  V+EI  LSSK+QKL G+LTS+NNI+ +NYT+Y             IG K+LYLY++ K+HY  CTC                 K+FNFML DN  S   LCYDNPS KLQNFLKK+F+P  LIKQ    +   N+ K</pattern>
+      <matchSeq start="21" end="154">EIKKFDRRDLLHLKNYDFLSYRILEGDVEEIGLLSSKDQKLAGSLTSLNNILEKNYTLY-------------IGTKDLYLYEEKKMHYRSCTC-----------------KLFNFMLMDNATSPESLCYDNPSTKLQNFLKKHFAPRCLIKQLRRQIADDNFGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0ACB9YE01" ac="UniRef90_A0ACB9YE01" length="159" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Plasmodium brasilianum TaxID=5824 RepID=A0ACB9YE01_PLABR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>292</score>
+      <bits>117.1</bits>
+      <expectation>4.1e-30</expectation>
+      <identity>54.0</identity>
+      <positives>69.0</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="119">IDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDGLIGFIKIGEKNLYLYDKIKLHYGKCTCVLDFYILEKFQKRGLGIKI</querySeq>
+      <pattern>+ IKK+TR+DLL LRN++   F+  +  V +I+ LSSK+QKL G LTS+ NI++ +Y +Y             IG KNLYLYDK KLHY  CTCVLDFYI++ FQKRGLGI I</pattern>
+      <matchSeq start="16" end="115">LQIKKFTRDDLLCLRNSDISSFRRLENDVHKISHLSSKDQKLYGVLTSLVNIMDNDYKLY-------------IGTKNLYLYDKKKLHYRSCTCVLDFYIMKDFQKRGLGIVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_UPI0025A67192" ac="UniRef90_UPI0025A67192" length="290" description="alpha-tubulin N-acetyltransferase 1 isoform X3 n=1 Tax=Corythoichthys intestinalis TaxID=161448 RepID=UPI0025A67192">
+    <alignments total="1">
+     <alignment number="1">
+      <score>275</score>
+      <bits>110.5</bits>
+      <expectation>3.3e-26</expectation>
+      <identity>35.8</identity>
+      <positives>61.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>+DE+   S+K QKL   +T+   + ++N+ +Y +   +       ++GF+K+G K L+L D+  LH   +  CVLDF+I+E  Q++G G+++FNFML+D ++    + YD PS KL +FL K++S    + Q NHFV+F  +F N  + ++</pattern>
+      <matchSeq start="42" end="192">IDELGRASAKAQKLTTPVTTAAKLQSQNHQLYLMKDGESNGGCGTIVGFLKVGFKKLFLLDRQGLHIEDEPLCVLDFFIVENLQRKGYGLELFNFMLQDKNLEPVLMAYDRPSPKLLSFLAKHYSLTQSVPQVNHFVVFDGFFLNKPVAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_UPI0025A655CF" ac="UniRef90_UPI0025A655CF" length="298" description="alpha-tubulin N-acetyltransferase 1 isoform X2 n=1 Tax=Corythoichthys intestinalis TaxID=161448 RepID=UPI0025A655CF">
+    <alignments total="1">
+     <alignment number="1">
+      <score>274</score>
+      <bits>110.2</bits>
+      <expectation>5.4e-26</expectation>
+      <identity>37.2</identity>
+      <positives>62.1</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K QKL   +T+   + ++N+ +Y +   +       ++GF+K+G K L+L D+  LH   +  CVLDF+I+E  Q++G G+++FNFML+D ++    + YD PS KL +FL K++S    + Q NHFV+F  +F N</pattern>
+      <matchSeq start="42" end="186">IDELGRASAKAQKLTTPVTTAAKLQSQNHQLYLMKDGESNGGCGTIVGFLKVGFKKLFLLDRQGLHIEDEPLCVLDFFIVENLQRKGYGLELFNFMLQDKNLEPVLMAYDRPSPKLLSFLAKHYSLTQSVPQVNHFVVFDGFFLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_UPI0025A4CE0A" ac="UniRef90_UPI0025A4CE0A" length="434" description="alpha-tubulin N-acetyltransferase 1 isoform X1 n=1 Tax=Corythoichthys intestinalis TaxID=161448 RepID=UPI0025A4CE0A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>275</score>
+      <bits>110.5</bits>
+      <expectation>2.7e-25</expectation>
+      <identity>35.8</identity>
+      <positives>61.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>+DE+   S+K QKL   +T+   + ++N+ +Y +   +       ++GF+K+G K L+L D+  LH   +  CVLDF+I+E  Q++G G+++FNFML+D ++    + YD PS KL +FL K++S    + Q NHFV+F  +F N  + ++</pattern>
+      <matchSeq start="42" end="192">IDELGRASAKAQKLTTPVTTAAKLQSQNHQLYLMKDGESNGGCGTIVGFLKVGFKKLFLLDRQGLHIEDEPLCVLDFFIVENLQRKGYGLELFNFMLQDKNLEPVLMAYDRPSPKLLSFLAKHYSLTQSVPQVNHFVVFDGFFLNKPVAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_A0A1Y1X0V8" ac="UniRef90_A0A1Y1X0V8" length="180" description="DUF738-domain-containing protein n=1 Tax=Anaeromyces robustus TaxID=1754192 RepID=A0A1Y1X0V8_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>261</score>
+      <bits>105.1</bits>
+      <expectation>3.2e-25</expectation>
+      <identity>38.5</identity>
+      <positives>55.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="169">FNHIDIKKYTREDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLI--HTDGLIGFIKIGEKNLYLYDKIKL-HYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNY</querySeq>
+      <pattern>FN + I   T +D+  L+  NN  +K  + Q+ E+   S+K Q L   +T+++ I N    I   I    D +IG+IKIG K LYLYDK    H      VLDF I  K+Q++G+G  +F FMLK  ++ A  + YD PS +L +FLK Y+     I Q N+F+IF  +</pattern>
+      <matchSeq start="10" end="178">FNELKIYSLTFQDIKLLKRNNNKKYKELEVQIKELGKESAKWQNLNYPITTLDIIENHPDQILYFICGRNDIIIGYIKIGRKKLYLYDKNSTCHELIPLSVLDFLITTKYQRKGIGHFLFEFMLKKENVIANNIAYDRPSNRLTSFLKNYYHFTKDIPQYNNFMIFETF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_UPI00406D68D2" ac="UniRef90_UPI00406D68D2" length="216" description="alpha-tubulin N-acetyltransferase-like isoform X1 n=2 Tax=Arctopsyche grandis TaxID=121162 RepID=UPI00406D68D2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>262</score>
+      <bits>105.5</bits>
+      <expectation>5.5e-25</expectation>
+      <identity>35.7</identity>
+      <positives>60.5</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="32" end="181">QKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHT-----DG-LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKVYER</querySeq>
+      <pattern>+K ++E+  LS++ Q L  ++T+ + ++  ++ IY  I       DG ++GF+K+GEK L++ D  +  +     CVLDFYI  K+Q+ G G  +F   +++ DI  + + YD PS KL NFL KY+    +++QPN +V++ +YF N S+K V  R</pattern>
+      <matchSeq start="41" end="197">KKILNELGLLSAESQGLKHSITTFDKLVESDHKIYLAIDPEENDDDGEVVGFLKLGEKRLFVTDGSEPAWPANIQCVLDFYICAKYQRHGWGRHLFEHAIENEDIEPWNMAYDRPSEKLINFLAKYYRLTDVVEQPNRYVMYRDYFINTSVKYVQGR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0A7I8W437" ac="UniRef90_A0A7I8W437" length="361" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Dimorphilus gyrociliatus TaxID=2664684 RepID=A0A7I8W437_9ANNE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>266</score>
+      <bits>107.1</bits>
+      <expectation>2.2e-24</expectation>
+      <identity>37.4</identity>
+      <positives>57.1</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="172">DLLYLRNTNNV--LFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG---LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+L +L+N  N   L    +  VD++   S+K Q L G++TS++ +   ++ IY L        +IGFIK+G K L+ YD   +       CVLDFY+ E  Q++G G K+F FML   +I A  L  D PS+K  NFL K++  C ++ Q N+FV+F  YF++</pattern>
+      <matchSeq start="21" end="183">NLSHLKNVGNFQELKNQLRSVVDKLGEASAKAQGLLGSITSLSKLSFSSHKIYLLKDPQKKNIVIGFIKVGSKKLFFYDIRGIQIENDPLCVLDFYVHESVQRKGCGKKLFEFMLSYENIQAEKLAIDKPSHKFLNFLNKHYGLCNIVPQLNNFVVFVQYFRD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_UPI000D625DB6" ac="UniRef90_UPI000D625DB6" length="437" description="alpha-tubulin N-acetyltransferase 1 n=1 Tax=Cynoglossus semilaevis TaxID=244447 RepID=UPI000D625DB6">
+    <alignments total="1">
+     <alignment number="1">
+      <score>268</score>
+      <bits>107.8</bits>
+      <expectation>2.7e-24</expectation>
+      <identity>37.1</identity>
+      <positives>60.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="170">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>+DEI   S+K Q+L  ++TS + +  + + +Y L   +       ++GF+K+G K L+L D+   H   +  CVLDFY+ EKFQ+ G G+++FNFML+  ++    + YD PS KLQ+FL K++     + Q N+FV+F  +F</pattern>
+      <matchSeq start="42" end="184">IDEIGRASAKAQQLSASITSASKLQTQRHQLYLLKDRESNGGRGVVVGFLKVGTKKLFLLDQQGAHIEAEPLCVLDFYVAEKFQRHGYGLELFNFMLQHKNLEPVQMAYDRPSPKLQSFLAKHYGLTQSVPQVNNFVVFEGFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_UPI0024072A2C" ac="UniRef90_UPI0024072A2C" length="459" description="alpha-tubulin N-acetyltransferase 1 n=1 Tax=Dunckerocampus dactyliophorus TaxID=161453 RepID=UPI0024072A2C">
+    <alignments total="1">
+     <alignment number="1">
+      <score>268</score>
+      <bits>107.8</bits>
+      <expectation>3.2e-24</expectation>
+      <identity>34.4</identity>
+      <positives>60.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>+DE+   S+K QKL   +TS N + ++ + +Y +   +       ++GF+K+G K L+L D+  +H   +  CVLDF++ +  Q+ G G+++FNFML+D ++    + YD PS KL +FL K++     + Q NHFV+F  +F N S+ ++</pattern>
+      <matchSeq start="51" end="201">IDELGRASAKAQKLTTPVTSANKLQSQLHQVYLMKDGESNGGRGVIVGFLKVGYKKLFLLDQQGVHVEAEPLCVLDFFVAQNLQRHGYGLELFNFMLQDKNLEPVLMAYDRPSPKLLSFLAKHYCLTQSVPQVNHFVVFDGFFLNKSVAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_A0A821L5Z2" ac="UniRef90_A0A821L5Z2" length="326" description="Alpha-tubulin N-acetyltransferase n=7 Tax=Pieris TaxID=7115 RepID=A0A821L5Z2_9NEOP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>261</score>
+      <bits>105.1</bits>
+      <expectation>6.8e-24</expectation>
+      <identity>39.0</identity>
+      <positives>62.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="173">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKL-HYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNV</querySeq>
+      <pattern>VD I   S+K Q L  TLTS++ + +  + +Y L   +G      +IG +KIG K+LYL+D+  + H     C+LDFY+LE++QK G G K+F++ML D   +   +  DNPS K +NFL+K+++   L++Q N F + + +F+NV</pattern>
+      <matchSeq start="44" end="189">VDWIGEKSTKAQGLSKTLTSMDKLRSSEHILYLLKDAEGNNGAGQVIGILKIGVKSLYLHDESLICHKVSPLCILDFYVLEEYQKLGFGKKLFDYMLDDQCTTVDKIAIDNPSLKFENFLQKHYNIGKLLRQHNCFAVSTKFFENV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A0AAV6RWY4" ac="UniRef90_A0AAV6RWY4" length="313" description="Alpha-tubulin N-acetyltransferase 1 n=2 Tax=Solea TaxID=28828 RepID=A0AAV6RWY4_SOLSE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>260</score>
+      <bits>104.8</bits>
+      <expectation>7.7e-24</expectation>
+      <identity>32.0</identity>
+      <positives>56.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="172">NHIDIKKYTRED-LLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG-----LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>NHI   + T  D  ++  +  + +       +DE+   S+  QKL   +TS + +  +   IY L   +      ++GF+K+G K L+L+DK+ ++   +  C LDFY++EKFQ++G G+++F+ MLK N +    L YD P+++ Q+FL K++     I Q N+F++F  +F N</pattern>
+      <matchSeq start="8" end="182">NHIFTDRITIVDQTVFSESPESDILAHIGTVIDELGRASATAQKLRAPVTSASKLQYQKNQIYILNERENNGHGVILGFLKVGYKKLFLFDKMGVYIEAEPLCALDFYVVEKFQRQGYGLELFDSMLKHNKLDPVLLAYDRPTHQFQSFLTKHYGLTRRIPQANNFMVFEGFFPN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_UPI000B92C0C4" ac="UniRef90_UPI000B92C0C4" length="262" description="alpha-tubulin N-acetyltransferase 1 n=1 Tax=Pieris rapae TaxID=64459 RepID=UPI000B92C0C4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>8.3e-24</expectation>
+      <identity>40.3</identity>
+      <positives>61.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="173">SSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDK-IKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNV</querySeq>
+      <pattern>S+  Q L  TLTS + + N  + +Y L    G      +IG +KIG K+LYLYD+ +K       C+LDFYILE++QK+G G K+F+++L D   +   +  DNPS K +NFL K+++   L++QPN F + + +F+NV</pattern>
+      <matchSeq start="51" end="189">STLAQGLSKTLTSTDKLRNSEHILYLLKDAAGNNGQGQVIGILKIGVKSLYLYDESMKCLKVNPLCILDFYILEEYQKKGCGKKLFDYVLADQCTTVDHIAIDNPSLKFENFLHKHYNIGKLVRQPNCFAVSARFFENV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_UPI001E6658AA" ac="UniRef90_UPI001E6658AA" length="236" description="alpha-tubulin N-acetyltransferase-like n=1 Tax=Papilio machaon TaxID=76193 RepID=UPI001E6658AA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <bits>102.8</bits>
+      <expectation>9.5e-24</expectation>
+      <identity>34.5</identity>
+      <positives>57.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="19" end="175">YLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNI-INENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKI-KLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSI</querySeq>
+      <pattern>Y    + V F   +K ++ I  +S+K Q L   +T+   + ++ N+ +Y L    G      +IG +KIGEK L+LYD+  KL      CVLDF++L+  Q+RG G K+F +ML+D  +  + L  D PS K+  FLKK+++   ++KQ N+F +   +F++ +I</pattern>
+      <matchSeq start="31" end="195">YFDKESRVKFFSLEKIINSIGQMSTKAQGLKRIITTFEKLRLSPNHKLYILKDEKGNDGAGEVIGILKIGEKKLFLYDRQGKLMISTPMCVLDFFVLDNRQRRGFGKKLFEYMLQDQKLKPYELAIDGPSPKMLEFLKKHYNFIKVLKQSNNFAVCEKFFESANI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_UPI0000E3F86B" ac="UniRef90_UPI0000E3F86B" length="295" description="alpha-tubulin N-acetyltransferase 1 isoform X4 n=6 Tax=Cottioidei TaxID=8100 RepID=UPI0000E3F86B">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>1.1e-23</expectation>
+      <identity>35.9</identity>
+      <positives>60.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K Q+L  ++TS + + ++ + +Y L   +        +GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++FNFML+  ++    + YD PS K Q+FL K++S    + Q N+FV+F  +F N</pattern>
+      <matchSeq start="42" end="186">IDELGRASAKAQQLPASITSASKLQSQRHQLYLLKDGESNGGRGVAVGFLKVGYKKLFLLDRQGVHIEAEPLCVLDFYIAEGVQRHGYGLELFNFMLQHKNLEPVVMAYDRPSPKFQSFLAKHYSLTPSVPQANNFVVFEGFFLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A0A8C5DEF8" ac="UniRef90_A0A8C5DEF8" length="282" description="Alpha-tubulin N-acetyltransferase 1 n=1 Tax=Gouania willdenowi TaxID=441366 RepID=A0A8C5DEF8_GOUWI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>1.2e-23</expectation>
+      <identity>36.0</identity>
+      <positives>59.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG-----LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>V+E+   S+K QKL   +TS++ + ++ + ++ L   +      ++GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++F FML+   +    + YD PS KL +FL K+FS    + Q N+FV+F ++F N S   V</pattern>
+      <matchSeq start="37" end="186">VNELGKASAKAQKLTAPITSMSKLQSQKHQLFLLKDDEDRRRPVILGFLKVGYKKLFLLDRHGVHVEAEPLCVLDFYIAESLQRSGYGLELFEFMLQHKHMDPVLMAYDRPSPKLLSFLSKHFSLTQTVPQVNNFVVFEDFFLNKSAAPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_UPI0021F548DD" ac="UniRef90_UPI0021F548DD" length="397" description="alpha-tubulin N-acetyltransferase-like n=2 Tax=Leptopilina TaxID=63429 RepID=UPI0021F548DD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>262</score>
+      <bits>105.5</bits>
+      <expectation>1.3e-23</expectation>
+      <identity>35.6</identity>
+      <positives>54.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="170">EDLLYLRNTNNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHYG-KCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>ED    R   N   +   + +DEI   SSK Q L   +TS   + N ++T+Y L+  +G      +IG +K+G KNL+++D+  +HY  K  C+LDFYI E  Q+ GLG  ++  ML + ++    L  D PS K  +F+ KY+    +I Q N FV+F  +F</pattern>
+      <matchSeq start="25" end="187">EDFRGDRREFNECQRQLTRILDEIGEASSKAQGLSKPITSATKLRNSDHTVYILVDNEGNNGLGSIIGLLKVGSKNLFMFDETGIHYQLKPRCILDFYIHESRQRMGLGNLLYQHMLTEENLRPVKLAIDRPSEKFLSFMNKYYGLTDIIPQNNKFVVFEGFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_UPI001CF67BF0" ac="UniRef90_UPI001CF67BF0" length="238" description="alpha-tubulin N-acetyltransferase 1 isoform X13 n=2 Tax=Thunnus TaxID=8234 RepID=UPI001CF67BF0">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>1.4e-23</expectation>
+      <identity>34.4</identity>
+      <positives>58.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="179">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG--------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKVY</querySeq>
+      <pattern>+DE+   S+K Q+L  ++TS + + ++ + +Y L   DG        ++GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++F+FML+  ++    + YD PS K  +FL K +     + Q N+FV+F  +F N S+ K +</pattern>
+      <matchSeq start="42" end="193">IDELGRASAKAQQLTASITSASKLQSQRHEVYLL--KDGERNGGRGVVVGFLKVGYKKLFLLDRQGVHIEAEPLCVLDFYIAENLQRHGYGLELFDFMLQHKNLKPVLMAYDRPSPKFLSFLAKQYCLTQSVPQVNNFVVFEGFFLNRSVPKSF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0ACF6EF78" ac="UniRef90_A0ACF6EF78" length="225" description="Uncharacterized protein n=1 Tax=Cyamophila willieti TaxID=2604842 RepID=A0ACF6EF78_9HEMI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>253</score>
+      <bits>102.1</bits>
+      <expectation>1.5e-23</expectation>
+      <identity>36.6</identity>
+      <positives>55.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="177">NVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG-------LIGFIKIGEKNLYLYDKIKLHYGKCT-CVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKK</querySeq>
+      <pattern>N+ ++   + +D+I   S+  Q L   +TS   ++N  +T+Y L   +G       +IG +K+G KNLYL++K      K T CVLDFYI E  Q+ G G  +F  ML+D  + A  L  D PS K   FL K++    ++ Q NHFV+FS +F ++S K+</pattern>
+      <matchSeq start="35" end="195">NLCYQHMSEIIDKIGLASAIAQGLQKPITSTLKLLNSEHTLYLLTDRNGGSKKHGVVIGLLKMGWKNLYLFNKAGECIQKNTLCVLDFYIHESMQRMGCGNVLFEHMLQDMKVLAHQLAIDKPSQKFLCFLNKHYGLSQIVPQNNHFVVFSKFFDDISKKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_UPI002DB55E14" ac="UniRef90_UPI002DB55E14" length="257" description="alpha-tubulin N-acetyltransferase 1 isoform X3 n=1 Tax=Platichthys flesus TaxID=8260 RepID=UPI002DB55E14">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <bits>102.8</bits>
+      <expectation>1.5e-23</expectation>
+      <identity>34.4</identity>
+      <positives>59.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>+DE+   S+K Q+L   +TS + + ++ + +Y L   +       ++GF+K+G K L+L D+  +H   +  CVLDFYI E FQ+ G G ++F+FML+ N++    + YD PS KL +FL K +     + Q N+FV+F  +F N ++ ++</pattern>
+      <matchSeq start="43" end="193">IDELGRASAKAQQLTTPITSASKLQSQKHQMYLLKDVESNRGHGMVVGFLKVGYKKLFLLDRQGVHIEAEPMCVLDFYIAENFQRHGYGSELFDFMLQHNNLEPVLMAYDRPSPKLMSFLAKKYWLTQSVPQVNNFVVFEGFFLNKTVAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_G3N5P6" ac="UniRef90_G3N5P6" length="316" description="Alpha-tubulin N-acetyltransferase 1 n=2 Tax=Gasterosteus aculeatus aculeatus TaxID=481459 RepID=G3N5P6_GASAC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>1.6e-23</expectation>
+      <identity>35.9</identity>
+      <positives>60.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K Q+L  ++TS + + ++ + +Y L   +        +GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++FNFML+  ++    + YD PS K Q+FL K++S    + Q N+FV+F  +F N</pattern>
+      <matchSeq start="42" end="186">IDELGRASAKAQQLPASITSASKLQSQRHQLYLLKDGESNGGRGVAVGFLKVGYKKLFLLDRQGVHIEAEPLCVLDFYIAEGVQRHGYGLELFNFMLQHKNLEPVVMAYDRPSPKFQSFLAKHYSLTPSVPQANNFVVFEGFFLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_UPI003F722B2A" ac="UniRef90_UPI003F722B2A" length="285" description="alpha-tubulin N-acetyltransferase 1 n=1 Tax=Nelusetta ayraudi TaxID=303726 RepID=UPI003F722B2A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>256</score>
+      <bits>103.2</bits>
+      <expectation>1.8e-23</expectation>
+      <identity>34.7</identity>
+      <positives>58.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="177">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKK</querySeq>
+      <pattern>+DE+   S+K Q+L   +TS + + ++ + +Y L   +       ++GFIKIG K L+L D +  H   +  CVLDFYI E  Q+ G G+++F+FML+   +    + YD PS K  +FL K++     + Q N+FV+F ++F N S+ +</pattern>
+      <matchSeq start="42" end="191">IDELGKASAKAQQLTAPITSASKLQSQRHELYLLKDAERNGGQGVIVGFIKIGYKKLFLLDSVGEHVEAEPLCVLDFYIAENLQRHGYGLELFDFMLQHRTLDPVLMAYDRPSEKFLSFLAKHYDLTQSVPQVNNFVVFKSFFLNKSVSQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_G3N5P2" ac="UniRef90_G3N5P2" length="334" description="Alpha-tubulin N-acetyltransferase 1 n=1 Tax=Gasterosteus aculeatus aculeatus TaxID=481459 RepID=G3N5P2_GASAC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>2.1e-23</expectation>
+      <identity>35.9</identity>
+      <positives>60.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K Q+L  ++TS + + ++ + +Y L   +        +GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++FNFML+  ++    + YD PS K Q+FL K++S    + Q N+FV+F  +F N</pattern>
+      <matchSeq start="42" end="186">IDELGRASAKAQQLPASITSASKLQSQRHQLYLLKDGESNGGRGVAVGFLKVGYKKLFLLDRQGVHIEAEPLCVLDFYIAEGVQRHGYGLELFNFMLQHKNLEPVVMAYDRPSPKFQSFLAKHYSLTPSVPQANNFVVFEGFFLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_UPI0031F7D699" ac="UniRef90_UPI0031F7D699" length="198" description="alpha-tubulin N-acetyltransferase-like n=2 Tax=Planococcus citri TaxID=170843 RepID=UPI0031F7D699">
+    <alignments total="1">
+     <alignment number="1">
+      <score>250</score>
+      <bits>100.9</bits>
+      <expectation>2.2e-23</expectation>
+      <identity>34.5</identity>
+      <positives>60.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHYGK-CTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+D++   S + Q L   +TS     N +  IY +++ +       +IGF+K+G KNL+++D   ++  K C C LDFYI E  Q++G G ++F+FMLKDN ++   +  D PS KL  FL+K++    ++ QPN+F+++  +F +</pattern>
+      <matchSeq start="52" end="196">LDKMGEASGRAQNLRTPVTSALKFANSDQIIYLMVNLNANNCDGNVIGFLKMGWKNLFIFDLAGMYIQKRCFCCLDFYIHESKQRQGYGKQLFDFMLKDNSVTVNLIPIDRPSEKLLKFLQKHYHLSTIVPQPNNFIVYEQFFND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_A0A6G0Z7K3" ac="UniRef90_A0A6G0Z7K3" length="282" description="Alpha-tubulin N-acetyltransferase n=2 Tax=Aphis TaxID=464929 RepID=A0A6G0Z7K3_APHCR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <bits>102.8</bits>
+      <expectation>2.4e-23</expectation>
+      <identity>33.3</identity>
+      <positives>54.8</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="177">HIDIKKYTREDLLYLRNT--------NNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTD-----GLIGFIKIGEKNLYLYDK-IKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKK</querySeq>
+      <pattern>+ +I      ++L + NT        N+ L  + +  +DE+   S+  Q+L   +TS + ++N ++ IY +   +      ++GFIK+G K L+LYDK   L   +  C+LDFYI E+ Q++G GI++   ML+D  + A  L  D P+ KL  F+ K+F    L+ Q N+FVIF  +F N S +K</pattern>
+      <matchSeq start="4" end="189">NFNIGNVVTNEVLKINNTLTVQGHEENDDLKNIMKLIIDEMGKASAVSQELKFPITSSDRLVNSDHEIYMMTEHNKPEHFAVVGFIKMGWKKLFLYDKQASLSEARVYCLLDFYIHERRQRKGYGIRLMQCMLQDVGLEAKHLAIDKPTKKLLQFMWKHFQLSKLVNQGNNFVIFEEFFHNTSEEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0A3B3BPB5" ac="UniRef90_A0A3B3BPB5" length="302" description="Alpha-tubulin N-acetyltransferase 1 n=1 Tax=Oryzias melastigma TaxID=30732 RepID=A0A3B3BPB5_ORYME">
+    <alignments total="1">
+     <alignment number="1">
+      <score>256</score>
+      <bits>103.2</bits>
+      <expectation>2.5e-23</expectation>
+      <identity>35.9</identity>
+      <positives>60.7</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K Q+L   +TS + +  + + +Y L   +       ++GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++FNFML+  ++    + YD PS KL +FL+K++S    + Q N+FV+F ++F N</pattern>
+      <matchSeq start="42" end="186">IDELGKASAKAQQLTAAVTSASKLQTQRHQLYLLKDGESSGGRGAVMGFLKVGHKKLFLLDRQGVHVEAEPLCVLDFYIAENLQRHGYGLELFNFMLQHKNVEPGRMAYDRPSPKLLSFLEKHYSLTQNVPQVNNFVVFEDFFFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_UPI003713AEB3" ac="UniRef90_UPI003713AEB3" length="501" description="alpha-tubulin N-acetyltransferase 1-like isoform X1 n=6 Tax=Argopecten irradians TaxID=31199 RepID=UPI003713AEB3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>262</score>
+      <bits>105.5</bits>
+      <expectation>2.9e-23</expectation>
+      <identity>32.2</identity>
+      <positives>55.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="172">DIKKYTREDLLYLRNTNNVLFKMFQKQ----VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG-------LIGFIKIGEKNLYLYDKIK-LHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>DI K  R  + + +N +   +   + Q    +D++   SS+ Q L GT+T    +   ++T+YC+  ++        ++G +KIG K L++YD+   +H  +  CVLDFY+ E  Q+ G G K+F++ML+D ++    +  D PS+K   FLKK+++    I Q N+FV+F  +F N</pattern>
+      <matchSeq start="14" end="190">DISKLDRNVVPFRKNADGFTYTELRSQLFTVIDKMGEASSRAQGLHGTITGGRKLQLSDHTLYCMKDSNSNNNGPGAVVGILKIGRKKLFVYDRNGGVHELEPICVLDFYVHESRQRMGCGRKLFDYMLRDTNVKPHHMAIDKPSFKFSEFLKKHYNLKAEIPQVNNFVVFEGFFNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_UPI002AD4E7A5" ac="UniRef90_UPI002AD4E7A5" length="322" description="alpha-tubulin N-acetyltransferase 1 isoform X2 n=3 Tax=Cololabis saira TaxID=129043 RepID=UPI002AD4E7A5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>256</score>
+      <bits>103.2</bits>
+      <expectation>3.4e-23</expectation>
+      <identity>33.1</identity>
+      <positives>58.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>+DE+   S+K Q+L   +TS + +  + + +Y L   +G      ++GF+K+G K L+L D+  +H   +  C+LDFYI E  Q+ G G+++F+FMLK  ++    + YD PS K  +FL K++     + Q N+FV+F  +F N ++ ++</pattern>
+      <matchSeq start="42" end="192">IDELGRASAKAQQLSAPITSASKLQTQRHQLYLLKDAEGCRGRGIIVGFLKVGCKKLFLLDRHGVHVEAEPLCILDFYISENLQRHGYGLELFDFMLKHKNVEPVAMAYDRPSPKFLSFLAKHYCLMENVPQVNNFVVFEGFFLNRAVAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_UPI00188629A2" ac="UniRef90_UPI00188629A2" length="349" description="alpha-tubulin N-acetyltransferase 1 isoform X3 n=1 Tax=Syngnathus acus TaxID=161584 RepID=UPI00188629A2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>3.6e-23</expectation>
+      <identity>35.1</identity>
+      <positives>58.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>+DE+   S+K QKL   +TS   + ++++ +Y +   +       ++GF+K+G K L L D+  LH   +  CVLDF+I E  Q+ G G+++F+FML+  +I    + YD PS KL +FL K++     + Q N+FV+F  +F N S+ K+</pattern>
+      <matchSeq start="42" end="192">IDELGRASAKAQKLTTPVTSATKLQSQHHELYLMKDGESNGECGAIVGFLKVGYKKLILLDRRGLHTEAEPLCVLDFFIAENLQRHGYGLELFHFMLQHKNIDPVLMAYDRPSPKLLSFLAKHYCLTQSVPQVNNFVVFEGFFNNKSVAKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_A0AAQ4RYU8" ac="UniRef90_A0AAQ4RYU8" length="380" description="Alpha-tubulin N-acetyltransferase 1 n=2 Tax=Gasterosteus aculeatus aculeatus TaxID=481459 RepID=A0AAQ4RYU8_GASAC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>3.9e-23</expectation>
+      <identity>35.9</identity>
+      <positives>60.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K Q+L  ++TS + + ++ + +Y L   +        +GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++FNFML+  ++    + YD PS K Q+FL K++S    + Q N+FV+F  +F N</pattern>
+      <matchSeq start="42" end="186">IDELGRASAKAQQLPASITSASKLQSQRHQLYLLKDGESNGGRGVAVGFLKVGYKKLFLLDRQGVHIEAEPLCVLDFYIAEGVQRHGYGLELFNFMLQHKNLEPVVMAYDRPSPKFQSFLAKHYSLTPSVPQANNFVVFEGFFLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_A0A9W2Y486" ac="UniRef90_A0A9W2Y486" length="301" description="Alpha-tubulin N-acetyltransferase 1 n=1 Tax=Betta splendens TaxID=158456 RepID=A0A9W2Y486_BETSP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>4.7e-23</expectation>
+      <identity>36.1</identity>
+      <positives>59.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG--------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K Q+L  ++TS + + ++ + +Y L   DG        L+GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++F+FML+  ++    + YD PS K Q+FL K++     + Q N+FV+F  +F N</pattern>
+      <matchSeq start="42" end="186">IDELGKASAKAQQLPASITSASKMQSQKHQLYLL--KDGERNGGRGVLVGFLKVGYKKLFLLDQQGVHIEAEPLCVLDFYIAESLQRHGYGLELFDFMLQHKNLEPVMMAYDRPSPKFQSFLSKHYCLTQSVPQVNNFVVFEGFFLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_A0A8C5DCX2" ac="UniRef90_A0A8C5DCX2" length="371" description="Alpha-tubulin N-acetyltransferase 1 n=3 Tax=Gouania willdenowi TaxID=441366 RepID=A0A8C5DCX2_GOUWI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>257</score>
+      <bits>103.6</bits>
+      <expectation>4.9e-23</expectation>
+      <identity>36.0</identity>
+      <positives>59.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG-----LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>V+E+   S+K QKL   +TS++ + ++ + ++ L   +      ++GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++F FML+   +    + YD PS KL +FL K+FS    + Q N+FV+F ++F N S   V</pattern>
+      <matchSeq start="37" end="186">VNELGKASAKAQKLTAPITSMSKLQSQKHQLFLLKDDEDRRRPVILGFLKVGYKKLFLLDRHGVHVEAEPLCVLDFYIAESLQRSGYGLELFEFMLQHKHMDPVLMAYDRPSPKLLSFLSKHFSLTQTVPQVNNFVVFEDFFLNKSAAPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_UPI002AD3A807" ac="UniRef90_UPI002AD3A807" length="303" description="alpha-tubulin N-acetyltransferase 1 isoform X3 n=1 Tax=Cololabis saira TaxID=129043 RepID=UPI002AD3A807">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>4.9e-23</expectation>
+      <identity>34.5</identity>
+      <positives>58.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K Q+L   +TS + +  + + +Y L   +G      ++GF+K+G K L+L D+  +H   +  C+LDFYI E  Q+ G G+++F+FMLK  ++    + YD PS K  +FL K++     + Q N+FV+F  +F N</pattern>
+      <matchSeq start="42" end="186">IDELGRASAKAQQLSAPITSASKLQTQRHQLYLLKDAEGCRGRGIIVGFLKVGCKKLFLLDRHGVHVEAEPLCILDFYISENLQRHGYGLELFDFMLKHKNVEPVAMAYDRPSPKFLSFLAKHYCLMENVPQVNNFVVFEGFFLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_UPI00148D7752" ac="UniRef90_UPI00148D7752" length="250" description="alpha-tubulin N-acetyltransferase 1 isoform X3 n=1 Tax=Hippoglossus hippoglossus TaxID=8267 RepID=UPI00148D7752">
+    <alignments total="1">
+     <alignment number="1">
+      <score>251</score>
+      <bits>101.3</bits>
+      <expectation>5e-23</expectation>
+      <identity>33.8</identity>
+      <positives>58.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>+DE+   S+K Q+L   +TS + + ++ + +Y L   +       ++GF+K+G K L+L D+  +H   +  CVLDFYI E FQ+ G G ++F+FML+ N++    + YD PS K  +FL K +     + Q N+FV+F  +F N ++ ++</pattern>
+      <matchSeq start="43" end="193">IDELGRASAKAQQLTTPITSASKLQSQKHQLYLLKDVESNRGHGMVVGFLKVGYKKLFLLDRQGVHIEAEPLCVLDFYIAENFQRHGYGSELFDFMLQHNNLEPVLMAYDRPSAKFLSFLAKNYWLTQSVPQVNNFVVFEGFFLNKTVAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0AAW1R9Z7" ac="UniRef90_A0AAW1R9Z7" length="285" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Apatococcus lobatus TaxID=904363 RepID=A0AAW1R9Z7_9CHLO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>253</score>
+      <bits>102.1</bits>
+      <expectation>5e-23</expectation>
+      <identity>39.0</identity>
+      <positives>58.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="170">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTD---GLI-GFIKIGEKNLYLYDKIKLHYG-KCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>VD+    S+K Q L G +T    + + ++ +Y L+      GL+ G IKIG KNL++ D    +   K  CVLDFY+ E FQ++G+G+++F  +LK    +A  L YD PS KL NFL K++  C  + Q N+F+IF  Y+</pattern>
+      <matchSeq start="86" end="226">VDKFGACSAKAQGLRGPVTDFGRLCSSDHILYLLLDATPVRGLVLGGIKIGRKNLFIRDHEGTYLNIKPLCVLDFYVHESFQRQGIGLRLFEEVLKYQSTTAGALAYDRPSNKLLNFLSKHYGLCSYLPQSNNFIIFQQYW</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_A0AAQ4PY81" ac="UniRef90_A0AAQ4PY81" length="406" description="Alpha-tubulin N-acetyltransferase 1 n=3 Tax=Gasterosteus aculeatus TaxID=69293 RepID=A0AAQ4PY81_GASAC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>5.2e-23</expectation>
+      <identity>35.9</identity>
+      <positives>60.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="172">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>+DE+   S+K Q+L  ++TS + + ++ + +Y L   +        +GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++FNFML+  ++    + YD PS K Q+FL K++S    + Q N+FV+F  +F N</pattern>
+      <matchSeq start="42" end="186">IDELGRASAKAQQLPASITSASKLQSQRHQLYLLKDGESNGGRGVAVGFLKVGYKKLFLLDRQGVHIEAEPLCVLDFYIAEGVQRHGYGLELFNFMLQHKNLEPVVMAYDRPSPKFQSFLAKHYSLTPSVPQANNFVVFEGFFLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_A0ACH3J7Q9" ac="UniRef90_A0ACH3J7Q9" length="191" description="Uncharacterized protein n=1 Tax=Kerria lacca TaxID=473130 RepID=A0ACH3J7Q9_9HEMI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>247</score>
+      <bits>99.8</bits>
+      <expectation>5.2e-23</expectation>
+      <identity>38.2</identity>
+      <positives>61.8</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="170">SSKEQKLCGTLTSINNIINENYTIYCLIH------TDGLIGFIKIGEKNLYLYDKIKLHYGK-CTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYF</querySeq>
+      <pattern>S+K QKL   +TS     + +  IY +++         +IG++K+G KNL+++D    +  K C C LDFYI +  Q++G G K+F+FML+DN I+A  +  D PS KL  FLKK+++ C +I Q N+F+++  +F</pattern>
+      <matchSeq start="5" end="140">SAKAQKLQTPVTSGIKFSHSDQVIYIIVNFFENCNNGSVIGYLKMGWKNLFIFDMSGSYIKKRCFCCLDFYIHDSKQRQGFGKKLFDFMLRDNKITANLIPIDRPSEKLLMFLKKHYNLCTIIPQSNNFILYQQFF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0AAV4FX62" ac="UniRef90_A0AAV4FX62" length="225" description="Alpha-tubulin N-acetyltransferase n=1 Tax=Elysia marginata TaxID=1093978 RepID=A0AAV4FX62_9GAST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>249</score>
+      <bits>100.5</bits>
+      <expectation>5.8e-23</expectation>
+      <identity>37.3</identity>
+      <positives>56.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="27" end="172">LFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKL-HYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKN</querySeq>
+      <pattern>L KM  + VD++   S+K Q L G++T+   +   N+ +Y +I   G       +G +K+G K L++YD +K+ H     C+LDFY+ E  Q+ G G ++F+FML   +I    L  D PS K  +FLKK++     I Q N+FVIF N+F N</pattern>
+      <matchSeq start="38" end="190">LQKMLYEVVDKMGDASAKAQGLHGSITTGKKLELANHHLYLMIDGSGNDGKGSALGILKVGRKKLFVYDSLKVQHELDPLCILDFYVHESRQRMGCGRRLFDFMLSKENIRVEHLAIDRPSPKFLSFLKKHYGLDSTIPQVNNFVIFQNFFSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_A0A8C2WFF1" ac="UniRef90_A0A8C2WFF1" length="319" description="Alpha-tubulin N-acetyltransferase 1 n=1 Tax=Cyclopterus lumpus TaxID=8103 RepID=A0A8C2WFF1_CYCLU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>6.3e-23</expectation>
+      <identity>33.8</identity>
+      <positives>59.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="178">VDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTDG------LIGFIKIGEKNLYLYDKIKLHY-GKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSIKKV</querySeq>
+      <pattern>+DE+   S+K Q+L  ++TS + + ++ + +Y L   +       ++GF+K+G K L+L D+  +H   +  CVLDFYI E  Q+ G G+++F+FML+  ++    + YD PS K  +FL K+F     + Q N+FV+F  +F N S+ ++</pattern>
+      <matchSeq start="42" end="192">IDELGRASAKAQQLPASITSASKLQSQRHQLYLLKDGESNGGRGVVVGFLKVGYKKLFLLDRQGVHIEAEPLCVLDFYIAENLQRHGYGLELFDFMLQQKNLEPVLMAYDRPSPKFLSFLAKHFFLTQSVPQANNFVVFEGFFLNRSVAQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0A8R2JTV3" ac="UniRef90_A0A8R2JTV3" length="284" description="Alpha-tubulin N-acetyltransferase n=5 Tax=Macrosiphini TaxID=33386 RepID=A0A8R2JTV3_ACYPI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>252</score>
+      <bits>101.7</bits>
+      <expectation>6.9e-23</expectation>
+      <identity>33.2</identity>
+      <positives>53.8</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="175">HIDIKKYTREDLLYLRNT--------NNVLFKMFQKQVDEIACLSSKEQKLCGTLTSINNIINENYTIYCLIHTD-----GLIGFIKIGEKNLYLYDK-IKLHYGKCTCVLDFYILEKFQKRGLGIKIFNFMLKDNDISAFCLCYDNPSYKLQNFLKKYFSPCVLIKQPNHFVIFSNYFKNVSI</querySeq>
+      <pattern>+ +I K   +++L + NT        N+ L  + +  +DE+   S+  Q+    +TS N ++N ++ IY +          ++GF+K+G K L+LYDK       +  C+LDFYI E  Q++G GI++   ML+D  + A  L  D P+ KL  F+ K+F    L+ Q N+FVIF  +F N SI</pattern>
+      <matchSeq start="4" end="187">NFNIGKVATDEVLKINNTLTVEGHEENDDLKNIMRLIIDEMGKASAVSQEFKVPITSANRLVNSDHVIYMMTEHKKPGHFAVVGFLKMGWKKLFLYDKQASRSEARVYCLLDFYIHESKQRKGYGIRLIQCMLQDIGLEAKHLAIDKPTDKLLQFMWKHFQLSKLVNQENNFVIFEEFFHNSSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

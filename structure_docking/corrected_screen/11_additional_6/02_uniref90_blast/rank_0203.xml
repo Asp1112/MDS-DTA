@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260807-051959-0042-30296886-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260807-051959-0042-30296886-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="271"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-07T05:19:59+01:00" end="2026-08-07T05:23:30+01:00" search="P0Y0M0DT0H0M211.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q54CJ4" ac="UniRef90_Q54CJ4" length="271" description="Fatty acid elongase A n=1 Tax=Dictyostelium discoideum TaxID=44689 RepID=ELOA_DICDI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1486</score>
+      <bits>577.0</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="271">MEHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</querySeq>
+      <pattern>MEHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</pattern>
+      <matchSeq start="1" end="271">MEHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_A0AAN7Z2R5" ac="UniRef90_A0AAN7Z2R5" length="272" description="Elongation of fatty acids protein n=1 Tax=Dictyostelium firmibasis TaxID=79012 RepID=A0AAN7Z2R5_9MYCE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1214</score>
+      <bits>472.2</bits>
+      <expectation>4e-167</expectation>
+      <identity>80.1</identity>
+      <positives>90.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="271">MEHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAY-KKKSSIKKKTN</querySeq>
+      <pattern>MEHI++IN ++F ++PIG I+RFRWKNEVTPFS ILFPIVCSFGYLA+IYGLQ FMKNKKEIKLHGFA+FHNLFLCLLSL MFLGIV+P+AK SFP GLY+ +CKPIDSGLV FSYYIFYLSKVYEFIDTIIQVLRKK+L+FLHV+HHFITLWLVW NL  DTG QWVDISANCFVHI+MYFYYFQTERGINPWWKK+IT  QIIQF+VDM +H+ WH++D QGN+N NYCSGT   S FSDFVILSFLGLFIQFFVK+Y  K+S+IKKK N</pattern>
+      <matchSeq start="1" end="272">MEHINEINLKDFFENPIGLIERFRWKNEVTPFSTILFPIVCSFGYLAVIYGLQSFMKNKKEIKLHGFALFHNLFLCLLSLFMFLGIVVPIAKSSFPQGLYHSLCKPIDSGLVNFSYYIFYLSKVYEFIDTIIQVLRKKNLIFLHVYHHFITLWLVWVNLTMDTGVQWVDISANCFVHIIMYFYYFQTERGINPWWKKYITVVQIIQFVVDMGTHILWHYFDVQGNYNPNYCSGTLTASFFSDFVILSFLGLFIQFFVKSYNNKRSAIKKKAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0A8J4PZZ4" ac="UniRef90_A0A8J4PZZ4" length="266" description="Elongation of fatty acids protein n=1 Tax=Polysphondylium violaceum TaxID=133409 RepID=A0A8J4PZZ4_9MYCE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>883</score>
+      <bits>344.7</bits>
+      <expectation>7.9e-117</expectation>
+      <identity>64.2</identity>
+      <positives>77.0</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="271">PIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKK-SSIKKKTN</querySeq>
+      <pattern>P  TID FRW   VTPFS+I  P+  +FGYLA++Y L  FMKN+KEIKL G A+ HNLFL  LSL+MFLGI IP+AK   P G Y + CKP+D+G + F YYIFYLSK+YEF+DTIIQVLRKK L+FLHV+HHFITLWLVW NL  DTG QW DIS NCFVHIVMY+YYFQTE G +PWWKK+ITT QIIQF++DM+ H++WH+YD         C GT+ TS  S+ VILSFLGLFI F++++YK+K  S K KTN</pattern>
+      <matchSeq start="14" end="266">PKSTIDNFRWVPGVTPFSSIYTPLFATFGYLAIVYLLTNFMKNRKEIKLKGLAIVHNLFLSALSLVMFLGIFIPIAKDLIPQGYYPLCCKPLDNGSIYFIYYIFYLSKIYEFLDTIIQVLRKKKLMFLHVYHHFITLWLVWINLNDDTGVQWADISFNCFVHIVMYYYYFQTELGNSPWWKKYITTIQIIQFVLDMTFHISWHYYDWV----KIPCVGTFRTSMLSNIVILSFLGLFIHFYMQSYKRKPQSSKPKTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A151ZHR7" ac="UniRef90_A0A151ZHR7" length="283" description="Elongation of fatty acids protein n=1 Tax=Tieghemostelium lacteum TaxID=361077 RepID=A0A151ZHR7_TIELA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>863</score>
+      <bits>337.0</bits>
+      <expectation>1.6e-113</expectation>
+      <identity>57.7</identity>
+      <positives>72.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="271">EHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSI----KKKTN</querySeq>
+      <pattern>+ I ++N ++  KD    IDRFRW++  T FS +  P++ S  Y  +I+ LQ  MKN+KEIKLH F +FHNLFL  LSL+MF+G+ IP  KY F    YN+ C P++ G V FS Y+FYLSKVYEFIDT++ VLRKK L+FLHV+HHFIT WLVW NL   TG QW DISANCFVHI+MY+YY+QTE G NPWWKK+ITT QIIQF+ DM+ H+ WH+Y+  G      CSG   ++ FSDFVILSFLGLFI F++K+Y +KSS     K KTN</pattern>
+      <matchSeq start="19" end="283">DSILNLNMEQIYKD----IDRFRWRSGETLFSTVHVPVLASVAYFTVIFTLQALMKNRKEIKLHSFTVFHNLFLSSLSLVMFIGVFIPQVKYLFNTSFYNLCCVPLEDGFVSFSLYVFYLSKVYEFIDTVLLVLRKKKLIFLHVYHHFITFWLVWVNLNAKTGVQWADISANCFVHIIMYYYYYQTEMGNNPWWKKYITTVQIIQFVFDMTFHVFWHYYNLNGG-----CSGNIPSTLFSDFVILSFLGLFIDFYLKSYSRKSSSAPTNKPKTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_F4PGG5" ac="UniRef90_F4PGG5" length="268" description="Elongation of fatty acids protein n=1 Tax=Cavenderia fasciculata TaxID=261658 RepID=F4PGG5_CACFS">
+    <alignments total="1">
+     <alignment number="1">
+      <score>826</score>
+      <bits>322.8</bits>
+      <expectation>3.9e-108</expectation>
+      <identity>56.7</identity>
+      <positives>72.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="271">EFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</querySeq>
+      <pattern>E   DPI T++ F+W+N+VTPFS +  P+  S  YL +I+GLQ FMKN+KEIKLHG  + HNLFL  LSL+M LG++IP+       GL +++CKP  +G  +F YYIFYLSKVYEF+DT+  VLRKK L+FLHV+HHFIT WL WANL+ +T  QW DIS NCFVHIVMY+YY++TE G +PWWKK+IT  QI+QF+ D++ H  W +Y  Q N     C+G+   +AFSDFVILSFLGLF+QF+ K+Y  K    K TN</pattern>
+      <matchSeq start="8" end="263">ELISDPINTVNNFKWENDVTPFSTVWAPLFASIAYLVVIFGLQEFMKNRKEIKLHGICVVHNLFLSGLSLVMLLGMMIPLLTNEATQGLEHLVCKPTTAGRTEFWYYIFYLSKVYEFLDTVFLVLRKKKLIFLHVYHHFITYWLCWANLRENTSVQWADISINCFVHIVMYYYYYKTEMGQSPWWKKYITRIQIVQFVYDLTFHSLWRYYHAQSNGG---CNGSLRGTAFSDFVILSFLGLFLQFYFKSYSAKKD--KTTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_UPI000644F19F" ac="UniRef90_UPI000644F19F" length="277" description="hypothetical protein n=1 Tax=Acytostelium subglobosum LB1 TaxID=1410327 RepID=UPI000644F19F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>808</score>
+      <bits>315.8</bits>
+      <expectation>2.9e-105</expectation>
+      <identity>58.2</identity>
+      <positives>74.1</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="265">DPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSS</querySeq>
+      <pattern>D + TI  FRW+  VTPFS+I  PI+ S GYL +IY LQ++MKN+KE+KLH   + HNLFL LLSL+M LG+++P+     P GLY+++C P   G V F YYIFYLSKVYEF+DTI  VLRKK L+FLHV+HHFIT WL W NL  +TG QW DISANCFVHI+MY+YY+Q E+G NPWWKK+IT  QIIQF+ DMS H  WH+Y       S  C+G+   + FSDFVI+SFL LF+QF+ ++YK+ ++</pattern>
+      <matchSeq start="15" end="261">DVVQTIQNFRWEAGVTPFSSIWSPIIGSLGYLVVIYLLQVYMKNRKEVKLHYICLAHNLFLSLLSLVMLLGVMVPLFITEIPQGLYHMVCAPKTDGTVSFFYYIFYLSKVYEFLDTIFLVLRKKKLIFLHVYHHFITFWLCWVNLVENTGVQWGDISANCFVHIIMYYYYYQCEQGNNPWWKKYITRVQIIQFVFDMSLHGMWHYY----VGTSTPCNGSLRGTLFSDFVIMSFLMLFLQFYFRSYKRPAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_A0A058Z459" ac="UniRef90_A0A058Z459" length="302" description="Elongation of fatty acids protein n=1 Tax=Fonticula alba TaxID=691883 RepID=A0A058Z459_FONAL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>193.0</bits>
+      <expectation>1.1e-56</expectation>
+      <identity>41.5</identity>
+      <positives>61.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="37" end="271">FPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLY-NIICKPI----DSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKS-SIKKKTN</querySeq>
+      <pattern>+PI+ + GY+ ++  L + MKN++ + L    + HN  L   SL+M +G++  +A Y+  +  + ++ C P      S  + F YYIFYLSK+YEFIDT I +LRKK+++FLH +HH ITLWL W  L  D G QW   ++N  VH+ MY++Y      I   WKKH+TT QI+QF++ +SS+L+W ++          CSG W +  F  FV++SFL LFIQF+ ++YKKK  +   KTN</pattern>
+      <matchSeq start="65" end="302">YPIIATLGYVLMLIFLPMVMKNRQPLNLKWVMVIHNWILSTGSLVMTIGMLKEVALYALKNPQWVHLTCDPNYTHRASTNLFFWYYIFYLSKMYEFIDTAILILRKKNVIFLHWYHHIITLWLCWVCLDVDLGIQWFSSASNTLVHVFMYYFYASQTLNIQVSWKKHLTTLQIVQFVLGISSNLSWAYFTI---IKGITCSGNWFSFWFGKFVLVSFLVLFIQFYRRSYKKKPVAAATKTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0A2P6MZH0" ac="UniRef90_A0A2P6MZH0" length="282" description="Elongation of fatty acids protein n=2 Tax=Planoprotostelium fungivorum TaxID=1890364 RepID=A0A2P6MZH0_9EUKA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>477</score>
+      <bits>188.3</bits>
+      <expectation>3.8e-55</expectation>
+      <identity>38.5</identity>
+      <positives>57.4</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="270">FQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNII---CKP---IDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLA--WHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKT</querySeq>
+      <pattern>F E+S D       F+++ ++ P +N  + +     YL +I+ L+ FM N++  KL G    HN  LC+ SL M LGI+  + +          +   C P   +  G   + +YIF+LSK YE +DT+I VL+K+ ++FLHV+HH ITL L +  L+++TG QW+ ISAN  VH+ MYFYY  +  G +PWWK++IT  QIIQF+ D+ ++    W  +     H+   C+G   +  F   V+LSFL LFI FFVK Y KK   ++ T</pattern>
+      <matchSeq start="22" end="278">FSEYSDD-------FKYRGDL-PLANWTYCLSAVGTYLVIIFALKKFMANREAFKLSGVVPLHNSILCIWSLAMLLGIIYELVRIYLSETQDKTLLYFCDPEHRLAKGKQVWWFYIFFLSKSYELLDTVIIVLKKRPIIFLHVYHHCITLILTFVMLEHETGVQWMAISANAAVHVPMYFYYALSSVGYSPWWKRYITQFQIIQFVCDLIANFIGFWFIF-----HDGRKCAGHPFSWIFGQSVLLSFLLLFINFFVKTYSKKPEARRPT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_F0ZYE8" ac="UniRef90_F0ZYE8" length="266" description="Elongation of fatty acids protein n=1 Tax=Dictyostelium purpureum TaxID=5786 RepID=F0ZYE8_DICPU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>472</score>
+      <bits>186.4</bits>
+      <expectation>1.3e-54</expectation>
+      <identity>38.7</identity>
+      <positives>58.5</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="269">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID---SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANL--KYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNY-CSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>FRW++ VTP S+ ++P   S  Y+ +I+GLQ FMKN+KE+ L  F++ HN+ L +LS  M +GI+    K +   G +++IC+  D    G V F  YIFYLSK YE +DT+I  L+K++++FLH++HH   + + W  L  ++  G  W     N F+H++MY+YY QT  G + W+K HIT  QIIQF+        W F        S Y C G  + +  S+ V   F+ LF +F+V +Y+K  +  KK</pattern>
+      <matchSeq start="18" end="263">FRWESGVTPLSSYVYPFSTSIAYVLIIFGLQRFMKNRKEMNLKAFSIIHNINLIVLSFSMMVGILYSAYKQAQEQGAFSLICEQTDQAVQGRVGFWIYIFYLSKYYELVDTVILALKKRTVIFLHLFHHMAMVPVTWQWLHEQWLVGSWWCTF-VNSFIHVIMYYYYLQTTLGNSCWFKAHITKAQIIQFLTGTGMVTYWFFI------RSTYDCKGPLSPAIISNSVNTFFIILFAKFYVDSYRKGKAASKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0A8J4PM86" ac="UniRef90_A0A8J4PM86" length="263" description="Elongation of fatty acids protein n=1 Tax=Polysphondylium violaceum TaxID=133409 RepID=A0A8J4PM86_9MYCE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>466</score>
+      <bits>184.1</bits>
+      <expectation>9.7e-54</expectation>
+      <identity>35.6</identity>
+      <positives>56.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="270">MEHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID---SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHH--FITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKT</querySeq>
+      <pattern>ME+I+ I+ +         I+ FRW + VTPFSN  +P   +  YL +I+ L+  MKN+K   L GF++ HN+ L +LS+ M  G++    + +   G ++++C+  D    G + F  Y+FYLSK YE IDT+I  L+K+ ++FLH++HH   + +   W N ++  G  W  +  N F+H +MY+YY QT  G   W+KK+IT  QI+QF+   +    W +       +S  C G+ A +  S  V  SF+ LF +F++ +YK  SS  KK+</pattern>
+      <matchSeq start="1" end="260">MEYINQIDQE---------IENFRWVSNVTPFSNWKWPAATAVVYLVVIFTLKTLMKNRKAFSLKGFSIVHNINLIILSVAMMTGVLHAAYEQAKEQGAFSLVCEKTDQAVQGRIGFWIYVFYLSKFYELIDTVILALKKRPIIFLHIFHHMAMVPITWQWLNDQWLVGSWWC-VFVNSFIHTIMYYYYLQTSLGNPCWFKKYITKAQIVQFLTGTAMVSYWFYI-----RDSEGCKGSLAPAIVSYVVNTSFILLFAKFYLNSYKSSSSADKKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A9W8LSI4" ac="UniRef90_A0A9W8LSI4" length="315" description="Elongation of fatty acids protein (Fragment) n=2 Tax=Coemansia TaxID=4863 RepID=A0A9W8LSI4_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>460</score>
+      <bits>181.8</bits>
+      <expectation>3.3e-52</expectation>
+      <identity>39.2</identity>
+      <positives>57.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="269">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC-KPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>+RW N V+P S      +    YL  I+G+Q  MK++K  KL   A  HNL L LLSL + +  +  +A      GL+  IC +   +  ++  Y++ YL+K  EF+DT+  VL+KK L FLHV+HH +T+ L +  L   T   WV I+ N FVH+VMYFYYF    GI+PWWKK++TT QI+QFI+D+          +   +Y + G      C+GT   + F   ++ S+L LFIQFF + Y KK + K++</pattern>
+      <matchSeq start="56" end="310">WRWVNGVSPLSTWREVGIGMALYLGTIFGIQFLMKSRKPFKLTKLAQIHNLGLTLLSLGLLVLHIEELAPIISKGGLFYAICSEEAWTQRLEVLYFLNYLTKWIEFVDTVFLVLKKKPLQFLHVYHHTLTMVLCFTQLNGHTSVSWVVITLNLFVHVVMYFYYFLASCGIHPWWKKYVTTLQILQFIIDLGFVYFCTYQLIISRYYPSSGLPFCGTCAGTEEAAIFGCSLLSSYLLLFIQFFQRTYSKKQAAKRQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_Q86JM5" ac="UniRef90_Q86JM5" length="296" description="Putative fatty acid elongase DDB_G0272012 n=2 Tax=Dictyostelium TaxID=5782 RepID=Y2012_DICDI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>454</score>
+      <bits>179.5</bits>
+      <expectation>1.6e-51</expectation>
+      <identity>37.4</identity>
+      <positives>54.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="270">EHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNI-LFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPI---DSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKT</querySeq>
+      <pattern>+H+   NF++ +   +     F++K   TPFS   + P V S  YL +I+ ++  M+N+K   L   ++ HN  LC+ SL+M +GI+  + K     G    +C+ +   D G   +  YIFY+SK YE +DT+I VL+KK L+FLHV+HH I +WL W  +      Q   +  N FVH+ MY++YFQT RG   WWKK+IT  QIIQFI      +A   +    N NS+ C   +     +  +  SFL LF QFFVK+Y  K +    T</pattern>
+      <matchSeq start="18" end="286">DHLFQHNFKDSNWSELFDPVNFKFKFGTTPFSQFQILPSVISL-YLVIIFSIKFLMRNRKPFSLKYVSILHNAILCIWSLVMCVGILYEVIKRITAEGPLFTVCETVSGFDKGPAYYWSYIFYISKFYELLDTVIIVLKKKPLIFLHVYHHCIVVWLCWYFMYSGWNLQLWVVFLNTFVHVFMYYFYFQTGRGKTVWWKKYITMIQIIQFI---CLGIAGLLHSAAINLNSSPCFTHYPAFISAYLINFSFLFLFSQFFVKSYSNKPTSSSST</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_A0AAV9I920" ac="UniRef90_A0AAV9I920" length="260" description="Elongation of fatty acids protein n=1 Tax=Galdieria yellowstonensis TaxID=3028027 RepID=A0AAV9I920_9RHOD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>451</score>
+      <bits>178.3</bits>
+      <expectation>1.6e-51</expectation>
+      <identity>36.8</identity>
+      <positives>56.5</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="269">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDS---GLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHF---YDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>F W+N  +PFS I +P V    YL +I+ L  +MK++  +KL     FHN+ LCLLSL+M +G ++ +       G ++++C        G + F  Y+FY SK YE  DT+I VL+K+ L FLHV+HH + + L W  ++      W+ + AN  VH+ MY+YY  +  G   WWKK+IT  QI+QF++D+++   W F   Y ++G      CSG+     F   V  SF  LF+ F+  +Y+K+   KK+</pattern>
+      <matchSeq start="17" end="260">FEWRN--SPFSGIQYPFVAVILYLLIIWALHRYMKDRPPLKLKRVTAFHNIVLCLLSLVMCVGTIVELILRVKDLGFFSVVCDREHKAMRGRLLFWMYLFYCSKYYELFDTVIMVLKKRPLNFLHVYHHCVVMPLFWVYMQTAMVIHWILVVANSLVHVFMYYYYALSSFGKTVWWKKYITQAQIVQFVIDLTA--TWPFPFLYFSRGG-----CSGSLRAWLFGQLVGASFYKLFMDFYRNSYRKQEEKKKE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A9W8CXH3" ac="UniRef90_A0A9W8CXH3" length="299" description="Elongation of fatty acids protein n=3 Tax=Coemansia TaxID=4863 RepID=A0A9W8CXH3_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>452</score>
+      <bits>178.7</bits>
+      <expectation>3.4e-51</expectation>
+      <identity>38.7</identity>
+      <positives>57.4</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="269">RFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC-KPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>++RW N VTP S      +    YL  I+G+Q+ M++ K  KL      HNL L L+SL++ +  V  +A      GL++ +C +   +  ++  YY+ YL+K  EF DT+  VL+KK L FLHV+HH +T+ L +  L   T   WV I+ N FVH+VMYFYYF     I PWWKK++TT QI+QFI+D+          +A  +Y T   H  + C+GT   + F   ++ S+L LF+QFF + Y KK + K++</pattern>
+      <matchSeq start="37" end="291">QWRWVNGVTPLSTWREVGIGMAVYLGTIFGIQLVMRSFKPFKLTRLTQLHNLGLTLISLVLLVMYVEELAPILSKGGLFHAVCAEEAWTQRLEVLYYLNYLTKWLEFTDTVFLVLKKKPLQFLHVYHHTLTMALCFTQLNGVTSVSWVVITLNLFVHVVMYFYYFLASCKIYPWWKKYVTTLQIVQFIIDLGFVYFCTYQLIASRYYPTILPHCGD-CAGTETAAVFGCALLSSYLLLFVQFFQRTYSKKQAAKRQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_F4NSC5" ac="UniRef90_F4NSC5" length="244" description="Elongation of fatty acids protein (Fragment) n=1 Tax=Batrachochytrium dendrobatidis (strain JAM81 / FGSC 10211) TaxID=684364 RepID=F4NSC5_BATDJ">
+    <alignments total="1">
+     <alignment number="1">
+      <score>445</score>
+      <bits>176.0</bits>
+      <expectation>7.9e-51</expectation>
+      <identity>38.0</identity>
+      <positives>55.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="269">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSG---LVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>FRW    TPFS++   I    GY   I  L+I+M  +  +KL+    +HN+FLC++SL MF+         +   G+  I C     G   L+ F+ Y++YLSK  E  DTII +L+KK ++FLH +HH I + +VW+ L+YD       + AN  +H+ MY+YY+ +  G N W+KK+ITT QIIQF +     + + ++  Q N     CSG W    FS  +  SFL LFI F+  AYK    + KK</pattern>
+      <matchSeq start="1" end="244">FRWTVGQTPFSDLSVIIAAWIGYFCTIGILRIYMYGRDPMKLNTVTAYHNMFLCVISLAMFVAGAFGTYHRAMSRGIDEIFCSNDPDGMRGLLPFTLYMYYLSKFIELFDTIILILKKKPVIFLHWYHHSIVMLMVWSWLQYDVAFATQGMIANTLIHVFMYYYYYSSSLGRNVWYKKYITTGQIIQFTLSFILSIPYIYFSLQKN-----CSG-WNAFIFSMTINASFLALFINFYHSAYKPARHVDKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_D3B201" ac="UniRef90_D3B201" length="266" description="Elongation of fatty acids protein n=1 Tax=Heterostelium pallidum (strain ATCC 26659 / Pp 5 / PN500) TaxID=670386 RepID=D3B201_HETP5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>446</score>
+      <bits>176.4</bits>
+      <expectation>1.1e-50</expectation>
+      <identity>36.7</identity>
+      <positives>57.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="265">INFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC--KP-IDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHH--FITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSS</querySeq>
+      <pattern>++ Q  S    G +D F+W +E TP S+ ++P   +  YL +IYGL  FMK++K + L G ++ HN  L +LSL M LG++    + +   G ++++C  KP   +G + +  Y+FY+SK YE  DT+I  L+KK L+FLHV+HH   + +   W N ++  G  W  +  N F+H +MY+YY QT  G + W+K++ITT QIIQF+   +    W +     N     C G  A +  S  +   F+GLFI+F++K+Y  K S</pattern>
+      <matchSeq start="1" end="257">MDIQTLSSQIGGFMDNFKW-DENTPLSSRIYPAATAITYLVVIYGLNKFMKDRKPMTLKGVSIVHNFNLIVLSLTMMLGVLEAAYRQAQEQGGFSLLCENKPNAVNGRIGWWIYVFYVSKYYELFDTVILALKKKPLIFLHVFHHMAMVPVTWQWLNDQWLVGSWWC-VLVNSFIHTIMYYYYLQTTLGNDCWFKRYITTSQIIQFLTGTAIVSHWFYIRKTEN-----CQGGIAPAIVSYVINTLFIGLFIRFYIKSYSSKKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_A0ABQ8PD58" ac="UniRef90_A0ABQ8PD58" length="312" description="Elongation of fatty acids protein n=1 Tax=Coemansia umbellata TaxID=1424467 RepID=A0ABQ8PD58_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>449</score>
+      <bits>177.6</bits>
+      <expectation>1.4e-50</expectation>
+      <identity>39.6</identity>
+      <positives>55.3</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="269">RFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC-KPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM------SSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>++RW N  TP S      +    YL  I+G+Q  M++ K  KL   A  HNLFL L+SL++ +  V  +       GL+  +C +   +  ++  YY+ YL+K  EF DTI   L+KK L FLHV+HH +T+ L +  L   T   WV I+ N FVH+VMYFYYF    GI+PWWKK++TT QI+QF++D+      + HL    Y          CSGT   + F   ++ S+L LFIQFF + Y KK    KK</pattern>
+      <matchSeq start="54" end="308">QWRWVNGSTPLSTWREVGIGMAVYLGAIFGIQFAMRSFKPFKLTRLAQIHNLFLTLVSLVLLVLYVEELLPIISEGGLFYAVCNEKAWTQKLEVLYYLNYLTKWLEFTDTIFLALKKKPLQFLHVYHHTLTMVLCFTQLNGSTSVSWVVITLNLFVHVVMYFYYFLASCGIHPWWKKYVTTLQIVQFVIDLGFVYFCTYHLIASRYYPSILPFYGTCSGTEEAAIFGCALLSSYLLLFIQFFQRTYSKKRQAAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0A2V3IST5" ac="UniRef90_A0A2V3IST5" length="273" description="Elongation of fatty acids protein n=1 Tax=Gracilariopsis chorda TaxID=448386 RepID=A0A2V3IST5_9FLOR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>440</score>
+      <bits>174.1</bits>
+      <expectation>1e-49</expectation>
+      <identity>37.4</identity>
+      <positives>58.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="260">DRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKY---SFPHGLYNIICK---PIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAY</querySeq>
+      <pattern>DRF WK+   P S++++P+     YL+LI+ LQ +M+++  +KL    + HN+FLC+LS  M LG++I + +    +  +    I+C        G + +  YIFYLSK YE +DT++ VL+K+ L FLHV+HH I L L +  +  +   QW+ + AN  VH+ MY+YY     G+  WWKK+IT  QIIQFI+D+++   + F       +++ CSG+     F   V LSF  LF  F++++Y</pattern>
+      <matchSeq start="5" end="244">DRFEWKS--APMSSVIYPVCAIPIYLSLIFSLQFYMRSRPPLKLRTPTVIHNIFLCVLSFAMALGVLIEVLRTFVSTSTNATREILCDLSAHAMRGRMAWWMYIFYLSKFYELLDTVVMVLKKRRLNFLHVYHHCIVLPLFYVYMSTNMVLQWILVVANSSVHVAMYYYYAMAAVGVKVWWKKYITQAQIIQFIIDLTATWPYPFL----YFSASGCSGSMRGWLFGQAVGLSFFKLFRDFYLQSY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0A2G4TA00" ac="UniRef90_A0A2G4TA00" length="303" description="Elongation of fatty acids protein n=3 Tax=Rhizopus TaxID=4842 RepID=A0A2G4TA00_RHIZD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>442</score>
+      <bits>174.9</bits>
+      <expectation>1.2e-49</expectation>
+      <identity>37.4</identity>
+      <positives>57.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="269">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC-KPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM----SSHLAWHFYDTQGNHNSNY--CSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>F +   VTP S +   I+    YL +I+G Q  + N   +KL      HNLFL ++S ++ L  +  +    + HGLY  IC +   +  ++  YY+ YL K YE IDT+  VL+KK L FLH +HH +T+ L +  L   T   WV I+ N  VH++MY+YYF+T  G   WWKK++TT QIIQF++D+    S   +++ Y    +   N+  C+GT + +AF   ++ S+L LFI F+   YKKK+++  K</pattern>
+      <matchSeq start="35" end="288">FHFIEGVTPLSTLQEVIIGCITYLVVIFGGQYLLTNASPMKLKFLNQVHNLFLTVISFILLLLTIEQLFPKLYYHGLYYTICSEEAWTQKLELLYYLNYLVKYYELIDTVFLVLKKKKLEFLHYFHHSMTMALCYTQLVGRTTVSWVPITLNLTVHVLMYYYYFRTASGAKVWWKKYLTTMQIIQFVIDLIVIYSCTYSYYAYTYTNSAFPNFGTCAGTESAAAFGCAILTSYLLLFINFYRITYKKKNAVPSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_F1A5F8" ac="UniRef90_F1A5F8" length="288" description="Elongation of fatty acids protein n=1 Tax=Dictyostelium purpureum TaxID=5786 RepID=F1A5F8_DICPU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.9</bits>
+      <expectation>4.4e-49</expectation>
+      <identity>38.4</identity>
+      <positives>55.5</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="269">EHI--HDINFQEFSK--DPIGTIDRFRWKNEVTPFSNI-LFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHG----LYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQF-IVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAY---KKKSSIKKK</querySeq>
+      <pattern>EH+  HDI+   +S+  DP+     F++   VTPFS   + P V +  YL  I+ ++ FM+N+K   L    + HN+ LCL SL M +GI+  + K S   G     +    K  D+G+  +  YIFY+SK YE +DT+I VL+KK L+FLHV+HH I +WL W  L      Q   +  N FVH+ MY++YFQ+ RGI+ WWKK+IT  QI+QF  + ++  L     +T G      C   +   A +  +  SFL LF QF+ K+Y   KK   + KK</pattern>
+      <matchSeq start="17" end="286">EHLFQHDISKSNWSELFDPVN----FKFNFGVTPFSQFQIVPTVLAV-YLITIFSIKFFMRNRKPFSLKNITILHNIILCLWSLAMCVGIIYEVIKRSVAEGSPLFTFCEAAKGYDNGVSYYWSYIFYISKFYELLDTVIIVLKKKPLIFLHVYHHCIVVWLCWYFLYSGWNLQLWVVFLNTFVHVFMYYFYFQSARGISVWWKKYITKIQILQFCCLGVAGVLHVTAINTVG------CVTHYPCFAAAYSINFSFLFLFTQFYKKSYSGPKKAQEVAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_A0A1Y1WFI8" ac="UniRef90_A0A1Y1WFI8" length="291" description="Elongation of fatty acids protein (Fragment) n=1 Tax=Linderina pennispora TaxID=61395 RepID=A0A1Y1WFI8_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>437</score>
+      <bits>172.9</bits>
+      <expectation>4.8e-49</expectation>
+      <identity>36.9</identity>
+      <positives>54.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="268">RFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC-KPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKK</querySeq>
+      <pattern>++ W N  TP S      +    YL  I+G+Q  M+++K  KL   A  HNLFL   S ++ +  V  +A     HGL+  +C +   +  ++  Y++ YL+K  EF DT+   L+KK L FLHV+HH +T+ L +  L   T   WV I+ N  VH+VMYFYYF    GI+PWWKK++TT QI+QFI+D+          +A  +Y +   +    C GT   + F   ++ S+L LFIQFF + Y KK +  +</pattern>
+      <matchSeq start="38" end="291">QWHWVNGSTPLSTWKEVGIGMVVYLTTIFGIQFLMRSRKAFKLQRAAQIHNLFLTAASFVLLVLFVEELAPMLASHGLFFSVCDEQAWTQKLEVLYFLNYLTKWLEFTDTVFLALKKKPLQFLHVYHHTLTMVLCFTQLNGQTSVSWVVITLNLAVHVVMYFYYFLASCGIHPWWKKYVTTMQIVQFIIDLGFVYYCTYQLIASRYYSSMLPYRGT-CQGTEEAAIFGCALLSSYLLLFIQFFQRTYSKKRAASR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A0A397V911" ac="UniRef90_A0A397V911" length="270" description="Elongation of fatty acids protein n=2 Tax=Gigaspora TaxID=4873 RepID=A0A397V911_9GLOM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>433</score>
+      <bits>171.4</bits>
+      <expectation>1.1e-48</expectation>
+      <identity>40.5</identity>
+      <positives>56.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="263">DPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDS---GLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKK</querySeq>
+      <pattern>DP G    F+WK  +TPFSNI   I     Y  +I GL+IFMK +    L      HNLFLC+LS +MF   VI + K     G+    C   +S   G + +  YI+YLSK  E IDT+I VL+KK ++FLH +HH I + +VW+ L+       + + AN F+HI MY+YYF    G + W+KK++TT QIIQF +     + + +Y     H +  C   ++   FS     SFL LFI+F+ KAYKKK</pattern>
+      <matchSeq start="24" end="266">DPNG----FQWKVGITPFSNIQIVIGSWITYFVVIIGLKIFMKERTPFTLRVIVAAHNLFLCILSAIMFGYSVIDLFKRWQERGIGECFCTSDESSLKGRLFYITYIYYLSKFIELIDTVILVLKKKEIIFLHWYHHSIVILMVWSWLQDANMYASMGMIANTFIHIFMYYYYFVAVLGRSVWFKKYVTTGQIIQFSISFILSVPYLYY-----HFTKECQYGFSAFLFSICCNGSFLVLFIRFYQKAYKKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_A0A1Y1XPS6" ac="UniRef90_A0A1Y1XPS6" length="284" description="Elongation of fatty acids protein n=1 Tax=Basidiobolus meristosporus CBS 931.73 TaxID=1314790 RepID=A0A1Y1XPS6_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>434</score>
+      <bits>171.8</bits>
+      <expectation>1.1e-48</expectation>
+      <identity>38.1</identity>
+      <positives>54.8</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="269">FQEFSKDPIG-TIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSL---LMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNH-----NSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>F++  K   G T   FR+   VTP S      V    YLA+I+G Q  +KN+K  KL      HN+FL L+SL   ++ L  +IP+  Y+    LY I  +   +  ++  YY+ YL K YE IDT+  VL+KK L FLH +HH +T+ L ++ L  +T   WV I+ N  VH++MY+YY++   G   WWKK++TT QI QF++D+       +     NH     N   CSGT   + F   ++ S+L LFI FF K YKK ++  KK</pattern>
+      <matchSeq start="16" end="283">FEKLYKAVTGQTASEFRFIEGVTPLSTPTEVFVSCILYLAIIFGGQYLLKNRKPFKLDFLFKVHNIFLTLVSLGLLVLILENIIPI--YARGGLLYAICDRNAWTQRLELLYYLNYLVKYYELIDTLFLVLKKKKLEFLHYYHHSLTMVLCYSQLMGNTSVSWVPITLNLIVHVLMYYYYYRATSGARIWWKKYLTTLQITQFVLDLGFVYFCTYTYFAFNHFPYMPNMGTCSGTIGAALFGCALLSSYLVLFISFFRKTYKKPAAKAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_A0A1X6NGC7" ac="UniRef90_A0A1X6NGC7" length="297" description="Elongation of fatty acids protein n=1 Tax=Postia placenta MAD-698-R-SB12 TaxID=670580 RepID=A0A1X6NGC7_9APHY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>435</score>
+      <bits>172.2</bits>
+      <expectation>1.1e-48</expectation>
+      <identity>37.8</identity>
+      <positives>58.4</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="269">YLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKP-IDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM-------SSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>YL +++GL+ +MKN+  +KL G    HN+FL   S L+   ++  +A  +  HG++  +C   + S  ++F Y I Y  K  E IDT+   L+KK L FLHV+HH  T  L +  L   T  QW+ IS N  +HI+MY+YY+ T  G   WWKKH+TT QI QF++D+        S+ A +++  +G  +   C+GT + +     ++ S+LGLFIQF+++ YKK +  K K</pattern>
+      <matchSeq start="43" end="273">YLVVVFGLRAYMKNRPPLKLQGLFQLHNIFLSAGSTLLLTVMLEEIAPLAVKHGVFGSMCSDDMWSDRLEFFYLINYYFKYLELIDTVFLALKKKPLAFLHVYHHSATALLCYTQLNGRTSVQWIPISINLSIHILMYYYYYATAGGAKIWWKKHLTTMQITQFVIDLFVVYFATYSYYAANYF--KGLPSLGSCAGTESAAVLGCLLLSSYLGLFIQFYIQTYKKPAKGKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0A9W8EH30" ac="UniRef90_A0A9W8EH30" length="291" description="Elongation of fatty acids protein n=6 Tax=Coemansia TaxID=4863 RepID=A0A9W8EH30_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>434</score>
+      <bits>171.8</bits>
+      <expectation>1.3e-48</expectation>
+      <identity>39.2</identity>
+      <positives>58.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="268">YLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID-SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKK</querySeq>
+      <pattern>YL  I+G+Q  M+++K  KL   A  HNL L L+SL + +  V  ++      GL+  +C     +  ++  YY+ YL+K  EF DT+   L+KK L FLHV+HH +T+ L +  L   T   WV I+ N FVH++MYFYYF    GI+PWWKK++TT QI+QF++D+          +A  +Y T  +  +  C+GT   + F   ++ S+L LFIQFF + Y KK + KK</pattern>
+      <matchSeq start="58" end="287">YLGTIFGIQYLMRSRKPFKLTRLAQIHNLTLTLISLGLLVLFVEKLSPILSTRGLFYSVCDVRAWTQPLEVLYYLNYLTKWMEFTDTVFLALKKKPLQFLHVYHHTLTMVLCFTQLNGATSVSWVVITLNLFVHVIMYFYYFLASCGIHPWWKKYVTTLQIVQFVIDLGFVYYCTYQLIASRYYPTLPHRGT--CAGTEEAAVFGCALLSSYLLLFIQFFQRTYSKKQAAKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A0A2V3IUF1" ac="UniRef90_A0A2V3IUF1" length="279" description="Elongation of fatty acids protein n=1 Tax=Gracilariopsis chorda TaxID=448386 RepID=A0A2V3IUF1_9FLOR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>433</score>
+      <bits>171.4</bits>
+      <expectation>1.4e-48</expectation>
+      <identity>38.3</identity>
+      <positives>57.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="262">IDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYS-FPHGL--YNIICKP--IDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKK</querySeq>
+      <pattern>+  +R++  VT FS+  +P++    Y  +IY LQ FM  +K + +  F  FHN  LC+ SL  FLG  +  A  S +  GL  + ++C     ++G +Q  YYI    KV+EF+DT +  LRKK + FLH +HH  TL+L W  L   +  QWV I  N +VH++MY+YY  +   I  WWKK++TT QI+QFI+D+S+    +        +SN C GT   +     ++ S+L LFI+F+V+ YKK</pattern>
+      <matchSeq start="13" end="258">MSNWRFEPNVTAFSSWQWPVIAVVVYFTIIYALQRFMSTRKPLDIPEFLFFHNFSLCIASL--FLGSWLTYALVSAYRVGLTPHELLCARDMYENGHLQMIYYINMFFKVWEFLDTFLLALRKKPIAFLHAYHHGATLFLTWNQLIEHSSPQWVPIVINLWVHVLMYYYYAMSALRIRIWWKKYLTTLQIVQFIIDVSAVGYAYTSFISSGFDSNVCYGTTRGALVGLGILTSYLLLFIRFYVQTYKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_A0A9W8DWW9" ac="UniRef90_A0A9W8DWW9" length="294" description="Elongation of fatty acids protein n=1 Tax=Mycoemilia scoparia TaxID=417184 RepID=A0A9W8DWW9_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>434</score>
+      <bits>171.8</bits>
+      <expectation>1.5e-48</expectation>
+      <identity>37.2</identity>
+      <positives>55.4</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="270">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC-KPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNY---------CSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKT</querySeq>
+      <pattern>+RW++  T  S  L   +    YLA++ G Q  M++++  KL G    HNL LCL+S  +F      +      HGL+  +C     +  ++  YY+ YL+K  EF DT+  VL+KK L FLHV+HH +T+ L +  L+  T   WV +  N FVHI+MY+YYF+T +G   WWK+ +TT QI+QFI+D    L + ++ T     S Y         C GT   + F   ++ S+L LF+QFF K+Y K  + K+KT</pattern>
+      <matchSeq start="40" end="293">WRWESGTTVLSTWLEVGLGFAIYLAVMLGGQRLMRSREPFKLRGLTQLHNLSLCLISAALFALFAETLVPMLREHGLFYAVCHNDAWTQKLELLYYLNYLTKWVEFTDTLFLVLKKKPLQFLHVYHHSLTMVLCFTQLQGTTSVSWVPVVLNLFVHIIMYYYYFRTAQGAKIWWKQWVTTIQIVQFIID----LGFVYFCTYQLIASRYIPSLPHIGDCRGTETAAVFGCALLSSYLVLFVQFFQKSYGKSKASKQKT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_A0A2T9Y1F0" ac="UniRef90_A0A2T9Y1F0" length="286" description="Elongation of fatty acids protein n=2 Tax=Harpellales TaxID=61421 RepID=A0A2T9Y1F0_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>433</score>
+      <bits>171.4</bits>
+      <expectation>1.6e-48</expectation>
+      <identity>39.1</identity>
+      <positives>59.1</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="271">YLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC-KPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM------SSHLAWH-FYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</querySeq>
+      <pattern>YL +++G +  MKN+K  ++  F  FHNL L ++SL + L     +    F +GL+  +C +   +  ++  YYI YL K YEF+DT + VL+KKS  FLHV+HH +T+ L +  L+  T   WV ++ N FVH++MY+YY+ T  GI  WWKK +TT QI+QF++D+      S H+  H FY    N+ +  C G    + F   ++ S+L LF++FF   Y K+S   KKTN</pattern>
+      <matchSeq start="50" end="279">YLLIVFGGKAVMKNQKPFEMAAFWRFHNLLLAIMSLFLLLLFAEQLIPNLFNNGLFWSVCHRDAWNTKLELLYYINYLIKWYEFLDTFLLVLKKKSTPFLHVYHHSMTMVLCFTQLEGTTSVSWVPVTINLFVHVIMYYYYYLTALGIRVWWKKLVTTTQIVQFVIDLGFVYFCSYHVFIHRFYPNWPNYGA--CRGDDPAAIFGCLLLSSYLLLFVKFFFDTYNKRS---KKTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0A7J7IS26" ac="UniRef90_A0A7J7IS26" length="321" description="Elongation of fatty acids protein n=1 Tax=Cyanidiococcus yangmingshanensis TaxID=2690220 RepID=A0A7J7IS26_9RHOD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>435</score>
+      <bits>172.2</bits>
+      <expectation>2.1e-48</expectation>
+      <identity>38.1</identity>
+      <positives>57.9</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="261">DRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSF--PHGLYNIICKP---IDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAW-HFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYK</querySeq>
+      <pattern>+ FR++   +PFS+ L+P+    GYL +I  L+  M+ ++   L    + HN+FLCLLSL M  G +I +  ++   P G  +I C     +  G + F  Y+FY+SK YE IDT+I VL+K+ L FLHV+HH + L L W  L+      ++ + AN FVH+ MY+YY  +  G   WWK+H+T  QIIQF++D+++   + +FY T    +   CSG+     F   V +SF  LF  FF K+Y+</pattern>
+      <matchSeq start="12" end="252">EHFRFRE--SPFSHPLYPLCGMAGYLLVITALERIMRARRPFSLRRIVVIHNVFLCLLSLAMGFGTLIEITLHAVREPDGWLSITCDHRGRVMRGRLLFWMYVFYVSKYYELIDTVIMVLKKRPLSFLHVYHHCVVLPLFWMYLRTSMVIHFILVVANSFVHVFMYYYYAASTLGYKVWWKRHLTLAQIIQFVIDLTATYPFVYFYFT----HPKGCSGSMRAFIFGQVVGISFCYLFWDFFRKSYQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0ABR2WE94" ac="UniRef90_A0ABR2WE94" length="284" description="Elongation of fatty acids protein n=2 Tax=Basidiobolus TaxID=4859 RepID=A0ABR2WE94_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>431</score>
+      <bits>170.6</bits>
+      <expectation>3.1e-48</expectation>
+      <identity>38.1</identity>
+      <positives>54.1</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="271">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID-SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</querySeq>
+      <pattern>F++   VTP S +         YL  I+G Q  MKN+K  +L      HNLFL  LS  + L I   +    +  G+Y  +C     +  ++  YY+ YL+K YE IDTI  VL+KK L FLH +HH +T+ L +  L   T   WV I+ N  VH+ MY+YYF+   G+  WWKK++TT QI QFI+D+        ++ A++F+    +     CSGT   + F   ++ S+L LFI FF K YKK  S K K+N</pattern>
+      <matchSeq start="31" end="284">FKFVEGVTPLSTVPEVATTCILYLITIFGGQYLMKNRKPFQLEFLFKLHNLFLTTLSAALLLLIAENIIPIIWNEGVYGSVCNQTSWTQRLELLYYLNYLTKYYELIDTIFLVLKKKKLEFLHYYHHSLTMVLCYTQLVGSTAVSWVPITLNLCVHVFMYYYYFRATAGVRIWWKKYLTTMQITQFILDLGFVYFCTYNYFAFNFFPAFPHVGD--CSGTVGAALFGCALLSSYLVLFINFFRKTYKKPMS-KPKSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_A0A2T9Z0J6" ac="UniRef90_A0A2T9Z0J6" length="317" description="Elongation of fatty acids protein n=1 Tax=Smittium simulii TaxID=133385 RepID=A0A2T9Z0J6_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>433</score>
+      <bits>171.4</bits>
+      <expectation>3.8e-48</expectation>
+      <identity>36.3</identity>
+      <positives>55.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="271">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID-SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKK--KSSIKKKTN</querySeq>
+      <pattern>+RW  +VTP S  L   +    YL+ I   +  +KN+  I      + HN+F+CLLSL + LG +  +      HG +  IC     +  ++  YY+ Y+ K  EFIDT   VL+KK L  LHV+HH +T++L +  +   T   W   S N FVH++MY+YY+   RGI   WKK++T+ QI QFI+D++       +H+A+H + +  N     C GT  ++ F  F++ ++L LF+QFF+K Y +  K S  KK N</pattern>
+      <matchSeq start="45" end="301">WRWNTQVTPLSTTLEVFIGILFYLSFILIGKAILKNRNAIDGGIMVIVHNMFVCLLSLFLLLGFLEQVIPKLMTHGFFWTICNYYSYTQPLELLYYLNYICKWIEFIDTFFLVLKKKKLQTLHVYHHALTMYLCFIQINGKTSISWFVCSVNLFVHVIMYYYYYLASRGIRVSWKKYLTSMQISQFIIDINLVYFCLYTHMAYHNFPSLPNVGD--CRGTRQSAYFGCFLLSTYLFLFVQFFIKVYAEGNKISQNKKKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0A4T0X5I8" ac="UniRef90_A0A4T0X5I8" length="307" description="Elongation of fatty acids protein n=1 Tax=Pichia inconspicua TaxID=52247 RepID=A0A4T0X5I8_9ASCO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>432</score>
+      <bits>171.0</bits>
+      <expectation>4.1e-48</expectation>
+      <identity>40.5</identity>
+      <positives>53.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="28" end="268">EVTPFSNIL------FPIVCSFGYLALIYGLQIFMK--NKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGLVQ---FSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNY-----CSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKK</querySeq>
+      <pattern>E  PF   L       PIV    Y  +I+G    MK  N K   L+G   FHNLFL  LSL++FL +V  +    + HGL+  IC   +S   Q     YY+ YL+K  EFIDT+  VL++K L FLH +HH  T  L +  L   T   WV IS N FVH+VMY+YYF   RGI  WWK+ +T  QIIQF++D+S      +     N N  +     CSGT   +     +I S+L LFI F+++ Y+KKS   K</pattern>
+      <matchSeq start="5" end="257">EFVPFKTFLSSPQQVLPIVVV--YYTVIFGGNALMKKFNVKPFVLNGLFQFHNLFLTTLSLILFLSLVEQLIPQIYYHGLFYAICD--ESAWTQKMVVLYYLNYLTKFVEFIDTVFLVLKQKKLTFLHTYHHGATALLCYTQLVGTTPISWVPISLNLFVHVVMYWYYFLAARGIRVWWKEWVTRFQIIQFLIDLSFIYFAVYIKVMSNVNPKFTGGLTCSGTPLATISGCSIISSYLFLFIAFYIEVYRKKSKKAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_UPI0037429F13" ac="UniRef90_UPI0037429F13" length="341" description="uncharacterized protein n=2 Tax=Thermomyces TaxID=5540 RepID=UPI0037429F13">
+    <alignments total="1">
+     <alignment number="1">
+      <score>434</score>
+      <bits>171.8</bits>
+      <expectation>4.9e-48</expectation>
+      <identity>38.1</identity>
+      <positives>55.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="21" end="271">DRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLS---LLMFLGIVIPMAKYSFPHGLYNIICK-PIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS--SHLAWHFYDTQ---GNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</querySeq>
+      <pattern>+ FR++   TP S +   +V    Y A I+G    M+++K   L+G  M HNL L  +S   LL+FL  +IP     + HGLY  IC  P  +  +   YY+ YL+K  E +DT+  VL+KK L FLH +HH  T++L +  L+  T   WV I+ N  VH+VMY+YYFQ+ RG+  WWK+ IT  QIIQFI+D+       W +Y  +    N +   C G    +      + S+L LFI F++  Y+K SS  +K N</pattern>
+      <matchSeq start="36" end="292">ENFRYRVGSTPMSTLSETLVTIAFYYATIFGGWYLMRDRKPYSLNGLFMAHNLILTAVSGGLLLLFLEQLIPSL---WEHGLYKCICSSPGWADKLVLLYYLNYLTKYVELLDTVFLVLKKKPLTFLHTYHHGATVFLCYTQLRGKTPVSWVPITLNLTVHVVMYWYYFQSARGVRIWWKEWITRLQIIQFILDLGFIYFATWDYYADEFGFDNLHIGKCEGDLPAAITGCVTLSSYLVLFISFYISTYRKPSSKSRKAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0ACC1I2R0" ac="UniRef90_A0ACC1I2R0" length="304" description="Elongation of fatty acids protein n=3 Tax=Kickxella alabastrina TaxID=61397 RepID=A0ACC1I2R0_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>431</score>
+      <bits>170.6</bits>
+      <expectation>5.3e-48</expectation>
+      <identity>38.0</identity>
+      <positives>55.0</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="22" end="269">RFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIIC-KPIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNY---------CSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>++RW N  T  S      +    YL  I+G+Q  M++ K  KL+  A  HNL L L+SL++ +  V  +A      GL+  +C +   +  ++  YY+ YL+K  EF DT+   L+KK L FLHV+HH +T+ L +  L   T   WV I+ N FVH++MYFYY     GI+PWWKK++TT QI QFI+D    L + ++ T     S Y         C+GT   + F   ++ S+L LFIQFF + Y KK + K K</pattern>
+      <matchSeq start="47" end="300">QWRWINGTTYLSTWQEVGLGMIVYLGAIFGIQFLMRSHKGFKLNRLAQVHNLILTLVSLVLLVLFVEELAPIISEGGLFYAVCDQRAWTQRLEVLYYLNYLTKWLEFTDTVFLALKKKPLQFLHVYHHTLTMVLCFTQLNGATSVSWVVITLNLFVHVIMYFYYLLASCGIHPWWKKYVTTLQITQFIID----LGFVYFCTYQLIGSRYYPSLPCYGDCAGTEDAAIFGCALLSSYLLLFIQFFQRTYTKKQAAKNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_R7QA67" ac="UniRef90_R7QA67" length="293" description="Elongation of fatty acids protein n=1 Tax=Chondrus crispus TaxID=2769 RepID=R7QA67_CHOCR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>428</score>
+      <bits>169.5</bits>
+      <expectation>1.1e-47</expectation>
+      <identity>35.4</identity>
+      <positives>55.1</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="25" end="267">WKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPH--------GLYNIICKPIDS---GLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIK</querySeq>
+      <pattern>WK    P S++ +P +    YL LI+ L+ FM+++  +KL    + HN+FLC LSL M +G++  + K    +        G   ++C P  +   G + +  Y+FY+SK YE +DT+I VL+K+ L FLHV+HH I L L +  +      QW+ + AN  VH+ MY+YY     G   WWKK+IT  QI+QFI+D++S   + F       +++ CSG+     F   V  SF  LF  F+ ++Y K  ++K</pattern>
+      <matchSeq start="17" end="264">WKT--APLSSVYYPPIAIVCYLTLIFSLRRFMRDRPPVKLRSLTVLHNVFLCALSLAMGVGVLSEVVKVFAANATPSNPFAGTNAVLCDPTGASMTGRMGWWMYVFYVSKYYELLDTVIMVLKKRPLNFLHVYHHCIVLPLFYVYMSTSMVLQWIVVVANSSVHVAMYYYYAMAALGHKVWWKKYITLAQIVQFIIDLTSTWPYPFL----YFSASGCSGSMRGWLFGQAVGASFFKLFCDFYFRSYTKSKNLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_S8EJC7" ac="UniRef90_S8EJC7" length="293" description="Elongation of fatty acids protein n=1 Tax=Fomitopsis schrenkii TaxID=2126942 RepID=S8EJC7_FOMSC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>428</score>
+      <bits>169.5</bits>
+      <expectation>1.1e-47</expectation>
+      <identity>38.2</identity>
+      <positives>58.0</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="262">LFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGL----VQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM-------SSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKK</querySeq>
+      <pattern>+FP +   GYLA+++GL+ +MKN+  +KL G    HN+FL   SLL+   +   +A   + HGL+ ++C   D G+    ++  Y I Y  K  E IDT+   L+KK L FLHV+HH  T  L +  L   T  QW+ I+ N  VH++MY+YY+ T  G   WWKKH+TT QI QF+VD+        S+ A +++    N  S  C+GT + + F   ++ S+L LFI F+++ Y+K</pattern>
+      <matchSeq start="36" end="266">VFPTLA--GYLAVVFGLRKYMKNRSPLKLQGLFQLHNIFLSAGSLLLLSCMAEEIAPLYWKHGLFWVMC---DEGMWNKRLELFYLINYYFKYLELIDTVFLALKKKPLAFLHVFHHSATALLCYTQLNGKTSVQWIPITINLSVHVLMYYYYYATAGGAKIWWKKHLTTMQIAQFVVDLFAVYFGTYSYYAANYFPNLPNVGS--CAGTESAAIFGCALLTSYLLLFIDFYIRTYQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_Q54TC9" ac="UniRef90_Q54TC9" length="268" description="Fatty acid elongase sre1 n=2 Tax=Dictyostelium TaxID=5782 RepID=SRE1_DICDI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>426</score>
+      <bits>168.7</bits>
+      <expectation>1.1e-47</expectation>
+      <identity>35.0</identity>
+      <positives>55.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="271">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID---SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANL--KYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</querySeq>
+      <pattern>FRW++ VTP S+ +FP   S  Y+ +I+ LQ  MKNKK + L GF++ HN+ L +LS  M  G++    +     G ++++C+       G + F  YIFYLSK YE +DT+I  L+KK ++FLH++HH   + + W  L  ++  G  W  +  N F+H++MY+YY QT  G   W+KK+IT  QI+QF+   +    W         +S  C    + +  S+ +   F+ LF +F+  +YK  S  ++K N</pattern>
+      <matchSeq start="18" end="265">FRWESGVTPLSSYVFPFSTSVIYVLVIFALQAIMKNKKGMVLKGFSIIHNINLIILSFSMMSGVMYAAYQQYLEQGAFSLVCEQSSQSVQGRIGFWIYIFYLSKYYELVDTVILALKKKPIIFLHIFHHMAMVPVTWQWLHDQWLVGSWWCTL-VNSFIHVLMYYYYLQTTLGNPCWFKKYITKAQIVQFLTGTAMVSYWFVI-----RDSEKCQAPLSPAIVSNTINSFFIILFGKFYYDSYKSNSRRQEKLN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0A1Y1Y6V8" ac="UniRef90_A0A1Y1Y6V8" length="284" description="Elongation of fatty acids protein n=1 Tax=Basidiobolus meristosporus CBS 931.73 TaxID=1314790 RepID=A0A1Y1Y6V8_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>427</score>
+      <bits>169.1</bits>
+      <expectation>1.2e-47</expectation>
+      <identity>37.3</identity>
+      <positives>55.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="269">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID-SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>F+++  VTP S +         YL  I+G Q  M+N+K  KL      HNLFL ++S  + L I   +    +  GL+  +C     +  ++F YY+ YL+K YE IDTI  VL+KK L FLH +HH +T+ L +  L   T   WV I+ N  VH++MY+YY++   G+  WWKK++TT QI QFI+D+        +  A++F+    +     CSGT   + F   ++ S+L LFI FF K YKK +S  K+</pattern>
+      <matchSeq start="31" end="283">FKFEEGVTPLSTVPEVAAACVIYLVTIFGGQYLMRNRKAFKLDFLFKVHNLFLTVVSATLLLLIAENIIPIVWNQGLFGSVCYQTSWTQRLEFLYYLNYLTKYYELIDTIFLVLKKKKLEFLHYYHHSLTMVLCFTQLIGSTAVSWVPITLNLCVHVLMYYYYYRATAGVRIWWKKYLTTMQITQFILDLGFVYFCTYTFFAFNFFPFLPHVAD--CSGTVGAALFGCALLSSYLVLFINFFRKTYKKPASKPKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0A5C3PNV6" ac="UniRef90_A0A5C3PNV6" length="291" description="Elongation of fatty acids protein n=3 Tax=Polyporaceae TaxID=5317 RepID=A0A5C3PNV6_9APHY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>427</score>
+      <bits>169.1</bits>
+      <expectation>1.5e-47</expectation>
+      <identity>37.8</identity>
+      <positives>56.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="36" end="271">LFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKP-IDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNY---------CSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</querySeq>
+      <pattern>+FP + +  YL +I+G+Q +MKNK   +L     FHN FL + SLL+ L I+  +    + HG++  +C   + S  ++F Y I Y  K  E +DT+   L+KK L FLHV+HH  T  L +  L   T  QWV I+ N  VH++MY+YY+ T  G   WWKK++TT QI QF++D    L   ++ T   + +NY         C+GT   + F   ++ S+LGLFIQF+++ YKK +  K   N</pattern>
+      <matchSeq start="39" end="278">VFPTLAA--YLVIIFGIQAWMKNKPPYRLQFLFRFHNAFLTIGSLLLVLLIMEEVVPAVYKHGVFWGLCNVNMWSERLEFYYMINYYFKYIELVDTMFLALKKKPLAFLHVFHHSATALLCYTQLNGKTSVQWVPIAINLAVHVIMYYYYYATAGGAKIWWKKYLTTFQITQFVID----LFVVYFATYSYYAANYFPNLPHMGSCAGTETAAVFGCALLTSYLGLFIQFYIQTYKKPAGRKAVAN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_UPI000644AA9D" ac="UniRef90_UPI000644AA9D" length="304" description="hypothetical protein n=1 Tax=Acytostelium subglobosum LB1 TaxID=1410327 RepID=UPI000644AA9D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>428</score>
+      <bits>169.5</bits>
+      <expectation>1.5e-47</expectation>
+      <identity>35.8</identity>
+      <positives>54.7</positives>
+      <gaps>6</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="271">MEHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKE--IKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSF--PHGLYNIICKPID---SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINP----WWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHN--SNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIK-KKTN</querySeq>
+      <pattern>+E I  ++F ++  + +   + F ++  VTPFSN  F  +C   YL++IYG ++ + N K     L  F+  HNL LC+ SL+M +GI       +    +G+  I C P     SG + + +Y++++SK YEFIDTII VL+KK L+FLH+WHH I + +VW  L        V + AN  VH+ MY+YYF+T   +NP    WWK ++T+ Q+ QF +     + +   D     +   + C G W    F+ F  L FL LF+ F++K Y  K   + KKTN</pattern>
+      <matchSeq start="23" end="304">LETITRVDFSKWDWNQLIPSNDFVYQEGVTPFSNKNFIFMCIAVYLSIIYGTKLLLSNPKTRGFNLRWFSAIHNLILCVWSLVMCVGITYDAFNMAMNTEYGINGIFCSPKSNPISGRIYYWHYLYFVSKFYEFIDTIIIVLKKKPLIFLHIWHHSIVVLIVWTWLPEGVAYGSVGLFANTLVHVFMYYYYFRTT--LNPSVRIWWKNYLTSGQLFQFTMSFVLSVPYLLQDLDFGVSPIGHKCVG-WGPFMFTMFNNLFFLILFMNFYIKTYIVKGKPQPKKTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_A0ACC1HRS5" ac="UniRef90_A0ACC1HRS5" length="298" description="Elongation of fatty acids protein n=1 Tax=Spiromyces aspiralis TaxID=68401 RepID=A0ACC1HRS5_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>427</score>
+      <bits>169.1</bits>
+      <expectation>1.8e-47</expectation>
+      <identity>37.0</identity>
+      <positives>56.7</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="269">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID-SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM------SSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>+RW+  VTP S           YL + +G +  M++++  KL G    HNL L +LS ++    V  +A     HGLY  IC     +  ++  YY+ YL+K  EF DT++ VL+KK L FLHV+HH +T+ L +  L+  T   WV +S N FVH++MY+YYF+  +G   WWK+ +TT QIIQFI+D+      +  L    Y     H  + C G+ + +A+  F++ S+L LF+QFF ++Y K  + K+K</pattern>
+      <matchSeq start="44" end="296">WRWQPGVTPLSTWREVAFGFAVYLLVTFGGRALMRSREPFKLRGITQAHNLMLSVLSAVLLAMFVQALAPMIRQHGLYYAICDRNSWTQRLELLYYLNYLTKWLEFADTLLLVLKKKPLQFLHVYHHSLTMVLCFTQLQGTTSVSWVVVSLNLFVHVIMYYYYFRVAQGAKLWWKQWVTTIQIIQFIIDLGFVYFCTYQLVVFRYIPHLPHCGD-CHGSESAAAYGCFLLSSYLFLFVQFFKRSYGKVKAKKQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_A0ACF2FGW2" ac="UniRef90_A0ACF2FGW2" length="288" description="GNS1/SUR4 membrane protein n=2 Tax=Schizophyllum commune TaxID=5334 RepID=A0ACF2FGW2_SCHCO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>426</score>
+      <bits>168.7</bits>
+      <expectation>1.9e-47</expectation>
+      <identity>37.1</identity>
+      <positives>55.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="269">TPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKP-IDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>TP S     +     YLA+I+G+Q  MKN++ +KL+     HN+FL   SLL+ + +V  +A   + HGL+  IC     +  ++F Y I Y  K  E +DT+   L+KK L FLHV+HH  T  L ++ L+  T   WV IS N  VH++MY+YY+ +  G   WWKKH+TT QI+QFI+D+        SH  + ++    N  +  C+G  + + F   ++ S+L LFI F+ + YKK    K K</pattern>
+      <matchSeq start="27" end="272">TPMSTTPAVVAALTSYLAIIFGIQAVMKNQQPLKLNTLFRIHNVFLSSGSLLLLVLMVEEVAPIVWKHGLFYSICNEGAWTPRLEFYYMINYYFKYIELLDTVFLALKKKPLQFLHVFHHSATALLTYSQLEGKTSISWVVISLNLAVHVLMYYYYWASAGGAKIWWKKHLTTMQIVQFIIDLHFVYFGTYSHFTYSYWPNLPNMGN--CAGAESAAVFGCGLLTSYLFLFIDFYFRTYKKSQQQKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_A0ABQ8ESH4" ac="UniRef90_A0ABQ8ESH4" length="276" description="Elongation of fatty acids protein n=1 Tax=Batrachochytrium salamandrivorans TaxID=1357716 RepID=A0ABQ8ESH4_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>425</score>
+      <bits>168.3</bits>
+      <expectation>2e-47</expectation>
+      <identity>35.5</identity>
+      <positives>53.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="265">INFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSG---LVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSS</querySeq>
+      <pattern>++   +  D +     FRW    TPFSN+   +     Y   I  L+++M N++  KL     +HN+FLCLLSL MF   V+     +   G+  I C   ++G   L+ F+ YI++LSK  E  DT+I VL+KK ++FLH +HH I + +VW+ L+YD       + AN  VH+ MY+YY+ +  G   W+KK+IT  QI+QF +     + + +Y          CSG W    FS  V  SFL LFI F+   Y+  +S</pattern>
+      <matchSeq start="14" end="269">LDISRWQWDQLANYHNFRWTVSRTPFSNLGIIVASWCIYFGTILVLRMYMANREPFKLKMVTAYHNMFLCLLSLAMFSAGVVGTYYRARSRGIDEIFCTNDENGMRGLLPFTMYIYFLSKFVELFDTVILVLKKKPIIFLHWYHHSIVMLMVWSWLEYDIAFAMQGMIANALVHVFMYYYYYSSSLGRKVWYKKYITAGQIVQFSLSFVLSVPYIYYSVVKG-----CSG-WNAFVFSMIVNASFLMLFINFYSSTYQPSAS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_F4PKN2" ac="UniRef90_F4PKN2" length="290" description="Elongation of fatty acids protein n=1 Tax=Cavenderia fasciculata TaxID=261658 RepID=F4PKN2_CACFS">
+    <alignments total="1">
+     <alignment number="1">
+      <score>426</score>
+      <bits>168.7</bits>
+      <expectation>2e-47</expectation>
+      <identity>36.1</identity>
+      <positives>54.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="270">EHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNI-LFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKP---IDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFI-VDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKT</querySeq>
+      <pattern>EH+   +F + + + +   +   +K  VTPFS   + P V +  YL LI+ +Q FMKN+K ++L   ++ HN  LCL SL+M +G+V  +AK     G    +C+     + G   +  YIFY+SK YE  DTII VLRKK L+FLHV+HH + +WL W  +      Q   +  N FVH+ MY++Y QT  G   WWKK+IT  QIIQF+ + +   L +   +T G      C    +    +  +  SFL LF +F+  +Y + +++K  T</pattern>
+      <matchSeq start="14" end="280">EHLFKHSFHKTNWNELFAYEDHDFKVGVTPFSQFPILPAVITI-YLILIFSIQAFMKNRKPLELKYVSVIHNFILCLWSLIMCVGVVYEVAKRVMSEGPLFTVCEADHGFNQGPAYYWSYIFYISKFYELFDTIIIVLRKKPLIFLHVYHHCVVVWLCWYFMYTGWPLQLWVVFLNTFVHVFMYYFYLQTGLGRTVWWKKYITMIQIIQFVCLGIVGILHFAAINTVG------CVTNTSAFVAAYAINFSFLFLFTRFYSNSYNRSAAVKGTT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0AAD7P0V9" ac="UniRef90_A0AAD7P0V9" length="290" description="Elongation of fatty acids protein n=1 Tax=Mycena maculata TaxID=230809 RepID=A0AAD7P0V9_9AGAR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>426</score>
+      <bits>168.7</bits>
+      <expectation>2e-47</expectation>
+      <identity>38.0</identity>
+      <positives>55.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="30" end="271">TPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID-SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM-------SSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKKTN</querySeq>
+      <pattern>TP S  L       GYLALI+G+Q  MKN +  KL+     HNLFL   SLL+ + +V  +    +  G++N +C     +  ++F Y I Y  K  E IDT+    +KK L FLHV+HH  T  L ++ L   T   W  IS N  VH++MY+YY+ T  G   WWKK++T  QIIQF++D+         H A +++D    H  N C+G+   + F   ++ ++LGLFI F+++ YKKK S   +TN</pattern>
+      <matchSeq start="27" end="275">TPLSTPLVVFGTLAGYLALIFGIQAIMKNYQPQKLNTLFQAHNLFLSSGSLLLLVLLVEEVIPIIYNAGVFNALCADESWTPRLEFYYMINYYFKYLELIDTVFLAFKKKPLPFLHVFHHSATALLCYSQLIGKTSISWTVISLNLAVHVLMYYYYYATAGGARIWWKKYLTMMQIIQFVIDLFVVYFGTYGHFAANYFDDVLPHMGN-CAGSETAALFGCGLLTTYLGLFINFYMQTYKKKESKGPRTN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_D3BPA0" ac="UniRef90_D3BPA0" length="304" description="Elongation of fatty acids protein n=1 Tax=Heterostelium pallidum (strain ATCC 26659 / Pp 5 / PN500) TaxID=670386 RepID=D3BPA0_HETP5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>427</score>
+      <bits>169.1</bits>
+      <expectation>2.1e-47</expectation>
+      <identity>34.6</identity>
+      <positives>53.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="269">EHIHDINFQEFSKDPIGTIDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKK--EIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSF--PHGLYNIICKPID---SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQT--ERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHN---SNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>E    ++F ++    +     F+++  VTPFSN  F  +    YL  +Y ++ FM + K     L GF+  HNL LC+ SL+M LG+     + +F   +G+    C P     SG + + +Y++++SK YEFIDTII VL+KK L+FLH+WHH I + +VW  L        + + AN  VH+ MY+YYF+T     +  WWK ++T+ Q+ QF +     + +   D   N N   S+ C G W    F+ F  L FL LF+ F++K Y ++   K K</pattern>
+      <matchSeq start="24" end="302">ETFFKVDFSKWDWKQLIPSQDFKFEEGVTPFSNKNFIFLTIIIYLTTVYSIKFFMSSPKLKGWNLRGFSALHNLILCVWSLIMVLGVTYDAFQLAFNSEYGVDGFFCSPKSNPISGRIFYWHYLYFVSKFYEFIDTIIIVLKKKPLIFLHIWHHSIVVLIVWTWLPGGVSYGSIGLFANTLVHVFMYYYYFRTAWNPSVRIWWKSYLTSGQLFQFTMSFVLSIPFLLKDIVINENGVISHNCVG-WGAFMFTMFNNLFFLILFMNFYIKTYIQRPKSKPK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_F4PLZ5" ac="UniRef90_F4PLZ5" length="261" description="Elongation of fatty acids protein n=1 Tax=Cavenderia fasciculata TaxID=261658 RepID=F4PLZ5_CACFS">
+    <alignments total="1">
+     <alignment number="1">
+      <score>423</score>
+      <bits>167.5</bits>
+      <expectation>2.6e-47</expectation>
+      <identity>37.1</identity>
+      <positives>55.2</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="20" end="262">IDRFRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID---SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHH--FITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMSSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKK</querySeq>
+      <pattern>ID F W +  TP S+ +FP   S  YL +++ L+ FMKN+K + L G ++ HN  L LLS  M  G++    + +   G +++IC+       G + F  Y+FYLSK YE  DT++  L+KK L+FLHV+HH   + +   W N ++  G  W     N F+H +MY+YY QT  G + W+KK+ITT QI+QF+   +    W         N   C G  A +  S  V   F+ LFI+F++ +YKK</pattern>
+      <matchSeq start="11" end="251">IDNFTWDSN-TPLSSWVFPASTSVTYLVVVFLLKQFMKNRKPMSLKGVSIIHNFNLILLSFAMMAGVLEAAYRQALEEGPFSLICERTPFAVQGRIGFWIYVFYLSKYYELFDTVLLALKKKPLIFLHVFHHMAMVPITWQWLNDQWLVGSWWCTF-VNSFIHTIMYYYYLQTSLGNDCWFKKYITTAQIVQFLTGTAMVGYWFTI-----RNKENCQGGLAPAIVSFTVNSVFILLFIKFYINSYKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0A9N9ENJ6" ac="UniRef90_A0A9N9ENJ6" length="299" description="Elongation of fatty acids protein n=3 Tax=Funneliformis TaxID=1117308 RepID=A0A9N9ENJ6_9GLOM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>425</score>
+      <bits>168.3</bits>
+      <expectation>3.7e-47</expectation>
+      <identity>35.4</identity>
+      <positives>55.9</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="268">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICK-PIDSGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM-------SSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKK</querySeq>
+      <pattern>F +   VTP S     ++    Y A+++G Q+FMKN+  IKL      HNL L L SL + +     +    F +G++  +C     +  ++  YY+ YL K +E IDT+  VL+KK L FLHV+HH +T+ L ++ L+  T   WV I+ N  VH+ MY+YYF+   G   WWKK++TT QI+QFI+D+        ++    ++    N+ S  C+G+ + + F   ++ S+L LFI F+ K YKK ++  K</pattern>
+      <matchSeq start="40" end="291">FAFTEGVTPLSTRYEVVIACITYFAIVFGGQVFMKNRTVIKLRFIFQVHNLLLTLSSLALLILFAEQLIPIVFRNGIFYAVCNNDAWTQRLELLYYLNYLVKYWELIDTVFLVLKKKELEFLHVYHHSMTMALCFSQLEGTTSVSWVPITLNLLVHVFMYYYYFRAAGGARIWWKKYLTTMQIVQFIIDLFFVYFCSYTYFTATYWPWMPNYGS--CAGSESAAIFGCALLSSYLLLFIGFYKKTYKKGATATK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_A0ABR2X381" ac="UniRef90_A0ABR2X381" length="284" description="Elongation of fatty acids protein n=1 Tax=Basidiobolus ranarum TaxID=34480 RepID=A0ABR2X381_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>423</score>
+      <bits>167.5</bits>
+      <expectation>4.9e-47</expectation>
+      <identity>38.0</identity>
+      <positives>53.3</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="269">FRWKNEVTPFSNILFPIVCSFGYLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPID-SGLVQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDMS-------SHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>F +   VTP S +         YL  I+G Q  MKN+K  KL      HNLFL  +S  +   I   +    +  GLY  +C     +  ++  YY+ YL+K YE IDTI  VL+KK L FLH +HH +T+ L +  L   T   WV I  N  VH+ MY+YY++   G+  WWKK++TT QI QF++D+        ++LA++F+     H  N CSGT   + F   ++ S+L LFI FF K YKK  S  K+</pattern>
+      <matchSeq start="31" end="283">FNFVQGVTPLSTVPEVAATCVIYLITIFGGQYLMKNRKPFKLEFLFKVHNLFLTFISASLLFLIAENIIPIMWNEGLYGSVCNQSSWTQRLELLYYLNYLTKYYELIDTIFLVLKKKKLEFLHYYHHSLTMVLCFTQLVGSTAVSWVPIVLNLCVHVFMYYYYYRATAGVRIWWKKYLTTMQITQFVLDLGFVYFCTYNYLAFNFF-PMVPHVGN-CSGTVGAALFGCALLSSYLVLFISFFRKTYKKPVSKPKQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0A2H3JAG1" ac="UniRef90_A0A2H3JAG1" length="313" description="Elongation of fatty acids protein n=1 Tax=Wolfiporia cocos (strain MD-104) TaxID=742152 RepID=A0A2H3JAG1_WOLCO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>425</score>
+      <bits>168.3</bits>
+      <expectation>5.3e-47</expectation>
+      <identity>38.1</identity>
+      <positives>56.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="45" end="269">YLALIYGLQIFMKNKKEIKLHGFAMFHNLFLCLLSLLMFLGIVIPMAKYSFPHGLYNIICKPIDSGL----VQFSYYIFYLSKVYEFIDTIIQVLRKKSLLFLHVWHHFITLWLVWANLKYDTGCQWVDISANCFVHIVMYFYYFQTERGINPWWKKHITTCQIIQFIVDM-------SSHLAWHFYDTQGNHNSNYCSGTWATSAFSDFVILSFLGLFIQFFVKAYKKKSSIKKK</querySeq>
+      <pattern>YL +++GLQ +MKN+  +KL G    HN+ L   S L+   +   +A     H ++  +C   D G+    ++F Y I Y  K  E IDT+   L+KK L FLHV+HH  T  L +  L   T  QWV I+ N  VH++MY+YY+ T  G   WWKKH+TT QI+QF++D+        S+ A +++ T     S  C+GT A + F   ++ S+L LFIQF+++ YKK +  K K</pattern>
+      <matchSeq start="43" end="273">YLVIVFGLQAYMKNRPPLKLQGLFQLHNVILSAGSALLLTVMAEEIAPLFLNHSVFWSMC---DEGMWTDRLEFFYLINYYFKYLELIDTVFLALKKKPLAFLHVFHHSATALLCYTQLNGKTSVQWVPITINLSVHVLMYYYYYATAGGAKIWWKKHLTTMQIVQFVIDLFVVYFATYSYYAANYWPTLPTLGS--CAGTEAAAVFGCLLLSSYLVLFIQFYIQTYKKPAKAKGK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

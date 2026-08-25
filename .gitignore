@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+.DS_Store
+
+# Large derived artifacts that are regenerated from the CSV/split files
+data/processed/*.pt
+data/processed/*_train.pt
+data/processed/*_test.pt
+sixfold_logs/
+results/
+run_dirs/
+
+# Keep model checkpoints (shipped in the repository)
+!models/*.pth

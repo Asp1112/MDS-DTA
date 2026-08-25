@@ -1,0 +1,18 @@
+name: mds-affinity
+channels:
+  - pytorch
+  - nvidia
+  - pyg
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pytorch=2.5.1
+  - pytorch-cuda=12.4
+  - pyg
+  - rdkit
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - tqdm
+

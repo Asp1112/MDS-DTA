@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-125347-0050-29881228-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-125347-0050-29881228-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="72"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:53:47+01:00" end="2026-08-06T12:59:25+01:00" search="P0Y0M0DT0H0M338.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_O43080" ac="UniRef90_O43080" length="72" description="N-alpha-acetyltransferase 38, NatC auxiliary subunit n=1 Tax=Schizosaccharomyces pombe (strain 972 / ATCC 24843) TaxID=284812 RepID=NAA38_SCHPO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>369</score>
+      <bits>146.7</bits>
+      <expectation>9.2e-45</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="72">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSVRA</querySeq>
+      <pattern>MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSVRA</pattern>
+      <matchSeq start="1" end="72">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSVRA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_S9VTP4" ac="UniRef90_S9VTP4" length="74" description="Sm domain-containing protein n=1 Tax=Schizosaccharomyces cryophilus (strain OY26 / ATCC MYA-4695 / CBS 11777 / NBRC 106824 / NRRL Y48691) TaxID=653667 RepID=S9VTP4_SCHCR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>258</score>
+      <bits>104.0</bits>
+      <expectation>8.4e-28</expectation>
+      <identity>69.0</identity>
+      <positives>81.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="71">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSVR</querySeq>
+      <pattern>ME+GE  L  WLNR V +E+ D+RKF G+FLCTD EG AILS+TTE + G +RALGLVVIPGKHIKSFS+R</pattern>
+      <matchSeq start="3" end="73">MESGEEQLGRWLNRQVRVEVSDQRKFYGRFLCTDHEGTAILSDTTEDSNGLTRALGLVVIPGKHIKSFSIR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0AAE9WEN9" ac="UniRef90_A0AAE9WEN9" length="72" description="NatC N-acetyltransferase non-catalytic Sm-like domain subunit Naa38 n=2 Tax=Schizosaccharomyces TaxID=4895 RepID=A0AAE9WEN9_9SCHI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>236</score>
+      <bits>95.5</bits>
+      <expectation>1.8e-24</expectation>
+      <identity>67.1</identity>
+      <positives>77.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M++G+  L  WLN  V IE+ D RKF G FLCTD EG AILSNTTE + G +RALGLVVIPGKHIKSFS+</pattern>
+      <matchSeq start="1" end="70">MDSGKQQLQRWLNHQVLIEVSDRRKFYGCFLCTDHEGTAILSNTTEDSNGLTRALGLVVIPGKHIKSFSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_T0RSR7" ac="UniRef90_T0RSR7" length="92" description="Sm domain-containing protein n=1 Tax=Schizosaccharomyces japonicus (strain yFS275 / FY16936) TaxID=402676 RepID=T0RSR7_SCHJY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>228</score>
+      <bits>92.4</bits>
+      <expectation>5.2e-23</expectation>
+      <identity>65.2</identity>
+      <positives>80.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="72">LLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSVRA</querySeq>
+      <pattern>LL SWLN+SV IE+ D R F G F+CTD EG+AIL+NTTE+N+G +R + +VVIPGKHIK FSV A</pattern>
+      <matchSeq start="27" end="92">LLESWLNKSVRIEVSDGRVFFGDFMCTDHEGSAILANTTEWNQGRNRNVSMVVIPGKHIKKFSVHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_M7PHG4" ac="UniRef90_M7PHG4" length="76" description="Sm domain-containing protein n=2 Tax=Pneumocystis TaxID=4753 RepID=M7PHG4_PNEMU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>180</score>
+      <bits>73.9</bits>
+      <expectation>6.9e-16</expectation>
+      <identity>49.3</identity>
+      <positives>71.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="70">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>G+ +L +WL + V + + D R FIGKF+C D++G  ILSNT E+NK   R++GLVV+PGK+I  F +</pattern>
+      <matchSeq start="3" end="69">GKKILETWLLKIVRVTLSDSRIFIGKFVCVDKDGTMILSNTQEFNKEKKRSIGLVVLPGKNIIRFEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_A0A0W4ZV41" ac="UniRef90_A0A0W4ZV41" length="76" description="Sm domain-containing protein n=1 Tax=Pneumocystis jirovecii (strain RU7) TaxID=1408657 RepID=A0A0W4ZV41_PNEJ7">
+    <alignments total="1">
+     <alignment number="1">
+      <score>179</score>
+      <bits>73.6</bits>
+      <expectation>9.7e-16</expectation>
+      <identity>50.7</identity>
+      <positives>66.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="72">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSVRA</querySeq>
+      <pattern>G+ +L SWL ++V I + D R F GK +C D EG  ILS T E NKG  R++GLVV+PGK+I  F + A</pattern>
+      <matchSeq start="3" end="71">GKQILESWLLKTVRITLSDFRVFTGKLICIDNEGTVILSGTQEVNKGKKRSIGLVVLPGKNIIQFEIHA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_A0ACB7CI13" ac="UniRef90_A0ACB7CI13" length="76" description="Sm domain-containing protein n=1 Tax=Pneumocystis oryctolagi TaxID=42067 RepID=A0ACB7CI13_9ASCO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>175</score>
+      <bits>72.0</bits>
+      <expectation>4e-15</expectation>
+      <identity>49.3</identity>
+      <positives>68.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="70">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>G+ +L SWL ++  + + D R FIGK +C D EG  ILS+T E+NK   R++GLVV+PGK+I  F V</pattern>
+      <matchSeq start="3" end="69">GKEILKSWLLKTARVTLSDSRIFIGKVICIDNEGTLILSDTQEFNKDRKRSIGLVVLPGKNIMRFEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0A482WAS4" ac="UniRef90_A0A482WAS4" length="134" description="N-alpha-acetyltransferase 38, NatC auxiliary subunit n=1 Tax=Asbolus verrucosus TaxID=1661398 RepID=A0A482WAS4_ASBVE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>174</score>
+      <bits>71.6</bits>
+      <expectation>2.4e-14</expectation>
+      <identity>48.1</identity>
+      <positives>63.3</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY----NKGFS-----RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M  G + L SWLN+S+ I++FD R  +G FLCTDR+   IL + TEY    N G       R LGLV++PGKHI+S S+</pattern>
+      <matchSeq start="32" end="110">MSFGAVKLRSWLNKSLRIQMFDGRVLVGVFLCTDRDANVILGSCTEYLPAENTGDGTAEEPRMLGLVMVPGKHIQSVSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_A0AA38IH28" ac="UniRef90_A0AA38IH28" length="132" description="Sm domain-containing protein n=1 Tax=Zophobas morio TaxID=2755281 RepID=A0AA38IH28_9CUCU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>169</score>
+      <bits>69.7</bits>
+      <expectation>1.3e-13</expectation>
+      <identity>44.9</identity>
+      <positives>61.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS--------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M  G + L SWLN+S+ I++FD R  +G FLCTDR+   IL + TEY             R LGLV++PGKHI++ S+</pattern>
+      <matchSeq start="31" end="108">MSPGAVKLRSWLNKSLRIQMFDGRVLVGVFLCTDRDANVILGSCTEYLPAEDTDGTIEEPRMLGLVMVPGKHIQTVSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_D1ZZY7" ac="UniRef90_D1ZZY7" length="134" description="N-alpha-acetyltransferase 38-B, NatC auxiliary subunit-like Protein n=1 Tax=Tribolium castaneum TaxID=7070 RepID=D1ZZY7_TRICA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>168</score>
+      <bits>69.3</bits>
+      <expectation>1.9e-13</expectation>
+      <identity>44.3</identity>
+      <positives>60.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS---------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M  G + L SWLN+S+ I++FD R  +G FLCTDR+   IL + TEY              R LGLV++PGKHI+S ++</pattern>
+      <matchSeq start="32" end="110">MSPGAVKLRSWLNKSLRIQMFDGRVLVGVFLCTDRDANVILGSCTEYLPAEDNGDGTIEEPRMLGLVMVPGKHIQSVAI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A1B0DHT6" ac="UniRef90_A0A1B0DHT6" length="112" description="Sm domain-containing protein n=1 Tax=Phlebotomus papatasi TaxID=29031 RepID=A0A1B0DHT6_PHLPP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>166</score>
+      <bits>68.6</bits>
+      <expectation>2.3e-13</expectation>
+      <identity>51.4</identity>
+      <positives>62.5</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNK--GFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M  G+ILL SWLNR+  I + D R  IG FLCTD +   IL   +EY +  G  R LGLV+IPG+HI S  V</pattern>
+      <matchSeq start="32" end="103">MTQGKILLKSWLNRNFRIVMTDGRLLIGVFLCTDADANVILGMCSEYTEEGGEERILGLVMIPGRHIVSMEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0A8J6HAV7" ac="UniRef90_A0A8J6HAV7" length="439" description="N-terminal methionine N(alpha)-acetyltransferase NatC n=1 Tax=Tenebrio molitor TaxID=7067 RepID=A0A8J6HAV7_TENMO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>176</score>
+      <bits>72.4</bits>
+      <expectation>2.9e-13</expectation>
+      <identity>48.1</identity>
+      <positives>63.3</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY----NKGFS-----RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M  G + L SWLN+S+ I++FD R  +G FLCTDR+   IL + TEY    N G       R LGLV++PGKHI+S S+</pattern>
+      <matchSeq start="32" end="110">MSPGAVKLRSWLNKSLRIQMFDGRVLVGVFLCTDRDANVILGSCTEYLPAENNGDGTIEEPRMLGLVMVPGKHIQSVSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_A0ACE7F6J5" ac="UniRef90_A0ACE7F6J5" length="112" description="N-alpha-acetyltransferase 38-A, NatC auxiliary subunit n=1 Tax=Sergentomyia squamirostris TaxID=2283857 RepID=A0ACE7F6J5_9DIPT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>162</score>
+      <bits>67.0</bits>
+      <expectation>9.3e-13</expectation>
+      <identity>50.7</identity>
+      <positives>63.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="70">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNK--GFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>G++LL SWLNRS  + + D R  IG FLCTD +   IL   +EY +  G  R LGLV+IPG+HI S  V</pattern>
+      <matchSeq start="35" end="103">GKLLLKSWLNRSFRVVMTDGRLLIGVFLCTDADANVILGMCSEYTEDGGEERILGLVMIPGRHIVSMEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0ABD0SSU8" ac="UniRef90_A0ABD0SSU8" length="101" description="Sm domain-containing protein n=1 Tax=Loxostege sticticalis TaxID=481309 RepID=A0ABD0SSU8_LOXSC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>158</score>
+      <bits>65.5</bits>
+      <expectation>2.9e-12</expectation>
+      <identity>44.7</identity>
+      <positives>59.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+E+G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY KG        R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="13" end="88">VEDGKTKLRKWLNMNFRIEMTDGRVLIGVFLCTDRDANVILGACSEYLKGSEGEAEEPRVLGLVMVPGRHIVSIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_A0AAV8WW46" ac="UniRef90_A0AAV8WW46" length="133" description="Sm domain-containing protein n=1 Tax=Rhamnusium bicolor TaxID=1586634 RepID=A0AAV8WW46_9CUCU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>160</score>
+      <bits>66.2</bits>
+      <expectation>3e-12</expectation>
+      <identity>48.1</identity>
+      <positives>59.5</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY------NKGFS---RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M  G + L SWLN+S  IE+ D R  IG FLCTDR+   IL + +EY      NK  +   R LGLV+IPGKHI S  +</pattern>
+      <matchSeq start="32" end="110">MSPGAVKLRSWLNKSFRIEMTDGRVLIGIFLCTDRDANVILGSCSEYLPADSKNKSVNEEPRMLGLVMIPGKHIVSVHI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_A0A9P0GV87" ac="UniRef90_A0A9P0GV87" length="143" description="Sm domain-containing protein n=1 Tax=Phaedon cochleariae TaxID=80249 RepID=A0A9P0GV87_PHACE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>159</score>
+      <bits>65.9</bits>
+      <expectation>5.3e-12</expectation>
+      <identity>46.8</identity>
+      <positives>60.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY----NKGFS-----RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M +G + L SWLN+S  +E+ D R  IG FLCTDR+   IL + +EY     KG S     R LGLV+IPGKHI +  +</pattern>
+      <matchSeq start="42" end="120">MTSGAVQLRSWLNKSFRVEMTDGRVLIGIFLCTDRDANIILGSCSEYLPSDGKGGSSNEEPRMLGLVMIPGKHIVTIHI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_A0A9N8KTV9" ac="UniRef90_A0A9N8KTV9" length="104" description="Sm domain-containing protein n=2 Tax=Plusiinae TaxID=95186 RepID=A0A9N8KTV9_CHRIL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>6.2e-12</expectation>
+      <identity>44.7</identity>
+      <positives>59.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+E+G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY KG        R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="16" end="91">VEDGKSKLRKWLNMNFRIEMTDGRVLIGVFLCTDRDANVILGACSEYLKGVDGETEEPRVLGLVMVPGRHIVSIQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0ABN7AR76" ac="UniRef90_A0ABN7AR76" length="115" description="Sm domain-containing protein n=1 Tax=Nesidiocoris tenuis TaxID=355587 RepID=A0ABN7AR76_9HEMI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>8e-12</expectation>
+      <identity>47.9</identity>
+      <positives>66.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="67">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNK----GFS---RALGLVVIPGKHIKS</querySeq>
+      <pattern>G++ L SWLN+S+ +++ D R  IG FLCTDR+   IL + TEY      GF+   R LGLV++PG+HI S</pattern>
+      <matchSeq start="22" end="92">GKMKLQSWLNKSLKVDMSDGRVLIGSFLCTDRDANLILGSCTEYINPKVCGFNEEPRILGLVMVPGRHIVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0A8S1B098" ac="UniRef90_A0A8S1B098" length="105" description="Sm domain-containing protein n=1 Tax=Arctia plantaginis TaxID=874455 RepID=A0A8S1B098_ARCPL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>9e-12</expectation>
+      <identity>43.4</identity>
+      <positives>59.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+++G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY KG        R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="17" end="92">VDDGKTKLRKWLNTNFRIEMTDGRVLIGVFLCTDRDANVILGACSEYLKGSEMDSEEPRVLGLVMVPGRHIVSIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_A0A6P8XXH9" ac="UniRef90_A0A6P8XXH9" length="107" description="N-alpha-acetyltransferase 38, NatC auxiliary subunit n=2 Tax=Thripinae TaxID=153976 RepID=A0A6P8XXH9_THRPL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>9.4e-12</expectation>
+      <identity>49.3</identity>
+      <positives>65.2</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="70">EILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS---RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+I L SWLN+++ IE+ D R  +G FLCTDR+   ILS+  E+    S   R LGLV+IPG+HI S  V</pattern>
+      <matchSeq start="32" end="100">KIQLRSWLNKNLRIEMSDGRILVGAFLCTDRDSNIILSSCAEFLNSTSEEARILGLVMIPGRHIVSIHV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_UPI00200F0E66" ac="UniRef90_UPI00200F0E66" length="112" description="N-alpha-acetyltransferase 38, NatC auxiliary subunit n=1 Tax=Leguminivora glycinivorella TaxID=1035111 RepID=UPI00200F0E66">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>1.1e-11</expectation>
+      <identity>45.3</identity>
+      <positives>58.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="70">ENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>E+G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY KG        R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="19" end="93">EDGKSKLRKWLNMNFRIEMTDGRVLIGVFLCTDRDANVILGACSEYLKGNDGETEEPRVLGLVMVPGRHIVSIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_C1BSA5" ac="UniRef90_C1BSA5" length="119" description="LSM domain-containing protein 1 n=2 Tax=Lepeophtheirus salmonis TaxID=72036 RepID=C1BSA5_LEPSM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>1.8e-11</expectation>
+      <identity>47.9</identity>
+      <positives>62.0</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="70">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY---NKGFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+G  LL +WL +S  I + D R   G FLCTDR+   ILS  TEY   +   S+ LGLV++PGKHIKS  +</pattern>
+      <matchSeq start="7" end="77">DGRKLLNNWLKKSTVIHLSDGRHVEGTFLCTDRDANVILSACTEYVEDSAAGSKFLGLVLVPGKHIKSIYI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_A0ABM1MZ69" ac="UniRef90_A0ABM1MZ69" length="121" description="N-alpha-acetyltransferase 38, NatC auxiliary subunit n=1 Tax=Nicrophorus vespilloides TaxID=110193 RepID=A0ABM1MZ69_NICVS">
+    <alignments total="1">
+     <alignment number="1">
+      <score>154</score>
+      <bits>63.9</bits>
+      <expectation>1.8e-11</expectation>
+      <identity>40.3</identity>
+      <positives>61.0</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="70">MENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY-------NKGFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>M  G + L SWLN+ + +E+ D+R  +G FLCTDR+   IL + +EY       +    R LGL+++PGKHI + S+</pattern>
+      <matchSeq start="31" end="107">MSAGAMKLKSWLNKPLRVEMSDKRILVGMFLCTDRDANIILGSCSEYLPDGENASNEEPRMLGLIMVPGKHIVNISI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_A0A9P0D6N5" ac="UniRef90_A0A9P0D6N5" length="139" description="Sm domain-containing protein n=1 Tax=Psylliodes chrysocephalus TaxID=3402493 RepID=A0A9P0D6N5_9CUCU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>155</score>
+      <bits>64.3</bits>
+      <expectation>1.9e-11</expectation>
+      <identity>46.8</identity>
+      <positives>63.6</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="70">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY----NKGFS-----RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+G +LL SWLN+S  +++ D R  IG FLCTD+E   IL + +EY    +KG +     R LGLV+IPGKHI S  +</pattern>
+      <matchSeq start="42" end="118">SGVLLLRSWLNKSFRVQMTDGRILIGIFLCTDKEANIILGSCSEYLPVDSKGKTTNEEPRMLGLVMIPGKHIVSLQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0A9P0F1U9" ac="UniRef90_A0A9P0F1U9" length="101" description="Sm domain-containing protein n=1 Tax=Bemisia tabaci TaxID=7038 RepID=A0A9P0F1U9_BEMTA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>2.3e-11</expectation>
+      <identity>44.3</identity>
+      <positives>67.1</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="70">LTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNK----GFS---RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>L +W+N+ + IE+ D R  +G+F+CTDR+G  I+++  EY      GFS   R LGLV++PG+HI S S+</pattern>
+      <matchSeq start="30" end="99">LRNWINKMMRIEMTDTRILVGRFICTDRDGNTIMASCHEYLNPEVCGFSDEPRLLGLVMVPGRHIVSVSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A0A8S1CM12" ac="UniRef90_A0A8S1CM12" length="165" description="Sm domain-containing protein n=2 Tax=Cloeon dipterum TaxID=197152 RepID=A0A8S1CM12_9INSE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>156</score>
+      <bits>64.7</bits>
+      <expectation>2.3e-11</expectation>
+      <identity>49.3</identity>
+      <positives>59.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="67">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKG-------FSRALGLVVIPGKHIKS</querySeq>
+      <pattern>G   L SWLNR + IE+ D R  +G FLCTDR+   IL N  EY  G        SR LGLV++PG+HI S</pattern>
+      <matchSeq start="74" end="144">GRAKLRSWLNRMLKIEMTDGRILVGSFLCTDRDANVILGNCCEYLGGDEQTAQEDSRMLGLVMVPGRHIVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_S4RN23" ac="UniRef90_S4RN23" length="100" description="N-alpha-acetyltransferase 38, NatC auxiliary subunit n=1 Tax=Petromyzon marinus TaxID=7757 RepID=S4RN23_PETMA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>3.2e-11</expectation>
+      <identity>47.1</identity>
+      <positives>58.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="70">LTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGF-------SRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>L SWLNRS+ I + D R  +G FLCTDR+   IL +  EY KG        +R LGL ++PG HI S  V</pattern>
+      <matchSeq start="21" end="90">LESWLNRSMKIRMSDGRTLVGSFLCTDRDCNVILGSAQEYLKGTEPSSQGEARVLGLAMVPGHHILSIEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_A0A6A4JKB2" ac="UniRef90_A0A6A4JKB2" length="4756" description="Dynein heavy chain, cytoplasmic n=1 Tax=Apolygus lucorum TaxID=248454 RepID=A0A6A4JKB2_APOLU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>161</score>
+      <bits>66.6</bits>
+      <expectation>3.4e-11</expectation>
+      <identity>48.6</identity>
+      <positives>65.3</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="67">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNK----GFS---RALGLVVIPGKHIKS</querySeq>
+      <pattern>+G+  L SWLN+S+ +E+ D R  +G FLCTDR+   IL + TEY      GFS   R LGLV++PG+HI S</pattern>
+      <matchSeq start="23" end="94">SGKTKLLSWLNKSMKVEMSDGRVLVGSFLCTDRDANLILGSCTEYLNPQVCGFSDEPRVLGLVMVPGRHIVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0A067RL84" ac="UniRef90_A0A067RL84" length="119" description="LSM domain-containing protein 1 n=1 Tax=Zootermopsis nevadensis TaxID=136037 RepID=A0A067RL84_ZOONE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>3.5e-11</expectation>
+      <identity>47.2</identity>
+      <positives>62.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="67">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS-------RALGLVVIPGKHIKS</querySeq>
+      <pattern>+G+  L SWLN++  IE+ D R  IG FLCTDR+G  IL + +EY K          R LGLV++PG+HI S</pattern>
+      <matchSeq start="34" end="105">SGKQKLCSWLNKNFKIEMTDGRVLIGVFLCTDRDGNVILGSCSEYLKPEDNGVIEEPRVLGLVMVPGRHIVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0A482XA26" ac="UniRef90_A0A482XA26" length="107" description="Sm domain-containing protein n=1 Tax=Laodelphax striatellus TaxID=195883 RepID=A0A482XA26_LAOST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>3.8e-11</expectation>
+      <identity>45.7</identity>
+      <positives>65.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="67">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNK---GFS--RALGLVVIPGKHIKS</querySeq>
+      <pattern>+G+  L  W+NR + IE+ D R  +G FLCTDR+G  IL + +EY +   GF   R LGLV++PG+H+ S</pattern>
+      <matchSeq start="25" end="94">SGKEKLRRWINRQMKIEMTDGRILVGVFLCTDRDGNIILGSCSEYQQTDGGFDEPRLLGLVMVPGRHVVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_A0A821S892" ac="UniRef90_A0A821S892" length="102" description="Sm domain-containing protein n=2 Tax=Pieris TaxID=7115 RepID=A0A821S892_9NEOP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>4.8e-11</expectation>
+      <identity>43.2</identity>
+      <positives>58.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="70">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY+K         R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="16" end="89">DGKAKLRKWLNMNFRIEMTDGRVLIGVFLCTDRDANVILGACSEYSKNSDGEPQEPRVLGLVMVPGRHIVSIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0AAV1J0Y3" ac="UniRef90_A0AAV1J0Y3" length="105" description="Sm domain-containing protein n=1 Tax=Leptosia nina TaxID=320188 RepID=A0AAV1J0Y3_9NEOP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>5.1e-11</expectation>
+      <identity>42.7</identity>
+      <positives>57.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="70">ENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+ G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY+K         R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="16" end="90">QGGKAKLRKWLNMNFRIEMTDGRILIGVFLCTDRDANVILGACSEYSKNSDGEAEEPRVLGLVMVPGRHIVSIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_UPI0023E0BA3E" ac="UniRef90_UPI0023E0BA3E" length="122" description="N-alpha-acetyltransferase 38-B, NatC auxiliary subunit-like isoform X1 n=1 Tax=Macrosteles quadrilineatus TaxID=74068 RepID=UPI0023E0BA3E">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>5.4e-11</expectation>
+      <identity>49.3</identity>
+      <positives>65.2</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="65">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNK----GFS---RALGLVVIPGKHI</querySeq>
+      <pattern>G+  L SW+N+ + IE+ D R  IG FLCTDR+G  IL + +EY      GFS   R LGLV++PG+HI</pattern>
+      <matchSeq start="39" end="107">GKQKLQSWINKHMKIEMTDGRILIGMFLCTDRDGNVILGSCSEYLNPEVCGFSDEPRLLGLVMVPGRHI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0AAV1KLR0" ac="UniRef90_A0AAV1KLR0" length="108" description="Sm domain-containing protein n=4 Tax=Papilionidae TaxID=7143 RepID=A0AAV1KLR0_9NEOP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>5.5e-11</expectation>
+      <identity>44.6</identity>
+      <positives>58.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="70">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+G+I L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY K         R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="20" end="93">DGKIRLRKWLNMNFRIEMTDGRVLIGVFLCTDRDANVILGACSEYLKNNDGETEEPRVLGLVMVPGRHIVSIKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_A0A653DTH0" ac="UniRef90_A0A653DTH0" length="141" description="Sm domain-containing protein n=1 Tax=Callosobruchus maculatus TaxID=64391 RepID=A0A653DTH0_CALMS">
+    <alignments total="1">
+     <alignment number="1">
+      <score>152</score>
+      <bits>63.2</bits>
+      <expectation>5.7e-11</expectation>
+      <identity>46.1</identity>
+      <positives>56.6</positives>
+      <gaps>12</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="70">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY---------NKGFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>G + L SWLN+S  IE+ D R  IG FLCTDR+   IL + +EY              R LGLV+IPGKHI S  +</pattern>
+      <matchSeq start="42" end="117">GAVKLRSWLNKSFRIEMTDGRVLIGVFLCTDRDANIILGSCSEYLPQNINGKPTSEEPRMLGLVMIPGKHIVSIHI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0A8W8K815" ac="UniRef90_A0A8W8K815" length="102" description="Sm domain-containing protein n=2 Tax=Ostreidae TaxID=6563 RepID=A0A8W8K815_MAGGI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>6.7e-11</expectation>
+      <identity>45.9</identity>
+      <positives>58.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="70">GEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS-------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>G+  L+SWLN+S+ +++ D R  IG FLCTDRE   IL    EY K          R LGL +IPG HI S S+</pattern>
+      <matchSeq start="18" end="91">GKKKLSSWLNKSMKVKMTDGRTLIGVFLCTDRERNVILGGCEEYLKPLEGNEKEEPRILGLAMIPGHHIVSISI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_A0ABD1F267" ac="UniRef90_A0ABD1F267" length="133" description="Sm domain-containing protein n=1 Tax=Hypothenemus hampei TaxID=57062 RepID=A0ABD1F267_HYPHA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>6.8e-11</expectation>
+      <identity>50.0</identity>
+      <positives>61.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="70">LTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS-------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>L SWLN+S  I++ D R  IG FLCTDR+   IL + +EY    S       R LGLV+IPGKHI S S+</pattern>
+      <matchSeq start="46" end="115">LRSWLNKSFKIKMTDGRVLIGVFLCTDRDANIILGSCSEYLPADSTVSNEEPRMLGLVMIPGKHIVSISI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0A8R2AN84" ac="UniRef90_A0A8R2AN84" length="109" description="Sm domain-containing protein n=2 Tax=Bombyx TaxID=7090 RepID=A0A8R2AN84_BOMMO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>149</score>
+      <bits>62.0</bits>
+      <expectation>8e-11</expectation>
+      <identity>45.3</identity>
+      <positives>58.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="70">ENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY---NKGFS---RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>E G+  L  WLN    IE+ D R  IG FLCTDR+   IL   +EY   N+G +   R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="18" end="92">EEGKAKLRKWLNMKFRIEMTDGRVLIGVFLCTDRDANVILGACSEYLKNNEGETEEPRVLGLVMVPGRHIVSIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0A6J2XHN2" ac="UniRef90_A0A6J2XHN2" length="132" description="N-alpha-acetyltransferase 38, NatC auxiliary subunit n=1 Tax=Sitophilus oryzae TaxID=7048 RepID=A0A6J2XHN2_SITOR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>150</score>
+      <bits>62.4</bits>
+      <expectation>9.4e-11</expectation>
+      <identity>47.1</identity>
+      <positives>61.4</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="65">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS-------RALGLVVIPGKHI</querySeq>
+      <pattern>NG + L SWLN+++ I + D R  +G FLCTDR+   IL + +EY    S       R LGLV+IPGKHI</pattern>
+      <matchSeq start="38" end="107">NGALRLRSWLNKTLKIRMTDGRTLVGVFLCTDRDANVILGSCSEYLPPDSTVFNEDTRMLGLVMIPGKHI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_A0A5E4PTX6" ac="UniRef90_A0A5E4PTX6" length="102" description="Sm domain-containing protein n=1 Tax=Leptidea sinapis TaxID=189913 RepID=A0A5E4PTX6_9NEOP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>9.6e-11</expectation>
+      <identity>43.2</identity>
+      <positives>58.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="70">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY+K         R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="16" end="89">DGKAKLRKWLNMNFRIEMTDGRILIGVFLCTDRDANIILGACSEYSKNSDGEPEEPRVLGLVMVPGRHIVSIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_T1HSF3" ac="UniRef90_T1HSF3" length="150" description="Putative u1 snrnp component n=3 Tax=Rhodnius TaxID=13248 RepID=T1HSF3_RHOPR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>151</score>
+      <bits>62.8</bits>
+      <expectation>9.7e-11</expectation>
+      <identity>47.9</identity>
+      <positives>63.0</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="67">ENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNK----GFS---RALGLVVIPGKHIKS</querySeq>
+      <pattern>+ G+  L +WLN+S+ IE+ D R  IG FLCTDR+   IL   TE+      GFS   R LGLV++PG+HI S</pattern>
+      <matchSeq start="58" end="130">KTGKSKLQNWLNKSLKIEMSDGRILIGNFLCTDRDANVILGACTEFLNPEVCGFSDEPRILGLVMVPGRHIVS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_A0A835GSK3" ac="UniRef90_A0A835GSK3" length="104" description="Sm domain-containing protein n=3 Tax=Noctuidae TaxID=7100 RepID=A0A835GSK3_SPOEX">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1e-10</expectation>
+      <identity>44.0</identity>
+      <positives>57.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="70">ENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>E+G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY K         R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="17" end="91">EDGKAKLRKWLNMNFRIEMTDGRVLIGVFLCTDRDANVILGACSEYLKSGDGETEEPRVLGLVMVPGRHIVSIQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_A0A9P0HYU2" ac="UniRef90_A0A9P0HYU2" length="104" description="Sm domain-containing protein n=3 Tax=Spodoptera TaxID=7106 RepID=A0A9P0HYU2_SPOLI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1e-10</expectation>
+      <identity>44.0</identity>
+      <positives>57.3</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="70">ENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>E+G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY K         R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="17" end="91">EDGKAKLRKWLNMNFRIEMTDGRVLIGVFLCTDRDANVILGACSEYLKSGDGETEEPRVLGLVMVPGRHIVSIQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_UPI002140C081" ac="UniRef90_UPI002140C081" length="105" description="N-alpha-acetyltransferase 38, NatC auxiliary subunit n=1 Tax=Aphantopus hyperantus TaxID=2795564 RepID=UPI002140C081">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1e-10</expectation>
+      <identity>44.6</identity>
+      <positives>58.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="70">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+G+  L  WLN +  IE+ D R  IG FLCTDR+   IL   +EY KG        R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="19" end="92">DGKAKLRKWLNMNFRIEMTDGRVLIGIFLCTDRDANVILGACSEYLKGNEGETEEPRVLGLVMVPGRHIVSIQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0AAQ4ED75" ac="UniRef90_A0AAQ4ED75" length="105" description="Sm domain-containing protein n=3 Tax=Amblyomma americanum TaxID=6943 RepID=A0AAQ4ED75_AMBAM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1e-10</expectation>
+      <identity>44.0</identity>
+      <positives>58.7</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="70">ENGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>E G   L  WLNRS+ +E+ D R  +G FLCTDR+   IL + +EY +  S      R LGL ++PG+HI S  V</pattern>
+      <matchSeq start="24" end="98">EEGRARLRRWLNRSLKVEMSDGRILVGSFLCTDRDQNVILGSCSEYLQPDSSSTVEPRILGLAMVPGQHIVSVHV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_A0ABQ7QA44" ac="UniRef90_A0ABQ7QA44" length="107" description="Sm domain-containing protein n=2 Tax=Plutella xylostella TaxID=51655 RepID=A0ABQ7QA44_PLUXY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>148</score>
+      <bits>61.6</bits>
+      <expectation>1.1e-10</expectation>
+      <identity>43.2</identity>
+      <positives>56.8</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="70">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFS------RALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+G+  L  WLN +  +EI D R  IG FLCTDR+   IL   +EY K         R LGLV++PG+HI S  +</pattern>
+      <matchSeq start="21" end="94">DGKAKLMKWLNMNFRVEITDGRVLIGVFLCTDRDANVILGACSEYLKNSDGETEEPRVLGLVMVPGRHIVSIQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_A0AAD7VAZ6" ac="UniRef90_A0AAD7VAZ6" length="81" description="Sm domain-containing protein n=1 Tax=Lichtheimia ornata TaxID=688661 RepID=A0AAD7VAZ6_9FUNG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.2e-10</expectation>
+      <identity>46.0</identity>
+      <positives>61.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="70">LTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEYNKGFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>L  +LN    I I D R FIG F+CTD++   IL++TTEY     R +GLV+IPGKH+    +</pattern>
+      <matchSeq start="11" end="73">LRGYLNHKARIAITDGRVFIGTFVCTDKQKNIILAHTTEYRGDEHRIVGLVMIPGKHLVKMEI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0ABY7EX98" ac="UniRef90_A0ABY7EX98" length="83" description="LSMD1-like protein n=1 Tax=Mya arenaria TaxID=6604 RepID=A0ABY7EX98_MYAAR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.2e-10</expectation>
+      <identity>45.2</identity>
+      <positives>57.5</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="70">ILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY--------NKGFSRALGLVVIPGKHIKSFSV</querySeq>
+      <pattern>+LL SWLN+S+ +E+ D R  IG FLCTDR+   IL +  EY         K   R LGL +IPG HI S  +</pattern>
+      <matchSeq start="1" end="73">MLLQSWLNKSMKVEMTDGRTLIGMFLCTDRDRNVILGSCEEYLQPPGNEGKKEEPRILGLAMIPGHHIVSIHI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_A0A0E9NGT0" ac="UniRef90_A0A0E9NGT0" length="85" description="Sm domain-containing protein n=1 Tax=Saitoella complicata (strain BCRC 22490 / CBS 7301 / JCM 7358 / NBRC 10748 / NRRL Y-17804) TaxID=698492 RepID=A0A0E9NGT0_SAICN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>146</score>
+      <bits>60.8</bits>
+      <expectation>1.3e-10</expectation>
+      <identity>44.8</identity>
+      <positives>59.7</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="71">LTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY---NKGFSRALGLVVIPGKHIKSFSVR</querySeq>
+      <pattern>L SWLN+   +   D R F GKF+C DR+   IL++T EY        R +GLVV+PGKHI  F ++</pattern>
+      <matchSeq start="11" end="77">LQSWLNKKTRVHASDGRIFDGKFVCVDRDQNVILADTDEYRIEKPEEKRFMGLVVVPGKHITKFEIQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0AAW1D321" ac="UniRef90_A0AAW1D321" length="100" description="Sm domain-containing protein n=1 Tax=Rhynocoris fuscipes TaxID=488301 RepID=A0AAW1D321_9HEMI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>147</score>
+      <bits>61.2</bits>
+      <expectation>1.3e-10</expectation>
+      <identity>44.2</identity>
+      <positives>57.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="72">NGEILLTSWLNRSVHIEIFDERKFIGKFLCTDREGAAILSNTTEY-------NKGFSRALGLVVIPGKHIKSFSVRA</querySeq>
+      <pattern>+G+  L SWLN+S+ I + D R  +G FLCTDR+   IL    EY           SR LGLV+IPG+HI S  + A</pattern>
+      <matchSeq start="17" end="93">SGKEKLHSWLNKSLKILLTDGRILVGNFLCTDRDANIILGACLEYMNEEDLVQPDSSRTLGLVMIPGRHIVSIHINA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

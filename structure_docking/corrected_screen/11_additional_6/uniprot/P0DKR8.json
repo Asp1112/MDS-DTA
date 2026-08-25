@@ -1,0 +1,1222 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "P0DKR8",
+  "uniProtkbId": "ATDA_WIGBR",
+  "entryAudit": {
+    "firstPublicDate": "2012-11-28",
+    "lastAnnotationUpdateDate": "2025-06-18",
+    "lastSequenceUpdateDate": "2012-11-28",
+    "entryVersion": 37,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 4.0,
+  "organism": {
+    "scientificName": "Wigglesworthia glossinidia brevipalpis",
+    "taxonId": 36870,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Pseudomonadota",
+      "Gammaproteobacteria",
+      "Enterobacterales",
+      "Erwiniaceae",
+      "Wigglesworthia"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "P0A951"
+          }
+        ],
+        "value": "Spermidine N(1)-acetyltransferase"
+      },
+      "shortNames": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P0A951"
+            }
+          ],
+          "value": "SAT"
+        }
+      ],
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P0A951"
+            }
+          ],
+          "value": "2.3.1.57"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P0A951"
+            }
+          ],
+          "value": "Spermidine/spermine N(1)-acetyltransferase"
+        },
+        "shortNames": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P0A951"
+              }
+            ],
+            "value": "SSAT"
+          }
+        ]
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "speG"
+      },
+      "synonyms": [
+        {
+          "value": "WGpWb0002"
+        }
+      ],
+      "orderedLocusNames": [
+        {
+          "value": "WIGBRp0020"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P0A951"
+            }
+          ],
+          "value": "Involved in the protection against polyamine toxicity by regulating their concentration. Catalyzes the transfer of an acetyl group from acetyl coenzyme A (AcCoA) to the primary amino groups of spermidine to yield N(1)- and N(8)-acetylspermidine. It can also use spermine"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "an alkane-alpha,omega-diamine + acetyl-CoA = an N-acetylalkane-alpha,omega-diamine + CoA + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:11116"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9766"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9767"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:70977"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:70988"
+          }
+        ],
+        "ecNumber": "2.3.1.57",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "P0A951"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "spermidine + acetyl-CoA = N(1)-acetylspermidine + CoA + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:28150"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57834"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:58324"
+          }
+        ],
+        "ecNumber": "2.3.1.57",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "P0A951"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "spermidine + acetyl-CoA = N(8)-acetylspermidine + CoA + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:28270"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57834"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:58535"
+          }
+        ],
+        "ecNumber": "2.3.1.57",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "P0A951"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "spermine + acetyl-CoA = N(1)-acetylspermine + CoA + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:33099"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:45725"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:58101"
+          }
+        ],
+        "ecNumber": "2.3.1.57",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "P0A951"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P0A951"
+            }
+          ],
+          "value": "Amine and polyamine degradation; spermidine degradation"
+        }
+      ],
+      "commentType": "PATHWAY"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P0A951"
+            }
+          ],
+          "value": "Amine and polyamine degradation; spermine degradation"
+        }
+      ],
+      "commentType": "PATHWAY"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P0A951"
+            }
+          ],
+          "value": "Homododecamer"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P0A951"
+              }
+            ],
+            "value": "Cytoplasm",
+            "id": "SL-0086"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the acetyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 174,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Spermidine N(1)-acetyltransferase",
+      "featureId": "PRO_0000420405"
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 8,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 159,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "N-acetyltransferase",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00532"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 136,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 136,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Proton donor",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P0A951"
+        }
+      ]
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 31,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 31,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:45725"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "spermine",
+        "id": "ChEBI:CHEBI:45725"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 36,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 36,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:18420"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P0A951"
+        }
+      ],
+      "ligand": {
+        "name": "Mg(2+)",
+        "id": "ChEBI:CHEBI:18420"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 36,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 36,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57834"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "spermidine",
+        "id": "ChEBI:CHEBI:57834"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 36,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 36,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:45725"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "spermine",
+        "id": "ChEBI:CHEBI:45725"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 44,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 44,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57834"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "spermidine",
+        "id": "ChEBI:CHEBI:57834"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 44,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 44,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:45725"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "spermine",
+        "id": "ChEBI:CHEBI:45725"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 52,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 55,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:45725"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "spermine",
+        "id": "ChEBI:CHEBI:45725"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 77,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 77,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:18420"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "P0A951"
+        }
+      ],
+      "ligand": {
+        "name": "Mg(2+)",
+        "id": "ChEBI:CHEBI:18420"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 86,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 88,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:45725"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "spermine",
+        "id": "ChEBI:CHEBI:45725"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 89,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 91,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57288"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "acetyl-CoA",
+        "id": "ChEBI:CHEBI:57288"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 96,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 102,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57288"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "acetyl-CoA",
+        "id": "ChEBI:CHEBI:57288"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 129,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 138,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57288"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ],
+      "ligand": {
+        "name": "acetyl-CoA",
+        "id": "ChEBI:CHEBI:57288"
+      }
+    },
+    {
+      "type": "Site",
+      "location": {
+        "start": {
+          "value": 86,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 86,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Could be important for selectivity toward long polyamines",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250",
+          "source": "UniProtKB",
+          "id": "Q9KL03"
+        }
+      ]
+    }
+  ],
+  "geneLocations": [
+    {
+      "value": "pWb1 (pWig1)",
+      "geneEncodingType": "Plasmid"
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0963",
+      "category": "Cellular component",
+      "name": "Cytoplasm"
+    },
+    {
+      "id": "KW-0460",
+      "category": "Ligand",
+      "name": "Magnesium"
+    },
+    {
+      "id": "KW-0479",
+      "category": "Ligand",
+      "name": "Metal-binding"
+    },
+    {
+      "id": "KW-0614",
+      "category": "Technical term",
+      "name": "Plasmid"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "12219091",
+        "citationType": "journal article",
+        "authors": [
+          "Akman L.",
+          "Yamashita A.",
+          "Watanabe H.",
+          "Oshima K.",
+          "Shiba T.",
+          "Hattori M.",
+          "Aksoy S."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "12219091"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1038/ng986"
+          }
+        ],
+        "title": "Genome sequence of the endocellular obligate symbiont of tsetse flies, Wigglesworthia glossinidia.",
+        "publicationDate": "2002",
+        "journal": "Nat. Genet.",
+        "firstPage": "402",
+        "lastPage": "407",
+        "volume": "32"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "AB063523",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "-"
+        },
+        {
+          "key": "Status",
+          "value": "NOT_ANNOTATED_CDS"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "P0DKR8",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "P0DKR8",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "9795206at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "UniPathway",
+      "id": "UPA00211",
+      "properties": [
+        {
+          "key": "RectionId",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "UniPathway",
+      "id": "UPA00250",
+      "properties": [
+        {
+          "key": "RectionId",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000000562",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Plasmid pWb1"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005737",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:cytoplasm"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0004145",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:diamine N-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0000287",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:magnesium ion binding"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0006598",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:polyamine catabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0046203",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:spermidine catabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniPathway"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0046208",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:spermine catabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniPathway"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.40.630.30:FF:000007",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Spermidine N(1)-acetyltransferase"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.40.630.30",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR016181",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl_CoA_acyltransferase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR000182",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT_dom"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF011709",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PRK15130.1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR43415",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "SPERMIDINE N(1)-ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR43415:SF6",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "SPERMIDINE N(1)-ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF13302",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_3"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF55729",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl-CoA N-acyltransferases (Nat)"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS51186",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MVQYLKKIKLRPLERDDLTFIHQLDNNASVMRYWFEEPYEAFVELTDLYDKHIHDQSERRFIIEYSSYKVGLVELVEINYIHRRAEFQIIIDPNYQGKGYAVSATKLAINYAFSILNLYKLYLVVDESNEKAIHIYLKLGFIIEGRLIHEFFSNGKYRDVIRMCVFQNNFNNKY",
+    "length": 174,
+    "molWeight": 20925,
+    "crc64": "BDF268FADC28D9D1",
+    "md5": "5310DA7FDBD5A4E022B92AAA763069F5"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 4,
+      "PATHWAY": 2,
+      "SUBUNIT": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Domain": 1,
+      "Active site": 1,
+      "Binding site": 12,
+      "Site": 1
+    },
+    "uniParcId": "UPI00003FE542"
+  }
+}

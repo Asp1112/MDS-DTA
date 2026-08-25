@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-130933-0314-28832303-p2m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-130933-0314-28832303-p2m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="173"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T13:09:33+01:00" end="2026-08-06T13:11:28+01:00" search="P0Y0M0DT0H0M115.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q04474" ac="UniRef90_Q04474" length="173" description="RTX-III toxin-activating lysine-acyltransferase ApxIIC n=3 Tax=Pasteurellaceae TaxID=712 RepID=RTX3C_ACTPL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>932</score>
+      <bits>363.6</bits>
+      <expectation>2.1e-127</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MSYKNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIVRG</querySeq>
+      <pattern>MSYKNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIVRG</pattern>
+      <matchSeq start="1" end="173">MSYKNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIVRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_A0A379B7M6" ac="UniRef90_A0A379B7M6" length="169" description="RTX toxin-activating lysine-acyltransferase n=1 Tax=[Pasteurella] mairii TaxID=757 RepID=A0A379B7M6_9PAST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>784</score>
+      <bits>306.6</bits>
+      <expectation>6.8e-105</expectation>
+      <identity>85.8</identity>
+      <positives>91.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MSYKNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKK</querySeq>
+      <pattern>MSYKNV NLT DFT LGHIAWLWANSPLH+EWSISLFTKNILPAIQH QY+LLMRDEFPV FCSWANL+L NEVKYVRDVTSLT EDWNSGERKWLIDWI PFGDN+ LY  MR+KFPN+VFRAIRVYP S+EAKIIHVQGG+INK TAKKLIQQYQEEL QVLN+ KK</pattern>
+      <matchSeq start="1" end="169">MSYKNVNNLTKDFTILGHIAWLWANSPLHREWSISLFTKNILPAIQHKQYLLLMRDEFPVGFCSWANLSLINEVKYVRDVTSLTLEDWNSGERKWLIDWIVPFGDNHALYTKMRQKFPNDVFRAIRVYPNSSEAKIIHVQGGKINKTTAKKLIQQYQEELTQVLNHLKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0A328BWE6" ac="UniRef90_A0A328BWE6" length="177" description="RTX toxin-activating lysine-acyltransferase n=1 Tax=Glaesserella australis TaxID=2094024 RepID=A0A328BWE6_9PAST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>768</score>
+      <bits>300.4</bits>
+      <expectation>2.4e-102</expectation>
+      <identity>84.3</identity>
+      <positives>91.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="166">MSYKNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>MSYKNVKNLT+DFT LGH+AWLWANSPLHK+W ISLF KNILPAIQH+QY+LLMRDEFPVAFC WANLTL NEVKYV DVTSLT EDWNSGERKW IDWIAPFGDNN LY++MRKKFP +VFRAIRVYPGSTEAKIIHVQGG+++K  AKKL QQYQEEL  VLNN</pattern>
+      <matchSeq start="1" end="166">MSYKNVKNLTNDFTILGHVAWLWANSPLHKDWPISLFAKNILPAIQHNQYVLLMRDEFPVAFCCWANLTLANEVKYVCDVTSLTLEDWNSGERKWFIDWIAPFGDNNMLYQHMRKKFPYDVFRAIRVYPGSTEAKIIHVQGGKVDKSIAKKLKQQYQEELTYVLNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A9X4G5Z4" ac="UniRef90_A0A9X4G5Z4" length="166" description="RTX toxin-activating lysine-acyltransferase n=2 Tax=Actinobacillus equuli TaxID=718 RepID=A0A9X4G5Z4_ACTEU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>580</score>
+      <bits>228.0</bits>
+      <expectation>7.3e-74</expectation>
+      <identity>66.2</identity>
+      <positives>80.9</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="166">FTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEEL---IQVLNN</querySeq>
+      <pattern>F  LG +AWLWANS +HK+WS+SL   N+LPAI+H+QYILL RD FPVAFCSWANL + NEVKY++DVTSL  EDWNSGERKW+IDWIAPFGDN+ LY++MR KF N++FRAIR+   STEAKIIHVQGG+ NK   + L+ +YQ EL   + +LNN</pattern>
+      <matchSeq start="8" end="164">FQVLGDVAWLWANSSMHKQWSVSLLASNVLPAIKHNQYILLKRDGFPVAFCSWANLNIENEVKYIQDVTSLEAEDWNSGERKWIIDWIAPFGDNHLLYKHMRNKFSNDLFRAIRLSDDSTEAKIIHVQGGKANKQEMRNLVIKYQSELSDALSMLNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0ABX6UVV4" ac="UniRef90_A0ABX6UVV4" length="176" description="RTX toxin-activating lysine-acyltransferase n=4 Tax=Rodentibacter TaxID=1960084 RepID=A0ABX6UVV4_9PAST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>566</score>
+      <bits>222.6</bits>
+      <expectation>1.4e-71</expectation>
+      <identity>63.1</identity>
+      <positives>76.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="164">NVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVL</querySeq>
+      <pattern>+V N+   F TLGHIAWLWANSPLH+ WS+SL   N LPAI H+QY+LLMR+ FPVAFCSWANL+L NEVKY+ DV SL+ EDWNSG+RKW IDWIAPFGDN  LY++MRK F ++VFRAIR+ P     KI+   GG+I+K  A K+ QQY  EL+  L</pattern>
+      <matchSeq start="2" end="161">SVNNINAPFETLGHIAWLWANSPLHRNWSLSLLAINTLPAIHHNQYVLLMRNNFPVAFCSWANLSLENEVKYLDDVASLSAEDWNSGDRKWFIDWIAPFGDNGALYKHMRKLFAHDVFRAIRIEPNGKTGKIVEFHGGKIDKKLASKIFQQYHFELMSEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_P16461" ac="UniRef90_P16461" length="168" description="Leukotoxin-activating lysine-acyltransferase LtxC n=6 Tax=Aggregatibacter actinomycetemcomitans TaxID=714 RepID=LTXC_AGGAC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>562</score>
+      <bits>221.1</bits>
+      <expectation>4.3e-71</expectation>
+      <identity>59.6</identity>
+      <positives>77.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="171">DDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIV</querySeq>
+      <pattern>++F  LG++AWLWANSPLH+ WS+SL   N+LPAIQ+ QY LLMRD  P+AFCSWANL+L NE+KY+ DV+SL ++DWNSG+RKW IDWIAPFG N  LY++MRK FP ++FR+IRVY GS+E KI    GG+++K  A K+ QQY  ELI  L N  +++</pattern>
+      <matchSeq start="5" end="165">NNFEMLGYVAWLWANSPLHRNWSLSLLAINVLPAIQYGQYTLLMRDGVPIAFCSWANLSLENEIKYLEDVSSLVYDDWNSGDRKWFIDWIAPFGHNYVLYKHMRKSFPYDLFRSIRVYKGSSEGKITEFHGGKVDKQLANKIFQQYHFELINELKNKSEVI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_P06736" ac="UniRef90_P06736" length="170" description="Protein-lysine myristoyltransferase HlyC n=16 Tax=Enterobacteriaceae TaxID=543 RepID=HLYC_ECOLX">
+    <alignments total="1">
+     <alignment number="1">
+      <score>547</score>
+      <bits>215.3</bits>
+      <expectation>8.8e-69</expectation>
+      <identity>61.0</identity>
+      <positives>77.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="161">NLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELI</querySeq>
+      <pattern>N+      LGH++WLWA+SPLH+ W +SLF  N+LPAIQ +QY+LL RD++PVA+CSWANL+L NE+KY+ DVTSL  EDW SG+RKW IDWIAPFGDN  LY+YMRKKFP+E+FRAIRV P +   K+    GG+I+K  A K+ +QY  ELI</pattern>
+      <matchSeq start="2" end="155">NINKPLEILGHVSWLWASSPLHRNWPVSLFAINVLPAIQANQYVLLTRDDYPVAYCSWANLSLENEIKYLNDVTSLVAEDWTSGDRKWFIDWIAPFGDNGALYKYMRKKFPDELFRAIRVDPKTHVGKVSEFHGGKIDKQLANKIFKQYHHELI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0ABS0W2D3" ac="UniRef90_A0ABS0W2D3" length="170" description="RTX toxin-activating lysine-acyltransferase n=10 Tax=Morganellaceae TaxID=1903414 RepID=A0ABS0W2D3_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>546</score>
+      <bits>214.9</bits>
+      <expectation>1.2e-68</expectation>
+      <identity>61.3</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="167">NLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNH</querySeq>
+      <pattern>N  +    LGHI WLWA+SPLH+ W +SLF  N+LPAIQ +QY LL RD FPVA+CSWANL L NEVKY+ DVTSL  EDW SG+RKW IDWIAPFGDN  LY+YMRK FPNE+FRAIRV P +   K+    GG+I+K  A K+ +QY  ELI  + N+</pattern>
+      <matchSeq start="2" end="161">NRNNSLDILGHIVWLWASSPLHRNWPVSLFAINVLPAIQANQYALLTRDGFPVAYCSWANLNLENEVKYLNDVTSLIAEDWTSGDRKWFIDWIAPFGDNGALYKYMRKNFPNELFRAIRVDPETQIGKVSEFHGGKIDKQLANKIFKQYHHELITEVKNY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_A0A0H2VAH3" ac="UniRef90_A0A0H2VAH3" length="224" description="RTX toxin-activating lysine-acyltransferase n=49 Tax=Enterobacteriaceae TaxID=543 RepID=A0A0H2VAH3_ECOL6">
+    <alignments total="1">
+     <alignment number="1">
+      <score>545</score>
+      <bits>214.5</bits>
+      <expectation>1e-67</expectation>
+      <identity>58.4</identity>
+      <positives>75.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="166">VKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>+ N+ +    LGH++WLWA+SPLH+ W +SLF  N+LPAI+ +QY LL RD +PVA+CSWANL+L NE+KY+ DVTSL  EDW SG+RKW IDWIAPFGDN  LY+YMRKKFP+E+FRAIRV P +   K+    GG+I+K  A K+ +QY  ELI  + N</pattern>
+      <matchSeq start="54" end="214">IMNMNNPLEVLGHVSWLWASSPLHRNWPVSLFAINVLPAIRANQYALLTRDNYPVAYCSWANLSLENEIKYLNDVTSLVAEDWTSGDRKWFIDWIAPFGDNGALYKYMRKKFPDELFRAIRVDPKTHVGKVSEFHGGKIDKQLANKIFKQYYHELITEVKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_UPI001241154E" ac="UniRef90_UPI001241154E" length="174" description="toxin-activating lysine-acyltransferase n=1 Tax=Actinobacillus vicugnae TaxID=2573093 RepID=UPI001241154E">
+    <alignments total="1">
+     <alignment number="1">
+      <score>540</score>
+      <bits>212.6</bits>
+      <expectation>1.2e-67</expectation>
+      <identity>63.2</identity>
+      <positives>76.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="164">TDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVL</querySeq>
+      <pattern>TD F  LG IAWLWANSPLHK WS++L   N+LPAI++ QY+LL +D FPVAFCSWANL+L NEVKY+ DV SL  EDWNSGER+W IDWIAPFGD++ LY++MR+ FPNE+FRAIRV P +   KI    GG I+K  A K+ QQY  EL+  L</pattern>
+      <matchSeq start="4" end="158">TDKFKLLGEIAWLWANSPLHKNWSLALLAINVLPAIENKQYVLLKKDGFPVAFCSWANLSLENEVKYLDDVASLISEDWNSGERRWFIDWIAPFGDSDALYKHMRENFPNELFRAIRVDPMTRVGKISEFHGGNIDKKLASKIFQQYHYELMNEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_P09984" ac="UniRef90_P09984" length="170" description="Protein-lysine myristoyltransferase HlyC n=51 Tax=Enterobacterales TaxID=91347 RepID=HLYC1_ECOLX">
+    <alignments total="1">
+     <alignment number="1">
+      <score>531</score>
+      <bits>209.1</bits>
+      <expectation>2.4e-66</expectation>
+      <identity>58.5</identity>
+      <positives>74.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="166">NLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>N  +    LGH++WLWA+SPLH+ W +SLF  N+LPAI+ +QY LL RD +PVA+CSWANL+L NE+KY+ DVTSL  EDW SG+RKW I WIAPFGDN  LY+YMRKKFP+E+FRAIRV P +   K+    GG+I+K  A K+ +QY  ELI  + N</pattern>
+      <matchSeq start="2" end="160">NRNNPLEVLGHVSWLWASSPLHRNWPVSLFAINVLPAIRANQYALLTRDNYPVAYCSWANLSLENEIKYLNDVTSLVAEDWTSGDRKWFIVWIAPFGDNGALYKYMRKKFPDELFRAIRVDPKTHVGKVSEFHGGKIDKQLANKIFKQYHHELITEVKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_P0A3I3" ac="UniRef90_P0A3I3" length="160" description="RTX-II toxin-activating lysine-acyltransferase ApxIIC n=11 Tax=Pasteurellaceae TaxID=712 RepID=RTX2C_ACTPL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>524</score>
+      <bits>206.5</bits>
+      <expectation>2e-65</expectation>
+      <identity>56.1</identity>
+      <positives>79.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="164">LTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTE-AKIIHVQGGQINKFTAKKLIQQYQEELIQVL</querySeq>
+      <pattern>L +DF  LG IAWLWANSP+H+ WS+SL  KN++PAI++DQY+LL+ D FP+A+CSWA LTL +E +YV+D  SL  +DWN+G+R W+IDWIAPFGD++ LY++MR++FP ++ RAIR+YP   +  KII+++GG+I K  A+K   QY++ELI  L</pattern>
+      <matchSeq start="3" end="159">LKNDFNVLGQIAWLWANSPMHRNWSVSLLMKNVIPAIENDQYLLLVDDGFPIAYCSWAKLTLESEARYVKDTNSLKIDDWNAGDRIWIIDWIAPFGDSSLLYKHMRQRFPYDIGRAIRIYPSKKDTGKIIYLKGGKITKKVAEKTFLQYEQELITAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_UPI0003591209" ac="UniRef90_UPI0003591209" length="170" description="toxin-activating lysine-acyltransferase n=8 Tax=Vibrio harveyi group TaxID=717610 RepID=UPI0003591209">
+    <alignments total="1">
+     <alignment number="1">
+      <score>523</score>
+      <bits>206.1</bits>
+      <expectation>3.9e-65</expectation>
+      <identity>61.2</identity>
+      <positives>75.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="16" end="167">LGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNH</querySeq>
+      <pattern>+GHI+WLWA SP+H+ W ISLF  N+LPAI  +QY LL RD +P+A+CSWANL+L NEVKY+ DVTSL  EDW SG+RKW IDWIAPFGD  TLY+YMRKKF NE+FRAIRV P S   K+    GG+I+K  A K+ +QY  EL+  + N+</pattern>
+      <matchSeq start="10" end="161">IGHISWLWACSPMHRNWPISLFAINVLPAIISNQYALLTRDGYPIAYCSWANLSLENEVKYLNDVTSLVAEDWTSGDRKWFIDWIAPFGDTGTLYKYMRKKFSNELFRAIRVDPKSPVGKVSEFHGGKIDKQLANKIFKQYHYELMTEIKNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_UPI0009AF1956" ac="UniRef90_UPI0009AF1956" length="170" description="toxin-activating lysine-acyltransferase n=1 Tax=Citrobacter sp. A316 TaxID=1639132 RepID=UPI0009AF1956">
+    <alignments total="1">
+     <alignment number="1">
+      <score>518</score>
+      <bits>204.1</bits>
+      <expectation>2.3e-64</expectation>
+      <identity>57.0</identity>
+      <positives>73.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="166">LTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>+ D F  LG ++WLWA+SPLH+ W +SL   N LPAI+ +QY+LL ++ FPVAFCSWANL L NE+KY+ DVTSL  +DWNSG+RKW IDWIAPFGDN  LY+YMRK +PN++FRAIRV   +   K+    G +I+K  AKK+ +QY  ELI  + N</pattern>
+      <matchSeq start="3" end="160">MQDHFQVLGKVSWLWASSPLHRNWPVSLLAINALPAIELNQYVLLTKNNFPVAFCSWANLNLNNEIKYLNDVTSLIKDDWNSGDRKWFIDWIAPFGDNGALYKYMRKNYPNDLFRAIRVDTTTHVGKVSEFHGAKIDKQLAKKIFKQYHHELINEVKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_UPI000BE61D89" ac="UniRef90_UPI000BE61D89" length="182" description="toxin-activating lysine-acyltransferase n=1 Tax=Escherichia coli TaxID=562 RepID=UPI000BE61D89">
+    <alignments total="1">
+     <alignment number="1">
+      <score>517</score>
+      <bits>203.8</bits>
+      <expectation>4.7e-64</expectation>
+      <identity>57.9</identity>
+      <positives>73.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="170">KNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKI</querySeq>
+      <pattern>KN+T+ F TLG ++WLWANSPLH+ W +SL   N LPAI+ +QY LLM+D FPVAFCSWANL+L NE+KY+ +VTSL  EDW SGERKW IDWIAPFGD+  LY++MR  +P ++FRAIRV P +   KI    GG+I+K  A ++ +QY  ELI   N  KK+</pattern>
+      <matchSeq start="13" end="173">KNVTNCFNTLGGVSWLWANSPLHRNWPVSLLAINTLPAIRCNQYALLMKDGFPVAFCSWANLSLKNEIKYLNNVTSLLAEDWTSGERKWFIDWIAPFGDSKYLYKHMRDMYPYDLFRAIRVNPKTNTGKISEFHGGKIDKRLASRIFRQYHNELI---NEAKKM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_P55132" ac="UniRef90_P55132" length="172" description="RTX-I toxin-activating lysine-acyltransferase ApxIC n=6 Tax=Actinobacillus TaxID=713 RepID=RTX1C_ACTPL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>516</score>
+      <bits>203.4</bits>
+      <expectation>4.8e-64</expectation>
+      <identity>59.1</identity>
+      <positives>74.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="166">FTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>F  LG +AWLWA+SPLH++W +SL   N+LPAI+ +QY+LL RD FP+AFCSWANL L NE+KY+ DV SL  +DW SG+R+W IDWIAPFGD+  LY++MR  FPNE+FRAIRV P S   KI    GG+I+K  A K+ QQY  EL+  L N</pattern>
+      <matchSeq start="8" end="161">FEVLGEVAWLWASSPLHRKWPLSLLAINVLPAIESNQYVLLKRDGFPIAFCSWANLNLENEIKYLDDVASLVADDWTSGDRRWFIDWIAPFGDSAALYKHMRDNFPNELFRAIRVDPDSRVGKISEFHGGKIDKKLASKIFQQYHFELMSELKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_UPI000BB858CD" ac="UniRef90_UPI000BB858CD" length="171" description="toxin-activating lysine-acyltransferase n=1 Tax=Escherichia coli TaxID=562 RepID=UPI000BB858CD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>499</score>
+      <bits>196.8</bits>
+      <expectation>1.8e-61</expectation>
+      <identity>55.3</identity>
+      <positives>70.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="170">TDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKI</querySeq>
+      <pattern>T +   +G IAWLWA SPLHK WS SL   N LPAI+H+QYIL+ RD FPVAFCSWANL L  E++Y+ +VTSL  +DWN+G+RKW+IDWIAPFGDN TLY+ MR KFP  +FRAIR+   +   KI    GG+I+K  AK +  +YQ + I+ +   K +</pattern>
+      <matchSeq start="4" end="164">TKNIEIIGKIAWLWACSPLHKNWSTSLLMSNTLPAIKHEQYILIERDNFPVAFCSWANLNLEKEIEYLNNVTSLQLDDWNTGDRKWIIDWIAPFGDNQTLYKKMRDKFPYGLFRAIRIDTFNHTGKITEFHGGKIDKRLAKDMFTKYQRDFIEKIKTSKNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_Q5K5Z5" ac="UniRef90_Q5K5Z5" length="171" description="RTX toxin-activating lysine-acyltransferase n=83 Tax=Enterobacteriaceae TaxID=543 RepID=Q5K5Z5_ECOLX">
+    <alignments total="1">
+     <alignment number="1">
+      <score>492</score>
+      <bits>194.1</bits>
+      <expectation>2.1e-60</expectation>
+      <identity>57.1</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="168">FTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHK</querySeq>
+      <pattern>F  +G +AWLWA SPLHK+W +S+F  N++PAIQ +Q+ LL++DE PVAFCSWA+L L  EVKY+ DVTSL  +DW SGERKW IDWIAPFG N  LY+YMRKK+P E+FRAIR+   S   KI    GG I+K  A K+ +QY  EL+  + N +</pattern>
+      <matchSeq start="6" end="161">FDVMGKVAWLWACSPLHKKWPLSVFAINVIPAIQTNQFALLIKDELPVAFCSWASLDLECEVKYINDVTSLYAKDWMSGERKWFIDWIAPFGHNMELYKYMRKKYPYELFRAIRLDESSKTGKIAEFHGGGIDKKLASKIFRQYHHELMSEVKNRQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A7ISK6" ac="UniRef90_A7ISK6" length="168" description="RTX toxin-activating lysine-acyltransferase n=3 Tax=Moraxella TaxID=475 RepID=A7ISK6_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>478</score>
+      <bits>188.7</bits>
+      <expectation>2.5e-58</expectation>
+      <identity>52.1</identity>
+      <positives>67.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="171">LTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIV</querySeq>
+      <pattern>+ D+FT LG I WLWANS LHK W++SL T N++PAI+  QY+LL RD  PVA+CSWA L+L NEVKY+ DVTSL  EDW SG R W IDWI PFGD+  L ++MR+ F +E+FRAIRV   S+  KI    G  ++   A K+  QY E+L+  L+     +</pattern>
+      <matchSeq start="1" end="163">MNDNFTELGAITWLWANSNLHKNWTLSLLTTNVIPAIETKQYVLLRRDNMPVAYCSWAKLSLENEVKYINDVTSLKLEDWQSGNRNWFIDWITPFGDSLRLTKHMRELFADELFRAIRVEENSSHGKITEFHGKSVDPKLASKMFAQYHEDLMSKLSTQNNFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_UPI000517C5A6" ac="UniRef90_UPI000517C5A6" length="164" description="toxin-activating lysine-acyltransferase n=1 Tax=Cronobacter malonaticus TaxID=413503 RepID=UPI000517C5A6">
+    <alignments total="1">
+     <alignment number="1">
+      <score>471</score>
+      <bits>186.0</bits>
+      <expectation>2.6e-57</expectation>
+      <identity>53.2</identity>
+      <positives>69.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="169">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKK</querySeq>
+      <pattern>DF T+G  AWLW  S LHK W IS+F  NILPAI H QY+LLM++++PVA+CSWANL+L NE KY+ D  SL  +DW SG+RKW IDWIAPFG  + LY +MR+ +P+ +FRAIR+    T  K+    GG+I+K  AKK   QY  EL + L  +++</pattern>
+      <matchSeq start="7" end="164">DFETVGKAAWLWGCSSLHKGWPISIFHNNILPAIIHKQYVLLMKNDYPVAWCSWANLSLENEAKYIMDTNSLVTDDWMSGDRKWFIDWIAPFGHTHELYMHMREHYPHSLFRAIRLTQQKTTGKVTEFHGGKIDKRIAKKQFIQYHYELSEALKKYQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_P16533" ac="UniRef90_P16533" length="167" description="Leukotoxin-activating lysine-acyltransferase LktC serotype A1 n=30 Tax=Pasteurellaceae TaxID=712 RepID=LKTC1_MANHA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>467</score>
+      <bits>184.5</bits>
+      <expectation>1.2e-56</expectation>
+      <identity>49.7</identity>
+      <positives>71.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="172">FTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTE-AKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIVR</querySeq>
+      <pattern>F  LG+I WLW NS LHKEWS  L  +N++PAI+++QY+LL+ +  P+A+CSWA+L L  EVKY++D+ SLT E+W SG+R+W+IDW+APFG +  LY+ M +K+P+ + R+IR YP   E  KI + +GG+++K TAKK    YQEEL   L N    ++</pattern>
+      <matchSeq start="6" end="166">FNLLGNITWLWMNSSLHKEWSCELLARNVIPAIENEQYMLLIDNGIPIAYCSWADLNLETEVKYIKDINSLTPEEWQSGDRRWIIDWVAPFGHSQLLYKKMCQKYPDMIVRSIRFYPKQKELGKIAYFKGGKLDKKTAKKRFDTYQEELATALKNEFNFIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_UPI000390E1A3" ac="UniRef90_UPI000390E1A3" length="169" description="toxin-activating lysine-acyltransferase n=5 Tax=Escherichia TaxID=561 RepID=UPI000390E1A3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>467</score>
+      <bits>184.5</bits>
+      <expectation>1.2e-56</expectation>
+      <identity>54.2</identity>
+      <positives>69.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="166">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>DF  +G  AWLW  S LHK W  S+F  NILPAI H QY+LLM++++PVA+CSWANL++  EVKY+ D  SLT ++W SG+RKW IDWIAPFG  + LY+YMRK F   +FRAIRV   S  +K+    GG+++K  AKK   QY  EL + L N</pattern>
+      <matchSeq start="7" end="161">DFEVVGKAAWLWGCSSLHKSWPTSIFHNNILPAIIHKQYVLLMKNDYPVAWCSWANLSIECEVKYIMDTNSLTTDEWVSGDRKWFIDWIAPFGHTHELYQYMRKHFSYSLFRAIRVSQNSPTSKVTEFHGGKVDKIVAKKQFIQYHYELSEALRN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_UPI000A11A1B2" ac="UniRef90_UPI000A11A1B2" length="164" description="toxin-activating lysine-acyltransferase n=1 Tax=Cronobacter sakazakii TaxID=28141 RepID=UPI000A11A1B2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>466</score>
+      <bits>184.1</bits>
+      <expectation>1.5e-56</expectation>
+      <identity>51.9</identity>
+      <positives>69.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="169">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKK</querySeq>
+      <pattern>DF  +G +AWLW  S LHK W IS+F  NILPAI + QY+LLM++ +P+A+CSWANL+L NE KY+ D  SL  +DW SG+RKW IDWIAPFG    LY +MR+ +P+ +FRAIRV   ++ AK+    GG+I+K  AKK   QY  EL + L  +++</pattern>
+      <matchSeq start="7" end="164">DFEVVGRVAWLWGCSSLHKGWPISIFHNNILPAIIYKQYVLLMKNNYPIAWCSWANLSLENEAKYIMDANSLVADDWISGDRKWFIDWIAPFGHTRELYMHMRENYPHSLFRAIRVTQQTSTAKVTEFHGGKIDKRVAKKQFIQYHYELSEALKKYQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_Q7X2A5" ac="UniRef90_Q7X2A5" length="168" description="RTX toxin-activating lysine-acyltransferase n=1 Tax=Moraxella bovis TaxID=476 RepID=Q7X2A5_MORBO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>464</score>
+      <bits>183.3</bits>
+      <expectation>3.4e-56</expectation>
+      <identity>49.7</identity>
+      <positives>68.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="171">LTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIV</querySeq>
+      <pattern>+T  F  LG IAWLW+NS +HK W++SLF  N++PAI+  QY++L R++ PVA+CSWA L+L NEVKY+ DVTSL  +DW SG+R W IDWIAPFGD+ TL ++MR  F +E+FRAIRV   S+  KI    G  ++   A ++  QY E+L   L+     +</pattern>
+      <matchSeq start="1" end="163">MTKKFAELGLIAWLWSNSDMHKHWTLSLFATNVIPAIETGQYVILKREDMPVAYCSWAKLSLENEVKYINDVTSLKLDDWQSGDRNWFIDWIAPFGDSLTLTKHMRTLFSDELFRAIRVDGNSSHGKISEFYGKSVDSKLASRIFAQYHEDLTSKLSTQNNFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0A378QVU4" ac="UniRef90_A0A378QVU4" length="168" description="RTX toxin-activating lysine-acyltransferase n=1 Tax=Moraxella caprae TaxID=90240 RepID=A0A378QVU4_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>464</score>
+      <bits>183.3</bits>
+      <expectation>3.4e-56</expectation>
+      <identity>50.9</identity>
+      <positives>68.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="9" end="171">LTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIV</querySeq>
+      <pattern>+T  F  LG IAWLW+NS +HK W++SLF  N++PAI+  QY++L R++ PVA+CSWANL+L NEVKY+ DVTSL   DW SG+RKW IDWIAPFGD+  L R+MR  F  ++FRA+RV   S   KI    G +++   AK+  +QY ++LI  L+     V</pattern>
+      <matchSeq start="1" end="163">MTKKFAELGLIAWLWSNSDMHKHWTLSLFATNVIPAIETGQYVILKREDMPVAYCSWANLSLENEVKYINDVTSLELADWQSGDRKWFIDWIAPFGDSYLLTRHMRTVFERDLFRAVRVDGSSNAGKISEFYGRKVDVKLAKEKFKQYHQDLIAKLSAQNNFV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A1YKW8" ac="UniRef90_A1YKW8" length="167" description="Protein-lysine myristoyltransferase RtxC n=21 Tax=Kingella TaxID=32257 RepID=RTXC_KINKI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>463</score>
+      <bits>183.0</bits>
+      <expectation>4.7e-56</expectation>
+      <identity>51.6</identity>
+      <positives>67.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="171">DDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIV</querySeq>
+      <pattern>D F+ LG IAWLW NS LH+ W +SLF+ N++PAI+  QY+LL+RD  P+A+CSWA L L  EVKY+ DVTSL  EDW SG+R W IDWIAPFGD+  L ++MRK F + +FRAIRV  GS   KI    G  ++   A +  +QYQ+EL+  L+     +</pattern>
+      <matchSeq start="2" end="162">DKFSELGSIAWLWTNSELHQNWPLSLFSTNVIPAIETQQYVLLVRDGMPIAYCSWARLNLETEVKYINDVTSLKLEDWQSGDRYWFIDWIAPFGDSYLLTKHMRKLFSDGLFRAIRVDAGSPNGKISEFYGRNVDAKLAMQSFEQYQKELMNALSQQDNFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_Q6TB12" ac="UniRef90_Q6TB12" length="162" description="RTX toxin-activating lysine-acyltransferase n=1 Tax=Mannheimia granulomatis TaxID=85402 RepID=Q6TB12_9PAST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>461</score>
+      <bits>182.2</bits>
+      <expectation>8e-56</expectation>
+      <identity>50.6</identity>
+      <positives>71.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="166">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTE-AKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>+F  LG I WLW NSPLHKEWS SL  +N++PAI+++QY+LL+ +  P+A+CSWA+L L  EVKY+RD+ SL+ ++W SG+R+W+IDW+APFG +  LY  M  KFP+ + R+IR YP   E  KI + +GG++++  AKK    YQ EL + L N</pattern>
+      <matchSeq start="5" end="160">NFNLLGKITWLWMNSPLHKEWSNSLLARNVIPAIENEQYMLLVDNGIPIAYCSWADLNLETEVKYIRDIASLSPDEWQSGDRRWIIDWVAPFGHSQLLYEKMCNKFPDTIVRSIRFYPKQKELGKIAYFKGGKLDRKIAKKRFDSYQNELAEALKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_A0A011LZR7" ac="UniRef90_A0A011LZR7" length="162" description="RTX toxin-activating lysine-acyltransferase n=2 Tax=Mannheimia granulomatis TaxID=85402 RepID=A0A011LZR7_9PAST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>461</score>
+      <bits>182.2</bits>
+      <expectation>8e-56</expectation>
+      <identity>50.6</identity>
+      <positives>71.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="166">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTE-AKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>+F  LG I WLW NSPLHKEWS SL  +N++PAI+++QY+LL+ +  P+A+CSWA+L L  EVKY+RD+ SL+ ++W SG+R+W+IDW+APFG +  LY  M  KFP+ + R+IR YP   E  KI + +GG++++  AKK    YQ EL + L N</pattern>
+      <matchSeq start="5" end="160">NFNLLGKITWLWMNSPLHKEWSNSLLARNVIPAIENEQYMLLIDNGIPIAYCSWADLNLETEVKYIRDIASLSPDEWQSGDRRWIIDWVAPFGHSQLLYEKMCNKFPDTIVRSIRFYPKQKELGKIAYFKGGKLDRKIAKKRFDSYQNELAEALKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_UPI00359CC387" ac="UniRef90_UPI00359CC387" length="166" description="toxin-activating lysine-acyltransferase n=1 Tax=Mannheimia sp. E16BA TaxID=3278707 RepID=UPI00359CC387">
+    <alignments total="1">
+     <alignment number="1">
+      <score>451</score>
+      <bits>178.3</bits>
+      <expectation>3e-54</expectation>
+      <identity>47.8</identity>
+      <positives>72.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="172">FTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPG-STEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIVR</querySeq>
+      <pattern>F  LG+I WLW +SPLH+EWS  L  +N++PAI+++QY+LL+ D  PVA+CSWA+L L  EVKY++D++SLT E+W SG+R+W+IDW+APFG +  LY+ M +K+ + + R+IR  P   +  KI + +GG+++K TAK+   +YQEEL   L N    ++</pattern>
+      <matchSeq start="6" end="166">FNLLGNITWLWMSSPLHREWSCELLARNVIPAIENEQYMLLVDDGVPVAYCSWADLNLDTEVKYIKDISSLTPEEWQSGDRRWIIDWVAPFGHSQLLYKKMCQKYADTLVRSIRFQPNQKSVGKIAYFKGGKLDKKTAKERFDKYQEELATALKNEFNFIK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_UPI002FC99DDD" ac="UniRef90_UPI002FC99DDD" length="125" description="alpha-hemolysin-activating lysine-acyltransferase HlyC n=1 Tax=Escherichia coli TaxID=562 RepID=UPI002FC99DDD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>431</score>
+      <bits>170.6</bits>
+      <expectation>8.9e-52</expectation>
+      <identity>63.1</identity>
+      <positives>77.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="40" end="161">NILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELI</querySeq>
+      <pattern>N+LPAI+ +QY LL RD +PVA+CSWANL+L NE+KY+ DVTSL  EDW SG+RKW IDWIAPFGDN  LY+YMRKKFP+E+FRAIRV P +   K+    GG+I+K  A K+ +QY  ELI</pattern>
+      <matchSeq start="1" end="122">NVLPAIRANQYALLTRDNYPVAYCSWANLSLENEIKYLNDVTSLVAEDWTSGDRKWFIDWIAPFGDNGALYKYMRKKFPDELFRAIRVDPKTHVGKVSEFHGGKIDKQLANKIFKQYHHELI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_UPI000BE2E3B7" ac="UniRef90_UPI000BE2E3B7" length="140" description="toxin-activating lysine-acyltransferase n=6 Tax=Enterobacteriaceae TaxID=543 RepID=UPI000BE2E3B7">
+    <alignments total="1">
+     <alignment number="1">
+      <score>431</score>
+      <bits>170.6</bits>
+      <expectation>1.4e-51</expectation>
+      <identity>56.0</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="145">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQIN</querySeq>
+      <pattern>DF  +G  AWLW  S LHK W IS+F  NILPAI H QY+LLM++++PVA+CSWANL+L NEVKY+ D  SL  +DW SG+RKW IDWIAPFG    LY +MR+ +P+ +FRAIRV   ++  K+    GG+I+</pattern>
+      <matchSeq start="7" end="140">DFEIVGKAAWLWGCSALHKSWPISIFHNNILPAIIHKQYVLLMKNDYPVAWCSWANLSLENEVKYIMDTNSLVADDWISGDRKWFIDWIAPFGHTRELYMHMREHYPHSLFRAIRVTQQTSTGKVTEFHGGKID</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0A7H8URQ2" ac="UniRef90_A0A7H8URQ2" length="160" description="RTX toxin-activating lysine-acyltransferase n=2 Tax=Mannheimia TaxID=75984 RepID=A0A7H8URQ2_9PAST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>420</score>
+      <bits>166.4</bits>
+      <expectation>1.3e-49</expectation>
+      <identity>45.9</identity>
+      <positives>70.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="166">DDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTE-AKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>++F  LG ++WLW NSPLH+EWS+S   KN++PAI+++QY+LL+ +  P+A+CSWA+L +  EVKY++D+ SLT E+W SG+R+W+IDW+APFG +  LY+ M +K+ N + R+IR      +  KI + +G  +N+  AK L   YQ EL   L +</pattern>
+      <matchSeq start="4" end="160">NNFNLLGMVSWLWMNSPLHREWSLSALAKNVIPAIENEQYMLLVDNGVPIAYCSWADLNIDTEVKYIKDIGSLTPEEWKSGDRRWIIDWVAPFGHSQLLYKKMCQKYHNTLVRSIRFQSNHKKIGKISYFKGDGLNRTLAKNLFDTYQIELANALKD</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_A0A380U039" ac="UniRef90_A0A380U039" length="137" description="RTX toxin-activating lysine-acyltransferase n=1 Tax=Actinobacillus lignieresii TaxID=720 RepID=A0A380U039_ACTLI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>415</score>
+      <bits>164.5</bits>
+      <expectation>3.5e-49</expectation>
+      <identity>59.5</identity>
+      <positives>74.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="166">ILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>+LPAI+ +QY+LL RD FP+AFCSWANL L NE+KY+ DV SL  +DW SG+R+W IDWIAPFGD++ LY++MR  FPNE+FRAIRV P S   KI    GG+I+K  A K+ QQY  EL+  L N</pattern>
+      <matchSeq start="1" end="126">MLPAIESNQYVLLKRDGFPIAFCSWANLNLENEIKYLDDVASLVADDWTSGDRRWFIDWIAPFGDSDALYKHMRDNFPNELFRAIRVDPDSRVGKISEFHGGKIDKKLASKIFQQYHFELMSELKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_P55124" ac="UniRef90_P55124" length="165" description="Leukotoxin-activating lysine-acyltransferase LktC n=1 Tax=Pasteurella haemolytica-like sp. (strain 5943B) TaxID=53500 RepID=LKTC_PASSP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>398</score>
+      <bits>157.9</bits>
+      <expectation>3.2e-46</expectation>
+      <identity>46.8</identity>
+      <positives>68.6</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="13" end="166">FTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTE--AKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>F  LG+I WLW NSPLH+EWS  L  +N++PAI++ QY+LL+ ++ P+A+CSWA+L+L  EVKY++D++SLT E+W SG+R+W+IDW+APFG +  L + +  + P +  R I      T+   KI + +GG ++K TAKK    YQE L   L N</pattern>
+      <matchSeq start="6" end="159">FNLLGNITWLWMNSPLHREWSCELLARNVIPAIENQQYMLLIDNDVPIAYCSWADLSLETEVKYIKDISSLTPEEWQSGDRRWIIDWVAPFGHSQLLIKNV-SEIP-DYSRQIYTLLSKTKRTGKIAYFKGGNLDKKTAKKRFDTYQERLGAALKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_UPI000A29419B" ac="UniRef90_UPI000A29419B" length="186" description="toxin-activating lysine-acyltransferase n=1 Tax=Bordetella genomosp. 6 TaxID=463024 RepID=UPI000A29419B">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.1</bits>
+      <expectation>1e-41</expectation>
+      <identity>45.4</identity>
+      <positives>62.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="160">DDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPF--GDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEEL</querySeq>
+      <pattern>D F  LG IAWLW +SP+H++W + L  +N L  I   QYILL RD  P A+CSWA +   +E+ YV D  SL    WN G+R W+IDWIAPF   DNN L R + ++ P++V R++RV PGS  A+I+  +G  +    A+ L+ +Y  EL</pattern>
+      <matchSeq start="15" end="166">DHFAALGDIAWLWMSSPMHRDWPVHLLARNTLAPILRGQYILLRRDGVPTAYCSWARMDADSELAYVLDPASLEERAWNCGDRLWIIDWIAPFSRSDNNALRRALAERLPDQVGRSLRVRPGSQTARIMEHRGRALAPAQARALLDRYHAEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_UPI003394ADAD" ac="UniRef90_UPI003394ADAD" length="171" description="toxin-activating lysine-acyltransferase n=1 Tax=Ralstonia sp. 1138 TaxID=3156423 RepID=UPI003394ADAD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>367</score>
+      <bits>146.0</bits>
+      <expectation>1.9e-41</expectation>
+      <identity>44.7</identity>
+      <positives>64.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="161">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNT--LYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELI</querySeq>
+      <pattern>+F+ LG +AWLW +S LH+ WS  L  + +LP I   QY L+ RD  PVA+CSWA L+  +E++Y+ D   L  E+WN G+R W +DW+APF   +T  L R M +KFP++V RAIRV P S  A+I+   G +IN   A +L+ +Y E+ +</pattern>
+      <matchSeq start="9" end="160">EFSVLGKLAWLWMSSRLHRGWSNELLCQFLLPPIAKGQYHLIERDGLPVAYCSWALLSEASELEYMADPARLKLENWNDGDRLWFVDWVAPFSSRDTWELKRLMGQKFPDQVARAIRVKPASERARIMEFHGKKINPTDAGRLLNEYYEQFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_W0Q6X5" ac="UniRef90_W0Q6X5" length="133" description="RTX toxin-activating lysine-acyltransferase n=1 Tax=Mannheimia varigena USDA-ARS-USMARC-1296 TaxID=1433287 RepID=W0Q6X5_9PAST">
+    <alignments total="1">
+     <alignment number="1">
+      <score>360</score>
+      <bits>143.3</bits>
+      <expectation>6.9e-41</expectation>
+      <identity>49.6</identity>
+      <positives>75.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="41" end="166">ILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTE-AKIIHVQGGQINKFTAKKLIQQYQEELIQVLNN</querySeq>
+      <pattern>++PAI+++QY+LL+ ++ P+A+CSWA+L+L  EVKY++D++SLT E+W SG+R+W+IDW+APFG +  LY+ M +K+P+ + R+IR YP   E  KI + +GG ++K TAKK    YQEEL   L N</pattern>
+      <matchSeq start="1" end="127">MIPAIENEQYMLLIDNDVPIAYCSWADLSLEAEVKYIKDISSLTPEEWQSGDRRWIIDWVAPFGHSQLLYKKMCQKYPDTLVRSIRFYPKQKELGKIAYFKGGNLDKKTAKKCFDTYQEELGAALKN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_UPI0002585AA5" ac="UniRef90_UPI0002585AA5" length="138" description="toxin-activating lysine-acyltransferase n=1 Tax=Kingella kingae TaxID=504 RepID=UPI0002585AA5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>359</score>
+      <bits>142.9</bits>
+      <expectation>1.1e-40</expectation>
+      <identity>52.0</identity>
+      <positives>68.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="35" end="161">SLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELI</querySeq>
+      <pattern>+ F  N++PAI+  QY+LL+RD  P+A+CSWA L L  EVKY+ DVTSL  EDW SG+R W IDWIAPFGD+  L ++MRK F + +FRAIRV  GS   KI    G  ++   A +  +QYQ+EL+</pattern>
+      <matchSeq start="2" end="128">AFFLTNVIPAIETQQYVLLVRDGMPIAYCSWARLNLETEVKYINDVTSLKLEDWQSGDRYWFIDWIAPFGDSYLLTKHMRKLFSDGLFRAIRVDAGSPNGKISEFYGRNVDAKLAMQSFEQYQKELM</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_P0A3I5" ac="UniRef90_P0A3I5" length="185" description="Protein-lysine palmitoyltransferase CyaC n=19 Tax=Bordetella TaxID=517 RepID=CYAC_BORPE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>358</score>
+      <bits>142.5</bits>
+      <expectation>6.6e-40</expectation>
+      <identity>43.6</identity>
+      <positives>61.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="161">NLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFG--DNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELI</querySeq>
+      <pattern>N TDDF  LG+IAWLW NSP+H++W + L  +N L  IQ  QYILL  ++ PVA+CSWA +    E+ YV   +SL    WN G+R W+IDWIAPF   DN  L R + ++ P+ V R++RV  G   A++   +G  ++   A+  + +Y  ELI</pattern>
+      <matchSeq start="12" end="167">NPTDDFAALGNIAWLWMNSPMHRDWPVHLLARNTLAPIQLGQYILLRCNDVPVAYCSWALMDADTELSYVMAPSSLGGNAWNCGDRLWIIDWIAPFSRDDNRALRRALAERHPDSVGRSLRVRRGGDTARVKEYRGRALDAAAARAQLDRYHAELI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_UPI0002712674" ac="UniRef90_UPI0002712674" length="194" description="toxin-activating lysine-acyltransferase n=1 Tax=Polaromonas sp. CF318 TaxID=1144318 RepID=UPI0002712674">
+    <alignments total="1">
+     <alignment number="1">
+      <score>357</score>
+      <bits>142.1</bits>
+      <expectation>1.2e-39</expectation>
+      <identity>39.6</identity>
+      <positives>57.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="168">SYKNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFG--DNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHK</querySeq>
+      <pattern>S  N   L D FT LG +AWLW NSPLH  W + L ++  LP I+  QY+LL R+  PVA+CSWA+L    E  Y+ D + +   DWN G+  W +DW+APFG  D+  L   +  KFP  V RAIRV  GS   +++  +G   ++  A++L+  Y  + +  ++  K</pattern>
+      <matchSeq start="5" end="173">SSPNSPALADKFTILGKLAWLWMNSPLHHYWEVDLLSRFALPPIELGQYLLLEREGMPVAYCSWAHLDSRAEAAYMLDASHIALPDWNCGDHLWFVDWVAPFGKADSLELKNRLADKFPTSVARAIRVKRGSRTGRVMEFRGRDTDRQAARELLSGYYRDFLASIDAQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_UPI00082C828D" ac="UniRef90_UPI00082C828D" length="174" description="toxin-activating lysine-acyltransferase n=1 Tax=Polycladidibacter hongkongensis TaxID=1647556 RepID=UPI00082C828D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>347</score>
+      <bits>138.3</bits>
+      <expectation>2.2e-38</expectation>
+      <identity>38.5</identity>
+      <positives>61.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="168">TDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNT--LYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHK</querySeq>
+      <pattern>++ FT LG I+WLW +SPLHKEW ++ F++ +LPAI   QY +L  D  PVA+CSWA L +  E KY+ D +S + + W  G+R W +DW++PF    T  L  +M+++F N++ R+IRV  G  +A+I    G  +    +  + +QY ++ ++ L   K</pattern>
+      <matchSeq start="3" end="163">SEQFTALGKISWLWQSSPLHKEWELAAFSRFVLPAIASKQYCILEHDGAPVAYCSWALLDIEAEAKYLADPSSFSKDSWTCGDRLWFVDWVSPFSARYTWALRSHMKQRFANKLGRSIRVKKGEEKARITAFAGANLTAEQSADIRRQYFKDTVEALKQQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_UPI0021A5F811" ac="UniRef90_UPI0021A5F811" length="179" description="toxin-activating lysine-acyltransferase n=2 Tax=Phaeobacter inhibens TaxID=221822 RepID=UPI0021A5F811">
+    <alignments total="1">
+     <alignment number="1">
+      <score>335</score>
+      <bits>133.7</bits>
+      <expectation>1.6e-36</expectation>
+      <identity>39.9</identity>
+      <positives>63.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="167">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNT--LYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNH</querySeq>
+      <pattern>+F   G IAWLW+NS LHK+WS++     +LPAI + QY ++    +PVA+CSWA L    E +Y+ +  +L  + WNSG+R W IDWI+PF    T  L   + K+FP+++ RA+RV  G +EA+I    GG ++K  ++   ++Y EE+++ L+++</pattern>
+      <matchSeq start="6" end="163">NFLAFGKIAWLWSNSVLHKDWSVNQQAGFVLPAIANGQYYIVEEKGYPVAYCSWALLDRKTEEEYLINPNALDPDKWNSGDRLWFIDWISPFSAKYTWALRSELNKRFPDKIARAMRVKKGDSEARIASFTGGGLSKADSRSQKRRYFEEMVEGLSSN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_A0A640VUB2" ac="UniRef90_A0A640VUB2" length="192" description="RTX toxin-activating lysine-acyltransferase n=1 Tax=Roseobacter cerasinus TaxID=2602289 RepID=A0A640VUB2_9RHOB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>335</score>
+      <bits>133.7</bits>
+      <expectation>2.4e-36</expectation>
+      <identity>37.4</identity>
+      <positives>59.6</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MSYKNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFG--DNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKK</querySeq>
+      <pattern>M+ + ++ L   +  +G IAWLW NS LH  W I+L T+ +LP +   QY ++ R+  P A+CSWA +TL  E +YV +  SL  EDW SG+R W+IDWIAPF   D+  L   +R++FP  + R +RV P   +A+I+   G  +++  A ++ ++  ++L   L  H +</pattern>
+      <matchSeq start="1" end="171">MTPEELRKLDGLYGAMGRIAWLWCNSDLHCSWPIALQTRFVLPPVTLGQYAIVERNGVPQAYCSWARMTLEVETEYVLNPNSLKPEDWASGDRLWVIDWIAPFARRDSMGLRAELRRRFPKHIVRGLRVKPNDPKARIVTYIGAALSRDEAGRIRKELDQDLADSLKAHPR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_A0ACG4FUG5" ac="UniRef90_A0ACG4FUG5" length="192" description="Toxin-activating lysine-acyltransferase n=1 Tax=Loktanella agnita TaxID=287097 RepID=A0ACG4FUG5_9RHOB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>331</score>
+      <bits>132.1</bits>
+      <expectation>9.5e-36</expectation>
+      <identity>38.4</identity>
+      <positives>55.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="173">KNVKNLTDDFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFG--DNNTLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKIVRG</querySeq>
+      <pattern>K+   L   +   G I WLW+NS LHK W ++L ++ +LPA+   QY +L R+  P A+CSWA +TL  E ++V D  SL  EDW  G+R W +DW+APF   D   L   M  +FP ++ R+IRV PG   A+I    G  + +  A  L     ++L + L  H +  RG</pattern>
+      <matchSeq start="6" end="177">KDAAALDKLYGACGRIFWLWSNSGLHKSWPVALQSRFVLPAVMTGQYAILEREGVPRAYCSWAWVTLEVETRFVIDPNSLRPEDWTGGDRLWFVDWVAPFNARDTRDLRGRMADRFPRDLARSIRVKPGQKNARIATYAGSDLTRQEASALRASLYQDLFESLRQHPEEGRG</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0ABM6PHU4" ac="UniRef90_A0ABM6PHU4" length="180" description="RTX toxin-activating lysine-acyltransferase n=19 Tax=Phaeobacter TaxID=302485 RepID=A0ABM6PHU4_9RHOB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.3</bits>
+      <expectation>1.4e-35</expectation>
+      <identity>39.1</identity>
+      <positives>61.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="170">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNN--TLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKI</querySeq>
+      <pattern>+F T G IAWLW+NS LH++W++S     ILPAI + QY ++ +D FPVA+CSWA L    E  Y+ +   L  + W SG+R W IDWI+PF      TL   + K++P++V RA+RV   +  A+I    G  + K  ++ + +QY E++++ L N+ ++</pattern>
+      <matchSeq start="6" end="166">NFQTYGKIAWLWSNSDLHRDWTVSQQAGFILPAIANQQYYIVEKDGFPVAYCSWALLDEDTEAAYILNPNHLNPDRWTSGDRLWFIDWISPFSPKYSWTLRSALVKRYPDKVARALRVKKDNETARIASFTGHGLEKAQSRAIKRQYYEDMVEGLANNPEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_UPI003A8BD931" ac="UniRef90_UPI003A8BD931" length="179" description="toxin-activating lysine-acyltransferase n=5 Tax=Phaeobacter TaxID=302485 RepID=UPI003A8BD931">
+    <alignments total="1">
+     <alignment number="1">
+      <score>327</score>
+      <bits>130.6</bits>
+      <expectation>2.6e-35</expectation>
+      <identity>39.8</identity>
+      <positives>60.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="170">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNT--LYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKKI</querySeq>
+      <pattern>+F T G IAWLW+NS LH++W +S     ILPAI   QY ++ RD FPVA+CSWA L    E  Y+ D   L  + WNSG+R W IDWI+PF    +  L   + K++P++V RA+RV   +  A+I    G  + K  ++ + ++Y E++++ L ++ K+</pattern>
+      <matchSeq start="6" end="166">NFQTYGKIAWLWSNSVLHRDWRVSQQAGFILPAIASQQYYIVERDGFPVAYCSWALLDEETEAAYILDPNHLDPDRWNSGDRLWFIDWISPFSPKYSWALRSALVKRYPDKVARALRVKKDNQTARIASFTGHGLEKQESRAIKRKYYEDMVEGLASNPKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_UPI0039BC85EB" ac="UniRef90_UPI0039BC85EB" length="179" description="toxin-activating lysine-acyltransferase n=1 Tax=Phaeobacter cretensis TaxID=3342641 RepID=UPI0039BC85EB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>314</score>
+      <bits>125.6</bits>
+      <expectation>2.4e-33</expectation>
+      <identity>37.5</identity>
+      <positives>61.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="169">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNT--LYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNHKK</querySeq>
+      <pattern>+F T G IAWLW+NS LH++W+++   + ILPAI   QY ++ R+ +PVA+CSWA L    E +Y+ + + L  + W  G+R W +DWI+PF    T  L   + K++P++V RA+RV   S  A+I    G  + K  ++ + +QY E++++ L ++ K</pattern>
+      <matchSeq start="6" end="165">NFHTYGKIAWLWSNSVLHRDWTVNQQAEFILPAIACQQYYIVERNGYPVAYCSWALLDEETEARYILNPSRLDPDGWTCGDRLWFVDWISPFSPKYTWALRSALVKRYPDKVARAMRVKKDSDTARIASFTGHGLKKDESRVIKRQYYEDMVESLASNPK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0ABU3KS58" ac="UniRef90_A0ABU3KS58" length="190" description="RTX toxin-activating lysine-acyltransferase n=2 Tax=Rhodoferax TaxID=28065 RepID=A0ABU3KS58_9BURK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>311</score>
+      <bits>124.4</bits>
+      <expectation>9.3e-33</expectation>
+      <identity>45.9</identity>
+      <positives>65.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="12" end="143">DFTTLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNNTLYRYMRK-KFPNEVFRAIRVYPGSTEAKIIHVQGGQ</querySeq>
+      <pattern>+ T LG I WL A+SPLHK W ++   + ++PA+ H Q  L  RD  PVA+ +WA ++   E  YV +  SL  +DW SGER W++DWIAPFGD+  + + +R+  F +EV RA+RV PGS E +II++ G Q</pattern>
+      <matchSeq start="22" end="154">NMTMLGEIVWLMAHSPLHKGWRMASIFQWVVPALMHKQCRLYRRDGRPVAYVAWARMSKEVEEGYVLNPRSLNPKDWTSGERGWIVDWIAPFGDSALVMKDLREGLFKDEVGRALRVKPGSDEMQIIYIHGAQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_UPI0007AE8645" ac="UniRef90_UPI0007AE8645" length="186" description="toxin-activating lysine-acyltransferase n=1 Tax=Pseudovibrio sp. WM33 TaxID=1735585 RepID=UPI0007AE8645">
+    <alignments total="1">
+     <alignment number="1">
+      <score>308</score>
+      <bits>123.2</bits>
+      <expectation>2.3e-32</expectation>
+      <identity>38.9</identity>
+      <positives>60.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="161">TLGHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNN--TLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELI</querySeq>
+      <pattern>T G IAWLW+NS LHK+W+++L     LPAI   Q+ ++  ++FPVA+CSWA      E KY+ + + L  + WN G+R W IDWI+PF      TL   M K+FP EV RA+RV  G++  ++    G  + +  ++   ++Y E+++</pattern>
+      <matchSeq start="9" end="157">TYGKIAWLWSNSELHKDWTVNLQAGFALPAISSGQFCIVEHNDFPVAYCSWAFFDKETEEKYILNPSQLPPDSWNCGDRLWFIDWISPFSARYTWTLRSQMAKRFPTEVARALRVKKGNSRGRVATFAGLGLTQQDSRTKKRRYFEDMV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_UPI001EED3378" ac="UniRef90_UPI001EED3378" length="173" description="toxin-activating lysine-acyltransferase n=1 Tax=Ruegeria pomeroyi TaxID=89184 RepID=UPI001EED3378">
+    <alignments total="1">
+     <alignment number="1">
+      <score>304</score>
+      <bits>121.7</bits>
+      <expectation>6.5e-32</expectation>
+      <identity>39.9</identity>
+      <positives>56.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="17" end="167">GHIAWLWANSPLHKEWSISLFTKNILPAIQHDQYILLMRDEFPVAFCSWANLTLTNEVKYVRDVTSLTFEDWNSGERKWLIDWIAPFGDNN--TLYRYMRKKFPNEVFRAIRVYPGSTEAKIIHVQGGQINKFTAKKLIQQYQEELIQVLNNH</querySeq>
+      <pattern>G I WLW  S +H+EW   L ++ +LPA+   Q+ +L    FPVA+CSWA L    E KY+ +  SL   DWNSG R W IDWI+PF      TL R M ++FP++V R+IRV  GS + K+    G  ++   A++      + +  VL  H</pattern>
+      <matchSeq start="19" end="171">GEICWLWGISNMHQEWPTGLQSRIVLPAVASGQFHVLKNGAFPVAYCSWAFLNEDVEKKYILNTNSLEHTDWNSGSRLWFIDWISPFSTKFTWTLKRAMDERFPDQVARSIRVKKGSNKGKVAQYHGMDLSPQDARQKHSDLFQSVYAVLMGH</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

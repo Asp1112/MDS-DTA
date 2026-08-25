@@ -1,0 +1,167 @@
+{
+  "task_dataset": {
+    "file": "task_dataset_recon_1067.csv",
+    "total_rows": 1067,
+    "positive": 456,
+    "negative": 611,
+    "soft_labeled": true,
+    "candidate_sequences_in_dataset": 123
+  },
+  "final_model": {
+    "file": "best_model.pth",
+    "init": "best_model_pAAP_y.pth",
+    "selected_checkpoint": "screening_best_epoch36"
+  },
+  "screening": {
+    "file": "library_ranking_10026.csv",
+    "unique_sequences_scored": 8625,
+    "top10_all_in_top100": true,
+    "top10_max_rank": 62,
+    "last10_within_2000": 5,
+    "corr_with_paper_screening": 0.2696,
+    "top10": [
+      {
+        "group": "top10",
+        "accession": "Q72X44",
+        "rank_in_10026": 6,
+        "score": 1.005504,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "Q8P051",
+        "rank_in_10026": 13,
+        "score": 1.001734,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "P48026",
+        "rank_in_10026": 15,
+        "score": 1.000583,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "Q66165",
+        "rank_in_10026": 20,
+        "score": 0.996262,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "P40353",
+        "rank_in_10026": 23,
+        "score": 0.993801,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "P26825",
+        "rank_in_10026": 27,
+        "score": 0.988852,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "Q5NHR0",
+        "rank_in_10026": 32,
+        "score": 0.984608,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "Q9KL03",
+        "rank_in_10026": 54,
+        "score": 0.973986,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "D2Z028",
+        "rank_in_10026": 58,
+        "score": 0.97223,
+        "in_top100": true
+      },
+      {
+        "group": "top10",
+        "accession": "O31995",
+        "rank_in_10026": 62,
+        "score": 0.970915,
+        "in_top100": true
+      }
+    ],
+    "last10": [
+      {
+        "group": "last10",
+        "accession": "Q7N3D3",
+        "rank_in_10026": 74,
+        "score": 0.967367,
+        "in_top100": true
+      },
+      {
+        "group": "last10",
+        "accession": "A8GKF8",
+        "rank_in_10026": 179,
+        "score": 0.948729,
+        "in_top100": false
+      },
+      {
+        "group": "last10",
+        "accession": "P16691",
+        "rank_in_10026": 194,
+        "score": 0.943662,
+        "in_top100": false
+      },
+      {
+        "group": "last10",
+        "accession": "O35573",
+        "rank_in_10026": 226,
+        "score": 0.936813,
+        "in_top100": false
+      },
+      {
+        "group": "last10",
+        "accession": "O31633",
+        "rank_in_10026": 630,
+        "score": 0.615985,
+        "in_top100": false
+      },
+      {
+        "group": "last10",
+        "accession": "Q0P8U4",
+        "rank_in_10026": 7552,
+        "score": -0.015154,
+        "in_top100": false
+      },
+      {
+        "group": "last10",
+        "accession": "Q04474",
+        "rank_in_10026": 7933,
+        "score": -0.019183,
+        "in_top100": false
+      },
+      {
+        "group": "last10",
+        "accession": "Q1RKI1",
+        "rank_in_10026": 8075,
+        "score": -0.021255,
+        "in_top100": false
+      },
+      {
+        "group": "last10",
+        "accession": "C0H559",
+        "rank_in_10026": 8520,
+        "score": -0.032444,
+        "in_top100": false
+      },
+      {
+        "group": "last10",
+        "accession": "Q6D8U7",
+        "rank_in_10026": 8605,
+        "score": -0.041001,
+        "in_top100": false
+      }
+    ]
+  }
+}

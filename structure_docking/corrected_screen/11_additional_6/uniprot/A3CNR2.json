@@ -1,0 +1,860 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "A3CNR2",
+  "uniProtkbId": "METAA_STRSV",
+  "entryAudit": {
+    "firstPublicDate": "2008-01-15",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "2007-03-20",
+    "entryVersion": 102,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Streptococcus sanguinis (strain SK36)",
+    "taxonId": 388919,
+    "lineage": [
+      "Bacteria",
+      "Bacillati",
+      "Bacillota",
+      "Bacilli",
+      "Lactobacillales",
+      "Streptococcaceae",
+      "Streptococcus"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00295"
+          }
+        ],
+        "value": "Homoserine O-acetyltransferase"
+      },
+      "shortNames": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00295"
+            }
+          ],
+          "value": "HAT"
+        }
+      ],
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00295"
+            }
+          ],
+          "value": "2.3.1.31"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00295"
+            }
+          ],
+          "value": "Homoserine transacetylase"
+        },
+        "shortNames": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_00295"
+              }
+            ],
+            "value": "HTA"
+          }
+        ]
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00295"
+          }
+        ],
+        "value": "metAA"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "SSA_1420"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00295"
+            }
+          ],
+          "value": "Transfers an acetyl group from acetyl-CoA to L-homoserine, forming acetyl-L-homoserine"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "L-homoserine + acetyl-CoA = O-acetyl-L-homoserine + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:13701"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57476"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57716"
+          }
+        ],
+        "ecNumber": "2.3.1.31",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00295"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00295"
+            }
+          ],
+          "value": "Amino-acid biosynthesis; L-methionine biosynthesis via de novo pathway; O-acetyl-L-homoserine from L-homoserine: step 1/1"
+        }
+      ],
+      "commentType": "PATHWAY"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_00295"
+              }
+            ],
+            "value": "Cytoplasm",
+            "id": "SL-0086"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00295"
+            }
+          ],
+          "value": "Belongs to the MetA family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 313,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Homoserine O-acetyltransferase",
+      "featureId": "PRO_1000021852"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 142,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 142,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Acyl-thioester intermediate",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00295"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 234,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 234,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Proton acceptor",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00295"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 236,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 236,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00295"
+        }
+      ]
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 163,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 163,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00295"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 191,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 191,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00295"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 248,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 248,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00295"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Site",
+      "location": {
+        "start": {
+          "value": 111,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 111,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Important for acyl-CoA specificity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00295"
+        }
+      ]
+    },
+    {
+      "type": "Site",
+      "location": {
+        "start": {
+          "value": 191,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 191,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Important for substrate specificity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00295"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0028",
+      "category": "Biological process",
+      "name": "Amino-acid biosynthesis"
+    },
+    {
+      "id": "KW-0963",
+      "category": "Cellular component",
+      "name": "Cytoplasm"
+    },
+    {
+      "id": "KW-0486",
+      "category": "Biological process",
+      "name": "Methionine biosynthesis"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "17277061",
+        "citationType": "journal article",
+        "authors": [
+          "Xu P.",
+          "Alves J.M.",
+          "Kitten T.",
+          "Brown A.",
+          "Chen Z.",
+          "Ozaki L.S.",
+          "Manque P.",
+          "Ge X.",
+          "Serrano M.G.",
+          "Puiu D.",
+          "Hendricks S.",
+          "Wang Y.",
+          "Chaplin M.D.",
+          "Akan D.",
+          "Paik S.",
+          "Peterson D.L.",
+          "Macrina F.L.",
+          "Buck G.A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "17277061"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/jb.01808-06"
+          }
+        ],
+        "title": "Genome of the opportunistic pathogen Streptococcus sanguinis.",
+        "publicationDate": "2007",
+        "journal": "J. Bacteriol.",
+        "firstPage": "3166",
+        "lastPage": "3175",
+        "volume": "189"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "SK36",
+          "type": "STRAIN"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "CP000387",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABN44817.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_011837123.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_009009.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "A3CNR2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "A3CNR2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "388919.SSA_1420",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "ssa:SSA_1420",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PATRIC",
+      "id": "fig|388919.9.peg.1347",
+      "properties": [
+        {
+          "key": "GeneDesignation",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "COG1897",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_057851_0_1_9",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "9772423at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "UniPathway",
+      "id": "UPA00051",
+      "properties": [
+        {
+          "key": "RectionId",
+          "value": "UER00074"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000002148",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005737",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:cytoplasm"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0004414",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:homoserine O-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-EC"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0008899",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:homoserine O-succinyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0019281",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:L-methionine biosynthetic process from homoserine via O-succinyl-L-homoserine and cystathionine"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:InterPro"
+        }
+      ]
+    },
+    {
+      "database": "CDD",
+      "id": "cd03131",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GATase1_HTS"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.40.50.880:FF:000004",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Homoserine O-succinyltransferase"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.40.50.880",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "HAMAP",
+      "id": "MF_00295",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "MetA_acyltransf"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR029062",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Class_I_gatase-like"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR033752",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "MetA_family"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF047918",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "MetA_acetyl"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR20919",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "HOMOSERINE O-SUCCINYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR20919:SF0",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "HOMOSERINE O-SUCCINYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF04204",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "HTS"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PIRSF",
+      "id": "PIRSF000450",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "H_ser_succinyltr"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF52317",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Class I glutamine amidotransferase-like"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MPIKIDKKLPAVDILSSENIFVMDDDRADHQDIRPLNILVLNLMPQKMVTETQILRHLANTPLQLTIDFLYMSSHQSKTTRAEHMETFYKTFDEVKNRYFDGLIITGAPVEHLPFEAVDYWEEFQRVIEWSKTHVFSTLHICWGAQAGLYARYGVDKHQMTRKLSGVYSQLADSSNLLFRGFDDEFYAPHSRHTEVLKEDIVNLTNLEILSYGEDMGLSVLASRDLREVYSFGHMEYDRDTLSKEYFRDLKAGKNPHIPENYFKNDDVHTTPALCWSSAAALFFSNWVNYAVYQETPFDWESPENDVSFFAYL",
+    "length": 313,
+    "molWeight": 36483,
+    "crc64": "EB285872684447C9",
+    "md5": "5381A3E7EC3E405FBEF2E0CDDE55FF35"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "PATHWAY": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Active site": 3,
+      "Binding site": 3,
+      "Site": 2
+    },
+    "uniParcId": "UPI0000F1C110"
+  }
+}

@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260807-051955-0334-10772007-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260807-051955-0334-10772007-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="212"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-07T05:19:55+01:00" end="2026-08-07T05:23:07+01:00" search="P0Y0M0DT0H0M192.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q47187" ac="UniRef90_Q47187" length="212" description="Acyl-homoserine-lactone synthase n=34 Tax=Dickeya TaxID=204037 RepID=EXPI_DICD3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1034</score>
+      <bits>402.9</bits>
+      <expectation>1.2e-141</expectation>
+      <identity>92.5</identity>
+      <positives>96.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPLA</querySeq>
+      <pattern>MLEIFDVSFSLMSNNKLDEVF LRK TFKDRLDW VNCINGMEFDEYDNEHTTYLLGVKEGK+ICSVRFIE+KYPNMITGTF+SYFD L IPEGNYIESSRFFVDRDRVRNLIGTRNPAC+TLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQE+IYLLHLPTDD+SR+ALIERIT++T AESEQL TLPLLVPLA</pattern>
+      <matchSeq start="1" end="212">MLEIFDVSFSLMSNNKLDEVFALRKGTFKDRLDWTVNCINGMEFDEYDNEHTTYLLGVKEGKIICSVRFIEMKYPNMITGTFFSYFDGLNIPEGNYIESSRFFVDRDRVRNLIGTRNPACLTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQEKIYLLHLPTDDESRYALIERITRITNAESEQLTTLPLLVPLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_D0PSW1" ac="UniRef90_D0PSW1" length="216" description="Acyl-homoserine-lactone synthase n=1 Tax=Brenneria rubrifaciens TaxID=55213 RepID=D0PSW1_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>798</score>
+      <bits>312.0</bits>
+      <expectation>1.2e-105</expectation>
+      <identity>68.7</identity>
+      <positives>83.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>MLEIFDVSF+L+SN ++DE+FTLRK+TFKDRL+W+VNCINGMEFDEYD E+T Y+LGVK   ++CSVR IE+KYPNMITGTF++YF+ +KIPEGNYIESSRFFVDR+R R LIG  NP C+ LFL+MINYAR YHYDGI TIVS  MLT+LKRSGWR+S++ +GLSEK E IYLL LP D  S+HALIERI +  + E E  +  PL+ P+</pattern>
+      <matchSeq start="1" end="211">MLEIFDVSFNLISNKEIDELFTLRKETFKDRLNWSVNCINGMEFDEYDGENTNYILGVKNKTIVCSVRMIEMKYPNMITGTFFNYFNEIKIPEGNYIESSRFFVDRERARALIGNNNPVCLMLFLSMINYARNYHYDGIYTIVSRSMLTILKRSGWRLSVVGEGLSEKNENIYLLFLPIDCASQHALIERIVKSKKTEPESFENWPLVFPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0A375AG50" ac="UniRef90_A0A375AG50" length="171" description="Acyl-homoserine-lactone synthase n=3 Tax=Dickeya TaxID=204037 RepID=A0A375AG50_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>789</score>
+      <bits>308.5</bits>
+      <expectation>5.9e-105</expectation>
+      <identity>87.7</identity>
+      <positives>95.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="42" end="212">MEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPLA</querySeq>
+      <pattern>MEFDEYDNE+TTYLLGVKEGKV+CSVRFIE+KYPNMITGTFYSYF+ L +PEGNYIESSRFFVDRDRVR+LIGTRNPAC+TLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGW+IS+I+QGLSEKQERIYLL LP DD+SR ALIERITQMT  E+E+L TLPLLVPLA</pattern>
+      <matchSeq start="1" end="171">MEFDEYDNENTTYLLGVKEGKVVCSVRFIEMKYPNMITGTFYSYFNTLALPEGNYIESSRFFVDRDRVRHLIGTRNPACLTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWQISVIEQGLSEKQERIYLLLLPADDESRLALIERITQMTAVETERLTTLPLLVPLA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A9J6PVN5" ac="UniRef90_A0A9J6PVN5" length="217" description="Acyl-homoserine-lactone synthase n=2 Tax=Winslowiella TaxID=2997349 RepID=A0A9J6PVN5_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>755</score>
+      <bits>295.4</bits>
+      <expectation>4.4e-99</expectation>
+      <identity>65.4</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>MLEIFDVSF ++SNNK+DE+FTLRK TFKDRL+WAV C   MEFDEYD +HT YLLG+K+  +ICSVRFIE++YPNMI GTF S+F ++K+P+GNYIESSRFFVDR R +NL   +NP  + LFLAM+NYAR YHYDGILTIVSHPMLT+LKRSGW IS+I QG+SEK + +YLLHLP D +++  LI+RI Q  ++ S      PL +PL</pattern>
+      <matchSeq start="1" end="211">MLEIFDVSFDMISNNKMDEMFTLRKGTFKDRLNWAVKCTGEMEFDEYDGQHTHYLLGIKDENLICSVRFIEMQYPNMIDGTFASFFKDVKLPQGNYIESSRFFVDRARAKNLYPGKNPVAIMLFLAMVNYARNYHYDGILTIVSHPMLTILKRSGWGISVISQGISEKDKPVYLLHLPVDKENQQILIDRINQHDRSGSGTFNKWPLTLPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0A366I8N6" ac="UniRef90_A0A366I8N6" length="216" description="Acyl-homoserine-lactone synthase n=2 Tax=Brenneria TaxID=71655 RepID=A0A366I8N6_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>737</score>
+      <bits>288.5</bits>
+      <expectation>2.3e-96</expectation>
+      <identity>64.3</identity>
+      <positives>81.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>MLEIFDVS+SL+S  K +E+FTLRK+TFKDRL+WAV C NGMEFD+YDN +TTYL G+K+  VICS+RFIE KYPNMITGTF+SYF+ + IP GNYIESSRFFVD++R RN +G+  P    LFL+MINY+RK  Y+GI TIVSHPMLT+LKRSGW+IS+++QG+SEK ER+YLL LP DD+++  L +RI +     + +LK  PL</pattern>
+      <matchSeq start="1" end="207">MLEIFDVSYSLLSEEKSEELFTLRKETFKDRLNWAVQCTNGMEFDQYDNNNTTYLFGIKDDSVICSLRFIETKYPNMITGTFFSYFEKINIPTGNYIESSRFFVDKERSRNTLGSNYPISSMLFLSMINYSRKNSYEGIYTIVSHPMLTILKRSGWKISVVEQGMSEKNERVYLLFLPVDDENQEILTQRIIRSGMVVNNELKQWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_UPI002FF013B3" ac="UniRef90_UPI002FF013B3" length="216" description="acyl-homoserine-lactone synthase n=2 Tax=Pectobacterium cacticida TaxID=69221 RepID=UPI002FF013B3">
+    <alignments total="1">
+     <alignment number="1">
+      <score>712</score>
+      <bits>278.9</bits>
+      <expectation>1.5e-92</expectation>
+      <identity>61.9</identity>
+      <positives>78.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVP</querySeq>
+      <pattern>MLEIFDVS++ +S  K  E+FTLRK+TFKDRLDWAV C NGMEFD+YDN +TTYL G+K+  VICS+RFIE KYPNMITGTF+ YF ++ IPEGN++ESSRFFVD+ R ++++G   P    LFL+MINY+R   YDGI TIVSHPMLT+LKRSGW I +++QGLSEKQER+YL+ LP DD+++ AL  R+ +      ++LK  PL VP</pattern>
+      <matchSeq start="1" end="210">MLEIFDVSYAQLSEKKSQELFTLRKETFKDRLDWAVQCTNGMEFDQYDNVNTTYLFGIKDNLVICSLRFIETKYPNMITGTFFPYFKSINIPEGNFLESSRFFVDKSRAKDILGNEYPISSMLFLSMINYSRNKSYDGIYTIVSHPMLTILKRSGWGIRVVEQGLSEKQERVYLVFLPVDDENQEALACRVNRSGAFIRDKLKQWPLRVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_P33880" ac="UniRef90_P33880" length="216" description="Acyl-homoserine-lactone synthase n=49 Tax=Enterobacterales TaxID=91347 RepID=CARI_PECCC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>711</score>
+      <bits>278.5</bits>
+      <expectation>2.1e-92</expectation>
+      <identity>61.3</identity>
+      <positives>77.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPLA</querySeq>
+      <pattern>MLEIFDV+ +L+S  K  E+FTLRK+TFKDRL+WAV C +GMEFD+YDN +TTYL G+K+  VICS+RFIE KYPNMITGTF+ YF  + IPEGNY+ESSRFFVD+ R ++++G   P    LFL+MINY++   YDGI TIVSHPMLT+LKRSGW I +++QGLSEK+ER+YL+ LP DD+++ AL  RI +     S +LK  PL VP A</pattern>
+      <matchSeq start="1" end="212">MLEIFDVNHTLLSETKSGELFTLRKETFKDRLNWAVQCTDGMEFDQYDNNNTTYLFGIKDNTVICSLRFIETKYPNMITGTFFPYFKEINIPEGNYLESSRFFVDKSRAKDILGNEYPISSMLFLSMINYSKDKGYDGIYTIVSHPMLTILKRSGWGIRVVEQGLSEKEERVYLVFLPVDDENQEALARRINRSGTFMSNELKQWPLRVPAA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_D4DYX6" ac="UniRef90_D4DYX6" length="213" description="Acyl-homoserine-lactone synthase n=2 Tax=Serratia TaxID=613 RepID=D4DYX6_SEROD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>708</score>
+      <bits>277.3</bits>
+      <expectation>5.4e-92</expectation>
+      <identity>64.7</identity>
+      <positives>78.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>MLEIFDV++SL++N+  +E+FTLRK+TFKDRLDWAVNC NGMEFD+YDN +T YLLGV  G VICSVRFIE KYPNMITGTF+SYFD + IP GNY+ESSRFFVD+ RV+++  +R P    LFLAMINY+    Y+GI TIVSHPMLT+LKRSGW IS+++QGLSEK++ IYLL LPTD  ++  LI RI Q        L   PL</pattern>
+      <matchSeq start="1" end="207">MLEIFDVNYSLLANDVSEELFTLRKETFKDRLDWAVNCNNGMEFDDYDNNNTNYLLGVNNGSVICSVRFIETKYPNMITGTFFSYFDKIDIPVGNYLESSRFFVDKKRVKSMFDSRFPISSILFLAMINYSINAGYEGIFTIVSHPMLTILKRSGWGISVVEQGLSEKEKPIYLLFLPTDSQNQAELINRIKQHESLAENNLTHWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_UPI000F6F89B1" ac="UniRef90_UPI000F6F89B1" length="212" description="acyl-homoserine-lactone synthase n=2 Tax=Serratia TaxID=613 RepID=UPI000F6F89B1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>706</score>
+      <bits>276.6</bits>
+      <expectation>1.1e-91</expectation>
+      <identity>62.6</identity>
+      <positives>78.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>MLEIFD++++ +S  K +E+F LRKD FKDRLDWAVNCING+EFDEYDN++T YL+G+  G VICSVRFIE+++PNMI GTF SYF  L IP+GNYIESSRFFVD+ R   +   + P    LFLAM+NYARKY+YDGILTIVSH ML +LKRSGW IS+I+QG SEK + IYL+HLPTD +S++ LIERI      ++++LK  PL+  L</pattern>
+      <matchSeq start="1" end="211">MLEIFDLNYNSLSERKSEELFALRKDVFKDRLDWAVNCINGLEFDEYDNQNTNYLVGMMNGMVICSVRFIEMQFPNMIEGTFASYFPKLTIPQGNYIESSRFFVDKARASQVNHKKYPISSILFLAMVNYARKYNYDGILTIVSHSMLAILKRSGWDISVIEQGNSEKNQNIYLVHLPTDIESQNTLIERINNRILFDADKLKKWPLICSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0ABZ2GAM7" ac="UniRef90_A0ABZ2GAM7" length="217" description="Acyl-homoserine-lactone synthase n=2 Tax=Pectobacterium cacticida TaxID=69221 RepID=A0ABZ2GAM7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>703</score>
+      <bits>275.4</bits>
+      <expectation>3.6e-91</expectation>
+      <identity>62.3</identity>
+      <positives>76.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>MLEIFDVS++ +S  K  E+FTLRK+TFKDRLDWAV C NGMEFD+YDNE+ TYL GV++ KVICS R IE ++PNMITGTF+SYF+ + IPEGNYIESSRFFVD+ R + ++G   P  +  FLA +NY+R   YDG+ TIVSHPM T+LKRSGW+ISI +QGLSEKQE+IYLLHLP D +S+  LI RI    +     L+  PL</pattern>
+      <matchSeq start="1" end="207">MLEIFDVSYAQLSEKKSQELFTLRKETFKDRLDWAVQCTNGMEFDQYDNENATYLFGVEDNKVICSSRLIETRFPNMITGTFFSYFNRIDIPEGNYIESSRFFVDKARSKTILGNSYPISMMFFLATVNYSRSKGYDGVYTIVSHPMFTILKRSGWKISIAEQGLSEKQEKIYLLHLPVDKESQDTLIHRINHKQEFVESNLRKWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A4R3VLI8" ac="UniRef90_A0A4R3VLI8" length="217" description="Acyl-homoserine-lactone synthase n=1 Tax=Samsonia erythrinae TaxID=160434 RepID=A0A4R3VLI8_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>687</score>
+      <bits>269.2</bits>
+      <expectation>9.7e-89</expectation>
+      <identity>59.0</identity>
+      <positives>77.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPLA</querySeq>
+      <pattern>ML+IFDV+ +L+S  K +E+F LRK+TFKDRL+WAV CINGMEFD+YDN++ TYL G+K   VICS+RFIE KYPNMITGTF+SYF+ ++IP+GNY+ESSRFFVD+ R + ++G+  P    LFL+MINY++   YDGI TIVSHPMLT+LKRSGW I ++++GLSEKQE +YL+ LP DDD++  L  RI +      + LK  PL +  A</pattern>
+      <matchSeq start="1" end="212">MLQIFDVNHALLSEKKSEELFILRKETFKDRLNWAVQCINGMEFDQYDNDNATYLFGIKNDTVICSLRFIETKYPNMITGTFFSYFEKIEIPDGNYLESSRFFVDKSRAKEILGSGYPISSILFLSMINYSKDKGYDGIYTIVSHPMLTILKRSGWGIRVVERGLSEKQESVYLVFLPVDDDNQATLARRINRNGAFIDDDLKRWPLRLTTA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_P33882" ac="UniRef90_P33882" length="217" description="Acyl-homoserine-lactone synthase n=27 Tax=Enterobacterales TaxID=91347 RepID=EXPI_PECPM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>683</score>
+      <bits>267.7</bits>
+      <expectation>3.9e-88</expectation>
+      <identity>59.4</identity>
+      <positives>77.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>MLEIFDVS++L+S  K +E+FTLRK+TFKDRL+WAV CINGMEFD+YD+++ TYL GV+  +VICS R IE KYPNMITGTF+ YF+ + IPEG YIESSRFFVD+ R + ++G   P     FLA +NY++   YDG+ TIVSHPMLT+LKRSGW+ISI++QG+SEK ER+YLL LP D++S+  L+ RI    +    +L+  PL</pattern>
+      <matchSeq start="1" end="207">MLEIFDVSYTLLSEKKSEELFTLRKETFKDRLNWAVKCINGMEFDQYDDDNATYLFGVEGDQVICSSRLIETKYPNMITGTFFPYFEKIDIPEGKYIESSRFFVDKARSKTILGNSYPVSTMFFLATVNYSKSKGYDGVYTIVSHPMLTILKRSGWKISIVEQGMSEKHERVYLLFLPVDNESQDVLVRRINHNQEFVESKLREWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_A0A370R2G0" ac="UniRef90_A0A370R2G0" length="218" description="Acyl-homoserine-lactone synthase n=1 Tax=Enterobacillus tribolii TaxID=1487935 RepID=A0A370R2G0_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>683</score>
+      <bits>267.7</bits>
+      <expectation>4.1e-88</expectation>
+      <identity>59.4</identity>
+      <positives>78.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>ML IFD+++  +S +  +E FTLRK+TFKDRL+WAVNC +GMEFDEYDN H  YL GVK+  +ICSVRFIE+KYPNMI  TF+ YF  + +P+GN+IESSRFFVD+ R ++L+G R P    LFL+MINYAR+++Y+GI T+VSHPML +LKRSGWRIS+I+ GLSEK E+IY+L LP D +S++ALI++I       ++ +KT PL</pattern>
+      <matchSeq start="1" end="207">MLRIFDLNYRTLSKSSSEEFFTLRKETFKDRLNWAVNCTDGMEFDEYDNSHANYLFGVKDDTMICSVRFIEMKYPNMIVNTFHPYFKKIDLPQGNFIESSRFFVDKTRAKSLLGARFPISYILFLSMINYAREHNYEGIFTLVSHPMLMILKRSGWRISVIETGLSEKSEKIYILLLPIDQESQNALIDKILSGHSFGADAMKTWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A2U8I8R1" ac="UniRef90_A0A2U8I8R1" length="210" description="Acyl-homoserine-lactone synthase n=1 Tax=Candidatus Fukatsuia symbiotica TaxID=1878942 RepID=A0A2U8I8R1_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>679</score>
+      <bits>266.2</bits>
+      <expectation>1.3e-87</expectation>
+      <identity>60.9</identity>
+      <positives>78.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>ML  F+V +S++S+ K  E+F+LRKDTFKDRL+WAVNC   MEFDEYDN +T+YLLGV +  +ICS RFIE+K+PNMITGTF+SYF+ + IPEGNYIESSRFFVD+ R ++    R P  + LFLAMINY+++Y YDGI TIVS PM+ +L+RSGWRISI +QGLSEK+E+IYL+HLP DD++R  LI RI +     +++L   PL</pattern>
+      <matchSeq start="1" end="207">MLYFFNVHYSILSDKKSKELFSLRKDTFKDRLNWAVNCHCNMEFDEYDNHNTSYLLGVHDNSIICSSRFIEMKHPNMITGTFFSYFNQINIPEGNYIESSRFFVDKARAKSTNCNRYPISLMLFLAMINYSKEYCYDGIFTIVSAPMIKILRRSGWRISIAEQGLSEKKEKIYLVHLPIDDENRDILISRINENNSITNKELNKWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_UPI002468BB3B" ac="UniRef90_UPI002468BB3B" length="220" description="acyl-homoserine-lactone synthase n=2 Tax=unclassified Arsenophonus TaxID=2627083 RepID=UPI002468BB3B">
+    <alignments total="1">
+     <alignment number="1">
+      <score>674</score>
+      <bits>264.2</bits>
+      <expectation>1e-86</expectation>
+      <identity>59.2</identity>
+      <positives>78.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI-TQMTQAESEQLKTLPLLVP</querySeq>
+      <pattern>MLEIFDV+++L++  K  E+FTLRK+TFKDRL+WAVNCINGMEFDEYDN+ T YL GV+   +ICSVRFIE+++PNMITGTF  +F +L +P+GNYIESSRFFV +++ RN    ++P C  LFLAM+NYA+K  YDGILTIVSH ML +L+RSGW ISI++QG+SEK E++YL+ LP D +S++ LI +I        + +LK  PL+ P</pattern>
+      <matchSeq start="1" end="211">MLEIFDVNYNLLTEKKSKELFTLRKETFKDRLNWAVNCINGMEFDEYDNDKTNYLFGVRNNNIICSVRFIEMQFPNMITGTFAPFFKHLNLPKGNYIESSRFFVAKNQTRNGNYNKDPVCFILFLAMLNYAKKCEYDGILTIVSHAMLKILERSGWGISIVEQGISEKNEKVYLMLLPVDSESQNQLIGKIRNHYDSLINNKLKQWPLIYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_UPI0039B643DF" ac="UniRef90_UPI0039B643DF" length="234" description="acyl-homoserine-lactone synthase n=1 Tax=Pantoea sp. B65 TaxID=2813359 RepID=UPI0039B643DF">
+    <alignments total="1">
+     <alignment number="1">
+      <score>669</score>
+      <bits>262.3</bits>
+      <expectation>9.3e-86</expectation>
+      <identity>59.4</identity>
+      <positives>76.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>ML IFDV+++L+SNN+ +E+FTLRK TFKDRLDW VNC N MEFDEYDN HTTYL G+ E  VICS+RFIEIK+ NMITGTF SYFD L+IP GNYI++SR F+D++R R+   ++ P    +FLAMINYAR   Y+GI  IVSHPM+ + KRSGW+I++I+QGLSEK E IYL+ +P D+ ++  LI+RI +     + QL   PL</pattern>
+      <matchSeq start="1" end="207">MLRIFDVNYNLLSNNRSEELFTLRKKTFKDRLDWIVNCQNNMEFDEYDNNHTTYLFGIYENMVICSIRFIEIKHHNMITGTFQSYFDKLEIPSGNYIDASRLFIDKERARSCGLSQKPISSMMFLAMINYARHGGYEGIYAIVSHPMMIIFKRSGWKIAVIEQGLSEKNEPIYLIFMPVDEMNQQILIDRINKTNPTFTSQLNAWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_UPI00069DE7DD" ac="UniRef90_UPI00069DE7DD" length="234" description="acyl-homoserine-lactone synthase n=1 Tax=Winslowiella iniecta TaxID=1560201 RepID=UPI00069DE7DD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>667</score>
+      <bits>261.5</bits>
+      <expectation>1.9e-85</expectation>
+      <identity>58.0</identity>
+      <positives>76.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>ML+IFDV+++L+S+N+ +E+FTLRK TFKDRLDW VNC N MEFDEYDN HTTYL GV +  VICS+RFIE KY NMITGTF SYF+N+++P+GNY+++SR F+D++R R L  ++ P    LFL+MINY+R   ++GI  IVSHPM  + KRSGW IS+++QGLSEK E+IYL+ +P DD ++  LIERI +       QL + PL</pattern>
+      <matchSeq start="1" end="207">MLKIFDVNYNLLSDNRSEELFTLRKKTFKDRLDWIVNCENNMEFDEYDNSHTTYLFGVYQNLVICSIRFIETKYHNMITGTFKSYFNNIELPQGNYVDASRLFIDKERARTLGISQQPISTILFLSMINYSRHAGHEGIFAIVSHPMFIIFKRSGWLISVVEQGLSEKNEKIYLIFMPVDDHNQRILIERIKKENSLSDNQLASWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_UPI00192D08FB" ac="UniRef90_UPI00192D08FB" length="216" description="acyl-homoserine-lactone synthase n=1 Tax=Serratia fonticola TaxID=47917 RepID=UPI00192D08FB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>665</score>
+      <bits>260.8</bits>
+      <expectation>2.1e-85</expectation>
+      <identity>57.8</identity>
+      <positives>74.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>MLEIFDVS+S++S  K +E+F+LRK+ FKDRLDWAV+C+NG+EFD YDN H  YL GV +  +IC  R IE+KYPNM+TGTF  YF ++ +PEGNYIESSRFFVD+ R+  +     P  + LFL+ INY+ KY+YDGILTIVSH ML +L+RSGW  S+I QG+SEK E IYLL LPTD +++  LI RI +    E+ +LK+ PL+  L</pattern>
+      <matchSeq start="1" end="211">MLEIFDVSYSILSEKKSEELFSLRKEVFKDRLDWAVSCVNGLEFDIYDNHHANYLFGVIDNSIICGARLIEMKYPNMVTGTFLPYFKDVTLPEGNYIESSRFFVDKFRINKMKIKTYPVSLLLFLSTINYSLKYNYDGILTIVSHAMLAILQRSGWVFSVISQGISEKNESIYLLQLPTDTENQDRLIRRIKEKISIENNKLKSWPLVCSL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0A0T9PN28" ac="UniRef90_A0A0T9PN28" length="234" description="Acyl-homoserine-lactone synthase n=1 Tax=Yersinia pekkanenii TaxID=1288385 RepID=A0A0T9PN28_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>662</score>
+      <bits>259.6</bits>
+      <expectation>1.1e-84</expectation>
+      <identity>56.5</identity>
+      <positives>76.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>M+EIFDVS++L+S+++  E+F+LRK  FKDRL+W VNC NGME+DEYDN HTTYL GV + +VICS+RFIEIKYPNMITG F SYF+N+++P GNY+E+SR F+D+DR + L     P    LFL+MINY R   Y+GI  I+SHPMLT+ KRSGW IS+++QG+SEK +RIYL+++P DD ++  LI +I +     ++ L   PL</pattern>
+      <matchSeq start="1" end="207">MMEIFDVSYNLLSDSRSSELFSLRKKVFKDRLNWIVNCENGMEYDEYDNNHTTYLFGVHDNQVICSLRFIEIKYPNMITGVFKSYFNNIELPNGNYVEASRLFIDKDRAKKLQLQHYPLSSMLFLSMINYTRHQGYEGIYAIISHPMLTIFKRSGWLISVVEQGMSEKNQRIYLVYMPVDDHNQQILIHKINKALPTGNDTLNNWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_A0A6P1Q0A8" ac="UniRef90_A0A6P1Q0A8" length="216" description="Acyl-homoserine-lactone synthase n=2 Tax=Mixta TaxID=2100764 RepID=A0A6P1Q0A8_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>657</score>
+      <bits>257.7</bits>
+      <expectation>3.4e-84</expectation>
+      <identity>58.5</identity>
+      <positives>74.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>M+   D+++  +S  +  E+F LRK+TFKDRLDWAVNCINGMEFDEYDNEHTTY+ G+    V+CSVRFIE +YPNMIT TF  +FD +++P+GNYIESSRFFVD++R RN    + P    LFLAM+NYAR Y Y+GI T+VSH ML +LKRSGW IS+++Q LSEK+E+IY++ LP DD SR  LIER         +QL++ PL</pattern>
+      <matchSeq start="1" end="207">MINFLDINYQKLSEQRSSELFILRKETFKDRLDWAVNCINGMEFDEYDNEHTTYVFGIHNDSVLCSVRFIETRYPNMITHTFAPWFDKVELPQGNYIESSRFFVDKERARNSELYQYPVSNMLFLAMVNYARHYGYEGIYTLVSHAMLRILKRSGWDISVVEQTLSEKKEKIYIVFLPVDDRSRDTLIERSNPNNLFNHKQLESWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_UPI003C2BA8A8" ac="UniRef90_UPI003C2BA8A8" length="234" description="acyl-homoserine-lactone synthase n=1 Tax=Hafnia paralvei TaxID=546367 RepID=UPI003C2BA8A8">
+    <alignments total="1">
+     <alignment number="1">
+      <score>657</score>
+      <bits>257.7</bits>
+      <expectation>6.2e-84</expectation>
+      <identity>56.0</identity>
+      <positives>76.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>M++IFDV++SL+S+++  E+F+LRK TFKDRLDW VNC NGME+DEYDN HTTYL GV +  V CS+RFIEIKYPNMITG F +YF+ +++P GNYIE+SR F+D+DR++ L    +P    LFL+MINY+R   ++GI  IVSHPML + K+SGW IS+++QGLSEK +RIYL+++P DD ++  L+ RI++    E   L + PL</pattern>
+      <matchSeq start="1" end="207">MIDIFDVNYSLLSDSRSSELFSLRKKTFKDRLDWIVNCKNGMEYDEYDNSHTTYLFGVHDDLVFCSLRFIEIKYPNMITGVFRTYFNKIELPNGNYIEASRLFIDKDRIKKLKLQNHPVSTVLFLSMINYSRYKGFEGIYAIVSHPMLIIFKKSGWMISVVEQGLSEKNQRIYLIYMPVDDQNQQILMNRISKDFPVEKNTLDSWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A0A4P7KQF2" ac="UniRef90_A0A4P7KQF2" length="220" description="Acyl-homoserine-lactone synthase n=6 Tax=Arsenophonus TaxID=637 RepID=A0A4P7KQF2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>654</score>
+      <bits>256.5</bits>
+      <expectation>1.1e-83</expectation>
+      <identity>59.2</identity>
+      <positives>76.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI-TQMTQAESEQLKTLPLLVP</querySeq>
+      <pattern>MLEIFDV+++L++  K  E+FTLRK+TFKDRL+WAVNCINGMEFDEYDN+ T YL GV+   +ICSVRFIE+++PNMITGTF  +F +L +P+GNYIESSRFFV +DR + L   + P    L LAMINYA+K  YDGILTI+SH ML +++RSGW +SII+QGLSEK E++YLL LP D  +++ LI RI +      +  LK  PL+ P</pattern>
+      <matchSeq start="1" end="211">MLEIFDVNYNLLTEKKSKELFTLRKETFKDRLNWAVNCINGMEFDEYDNDKTNYLFGVRNNTIICSVRFIEMQFPNMITGTFAPFFKHLNLPKGNYIESSRFFVAKDRTKELNCDKYPVFFILCLAMINYAQKGDYDGILTIISHAMLKVVERSGWEVSIIEQGLSEKNEKVYLLLLPIDSRNQNKLIGRIRSHYDSLVNNNLKKWPLIYP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_UPI0002F9F801" ac="UniRef90_UPI0002F9F801" length="216" description="acyl-homoserine-lactone synthase n=1 Tax=Yersinia mollaretii TaxID=33060 RepID=UPI0002F9F801">
+    <alignments total="1">
+     <alignment number="1">
+      <score>653</score>
+      <bits>256.1</bits>
+      <expectation>1.4e-83</expectation>
+      <identity>62.3</identity>
+      <positives>79.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI</querySeq>
+      <pattern>MLE+FDV++ L+S NK  E+F+LR DTFKDRL+W VNC +GMEFD+YD ++T YL GV  GK+ICSVRFIE KYPNMITGTF SYFD + IP+G YIESSRFFVD+ R + ++  + P    LF +MINYA K  Y GI TIVSHPMLT+LKRS W+++II++GLSEK ERIYL++LPTD ++ + L  +I</pattern>
+      <matchSeq start="1" end="191">MLELFDVNYKLLSENKSKELFSLRNDTFKDRLNWDVNCTDGMEFDQYDTDNTNYLFGVAHGKIICSVRFIETKYPNMITGTFASYFDKIDIPDGEYIESSRFFVDKKRAKEILNNKYPITNILFFSMINYAIKNAYVGIYTIVSHPMLTILKRSNWQLAIIERGLSEKNERIYLVYLPTDHENHNLLANKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_UPI0021779A41" ac="UniRef90_UPI0021779A41" length="216" description="acyl-homoserine-lactone synthase n=1 Tax=Serratia fonticola TaxID=47917 RepID=UPI0021779A41">
+    <alignments total="1">
+     <alignment number="1">
+      <score>648</score>
+      <bits>254.2</bits>
+      <expectation>7.9e-83</expectation>
+      <identity>56.7</identity>
+      <positives>75.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLL</querySeq>
+      <pattern>MLEIFDVS++++S  K +E+F+LRK+ FKDRL+WAVNC+N +EFD YDN H  YL GV +  +IC  R IE+K+PNMITGTF  YF N+ +PEG YIESSRFFVD+ R+  +   + P  + LFL+ INY+ K++YDGILTIVSH ML +++RSGW  S+I QG SEK E IYLL LPTD  ++  LI RI +  Q E+++LK+ PL+</pattern>
+      <matchSeq start="1" end="208">MLEIFDVSYNILSEKKSEELFSLRKEVFKDRLNWAVNCVNNLEFDIYDNHHANYLFGVIDNSIICGARLIEMKFPNMITGTFAPYFKNIILPEGKYIESSRFFVDKSRLNKINRKKYPVSLMLFLSTINYSIKHNYDGILTIVSHAMLAIMQRSGWEFSVIAQGTSEKNESIYLLQLPTDTANQDRLIRRIKEKIQIENDKLKSWPLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_UPI002178210D" ac="UniRef90_UPI002178210D" length="219" description="acyl-homoserine-lactone synthase n=1 Tax=Serratia quinivorans TaxID=137545 RepID=UPI002178210D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>648</score>
+      <bits>254.2</bits>
+      <expectation>8.8e-83</expectation>
+      <identity>59.2</identity>
+      <positives>79.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI</querySeq>
+      <pattern>M+E+FDV ++L+S+N+ +E+F+LRK TFKDRLDW VNC N MEFDEYDN HTTYL G  E  V+CS+RFIE KY NMITGTF SYF+ +++PEGNYIE+SR F+D++RV+ L   + P    LFL+MINYAR Y Y GI  I+SHPML + +RSGW IS+++QG SEK++RIYL+++P D+ ++  L++RI</pattern>
+      <matchSeq start="1" end="191">MIEVFDVDYNLLSDNRSEELFSLRKRTFKDRLDWIVNCENNMEFDEYDNNHTTYLFGTYENMVVCSLRFIETKYNNMITGTFKSYFNKIELPEGNYIEASRLFIDKERVQTLKLQKKPISSILFLSMINYARNYGYQGIYAIISHPMLIIFQRSGWEISVVEQGQSEKKQRIYLIYMPVDERNQQILVDRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_UPI0032170126" ac="UniRef90_UPI0032170126" length="223" description="acyl-homoserine-lactone synthase n=1 Tax=Serratia inhibens TaxID=2338073 RepID=UPI0032170126">
+    <alignments total="1">
+     <alignment number="1">
+      <score>646</score>
+      <bits>253.4</bits>
+      <expectation>2e-82</expectation>
+      <identity>58.6</identity>
+      <positives>80.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI</querySeq>
+      <pattern>M+EIFDV ++L+S+++  E+F+LRK TFKDRLDW V+C N MEFDEYDN HTTYL G+ + +VICS+RFIE KYPNMIT TF SYF+ ++IPEGN+IE+SR F+D++R++ +   + P    LFL+MINYAR Y Y GI  I+SHPML + +RSGW+IS+++QGLSEK +RIYL+++P DD ++  L++RI</pattern>
+      <matchSeq start="1" end="191">MIEIFDVDYNLLSDDRSKELFSLRKRTFKDRLDWIVSCENNMEFDEYDNHHTTYLFGIYQNRVICSLRFIETKYPNMITDTFKSYFNKIEIPEGNFIEASRLFIDKERIQAMQLQKQPISSILFLSMINYARNYGYQGIYAIISHPMLIIFQRSGWKISVVEQGLSEKNQRIYLIYMPVDDRNQQILVDRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_E0WRX7" ac="UniRef90_E0WRX7" length="213" description="Acyl-homoserine-lactone synthase n=1 Tax=Candidatus Regiella insecticola LSR1 TaxID=663321 RepID=E0WRX7_9ENTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>645</score>
+      <bits>253.1</bits>
+      <expectation>2e-82</expectation>
+      <identity>60.1</identity>
+      <positives>79.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="193">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQ</querySeq>
+      <pattern>M+EIFDVS++ +S+ +  E+F+LRK  FKDRLDWAVNC NGMEFDEYD+ +TTYLLGV +  VICS+R I IK PNMITGTFY YF+ + IPEGNYIESSRFFVD++RV+N+   + P    LFLA +NY+RK+ Y+GILTIVSH M  ++KRSGW ++++++GLSEK E++YLL LP D ++++ LI  I +</pattern>
+      <matchSeq start="1" end="193">MMEIFDVSYNKLSDKRSMELFSLRKSVFKDRLDWAVNCFNGMEFDEYDHPNTTYLLGVHDNTVICSLRLINIKNPNMITGTFYRYFNQINIPEGNYIESSRFFVDKERVQNMSCNQYPVSTMLFLAALNYSRKFDYEGILTIVSHAMFIIMKRSGWHLTVLEKGLSEKNEKVYLLCLPVDTENQNILINCINR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_C4PDX0" ac="UniRef90_C4PDX0" length="228" description="Acyl-homoserine-lactone synthase n=4 Tax=Serratia TaxID=613 RepID=C4PDX0_SERPL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>643</score>
+      <bits>252.3</bits>
+      <expectation>6.8e-82</expectation>
+      <identity>59.4</identity>
+      <positives>79.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="192">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERIT</querySeq>
+      <pattern>M+EIFDV+++LMS+N+  E+F+LRK TFKDRLDW V C N MEFDEYD+EH TYL G  +  V+CS+RFIEIKYPNMITGTF SYF+ +++PEGN++E+SR F+D++RV+ +   + P    LFL+MINYAR Y Y GI  I+SHPML + +RSGW IS+I+QG SEK +RIYL+++P DD ++  LI+RI+</pattern>
+      <matchSeq start="6" end="197">MIEIFDVNYNLMSDNRSKELFSLRKKTFKDRLDWIVKCENNMEFDEYDSEHATYLFGTYKEIVVCSLRFIEIKYPNMITGTFKSYFNKIELPEGNFVEASRLFIDKERVQAMQLQKKPISSILFLSMINYARNYGYQGIYAIISHPMLIIFQRSGWEISVIEQGQSEKNQRIYLIYMPVDDRNQQILIDRIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0A1W6B5T5" ac="UniRef90_A0A1W6B5T5" length="216" description="Acyl-homoserine-lactone synthase n=9 Tax=Erwiniaceae TaxID=1903409 RepID=A0A1W6B5T5_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>640</score>
+      <bits>251.1</bits>
+      <expectation>1.3e-81</expectation>
+      <identity>56.0</identity>
+      <positives>74.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>M+   D+++  +S  +  E+F LRK+TFKDRLDWAVNC+NGMEFDEYDNEHTTY+ G+    V+CSVRFIE +YPNMI+ TF  +F+N+++P GNYIESSRFFVD++R R+    + P    LFLAM+NYAR Y Y+GI T+VSH ML +LKRSGW IS+++Q LSEK+E+IY++ LP DD +R  LIE+  Q    + ++L   PL</pattern>
+      <matchSeq start="1" end="207">MINFLDINYPKLSEQRSSELFILRKETFKDRLDWAVNCVNGMEFDEYDNEHTTYVFGIHNDNVLCSVRFIETRYPNMISHTFAPWFNNVELPAGNYIESSRFFVDKERARSSDLYQYPVSSMLFLAMVNYARHYGYEGIYTLVSHAMLRILKRSGWEISVVEQTLSEKKEKIYIVFLPIDDKNRDILIEKSNQDKLFDDKELAKWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0A2L0IJM9" ac="UniRef90_A0A2L0IJM9" length="216" description="Acyl-homoserine-lactone synthase n=1 Tax=Mixta gaviniae TaxID=665914 RepID=A0A2L0IJM9_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>639</score>
+      <bits>250.8</bits>
+      <expectation>1.8e-81</expectation>
+      <identity>56.5</identity>
+      <positives>74.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>M+   D+++  +S  +  E+F LRK+TFKDRLDWAVNCI+GMEFDEYDNEHTTY+ G+    V+CSVRFIE +YPNMI+ TF  +FD +++P+GNYIESSRFFVD+DR R+    + P    LFLAM+NYAR Y Y+GI T+VSH ML +LKRSGW+IS+++Q LSEK+E+IY++ LP DD SR  LIE+         ++L   PL</pattern>
+      <matchSeq start="1" end="207">MINFLDINYQKLSEQRSSELFILRKETFKDRLDWAVNCIDGMEFDEYDNEHTTYVFGIHNDNVLCSVRFIETRYPNMISHTFSPWFDKVELPQGNYIESSRFFVDKDRARSTDLYQYPISNMLFLAMVNYARHYGYEGIYTLVSHAMLRILKRSGWQISVVEQTLSEKKEKIYIVFLPVDDQSRDTLIEKANPDKLFIDKELAEWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_UPI001C8D0A8C" ac="UniRef90_UPI001C8D0A8C" length="208" description="acyl-homoserine-lactone synthase n=2 Tax=Yersinia TaxID=629 RepID=UPI001C8D0A8C">
+    <alignments total="1">
+     <alignment number="1">
+      <score>632</score>
+      <bits>248.1</bits>
+      <expectation>1.6e-80</expectation>
+      <identity>54.9</identity>
+      <positives>75.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="207">LEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>+EIFDVS+SL+S+ +  E+F LRK  FKDRL+WAVNC N ME+DEYD+ H TYL GV++ ++ICS+RFIEIKYPNMI G F SYF  +KIP+GNY+E+SR F+D++R + +     P    LFLAMINY R Y Y+GI  I+SHPMLT+ KRSGW +S+++QG+SEK+  IYL+++P DD ++  LI ++ Q+   ++  L T PL</pattern>
+      <matchSeq start="1" end="206">MEIFDVSYSLLSDYQASELFLLRKMVFKDRLNWAVNCKNNMEYDEYDDIHATYLFGVQDEQIICSLRFIEIKYPNMINGVFKSYFSKIKIPDGNYLEASRLFIDKNRAKKIKLQSYPISSMLFLAMINYTRYYGYEGIYAIISHPMLTICKRSGWLVSVVEQGMSEKKTIIYLVYMPVDDRNQQILIHKVNQVLLIKNNSLNTWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0A240A6U4" ac="UniRef90_A0A240A6U4" length="220" description="Acyl-homoserine-lactone synthase n=1 Tax=Serratia ficaria TaxID=61651 RepID=A0A240A6U4_SERFI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>631</score>
+      <bits>247.7</bits>
+      <expectation>3.5e-80</expectation>
+      <identity>54.7</identity>
+      <positives>72.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMIT-GTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>M+EIFDV ++L+S+N+  E+F+LRK TFKDRLDW VNC N MEFD YD+ HTTY+ G  + +VICS+RFIE K PNMIT G F  YF+N+ +PEGNY+E+SR F+D++RVR L   R P    LFL+MINYAR + Y GI  I+SHPML + +RSGW+IS+++ G SEK + IYL+++P DDD++  LI RI Q T        + PL  P+</pattern>
+      <matchSeq start="1" end="212">MIEIFDVGYNLLSDNRSRELFSLRKKTFKDRLDWIVNCENNMEFDAYDDRHTTYVFGTYKDQVICSLRFIETKNPNMITCGEFNEYFNNISLPEGNYVEASRLFIDKERVRALELRRQPISSILFLSMINYARNFGYQGIYAIISHPMLVIFQRSGWQISVVETGCSEKNQNIYLVYMPVDDDNQQRLIARIAQQTPLPDNAAGSWPLSFPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_UPI000FDDC951" ac="UniRef90_UPI000FDDC951" length="219" description="acyl-homoserine-lactone synthase n=1 Tax=Serratia microhaemolytica TaxID=2675110 RepID=UPI000FDDC951">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <bits>246.9</bits>
+      <expectation>6.7e-80</expectation>
+      <identity>54.7</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPLA</querySeq>
+      <pattern>MLEI  V+   +S  K +E+F LRK+ FKDRL+W+VNCING+EFDEYD+ +  YL G+ +  VIC  R IE++YPNMI GTF S F+N  +PEGNYIESSRFFVD+ R + +   R P  + +FLA INY+R ++YDGILTIVSH M T+L+RSGW+ ++I +GLSEK E IYLL+LP D ++++ LI+ IT+    E  QLK  PL+  +A</pattern>
+      <matchSeq start="1" end="212">MLEIISVNHDFLSERKSEELFALRKEVFKDRLNWSVNCINGLEFDEYDDHNANYLFGIMDDTVICGSRLIEMQYPNMIVGTFASCFENFTLPEGNYIESSRFFVDKARAKKINRERFPISLLMFLATINYSRNFNYDGILTIVSHSMFTILERSGWKFTVISKGLSEKNESIYLLNLPNDVENQNILIDGITKYAPIERSQLKEWPLICSVA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0A379ZG00" ac="UniRef90_A0A379ZG00" length="219" description="Acyl-homoserine-lactone synthase n=8 Tax=Serratia TaxID=613 RepID=A0A379ZG00_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <bits>246.9</bits>
+      <expectation>6.7e-80</expectation>
+      <identity>57.6</identity>
+      <positives>78.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI</querySeq>
+      <pattern>M+EIFDV ++L+S+N+  E+F+LRK TFKDRL+W VNC N MEFDEYDN HTTYL G+ E  V+CS+RFIE KY NMITGTF SYF+ +++PEGN++E+SR F+D+ RV+ +     P    LFL+MINYAR Y Y GI  I+SHPML + +RSGW I++++QG SEK +RIYL+++P DD ++  L++RI</pattern>
+      <matchSeq start="1" end="191">MIEIFDVDYNLLSDNRSKELFSLRKRTFKDRLNWIVNCENNMEFDEYDNNHTTYLFGMYENMVVCSLRFIETKYNNMITGTFKSYFNKIELPEGNFVEASRLFIDKGRVQAMKLQNEPISSLLFLSMINYARNYDYQGIYAIISHPMLIIFQRSGWEITVVEQGQSEKNQRIYLIYMPVDDRNQQILVDRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_A0A250B1B6" ac="UniRef90_A0A250B1B6" length="235" description="Acyl-homoserine-lactone synthase n=2 Tax=Gibbsiella quercinecans TaxID=929813 RepID=A0A250B1B6_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>626</score>
+      <bits>245.7</bits>
+      <expectation>3.3e-79</expectation>
+      <identity>58.1</identity>
+      <positives>78.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI</querySeq>
+      <pattern>M+EIF+V++ L+S N+  E+F+LRK TFKDRLDW VNC N MEFDEYDN HTTYL GV +  +ICS+RFIE +Y NMITGTF  YF+ + IPEGNY+E+SR F+D+ RVR+    ++P    LFL+MINYAR  +Y+GI  I+SHPML + +RSGW+ISI++QG+SEK ++IYL+++P D+ ++  LI RI</pattern>
+      <matchSeq start="1" end="191">MIEIFNVNYDLLSENRSAELFSLRKKTFKDRLDWIVNCKNNMEFDEYDNSHTTYLFGVCDNLIICSMRFIETRYNNMITGTFKHYFNKINIPEGNYLEASRLFIDKQRVRSFQLHQHPISSILFLSMINYARDKNYEGIYAIISHPMLIIFQRSGWKISIVEQGMSEKNQKIYLIYMPVDNKNQQTLINRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_UPI0028BF3C23" ac="UniRef90_UPI0028BF3C23" length="234" description="acyl-homoserine-lactone synthase n=1 Tax=Winslowiella TaxID=2997349 RepID=UPI0028BF3C23">
+    <alignments total="1">
+     <alignment number="1">
+      <score>622</score>
+      <bits>244.2</bits>
+      <expectation>1.3e-78</expectation>
+      <identity>54.6</identity>
+      <positives>75.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPL</querySeq>
+      <pattern>ML+IF+V+++L+S+N+ +E+FTLRK TFKDRL+W VNC N MEFDEYDN HT YL GV +  VICS+RFIE KY NMITGTF SYF+N+++P+GNY+++SR F+D+ R R+L  ++ P    LFL+MINY+R   + GI  IVSHPM  + KRSGW IS++++GLSEK + IYL+ +P D  ++  LIERI +   +   +L + PL</pattern>
+      <matchSeq start="1" end="207">MLKIFNVNYNLLSDNRSEELFTLRKKTFKDRLNWLVNCENNMEFDEYDNAHTNYLFGVYKNMVICSIRFIETKYHNMITGTFKSYFNNIELPKGNYVDASRLFIDKQRARDLGISQQPISTLLFLSMINYSRHAGHKGIYAIVSHPMFIIFKRSGWLISVVEKGLSEKNDTIYLIFMPVDARNQRILIERIIKENPSSFNELTSWPL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_B3VN67" ac="UniRef90_B3VN67" length="214" description="Acyl-homoserine-lactone synthase n=1 Tax=Pantoea sp. CWB304 TaxID=543533 RepID=B3VN67_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>618</score>
+      <bits>242.7</bits>
+      <expectation>2.7e-78</expectation>
+      <identity>57.2</identity>
+      <positives>72.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLL</querySeq>
+      <pattern>MLEIFD+++S+++N K +E+FTLRK  FKDRLDWAV C N MEFDEYDN +T Y+LGV + KVICS+RFIE KY NM +GTF  YF    +PEGNYIE+SRFFVD+  V+       P    LFLAMINY+ KY+Y GI  +VSH ML +LKRSGWRI +++QG+SEK ERIYLL +P D+ +R  LI+RI    ++   +    PLL</pattern>
+      <matchSeq start="1" end="208">MLEIFDLNYSMLANEKSEEIFTLRKKIFKDRLDWAVKCTNQMEFDEYDNLNTNYILGVYKDKVICSLRFIETKYNNMFSGTFCHYFKGKVLPEGNYIEASRFFVDKLGVKKSELRHYPVSSMLFLAMINYSIKYNYQGIYAVVSHAMLAILKRSGWRIQVVEQGISEKNERIYLLFMPADNLNRLILIDRIKSECESVDFKFDDWPLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0A209A4U1" ac="UniRef90_A0A209A4U1" length="218" description="Acyl-homoserine-lactone synthase n=4 Tax=Yersinia TaxID=629 RepID=A0A209A4U1_YERIN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>617</score>
+      <bits>242.3</bits>
+      <expectation>4.3e-78</expectation>
+      <identity>54.8</identity>
+      <positives>72.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVP</querySeq>
+      <pattern>ML++F+V+F  M   KLDE+FTLRK TFKDRLDW V C +G E D+YD+E+T Y+LG+ E  ++CSVRFIE+KYP M+TG F  YF ++ +P   +IESSRFFV++   R+++G  +P  + LFLAM+NYAR  +Y+GILT+VS  M  LLKRSGW I+++ QG SEK E IYLLHL  D DS+  LI++I +    ES  L+T PL VP</pattern>
+      <matchSeq start="5" end="214">MLKLFNVNFDSMPERKLDEIFTLRKITFKDRLDWKVTCTDGRESDQYDDENTNYILGIIEDTIVCSVRFIEMKYPTMVTGPFAPYFSDIDLPVDGFIESSRFFVEKKLARDMVGNNSPLSLLLFLAMVNYARSRNYNGILTVVSRGMYILLKRSGWNITVLNQGESEKNEVIYLLHLGVDIDSQKQLIKKIRRTHHVESHILETWPLAVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0ABY5CTL9" ac="UniRef90_A0ABY5CTL9" length="224" description="Acyl-homoserine-lactone synthase n=2 Tax=Serratia entomophila TaxID=42906 RepID=A0ABY5CTL9_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>615</score>
+      <bits>241.5</bits>
+      <expectation>1.1e-77</expectation>
+      <identity>52.4</identity>
+      <positives>73.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITG-TFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>M+E+FDV+++L+S+N+  E+F+LRK TFKDRLDW V+C N MEFDEYD+ HTTY+ G  + +VICS+RFIE + PNMI+G  F +YF+N+ +PEGNY+E+SR F+D++RV+ L   R P    LFL+MINYAR   Y GI  I+SHPML + +RSGW IS+++ G SEK + IYL+++P DD ++  LI RI Q T+     +   PL  P+</pattern>
+      <matchSeq start="1" end="212">MIELFDVNYNLLSDNRSRELFSLRKKTFKDRLDWIVSCENNMEFDEYDDRHTTYVFGTYKDQVICSLRFIETRNPNMISGGEFNAYFNNISLPEGNYVEASRLFIDKERVKALQLRRQPISAILFLSMINYARSSGYQGIYAIISHPMLVIFQRSGWEISVVETGCSEKNQNIYLVYMPIDDANQQRLIARIAQQTRLPDNPMSAWPLSFPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_A0ACC5RIT5" ac="UniRef90_A0ACC5RIT5" length="209" description="Acyl-homoserine-lactone synthase n=1 Tax=Enterobacter agglomerans TaxID=549 RepID=A0ACC5RIT5_ENTAG">
+    <alignments total="1">
+     <alignment number="1">
+      <score>613</score>
+      <bits>240.7</bits>
+      <expectation>1.3e-77</expectation>
+      <identity>57.6</identity>
+      <positives>79.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI</querySeq>
+      <pattern>MLEI +  +  +S  +LDE+F+ RK+TFKDRL+W+VNCI+  EFDEYDNEH +YLLG  +G VIC VRF EIK+PNMITGTF  +F NL +P+GNYIESSRFFVD+ R +N++  + PA + L+LAMI Y++K++YDGILT+VSH ML +L+ SGW   +IQ+G+SEK+E++Y++ LPTD+ S   +I++I</pattern>
+      <matchSeq start="1" end="191">MLEIVECKYCYLSFWQLDELFSRRKETFKDRLNWSVNCIDDKEFDEYDNEHASYLLGYLDGSVICGVRFREIKFPNMITGTFACFFKNLTMPDGNYIESSRFFVDKTRSKNMMIEQPPASLQLYLAMIRYSKKHNYDGILTLVSHQMLKILRISGWNAHVIQEGISEKKEKVYIVKLPTDNKSEQGIIKKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_UPI0004ABFB34" ac="UniRef90_UPI0004ABFB34" length="221" description="acyl-homoserine-lactone synthase n=1 Tax=Serratia symbiotica TaxID=138074 RepID=UPI0004ABFB34">
+    <alignments total="1">
+     <alignment number="1">
+      <score>612</score>
+      <bits>240.3</bits>
+      <expectation>2.8e-77</expectation>
+      <identity>52.3</identity>
+      <positives>72.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMIT-GTFYSYFDN-LKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPLA</querySeq>
+      <pattern>M++ +DV ++L+SNN+  E+F+LRK TFKDRLDW VNC N MEFDEYD+ HTTY+ GV +  VICS+RFIE KYPNMI+ G F +YF+N + +P GNY+E+SR F+D++RVR L   + P    LFL+MIN+AR + Y GI  I+SH M  + +RSGW IS++++G SEK + IYL+++P DDD++H +IERIT         L + PL  P++</pattern>
+      <matchSeq start="1" end="214">MMKFYDVGYNLLSNNRSKELFSLRKKTFKDRLDWIVNCENSMEFDEYDSHHTTYIFGVYQDHVICSLRFIETKYPNMISCGEFNAYFNNKITLPAGNYVEASRLFIDKERVRTLDLGQQPISSILFLSMINFARNFGYQGIYAIISHAMRIIFQRSGWDISVVERGCSEKNKNIYLVYMPLDDDNQHRMIERITHQAFLSGNPLDSWPLSFPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_A0ABM7MX44" ac="UniRef90_A0ABM7MX44" length="209" description="Acyl-homoserine-lactone synthase n=1 Tax=Erwinia rhapontici TaxID=55212 RepID=A0ABM7MX44_ERWRD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>607</score>
+      <bits>238.4</bits>
+      <expectation>1.1e-76</expectation>
+      <identity>57.6</identity>
+      <positives>78.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="191">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERI</querySeq>
+      <pattern>MLEI +  +  +S  +LDE+F+ RK+TFKDRL+W+VNCI+  EFDEYDNEH +YLLG  +G VIC VRF EIK+PNMI GTF  +F NL +P+GNYIESSRFFVD+ R +  +  + PA + L+LAMI Y++KY+YDGILT+VSH ML +L  SGW   IIQ+G+SEK+E++Y++ LPTD++S   +I++I</pattern>
+      <matchSeq start="1" end="191">MLEIVECQYCHLSFRQLDELFSRRKETFKDRLNWSVNCIDDKEFDEYDNEHASYLLGYSDGGVICGVRFREIKFPNMIMGTFACFFKNLNMPDGNYIESSRFFVDKVRSKKTMTKQPPASLQLYLAMIRYSKKYNYDGILTLVSHQMLKILHLSGWNAHIIQEGISEKKEKVYVVKLPTDNESEQTIIKKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_UPI001FEDF5A9" ac="UniRef90_UPI001FEDF5A9" length="219" description="acyl-homoserine-lactone synthase n=1 Tax=Erwinia TaxID=551 RepID=UPI001FEDF5A9">
+    <alignments total="1">
+     <alignment number="1">
+      <score>604</score>
+      <bits>237.3</bits>
+      <expectation>4.2e-76</expectation>
+      <identity>51.7</identity>
+      <positives>70.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>ML++ D+ +  +S+ + +E+FTLRK  FKDRL+W VNC N MEFDEYDNEHTTY+ GV     +CS+RFIE KYPNMITGTF S+F N  +PEGNY+E+SR F+D++R+ +L   + P    LFL+MINYAR Y Y+GI  IVSHPM  + K+SGW+I ++++ LSEK E IYL+ +P DD ++  LIE +         +L   PL  P+</pattern>
+      <matchSeq start="1" end="211">MLDLLDIKYRHLSDLESNELFTLRKRVFKDRLNWMVNCQNDMEFDEYDNEHTTYVFGVHNDICVCSLRFIETKYPNMITGTFRSWFKNTDLPEGNYVEASRLFIDKERISSLKLRQKPVSALLFLSMINYARHYQYEGIYAIVSHPMYLIFKKSGWKIEVVEKSLSEKNENIYLIFMPIDDKNQRILIELVKSKAPELKIRLDAWPLSFPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_A0A376DB94" ac="UniRef90_A0A376DB94" length="222" description="Acyl-homoserine-lactone synthase n=4 Tax=Edwardsiella TaxID=635 RepID=A0A376DB94_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>601</score>
+      <bits>236.1</bits>
+      <expectation>1.3e-75</expectation>
+      <identity>54.7</identity>
+      <positives>71.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIP-EGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQ--LKTLPLLV</querySeq>
+      <pattern>M EIF V +  +S     E+F+LRKDTFKDRL+WAVNC +GMEFDEYD+EHTTYLLGVK+  V+CSVR IE +Y NMI GTF+ YF   +IP    + ESSRFFVD+ R R L+  + P C  LFLAMINY     + GI TIVS PML +L RSGW +S+++QG+SEK + IYL++LP D +++ +LIERI Q  Q   ++  L+  PL++</pattern>
+      <matchSeq start="1" end="212">MFEIFAVDYQSLSRTTSSELFSLRKDTFKDRLNWAVNCSDGMEFDEYDSEHTTYLLGVKDNDVVCSVRLIETRYHNMIVGTFFQYFAKAEIPASSQFFESSRFFVDKYRARTLLANQYPLCHLLFLAMINYTLASGHQGIYTIVSQPMLRILNRSGWNVSVVEQGISEKDQAIYLVYLPADAENQRSLIERINQELQHPWQEALLQAWPLVL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_UPI0009491A25" ac="UniRef90_UPI0009491A25" length="216" description="acyl-homoserine-lactone synthase n=1 Tax=Pantoea sp. 1.19 TaxID=1925589 RepID=UPI0009491A25">
+    <alignments total="1">
+     <alignment number="1">
+      <score>600</score>
+      <bits>235.7</bits>
+      <expectation>1.6e-75</expectation>
+      <identity>52.6</identity>
+      <positives>71.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>MLEI DV+++ +     +E++TLRK+TFKDRLDWAV C NGMEFDEYDN +T YLLG+ + +++CSVRFIE   PNMIT TF+++F +  +P GNY+ESSRFFVD+ R + L+G + P    LFLAM+NYAR+  YDGI TI S PM T+LKRSGW I ++Q G SEK + +YLL LP D+ ++  L ER+   ++ E   L   P+ + +</pattern>
+      <matchSeq start="1" end="211">MLEIIDVNYASLPEITSEELYTLRKETFKDRLDWAVTCTNGMEFDEYDNVNTHYLLGICDHQLVCSVRFIETHLPNMITHTFHTFFADATLPAGNYVESSRFFVDKARAKTLLGAQFPVSTVLFLAMVNYARQQGYDGIYTICSKPMWTILKRSGWEIQVVQVGTSEKDKPVYLLFLPVDERNQCILAERVQAWSRDEHSTLNHWPMALKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_UPI0002E370CF" ac="UniRef90_UPI0002E370CF" length="214" description="acyl-homoserine-lactone synthase n=3 Tax=Yersinia TaxID=629 RepID=UPI0002E370CF">
+    <alignments total="1">
+     <alignment number="1">
+      <score>599</score>
+      <bits>235.3</bits>
+      <expectation>2.1e-75</expectation>
+      <identity>54.8</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVP</querySeq>
+      <pattern>ML++F+V+F+ M   KLDE+FTLRK TFKDRLDW V CI+G E D+YD+E+T Y+LG  E  ++CSVRFIE+KYP MITG F  YF+++ +P   +IESSRFFV++  VR+++G  +     LFLAM+NYAR   Y GILT+VS  M  LLKRSGW ++++ QG SEK E IYLL+L  D DS+  LI++I +  Q ES  L+  PL VP</pattern>
+      <matchSeq start="1" end="210">MLKLFNVNFNSMPERKLDEIFTLRKITFKDRLDWKVTCIDGRESDQYDDENTNYILGTIEDTIVCSVRFIEMKYPTMITGPFSPYFNDVNLPIDGFIESSRFFVEKALVRDMVGNDSSLSTILFLAMVNYARSRGYKGILTVVSRGMYILLKRSGWNMTVLNQGESEKNEVIYLLNLGVDIDSQQKLIKKICRKHQVESTVLEAWPLAVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_A0ABM5UGV8" ac="UniRef90_A0ABM5UGV8" length="214" description="Acyl-homoserine-lactone synthase n=4 Tax=Yersinia TaxID=629 RepID=A0ABM5UGV8_YERAE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>599</score>
+      <bits>235.3</bits>
+      <expectation>2.1e-75</expectation>
+      <identity>54.8</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVP</querySeq>
+      <pattern>ML++F+V+F+ M   KLDE+FTLRK TFKDRLDW V CI+G E D+YD+E+T Y+LG  E  ++CSVRFIE+K+P MITG F  YF+++ +P   +IESSRFFV++  VR+++G  +     LFLAM+NYAR   Y GILT+VS  M  LLKRSGW I+++ QG SEK E IYLL+L  D DS+  LI +I +  Q + + LKT PL VP</pattern>
+      <matchSeq start="1" end="210">MLKLFNVNFNSMPERKLDEIFTLRKITFKDRLDWKVTCIDGRESDQYDDENTNYILGTIEDTIVCSVRFIEMKHPTMITGPFSPYFNDVNLPINGFIESSRFFVEKALVRDMVGNDSSLSTILFLAMVNYARSRGYKGILTVVSRGMYILLKRSGWSITVLNQGESEKNEVIYLLNLGVDIDSQQKLINKICKKHQVDPDILKTWPLAVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0A2L1UXH4" ac="UniRef90_A0A2L1UXH4" length="216" description="Acyl-homoserine-lactone synthase n=4 Tax=Rahnella TaxID=34037 RepID=A0A2L1UXH4_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>598</score>
+      <bits>235.0</bits>
+      <expectation>3.1e-75</expectation>
+      <identity>51.7</identity>
+      <positives>74.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="211">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPL</querySeq>
+      <pattern>MLEIFDVS++ ++  + D+++ LRK TFKDRLDWAV C NGMEFDE+DN  T Y+LG+ + +++CSVRF++++ PNMIT TF   FD++++PEG+YIESSRFFVD++R + L+G R P    LFL+MINYAR + + GI TIVS  MLT+ KRSGW+I +I++G   + E IYLL LP D  ++  L +RI++ ++A  + L   P+ +P+</pattern>
+      <matchSeq start="1" end="211">MLEIFDVSYNDLTGKRSDDLYKLRKKTFKDRLDWAVQCTNGMEFDEFDNADTRYMLGIFDNQLVCSVRFVDLRLPNMITHTFNRLFDDVELPEGDYIESSRFFVDKNRAKELLGNRFPISHVLFLSMINYARHHGHTGIYTIVSRAMLTIAKRSGWKIEVIKEGFVSENEPIYLLRLPIDLHNQGILAKRISEQSEASLDALCEWPMSLPV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_UPI0036D318A1" ac="UniRef90_UPI0036D318A1" length="217" description="acyl-homoserine-lactone synthase n=1 Tax=Pantoea sp. sgz302252 TaxID=3341827 RepID=UPI0036D318A1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>598</score>
+      <bits>235.0</bits>
+      <expectation>3.2e-75</expectation>
+      <identity>50.5</identity>
+      <positives>71.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="212">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVPLA</querySeq>
+      <pattern>ML++ D+ +  +S  K +E+F+LRK  FKDRL+W VN  N MEFDEYDN+HTTY+ GV +   +CS+RFIE ++PNMITGTF+++F N ++PEGNY+E+SR F+D++R+  L     P    LFL+MINYAR YHYDGI  IVSHPM  + KRSGWRI++  Q  SEK+E+I+L+ +P DD ++  LI+ I       +  L + P+L P++</pattern>
+      <matchSeq start="1" end="212">MLDLLDIKYCYLSEIKANELFSLRKRVFKDRLNWMVNSHNEMEFDEYDNQHTTYIFGVHKDVCVCSLRFIETQHPNMITGTFHTWFKNYRLPEGNYVEASRLFIDKERMTTLKLRHEPVSALLFLSMINYARHYHYDGIYAIVSHPMYLIFKRSGWRINVEAQSFSEKKEKIFLIFMPVDDRNQRILIDLIHAKAPELNLSLDSWPILFPIS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0A0T9UA45" ac="UniRef90_A0A0T9UA45" length="214" description="Acyl-homoserine-lactone synthase n=2 Tax=Yersinia aldovae TaxID=29483 RepID=A0A0T9UA45_YERAL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>597</score>
+      <bits>234.6</bits>
+      <expectation>4.1e-75</expectation>
+      <identity>53.8</identity>
+      <positives>72.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="210">MLEIFDVSFSLMSNNKLDEVFTLRKDTFKDRLDWAVNCINGMEFDEYDNEHTTYLLGVKEGKVICSVRFIEIKYPNMITGTFYSYFDNLKIPEGNYIESSRFFVDRDRVRNLIGTRNPACVTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQERIYLLHLPTDDDSRHALIERITQMTQAESEQLKTLPLLVP</querySeq>
+      <pattern>ML++F+V+F+ M + KLDE+FTLRK TFKDRLDW V CI+G E D+YD+E+T Y+LG  E  ++CSVRFIE++YP MITG F  YF +L +P   +IESSRFFV++   R+++G  +     LFLAM+NYAR   Y GILT+VS  M  LLKRSGW I+++ QG SEK E IYLL+L  D DS+  LI +I ++   + E L+T P++VP</pattern>
+      <matchSeq start="1" end="210">MLKLFNVNFNNMPDRKLDEIFTLRKITFKDRLDWKVTCIDGRESDQYDDENTNYILGTIEDTIVCSVRFIEMRYPTMITGPFAPYFSDLDLPVEGFIESSRFFVEKALARDIVGNNSSLSTILFLAMVNYARSRGYKGILTVVSRGMYILLKRSGWNITVLNQGESEKNEVIYLLNLGIDIDSQQQLINKIRRVHHVDPELLETWPIIVP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

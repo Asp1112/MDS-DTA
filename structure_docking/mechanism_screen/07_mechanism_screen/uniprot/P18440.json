@@ -1,0 +1,6764 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "P18440",
+  "secondaryAccessions": [
+    "A8K4E7",
+    "O15159",
+    "O15300",
+    "Q546N1",
+    "Q96TE9"
+  ],
+  "uniProtkbId": "ARY1_HUMAN",
+  "entryAudit": {
+    "firstPublicDate": "1990-11-01",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "1991-02-01",
+    "entryVersion": 214,
+    "sequenceVersion": 2
+  },
+  "annotationScore": 5.0,
+  "organism": {
+    "scientificName": "Homo sapiens",
+    "commonName": "Human",
+    "taxonId": 9606,
+    "lineage": [
+      "Eukaryota",
+      "Metazoa",
+      "Chordata",
+      "Craniata",
+      "Vertebrata",
+      "Euteleostomi",
+      "Mammalia",
+      "Eutheria",
+      "Euarchontoglires",
+      "Primates",
+      "Haplorrhini",
+      "Catarrhini",
+      "Hominidae",
+      "Homo"
+    ]
+  },
+  "proteinExistence": "1: Evidence at protein level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Arylamine N-acetyltransferase 1"
+      },
+      "ecNumbers": [
+        {
+          "value": "2.3.1.5"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "value": "Arylamide acetylase 1"
+        }
+      },
+      {
+        "fullName": {
+          "value": "Monomorphic arylamine N-acetyltransferase"
+        },
+        "shortNames": [
+          {
+            "value": "MNAT"
+          }
+        ]
+      },
+      {
+        "fullName": {
+          "value": "N-acetyltransferase type 1"
+        },
+        "shortNames": [
+          {
+            "value": "NAT-1"
+          }
+        ]
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "NAT1"
+      },
+      "synonyms": [
+        {
+          "value": "AAC1"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "value": "Participates in the detoxification of a plethora of hydrazine and arylamine drugs. Catalyzes the N- or O-acetylation of various arylamine and heterocyclic amine substrates and is able to bioactivate several known carcinogens"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "an arylamine + acetyl-CoA = an N-acetylarylamine + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:16613"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:13790"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:50471"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          }
+        ],
+        "ecNumber": "2.3.1.5"
+      }
+    },
+    {
+      "commentType": "INTERACTION",
+      "interactions": [
+        {
+          "interactantOne": {
+            "uniProtKBAccession": "P18440",
+            "intActId": "EBI-9515652"
+          },
+          "interactantTwo": {
+            "uniProtKBAccession": "P05362",
+            "geneName": "ICAM1",
+            "intActId": "EBI-1035358"
+          },
+          "numberOfExperiments": 2,
+          "organismDiffer": false
+        }
+      ]
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "value": "Cytoplasm",
+            "id": "SL-0086"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "7585580"
+            }
+          ],
+          "value": "N-acetylation polymorphism is determined by a low or high NAT activity in liver and has been implicated in the action and toxicity of amine-containing drugs. Slow acetylation genotypes have been associated with significant lung cancer risk. Candidate risk factor for susceptibility to neural tube defects. The NAT1*10 allele has been associated with increased risk of colon and urinary bladder cancers and with higher levels of N-acetyltransferase activity and DNA adducts in aromatic amine tumor target organs such as colon and urinary bladder (PubMed:7585580)"
+        }
+      ],
+      "commentType": "POLYMORPHISM"
+    },
+    {
+      "texts": [
+        {
+          "value": "NAT1 was historically considered to be monomorphic in nature but reports of allelic variations at the NAT1 locus suggest that it is a polymorphically expressed enzyme"
+        }
+      ],
+      "commentType": "MISCELLANEOUS"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the arylamine N-acetyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "The allelic variation Ile-149 designated as NAT1*17 is part of the NAT1*11 allelic variation as reported by the nomenclature committee"
+        }
+      ],
+      "commentType": "CAUTION"
+    },
+    {
+      "commentType": "WEB RESOURCE",
+      "resourceName": "NAT",
+      "resourceUrl": "https://nat.mbg.duth.gr/",
+      "ftp": false,
+      "note": "NAT alleles"
+    },
+    {
+      "commentType": "WEB RESOURCE",
+      "resourceName": "Atlas of Genetics and Cytogenetics in Oncology and Haematology",
+      "resourceUrl": "https://atlasgeneticsoncology.org/gene/41497/NAT1",
+      "ftp": false
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 290,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Arylamine N-acetyltransferase 1",
+      "featureId": "PRO_0000107904"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 68,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 68,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Acyl-thioester intermediate"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 107,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 107,
+          "modifier": "EXACT"
+        }
+      },
+      "description": ""
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 122,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 122,
+          "modifier": "EXACT"
+        }
+      },
+      "description": ""
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 103,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 103,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57287"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ],
+      "ligand": {
+        "name": "CoA",
+        "id": "ChEBI:CHEBI:57287"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 104,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 104,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57287"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ],
+      "ligand": {
+        "name": "CoA",
+        "id": "ChEBI:CHEBI:57287"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 106,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 107,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 208,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 208,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57287"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ],
+      "ligand": {
+        "name": "CoA",
+        "id": "ChEBI:CHEBI:57287"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 214,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 214,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "featureCrossReferences": [
+        {
+          "database": "ChEBI",
+          "id": "CHEBI:57287"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ],
+      "ligand": {
+        "name": "CoA",
+        "id": "ChEBI:CHEBI:57287"
+      }
+    },
+    {
+      "type": "Modified residue",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "N-acetylmethionine",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007744",
+          "source": "PubMed",
+          "id": "22814378"
+        }
+      ]
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 64,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 64,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*17; a slow acetylator; has defective enzyme activity; dbSNP:rs56379106",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs56379106"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "9511183"
+        }
+      ],
+      "featureId": "VAR_004606",
+      "alternativeSequence": {
+        "originalSequence": "R",
+        "alternativeSequences": [
+          "W"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 117,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 117,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*5; dbSNP:rs55641436",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs55641436"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "1968463"
+        }
+      ],
+      "featureId": "VAR_009510",
+      "alternativeSequence": {
+        "originalSequence": "R",
+        "alternativeSequences": [
+          "T"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 149,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 149,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*11; catalyzes the N-acetylation of aromatic amines and the O- and N,O-acetylation of their N-hydroxylated metabolites at rates up to 2-fold higher; dbSNP:rs4987076",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs4987076"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "16416399"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "8442668"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "9168895"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "Reference",
+          "id": "Ref.12"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "Reference",
+          "id": "Ref.8"
+        }
+      ],
+      "featureId": "VAR_004607",
+      "alternativeSequence": {
+        "originalSequence": "V",
+        "alternativeSequences": [
+          "I"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 166,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 167,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*5; dbSNP:rs72554608",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs72554608"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "1968463"
+        }
+      ],
+      "featureId": "VAR_009511",
+      "alternativeSequence": {
+        "originalSequence": "RE",
+        "alternativeSequences": [
+          "TQ"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 187,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 187,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*14; a slow acetylator; dbSNP:rs4986782",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs4986782"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "9511182"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "9511183"
+        }
+      ],
+      "featureId": "VAR_009069",
+      "alternativeSequence": {
+        "originalSequence": "R",
+        "alternativeSequences": [
+          "Q"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 205,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 205,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*21; dbSNP:rs72554609",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs72554609"
+        }
+      ],
+      "featureId": "VAR_009070",
+      "alternativeSequence": {
+        "originalSequence": "M",
+        "alternativeSequences": [
+          "V"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 207,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 207,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in dbSNP:rs4987195",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs4987195"
+        }
+      ],
+      "featureId": "VAR_020384",
+      "alternativeSequence": {
+        "originalSequence": "T",
+        "alternativeSequences": [
+          "I"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 214,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 214,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*11; dbSNP:rs4986783",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs4986783"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "16416399"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "8442668"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "9168895"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "Reference",
+          "id": "Ref.12"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "Reference",
+          "id": "Ref.8"
+        }
+      ],
+      "featureId": "VAR_009071",
+      "alternativeSequence": {
+        "originalSequence": "S",
+        "alternativeSequences": [
+          "A"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 251,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 251,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*22; dbSNP:rs56172717",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs56172717"
+        }
+      ],
+      "featureId": "VAR_009072",
+      "alternativeSequence": {
+        "originalSequence": "D",
+        "alternativeSequences": [
+          "V"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 261,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 261,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*24; dbSNP:rs72554610",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs72554610"
+        }
+      ],
+      "featureId": "VAR_009073",
+      "alternativeSequence": {
+        "originalSequence": "E",
+        "alternativeSequences": [
+          "K"
+        ]
+      }
+    },
+    {
+      "type": "Natural variant",
+      "location": {
+        "start": {
+          "value": 263,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 263,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in allele NAT1*25; dbSNP:rs72554611",
+      "featureCrossReferences": [
+        {
+          "database": "dbSNP",
+          "id": "rs72554611"
+        }
+      ],
+      "featureId": "VAR_009074",
+      "alternativeSequence": {
+        "originalSequence": "I",
+        "alternativeSequences": [
+          "V"
+        ]
+      }
+    },
+    {
+      "type": "Mutagenesis",
+      "location": {
+        "start": {
+          "value": 64,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 64,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Reduced enzymatic activity.",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "9173883"
+        }
+      ],
+      "alternativeSequence": {
+        "originalSequence": "R",
+        "alternativeSequences": [
+          "A",
+          "M",
+          "Q",
+          "K"
+        ]
+      }
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 2,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 9,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 21,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 34,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 42,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 44,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 52,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 56,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 57,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 61,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 68,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 82,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 85,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 95,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Turn",
+      "location": {
+        "start": {
+          "value": 96,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 99,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 107,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 114,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 117,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 121,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 123,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 125,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2PQT"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 127,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 129,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 142,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 144,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 149,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 155,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 158,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 164,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 167,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 169,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 173,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 175,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 185,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 192,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 199,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 202,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 203,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 211,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 216,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 219,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 222,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 226,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 228,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 235,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 238,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 243,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Beta strand",
+      "location": {
+        "start": {
+          "value": 247,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 257,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    },
+    {
+      "type": "Helix",
+      "location": {
+        "start": {
+          "value": 260,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 271,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007829",
+          "source": "PDB",
+          "id": "2IJA"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0002",
+      "category": "Technical term",
+      "name": "3D-structure"
+    },
+    {
+      "id": "KW-0007",
+      "category": "PTM",
+      "name": "Acetylation"
+    },
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0963",
+      "category": "Cellular component",
+      "name": "Cytoplasm"
+    },
+    {
+      "id": "KW-1267",
+      "category": "Technical term",
+      "name": "Proteomics identification"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "2340091",
+        "citationType": "journal article",
+        "authors": [
+          "Blum M.",
+          "Grant D.M.",
+          "McBride W.",
+          "Heim M.",
+          "Meyer U.A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "2340091"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1089/dna.1990.9.193"
+          }
+        ],
+        "title": "Human arylamine N-acetyltransferase genes: isolation, chromosomal localization, and functional expression.",
+        "publicationDate": "1990",
+        "journal": "DNA Cell Biol.",
+        "firstPage": "193",
+        "lastPage": "203",
+        "volume": "9"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA] (ALLELE NAT1*4)"
+      ],
+      "referenceComments": [
+        {
+          "value": "Leukocyte",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "1968463",
+        "citationType": "journal article",
+        "authors": [
+          "Ohsako S.",
+          "Deguchi T."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "1968463"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1016/s0021-9258(19)39609-7"
+          }
+        ],
+        "title": "Cloning and expression of cDNAs for polymorphic and monomorphic arylamine N-acetyltransferases from human liver.",
+        "publicationDate": "1990",
+        "journal": "J. Biol. Chem.",
+        "firstPage": "4630",
+        "lastPage": "4634",
+        "volume": "265"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [MRNA]",
+        "VARIANTS NAT1*5 THR-117 AND 166-ARG-GLU-167 DELINS THR-GLN"
+      ],
+      "referenceComments": [
+        {
+          "value": "Liver",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 3,
+      "citation": {
+        "id": "8442668",
+        "citationType": "journal article",
+        "authors": [
+          "Vatsis K.P.",
+          "Weber W.W."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "8442668"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1006/abbi.1993.1116"
+          }
+        ],
+        "title": "Structural heterogeneity of Caucasian N-acetyltransferase at the NAT1 gene locus.",
+        "publicationDate": "1993",
+        "journal": "Arch. Biochem. Biophys.",
+        "firstPage": "71",
+        "lastPage": "76",
+        "volume": "301"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "VARIANTS NAT1*11 ILE-149 AND ALA-214"
+      ]
+    },
+    {
+      "referenceNumber": 4,
+      "citation": {
+        "id": "9168895",
+        "citationType": "journal article",
+        "authors": [
+          "Doll M.A.",
+          "Jiang W.",
+          "Deitz A.C.",
+          "Rustan T.D.",
+          "Hein D.W."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9168895"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1006/bbrc.1997.6501"
+          }
+        ],
+        "title": "Identification of a novel allele at the human NAT1 acetyltransferase locus.",
+        "publicationDate": "1997",
+        "journal": "Biochem. Biophys. Res. Commun.",
+        "firstPage": "584",
+        "lastPage": "591",
+        "volume": "233"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "VARIANTS NAT1*11 ILE-149 AND ALA-214"
+      ],
+      "referenceComments": [
+        {
+          "value": "Blood",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 5,
+      "citation": {
+        "id": "9511183",
+        "citationType": "journal article",
+        "authors": [
+          "Butcher N.J.",
+          "Ilett K.F.",
+          "Minchin R.F."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9511183"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1097/00008571-199802000-00009"
+          }
+        ],
+        "title": "Functional polymorphism of the human arylamine N-acetyltransferase type 1 gene caused by C190T and G560A mutations.",
+        "publicationDate": "1998",
+        "journal": "Pharmacogenetics",
+        "firstPage": "67",
+        "lastPage": "72",
+        "volume": "8"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "VARIANTS TRP-64 AND GLN-187"
+      ]
+    },
+    {
+      "referenceNumber": 6,
+      "citation": {
+        "id": "CI-V4A9PN6JFVU",
+        "citationType": "submission",
+        "authors": [
+          "Deitz A.C.",
+          "Fretland A.J.",
+          "Leff M.A.",
+          "Doll M.A.",
+          "Hein D.W."
+        ],
+        "title": "Homo sapiens N-acetyltransferase-1 (NAT1) gene complete cds.",
+        "publicationDate": "MAY-1998",
+        "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ]
+    },
+    {
+      "referenceNumber": 7,
+      "citation": {
+        "id": "10862520",
+        "citationType": "journal article",
+        "authors": [
+          "Lo-Guidice J.-M.",
+          "Allorge D.",
+          "Chevalier D.",
+          "Debuysere H.",
+          "Fazio F.",
+          "Lafitte J.-J.",
+          "Broly F."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "10862520"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1097/00008571-200006000-00003"
+          }
+        ],
+        "title": "Molecular analysis of the N-acetyltransferase 1 gene (NAT1*) using polymerase chain reaction-restriction fragment-single strand conformation polymorphism assay.",
+        "publicationDate": "2000",
+        "journal": "Pharmacogenetics",
+        "firstPage": "293",
+        "lastPage": "300",
+        "volume": "10"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ]
+    },
+    {
+      "referenceNumber": 8,
+      "citation": {
+        "id": "CI-9HTMQ1JQJ9OA1",
+        "citationType": "submission",
+        "authors": [
+          "Johnson N.",
+          "Sim E."
+        ],
+        "title": "Homo sapiens arylamine N-acetyltransferase type 1 (NAT1) gene, allele NAT1*11B.",
+        "publicationDate": "MAY-2000",
+        "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "VARIANTS ILE-149 AND ALA-214"
+      ]
+    },
+    {
+      "referenceNumber": 9,
+      "citation": {
+        "id": "CI-E08VC66MTDLU2",
+        "citationType": "submission",
+        "authors": [
+          "Johnson N.",
+          "Sim E."
+        ],
+        "title": "Homo sapiens arylamine N-acetyltransferase type 1 (NAT1) gene, NAT1*4 allele.",
+        "publicationDate": "MAY-2001",
+        "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA] (ALLELE NAT1*4)"
+      ]
+    },
+    {
+      "referenceNumber": 10,
+      "citation": {
+        "id": "16416399",
+        "citationType": "journal article",
+        "authors": [
+          "Patin E.",
+          "Barreiro L.B.",
+          "Sabeti P.C.",
+          "Austerlitz F.",
+          "Luca F.",
+          "Sajantila A.",
+          "Behar D.M.",
+          "Semino O.",
+          "Sakuntabhai A.",
+          "Guiso N.",
+          "Gicquel B.",
+          "McElreavey K.",
+          "Harding R.M.",
+          "Heyer E.",
+          "Quintana-Murci L."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "16416399"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1086/500614"
+          }
+        ],
+        "title": "Deciphering the ancient and complex evolutionary history of human arylamine N-acetyltransferase genes.",
+        "publicationDate": "2006",
+        "journal": "Am. J. Hum. Genet.",
+        "firstPage": "423",
+        "lastPage": "436",
+        "volume": "78"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "VARIANTS ILE-149 AND ALA-214"
+      ]
+    },
+    {
+      "referenceNumber": 11,
+      "citation": {
+        "id": "14702039",
+        "citationType": "journal article",
+        "authors": [
+          "Ota T.",
+          "Suzuki Y.",
+          "Nishikawa T.",
+          "Otsuki T.",
+          "Sugiyama T.",
+          "Irie R.",
+          "Wakamatsu A.",
+          "Hayashi K.",
+          "Sato H.",
+          "Nagai K.",
+          "Kimura K.",
+          "Makita H.",
+          "Sekine M.",
+          "Obayashi M.",
+          "Nishi T.",
+          "Shibahara T.",
+          "Tanaka T.",
+          "Ishii S.",
+          "Yamamoto J.",
+          "Saito K.",
+          "Kawai Y.",
+          "Isono Y.",
+          "Nakamura Y.",
+          "Nagahari K.",
+          "Murakami K.",
+          "Yasuda T.",
+          "Iwayanagi T.",
+          "Wagatsuma M.",
+          "Shiratori A.",
+          "Sudo H.",
+          "Hosoiri T.",
+          "Kaku Y.",
+          "Kodaira H.",
+          "Kondo H.",
+          "Sugawara M.",
+          "Takahashi M.",
+          "Kanda K.",
+          "Yokoi T.",
+          "Furuya T.",
+          "Kikkawa E.",
+          "Omura Y.",
+          "Abe K.",
+          "Kamihara K.",
+          "Katsuta N.",
+          "Sato K.",
+          "Tanikawa M.",
+          "Yamazaki M.",
+          "Ninomiya K.",
+          "Ishibashi T.",
+          "Yamashita H.",
+          "Murakawa K.",
+          "Fujimori K.",
+          "Tanai H.",
+          "Kimata M.",
+          "Watanabe M.",
+          "Hiraoka S.",
+          "Chiba Y.",
+          "Ishida S.",
+          "Ono Y.",
+          "Takiguchi S.",
+          "Watanabe S.",
+          "Yosida M.",
+          "Hotuta T.",
+          "Kusano J.",
+          "Kanehori K.",
+          "Takahashi-Fujii A.",
+          "Hara H.",
+          "Tanase T.-O.",
+          "Nomura Y.",
+          "Togiya S.",
+          "Komai F.",
+          "Hara R.",
+          "Takeuchi K.",
+          "Arita M.",
+          "Imose N.",
+          "Musashino K.",
+          "Yuuki H.",
+          "Oshima A.",
+          "Sasaki N.",
+          "Aotsuka S.",
+          "Yoshikawa Y.",
+          "Matsunawa H.",
+          "Ichihara T.",
+          "Shiohata N.",
+          "Sano S.",
+          "Moriya S.",
+          "Momiyama H.",
+          "Satoh N.",
+          "Takami S.",
+          "Terashima Y.",
+          "Suzuki O.",
+          "Nakagawa S.",
+          "Senoh A.",
+          "Mizoguchi H.",
+          "Goto Y.",
+          "Shimizu F.",
+          "Wakebe H.",
+          "Hishigaki H.",
+          "Watanabe T.",
+          "Sugiyama A.",
+          "Takemoto M.",
+          "Kawakami B.",
+          "Yamazaki M.",
+          "Watanabe K.",
+          "Kumagai A.",
+          "Itakura S.",
+          "Fukuzumi Y.",
+          "Fujimori Y.",
+          "Komiyama M.",
+          "Tashiro H.",
+          "Tanigami A.",
+          "Fujiwara T.",
+          "Ono T.",
+          "Yamada K.",
+          "Fujii Y.",
+          "Ozaki K.",
+          "Hirao M.",
+          "Ohmori Y.",
+          "Kawabata A.",
+          "Hikiji T.",
+          "Kobatake N.",
+          "Inagaki H.",
+          "Ikema Y.",
+          "Okamoto S.",
+          "Okitani R.",
+          "Kawakami T.",
+          "Noguchi S.",
+          "Itoh T.",
+          "Shigeta K.",
+          "Senba T.",
+          "Matsumura K.",
+          "Nakajima Y.",
+          "Mizuno T.",
+          "Morinaga M.",
+          "Sasaki M.",
+          "Togashi T.",
+          "Oyama M.",
+          "Hata H.",
+          "Watanabe M.",
+          "Komatsu T.",
+          "Mizushima-Sugano J.",
+          "Satoh T.",
+          "Shirai Y.",
+          "Takahashi Y.",
+          "Nakagawa K.",
+          "Okumura K.",
+          "Nagase T.",
+          "Nomura N.",
+          "Kikuchi H.",
+          "Masuho Y.",
+          "Yamashita R.",
+          "Nakai K.",
+          "Yada T.",
+          "Nakamura Y.",
+          "Ohara O.",
+          "Isogai T.",
+          "Sugano S."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "14702039"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1038/ng1285"
+          }
+        ],
+        "title": "Complete sequencing and characterization of 21,243 full-length human cDNAs.",
+        "publicationDate": "2004",
+        "journal": "Nat. Genet.",
+        "firstPage": "40",
+        "lastPage": "45",
+        "volume": "36"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+      ]
+    },
+    {
+      "referenceNumber": 12,
+      "citation": {
+        "id": "CI-86ALKN8DBLD8L",
+        "citationType": "submission",
+        "authoringGroup": [
+          "NIEHS SNPs program"
+        ],
+        "publicationDate": "OCT-2004",
+        "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "VARIANTS ILE-149 AND ALA-214"
+      ]
+    },
+    {
+      "referenceNumber": 13,
+      "citation": {
+        "id": "15489334",
+        "citationType": "journal article",
+        "authoringGroup": [
+          "The MGC Project Team"
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "15489334"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1101/gr.2596504"
+          }
+        ],
+        "title": "The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).",
+        "publicationDate": "2004",
+        "journal": "Genome Res.",
+        "firstPage": "2121",
+        "lastPage": "2127",
+        "volume": "14"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "Lung",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 14,
+      "citation": {
+        "id": "1676262",
+        "citationType": "journal article",
+        "authors": [
+          "Ebisawa T.",
+          "Deguchi T."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "1676262"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1016/0006-291x(91)90676-x"
+          }
+        ],
+        "title": "Structure and restriction fragment length polymorphism of genes for human liver arylamine N-acetyltransferases.",
+        "publicationDate": "1991",
+        "journal": "Biochem. Biophys. Res. Commun.",
+        "firstPage": "1252",
+        "lastPage": "1257",
+        "volume": "177"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-22"
+      ],
+      "referenceComments": [
+        {
+          "value": "Liver",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 15,
+      "citation": {
+        "id": "9173883",
+        "citationType": "journal article",
+        "authors": [
+          "Delomenie C.",
+          "Goodfellow G.H.",
+          "Krishnamoorthy R.",
+          "Grant D.M.",
+          "Dupret J.-M."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9173883"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1042/bj3230207"
+          }
+        ],
+        "title": "Study of the role of the highly conserved residues Arg9 and Arg64 in the catalytic function of human N-acetyltransferases NAT1 and NAT2 by site-directed mutagenesis.",
+        "publicationDate": "1997",
+        "journal": "Biochem. J.",
+        "firstPage": "207",
+        "lastPage": "215",
+        "volume": "323"
+      },
+      "referencePositions": [
+        "MUTAGENESIS OF ARG-64"
+      ]
+    },
+    {
+      "referenceNumber": 16,
+      "citation": {
+        "id": "22814378",
+        "citationType": "journal article",
+        "authors": [
+          "Van Damme P.",
+          "Lasa M.",
+          "Polevoda B.",
+          "Gazquez C.",
+          "Elosegui-Artola A.",
+          "Kim D.S.",
+          "De Juan-Pardo E.",
+          "Demeyer K.",
+          "Hole K.",
+          "Larrea E.",
+          "Timmerman E.",
+          "Prieto J.",
+          "Arnesen T.",
+          "Sherman F.",
+          "Gevaert K.",
+          "Aldabe R."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "22814378"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1073/pnas.1210303109"
+          }
+        ],
+        "title": "N-terminal acetylome analyses and functional insights of the N-terminal acetyltransferase NatB.",
+        "publicationDate": "2012",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+        "firstPage": "12449",
+        "lastPage": "12454",
+        "volume": "109"
+      },
+      "referencePositions": [
+        "ACETYLATION [LARGE SCALE ANALYSIS] AT MET-1",
+        "IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS]"
+      ]
+    },
+    {
+      "referenceNumber": 17,
+      "citation": {
+        "id": "17656365",
+        "citationType": "journal article",
+        "authors": [
+          "Wu H.",
+          "Dombrovsky L.",
+          "Tempel W.",
+          "Martin F.",
+          "Loppnau P.",
+          "Goodfellow G.H.",
+          "Grant D.M.",
+          "Plotnikov A.N."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "17656365"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1074/jbc.m704138200"
+          }
+        ],
+        "title": "Structural basis of substrate-binding specificity of human arylamine N-acetyltransferases.",
+        "publicationDate": "2007",
+        "journal": "J. Biol. Chem.",
+        "firstPage": "30189",
+        "lastPage": "30197",
+        "volume": "282"
+      },
+      "referencePositions": [
+        "X-RAY CRYSTALLOGRAPHY (1.7 ANGSTROMS) OF WILD-TYPE IN COMPLEX WITH 2-BROMOACETANILIDE AND OF MUTANT SER-125",
+        "IDENTIFICATION BY MASS SPECTROMETRY"
+      ]
+    },
+    {
+      "referenceNumber": 18,
+      "citation": {
+        "id": "7585580",
+        "citationType": "journal article",
+        "authors": [
+          "Bell D.A.",
+          "Badawi A.F.",
+          "Lang N.P.",
+          "Ilett K.F.",
+          "Kadlubar F.F.",
+          "Hirvonen A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "7585580"
+          }
+        ],
+        "title": "Polymorphism in the N-acetyltransferase 1 (NAT1) polyadenylation signal: association of NAT1*10 allele with higher N-acetylation activity in bladder and colon tissue.",
+        "publicationDate": "1995",
+        "journal": "Cancer Res.",
+        "firstPage": "5226",
+        "lastPage": "5229",
+        "volume": "55"
+      },
+      "referencePositions": [
+        "ALLELE NAT1*10"
+      ]
+    },
+    {
+      "referenceNumber": 19,
+      "citation": {
+        "id": "9511182",
+        "citationType": "journal article",
+        "authors": [
+          "Hughes N.C.",
+          "Janezic S.A.",
+          "McQueen K.L.",
+          "Jewett M.A.",
+          "Castranio T.",
+          "Bell D.A.",
+          "Grant D.M."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9511182"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1097/00008571-199802000-00008"
+          }
+        ],
+        "title": "Identification and characterization of variant alleles of human acetyltransferase NAT1 with defective function using p-aminosalicylate as an in-vivo and in-vitro probe.",
+        "publicationDate": "1998",
+        "journal": "Pharmacogenetics",
+        "firstPage": "55",
+        "lastPage": "66",
+        "volume": "8"
+      },
+      "referencePositions": [
+        "VARIANT GLN-187"
+      ]
+    },
+    {
+      "referenceNumber": 20,
+      "citation": {
+        "id": "9682272",
+        "citationType": "journal article",
+        "authors": [
+          "Lin H.J.",
+          "Probst-Hensch N.M.",
+          "Hughes N.C.",
+          "Sakamoto G.T.",
+          "Louie A.D.",
+          "Kau I.H.",
+          "Lin B.K.",
+          "Lee D.B.",
+          "Lin J.",
+          "Frankl H.D.",
+          "Lee E.R.",
+          "Hardy S.",
+          "Grant D.M.",
+          "Haile R.W."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9682272"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1097/00008571-199806000-00009"
+          }
+        ],
+        "title": "Variants of N-acetyltransferase NAT1 and a case-control study of colorectal adenomas.",
+        "publicationDate": "1998",
+        "journal": "Pharmacogenetics",
+        "firstPage": "269",
+        "lastPage": "281",
+        "volume": "8"
+      },
+      "referencePositions": [
+        "VARIANTS NAT1*17; NAT1*21; NAT1*22; NAT1*24 AND NAT1*25"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "X17059",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAA34905.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "D90041",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "BAA14095.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AF032677",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAB86878.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AF032678",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAB86879.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "U80835",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAB62398.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AF008204",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAB84384.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AF071552",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAC24712.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AF067408",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAC24707.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AF082903",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAD13343.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AF082904",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAC32388.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AJ278017",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAC01128.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AJ307007",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAC38345.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305816",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26192.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305817",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26193.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305818",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26194.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305819",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26195.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305820",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26196.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305821",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26197.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305822",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26198.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305823",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26199.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305824",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26200.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305825",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26201.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305826",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26202.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305827",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26203.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305828",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26204.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305829",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26205.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305830",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26206.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305831",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26207.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305832",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26208.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305833",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26209.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305834",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26210.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305835",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26211.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305836",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26212.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305837",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26213.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305838",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26214.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305839",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26215.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305840",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26216.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305841",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26217.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305842",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26218.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305843",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26219.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305844",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26220.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305845",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26221.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305846",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26222.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305847",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26223.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305848",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26224.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305849",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26225.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305850",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26226.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305851",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26227.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305852",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26228.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305853",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26229.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305854",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26230.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305855",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26231.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305856",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26232.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305857",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26233.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305858",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26234.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305859",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26235.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305860",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26236.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305861",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26237.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305862",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26238.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305863",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26239.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305864",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26240.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305865",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26241.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305866",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26242.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305867",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26243.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305868",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26244.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305869",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26245.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305870",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26246.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305871",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26247.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305872",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26248.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305873",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26249.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305874",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26250.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305875",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26251.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305876",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26252.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305877",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26253.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305878",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26254.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305879",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26255.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305880",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26256.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305881",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26257.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305882",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26258.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305883",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26259.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305884",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26260.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305885",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26261.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305886",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26262.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305887",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26263.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305888",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26264.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305889",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26265.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305890",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26266.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305891",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26267.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305892",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26268.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305893",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26269.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305894",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26270.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305895",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26271.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305896",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26272.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305897",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26273.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305898",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26274.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305899",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26275.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305900",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26276.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305901",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26277.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305902",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26278.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305903",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26279.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305904",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26280.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305905",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26281.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305906",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26282.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305907",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26283.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305908",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26284.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305909",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26285.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305910",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26286.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305911",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26287.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305912",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26288.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305913",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26289.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305914",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26290.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305915",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26291.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305916",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26292.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305917",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26293.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305918",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26294.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305919",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26295.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305920",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26296.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305921",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26297.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305922",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26298.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305923",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26299.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305924",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26300.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305925",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26301.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305926",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26302.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305927",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26303.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305928",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26304.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305929",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26305.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305930",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26306.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305931",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26307.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305932",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26308.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305933",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26309.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305934",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26310.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305935",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26311.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305936",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26312.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305937",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26313.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305938",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26314.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305939",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26315.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305940",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26316.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305941",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26317.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305942",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26318.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305943",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26319.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305944",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26320.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305945",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26321.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305946",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26322.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305947",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26323.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305948",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26324.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305949",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26325.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305950",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26326.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305951",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26327.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305952",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26328.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305953",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26329.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305954",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26330.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305955",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26331.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305956",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26332.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305957",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26333.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305958",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26334.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305959",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26335.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305960",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26336.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305961",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26337.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305962",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26338.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305963",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26339.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305964",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26340.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305965",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26341.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305966",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26342.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305967",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26343.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305968",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26344.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305969",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26345.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305970",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26346.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305971",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26347.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305972",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26348.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305973",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26349.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305974",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26350.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "DQ305975",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABC26351.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AK290912",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "BAF83601.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AY338489",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAP88036.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AY800271",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAV50002.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "BC047666",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAH47666.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "M75164",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAA59905.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "CCDS",
+      "id": "CCDS6007.1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "A34585",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "A34585"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_000653.3",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_000662.7"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_001153642.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_001160170.4"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_001153643.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_001160171.4"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_001153644.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_001160172.4"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_001153645.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_001160173.4"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_001153646.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_001160174.3"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_001153651.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_001160179.3"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_006716473.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_006716410.4"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_011542991.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_011544689.3"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_047278355.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_047422399.1"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_054217434.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_054361459.1"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_054217435.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_054361460.1"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_054217436.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_054361461.1"
+        }
+      ]
+    },
+    {
+      "database": "PDB",
+      "id": "2IJA",
+      "properties": [
+        {
+          "key": "Method",
+          "value": "X-ray"
+        },
+        {
+          "key": "Resolution",
+          "value": "1.70 A"
+        },
+        {
+          "key": "Chains",
+          "value": "A=2-290"
+        }
+      ]
+    },
+    {
+      "database": "PDB",
+      "id": "2PQT",
+      "properties": [
+        {
+          "key": "Method",
+          "value": "X-ray"
+        },
+        {
+          "key": "Resolution",
+          "value": "1.78 A"
+        },
+        {
+          "key": "Chains",
+          "value": "A=2-290"
+        }
+      ]
+    },
+    {
+      "database": "PDBsum",
+      "id": "2IJA",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PDBsum",
+      "id": "2PQT",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioGRID",
+      "id": "106527",
+      "properties": [
+        {
+          "key": "Interactions",
+          "value": "9"
+        }
+      ]
+    },
+    {
+      "database": "FunCoup",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Number of interactors",
+          "value": "486"
+        }
+      ]
+    },
+    {
+      "database": "IntAct",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Interactions",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "database": "NDEx",
+      "id": "IQUERY-CP-NAT1",
+      "properties": [
+        {
+          "key": "Evidences",
+          "value": "2 NDEx IQuery Curated Pathways"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "9606.ENSP00000443194",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BindingDB",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "ChEMBL",
+      "id": "CHEMBL5101",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "DrugBank",
+      "id": "DB11640",
+      "properties": [
+        {
+          "key": "GenericName",
+          "value": "Amifampridine"
+        }
+      ]
+    },
+    {
+      "database": "DrugBank",
+      "id": "DB00244",
+      "properties": [
+        {
+          "key": "GenericName",
+          "value": "Mesalazine"
+        }
+      ]
+    },
+    {
+      "database": "DrugBank",
+      "id": "DB01015",
+      "properties": [
+        {
+          "key": "GenericName",
+          "value": "Sulfamethoxazole"
+        }
+      ]
+    },
+    {
+      "database": "GlyGen",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "glycosylation",
+          "value": "1 site, 1 O-linked glycan (1 site)"
+        }
+      ]
+    },
+    {
+      "database": "iPTMnet",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PhosphoSitePlus",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SwissPalm",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioMuta",
+      "id": "NAT1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "DMDM",
+      "id": "114234",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "jPOST",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "MassIVE",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "9606-ENSP00000443194",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PeptideAtlas",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "ProteomicsDB",
+      "id": "53563",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Pumba",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Antibodypedia",
+      "id": "22350",
+      "properties": [
+        {
+          "key": "antibodies",
+          "value": "352 antibodies from 35 providers"
+        }
+      ]
+    },
+    {
+      "database": "DNASU",
+      "id": "9",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000307719.9",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000307218.4"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000517492.5",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000429407.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000518029.5",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000428270.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000520546.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000429341.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903000.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573059.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903001.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573060.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903002.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573061.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903003.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573062.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903004.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573063.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903005.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573064.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903006.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573065.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903007.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573066.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903008.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573067.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000903009.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000573068.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000938747.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000608806.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000938748.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000608807.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENST00000938749.1",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000608808.1"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSG00000171428.16"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "9",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "hsa:9",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "MANE-Select",
+      "id": "ENST00000307719.9",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSP00000307218.4"
+        },
+        {
+          "key": "RefSeqNucleotideId",
+          "value": "NM_000662.8"
+        },
+        {
+          "key": "RefSeqProteinId",
+          "value": "NP_000653.3"
+        }
+      ]
+    },
+    {
+      "database": "UCSC",
+      "id": "uc003wyq.4",
+      "properties": [
+        {
+          "key": "OrganismName",
+          "value": "human"
+        }
+      ]
+    },
+    {
+      "database": "AGR",
+      "id": "HGNC:7645",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "ClinPGx",
+      "id": "PA17",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "CTD",
+      "id": "9",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "DisGeNET",
+      "id": "9",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneCards",
+      "id": "NAT1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "HGNC",
+      "id": "HGNC:7645",
+      "properties": [
+        {
+          "key": "GeneName",
+          "value": "NAT1"
+        }
+      ]
+    },
+    {
+      "database": "HPA",
+      "id": "ENSG00000171428",
+      "properties": [
+        {
+          "key": "ExpressionPatterns",
+          "value": "Low tissue specificity"
+        }
+      ]
+    },
+    {
+      "database": "MIM",
+      "id": "108345",
+      "properties": [
+        {
+          "key": "Type",
+          "value": "gene"
+        }
+      ]
+    },
+    {
+      "database": "OpenTargets",
+      "id": "ENSG00000171428",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "VEuPathDB",
+      "id": "HostDB:ENSG00000171428",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "ENOG502RD0D",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Eukaryota"
+        }
+      ]
+    },
+    {
+      "database": "GeneTree",
+      "id": "ENSGT00390000012054",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_049918_3_0_1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "InParanoid",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OMA",
+      "id": "CYEHNTL",
+      "properties": [
+        {
+          "key": "Fingerprint",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "10260017at2759",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PAN-GO",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Number of GO annotations",
+          "value": "1 GO annotation based on evolutionary models"
+        }
+      ]
+    },
+    {
+      "database": "PhylomeDB",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BRENDA",
+      "id": "2.3.1.5",
+      "properties": [
+        {
+          "key": "OrganismId",
+          "value": "2681"
+        }
+      ]
+    },
+    {
+      "database": "BRENDA",
+      "id": "3.1.2.1",
+      "properties": [
+        {
+          "key": "OrganismId",
+          "value": "2681"
+        }
+      ]
+    },
+    {
+      "database": "PathwayCommons",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Reactome",
+      "id": "R-HSA-156582",
+      "properties": [
+        {
+          "key": "PathwayName",
+          "value": "Acetylation"
+        }
+      ]
+    },
+    {
+      "database": "Reactome",
+      "id": "R-HSA-9753281",
+      "properties": [
+        {
+          "key": "PathwayName",
+          "value": "Paracetamol ADME"
+        }
+      ]
+    },
+    {
+      "database": "SignaLink",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SIGNOR",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Agora",
+      "id": "ENSG00000171428",
+      "properties": [
+        {
+          "key": "NominatedTarget",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioGRID-ORCS",
+      "id": "9",
+      "properties": [
+        {
+          "key": "hits",
+          "value": "9 hits in 1118 CRISPR screens"
+        }
+      ]
+    },
+    {
+      "database": "ChiTaRS",
+      "id": "NAT1",
+      "properties": [
+        {
+          "key": "OrganismName",
+          "value": "human"
+        }
+      ]
+    },
+    {
+      "database": "EvolutionaryTrace",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneWiki",
+      "id": "N-acetyltransferase_1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GenomeRNAi",
+      "id": "9",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Pharos",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "DevelopmentLevel",
+          "value": "Tchem"
+        }
+      ]
+    },
+    {
+      "database": "PRO",
+      "id": "PR:P18440",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000005640",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome 8"
+        }
+      ]
+    },
+    {
+      "database": "RNAct",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "moleculeType",
+          "value": "protein"
+        }
+      ]
+    },
+    {
+      "database": "Bgee",
+      "id": "ENSG00000171428",
+      "properties": [
+        {
+          "key": "ExpressionPatterns",
+          "value": "Expressed in bronchial epithelial cell and 158 other cell types or tissues"
+        }
+      ]
+    },
+    {
+      "database": "ExpressionAtlas",
+      "id": "P18440",
+      "properties": [
+        {
+          "key": "ExpressionPatterns",
+          "value": "baseline and differential"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005829",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:cytosol"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "TAS:Reactome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0004060",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:arylamine N-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0019707",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:protein-cysteine S-acyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "TAS:Reactome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0006805",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:xenobiotic metabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "TAS:Reactome"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.30.2140.20:FF:000001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine N-acetyltransferase 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.30.2140.20",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001447",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine_N-AcTrfase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR053710",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Arylamine_NAT_domain_sf"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR038765",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Papain-like_cys_pep_sf"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11786:SF8",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ARYLAMINE N-ACETYLTRANSFERASE 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11786",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "N-HYDROXYARYLAMINE O-ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00797",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PRINTS",
+      "id": "PR01543",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ANATRNSFRASE"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF54001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Cysteine proteinases"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MDIEAYLERIGYKKSRNKLDLETLTDILQHQIRAVPFENLNIHCGDAMDLGLEAIFDQVVRRNRGGWCLQVNHLLYWALTTIGFETTMLGGYVYSTPAKKYSTGMIHLLLQVTIDGRNYIVDAGFGRSYQMWQPLELISGKDQPQVPCVFRLTEENGFWYLDQIRREQYIPNEEFLHSDLLEDSKYRKIYSFTLKPRTIEDFESMNTYLQTSPSSVFTSKSFCSLQTPDGVHCLVGFTLTHRRFNYKDNTDLIEFKTLSEEEIEKVLKNIFNISLQRKLVPKHGDRFFTI",
+    "length": 290,
+    "molWeight": 33899,
+    "crc64": "C015F7F3D4830107",
+    "md5": "04A8869B7389F6C4A5E1DC70A0AB7FFF"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "INTERACTION": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "POLYMORPHISM": 1,
+      "MISCELLANEOUS": 1,
+      "SIMILARITY": 1,
+      "CAUTION": 1,
+      "WEB RESOURCE": 2
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Active site": 3,
+      "Binding site": 5,
+      "Modified residue": 1,
+      "Natural variant": 11,
+      "Mutagenesis": 1,
+      "Helix": 12,
+      "Beta strand": 13,
+      "Turn": 1
+    },
+    "uniParcId": "UPI00000001A2"
+  }
+}

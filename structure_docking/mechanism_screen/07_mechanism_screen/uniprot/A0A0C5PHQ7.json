@@ -1,0 +1,1505 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "A0A0C5PHQ7",
+  "uniProtkbId": "ELOV5_TACFU",
+  "entryAudit": {
+    "firstPublicDate": "2017-08-30",
+    "lastAnnotationUpdateDate": "2026-01-28",
+    "lastSequenceUpdateDate": "2015-04-29",
+    "entryVersion": 30,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 5.0,
+  "organism": {
+    "scientificName": "Tachysurus fulvidraco",
+    "commonName": "Yellow catfish",
+    "synonyms": [
+      "Pimelodus fulvidraco"
+    ],
+    "taxonId": 1234273,
+    "evidences": [
+      {
+        "evidenceCode": "ECO:0000312",
+        "source": "EMBL",
+        "id": "AJQ20792.1"
+      }
+    ],
+    "lineage": [
+      "Eukaryota",
+      "Metazoa",
+      "Chordata",
+      "Craniata",
+      "Vertebrata",
+      "Euteleostomi",
+      "Actinopterygii",
+      "Neopterygii",
+      "Teleostei",
+      "Ostariophysi",
+      "Siluriformes",
+      "Bagridae",
+      "Tachysurus"
+    ]
+  },
+  "proteinExistence": "2: Evidence at transcript level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_03205"
+          }
+        ],
+        "value": "Very long chain fatty acid elongase 5"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            }
+          ],
+          "value": "2.3.1.199"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            }
+          ],
+          "value": "3-keto acyl-CoA synthase ELOVL5"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            }
+          ],
+          "value": "ELOVL fatty acid elongase 5"
+        },
+        "shortNames": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_03205"
+              }
+            ],
+            "value": "ELOVL FA elongase 5"
+          }
+        ]
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            },
+            {
+              "evidenceCode": "ECO:0000303",
+              "source": "PubMed",
+              "id": "25497832"
+            }
+          ],
+          "value": "Elongation of very long chain fatty acids protein 5"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            }
+          ],
+          "value": "Very long chain 3-ketoacyl-CoA synthase 5"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            }
+          ],
+          "value": "Very long chain 3-oxoacyl-CoA synthase 5"
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_03205"
+          },
+          {
+            "evidenceCode": "ECO:0000303",
+            "source": "PubMed",
+            "id": "25497832"
+          }
+        ],
+        "value": "ELOVL5"
+      },
+      "synonyms": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000312",
+              "source": "EMBL",
+              "id": "AJQ20792.1"
+            }
+          ],
+          "value": "ELO"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q8BHI7"
+            },
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            }
+          ],
+          "value": "Catalyzes the first and rate-limiting reaction of the four reactions that constitute the long-chain fatty acids elongation cycle. This endoplasmic reticulum-bound enzymatic process allows the addition of 2 carbons to the chain of long- and very long-chain fatty acids (VLCFAs) per cycle. Condensing enzyme that acts specifically toward polyunsaturated acyl-CoA with the higher activity toward C18:3(n-6) acyl-CoA. May participate in the production of monounsaturated and of polyunsaturated VLCFAs of different chain lengths that are involved in multiple biological processes as precursors of membrane lipids and lipid mediators (By similarity). In conditions where the essential linoleic and alpha linoleic fatty acids are lacking it is also involved in the synthesis of Mead acid from oleic acid (By similarity)"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "a very-long-chain acyl-CoA + malonyl-CoA + H(+) = a very-long-chain 3-oxoacyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:32727"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:90725"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:90736"
+          }
+        ],
+        "ecNumber": "2.3.1.199",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_03205"
+          },
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "RuleBase",
+            "id": "RU361115"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:32728"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(6Z,9Z,12Z)-octadecatrienoyl-CoA + malonyl-CoA + H(+) = 3-oxo-(8Z,11Z,14Z)-eicosatrienoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:35379"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57363"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:71481"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:35380"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(9Z,12Z,15Z)-octadecatrienoyl-CoA + malonyl-CoA + H(+) = (11Z,14Z,17Z)-3-oxoeicosatrienoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:36523"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:74034"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:74054"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:36524"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(9Z)-hexadecenoyl-CoA + malonyl-CoA + H(+) = 3-oxo-(11Z)-octadecenoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:39675"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:61540"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:76555"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:39676"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(9Z)-octadecenoyl-CoA + malonyl-CoA + H(+) = 3-oxo-(11Z)-eicosenoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:36511"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57387"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:74011"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:36512"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(11Z)-octadecenoyl-CoA + malonyl-CoA + H(+) = 3-oxo-(13Z)-eicosenoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:39679"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:75121"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:76559"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:39680"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(9Z,12Z)-octadecadienoyl-CoA + malonyl-CoA + H(+) = (11Z,14Z)-3-oxoicosa-11,14-dienoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:36503"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57383"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:74012"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:36504"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(6Z,9Z,12Z,15Z)-octadecatetraenoyl-CoA + malonyl-CoA + H(+) = 3-oxo-(8Z,11Z,14Z,17Z)-eicosatetraenoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:35391"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:71489"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:71491"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:35392"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(5Z,8Z,11Z,14Z)-eicosatetraenoyl-CoA + malonyl-CoA + H(+) = (7Z,10Z,13Z,16Z)-3-oxodocosatetraenoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:36475"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57368"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:73852"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:36476"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(5Z,8Z,11Z,14Z,17Z)-eicosapentaenoyl-CoA + malonyl-CoA + H(+) = 3-oxo-(7Z,10Z,13Z,16Z,19Z)-docosapentaenoyl-CoA + CO2 + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:36483"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16526"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57384"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:73862"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:73863"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000250",
+            "source": "UniProtKB",
+            "id": "Q9NYP7"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:36484"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q9NYP7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            }
+          ],
+          "value": "Lipid metabolism; polyunsaturated fatty acid biosynthesis"
+        }
+      ],
+      "commentType": "PATHWAY"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "note": {
+        "texts": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_03205"
+              }
+            ],
+            "value": "In Purkinje cells, the protein localizes to the soma and proximal portion of the dendritic tree"
+          }
+        ]
+      },
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_03205"
+              }
+            ],
+            "value": "Endoplasmic reticulum membrane",
+            "id": "SL-0097"
+          },
+          "topology": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_03205"
+              }
+            ],
+            "value": "Multi-pass membrane protein",
+            "id": "SL-9909"
+          }
+        },
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_03205"
+              }
+            ],
+            "value": "Cell projection, dendrite",
+            "id": "SL-0283"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "25497832"
+            }
+          ],
+          "value": "Expression is highest in intestine, followed by brain and heart, and lowest in gill. Also expressed in liver, spleen and muscle"
+        }
+      ],
+      "commentType": "TISSUE SPECIFICITY"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_03205"
+            }
+          ],
+          "value": "Belongs to the ELO family. ELOVL5 subfamily"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 294,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Very long chain fatty acid elongase 5",
+      "featureId": "PRO_0000441395"
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 26,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 46,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_03205"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 64,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 84,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_03205"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 112,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 132,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_03205"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 141,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 161,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_03205"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 172,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 192,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_03205"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 207,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 227,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_03205"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 231,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 251,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_03205"
+        }
+      ]
+    },
+    {
+      "type": "Region",
+      "location": {
+        "start": {
+          "value": 261,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 294,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Disordered",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 274,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 286,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Polar residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0966",
+      "category": "Cellular component",
+      "name": "Cell projection"
+    },
+    {
+      "id": "KW-0256",
+      "category": "Cellular component",
+      "name": "Endoplasmic reticulum"
+    },
+    {
+      "id": "KW-0275",
+      "category": "Biological process",
+      "name": "Fatty acid biosynthesis"
+    },
+    {
+      "id": "KW-0276",
+      "category": "Biological process",
+      "name": "Fatty acid metabolism"
+    },
+    {
+      "id": "KW-0444",
+      "category": "Biological process",
+      "name": "Lipid biosynthesis"
+    },
+    {
+      "id": "KW-0443",
+      "category": "Biological process",
+      "name": "Lipid metabolism"
+    },
+    {
+      "id": "KW-0472",
+      "category": "Cellular component",
+      "name": "Membrane"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    },
+    {
+      "id": "KW-0812",
+      "category": "Domain",
+      "name": "Transmembrane"
+    },
+    {
+      "id": "KW-1133",
+      "category": "Domain",
+      "name": "Transmembrane helix"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "25497832",
+        "citationType": "journal article",
+        "authors": [
+          "Song Y.F.",
+          "Luo Z.",
+          "Pan Y.X.",
+          "Zhang L.H.",
+          "Chen Q.L.",
+          "Zheng J.L."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "25497832"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1016/j.gene.2014.12.014"
+          }
+        ],
+        "title": "Three unsaturated fatty acid biosynthesis-related genes in yellow catfish Pelteobagrus fulvidraco: Molecular characterization, tissue expression and transcriptional regulation by leptin.",
+        "publicationDate": "2015",
+        "journal": "Gene",
+        "firstPage": "1",
+        "lastPage": "9",
+        "volume": "563"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [MRNA]",
+        "TISSUE SPECIFICITY",
+        "PHYLOGENETIC ANALYSIS"
+      ],
+      "referenceComments": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000303",
+              "source": "PubMed",
+              "id": "25497832"
+            }
+          ],
+          "value": "Liver",
+          "type": "TISSUE"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000312",
+          "source": "EMBL",
+          "id": "AJQ20792.1"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "KJ818304",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AJQ20792.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "A0A0C5PHQ7",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "A0A0C5PHQ7",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "UniPathway",
+      "id": "UPA00658",
+      "properties": [
+        {
+          "key": "RectionId",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0030425",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:dendrite"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005789",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:endoplasmic reticulum membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0009922",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:fatty acid elongase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0034625",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:fatty acid elongation, monounsaturated fatty acid"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0034626",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:fatty acid elongation, polyunsaturated fatty acid"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0019367",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:fatty acid elongation, saturated fatty acid"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:InterPro"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0035338",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:long-chain fatty-acyl-CoA biosynthetic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0030148",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:sphingolipid biosynthetic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:TreeGrafter"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0006636",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:unsaturated fatty acid biosynthetic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0042761",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:very long-chain fatty acid biosynthetic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "HAMAP",
+      "id": "MF_03205",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "VLCF_elongase_5"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR002076",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ELO_fam"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR033677",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ELOVL5"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11157:SF18",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ELONGATION OF VERY LONG CHAIN FATTY ACIDS PROTEIN 5"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR11157",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "FATTY ACID ACYL TRANSFERASE-RELATED"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF01151",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ELO"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MEILNQRLNQQFDSWMGPRDPRVRGWLLLDNYLPTLSFTIIYLLIVWMGPKYMRNRQPVSCRGILVVYNMALTLLSLYMFYELVTAVWQGGYNFFCQDTHSGGEADNRVINVLWWYYFSKLIEFMDTFFFILRKNNHQITFLHIYHHFTMLNIWWFVMNWVPCGHSYFGATFNSFIHVLMYSYYGLSAIPAIQPYLWWKKYITQGQLVQFVLTMIQTSCAVVWPCGFPKGWLYFQISYMITLIILFSNFYIQTYKKKGTAAKKDPRHNGIKSVNGHSNGASHTNAVKNRKARTD",
+    "length": 294,
+    "molWeight": 34825,
+    "crc64": "A6126ECAB07C7B89",
+    "md5": "241C5B3DD19D96C2814A0245BC1E9C0E"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 10,
+      "PATHWAY": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "TISSUE SPECIFICITY": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Transmembrane": 7,
+      "Region": 1,
+      "Compositional bias": 1
+    },
+    "uniParcId": "UPI0005D8696A"
+  }
+}

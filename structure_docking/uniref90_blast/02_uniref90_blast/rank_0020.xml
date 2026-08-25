@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-122502-0730-28850475-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-122502-0730-28850475-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="173"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:25:02+01:00" end="2026-08-06T12:30:30+01:00" search="P0Y0M0DT0H0M328.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q9KL03" ac="UniRef90_Q9KL03" length="173" description="Spermidine N(1)-acetyltransferase n=13 Tax=Gammaproteobacteria TaxID=1236 RepID=ATDA_VIBCH">
+    <alignments total="1">
+     <alignment number="1">
+      <score>907</score>
+      <bits>354.0</bits>
+      <expectation>1.4e-123</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRSE</querySeq>
+      <pattern>MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRSE</pattern>
+      <matchSeq start="1" end="173">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRSE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_A0A9X0UHX2" ac="UniRef90_A0A9X0UHX2" length="175" description="Spermidine N(1)-acetyltransferase n=4 Tax=Vibrio TaxID=662 RepID=A0A9X0UHX2_VIBME">
+    <alignments total="1">
+     <alignment number="1">
+      <score>820</score>
+      <bits>320.5</bits>
+      <expectation>2.7e-110</expectation>
+      <identity>88.4</identity>
+      <positives>95.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="172">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRS</querySeq>
+      <pattern>M  QL+LRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVE+ QK+LIGLVELIEINYIHRSAEFQIII PEHQGKGFARTLI+RALDYSFTILNLHKIYLHV++EN KA+HLYE+CGF+EEGHLV+EFFINGRY+DVKRMYILQS YL ++</pattern>
+      <matchSeq start="1" end="172">MKHQLSLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVENQQKDLIGLVELIEINYIHRSAEFQIIITPEHQGKGFARTLIHRALDYSFTILNLHKIYLHVSIENDKAIHLYEKCGFIEEGHLVQEFFINGRYRDVKRMYILQSDYLKKT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0A0Q2V538" ac="UniRef90_A0A0Q2V538" length="177" description="Spermidine N(1)-acetyltransferase n=3 Tax=Vibrio TaxID=662 RepID=A0A0Q2V538_VIBFU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>814</score>
+      <bits>318.2</bits>
+      <expectation>2.4e-109</expectation>
+      <identity>88.3</identity>
+      <positives>94.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>M  QL+LRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVE+  K L+GLVELIEINYIHRSAEFQIII P+HQGKGFARTLIN+ALDYSFTILNLHKIYLHVA+EN KAVHLYE CGFVEEGHLV+EFFINGRY+DVKRMYILQ  Y+N+</pattern>
+      <matchSeq start="1" end="171">MKHQLSLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVENDDKELVGLVELIEINYIHRSAEFQIIITPDHQGKGFARTLINKALDYSFTILNLHKIYLHVAIENEKAVHLYESCGFVEEGHLVQEFFINGRYRDVKRMYILQEDYINK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0A6G7CPE1" ac="UniRef90_A0A6G7CPE1" length="174" description="Spermidine N(1)-acetyltransferase n=3 Tax=Vibrio TaxID=662 RepID=A0A6G7CPE1_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>807</score>
+      <bits>315.5</bits>
+      <expectation>2.5e-108</expectation>
+      <identity>87.2</identity>
+      <positives>93.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="172">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRS</querySeq>
+      <pattern>M   L+LRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVED  K LIGLVELIEINYIHRSAEFQIII PEHQGKG+A TLIN+ALDYSFTILNLHKIYLHVA+EN KAVHLYE+CGF+EEGHLVEEFFING+Y+DVKRMYILQ +YL ++</pattern>
+      <matchSeq start="1" end="172">MKQHLSLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDENKALIGLVELIEINYIHRSAEFQIIITPEHQGKGYANTLINKALDYSFTILNLHKIYLHVAIENEKAVHLYEQCGFIEEGHLVEEFFINGQYRDVKRMYILQHQYLTQA</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0A191W930" ac="UniRef90_A0A191W930" length="173" description="Spermidine N(1)-acetyltransferase n=5 Tax=Vibrio TaxID=662 RepID=A0A191W930_VIBAN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>793</score>
+      <bits>310.1</bits>
+      <expectation>3.3e-106</expectation>
+      <identity>86.0</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>MN+QL+LRALERGDLRFIH+LNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVE+  K LIGLVELIEI+YIHRS EFQIII PEHQGKGFA+TLIN+ALDYSFTILNLHKIYLHV+ EN KA+HLY++ GFVEEGHLVEEFFING+Y+DVKRMYILQ+ YLN+</pattern>
+      <matchSeq start="1" end="171">MNNQLSLRALERGDLRFIHDLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVENRDKELIGLVELIEIDYIHRSGEFQIIITPEHQGKGFAQTLINKALDYSFTILNLHKIYLHVSTENEKAIHLYQKAGFVEEGHLVEEFFINGQYRDVKRMYILQNAYLNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_A0A7X4LHA8" ac="UniRef90_A0A7X4LHA8" length="179" description="Spermidine N(1)-acetyltransferase n=2 Tax=Vibrio TaxID=662 RepID=A0A7X4LHA8_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>784</score>
+      <bits>306.6</bits>
+      <expectation>9.6e-105</expectation>
+      <identity>86.5</identity>
+      <positives>92.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="170">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLN</querySeq>
+      <pattern>M  +L+LRALERGDLRFIHNLNNNRNIM+YWFEEPYESFDELEELYNKHIHDNAERRFVVE+  K L+GLVELIEINYIHRSAEFQIII PEHQG GFA  LIN+ALDYSFTILNLHKIYLHVAVEN KAVHLY++ GF+EEGHLVEEFFING YQDVKRMYILQS YL+</pattern>
+      <matchSeq start="1" end="170">MTPKLSLRALERGDLRFIHNLNNNRNIMTYWFEEPYESFDELEELYNKHIHDNAERRFVVENEDKELVGLVELIEINYIHRSAEFQIIITPEHQGNGFAEILINKALDYSFTILNLHKIYLHVAVENEKAVHLYDKAGFIEEGHLVEEFFINGSYQDVKRMYILQSAYLS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_A0A975YLD1" ac="UniRef90_A0A975YLD1" length="176" description="Spermidine N(1)-acetyltransferase n=1 Tax=Vibrio ostreae TaxID=2841925 RepID=A0A975YLD1_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>783</score>
+      <bits>306.2</bits>
+      <expectation>1.2e-104</expectation>
+      <identity>84.2</identity>
+      <positives>93.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>MN QLTLRALER DLRFIH+LNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVE+ QK L+GLVELIEI+YIHRS EFQIII P+HQG+GFARTLI++ALDYSFTILNLHK+YLHVA++N KAVHLY+ CGF EEGHLVEEFFING Y+DVKRMYILQ+ YL++</pattern>
+      <matchSeq start="1" end="171">MNIQLTLRALERSDLRFIHDLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVENEQKELVGLVELIEIDYIHRSGEFQIIITPQHQGRGFARTLIHKALDYSFTILNLHKVYLHVAIDNEKAVHLYQSCGFKEEGHLVEEFFINGAYRDVKRMYILQNDYLSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0ABS7YLV4" ac="UniRef90_A0ABS7YLV4" length="175" description="Spermidine N(1)-acetyltransferase n=2 Tax=Vibrio TaxID=662 RepID=A0ABS7YLV4_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>782</score>
+      <bits>305.8</bits>
+      <expectation>1.7e-104</expectation>
+      <identity>84.8</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>M++ L+LRALERGDLRFIH+LNNNRNIM+YWFEEPYESFDELEELYNKHIHDNAERRFVVE+  K L+GLVELIEINYIHRSAEFQIIIAP++QGKG+A TLIN+ALDYSFTILNLHKIYLHVAVEN KAVHLYE+CGF+EEGHLV+EFFINGRYQDV RMY+LQ+ +L R</pattern>
+      <matchSeq start="1" end="171">MSTTLSLRALERGDLRFIHDLNNNRNIMAYWFEEPYESFDELEELYNKHIHDNAERRFVVENGNKELVGLVELIEINYIHRSAEFQIIIAPDYQGKGYATTLINKALDYSFTILNLHKIYLHVAVENEKAVHLYEKCGFIEEGHLVQEFFINGRYQDVIRMYMLQNDFLAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_A0A1M6BE35" ac="UniRef90_A0A1M6BE35" length="182" description="Spermidine N(1)-acetyltransferase n=2 Tax=Vibrio TaxID=662 RepID=A0A1M6BE35_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>769</score>
+      <bits>300.8</bits>
+      <expectation>2e-102</expectation>
+      <identity>83.6</identity>
+      <positives>91.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>+N +L LRALER DLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVED  K LIGLVELIEINYIHRSAEFQIIIAP++QGKG+A +LI++ALDYSFTILNLHKIYLHVA++N KA+HLY++ GF EEGHLV+EFFING YQDVKRMYILQ  YL R</pattern>
+      <matchSeq start="2" end="172">LNDELYLRALERDDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDRNKQLIGLVELIEINYIHRSAEFQIIIAPDYQGKGYASSLIHKALDYSFTILNLHKIYLHVAIQNEKAIHLYKKAGFTEEGHLVQEFFINGHYQDVKRMYILQHDYLTR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0A1Y6IZ89" ac="UniRef90_A0A1Y6IZ89" length="179" description="Spermidine N(1)-acetyltransferase n=1 Tax=Vibrio mangrovi TaxID=474394 RepID=A0A1Y6IZ89_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>761</score>
+      <bits>297.7</bits>
+      <expectation>3.1e-101</expectation>
+      <identity>84.8</identity>
+      <positives>91.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>M S+L LRALER DLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVE+    LIGLVELIEINYIHRSAEFQIIIAPE+QG+G+A  LIN+ALDYSFTILNLHKIYLHVA+EN  A+HLY + GFVEEGHLVEEFFINGRYQDVKRMYILQ  YL++</pattern>
+      <matchSeq start="1" end="171">MKSELYLRALERQDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVENENNQLIGLVELIEINYIHRSAEFQIIIAPEYQGRGYASDLINKALDYSFTILNLHKIYLHVAIENEIALHLYLKAGFVEEGHLVEEFFINGRYQDVKRMYILQHDYLSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0A1R4LTT4" ac="UniRef90_A0A1R4LTT4" length="180" description="Spermidine N(1)-acetyltransferase n=4 Tax=Vibrio TaxID=662 RepID=A0A1R4LTT4_VIBR1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>760</score>
+      <bits>297.4</bits>
+      <expectation>4.5e-101</expectation>
+      <identity>83.1</identity>
+      <positives>91.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="172">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRS</querySeq>
+      <pattern>M S+L LRALER DLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVE+  K LIGLVELIEINYIHRSAEFQIII PE+QG+G+A  LIN+ALDYSFTILNLHKIYLHVA++N  A++LY + GFVEEGHL+EEFFINGRYQDVKRMYILQ  YLN++</pattern>
+      <matchSeq start="1" end="172">MKSELYLRALERQDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVENENKQLIGLVELIEINYIHRSAEFQIIITPEYQGRGYALDLINKALDYSFTILNLHKIYLHVAIDNEIALYLYRKAGFVEEGHLIEEFFINGRYQDVKRMYILQHDYLNKT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_UPI000C33912B" ac="UniRef90_UPI000C33912B" length="174" description="spermidine N1-acetyltransferase n=1 Tax=Moritella sp. Urea-trap-13 TaxID=2058327 RepID=UPI000C33912B">
+    <alignments total="1">
+     <alignment number="1">
+      <score>751</score>
+      <bits>293.9</bits>
+      <expectation>8.6e-100</expectation>
+      <identity>82.2</identity>
+      <positives>91.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>MN +L LRALER DLRF+HNLNNNR+IMSYWFEEPYESFDELEELYN+HIHDNAERRFVVE+A+K L+GLVELIEI+YIHR AEFQIII  EHQGKGFAR LINRALDYSFTILNLHK+YL VA EN KA+HLYE+CGFVEEG+ ++E FING+Y+DVKRMYILQ KYL</pattern>
+      <matchSeq start="1" end="169">MNDKLRLRALERNDLRFVHNLNNNRSIMSYWFEEPYESFDELEELYNRHIHDNAERRFVVENAKKELVGLVELIEIDYIHRRAEFQIIINTEHQGKGFARELINRALDYSFTILNLHKVYLVVATENEKAIHLYEDCGFVEEGYFIKEIFINGQYRDVKRMYILQDKYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_A0A3N9TML1" ac="UniRef90_A0A3N9TML1" length="178" description="Spermidine N(1)-acetyltransferase n=1 Tax=Vibrio viridaestus TaxID=2487322 RepID=A0A3N9TML1_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>751</score>
+      <bits>293.9</bits>
+      <expectation>9.9e-100</expectation>
+      <identity>80.5</identity>
+      <positives>92.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M   L LRALER DLRFIHNLNNNRN+M+YWFEEPYESFDELEELYNKHIHDNAERRFVVE++ + LIGLVELIEINYIHRSAEFQII+AP++QG+GFAR ++N+ALDYSF ILNLHK+YLHVA+EN  AVH+YE+ GF+EEGHL+EEFFINGRYQDVKRMY+LQ+ YL</pattern>
+      <matchSeq start="1" end="169">MKDVLKLRALERDDLRFIHNLNNNRNVMTYWFEEPYESFDELEELYNKHIHDNAERRFVVENSNQQLIGLVELIEINYIHRSAEFQIIVAPDYQGQGFARDILNKALDYSFMILNLHKVYLHVAIENEVAVHVYEKAGFIEEGHLIEEFFINGRYQDVKRMYMLQNSYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A4U1BIS7" ac="UniRef90_A0A4U1BIS7" length="177" description="Spermidine N(1)-acetyltransferase n=1 Tax=Ferrimonas sediminicola TaxID=2569538 RepID=A0A4U1BIS7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>744</score>
+      <bits>291.2</bits>
+      <expectation>1.1e-98</expectation>
+      <identity>81.3</identity>
+      <positives>93.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="169">QLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>+L LRALER DL+F+H+LNNNRNIM+YWFEEPYESFDELE+LYNKH+HDNAERRFVVED    LIGLVELIEINYIHRSAEFQIIIAPEHQG+G AR +I++ALDYSFTILNLHK+YL VAVENP+A+HLY++CGF+EEGHLV+E+FINGRY DVKRMYILQ +YL</pattern>
+      <matchSeq start="2" end="167">KLALRALERSDLKFVHHLNNNRNIMAYWFEEPYESFDELEQLYNKHVHDNAERRFVVEDIDGELIGLVELIEINYIHRSAEFQIIIAPEHQGRGLARQMIHKALDYSFTILNLHKVYLLVAVENPRALHLYQDCGFLEEGHLVQEYFINGRYCDVKRMYILQDQYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_A0ABS8DNK6" ac="UniRef90_A0ABS8DNK6" length="172" description="Spermidine N(1)-acetyltransferase n=1 Tax=Vreelandella malpeensis TaxID=1172368 RepID=A0ABS8DNK6_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>740</score>
+      <bits>289.7</bits>
+      <expectation>3.8e-98</expectation>
+      <identity>81.1</identity>
+      <positives>92.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M+  L LRALER DLRF+H LNNN+++MSYWFEEPYESFDELEELYNKHIHDNAERRFV +DA    IGLVELIEI+YIHRSAEFQII+APEHQG+GFAR+LI++AL+YSFTILNLHK+YL VAVEN KAVHLY+ECGF+EEGHLVEEFFING+Y+DVKRMY+LQS YL</pattern>
+      <matchSeq start="1" end="169">MSPTLYLRALERSDLRFVHELNNNQSVMSYWFEEPYESFDELEELYNKHIHDNAERRFVAQDANACAIGLVELIEIDYIHRSAEFQIIVAPEHQGRGFARSLIHQALNYSFTILNLHKVYLIVAVENIKAVHLYKECGFIEEGHLVEEFFINGQYRDVKRMYVLQSAYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_U3BPA1" ac="UniRef90_U3BPA1" length="176" description="Spermidine N(1)-acetyltransferase n=1 Tax=Vibrio proteolyticus NBRC 13287 TaxID=1219065 RepID=U3BPA1_VIBPR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>740</score>
+      <bits>289.7</bits>
+      <expectation>4.4e-98</expectation>
+      <identity>82.1</identity>
+      <positives>92.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="168">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKY</querySeq>
+      <pattern>MNS L LRALER DLRFIH+LNNNRNIMSYWFEEPYESFDELEELY +HIHD+AERRFVVED  ++LIGLVELIEINYIHRSAEFQII+AP +QG+GFA  LI RALDYSF++LNLHKIYL VAVEN KA+HLY++CGF+EEGHLVEE+FING+YQDVKRMYILQ +Y</pattern>
+      <matchSeq start="1" end="168">MNSGLKLRALERSDLRFIHDLNNNRNIMSYWFEEPYESFDELEELYKRHIHDDAERRFVVEDENQSLIGLVELIEINYIHRSAEFQIIVAPAYQGRGFATELILRALDYSFSVLNLHKIYLLVAVENKKAIHLYQKCGFIEEGHLVEEYFINGQYQDVKRMYILQHQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_A0ABX2SU74" ac="UniRef90_A0ABX2SU74" length="183" description="Spermidine N(1)-acetyltransferase n=1 Tax=Vreelandella zhaodongensis TaxID=1176240 RepID=A0ABX2SU74_VREZH">
+    <alignments total="1">
+     <alignment number="1">
+      <score>735</score>
+      <bits>287.7</bits>
+      <expectation>3.2e-97</expectation>
+      <identity>81.1</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M+ +L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV ED+  N IGLVELIEI+YIHRS EFQIII P+HQGKGFAR+LI++AL YSFTILNLHK+YL VAVEN KA+HLYEE GF+EEGHLV+EFFINGRY+DVKRMYILQ  YL</pattern>
+      <matchSeq start="1" end="169">MDKKLYLRALERSDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAEDSDGNAIGLVELIEIDYIHRSGEFQIIITPDHQGKGFARSLIHQALHYSFTILNLHKVYLIVAVENVKAIHLYEESGFIEEGHLVQEFFINGRYRDVKRMYILQETYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0A7Z0SQ62" ac="UniRef90_A0A7Z0SQ62" length="183" description="Spermidine N(1)-acetyltransferase n=3 Tax=Halomonadaceae TaxID=28256 RepID=A0A7Z0SQ62_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>732</score>
+      <bits>286.6</bits>
+      <expectation>9.2e-97</expectation>
+      <identity>80.1</identity>
+      <positives>88.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>M   L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV ED+  N IGLVELIEI+YIHRS EFQIII PEHQGKGFARTLI +AL YSFTILNLHK+YL VAV+N KA+HLYEE GF+EEGHLV+EFFING+Y+DVKRMYILQ  YL +</pattern>
+      <matchSeq start="1" end="171">MGHTLYLRALERNDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAEDSHGNAIGLVELIEIDYIHRSGEFQIIITPEHQGKGFARTLIRQALHYSFTILNLHKVYLIVAVDNVKAIHLYEESGFIEEGHLVQEFFINGKYRDVKRMYILQDTYLGQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0A3S0W6R6" ac="UniRef90_A0A3S0W6R6" length="173" description="Spermidine N(1)-acetyltransferase n=8 Tax=Halomonadaceae TaxID=28256 RepID=A0A3S0W6R6_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>731</score>
+      <bits>286.2</bits>
+      <expectation>9.3e-97</expectation>
+      <identity>81.1</identity>
+      <positives>90.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M++QL LRALER DLRF+H LNNN+NIMSYWFEEPYESFDELEELYNKHIHDNAERRFV E++  + IGLVELIEI+YIHRS EFQIII PEHQGKGFAR+LI +AL YSFTILNLHKIYL VAVEN +A+HLYEE GF+EEGHLV+EFFING+Y+DVKRMYILQ  YL</pattern>
+      <matchSeq start="1" end="169">MDNQLYLRALERNDLRFVHELNNNQNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAENSSGHAIGLVELIEIDYIHRSGEFQIIITPEHQGKGFARSLIRQALHYSFTILNLHKIYLIVAVENVRAIHLYEESGFIEEGHLVKEFFINGKYRDVKRMYILQDTYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_UPI0021E44F99" ac="UniRef90_UPI0021E44F99" length="176" description="spermidine N1-acetyltransferase n=1 Tax=unclassified Halomonas TaxID=2609666 RepID=UPI0021E44F99">
+    <alignments total="1">
+     <alignment number="1">
+      <score>731</score>
+      <bits>286.2</bits>
+      <expectation>1e-96</expectation>
+      <identity>78.9</identity>
+      <positives>90.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>M   L LRALER DLRFIH LNNN+++MSYWFEEPYESFDELEELYNKHIHDNAERRFVV+DA    IGLVELIEI+YIHRSAEFQII+APEHQG+G+AR++I++AL YSFTILNLHK+YL VAVEN +AVHLY +CGF+EEGHLV+EFFINGRY+DVKRMY+LQ  YL R</pattern>
+      <matchSeq start="1" end="171">MTPVLYLRALERSDLRFIHELNNNQSVMSYWFEEPYESFDELEELYNKHIHDNAERRFVVQDAAGVAIGLVELIEIDYIHRSAEFQIIVAPEHQGRGYARSMIHQALGYSFTILNLHKVYLIVAVENTRAVHLYRDCGFIEEGHLVQEFFINGRYRDVKRMYVLQDAYLKR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_A0A7K3NS21" ac="UniRef90_A0A7K3NS21" length="181" description="Spermidine N(1)-acetyltransferase n=1 Tax=Desulfolutivibrio sulfodismutans TaxID=63561 RepID=A0A7K3NS21_9BACT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>727</score>
+      <bits>284.6</bits>
+      <expectation>5e-96</expectation>
+      <identity>76.9</identity>
+      <positives>86.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRSE</querySeq>
+      <pattern>M  +LTLRALER DLRF+H+LNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRF+ E A K  +GLVELIEIN IHRSAEFQIII PEHQG+GFAR L+N+ALDYSF+ILNLHKIYL  A +N KA+H+Y+ECGF+EEGHLVEEFF NG+Y D  RMYILQ  YL  ++</pattern>
+      <matchSeq start="1" end="173">MKPKLTLRALERSDLRFVHHLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFIAETADKEPVGLVELIEINSIHRSAEFQIIITPEHQGRGFARDLVNKALDYSFSILNLHKIYLQAATDNDKAIHIYKECGFLEEGHLVEEFFSNGKYTDAVRMYILQETYLKTAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A0AA46TRP2" ac="UniRef90_A0AA46TRP2" length="173" description="Spermidine N(1)-acetyltransferase n=13 Tax=Halomonadaceae TaxID=28256 RepID=A0AA46TRP2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>726</score>
+      <bits>284.3</bits>
+      <expectation>5.4e-96</expectation>
+      <identity>80.5</identity>
+      <positives>89.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M+  L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV ED+  + IGLVELIEI+YIHRS EFQIII P+HQGKGFAR+LI +AL YSFTILNLHKIYL VAVEN KA+HLYEE GF+EEGHLV+EFFING+Y+DVKRMYILQ  YL</pattern>
+      <matchSeq start="1" end="169">MDKHLYLRALERNDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAEDSNGSAIGLVELIEIDYIHRSGEFQIIITPDHQGKGFARSLIRQALHYSFTILNLHKIYLIVAVENVKAIHLYEESGFIEEGHLVQEFFINGKYRDVKRMYILQDTYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_A0ABX5H4A2" ac="UniRef90_A0ABX5H4A2" length="174" description="Spermidine N(1)-acetyltransferase n=1 Tax=Photobacterium angustum TaxID=661 RepID=A0ABX5H4A2_PHOAN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>725</score>
+      <bits>283.9</bits>
+      <expectation>7.9e-96</expectation>
+      <identity>77.0</identity>
+      <positives>90.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKY-LNRSE</querySeq>
+      <pattern>M++++ LRALER DLRFIH LNNNR IM+YWFEEPYESFDELEELY KHIHD+ ERRF+VE+ +K  IGLVEL+EIN IHR+AEFQIIIAPE+QG G+ARTLINRAL+Y+FTILNLHK+YLHVAVEN KA+HLYEECGF EEGHLV+E FING+Y D+KRMYILQ +Y L+RS+</pattern>
+      <matchSeq start="1" end="174">MSNEIKLRALERTDLRFIHQLNNNRTIMAYWFEEPYESFDELEELYRKHIHDSTERRFIVENEEKKSIGLVELVEINNIHRNAEFQIIIAPEYQGNGYARTLINRALNYAFTILNLHKVYLHVAVENEKAIHLYEECGFKEEGHLVKEIFINGKYSDIKRMYILQDEYFLSRSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_A0AAP9GGI2" ac="UniRef90_A0AAP9GGI2" length="174" description="Spermidine N(1)-acetyltransferase n=7 Tax=Vibrio TaxID=662 RepID=A0AAP9GGI2_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>725</score>
+      <bits>283.9</bits>
+      <expectation>7.9e-96</expectation>
+      <identity>79.8</identity>
+      <positives>91.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="168">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKY</querySeq>
+      <pattern>M + LT+RALER DLRFIH+LNNNRNIM+YWFEEPYES DELEELY KHIHD+AERRFVVED    LIGLVELIEINYIHRSAEFQIIIAP+HQG+G+A  +INRALDYSF+ILNLHKIYL VA++N KA+HLY++CGF+EEGHLV+EFFING Y+DVKRMYILQ +Y</pattern>
+      <matchSeq start="1" end="168">MKNGLTIRALERSDLRFIHDLNNNRNIMTYWFEEPYESHDELEELYRKHIHDDAERRFVVEDEHGVLIGLVELIEINYIHRSAEFQIIIAPDHQGRGYAEEVINRALDYSFSILNLHKIYLLVALDNEKAIHLYQKCGFIEEGHLVQEFFINGSYRDVKRMYILQDQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_A0A0M0HZB9" ac="UniRef90_A0A0M0HZB9" length="174" description="Spermidine N(1)-acetyltransferase n=2 Tax=Vibrio TaxID=662 RepID=A0A0M0HZB9_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>725</score>
+      <bits>283.9</bits>
+      <expectation>7.9e-96</expectation>
+      <identity>78.6</identity>
+      <positives>91.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="168">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKY</querySeq>
+      <pattern>M   L++RALER DLRFIH+LNNNRNIM+YWFEEPYES+DELEELY KHIHD+AERRFVVE+  K LIGLVELIEINYIHRSAEFQIIIAP+HQGKG+A+  ++RALDYSF+ILNLHKIYL VA++N KA+HLY++CGF+EEGHLVEE+F+NGRY+DVKRMYILQ  Y</pattern>
+      <matchSeq start="1" end="168">MTKGLSIRALERSDLRFIHDLNNNRNIMTYWFEEPYESYDELEELYQKHIHDDAERRFVVENENKELIGLVELIEINYIHRSAEFQIIIAPDHQGKGYAKQAVHRALDYSFSILNLHKIYLLVALDNEKAIHLYKKCGFIEEGHLVEEYFMNGRYRDVKRMYILQHHY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A0A3S0XZY7" ac="UniRef90_A0A3S0XZY7" length="177" description="Spermidine N(1)-acetyltransferase n=2 Tax=Vreelandella TaxID=3137766 RepID=A0A3S0XZY7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>724</score>
+      <bits>283.5</bits>
+      <expectation>1.2e-95</expectation>
+      <identity>78.0</identity>
+      <positives>88.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRSE</querySeq>
+      <pattern>MN  L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRF+ ED+    IGLVELIEI+YIHRSAEFQII+AP+HQGKGFAR+LI +AL YSFTILN+HK++L VAVEN KA+HLYEE GF+EEGHLV+EFFING+Y+DVKRMYILQ  YL   E</pattern>
+      <matchSeq start="1" end="173">MNHLLFLRALERSDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFIAEDSAGIAIGLVELIEIDYIHRSAEFQIIVAPDHQGKGFARSLIRQALHYSFTILNIHKVFLIVAVENVKAIHLYEESGFIEEGHLVQEFFINGKYRDVKRMYILQETYLEALE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_A0A6F8XH75" ac="UniRef90_A0A6F8XH75" length="184" description="Spermidine N(1)-acetyltransferase n=4 Tax=Vreelandella TaxID=3137766 RepID=A0A6F8XH75_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>724</score>
+      <bits>283.5</bits>
+      <expectation>1.6e-95</expectation>
+      <identity>80.5</identity>
+      <positives>89.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M+  L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV ED+    IGLVELIEI+YIHRSAEFQIII PEHQGKGFAR+LI +AL YSFTILNLHK+YL VAV+N KA+HLYEE GF+EEGHLV+EFFING+Y+DVKRMYILQ  YL</pattern>
+      <matchSeq start="1" end="169">MSPTLFLRALERNDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAEDSTGRAIGLVELIEIDYIHRSAEFQIIITPEHQGKGFARSLIRQALHYSFTILNLHKVYLIVAVQNVKAIHLYEESGFIEEGHLVQEFFINGQYRDVKRMYILQEAYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_A0A0M0HNB7" ac="UniRef90_A0A0M0HNB7" length="179" description="Spermidine N(1)-acetyltransferase n=1 Tax=Vibrio nereis TaxID=693 RepID=A0A0M0HNB7_VIBNE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>723</score>
+      <bits>283.1</bits>
+      <expectation>1.9e-95</expectation>
+      <identity>78.6</identity>
+      <positives>91.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="168">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKY</querySeq>
+      <pattern>M   LT+RALER DLRFIH+LNNNRNIM+YWFEEPYES+DELEELY KHIHD+AERRFVVE+  K LIGLVELIEINYIHRSAEFQIIIAP+HQG+G+A+ +++RAL+YSF+ILNLHKIYL V+VEN KA+HLY++CGF+EEGHLV EFFING Y+DVKRMYILQ +Y</pattern>
+      <matchSeq start="1" end="168">MTKGLTIRALERSDLRFIHDLNNNRNIMTYWFEEPYESYDELEELYQKHIHDDAERRFVVENENKELIGLVELIEINYIHRSAEFQIIIAPDHQGRGYAKEVVHRALEYSFSILNLHKIYLLVSVENEKAIHLYKQCGFIEEGHLVGEFFINGSYRDVKRMYILQPQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0ABT2EAI7" ac="UniRef90_A0ABT2EAI7" length="185" description="Spermidine N(1)-acetyltransferase n=1 Tax=Halomonas dongshanensis TaxID=2890835 RepID=A0ABT2EAI7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>719</score>
+      <bits>281.6</bits>
+      <expectation>9.4e-95</expectation>
+      <identity>80.5</identity>
+      <positives>88.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M+  L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV +D   N IGLVELIEI+YIHRSAEFQIII P +QGKGFAR LI +AL YSFTILNLHK+YL VAVEN KA+HLYEE GF+EEGHLV+EFFINGRY+DVKRMYILQ  YL</pattern>
+      <matchSeq start="1" end="169">MSPTLYLRALERNDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAQDGDGNAIGLVELIEIDYIHRSAEFQIIITPMYQGKGFARQLIKQALHYSFTILNLHKVYLIVAVENVKAIHLYEETGFIEEGHLVQEFFINGRYRDVKRMYILQEAYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0ABU5RNQ9" ac="UniRef90_A0ABU5RNQ9" length="176" description="Spermidine N(1)-acetyltransferase n=3 Tax=Cyanophyceae TaxID=3028117 RepID=A0ABU5RNQ9_9CYAN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>718</score>
+      <bits>281.2</bits>
+      <expectation>9.9e-95</expectation>
+      <identity>79.3</identity>
+      <positives>89.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="171">SQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>++L LRALERGDLRFIH+  NNR++M+YWFEEPYESFDELEELYN+HIHDNAERRFVVE+  K LIGLVELIEI+YIHR AEFQIIIAP HQGKG+AR  I+RALDYSFTILNLHKIYL VAV+N KA+HLY++CGF+EEGHLV EFFI G+Y+DVKRMYILQ  YL R</pattern>
+      <matchSeq start="4" end="172">TELALRALERGDLRFIHDQVNNRSVMAYWFEEPYESFDELEELYNRHIHDNAERRFVVENTAKELIGLVELIEIDYIHRRAEFQIIIAPAHQGKGYARFCIHRALDYSFTILNLHKIYLSVAVDNEKALHLYQQCGFIEEGHLVGEFFIEGQYRDVKRMYILQEDYLAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_UPI000DAF9BBC" ac="UniRef90_UPI000DAF9BBC" length="174" description="spermidine N1-acetyltransferase n=1 Tax=Synechococcales TaxID=1890424 RepID=UPI000DAF9BBC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>717</score>
+      <bits>280.8</bits>
+      <expectation>1.3e-94</expectation>
+      <identity>79.0</identity>
+      <positives>89.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="169">SQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>++L LRALERGDLRFIH+  NNR++M+YWFEEPYESFDELE+LYN+HIHDNAERRFVVE   K LIGLVELIEI+YIHR AEFQI+IAP+HQGKGFAR  IN+ALDYSF ILNLHKIYL VAVEN KA+HLY +CGF EEGHLV+EFFI GRY+DVKRM+ILQ  YL</pattern>
+      <matchSeq start="4" end="170">AELALRALERGDLRFIHDQVNNRSVMAYWFEEPYESFDELEDLYNRHIHDNAERRFVVETKDKQLIGLVELIEIDYIHRRAEFQIVIAPQHQGKGFARVCINKALDYSFAILNLHKIYLSVAVENKKALHLYHQCGFTEEGHLVDEFFIEGRYRDVKRMFILQENYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0A1H9T6G7" ac="UniRef90_A0A1H9T6G7" length="184" description="Spermidine N(1)-acetyltransferase n=1 Tax=Vreelandella subterranea TaxID=416874 RepID=A0A1H9T6G7_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>716</score>
+      <bits>280.4</bits>
+      <expectation>2.6e-94</expectation>
+      <identity>81.8</identity>
+      <positives>91.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="169">LTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV ED   + IGLVELIEINYIHRSAEFQIIIAP++QGKGFARTLI++AL YSFTILNLHKI+L VAVEN KA+HLY++ GFVEEGHLV+EFFING+Y+DVKRMYILQ  +L</pattern>
+      <matchSeq start="6" end="170">LKLRALERNDLRFVHQLNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAEDNSGHAIGLVELIEINYIHRSAEFQIIIAPDYQGKGFARTLIHQALHYSFTILNLHKIFLIVAVENIKAIHLYQQSGFVEEGHLVQEFFINGKYRDVKRMYILQEAFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_A0ABU5SYA0" ac="UniRef90_A0ABU5SYA0" length="176" description="Spermidine N(1)-acetyltransferase n=1 Tax=Cyanobium gracile UHCC 0281 TaxID=3110309 RepID=A0ABU5SYA0_9CYAN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>713</score>
+      <bits>279.3</bits>
+      <expectation>5.7e-94</expectation>
+      <identity>77.6</identity>
+      <positives>90.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="171">NSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>+++L LRALERGDLRFIH+  NNR++M+YWFEEPYESFDELEELY++HIHDNAERRFVVE+  K L+GLVELIEI+YIHR AEFQII+AP HQGKGFAR  I++ALDYSFTILNLHKIYL VAV+N KA+HLY++CGFVEEGHLV EFFI G+Y+DVKRMYILQ  YL R</pattern>
+      <matchSeq start="3" end="172">STELALRALERGDLRFIHDQVNNRSVMAYWFEEPYESFDELEELYSRHIHDNAERRFVVENKDKELVGLVELIEIDYIHRRAEFQIIVAPAHQGKGFARFCIHKALDYSFTILNLHKIYLSVAVDNAKALHLYQQCGFVEEGHLVGEFFIEGQYRDVKRMYILQDAYLAR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0A1H0HVQ2" ac="UniRef90_A0A1H0HVQ2" length="183" description="Spermidine N(1)-acetyltransferase n=2 Tax=Vreelandella TaxID=3137766 RepID=A0A1H0HVQ2_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>711</score>
+      <bits>278.5</bits>
+      <expectation>1.5e-93</expectation>
+      <identity>79.3</identity>
+      <positives>89.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M   L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV E++  N +GLVELIEI+YIHRSAEFQIIIAP +QGKGFARTLI +AL YSFTILNLHK++L VAVEN KA+HLY++ GFVEEGHLV+EFFINGRY+DVKRMYILQ  +L</pattern>
+      <matchSeq start="1" end="169">MQDTLHLRALERNDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAEESLGNPVGLVELIEIDYIHRSAEFQIIIAPSYQGKGFARTLIYQALHYSFTILNLHKVFLIVAVENVKAIHLYQQSGFVEEGHLVQEFFINGRYRDVKRMYILQDHFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_UPI003F8848F8" ac="UniRef90_UPI003F8848F8" length="179" description="spermidine N1-acetyltransferase n=1 Tax=Pseudocolwellia agarivorans TaxID=1911682 RepID=UPI003F8848F8">
+    <alignments total="1">
+     <alignment number="1">
+      <score>710</score>
+      <bits>278.1</bits>
+      <expectation>1.8e-93</expectation>
+      <identity>76.3</identity>
+      <positives>87.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRSE</querySeq>
+      <pattern>M  QL LRALER DLRFIHNLNNNR IMSYWFEEPYESFDELEELYN+HIHDNAERRF+VE+ +K LIGLVELIEI+YIH  AEFQIII  EHQGKG+AR+LI +ALDYSF+ILNL K+YL VA++N KA+HLY++CGFVEEGH V+EFFING Y+D KRMYILQ +Y  R +</pattern>
+      <matchSeq start="1" end="173">MQDQLFLRALERSDLRFIHNLNNNRKIMSYWFEEPYESFDELEELYNRHIHDNAERRFIVENDKKELIGLVELIEIDYIHSRAEFQIIINTEHQGKGYARSLIYKALDYSFSILNLFKVYLLVAIDNEKAIHLYKDCGFVEEGHFVKEFFINGEYKDAKRMYILQEEYFVRQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0A099LVT0" ac="UniRef90_A0A099LVT0" length="171" description="Spermidine N(1)-acetyltransferase n=2 Tax=Vibrio TaxID=662 RepID=A0A099LVT0_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>709</score>
+      <bits>277.7</bits>
+      <expectation>2e-93</expectation>
+      <identity>78.1</identity>
+      <positives>88.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M+  L++RALER DLRFIH LNNNRNIMSYWFEEPYES+DELEELY KHIHD+ ERRFVV D +  LIGLVELIEINYIHRSAEFQIIIAP  QG+GFA T I++ALDYSF+ILNLHK+YL VA+ N KA+HLY++CGF+EEG LVEEFFING+YQDVKRMYILQ  YL</pattern>
+      <matchSeq start="1" end="169">MSKHLSIRALERSDLRFIHQLNNNRNIMSYWFEEPYESYDELEELYQKHIHDDTERRFVVVDEKSQLIGLVELIEINYIHRSAEFQIIIAPAFQGQGFAATAIHKALDYSFSILNLHKVYLQVALSNKKAIHLYQQCGFIEEGLLVEEFFINGQYQDVKRMYILQRDYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_A0ABR9EZI1" ac="UniRef90_A0ABR9EZI1" length="183" description="Spermidine N(1)-acetyltransferase n=1 Tax=Halomonas casei TaxID=2742613 RepID=A0ABR9EZI1_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>708</score>
+      <bits>277.3</bits>
+      <expectation>4.2e-93</expectation>
+      <identity>78.7</identity>
+      <positives>88.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M   L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV ED   + IGLVELIEI+YIHRS EFQIIIAP++QGKGFAR+LI +AL YSFTILNLHK+YL VAVEN KA+HLYEE GF+EEG LV+EFFING+Y+DVKRMYILQ  +L</pattern>
+      <matchSeq start="1" end="169">MGHALYLRALERNDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAEDGNSDAIGLVELIEIDYIHRSGEFQIIIAPDYQGKGFARSLIQQALHYSFTILNLHKVYLIVAVENVKAIHLYEESGFIEEGKLVQEFFINGKYRDVKRMYILQDTFL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_UPI0020CC9FBC" ac="UniRef90_UPI0020CC9FBC" length="193" description="spermidine N1-acetyltransferase n=1 Tax=Synechococcus sp. J7-Johnson TaxID=2823737 RepID=UPI0020CC9FBC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>707</score>
+      <bits>276.9</bits>
+      <expectation>8.4e-93</expectation>
+      <identity>75.4</identity>
+      <positives>86.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="171">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>M+S L+LRALER DLRF+H LNNNR IMSYWFEEPYESFDELEELYN+HIHDNAERRF+ ED+Q+ L+GLVELIEI+YIHR AEFQIII P HQGKGFAR LI RALDY+F+I+NLHK+YL VA+EN +A+ LYE CGF EEG+ V+EFF  GRYQDV+RMYILQ  Y  R</pattern>
+      <matchSeq start="1" end="171">MSSDLSLRALERKDLRFVHRLNNNRQIMSYWFEEPYESFDELEELYNRHIHDNAERRFIAEDSQQQLVGLVELIEIDYIHRRAEFQIIIDPVHQGKGFARDLIGRALDYAFSIMNLHKVYLLVAIENQRAIRLYESCGFTEEGYFVKEFFSGGRYQDVRRMYILQDSYFER</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_Q87IY2" ac="UniRef90_Q87IY2" length="176" description="Spermidine N(1)-acetyltransferase n=18 Tax=Vibrio TaxID=662 RepID=Q87IY2_VIBPA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>704</score>
+      <bits>275.8</bits>
+      <expectation>1.3e-92</expectation>
+      <identity>77.4</identity>
+      <positives>89.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="168">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKY</querySeq>
+      <pattern>M   L +RALER DLRFIH LNNNRNIM+YWFEEPYES+DELEELY KHIHD+AERRFVVEDA   LIGLVELIEINYIHRSAEFQIIIAP+HQG+G+A  +I+RALDYSF+ILNL KIYL VAVEN  A+HLY++CGF+EEGHL+EE+FING Y+DVKRMY+L+ +Y</pattern>
+      <matchSeq start="1" end="168">MKKGLKMRALERSDLRFIHELNNNRNIMAYWFEEPYESYDELEELYRKHIHDDAERRFVVEDADGILIGLVELIEINYIHRSAEFQIIIAPDHQGRGYAMEMIHRALDYSFSILNLRKIYLLVAVENEVAIHLYKKCGFIEEGHLIEEYFINGSYRDVKRMYVLKHQY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_A0ACG4IA96" ac="UniRef90_A0ACG4IA96" length="197" description="Spermidine N1-acetyltransferase n=1 Tax=Aphanothece stagnina RSMan2012 TaxID=3390205 RepID=A0ACG4IA96_9CHRO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>706</score>
+      <bits>276.6</bits>
+      <expectation>1.4e-92</expectation>
+      <identity>77.8</identity>
+      <positives>87.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="171">LTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNR</querySeq>
+      <pattern>L LRALER DLRF+H LNNNRNIMSYWFEEPYESFDELEELY++HIHDNAERRF+ ED+ + LIGLVELIEI+YIHR AEFQIII P HQGKGFAR LI RALDY+F I+NLHK+YL VA+EN KA+HLYE+CGF EEG+ V+EFF  GRYQDV+RMYILQ  YL R</pattern>
+      <matchSeq start="3" end="169">LLLRALERKDLRFVHRLNNNRNIMSYWFEEPYESFDELEELYSRHIHDNAERRFIAEDSLEQLIGLVELIEIDYIHRRAEFQIIIDPVHQGKGFARELIGRALDYAFNIMNLHKVYLVVAIENQKAIHLYEDCGFAEEGYFVQEFFSGGRYQDVRRMYILQDTYLQR</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_A0ABX6V155" ac="UniRef90_A0ABX6V155" length="169" description="Spermidine N(1)-acetyltransferase n=1 Tax=Shewanella eurypsychrophilus TaxID=2593656 RepID=A0ABX6V155_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>697</score>
+      <bits>273.1</bits>
+      <expectation>1.2e-91</expectation>
+      <identity>77.6</identity>
+      <positives>90.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="5" end="165">LTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQ</querySeq>
+      <pattern>+ LRALER DLRFIH LNNNR IM+YWFEEPYESFDELE LY KHIHD  ERRF+ ED+ K +IGLVEL+EIN IHRSAEFQIII+PE QGKG+ARTLIN+AL+Y+FTILNLHK+YLHVA+EN +A+HLY++CGF+EEGHLV+E FING+Y+DVKRMYILQ</pattern>
+      <matchSeq start="1" end="161">MRLRALERTDLRFIHQLNNNRTIMAYWFEEPYESFDELEALYGKHIHDKTERRFIAEDSDKQIIGLVELVEINNIHRSAEFQIIISPEFQGKGYARTLINKALNYAFTILNLHKVYLHVAIENERAIHLYQKCGFIEEGHLVKEIFINGQYRDVKRMYILQ</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_A0ACH1WT36" ac="UniRef90_A0ACH1WT36" length="172" description="Spermidine N1-acetyltransferase n=1 Tax=Halomonas kashgarensis TaxID=3084920 RepID=A0ACH1WT36_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>697</score>
+      <bits>273.1</bits>
+      <expectation>1.4e-91</expectation>
+      <identity>76.3</identity>
+      <positives>88.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M + L LRALER DLRF+H LNNN++IMSYWFEEPYESFDELEELYNKHIHDNAERRFV E +    IGLVELIEI+YIHRSAEFQII+ P++QG+GFAR L+++AL YSFTILNLHKI+L VAVEN KA+HLY + GF+EEGHLV+EFFING+Y+DVKRMYILQ  YL</pattern>
+      <matchSeq start="1" end="169">MKTDLKLRALERNDLRFVHELNNNQSIMSYWFEEPYESFDELEELYNKHIHDNAERRFVAESSTGEPIGLVELIEIDYIHRSAEFQIIVTPQYQGRGFARELVHQALHYSFTILNLHKIFLIVAVENVKAIHLYRQTGFIEEGHLVQEFFINGKYRDVKRMYILQETYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_A0ABN8DVW3" ac="UniRef90_A0ABN8DVW3" length="183" description="Spermidine N(1)-acetyltransferase n=2 Tax=Vibrio stylophorae TaxID=659351 RepID=A0ABN8DVW3_9VIBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>697</score>
+      <bits>273.1</bits>
+      <expectation>2e-91</expectation>
+      <identity>75.9</identity>
+      <positives>87.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="173">QLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLNRSE</querySeq>
+      <pattern>QLTLRALER DLRFIH +NNNR++M+YWFEEPYESFDELEELY KHIHDNAERRFV ED    +IGLVELIEI+YIHR+AEFQIII+P +QGKG+AR LI +ALDYSF+ILNLHK+YL VAV N KA+HLY+ CGF+EEGHLVE+FF NGRY D KRMYILQ  YL  ++</pattern>
+      <matchSeq start="11" end="179">QLTLRALERSDLRFIHQMNNNRSVMAYWFEEPYESFDELEELYQKHIHDNAERRFVAED-NHTVIGLVELIEIDYIHRNAEFQIIISPAYQGKGYARALIRKALDYSFSILNLHKVYLTVAVNNDKAIHLYQSCGFIEEGHLVEQFFTNGRYLDAKRMYILQHDYLTSND</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_A0A1A6TWN1" ac="UniRef90_A0A1A6TWN1" length="174" description="Spermidine N(1)-acetyltransferase n=9 Tax=Photobacterium TaxID=657 RepID=A0A1A6TWN1_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>696</score>
+      <bits>272.7</bits>
+      <expectation>2.1e-91</expectation>
+      <identity>75.7</identity>
+      <positives>87.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>MN+++ LRALE+ DLRFIH LNNNR IMSYWFEEPYESF ELEELY KHIHD+ ERRF+ E+  K  IGLVEL+EIN IHRSAEFQIIIAP+ QG G+AR LINRAL+Y+FTILNLHK+YLHVA EN KA+HLYEECGF+EEGHLV+E FING+Y DVKRMY+LQ +Y+</pattern>
+      <matchSeq start="1" end="169">MNNEIRLRALEQTDLRFIHQLNNNRAIMSYWFEEPYESFYELEELYRKHIHDSTERRFIAENNDKESIGLVELVEINSIHRSAEFQIIIAPDFQGCGYARALINRALNYAFTILNLHKVYLHVATENEKAIHLYEECGFIEEGHLVKEIFINGQYTDVKRMYMLQDEYI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0A0D8MC88" ac="UniRef90_A0A0D8MC88" length="172" description="Spermidine N(1)-acetyltransferase n=1 Tax=Photobacterium leiognathi TaxID=553611 RepID=A0A0D8MC88_PHOLE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>691</score>
+      <bits>270.8</bits>
+      <expectation>1.1e-90</expectation>
+      <identity>74.4</identity>
+      <positives>88.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="168">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKY</querySeq>
+      <pattern>M++ + LRALER DLRFIH LNNNR IM+YWFEEPYESF ELEELY KHIHD+ ERRF+ E+A +  IGLVEL+EIN IHR+AEFQIIIAP++QG G+AR+LINRAL+Y+FTILNLHK+YLHVA+EN KA+HLYEECGFVEEG L++E FING+Y D+KRMYILQ  Y</pattern>
+      <matchSeq start="1" end="168">MSNVIRLRALERTDLRFIHQLNNNRTIMAYWFEEPYESFAELEELYRKHIHDSTERRFIAENADEEAIGLVELVEINNIHRTAEFQIIIAPDYQGNGYARSLINRALNYAFTILNLHKVYLHVAIENEKAIHLYEECGFVEEGRLIQEIFINGKYCDIKRMYILQDTY</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_UPI003CEA0026" ac="UniRef90_UPI003CEA0026" length="174" description="spermidine N1-acetyltransferase n=1 Tax=Vibrio sp. TRT 17S01 TaxID=3418505 RepID=UPI003CEA0026">
+    <alignments total="1">
+     <alignment number="1">
+      <score>683</score>
+      <bits>267.7</bits>
+      <expectation>2e-89</expectation>
+      <identity>74.1</identity>
+      <positives>87.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="170">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYLN</querySeq>
+      <pattern>M + L +RALER DL FIH+LNNNRN+M+YWFEEPYES+ EL+ELY KHIHD+AERRFVVE     LIGLVELIEINYIHRSAEFQIIIAPE QG+G+A  +IN ALDYSF ILNLHKIYL VA++N KA+HLY++CGF+EE +LVEE+FING+Y DVKRMYILQ++Y N</pattern>
+      <matchSeq start="1" end="170">MTNNLKVRALERSDLHFIHDLNNNRNVMTYWFEEPYESYGELQELYQKHIHDDAERRFVVEAQNGELIGLVELIEINYIHRSAEFQIIIAPEFQGRGYAEQVINHALDYSFNILNLHKIYLLVALQNEKALHLYQKCGFIEEANLVEEYFINGKYHDVKRMYILQNQYQN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_A0A379ZK87" ac="UniRef90_A0A379ZK87" length="177" description="Spermidine N(1)-acetyltransferase n=4 Tax=Shewanella TaxID=22 RepID=A0A379ZK87_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>683</score>
+      <bits>267.7</bits>
+      <expectation>2.2e-89</expectation>
+      <identity>73.2</identity>
+      <positives>88.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="169">NSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>+ ++ LRALER DLRFIH LNNNR IM+YWFEEPYESFDELEELYNKHIHD  ERRF+ E+AQ+  IGLVEL+EIN IHR+AEFQIIIAPE QG+G+AR ++N+AL+Y+FTILNL+K+YLHVA+EN KA+ LY++CGF EEGHLV+E FING+Y DVKRMY+LQ+ YL</pattern>
+      <matchSeq start="3" end="170">DGEIRLRALERTDLRFIHQLNNNRIIMAYWFEEPYESFDELEELYNKHIHDKTERRFIAENAQQQTIGLVELVEINDIHRNAEFQIIIAPEFQGRGYARAMVNKALNYAFTILNLYKVYLHVALENDKALQLYQKCGFKEEGHLVQEIFINGQYSDVKRMYVLQTDYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_Q5E0J1" ac="UniRef90_Q5E0J1" length="178" description="Spermidine N1-acetyltransferase n=12 Tax=Vibrionaceae TaxID=641 RepID=Q5E0J1_ALIF1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>675</score>
+      <bits>264.6</bits>
+      <expectation>3.8e-88</expectation>
+      <identity>71.6</identity>
+      <positives>88.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>M++++ LRALE+ DLRFIH LNNNR+IMSYWFEEPYES+ ELE+L+ KHIHD+ ERRF+ E+AQ+  IGLVEL+EIN IHR+AEFQIIIAP+ QG G+AR LIN+AL+Y+FTILNLHK+YLHVAV N KA+HLYE+CGFVEEGHL++E F+NG Y D+KRMYILQ  Y+</pattern>
+      <matchSeq start="5" end="173">MDNEIRLRALEQTDLRFIHQLNNNRSIMSYWFEEPYESYYELEDLFRKHIHDSNERRFIAENAQQQSIGLVELVEINSIHRNAEFQIIIAPDFQGCGYARGLINKALNYAFTILNLHKVYLHVAVNNEKAIHLYEKCGFVEEGHLIKEIFVNGEYSDIKRMYILQDTYI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_A0A2S7X7A0" ac="UniRef90_A0A2S7X7A0" length="173" description="Spermidine N(1)-acetyltransferase n=6 Tax=Aliivibrio TaxID=511678 RepID=A0A2S7X7A0_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>672</score>
+      <bits>263.5</bits>
+      <expectation>9.1e-88</expectation>
+      <identity>72.2</identity>
+      <positives>86.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="169">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL</querySeq>
+      <pattern>MN+ + LRALE+ DLRFIH LNNNR+IMSYWFEEPYES+ ELE+L+ KHIHD+ ERRF+ E+  +  IGLVEL+EIN IHRSAEFQIIIAP+ QG G+AR LI+RAL+Y+FTILNLHK+YLHVAV N KA+HLYE+CGF EEGHLV+E F+NG Y D+KRMYILQ +YL</pattern>
+      <matchSeq start="1" end="169">MNNDIRLRALEQTDLRFIHQLNNNRSIMSYWFEEPYESYYELEDLFRKHIHDSTERRFIAENNDQQSIGLVELVEINSIHRSAEFQIIIAPDFQGNGYARGLIHRALNYAFTILNLHKVYLHVAVNNDKAIHLYEKCGFAEEGHLVQEIFVNGEYCDIKRMYILQDQYL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0A090QP84" ac="UniRef90_A0A090QP84" length="176" description="Spermidine acetyltransferase n=1 Tax=Photobacterium aphoticum TaxID=754436 RepID=A0A090QP84_9GAMM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>670</score>
+      <bits>262.7</bits>
+      <expectation>2e-87</expectation>
+      <identity>70.7</identity>
+      <positives>86.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="173">MNSQLTLRALERGDLRFIHNLNNNRNIMSYWFEEPYESFDELEELYNKHIHDNAERRFVVEDAQKNLIGLVELIEINYIHRSAEFQIIIAPEHQGKGFARTLINRALDYSFTILNLHKIYLHVAVENPKAVHLYEECGFVEEGHLVEEFFINGRYQDVKRMYILQSKYL-NRSE</querySeq>
+      <pattern>M++++ LRALE+ DLRFIH LNNNR+IM+YWFEEPYES+ ELEEL+ KHIHD+ ERRF+ E   K  IGLVEL+EIN IHR+AEFQIIIAP++QG G+AR+LIN+AL+Y+FTILNLHK+YLHV V N KA+HLYE+CGF+EEGHLV+E FING Y D+KRMYILQ  YL NR++</pattern>
+      <matchSeq start="1" end="174">MDNEIRLRALEQTDLRFIHQLNNNRSIMAYWFEEPYESYYELEELFRKHIHDSNERRFIAETIDKQAIGLVELVEINTIHRNAEFQIIIAPDYQGCGYARSLINKALNYAFTILNLHKVYLHVTVTNEKAIHLYEDCGFIEEGHLVKEIFINGAYCDIKRMYILQDDYLANRNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-125918-0240-48895708-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-125918-0240-48895708-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="299"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:59:18+01:00" end="2026-08-06T13:07:01+01:00" search="P0Y0M0DT0H0M463.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q54IU8" ac="UniRef90_Q54IU8" length="299" description="Probable arylamine N-acetyltransferase 2 n=1 Tax=Dictyostelium discoideum TaxID=44689 RepID=ARY2_DICDI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1570</score>
+      <bits>609.4</bits>
+      <expectation>0.0</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="299">MEPNPIFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>MEPNPIFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</pattern>
+      <matchSeq start="1" end="299">MEPNPIFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_A0AAN7U0A7" ac="UniRef90_A0AAN7U0A7" length="303" description="arylamine N-acetyltransferase n=1 Tax=Dictyostelium firmibasis TaxID=79012 RepID=A0AAN7U0A7_9MYCE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1341</score>
+      <bits>521.2</bits>
+      <expectation>0.0</expectation>
+      <identity>83.3</identity>
+      <positives>90.8</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="299">MEPNPIFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEE------IIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>MEPNPIF+EFQLEFFKRI + PKSIETLNDVSEVMS CAQIFSFENLDVV N+TEPLNR+VIIQQLV NKQ GLCYKINSVFYYFI+SFGFNIYQVRCCVENQ+THD WQING HIINIIEYENKKY+ADVAFGCNLSYEPIP SE       I+ESCTGLYRIRKVDNII + KYTY+LEF+KPDSF PESAR WTNGY FDPL+K+I+ DEND++++H T+IQQLIIDDPT+EFSVKPLATKVVNNESIATLT+NSFTLTNCKTGEKTK TF+ NN   QLEQFNQ+LISIFNLPPLKFLPKI</pattern>
+      <matchSeq start="1" end="303">MEPNPIFTEFQLEFFKRINISPKSIETLNDVSEVMSACAQIFSFENLDVVTNSTEPLNRDVIIQQLVKNKQSGLCYKINSVFYYFIQSFGFNIYQVRCCVENQDTHDRWQINGGHIINIIEYENKKYVADVAFGCNLSYEPIPISEADDKEEIIVESCTGLYRIRKVDNIIGEFKYTYILEFRKPDSFYPESARAWTNGYVFDPLIKSINDDENDRVNTHQTKIQQLIIDDPTQEFSVKPLATKVVNNESIATLTANSFTLTNCKTGEKTKTTFEENN--NQLEQFNQYLISIFNLPPLKFLPKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_Q54IU7" ac="UniRef90_Q54IU7" length="306" description="Probable arylamine N-acetyltransferase 3 n=1 Tax=Dictyostelium discoideum TaxID=44689 RepID=ARY3_DICDI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>955</score>
+      <bits>372.5</bits>
+      <expectation>1e-126</expectation>
+      <identity>59.8</identity>
+      <positives>77.1</positives>
+      <gaps>3</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="299">MEPNPIFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSE---EIIESCTGLYRIRKVDNIIR-DIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNE---SIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>ME   IFS++QL+FFKRI M+PK IETL+DVS+VM  C+ +FSFENLD+V+N+ EPLN++V+I+Q++ N QGGLCYKIN++ Y+F+  FGF I+ +R  VENQETH  W I   H+INII +EN+ Y+ DVAFGCNLS  PIP ++   E++ESCTGLYR+RKV+N +     YT++LE +K DSF  ES + W  GYAFDPL+  +D + N++  +H T +QQL+IDDPTKEFS KPLATK+VN+    SIATLT+NSFTLT+CKTG+KTK  FD  N+    EQFNQHLISIFNLPPLK +P I</pattern>
+      <matchSeq start="1" end="303">MEAISIFSDYQLQFFKRIGMKPKPIETLDDVSDVMKACSNVFSFENLDIVSNSCEPLNKDVLIKQVICNNQGGLCYKINTLLYHFLLEFGFKIHIIRGSVENQETHSDWNIPTGHMINIINFENRLYVVDVAFGCNLSLRPIPITDDGSEVVESCTGLYRVRKVENCVSGKYNYTHILEHRKLDSFLIESGKTWVTGYAFDPLL-IVDNNNNNEKTTHQTLVQQLVIDDPTKEFSTKPLATKIVNDGSSFSIATLTANSFTLTDCKTGQKTKTNFD--NDKSSFEQFNQHLISIFNLPPLKTIPPI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_A0AAN7YWP3" ac="UniRef90_A0AAN7YWP3" length="312" description="arylamine N-acetyltransferase n=1 Tax=Dictyostelium firmibasis TaxID=79012 RepID=A0AAN7YWP3_9MYCE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>938</score>
+      <bits>365.9</bits>
+      <expectation>4.9e-124</expectation>
+      <identity>58.4</identity>
+      <positives>75.6</positives>
+      <gaps>4</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="299">MEPNPIFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFS---EEIIESCTGLYRIRKVDNIIRDIK-YTYLLEFKKPDSFSPESARLWTNGYAFDPL--VKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNES---IATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>ME N  FS++QL+FFKRI M+PK I++L+D+S+VM  C+ +FSFENLD+V+N+ EPLN++VII+Q++ NKQGGLCYKIN++ Y+F+  FGFNIY +R  VENQ+TH  W +   H+INII +EN+ Y+ DVAFGCNLS  P+P +    E+IESCTGLYRIRKV N + +I  YT++LE +KPDSF  + A+ W   YAFDPL  +   + DE   I +H T +QQL+IDDP+KEFS +PLA K+VN+ S   IATLT+NSFTLTNCKTGEK K  F  +   +  EQFNQHLISIFNLPPLK +P I</pattern>
+      <matchSeq start="1" end="305">MEQNTTFSDYQLQFFKRIGMEPKPIKSLDDISDVMKACSNVFSFENLDIVSNSWEPLNKDVIIKQVLCNKQGGLCYKINTLLYHFLLEFGFNIYLIRGSVENQDTHSNWNLPTGHMINIINFENRLYVVDVAFGCNLSLRPVPITNDGNEVIESCTGLYRIRKVYNCVEEINHYTHILEHRKPDSFLNDDAKKWVMAYAFDPLSIITNNESDEISAIKTHQTLVQQLVIDDPSKEFSTRPLAAKIVNDGSSFAIATLTANSFTLTNCKTGEKNKTNFGTD---ESFEQFNQHLISIFNLPPLKTVPSI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0AAN7TSS4" ac="UniRef90_A0AAN7TSS4" length="327" description="arylamine N-acetyltransferase n=1 Tax=Dictyostelium firmibasis TaxID=79012 RepID=A0AAN7TSS4_9MYCE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>912</score>
+      <bits>355.9</bits>
+      <expectation>7.3e-120</expectation>
+      <identity>55.3</identity>
+      <positives>73.1</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="299">NPIFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSE---EIIESCTGLYRIRKVDNIIRD-IKYTYLLEFKKPDSFSPESARLWTNGYAFDPLV----KAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNN----------------ESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>NP F++FQ++FF+RIK++P+ IE+L+D+S+VM  C+++FSFENLD++ NT EPL ++V+I+Q++ NKQGGLCYK N++ YYF+  FGF I+Q R   ENQE+H  W I+  H+INI+ +ENK Y+ DVAFGCNLS  P+P ++   EII+SC GLYR  K +NI+ +   YT++LE +KPD++  ESA++W  GYAFDPL+       + DEN +  +H TQIQQL+IDDP K+F VKPLATK++NN                ESIATLT NSFTLTNCKTGEK K  FD N   K  EQFNQHLISIFNLPPLK +P +</pattern>
+      <matchSeq start="2" end="317">NP-FTDFQIQFFERIKLKPRIIESLDDISDVMVSCSKVFSFENLDIICNTQEPLTKKVLIKQVITNKQGGLCYKANTLLYYFLLEFGFYIHQTRATCENQESHTRWNISHGHMINILNFENKFYVIDVAFGCNLSLRPVPVTDNGNEIIQSCVGLYRTLKKENIVAEKYHYTHILEHRKPDTYLNESAKIWVIGYAFDPLLICKNDHDNCDENTETITHQTQIQQLVIDDPNKDFCVKPLATKLINNNNNNNNNGGGDGDSSDESIATLTLNSFTLTNCKTGEKMKTNFDNN---KLFEQFNQHLISIFNLPPLKTVPLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_Q54IU9" ac="UniRef90_Q54IU9" length="325" description="Probable arylamine N-acetyltransferase 1 n=1 Tax=Dictyostelium discoideum TaxID=44689 RepID=ARY1_DICDI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>903</score>
+      <bits>352.4</bits>
+      <expectation>1.6e-118</expectation>
+      <identity>55.3</identity>
+      <positives>74.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="4" end="299">NPIFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSE---EIIESCTGLYRIRKVDNIIRDI-KYTYLLEFKKPDSFSPESARLWTNGYAFDPLV------KAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVV-------NNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>NP F+++Q++FF+RIK++P+ IE+L+D+SEV+  C+++F+FENLD+++NT E L R+V+I+Q++ NKQGGLCYK N++ YYF+  FG N++Q R   ENQE+H  W I   H+INI+ +ENK Y+ DVAFGCNLS  P+P ++   E+IESC GLYR+ K +NI+  +  YT++LE +KPD++  ESA+ W  GYAFDPL+         D D N+  ++H TQIQQL+IDDP K+F VKPLATK++       NN SIATLT NSFTLTNCKTGEK K  FD +N     EQFNQHLISIFNLPPLK +P+I</pattern>
+      <matchSeq start="2" end="310">NP-FTDYQVQFFERIKLKPRIIESLDDISEVLVACSKVFTFENLDIISNTQEALTRKVLIKQVLINKQGGLCYKANTLLYYFLLDFGLNVHQTRATCENQESHSRWNIGHGHMINILNFENKLYVMDVAFGCNLSLRPVPITDDGSEVIESCIGLYRVIKRENIVAGVYHYTHILEHRKPDTYLIESAKNWVIGYAFDPLLICKNDGDDDDDDNNNNNNTHQTQIQQLVIDDPNKDFCVKPLATKLINNTDNNNNNNSIATLTLNSFTLTNCKTGEKIKTNFDNDN---LFEQFNQHLISIFNLPPLKIIPQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_UPI0005AEEF74" ac="UniRef90_UPI0005AEEF74" length="278" description="arylamine N-acetyltransferase family protein n=1 Tax=Bacillus cereus group TaxID=86661 RepID=UPI0005AEEF74">
+    <alignments total="1">
+     <alignment number="1">
+      <score>405</score>
+      <bits>160.6</bits>
+      <expectation>4.7e-44</expectation>
+      <identity>33.8</identity>
+      <positives>54.2</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="299">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDS-HATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>++ Q  FF R+K+ PK ++  ND+ E++     I  +EN+DV+      ++R  I ++L+ N +GGLCY++NS+ YYF+   GF++Y+V   V +  + D W+ +  H+I I+++E +KY+ D  F  +L   P+PFS+E+I S TG YRIRK D      K TYLLE +K ++         E +  W  GYAF            DKID+     IQ +I+  P   F+   +  K+  N  I +LT  +FT T+   G+K K T   N       +++Q L  +F++ P K+  K+</pattern>
+      <matchSeq start="2" end="274">TDLQNYFFSRLKIPPKDVQ-FNDLHEILLQMGHILPYENIDVMERDFREISRTNIQEKLLQNNRGGLCYELNSLLYYFLNDCGFDVYRVAGTVYDL-SGDKWKPDDGHVIIILKHEGQKYIIDGGFASHLPLYPVPFSDEVISSQTGKYRIRKQDT----EKGTYLLEMRKGENGETAQFLDSEPSDTWRTGYAF----------TLDKIDTKKVNDIQDIIVHHPESPFNKGHIICKLTENGHI-SLTKRNFTKTH--KGQKIKRTITEN-------EYHQILEEVFDIVPHKYSEKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_UPI0001A0AE53" ac="UniRef90_UPI0001A0AE53" length="263" description="arylamine N-acetyltransferase family protein n=2 Tax=Bacillus cereus TaxID=1396 RepID=UPI0001A0AE53">
+    <alignments total="1">
+     <alignment number="1">
+      <score>400</score>
+      <bits>158.7</bits>
+      <expectation>1.7e-43</expectation>
+      <identity>32.7</identity>
+      <positives>57.4</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="290">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNL</querySeq>
+      <pattern>++FQ +FF R+ ++ K   +  D+S+++   AQ   FENLD++  T + ++RE + ++++ + +GGLCY++N   YYF+K  GF+++ V   V +  +   W ++  H+  ++++  + YL +V FG NL   P+PF+ +I+ S TG YRIRK        K  Y+LE KK ++F + +S+  WT GYAF   ++A+D       +    + Q+ I++     F+  PL  K + ++  ATLT +SFT+T  K G++ K       EI + EQ++  L S F +</pattern>
+      <matchSeq start="2" end="261">TDFQKQFFSRLNIEEKESTSFEDLSKILHATAQAIPFENLDIIQGTVKEISRENLQEKILVHNRGGLCYELNPTMYYFLKDCGFDVHLVSGTVYHAAS-GTWAVDSGHVATVLKHNAELYLIEVGFGSNLPLSPVPFTGDIVHSVTGDYRIRKETT----TKGNYVLEMKKSNAFLNQDSSEDWTLGYAF--YLEAVD-------ERKLNKAQKTIVEHEDSPFNKVPLIVK-LTSDGHATLTKDSFTVT--KQGKQNK------EEITK-EQYSNLLHSTFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_A0ABS3P1H2" ac="UniRef90_A0ABS3P1H2" length="263" description="Arylamine N-acetyltransferase n=1 Tax=Bacillus arachidis TaxID=2819290 RepID=A0ABS3P1H2_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>399</score>
+      <bits>158.3</bits>
+      <expectation>2.4e-43</expectation>
+      <identity>34.4</identity>
+      <positives>56.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>++ Q +FF R+K++ K   +  ++ E++   AQ   FENLD++  T + ++RE + ++++ N +GGLCY++N   YYF+K  GF+++ V   V N  T   W ++  H+  ++++ NK YL +V FG  L   P+PFS E + S TG YRIRK        K  Y+LE KK   F    S+  WT GYAF   ++ +D       +    + Q++I++     F+  PL  K +  +  A+LT +SFT+T  K G+K K</pattern>
+      <matchSeq start="2" end="243">TDLQKQFFSRVKIEAKESISFEELGEILYAMAQAIPFENLDIIQGTVKEISRENLQEKILVNNRGGLCYELNPTMYYFLKDCGFDVHLVSGTVYN-ATSATWAVDSGHVATVLKHNNKLYLIEVGFGAYLPISPVPFSGEAVHSVTGDYRIRKETT----TKGNYILEMKKNTEFLDVASSEEWTLGYAF--YIEEVD-------ERKLNEAQKIIVEHTDSPFNKVPLIVK-LTPDGHASLTKDSFTVT--KQGKKRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_A0A090YSH8" ac="UniRef90_A0A090YSH8" length="263" description="Arylamine N-acetyltransferase n=1 Tax=Bacillus clarus TaxID=2338372 RepID=A0A090YSH8_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>398</score>
+      <bits>157.9</bits>
+      <expectation>3.4e-43</expectation>
+      <identity>35.5</identity>
+      <positives>57.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESA-RLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>+EFQ  FF R+ +Q K   +  D++ ++S  AQ   FENL+++ NT + +++E + ++++ + +GGLCY++N   YYF+K  GF+++ V   V +  T   W ++  HI  ++ + N+ YL +V FG  L   P+PFS EI+ S TG YRIRK        K  Y+LE +K + F  +S+   W +GYAF        I+E D+   +A   Q++I++     F+  PL  K V ++  A+LT +S T+T  K GEK K</pattern>
+      <matchSeq start="2" end="243">TEFQKRFFSRLNIQEKDSVSFEDLNAILSAMAQAVPFENLNILQNTFKEISKETLQEKILIHNRGGLCYELNPTMYYFLKDCGFHVHLVSGTVYHAPT-STWAVDSGHIATVLHHNNELYLIEVGFGSYLPLAPVPFSGEIVHSITGDYRIRKETT----EKGNYILEMRKNNEFLDQSSTEDWVSGYAF-------YIEEVDETKVNAA--QKIIVEHEESPFNKVPLIVK-VTHDGHASLTKDSLTVT--KQGEKFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_UPI0004455092" ac="UniRef90_UPI0004455092" length="280" description="arylamine N-acetyltransferase family protein n=2 Tax=Bacillus cereus group TaxID=86661 RepID=UPI0004455092">
+    <alignments total="1">
+     <alignment number="1">
+      <score>397</score>
+      <bits>157.5</bits>
+      <expectation>7.6e-43</expectation>
+      <identity>33.6</identity>
+      <positives>53.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="299">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQ-IQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>+ +E Q +FF R+++ P+   T  D+  ++   A +  +ENLDV+      + R+ + ++L+   +GGLCY++NS+ YYF+   GF++Y+V   V +    D W+ +  H+I I++Y N+KY+ D     +L   P+PFS E+I S TG YRIRK +      K TYLLE KK +S       + E    W  G+AF            D+ID+H    IQ +I++ P   F+   +  +++ +  I +LT  SFT T  K G+K K T    NE    +++ Q L  +F++ P K L KI</pattern>
+      <matchSeq start="1" end="276">MLTELQKDFFSRLQISPEVDVTFEDLHGILQQMAYVIPYENLDVMDKNIRRITRDNVQKKLLLTHRGGLCYELNSLLYYFLLDCGFDVYRVSGTVYDL-GGDKWKPDDGHVIIILKYNNQKYIIDGGLASHLPLHPVPFSGEVISSQTGNYRIRKQNT----EKGTYLLEMKKGESGESAQFLNSEPTNTWRTGFAF----------TLDEIDTHKVNLIQNIIVEHPESPFNKGYIICRLIEDGHI-SLTEQSFTET--KNGQKRKRTI---NE----DEYQQILTEVFDIVPNKHLNKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0ABV3I8U5" ac="UniRef90_A0ABV3I8U5" length="263" description="Arylamine N-acetyltransferase n=15 Tax=Bacillus TaxID=1386 RepID=A0ABV3I8U5_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>395</score>
+      <bits>156.8</bits>
+      <expectation>9.5e-43</expectation>
+      <identity>34.7</identity>
+      <positives>57.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESAR-LWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>++FQ +FF R+ ++ K   +  D+S++M   AQ   FENL+V+ N  + +++E + ++++ N +GGLCY++N   YYF+K FG ++Y V   V N   +  W ++  HI  ++++ ++ YL +V FG  L   P+PFS E++ S TG YRIRK        K  Y+LE +K + F  +S+   WT GYAF        I+E D  +  A   Q++I++     F+  PL  K + ++  A+LT +S T+T  K G+K+K</pattern>
+      <matchSeq start="2" end="243">TDFQKQFFARLHIEEKETVSFEDLSQIMYRMAQTVPFENLNVLENNFKEISKENLKEKILVNNRGGLCYELNPTMYYFLKDFGLDVYLVSGTVYN-AANSIWAVDSGHIATVLKHHHELYLIEVGFGSYLPLAPVPFSGEVVHSVTGDYRIRKETT----EKGNYILEMRKNNEFLDQSSTDDWTLGYAF-------HIEEVD--EEQANVAQKIIVEHEGSPFNKVPLIVK-LTHDGHASLTKDSLTIT--KDGKKSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_UPI0031BA0563" ac="UniRef90_UPI0031BA0563" length="263" description="arylamine N-acetyltransferase family protein n=2 Tax=Bacillales TaxID=1385 RepID=UPI0031BA0563">
+    <alignments total="1">
+     <alignment number="1">
+      <score>389</score>
+      <bits>154.5</bits>
+      <expectation>7.4e-42</expectation>
+      <identity>32.4</identity>
+      <positives>58.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>++FQ +FF R+ ++ K   +  D++E++   AQ   FENLD++ +T + +++E + ++++   +GGLCY++N   YYF+K  GF+++ V   V +  +   W ++  H+  ++++ ++ YL +V FG NL   P+PF+ E++ S TG YRIRK        K  Y+LE +K + F    S++ WT GYAF    +A+D       +    + Q+ I++     F+  PL  K + ++  ATLT +SFT+T  K G+++K</pattern>
+      <matchSeq start="2" end="243">TDFQKQFFSRLNIETKDSVSFEDLNEILYAMAQAVPFENLDIIQSTVKEISKEHLQEKILVKNRGGLCYELNPTMYYFLKDCGFDVHLVSGTVYHAAS-GTWAVDSGHVATVLKHNDELYLIEVGFGSNLPLSPVPFTGEVVHSVTGDYRIRKETT----EKGNYILEMRKNNEFLDAASSQDWTLGYAF--YKEAVD-------ERKLNEAQKTIVEHTDSPFNKVPLTVK-LTSDGHATLTKDSFTIT--KQGKQSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A073JSV2" ac="UniRef90_A0A073JSV2" length="264" description="N-hydroxyarylamine O-acetyltransferase n=1 Tax=Bacillus manliponensis TaxID=574376 RepID=A0A073JSV2_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>389</score>
+      <bits>154.5</bits>
+      <expectation>7.6e-42</expectation>
+      <identity>34.0</identity>
+      <positives>55.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>+ FQ +FF+R+KM+ K   +  D+ +++   AQ   FENL ++   T+ +++E + ++++ NK+GGLCY++N + YYF+K +GF+++ V   V  Q   + W ++  HI  I++Y  + YL +V FG  L   P+PFS   + S TG YRIRK        K  Y+LE K    F +   +  W+ GYAF   V+ +D       +      Q++I++     F+  P+  K++  +  A+LT  SFTLT  K GEK K</pattern>
+      <matchSeq start="2" end="243">TNFQKQFFERLKMKEKESISFTDLPQLLHAMAQTVPFENLSIIEGKTKEISKENLQEKILTNKRGGLCYELNPLMYYFLKDYGFDVHLVSGTV-YQAAANKWAVDSGHIATILQYHGELYLIEVGFGSYLPLAPVPFSGNTVHSTTGDYRIRKETT----EKGNYILEMKNNHEFLNTAHSNEWSIGYAF--YVEGVD-------ERKVNAAQKIIVEHEQSPFNKVPILVKLI-EDGHASLTKESFTLT--KNGEKKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_UPI000BFDC4D9" ac="UniRef90_UPI000BFDC4D9" length="280" description="arylamine N-acetyltransferase family protein n=1 Tax=Bacillus cereus TaxID=1396 RepID=UPI000BFDC4D9">
+    <alignments total="1">
+     <alignment number="1">
+      <score>390</score>
+      <bits>154.8</bits>
+      <expectation>8.3e-42</expectation>
+      <identity>32.4</identity>
+      <positives>54.8</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="298">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPK</querySeq>
+      <pattern>+ +E Q  FF R+++  K   T  D+ E++S  + +  +EN+DV+  T++ ++R  I ++L+ +K+GGLCY++NS+ YYF+   GF++Y++   V +   H  W+ +  H+I I+ + N+K++ D  F  +L   P+PFS E+I S TG YRIRK        K TY+LE +K ++         E    W  GYAF      +D  + +K+++    IQ +II+ P   F+   +  K++ N  I +LT  SFT T  K G+K K            E+++Q LI +F++   K+  K</pattern>
+      <matchSeq start="1" end="275">MMTELQSYFFSRLQISHKKNVTFQDLHEILSRMSYLLPYENIDVMKKTSQEISRANIQKKLLMSKRGGLCYELNSLLYYFLYDCGFDVYRIAGTVYDLNGHK-WKPDHGHVIVILNHNNQKFIIDGGFASHLPLYPVPFSGEVISSQTGKYRIRKQ----HTEKGTYVLEMRKGENGETAQFLDSEPTDTWRTGYAF-----TLDEIDTNKVNA----IQNIIIEHPESPFNKGYIICKLIENGHI-SLTQRSFTET--KNGKKMKWFI-------TEEEYHQILIEVFDIISHKYSEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_UPI000278F376" ac="UniRef90_UPI000278F376" length="265" description="arylamine N-acetyltransferase family protein n=17 Tax=Bacillus TaxID=1386 RepID=UPI000278F376">
+    <alignments total="1">
+     <alignment number="1">
+      <score>388</score>
+      <bits>154.1</bits>
+      <expectation>1.1e-41</expectation>
+      <identity>33.3</identity>
+      <positives>56.3</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="267">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESA-RLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVT</querySeq>
+      <pattern>+ FQ +FF R+ ++ K   +  D+S +M   +Q   FENL+++ N    +++E + ++++ N +GGLCY++N   YYF+K  GF+++ V   V N   +  W ++  HI  +++Y N+ YL +V FG  L   P+PFS E++ S TG YRIRK        K  Y+LE +K + F  +S+   WT GY F   ++ +++++       A   Q++I++     F+  PL  K+  N   A+LT +S T+   K G+KTK T</pattern>
+      <matchSeq start="2" end="245">TNFQKQFFARLNIEEKETVSFEDLSHIMYAMSQSVPFENLNILENNFTEISKENLKEKILVNNRGGLCYELNPTMYYFLKDSGFDVHLVSGTVYN-AANSIWAVDSGHIATVLKYHNELYLIEVGFGSYLPLAPVPFSGEVVHSVTGDYRIRKE----MTEKGNYILEMRKNNEFLDQSSTNDWTVGYVFH--LEEVNVEK-------ANAAQKIIVEHEGSPFNKVPLIVKLTEN-GHASLTKDSLTI--AKNGKKTKET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_UPI00027958D7" ac="UniRef90_UPI00027958D7" length="263" description="arylamine N-acetyltransferase family protein n=8 Tax=Bacillus TaxID=1386 RepID=UPI00027958D7">
+    <alignments total="1">
+     <alignment number="1">
+      <score>387</score>
+      <bits>153.7</bits>
+      <expectation>1.5e-41</expectation>
+      <identity>34.5</identity>
+      <positives>57.5</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="267">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESAR-LWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVT</querySeq>
+      <pattern>++FQ +FF R+ ++ K I +  D+S +M   +Q   FENL+++ N     ++E + ++++ N +GGLCY++N   YYF+K  GF+++ V   V N + +  W ++  HI  ++++ ++ YL +V FG  L   P+PFS EI+ S TG YRIRK        K  Y+LE +K D    +S+   WT GYAF        ++E D+   +A   Q++I++     F+  PL  K+ ++  I +LT +S T+T  K G+KTK T</pattern>
+      <matchSeq start="2" end="245">TDFQKQFFARLNIENKEIVSFEDLSHIMYAMSQSVPFENLNILENNFTETSKENLKEKILVNNRGGLCYELNPTMYYFLKDAGFDVHLVSGTVYN-DANSIWAVDSGHIATVLKHHHELYLIEVGFGSYLPLAPVPFSGEIVHSVTGDYRIRKETT----EKGNYILEMRKNDEVLDQSSTDDWTVGYAF-------YLEEVDETKVNAA--QKIIVEHEKSPFNKVPLIVKLTHDGHI-SLTKDSLTVT--KNGKKTKET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_UPI000BEDA54C" ac="UniRef90_UPI000BEDA54C" length="263" description="arylamine N-acetyltransferase family protein n=7 Tax=Bacillus TaxID=1386 RepID=UPI000BEDA54C">
+    <alignments total="1">
+     <alignment number="1">
+      <score>387</score>
+      <bits>153.7</bits>
+      <expectation>1.5e-41</expectation>
+      <identity>32.0</identity>
+      <positives>58.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>+E Q +FF R+ +Q +   +  +++E++   AQ   FENLD++  T + +++E + ++++ + +GGLCY++N   YYF+K  GF+++ V   V +  + + W ++  H+  ++++  + YL +V FG NL   P+PF+ EI+ S TG YRIR+        K  Y+LE KK + F + +S++ WT GYAF   ++A+D       +    + Q+ I++     F+  PL  K + ++  ATLT + FT+T  K G+++K</pattern>
+      <matchSeq start="2" end="243">TELQKQFFSRLNIQERESISFENLNEILHAMAQAVPFENLDIIQGTVKEISKENLQEKILVHNRGGLCYELNPTMYYFLKDCGFDVHLVSGTVYHAAS-NTWAVDSGHVATVLKHNTEFYLIEVGFGSNLPLSPVPFTGEIVHSVTGDYRIRRETT----TKGNYILEMKKNNEFLNQDSSQDWTLGYAF--YIEAVD-------ERKLNEAQKTIVEHTDSPFNKVPLTVK-LTSDGHATLTKDRFTVT--KQGKQSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_F1A4Y5" ac="UniRef90_F1A4Y5" length="294" description="arylamine N-acetyltransferase n=1 Tax=Dictyostelium purpureum TaxID=5786 RepID=F1A4Y5_DICPU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>388</score>
+      <bits>154.1</bits>
+      <expectation>2.4e-41</expectation>
+      <identity>33.1</identity>
+      <positives>51.8</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="298">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPI-------PFSEEIIESCTGLYRI-----RKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIF--NLPPLKFLPK</querySeq>
+      <pattern>+EFQ +F+ RI ++P       D+S +M  C++ FSFENLD+V      + +E I +QL+    GGLCYK+N + YYF+    F++Y     V N    + W     H++NI+ Y NKKYL D+ FG  ++  PI        +S +II++  GL+++     + +++   ++ YT+  +++K D++  ES R W++G+ F         + N   D     IQ  II D   E +  PL  K + NE  +TLT N+ T+T    G KTK        +K  + FN+ L   F  N P LK L K</pattern>
+      <matchSeq start="5" end="289">TEFQKKFYNRINLKPIDNLKFEDLSIIMKSCSETFSFENLDIVKEEIGEITKESIYKQLLLETNGGLCYKLNGLLYYFLLDCRFDVYLSMGTVVN--GFNPWGSTDCHVVNIVNYNNKKYLVDIGFGGFIALNPILINEFDNNYSNQIIKNENGLFKVILENSKAINSNGENVNYTHTFQYRKDDNYLIESERNWSSGFVF---------NLNKVSDQSLFIIQNQIIRDQL-EITKGPLVVK-LTNEGTSTLTENNLTITT-HNGFKTK------TPLKSRDHFNEILQKEFKINNPILKKLNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_UPI00027AC1D9" ac="UniRef90_UPI00027AC1D9" length="263" description="arylamine N-acetyltransferase family protein n=2 Tax=Bacillus cereus TaxID=1396 RepID=UPI00027AC1D9">
+    <alignments total="1">
+     <alignment number="1">
+      <score>385</score>
+      <bits>152.9</bits>
+      <expectation>2.9e-41</expectation>
+      <identity>34.0</identity>
+      <positives>56.0</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>++FQ +FF R+ ++ K   +  D+S +M   AQ   FENL+++    + ++++ + ++++ N +GGLCY++N   YYF+K  GFN++ V   V N   +  W ++  HI  ++++ N+ YL +V FG  L   P+PFS E++ S TG YRIRK        K  Y+LE +K + F +  SA  WT GYAF   ++ +D       +  A   Q++I++     F+  PL  K +  +  A+LT +S T T  K G KTK</pattern>
+      <matchSeq start="2" end="243">TDFQKQFFTRLNIEEKETVSFEDLSHIMYAMAQNVPFENLNILEKNFKEISKKNLKEKILVNNRGGLCYELNPTMYYFLKDSGFNVHLVSGTVYN-AANSLWAVDSGHIATVLKHHNEFYLIEVGFGSYLPLAPVPFSGEVVHSVTGDYRIRKETT----EKGNYILEMRKNNEFLNQSSADDWTLGYAF--YIEEVD-------EKKANAAQKIIVEHEGSPFNKMPLIVK-LTEDGHASLTKDSLTTT--KDGAKTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_UPI000E6D0CCD" ac="UniRef90_UPI000E6D0CCD" length="276" description="arylamine N-acetyltransferase family protein n=1 Tax=Paenibacillus thiaminolyticus TaxID=49283 RepID=UPI000E6D0CCD">
+    <alignments total="1">
+     <alignment number="1">
+      <score>384</score>
+      <bits>152.5</bits>
+      <expectation>5.8e-41</expectation>
+      <identity>34.8</identity>
+      <positives>52.5</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="298">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPK</querySeq>
+      <pattern>+ +E Q  FF R++M PK   T  D+  ++     +  +ENLDV+ N    ++R  I ++L+   +GGLCY++NS+ YYF+   GF++Y+V   V +   +D W+ +  H+I I+ + ++KY+ D  F  +L   P+PFS E+I S TG YRIRK     +  K TYLLE KK ++         E    W  GYAF   +  ID D+          IQ  II  P   F+   +  K++    I +LT  SFT T  K G+K K T    NE    E++ Q L  +F++ P K+L K</pattern>
+      <matchSeq start="1" end="275">MLTELQRNFFSRLQMSPKEDVTFEDLHGILLQMGYVLPYENLDVMDNNIRKISRGNIQEKLLLTHRGGLCYELNSLLYYFLIDCGFDVYRVVGTVYDL-GNDNWKPDDGHVIIILNHNDQKYIIDGGFASHLPLYPVPFSGEVISSQTGKYRIRKQ----KTEKGTYLLEMKKGENGESAQFLDSEPTNTWCIGYAF--TLNEIDTDK-------VNIIQNNIITHPESPFNKGYIICKLIEGGHI-SLTKRSFTET--KKGQKRKRTI---NE----EEYYQILTEVFDIVPNKYLVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A0ABU6MV43" ac="UniRef90_A0ABU6MV43" length="263" description="Arylamine N-acetyltransferase n=4 Tax=Bacillus TaxID=1386 RepID=A0ABU6MV43_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>382</score>
+      <bits>151.8</bits>
+      <expectation>8.2e-41</expectation>
+      <identity>33.6</identity>
+      <positives>58.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESAR-LWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>++FQ +FF R+ +Q K   + +DV+++M   AQ   FENL+++ NT   ++++ + Q+++ N +GGLCY++N   YYF+K  GF+++ V   V N   +  W ++  HI  +++++N+ YL +V FG  L   P+PFS +++ S TG YRIRK        K  ++LE +K + F  +S+   WT GYAF        ++E ++   +A   Q++I++     F+  PL  K + ++  A+LT +S T+T  K G+K K</pattern>
+      <matchSeq start="2" end="243">TDFQKQFFTRLYIQEKESVSFDDVNDIMYAMAQAVPFENLNILQNTFTEISKDSLHQKILLNNRGGLCYELNPTMYYFLKDSGFDVHLVSGTVYN-AANSIWAVDSGHIATVLQHQNELYLIEVGFGSYLPLAPVPFSGKVVHSVTGDYRIRKETT----EKGNHILEMRKNNVFLDQSSTDNWTVGYAF-------YLEEVNETKVNAA--QKIIVEHEKSPFNKVPLIVK-LTHDGHASLTKDSLTIT--KQGKKLK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_A0AAP7A3U7" ac="UniRef90_A0AAP7A3U7" length="276" description="Arylamine N-acetyltransferase n=2 Tax=Paenibacillus alvei TaxID=44250 RepID=A0AAP7A3U7_PAEAL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>383</score>
+      <bits>152.1</bits>
+      <expectation>8.2e-41</expectation>
+      <identity>33.0</identity>
+      <positives>53.9</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="296">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFL</querySeq>
+      <pattern>+ +E Q +FF R+++ PK   T  D+  ++     +  +ENLDV+      ++R  + ++L+   +GGLCY++NS+ YYF+   GF++Y+V   V +  T++ W+ +  H+I I+ + ++KY+ D  F  +L   P+PFS E+I S TG YRIRK +      K TYLLE KK ++         E    W  GYAF      +D  + DK++     +Q  I++ P   F+ + +  K++    I +LT  SFT T  K G+K K T    NE    E+F Q L   F++ P K++</pattern>
+      <matchSeq start="1" end="273">MLTELQKDFFSRLQISPKEDVTFEDLHGILLQMGYVLPYENLDVMDKNVRNISRASVQEKLLLTHRGGLCYELNSLLYYFLVDCGFDVYRVVGTVYDLGTNN-WKPDDGHVIIILNHNDQKYIIDGGFASHLPLYPVPFSGEVISSQTGKYRIRKQNT----EKGTYLLEMKKGENGESAHFLDSEPTNTWCVGYAF-----TLDEIDTDKVN----LVQNTIVEHPESPFNKRHIVCKLIEGGHI-SLTKRSFTQT--KNGKKRKRTI---NE----EEFCQILEEDFDIIPNKYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_UPI0025709A8A" ac="UniRef90_UPI0025709A8A" length="263" description="arylamine N-acetyltransferase family protein n=1 Tax=unclassified Bacillus (in: firmicutes) TaxID=185979 RepID=UPI0025709A8A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>381</score>
+      <bits>151.4</bits>
+      <expectation>1.1e-40</expectation>
+      <identity>31.7</identity>
+      <positives>55.6</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="290">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNL</querySeq>
+      <pattern>+E Q  FF R+ ++ K      D+SE++   AQ   FENLD+V    + +++E + ++++ N++GGLCY++N + YYF+K   F+++ V   V +  + + W ++  H+  ++ + N+ YL +V FG  L   P+PF+ E++ S TG YRIRK        K TY+LE +K + F    S+  W  GYAFD  ++ ID       +    Q Q++I++     F+  P+  K+ ++  + +LT +SFT T  K GEK+K       E+   +Q+ + L ++F +</pattern>
+      <matchSeq start="2" end="261">TELQKYFFARLNLKEKESIAFEDLSELLISMAQAVPFENLDIVKGNVKAISKENLQEKILINQRGGLCYELNPIMYYFLKDCCFDVHLVSGTVYDSAS-ETWAVDEGHVATVLIHNNELYLIEVGFGSFLPLIPVPFTGEVVHSVTGDYRIRKETT----EKGTYILEMRKNNDFLDVASSEEWKLGYAFD--IEKID-------EQKLNQAQKIIVEHERSPFNKVPIVVKLTDDGHV-SLTKDSFTRT--KNGEKSK-------ELITEQQYTELLHTVFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_Q81AS3" ac="UniRef90_Q81AS3" length="263" description="N-hydroxyarylamine O-acetyltransferase n=186 Tax=Bacillus TaxID=1386 RepID=Q81AS3_BACCR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>381</score>
+      <bits>151.4</bits>
+      <expectation>1.1e-40</expectation>
+      <identity>34.1</identity>
+      <positives>55.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="267">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESAR-LWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVT</querySeq>
+      <pattern>++FQ +FF R+ ++ K   +  D+S +M   AQ   FENL+++    + +++E + ++++ N +GGLCY++N   YYF+K  GF+++ V   V N   +  W ++  HI  ++ + N+ YL +V FG  L   P+PF  E+I S TG YRIRK        K  Y+LE +K + F  +SA   WT GYAF   ++ +D       +  A   Q++I++     F+  PL  K +  +  A+LT +S  LT  K G+KTK T</pattern>
+      <matchSeq start="2" end="245">TDFQKQFFARLHIEEKDTVSFEDLSNIMYAMAQTVPFENLNILEKNFKEISKENLKEKILVNNRGGLCYELNPTMYYFLKDSGFDVHLVSGTVYN-AANSIWAVDSGHIATVLTHHNELYLIEVGFGSYLPLAPVPFLGEVIHSATGDYRIRKE----MTEKGNYILEMRKNNEFLDQSAADDWTLGYAF--YIEEVD-------EEKANTAQKIIVEHEGSPFNKVPLIVK-LTEDGHASLTKDS--LTVAKNGKKTKET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_UPI000BEDA790" ac="UniRef90_UPI000BEDA790" length="263" description="arylamine N-acetyltransferase family protein n=6 Tax=Bacillus TaxID=1386 RepID=UPI000BEDA790">
+    <alignments total="1">
+     <alignment number="1">
+      <score>380</score>
+      <bits>151.0</bits>
+      <expectation>1.6e-40</expectation>
+      <identity>32.8</identity>
+      <positives>56.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>+E Q +FF R+ +Q +   +  D++E++   AQ   FENLD++  T + + +E + ++++ + +GGLCY++N   YYF+K  GF ++ V   V N  +   W ++  H+  ++++ ++ YL +V FG  L   P+PFS E + S TG YRIRK        K  Y+LE KK + F    S+  WT GYAF   ++ +D       +    + Q++I++     F+  PL  K + ++  A+LT +SFT+T  K G+K+K</pattern>
+      <matchSeq start="2" end="243">TELQKQFFSRLNIQERESISFEDLNEILHAMAQAVPFENLDIIQGTVKEILKEHLQEKILVHNRGGLCYELNPTMYYFLKDCGFAVHLVSGTVYNAAS-ATWAVDSGHVATVLKHNDELYLIEVGFGSYLPLSPVPFSGEAVHSVTGDYRIRKETT----AKGNYILEMKKNNEFLDVASSEKWTLGYAF--YIEEVD-------ERKLNEAQKIIVEHKDSPFNKVPLIVK-LTSDGHASLTKDSFTVT--KQGKKSK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_A0A084J0I0" ac="UniRef90_A0A084J0I0" length="263" description="Arylamine N-acetyltransferase n=23 Tax=Bacillus TaxID=1386 RepID=A0A084J0I0_BACMY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>379</score>
+      <bits>150.6</bits>
+      <expectation>2.3e-40</expectation>
+      <identity>32.7</identity>
+      <positives>54.6</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="290">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESAR-LWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNL</querySeq>
+      <pattern>++FQ +FF R+ ++ K   +  D+  +M   AQ   FENL+++ N  + +++E + ++++ N +GGLCY++N   YYF+K   F+++ V   V N   +  W ++  HI  ++++ N+ YL +V FG  L   P+PFS EI+ S TG YRIRK        K  Y+LE +K + F  +S+   WT GYAF        ++E D+  ++A   Q++I++     F+  PL  K + ++  A+LT +S T+T  K   KTK T          EQ+   L S F +</pattern>
+      <matchSeq start="2" end="261">TDFQKQFFARLNIEEKHKVSFEDLPNIMYAMAQTVPFENLNILENNFKEISKENLKEKILINNRGGLCYELNPAMYYFLKDSKFDVHLVSGTVYN-AANSIWAVDSGHIATVLQHHNELYLIEVGFGSYLPLSPVPFSGEIVHSVTGDYRIRKETT----EKGNYILEMRKSNEFLDQSSTDDWTVGYAF-------YLEEVDETKANAA--QKIIVEHEGSPFNKVPLVVK-LTHDGHASLTKDSLTVT--KNRNKTKETI-------TKEQYTNLLHSTFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_UPI000BFC9752" ac="UniRef90_UPI000BFC9752" length="279" description="arylamine N-acetyltransferase family protein n=1 Tax=Bacillus cereus TaxID=1396 RepID=UPI000BFC9752">
+    <alignments total="1">
+     <alignment number="1">
+      <score>380</score>
+      <bits>151.0</bits>
+      <expectation>2.5e-40</expectation>
+      <identity>31.8</identity>
+      <positives>53.5</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="299">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKID-SHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>++ Q  FF R++M PK      D+ +++    ++  +EN+DV+  T + ++R  + ++L+ NK+GGLCY++NS+ YYF+   GF++Y+V   V +  + D W+ +  H+I I++++NKKY+ D  F  +L   P+PF+ E+I S TG YRIR+ D      K TYLLE +K ++         E +  W  GYAF            DKID      IQ +I+  P   F+ + +  K+  +  + +LT  SFT T+   G+K K            E+++Q L  +F +   K+  K+</pattern>
+      <matchSeq start="2" end="275">TDLQNYFFSRLQMPPKENLQFKDLHDLLLQMGRMLPYENIDVMEGTFQEISRTNLQEKLLLNKRGGLCYELNSLLYYFLSDCGFDVYRVAGTVYDL-SGDTWKPDDGHVIIILKHKNKKYVIDGGFASHLPLYPVPFTGEVISSQTGKYRIREQDT----DKGTYLLEMRKGENGETAQFLDSEPSDTWRTGYAF----------TLDKIDEKKVNDIQDIIVHHPESPFNKRYIICKLTESGHL-SLTKRSFTTTH--KGQKIKRAI-------TEEEYDQILTQVFAIVSHKYCGKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_UPI0018790EBB" ac="UniRef90_UPI0018790EBB" length="263" description="arylamine N-acetyltransferase family protein n=1 Tax=Bacillus cereus TaxID=1396 RepID=UPI0018790EBB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>378</score>
+      <bits>150.2</bits>
+      <expectation>3.2e-40</expectation>
+      <identity>33.1</identity>
+      <positives>54.2</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="290">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPES-ARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNL</querySeq>
+      <pattern>++FQ +FF R+ ++     +  D++ +M   AQ   FENL+++    + +++E + ++++ N +GGLCY++N   YYF+K  GF+++ V   V +   H  W ++  HI  ++++ N+ YL +V FG  L   P+PFS EI+ S TG YRIRK        K  Y+LE +K + F  +S    WT GYAF        ++E D+  ++A   Q++I++     F+  PL  K+  N   A+LT +S TLT  K G+K K       E    EQ+   L S F +</pattern>
+      <matchSeq start="2" end="261">TDFQKQFFARLHIEEIETVSFEDLAHIMYAMAQTVPFENLNILEKNFKEISKENLKEKILLNNRGGLCYELNPTMYYFLKDLGFDVHLVSGTVYS-VAHSIWAVDSGHIATVLKHHNELYLIEVGFGSYLPLTPVPFSGEIVHSVTGDYRIRKE----ATEKGNYILEMRKSNEFLDQSPTDDWTVGYAF-------YLEEVDETKANAA--QKIIVEHEKSPFNKVPLIVKLTPN-GHASLTKDSLTLT--KQGKKLK-------ESLTEEQYKNLLHSTFGI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0A1W6WRC0" ac="UniRef90_A0A1W6WRC0" length="263" description="Arylamine N-acetyltransferase n=8 Tax=Bacillus TaxID=1386 RepID=A0A1W6WRC0_BACTU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <bits>149.8</bits>
+      <expectation>4.5e-40</expectation>
+      <identity>33.7</identity>
+      <positives>55.2</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="267">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVT</querySeq>
+      <pattern>++FQ +FF R+ ++ K   +  D+S +M   AQ   FENL+++    + +++E + ++++ N +GGLCY++N   YYF+K  GF+++     V N   +  W ++  H+  ++ + N+ YL +V FG  L   P+PFS E+I S TG YRIRK        K  Y+LE +K + F    SA  WT GYAF   ++ +D       +  A   Q++I++     F+  PL  K +  +  A+LT +S  LT  K G+KTK T</pattern>
+      <matchSeq start="2" end="245">TDFQKQFFARLHIEEKDTVSFEDLSNIMYAMAQTVPFENLNILEKNFKEISKENLKEKILVNNRGGLCYELNPTMYYFLKDSGFDVHLFSGTVYN-AANSIWAVDSGHMATVLTHHNELYLIEVGFGSYLPLAPVPFSGEVIHSVTGDYRIRKE----MTEKGNYILEMRKNNEFLDQSSADDWTLGYAF--YIEEVD-------EEKANTAQKIIVEHEGSPFNKLPLIVK-LTEDGHASLTKDS--LTVAKNGKKTKET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_UPI003F8A7162" ac="UniRef90_UPI003F8A7162" length="291" description="arylamine N-acetyltransferase family protein n=3 Tax=Bacillus TaxID=1386 RepID=UPI003F8A7162">
+    <alignments total="1">
+     <alignment number="1">
+      <score>379</score>
+      <bits>150.6</bits>
+      <expectation>4.7e-40</expectation>
+      <identity>31.7</identity>
+      <positives>54.3</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="292">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPP</querySeq>
+      <pattern>+ +EFQ  FF R+++ PK      D+ E++     +  +ENLDV+      ++++ I ++L+ N +GGLCY++NS+ YYF+K  GF++Y+    + +  + D W+ +  H+I I+ ++ +KY+ D  F  +L   P+PFS E+I S TG YRIRK +      K TYL E +K ++         E    W +GYAF      +D  + +K+++    IQ +I++ P   F+   +  K++ +  I +LT  SFT T  K G+K K        +   E+++Q L  IF + P</pattern>
+      <matchSeq start="1" end="269">MMTEFQRLFFSRLQIYPKENVKFEDLHEILLKMGCVLPYENLDVMEREIRKISKKNIQEKLLLNNRGGLCYELNSLLYYFLKDCGFDVYRAAGTIYDL-SGDKWKPDDGHVIIILNHDGQKYIIDGGFASHLPLYPVPFSGEVISSQTGKYRIRKQNT----EKGTYLFEMRKGENGETAQFLDSEPTDTWRSGYAF-----TLDAIDTNKVNA----IQDIIVEHPESPFNKGYIIFKLIEDGHI-SLTKRSFTET--KKGQKIK-------RVITEEEYHQILTEIFEIIP</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_UPI00062DA8E7" ac="UniRef90_UPI00062DA8E7" length="280" description="arylamine N-acetyltransferase family protein n=31 Tax=Bacillus TaxID=1386 RepID=UPI00062DA8E7">
+    <alignments total="1">
+     <alignment number="1">
+      <score>378</score>
+      <bits>150.2</bits>
+      <expectation>5e-40</expectation>
+      <identity>31.7</identity>
+      <positives>54.7</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="299">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>+ ++ Q +FF R+++ PK      ++ E++   A +  +ENLDV+      + R+ + ++L+  ++GGLCY++N++ YYF+   GF++Y++   V +    D W+ +  H+I I+ Y N+KY+ D     +L   P+PFS E++ S TG YRIRK +      K TYLLE KK ++       + E    W  G+AF       +ID N K+++    IQ +I++ P   F+   +  K++ +  I +LT  SFT T  + G+K+K T    NE    +++ Q L  +FN+   K+  KI</pattern>
+      <matchSeq start="1" end="276">MLTDLQKKFFSRLQITPKKDVNFENLHEILQQMAYVIPYENLDVMEKNVRKITRKNVQEKLLLAQRGGLCYELNTLLYYFLLDCGFDVYRISGTVYDL-GGDKWKPDDGHVIIILNYNNQKYIVDGGLASHLPLHPVPFSGEVVSSQTGKYRIRKQNT----EKGTYLLEMKKGENGESAQFLNSEPTNTWCTGFAF----SLNEIDSN-KVNA----IQNIIVEHPESPFNKGYIVCKLIEDGHI-SLTKKSFTET--RKGKKSKRTI---NE----DEYQQILKEVFNISLNKYPDKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_UPI000A35E191" ac="UniRef90_UPI000A35E191" length="280" description="arylamine N-acetyltransferase family protein n=5 Tax=Bacillus TaxID=1386 RepID=UPI000A35E191">
+    <alignments total="1">
+     <alignment number="1">
+      <score>377</score>
+      <bits>149.8</bits>
+      <expectation>7e-40</expectation>
+      <identity>33.0</identity>
+      <positives>52.3</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="299">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>+ +E Q  FF R+KM  K   +  D+  ++     +  +ENLDV+      + RE I  +L+   +GGLCY++NS+ YYF+   GF++Y+V   V +  + D W+ +  H+I I+ + ++KY+ D  F  +L   P+PFS E+I S TG YRIRK +      K TYLLE KK ++         E    W  GYAF        +DE D   +    IQ +I++ P   F+   +  K++ +  I +LT  SFT T  K G+K K       +    E+++Q L  +F++ P K++ KI</pattern>
+      <matchSeq start="1" end="276">MLTELQENFFNRLKMSWKEDVSFKDLHGILLQMGYVLPYENLDVMDKNIRKITRENIQNKLLLTHRGGLCYELNSLLYYFLIDCGFDVYRVAGTVYDLGS-DTWKPDDGHVIIILNHNDQKYIIDGGFASHLPLYPVPFSGEVISSQTGKYRIRKQNT----DKGTYLLEMKKGENGESAQFLDSEPTNTWRIGYAF-------TLDEID--TNKVNLIQNIIVEHPESPFNKGYIICKLIEDGHI-SLTKQSFTET--KKGKKRK-------QAITEEEYHQILTEVFDIIPNKYIGKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0A075R2C1" ac="UniRef90_A0A075R2C1" length="273" description="N-hydroxyarylamine O-acetyltransferase n=16 Tax=Paenibacillaceae TaxID=186822 RepID=A0A075R2C1_BRELA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>8.2e-40</expectation>
+      <identity>33.3</identity>
+      <positives>52.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="290">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNL</querySeq>
+      <pattern>+ +E Q  FF R+++ PK   T  D+  ++     +  +ENLDV+      ++RE + ++L+    GGLCY++NS+ YYF+   GF++Y+V   V +  +   W+ +  H+I I+ Y N+KY+ D  F  +L   P+PF+ E+I S TG YRIRK +      K TYLLE KK ++         E    W  GYAF        +DE D   +    IQ +I++ P   F+   + +K++    I +LT  SFT T  K G+K K T    NE    E+++Q L  +F +</pattern>
+      <matchSeq start="1" end="267">MLTELQKNFFSRLQISPKEDVTFEDLHGILLQMGYVLPYENLDVMDKNIRKISRENVQEKLLLTHCGGLCYELNSLLYYFLIDCGFDVYRVSGTVYDLGSGK-WKPDDGHVIIILNYNNQKYIIDGGFASHLPLYPVPFNGEVISSQTGKYRIRKQNT----EKGTYLLEMKKGENGESAQFLDSEPTNTWRTGYAF-------TLDEID--TNKVNVIQNIIVEHPESPFNKGCIISKLIEGGHI-SLTKRSFTET--KKGQKRKRTI---NE----EEYHQILTEVFRI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_UPI0009E10D04" ac="UniRef90_UPI0009E10D04" length="275" description="arylamine N-acetyltransferase family protein n=4 Tax=Paenibacillus larvae TaxID=1464 RepID=UPI0009E10D04">
+    <alignments total="1">
+     <alignment number="1">
+      <score>376</score>
+      <bits>149.4</bits>
+      <expectation>8.7e-40</expectation>
+      <identity>32.2</identity>
+      <positives>53.6</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="290">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNL</querySeq>
+      <pattern>+E Q  FF R+KM P      +++ E++     I  +ENLDV+    + ++R  +  +L+ N +GGLCY++NS+ YYF+   GF++Y+V   V + +  D W+ +  H+I I++Y N+ Y+ D  F  +L   P+PF+ E++ S TG YRIRK D      K TY+LE +K ++         E   +W  GYAF        +DE D       +IQ +I+  P   F+   +  K++ N  + +LT  +FT T  K G+K      I  +I + ++++Q L  +FN+</pattern>
+      <matchSeq start="2" end="266">TELQSVFFSRLKMNPVENVQFDNLHEILLKMGYILPYENLDVMGKNIKEISRRNVQNKLLLNNRGGLCYELNSLLYYFLCDSGFDVYRVAGTVYDLK-GDKWKPDDGHVIIILQYRNQTYIVDGGFASHLPLYPVPFNGEVVSSQTGKYRIRKQDT----EKGTYVLEMRKGENGETAQFLGSEPTDMWRTGYAF-------TLDEID--TKKVNEIQDIIVKHPESPFNKGHIVCKLIENGHV-SLTKRTFTET--KKGQK------IKKKITE-KEYHQILKDVFNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_UPI000BEE778E" ac="UniRef90_UPI000BEE778E" length="280" description="arylamine N-acetyltransferase family protein n=1 Tax=Bacillus thuringiensis TaxID=1428 RepID=UPI000BEE778E">
+    <alignments total="1">
+     <alignment number="1">
+      <score>372</score>
+      <bits>147.9</bits>
+      <expectation>3.9e-39</expectation>
+      <identity>31.0</identity>
+      <positives>52.3</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="299">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>+ ++ Q  FF R++M PK     ND+ E++     +  +EN+DV+      ++R  I ++L+ N +GGLCY++NS+ YYF+   GF++Y+V   V +  + D W+ +  H+I I++++ +KY+ D  F  +L   P+PFS+E++ S TG YRIRK D      K TYLLE +K ++         E +  W  GYAF        +DE D   +    IQ +I+      F+   +  K+  +  + +LT  +FT        KT+    I   I + E ++Q L  +FN+   K+  K+</pattern>
+      <matchSeq start="1" end="276">MMTDLQNYFFSRLQMSPKEDIQFNDLHEILLQMGHMLPYENIDVMEGGFREISRTNIQEKLLLNNRGGLCYELNSLLYYFLNDSGFDVYRVAGTVYDL-SGDKWKPDDGHVIIILKHKGQKYIIDGGFASHLPLYPVPFSDEVVSSQTGKYRIRKQDT----KKGTYLLEMRKGENGETAQFLDSEPSETWRTGYAF-------TLDEID--TNKVNDIQDIIVHHLESPFNKGHIICKLTEDGHV-SLTKRNFT--------KTRKGHKIKRAITEAE-YSQILTEVFNIDSHKYCGKV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_A0ABU8HVQ5" ac="UniRef90_A0ABU8HVQ5" length="263" description="Arylamine N-acetyltransferase n=3 Tax=Bacillus cereus group TaxID=86661 RepID=A0ABU8HVQ5_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>370</score>
+      <bits>147.1</bits>
+      <expectation>4.9e-39</expectation>
+      <identity>33.0</identity>
+      <positives>55.9</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="267">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVT</querySeq>
+      <pattern>++FQ +FF R+ ++  +  +  D+  +M   AQ   FENL+V+    + +++E + ++++ N +GGLCY++N   YYF+K  GF+++ V   V N   +  W ++  H+  ++++++  YL +V FG  L   P+PFS E++ S TG YRIRK        K  Y+LE +K + F    SA  WT GYAF    +A++       +  A   Q++I++     F+  PL  K +  +  A+LT +S T+T  K G+KTK T</pattern>
+      <matchSeq start="2" end="245">TDFQKQFFARLHIEEIATVSFEDLPHIMQAMAQTVPFENLNVLEKNFKEISKENVKEKILVNNRGGLCYELNPTMYYFLKDSGFDVHLVSGTVYN-VANSTWAVDSGHVATVLKHQDAFYLIEVGFGSYLPLAPVPFSGEVVHSVTGDYRIRKETT----EKGNYMLEMRKNNEFLDQSSADDWTLGYAF--YSEAVN-------EEKANAAQKIIVEHEGSPFNKIPLIVK-LTEDGHASLTKDSLTVT--KNGKKTKET</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0A073K7Z3" ac="UniRef90_A0A073K7Z3" length="263" description="N-hydroxyarylamine O-acetyltransferase n=1 Tax=Bacillus gaemokensis TaxID=574375 RepID=A0A073K7Z3_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>366</score>
+      <bits>145.6</bits>
+      <expectation>1.9e-38</expectation>
+      <identity>32.4</identity>
+      <positives>55.2</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSF-SPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>+E Q +FF R+ ++ K   +  D++E++   AQ+  FENLD++  T + +++E + ++++ N +GGLCY++N   YYF+K   F+++ V   V N  +   W +   HI  ++++ N+ YL +V FG  L   P+PFS E + S TG YRIRK        K  Y+LE +K   F    S+  W  GYAF   ++ +D       ++   + Q++I++     F+  PL  K +  +  A+LT +S T+T  K G+K K</pattern>
+      <matchSeq start="2" end="243">TELQKQFFSRLNIKEKESISFEDLNEILYAMAQVVPFENLDIIQGTVKEISKENLQKKILVNNRGGLCYELNPAMYYFLKDCSFDVHLVSGTVYNAAS-ATWAVESGHIATVLKHNNELYLIEVGFGSYLPLSPVPFSGETVHSFTGDYRIRKETT----AKGNYVLEMRKNHEFLDVTSSEDWILGYAF--YIEEVD-------ETTLNKAQRIIVEHEESPFNKVPLIVK-LTPDGHASLTKDSLTVT--KQGKKQK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A7GQP2" ac="UniRef90_A7GQP2" length="263" description="N-acetyltransferase n=2 Tax=Bacillus cytotoxicus TaxID=580165 RepID=A7GQP2_BACCN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>363</score>
+      <bits>144.4</bits>
+      <expectation>5.3e-38</expectation>
+      <identity>32.8</identity>
+      <positives>56.4</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFK-KPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>++ Q +FF R+ ++ K   +  D++E++   AQ   FENLD++    + +++E + ++++ N +GGLCY++  + YYF+K  GF+++ V   V N  +   W ++  H+  ++++  + YL +V FG  L   P+PFS EI+ S TG YRIRK        K  Y+LE +   +  +  S++ WT GYAF  + KA   DEN        + Q+ I++     F+  PL TK+ ++  + +LT +S T+T  K GEK K</pattern>
+      <matchSeq start="2" end="243">TDLQKQFFSRLHIKEKESISFEDLNEILYAMAQTVPFENLDIIQGKVKEISKEHLQEKILVNNRGGLCYELGPIMYYFLKDCGFDVHLVSGTVYNAAS-ATWAVDSGHVATVLKHNKQSYLIEVGFGSYLPLAPVPFSGEIVHSVTGDYRIRKETT----TKGNYVLEMRINNELLNAASSQEWTLGYAF-YIEKA---DEN-----IVNEAQKTIVEHKDSPFNKVPLITKLTSDGHV-SLTKDSLTVT--KQGEKRK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_UPI00174BA238" ac="UniRef90_UPI00174BA238" length="259" description="arylamine N-acetyltransferase family protein n=1 Tax=Metabacillus idriensis TaxID=324768 RepID=UPI00174BA238">
+    <alignments total="1">
+     <alignment number="1">
+      <score>362</score>
+      <bits>144.1</bits>
+      <expectation>6.8e-38</expectation>
+      <identity>33.2</identity>
+      <positives>52.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="254">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFT</querySeq>
+      <pattern>SE    F KRI +Q         +   +   ++   FENL +++N    + RE +I +++  K+GGLCY++NS+  +F+   GFN++ VR  + N  TH+   +   H  N++ YE++ YL D  FG NL  +P+P + E + S +G +RI+KVDN   D    Y+LE K           +W  GYAFD  +   D+ E D       +IQ+++I+     F+  PL T+  N  +I TLT  S+T</pattern>
+      <matchSeq start="2" end="231">SELNTLFRKRIGLQKNDKIIFETLDNFLEKTSKTIPFENLCIISNQISDITRENLIHKVLVKKEGGLCYELNSILNFFLAENGFNVFLVRGVIYNNVTHEWLTLGRTHAANLLMYEDQMYLIDTGFGGNLPLKPVPLNGESVTSDSGEFRIKKVDNEHGD----YILEMK-----MRHKDPIWRTGYAFDSKLPVKDVSEFD-------EIQKILIESQDSPFNKSPLITRRTNTGNI-TLTDTSYT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_UPI0010BF194F" ac="UniRef90_UPI0010BF194F" length="279" description="arylamine N-acetyltransferase family protein n=6 Tax=Bacillus TaxID=1386 RepID=UPI0010BF194F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>362</score>
+      <bits>144.1</bits>
+      <expectation>1.1e-37</expectation>
+      <identity>31.8</identity>
+      <positives>53.5</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="299">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKK------PDSFSPESARLWTNGYAFDPLVKAIDIDENDKI-DSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNLPPLKFLPKI</querySeq>
+      <pattern>++ Q   F R+ +  K      D+ E++    +I  +ENLDV+  +T+ ++RE +I++L+  ++GGLCY++NS+ YYF+   GF++Y+V   + + +    W+ +  H+I I+ +EN+KY+ D  F  +L   P+PFS EII S TG YRI K D     +K TY+L+ KK       D    E    W  GY F            +KI ++   +IQ++I++     F+   +  K +N+    +LT  SFT T C+ G+K K +          E++N+ LI +F +   K++ KI</pattern>
+      <matchSeq start="2" end="275">TDLQKYLFLRLGIPVKEKVLFEDLPEILFRMGKILPYENLDVMEQSTKNISRENLIEKLLLRQRGGLCYELNSLLYYFLIDCGFDVYKVAGTIYDLKNKK-WKPDDGHVIIIMTHENQKYIIDGGFASHLPLYPVPFSGEIISSQTGKYRICKQDT----LKGTYILQMKKGNNGETADFLGSEPTNAWKIGYTF----------TLEKISEAKVNEIQRIIVEHKESPFNKGHIICK-LNDTGHVSLTKQSFTET-CR-GKKIKQSI-------TEEEYNKILIDVFGITQEKYVGKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_UPI000789A18F" ac="UniRef90_UPI000789A18F" length="280" description="arylamine N-acetyltransferase family protein n=1 Tax=Bacillus cereus group TaxID=86661 RepID=UPI000789A18F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>360</score>
+      <bits>143.3</bits>
+      <expectation>2.3e-37</expectation>
+      <identity>33.5</identity>
+      <positives>52.5</positives>
+      <gaps>9</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="277">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDS------FSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQL</querySeq>
+      <pattern>+ +E Q  FF R+++ PK      D+ E++   A +  +ENLDV+      + R+ + ++L+   +GGLCY++N++ YYF++  GF++Y+V   V +    D W+ +  H+I I+ Y N KY+ D     +L   P+PFS E+I S TG YRIR+ +      K TYLLE KK ++         E    W  G+AF        +DE D   +    IQ +I++ P   F+   +  K++ +  I +LT  SFT T  K  +K K T  IN E  QL</pattern>
+      <matchSeq start="1" end="259">MLTELQKSFFSRLQVSPKEDVNFKDLHEILLRMAYVIPYENLDVMEKNIRKITRKNVQEKLLLMHRGGLCYELNTLLYYFLQDCGFDVYRVSGTVYDL-GDDKWKPDDGHVIIILNYNNLKYIVDGGLASHLPLHPVPFSGEVISSQTGKYRIRQQNT----EKGTYLLEMKKGENGESAQFLDSEPNNTWRTGFAF-------TLDEID--TNKVNVIQNIIVEHPDSPFNKGYIICKLIEDGHI-SLTKQSFTET--KKRQKRKRT--INEEEYQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_F0ZKG5" ac="UniRef90_F0ZKG5" length="289" description="arylamine N-acetyltransferase n=1 Tax=Dictyostelium purpureum TaxID=5786 RepID=F0ZKG5_DICPU">
+    <alignments total="1">
+     <alignment number="1">
+      <score>360</score>
+      <bits>143.3</bits>
+      <expectation>2.9e-37</expectation>
+      <identity>33.2</identity>
+      <positives>53.2</positives>
+      <gaps>11</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="6" end="290">IFSEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGF-NIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFS--EEIIESCTGLYRIRKVDN-----IIRDIKYTYLLEFKKPDSFSPESARLWTNGYAF--DPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQLEQFNQHLISIFNL</querySeq>
+      <pattern>+ +EFQL F+KRI ++P       D+  ++  C   FSFENLDV+ +  + + +E I  Q+V N+ GGLC+K+N + YYF++  GF +I  V   V +    +  +  GAH+  I+  ENKKY  D+ FG      PI     EEI +S  GL+RI K +N     + +   YT+ ++FKK D +  E+ + W + + F  +PL            +S+    Q+++I +   + ++ P+  K ++   +ATLT N  T+T    G+KTK      N I   + FN+ L SIFN+</pattern>
+      <matchSeq start="1" end="273">MLTEFQLSFYKRINVEPILNLKFEDLFLILDACCSTFSFENLDVIQDDIKEVTKETIYNQIVLNENGGLCFKLNGLIYYFLQESGFKDISLVTGVVVSGPNPN--RAAGAHVAIILVNENKKYYIDIGFGGFTPILPIQIDEVEEITKSKNGLFRIVKEENEAINYLGKKQYYTHKMQFKKEDDYIDENLKQWISTFFFNLEPLQ-----------ESYLNTSQKIMIIEKI-DLAIGPMVFKFIDG-GVATLTRNYLTITT-NNGKKTK------NPIHSNDHFNEILKSIFNI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_A0A1R1RYA5" ac="UniRef90_A0A1R1RYA5" length="252" description="Arylamine N-acetyltransferase n=4 Tax=Bacillus swezeyi TaxID=1925020 RepID=A0A1R1RYA5_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>354</score>
+      <bits>141.0</bits>
+      <expectation>8.6e-37</expectation>
+      <identity>35.8</identity>
+      <positives>51.7</positives>
+      <gaps>10</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="15" end="254">FKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFT</querySeq>
+      <pattern>++RI  +P    T  D+ E +S  A  F FEN  V+ N   P+ +  +    +N K+GGLCY +N+  YY +K  GF+++ V+  V NQ+    W + G HI  I++ EN+ YL D  FG NL   P+PFS E + S TG YRIRKV    +  K  YLLE  K +         W  GYAF   +K ID       +    +++  I DD    F+  PLA+K+  +  I  L+ + FT</pattern>
+      <matchSeq start="9" end="225">YERIGYRPTKSVTFADLPEFLSLLALQFPFENGAVLNNERTPMTKNALTDAFLNKKRGGLCYDLNAFLYYILKEIGFSVHMVQGTVFNQQER-AWALTGTHIAVILQKENETYLLDTGFGINLPLAPVPFSGETVASKTGAYRIRKV----KTDKGDYLLEMDKGEG--------WQTGYAF--AMKPID-------EKVLARVRDAIFDDEASPFNKHPLASKLTKDGKI-ILSKDHFT</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_UPI000479CA22" ac="UniRef90_UPI000479CA22" length="257" description="arylamine N-acetyltransferase family protein n=1 Tax=Bacillus sp. UNC41MFS5 TaxID=1449046 RepID=UPI000479CA22">
+    <alignments total="1">
+     <alignment number="1">
+      <score>354</score>
+      <bits>141.0</bits>
+      <expectation>9.8e-37</expectation>
+      <identity>33.7</identity>
+      <positives>51.9</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="277">FFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQL</querySeq>
+      <pattern>F KRI M    I T   + E++   AQ   FENL ++ N T  + +E +I ++V   +GGLCY++N +FY+++   GFN       V N    +  Q+   H+  ++ ++ + YL D  FG NL  +P+P S E I S  G +RI+KV++ + D    Y LE K     +      W  GYAFD   K+I+       D++  +IQ +I +DP   F+  PL T++  N +I TLT  +F  T    G  +K T D N + K+L</pattern>
+      <matchSeq start="8" end="250">FHKRIGMPNNEIITFEKLPEILEKTAQTIPFENLSIIENKTGRITKENLINKVVERNEGGLCYELNPLFYFYLIENGFNAVLTDGVVYNHAAKEYIQLGRTHVTVLLNHKGQTYLVDTGFGGNLPLKPVPLSGETISSDNGEFRIKKVNHELGD----YCLEMKLKHKDTE-----WKIGYAFDSR-KSIE-------DANLNEIQSIIAEDPKSSFNKHPLITRLTKNGNI-TLTDTTF--TQWADGILSKETID-NKKFKEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_A0ABT9YZK5" ac="UniRef90_A0ABT9YZK5" length="261" description="N-hydroxyarylamine O-acetyltransferase n=1 Tax=Metabacillus niabensis TaxID=324854 RepID=A0ABT9YZK5_9BACI">
+    <alignments total="1">
+     <alignment number="1">
+      <score>352</score>
+      <bits>140.2</bits>
+      <expectation>2.2e-36</expectation>
+      <identity>31.4</identity>
+      <positives>52.7</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="265">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTK</querySeq>
+      <pattern>S   ++F +RI +      T + ++ V+   A+  +FENL ++A  T  L +E +I +++N + GGLCY +NS+ Y F+K  GFN   +R    N E      I   H+  ++ +  + Y+ D  FG NL   P+PF+ E++ S  G +RI KV+N + D  Y + ++ K  D       R W  GY FD  VK  +I++         ++Q +I++     F+ +PL T++ +N S+ TLT  S  LT    G+++K</pattern>
+      <matchSeq start="2" end="240">SNLNVQFRQRIGLAENVAITFDTLNTVLEKTARALAFENLPIIAKETTRLTKEYLINKIINKQGGGLCYDLNSILYLFLKENGFNCSLIRGITFNHEKQAWNTIGRTHVAILLTHHRQLYIVDTGFGGNLPLAPVPFNGEVVTSDNGEFRIEKVENELGD--YIFHMKLKHKD-------RDWKIGYVFDSTVKYENIED-------LNEVQTIIVEHQNSPFNKRPLVTRLTDNGSV-TLTDTS--LTEWVNGKESK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_A0A2T4Z7Q9" ac="UniRef90_A0A2T4Z7Q9" length="258" description="N-hydroxyarylamine O-acetyltransferase n=1 Tax=Desmospora activa DSM 45169 TaxID=1121389 RepID=A0A2T4Z7Q9_9BACL">
+    <alignments total="1">
+     <alignment number="1">
+      <score>349</score>
+      <bits>139.0</bits>
+      <expectation>5.5e-36</expectation>
+      <identity>32.1</identity>
+      <positives>52.6</positives>
+      <gaps>7</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="274">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDE-NDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEI</querySeq>
+      <pattern>SE  L F KRI    K   +  ++  V++  AQ   FENL ++   ++ ++++ ++++++  K+GGLCY++NS+FY+F+   GF+   VR  V   E  +   I   H+  +I ++ +KYL D  FG NL  +P+P + E++ S  G +R++K  +   D    Y+LE K     +      W  GYAFD      D+ E ND        IQ++I + P   F+  PL TK+ N  +I TLT+ SFT  +     K K+  +  NE+</pattern>
+      <matchSeq start="2" end="251">SELNLLFRKRIGFPEKEHLSFENLDNVLAKTAQNIPFENLCIIGEKSKDISKQNLVEKILVKKEGGLCYELNSIFYFFLIENGFDAVLVRGVVYKNELQEYLTIGRTHVAILITHKEQKYLIDTGFGGNLPLKPVPLTREVVASDNGEFRVKKEKSEHGD----YILELKLKHKDTD-----WKIGYAFDSKKPISDVSEFND--------IQRIITEHPDSPFNKSPLITKLTNRGNI-TLTNTSFTQWDNGLVTKEKIESERFNEL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_UPI00077D7BA5" ac="UniRef90_UPI00077D7BA5" length="262" description="arylamine N-acetyltransferase family protein n=1 Tax=Priestia megaterium TaxID=1404 RepID=UPI00077D7BA5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>349</score>
+      <bits>139.0</bits>
+      <expectation>6.1e-36</expectation>
+      <identity>31.3</identity>
+      <positives>53.1</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="287">FFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQL-EQFNQHLISI</querySeq>
+      <pattern>F+ R+ M+P+      ++  ++S  A+   FEN+DVV    + +++E + +++++N +GGLCY+IN + YYF+K  GFN++ V   + ++ +   W ++  H+  I+ Y +  YL D  F   L   P+PF+ E+++S T  YR+RK    +   K +Y+ E K+ DS +      W  GYAF    K  +I E +       ++Q+ I+      F+  PLA K+V +  I TLT   F     + G+KT+     +  +K L EQFN   I I</pattern>
+      <matchSeq start="8" end="262">FYSRLNMEPRKNVKFEELPSILSSFAKNVPFENIDVVYKDYKEISKENLQKKILDNCRGGLCYEINPILYYFLKECGFNVHLVSATIYDRSS-GSWALDNTHVAIILSYNHITYLIDSGFASFLPLSPVPFTGEVVQSKTRDYRVRK----LLTEKGSYVFEMKEKDSVNSNE---WRLGYAF----KLNEISETE-----LNEMQETIVKHKKSPFNKAPLAVKLVKDGHI-TLTKEKF--IQIQNGQKTQEVISADRYMKILNEQFNISTIHI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_UPI001A94A893" ac="UniRef90_UPI001A94A893" length="261" description="arylamine N-acetyltransferase family protein n=1 Tax=Priestia megaterium TaxID=1404 RepID=UPI001A94A893">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.7</bits>
+      <expectation>8.4e-36</expectation>
+      <identity>30.5</identity>
+      <positives>53.2</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="14" end="281">FFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQL-EQFN</querySeq>
+      <pattern>F+ R+ ++P++     ++  ++S  A+   FEN+DVV    + +++E + +++++N +GGLCY+IN + YYF+K  GFN++ V   + +  +   W ++  H+  I+ Y +  YL D  F   L   P+PF+ E+++S T  YR+RK    +   K +Y+ E K+ D     +   W  GYAF           N+  ++   Q+Q  I++     F+  PLA K+V N  I TLT   F     K G+KT+   + +  ++ L EQFN</pattern>
+      <matchSeq start="8" end="256">FYSRLNIEPRNNVKFEELPSILSSFAKNVPFENIDVVYKDYKEISKENLQKKILDNCRGGLCYEINPILYYFLKDCGFNVHLVSATIYDHSS-GSWALDNTHVAIILSYNHITYLIDSGFASFLPLSPVPFTGEVVQSKTRDYRVRK----LLTEKGSYVFEMKEKDG---SNVNEWKIGYAF---------KLNEITETELNQMQDTIVEHEKSPFNKAPLAVKLVENGHI-TLTREKF--LQIKNGQKTQENINEDQYVRILNEQFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_UPI0035C042E8" ac="UniRef90_UPI0035C042E8" length="261" description="arylamine N-acetyltransferase family protein n=8 Tax=Bacillaceae TaxID=186817 RepID=UPI0035C042E8">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.7</bits>
+      <expectation>8.4e-36</expectation>
+      <identity>32.0</identity>
+      <positives>53.5</positives>
+      <gaps>8</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="281">SEFQLEFFKRIKMQPKSIETLNDVSEVMSGCAQIFSFENLDVVANTTEPLNREVIIQQLVNNKQGGLCYKINSVFYYFIKSFGFNIYQVRCCVENQETHDCWQINGAHIINIIEYENKKYLADVAFGCNLSYEPIPFSEEIIESCTGLYRIRKVDNIIRDIKYTYLLEFKKPDSFSPESARLWTNGYAFDPLVKAIDIDENDKIDSHATQIQQLIIDDPTKEFSVKPLATKVVNNESIATLTSNSFTLTNCKTGEKTKVTFDINNEIKQL-EQFN</querySeq>
+      <pattern>S+ +  FF R++++PK I    D+  ++S  A+   FEN+DV+    + +++E + ++L++N +GGLCY+IN + YYF+K  GFN+  V   + +  + + W ++  H+  ++ Y +  YL D  F   L   P+PF+ E +++    YR+RK    +   K +Y+ E K+ D    +    W  GYAF   +  I I E         ++Q+ II++    F+   LA K+V N  I TLT + F     K G+KTK   + +  IK L EQFN</pattern>
+      <matchSeq start="2" end="256">SQLKDSFFSRLEIEPKKIVKFEDLPCILSSFAKSVPFENIDVIYKNHKEISKENLQKKLLDNHRGGLCYEINPLLYYFLKDCGFNVQLVSATIYDHSS-ESWALDNTHVAILLTYNHIMYLIDSGFASFLPLSPVPFTGEAVQTKVRDYRVRK----LLTEKGSYVFEMKEKDILKNKE---WKLGYAF--RLNEISITE-------LNEMQETIIENKKSPFNKALLAVKLVENGHI-TLTQDKF--IQIKNGKKTKEVINQDQYIKILNEQFN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

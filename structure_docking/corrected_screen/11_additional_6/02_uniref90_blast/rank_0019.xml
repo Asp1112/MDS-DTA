@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-122459-0189-71580852-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-122459-0189-71580852-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="142"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:24:59+01:00" end="2026-08-06T12:29:36+01:00" search="P0Y0M0DT0H0M277.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_P0C0H5" ac="UniRef90_P0C0H5" length="142" description="Uncharacterized acetyltransferase SPy_1546/M5005_Spy1274 n=11 Tax=Streptococcus pyogenes TaxID=1314 RepID=Y1546_STRP1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>721</score>
+      <bits>282.3</bits>
+      <expectation>3.1e-96</expectation>
+      <identity>96.5</identity>
+      <positives>97.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="142">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTILKWEKNMDIAMLIAIVGGLLGCYLYLTKNN</querySeq>
+      <pattern>M DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQ+YG K LEDGEYCQSL KTILKWEKNMDIAMLIAIVGGLLGCYLYLTKNN</pattern>
+      <matchSeq start="1" end="142">MADKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQSYGPKCLEDGEYCQSLAKTILKWEKNMDIAMLIAIVGGLLGCYLYLTKNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_UPI00109C4813" ac="UniRef90_UPI00109C4813" length="142" description="GNAT family N-acetyltransferase n=1 Tax=Streptococcus pyogenes TaxID=1314 RepID=UPI00109C4813">
+    <alignments total="1">
+     <alignment number="1">
+      <score>659</score>
+      <bits>258.5</bits>
+      <expectation>8.7e-87</expectation>
+      <identity>88.0</identity>
+      <positives>93.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="142">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTILKWEKNMDIAMLIAIVGGLLGCYLYLTKNN</querySeq>
+      <pattern>M D+FDA+DE  TVYAVVYD+DQPVSTG+FLAETK EAR TRIVTLADYCGCGYGAKV EALETY R+EGF QLTIHSELTAQTFYE+LGYQ YGS+YLEDGEYCQSL KTILKWEKNMDIAMLIAIVGGLLGCYLYLTKNN</pattern>
+      <matchSeq start="1" end="142">MADEFDAHDEKGTVYAVVYDDDQPVSTGRFLAETKTEARWTRIVTLADYCGCGYGAKVIEALETYARQEGFRQLTIHSELTAQTFYESLGYQAYGSQYLEDGEYCQSLAKTILKWEKNMDIAMLIAIVGGLLGCYLYLTKNN</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A0ABU0A8R9" ac="UniRef90_A0ABU0A8R9" length="144" description="GNAT family N-acyltransferase n=1 Tax=Streptococcus dysgalactiae TaxID=1334 RepID=A0ABU0A8R9_STRDY">
+    <alignments total="1">
+     <alignment number="1">
+      <score>499</score>
+      <bits>196.8</bits>
+      <expectation>2.2e-62</expectation>
+      <identity>86.6</identity>
+      <positives>91.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>M D+FDANDETRTVYAVVYD+DQPVSTG+FLAETK EARLTRI TLADY G GYGAKV EALETY R+EGF QLTIHSELTAQTFYE+LGYQ YG KYLEDGEYCQSLVKTI</pattern>
+      <matchSeq start="32" end="143">MADEFDANDETRTVYAVVYDDDQPVSTGRFLAETKTEARLTRIATLADYRGQGYGAKVIEALETYARQEGFRQLTIHSELTAQTFYESLGYQAYGPKYLEDGEYCQSLVKTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_UPI0009AE74E8" ac="UniRef90_UPI0009AE74E8" length="113" description="GNAT family N-acetyltransferase n=1 Tax=Streptococcus pyogenes TaxID=1314 RepID=UPI0009AE74E8">
+    <alignments total="1">
+     <alignment number="1">
+      <score>490</score>
+      <bits>193.4</bits>
+      <expectation>1.9e-61</expectation>
+      <identity>85.7</identity>
+      <positives>91.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>M D+FDA+DE  TVYAVVYD+DQPVSTG+FLAETK EARLTRIVTLADY G GYGAKV EALETY R+EGF QLTIHSELTAQTFYE+LGYQ YGSKYLEDGEYCQSLVKTI</pattern>
+      <matchSeq start="1" end="112">MADEFDAHDEKGTVYAVVYDDDQPVSTGRFLAETKTEARLTRIVTLADYRGQGYGAKVIEALETYARQEGFRQLTIHSELTAQTFYESLGYQAYGSKYLEDGEYCQSLVKTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_A0A3P5Y053" ac="UniRef90_A0A3P5Y053" length="144" description="Acetyltransferase n=1 Tax=Streptococcus canis TaxID=1329 RepID=A0A3P5Y053_STRCB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>466</score>
+      <bits>184.1</bits>
+      <expectation>2.4e-57</expectation>
+      <identity>80.4</identity>
+      <positives>87.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>M D+FDANDE  TVYAVVY+ DQPVSTG+FLAETK EARLTRI TL DY G GYGAKV EALE Y + +GF+QLTIHSELTAQTFYE+LGYQ +GSKYLEDGEYCQSLVKTI</pattern>
+      <matchSeq start="32" end="143">MADEFDANDEKGTVYAVVYEKDQPVSTGRFLAETKTEARLTRIATLKDYRGRGYGAKVIEALEAYAKDKGFHQLTIHSELTAQTFYESLGYQAFGSKYLEDGEYCQSLVKTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_A0A7X6N1K8" ac="UniRef90_A0A7X6N1K8" length="143" description="GNAT family N-acetyltransferase n=1 Tax=Streptococcus ovuberis TaxID=1936207 RepID=A0A7X6N1K8_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>364</score>
+      <bits>144.8</bits>
+      <expectation>7.4e-42</expectation>
+      <identity>63.4</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>MTD+FD NDE  T YAVVYD++QP++TG+FL ET   ARLTRI TLA Y G GYG  V +ALE + RREGF +L IHSEL A++FYE LGY  +G +YLEDGE CQSL K +</pattern>
+      <matchSeq start="32" end="143">MTDEFDENDEAGTTYAVVYDHNQPLATGRFLPETDTCARLTRIATLASYRGQGYGTLVIKALENHARREGFKELVIHSELMAKSFYEGLGYVAFGPRYLEDGEPCQSLKKQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_A0A3L8JBT6" ac="UniRef90_A0A3L8JBT6" length="146" description="Acetyltransferase n=2 Tax=Streptococcus iniae TaxID=1346 RepID=A0A3L8JBT6_STRIN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>363</score>
+      <bits>144.4</bits>
+      <expectation>1.2e-41</expectation>
+      <identity>61.8</identity>
+      <positives>78.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="110">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>M D+ DAND  +T+YAV+YD +QPVSTG+FL ET  +ARLTRI TL DY G GYG KV +ALE + R EG+ +L IH+ELTA++FYE++GYQ +G +Y EDGE CQSL K</pattern>
+      <matchSeq start="32" end="141">MEDECDANDNCKTIYAVLYDGNQPVSTGRFLPETTDQARLTRIATLKDYRGKGYGGKVIQALERHARAEGYTRLVIHAELTAKSFYESIGYQLFGHEYEEDGEICQSLAK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_A0ABN0IRD2" ac="UniRef90_A0ABN0IRD2" length="144" description="Acetyltransferase n=1 Tax=Streptococcus parauberis KRS-02083 TaxID=1207545 RepID=A0ABN0IRD2_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>361</score>
+      <bits>143.7</bits>
+      <expectation>2.2e-41</expectation>
+      <identity>61.6</identity>
+      <positives>77.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>M D+FD NDE  T+Y+V+Y++D PVSTG+FLAET  EARLTRI TL +Y G GYGA+V  +LE Y   +GF +L IHSELTA++FYE++GYQ +G  Y+EDGE CQSL K I</pattern>
+      <matchSeq start="32" end="143">MEDEFDNNDENGTIYSVLYEDDLPVSTGRFLAETDSEARLTRIATLPNYRGKGYGAQVIHSLEKYAVEKGFERLVIHSELTAKSFYESIGYQAFGDIYIEDGEKCQSLQKQI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_UPI001F56D6B2" ac="UniRef90_UPI001F56D6B2" length="143" description="GNAT family N-acetyltransferase n=1 Tax=Streptococcus thoraltensis TaxID=55085 RepID=UPI001F56D6B2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>354</score>
+      <bits>141.0</bits>
+      <expectation>2.4e-40</expectation>
+      <identity>58.0</identity>
+      <positives>74.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>M ++FD NDE  TVYAV+YD  +P+STG+FL ET+ +ARLTRI TL DY G GYG K+  ALE Y +  G+ QL IH+ELTA+ FY+ LGY+ +G  Y+EDGE CQSL K +</pattern>
+      <matchSeq start="31" end="142">MEEEFDENDEQGTVYAVLYDGKKPISTGRFLPETQKKARLTRIATLKDYRGKGYGTKIITALENYAKENGYQQLVIHAELTAKLFYQRLGYKAFGESYIEDGEACQSLEKQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_Q8DWQ1" ac="UniRef90_Q8DWQ1" length="136" description="Acetyltransferase, GNAT family n=1 Tax=Streptococcus agalactiae serotype V (strain ATCC BAA-611 / 2603 V/R) TaxID=208435 RepID=Q8DWQ1_STRA5">
+    <alignments total="1">
+     <alignment number="1">
+      <score>351</score>
+      <bits>139.8</bits>
+      <expectation>5.7e-40</expectation>
+      <identity>58.4</identity>
+      <positives>74.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="113">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>M ++FD NDE  T+YAV+YD  QPVSTG+FL ET+ EARLTRI TL  Y G GYG K+  ALE Y +  G++ LTIH+ELTA+ FY+ LGYQ  G+ Y+EDGE CQ+L K ++</pattern>
+      <matchSeq start="24" end="136">MEEEFDDNDEQDTIYAVLYDGKQPVSTGRFLPETQTEARLTRIATLKGYRGNGYGTKIIIALENYAKENGYHYLTIHAELTAKDFYQTLGYQATGNIYMEDGEACQTLEKYLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0ABV2FIH7" ac="UniRef90_A0ABV2FIH7" length="143" description="GNAT family N-acyltransferase n=1 Tax=Streptococcus rupicaprae TaxID=759619 RepID=A0ABV2FIH7_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>348</score>
+      <bits>138.7</bits>
+      <expectation>2e-39</expectation>
+      <identity>59.8</identity>
+      <positives>75.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>M D+FD +DE  TVYAVVYD ++P++TG+FL ET   ARLTRI TLA + G GYG  V +ALE + ++EGF +L IHSELTA++FYE LGY  +G +YLEDGE CQSL K +</pattern>
+      <matchSeq start="32" end="143">MADEFDGHDEAGTVYAVVYDGNRPLATGRFLPETDTCARLTRIATLAPHRGQGYGTLVMDALENHAKKEGFKELVIHSELTAKSFYEGLGYVAFGPRYLEDGEPCQSLNKLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_A0A380KEF9" ac="UniRef90_A0A380KEF9" length="144" description="Acetyltransferase, GNAT family n=1 Tax=Streptococcus hyointestinalis TaxID=1337 RepID=A0A380KEF9_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>334</score>
+      <bits>133.3</bits>
+      <expectation>2.7e-37</expectation>
+      <identity>58.4</identity>
+      <positives>72.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="113">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>M D+FD++D   TVYAV YD  QPVS G+FL E++  ARLTRIVTL DY G GYGA+V  ALE Y +  G+  L IHSEL+A+TFYE++GY   GS Y+EDG  CQSL K ++</pattern>
+      <matchSeq start="32" end="144">MADEFDSHDGKGTVYAVAYDGKQPVSIGRFLPESRDVARLTRIVTLKDYRGHGYGAQVIAALENYAKTAGYQTLVIHSELSAKTFYESVGYHPVGSIYIEDGVRCQSLEKQLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_C0MBK5" ac="UniRef90_C0MBK5" length="143" description="Acetyltransferase (GNAT) family protein n=3 Tax=Streptococcus equi TaxID=1336 RepID=C0MBK5_STRE4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>329</score>
+      <bits>131.3</bits>
+      <expectation>1.5e-36</expectation>
+      <identity>58.3</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="110">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>D+FD  D+   VYAV+YD DQPVST +FL   K +ARLTR+ TL  Y G GYGA+V EALE Y R + + +L IHSE++AQ+FYE LGYQ +G  Y EDGE CQS+ K</pattern>
+      <matchSeq start="34" end="141">DEFDCFDDNDRVYAVLYDGDQPVSTARFLPTAKDQARLTRVATLRQYRGRGYGAQVIEALEQYAREQAYERLVIHSEISAQSFYEGLGYQAFGEPYDEDGEPCQSVEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_A0A0E4CSM5" ac="UniRef90_A0A0E4CSM5" length="153" description="Acetyltransferase (GNAT) family protein n=1 Tax=Streptococcus varani TaxID=1608583 RepID=A0A0E4CSM5_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>319</score>
+      <bits>127.5</bits>
+      <expectation>6.7e-35</expectation>
+      <identity>58.3</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="110">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>D+FD  DE  TVY VVY+  QPV+TG+FL   + EARLTRI TL +Y G GYG +V  ALE Y    G++QL IHSEL A+TFY++LGY+ +G  Y+EDG  CQSLVK</pattern>
+      <matchSeq start="34" end="141">DEFDDYDEKGTVYTVVYEGQQPVATGRFLPLAEDEARLTRIATLEEYRGKGYGTQVVAALEDYALAHGYHQLIIHSELPAKTFYQSLGYRPFGEIYVEDGIPCQSLVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_UPI00038782CA" ac="UniRef90_UPI00038782CA" length="143" description="GNAT family N-acetyltransferase n=1 Tax=Streptococcus equi TaxID=1336 RepID=UPI00038782CA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>312</score>
+      <bits>124.8</bits>
+      <expectation>5.7e-34</expectation>
+      <identity>54.6</identity>
+      <positives>72.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="110">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>D+FD  D+   VYAV+YD DQPVST +FL   + +ARLTR+ TL+ + G GY A+V +ALE Y + + + +L IHSEL+AQ+FYE +GYQ +G  Y EDGE CQSL K</pattern>
+      <matchSeq start="34" end="141">DEFDGFDDNDRVYAVLYDGDQPVSTARFLPTAEDQARLTRVATLSQHRGRGYAAQVIKALEHYAKEQHYKRLVIHSELSAQSFYEGIGYQAFGEPYYEDGEPCQSLEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_G5K112" ac="UniRef90_G5K112" length="146" description="FR47-like protein n=1 Tax=Streptococcus ictaluri 707-05 TaxID=764299 RepID=G5K112_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>310</score>
+      <bits>124.0</bits>
+      <expectation>1.3e-33</expectation>
+      <identity>51.8</identity>
+      <positives>73.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>++FD  D + T YAV+YD+ +PVST +FL E   EAR+TR+ TL+ + G GYGA++  A+E Y ++EG++ L IHSEL+A++FYE LGY+  G  YLEDG+ CQ+L K I</pattern>
+      <matchSeq start="34" end="143">EEFDDKDVSDTCYAVLYDHSEPVSTARFLPEIATEARITRVATLSKHRGKGYGAQIIRAMEKYAQKEGYHVLVIHSELSAKSFYETLGYKAKGQVYLEDGQACQTLEKHI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_A0A239SVZ5" ac="UniRef90_A0A239SVZ5" length="147" description="Acetyltransferase, GNAT family n=1 Tax=Streptococcus merionis TaxID=400065 RepID=A0A239SVZ5_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>307</score>
+      <bits>122.9</bits>
+      <expectation>3.7e-33</expectation>
+      <identity>55.6</identity>
+      <positives>70.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="110">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>D+FD NDE   +YAV+Y +  PVST +FL + + +ARLTR+ TL D    GYGA++ +ALE Y R EGF  L IHSELTA+ FYE +GY+ + S Y EDGE CQSL K</pattern>
+      <matchSeq start="33" end="140">DEFDQNDEKGIIYAVLYRDQMPVSTARFLPQGEKQARLTRVATLKDERSKGYGAQIIQALEQYARDEGFEHLVIHSELTARAFYEKIGYKPFSSIYEEDGEPCQSLEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0A0H3N091" ac="UniRef90_A0A0H3N091" length="146" description="Acetyltransferase (GNAT) family protein n=3 Tax=Streptococcus suis TaxID=1307 RepID=A0A0H3N091_STRS4">
+    <alignments total="1">
+     <alignment number="1">
+      <score>304</score>
+      <bits>121.7</bits>
+      <expectation>1e-32</expectation>
+      <identity>53.6</identity>
+      <positives>69.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>D+FD ND    VYA ++  ++PVSTG+FL     +ARLTRI TL ++ G GYG  +  +LE Y R  GF+QL IHSELTA+TFYE++GYQ     Y EDGE+CQ+L K I</pattern>
+      <matchSeq start="37" end="146">DEFDQNDTEERVYANLFIGEEPVSTGRFLPVGPGQARLTRIATLPNFRGKGYGKMIISSLEAYAREAGFHQLNIHSELTAKTFYESVGYQATSEVYQEDGEWCQTLTKFI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_A0ABU1B2W8" ac="UniRef90_A0ABU1B2W8" length="148" description="GNAT family N-acetyltransferase n=3 Tax=Streptococcus ruminantium TaxID=1917441 RepID=A0ABU1B2W8_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>298</score>
+      <bits>119.4</bits>
+      <expectation>8.7e-32</expectation>
+      <identity>55.5</identity>
+      <positives>69.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>D+FD +DE   VYA +Y   +PVSTG+FL   + +ARLTRI TL  Y G GY +K+  ALE Y    G +QL IHSELTA++FYE+LGYQ     Y EDGE+CQ+L KTI</pattern>
+      <matchSeq start="38" end="147">DEFDRHDEKGRVYANLYLGRKPVSTGRFLPIGQGQARLTRIATLKKYRGNGYASKIIRALEDYALEVGIHQLLIHSELTAKSFYESLGYQATSDIYQEDGEWCQTLTKTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_UPI000CF6E631" ac="UniRef90_UPI000CF6E631" length="146" description="GNAT family N-acetyltransferase n=1 Tax=Streptococcus suis TaxID=1307 RepID=UPI000CF6E631">
+    <alignments total="1">
+     <alignment number="1">
+      <score>295</score>
+      <bits>118.2</bits>
+      <expectation>2.3e-31</expectation>
+      <identity>54.5</identity>
+      <positives>68.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>D+FD  D    VYA ++  ++PVSTG+FL      ARLTRI TLA++ G GYG  +  +LE Y R+ GF QL IHSELTA+TFYE+LGYQ     Y EDGE+CQ+L K I</pattern>
+      <matchSeq start="37" end="146">DEFDHQDIEGRVYANLFVGEEPVSTGRFLPVGPGRARLTRIATLANHRGKGYGKLILNSLEDYARQAGFQQLDIHSELTAKTFYESLGYQASSEMYQEDGEWCQTLTKLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_UPI00178C247E" ac="UniRef90_UPI00178C247E" length="91" description="GNAT family N-acetyltransferase n=1 Tax=Streptococcus agalactiae TaxID=1311 RepID=UPI00178C247E">
+    <alignments total="1">
+     <alignment number="1">
+      <score>285</score>
+      <bits>114.4</bits>
+      <expectation>1.5e-30</expectation>
+      <identity>59.3</identity>
+      <positives>74.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="23" end="113">QPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>QPVSTG+FL ET+ EARLTRI TL  Y G GYG K+  ALE Y +  G++ LTIH+ELTA+ FY+ LGYQ  G+ Y+EDGE CQ+L K ++</pattern>
+      <matchSeq start="1" end="91">QPVSTGRFLPETQTEARLTRIATLKGYRGNGYGTKIIIALENYAKENGYHYLTIHAELTAKDFYQTLGYQAIGNIYMEDGESCQTLEKYLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_UPI002FC93C26" ac="UniRef90_UPI002FC93C26" length="143" description="GNAT family N-acetyltransferase n=1 Tax=Vagococcus TaxID=2737 RepID=UPI002FC93C26">
+    <alignments total="1">
+     <alignment number="1">
+      <score>267</score>
+      <bits>107.5</bits>
+      <expectation>3.7e-27</expectation>
+      <identity>47.7</identity>
+      <positives>64.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="111">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKT</querySeq>
+      <pattern>+ D+FD  D   TVY+V+YDN  PV+TG+F+ E+K+  R TRI T+ +Y G   GAK+  +LE   +R+GF Q  IHSELTA  FY+  GY    + Y EDG  CQ+L K+</pattern>
+      <matchSeq start="31" end="141">LEDEFDTLDTDETVYSVLYDNSLPVATGRFIKESKLVCRFTRIATIKEYRGQQCGAKIIYSLEEKAKRDGFQQAIIHSELTAVPFYQKQGYVIISNIYEEDGVPCQTLSKS</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_UPI000704CF31" ac="UniRef90_UPI000704CF31" length="146" description="GNAT family N-acetyltransferase n=1 Tax=Liquorilactobacillus mali TaxID=1618 RepID=UPI000704CF31">
+    <alignments total="1">
+     <alignment number="1">
+      <score>266</score>
+      <bits>107.1</bits>
+      <expectation>5.7e-27</expectation>
+      <identity>44.6</identity>
+      <positives>64.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>+ D+FD ND   T+Y+V++ N +P+ST +FL   +   R+TR+ TL +Y G   G KV  +LE   +++ F ++ IHSE+TA TFYE LGY   G  Y EDG  C +L+KTI</pattern>
+      <matchSeq start="34" end="145">LEDEFDNNDRETTIYSVIFSNKKPISTARFLPRDEDIVRITRVATLKEYRGKKLGTKVVRSLENIAQQKNFKKIVIHSEMTAVTFYETLGYVRSGDIYQEDGVACVNLIKTI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_A0ABV2ETB4" ac="UniRef90_A0ABV2ETB4" length="148" description="GNAT family N-acyltransferase n=1 Tax=Streptococcus parasuis TaxID=1501662 RepID=A0ABV2ETB4_9STRE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>266</score>
+      <bits>107.1</bits>
+      <expectation>6e-27</expectation>
+      <identity>49.5</identity>
+      <positives>64.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="113">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>D+FD  DE   VYA +  + +PVSTG+FL      ARLTRI TLA + G GY  ++ + LE Y +      + IHSELTA+TFYE LGYQ     YLEDGE+CQ+L K ++</pattern>
+      <matchSeq start="38" end="148">DEFDQYDEVGRVYANLLVHGEPVSTGRFLPTEFGTARLTRIATLAPHRGKGYAREIIQKLEEYAKNTNVLCINIHSELTAKTFYEMLGYQPTSEIYLEDGEWCQTLTKNLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_UPI0010F67189" ac="UniRef90_UPI0010F67189" length="141" description="GNAT family N-acetyltransferase n=1 Tax=Enterococcus TaxID=1350 RepID=UPI0010F67189">
+    <alignments total="1">
+     <alignment number="1">
+      <score>265</score>
+      <bits>106.7</bits>
+      <expectation>7e-27</expectation>
+      <identity>49.1</identity>
+      <positives>67.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="110">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>+ ++FDA+D   T+YAV+YD ++P +TG+FL E    ARLTRI TL +Y     G+++ EALE Y   +G  + +IH++LTA  FY+ LGY  YG  YLEDG  CQSL K</pattern>
+      <matchSeq start="31" end="139">LEEEFDAHDLDETIYAVLYDENKPAATGRFLQEGTT-ARLTRIATLPEYRKQHLGSQIIEALEVYALAQGLKKASIHADLTALPFYQKLGYVPYGEVYLEDGVPCQSLEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_A0A0R2A3E6" ac="UniRef90_A0A0R2A3E6" length="146" description="GCN5-like N-acetyltransferase n=2 Tax=Paucilactobacillus vaccinostercus TaxID=176291 RepID=A0A0R2A3E6_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>264</score>
+      <bits>106.3</bits>
+      <expectation>1.1e-26</expectation>
+      <identity>50.0</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>D+FD  D   T YAV++  DQPV+TG++L     +ARLTRI TLA Y G   GA+V +ALE   R++G   L IHSELTA+ FY+ LGY+   + Y EDG  CQ+L K +</pattern>
+      <matchSeq start="35" end="144">DEFDQADRDGTTYAVIFAGDQPVATGRYLPIDAEQARLTRIATLAAYRGQHLGAQVIQALEDQARQDGKQTLIIHSELTAKGFYQTLGYRPSSAVYQEDGVDCQTLTKQV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_UPI00211D52D8" ac="UniRef90_UPI00211D52D8" length="149" description="GNAT family N-acetyltransferase n=1 Tax=Streptococcus suis TaxID=1307 RepID=UPI00211D52D8">
+    <alignments total="1">
+     <alignment number="1">
+      <score>263</score>
+      <bits>105.9</bits>
+      <expectation>1.8e-26</expectation>
+      <identity>49.6</identity>
+      <positives>65.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCG-YGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>+ D+FD++D+   VYA +  +++PVSTG+FL      ARLTRI TLA + G G Y   +  ALE Y R  G + L IHSELTA+TFYE+LGY      Y EDGE+CQ+L K +</pattern>
+      <matchSeq start="34" end="146">LEDEFDSHDQEGRVYANLLIDEEPVSTGRFLPIGSGRARLTRIATLASHRGKGGYARSIIMALEDYAREAGIHHLDIHSELTAKTFYESLGYVASSVLYQEDGEWCQTLSKRL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_R2QJR6" ac="UniRef90_R2QJR6" length="145" description="N-acetyltransferase domain-containing protein n=1 Tax=Enterococcus malodoratus ATCC 43197 TaxID=1158601 RepID=R2QJR6_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>262</score>
+      <bits>105.5</bits>
+      <expectation>2.2e-26</expectation>
+      <identity>47.3</identity>
+      <positives>65.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="110">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>+TD+FD ND   T+Y+V++D + PV+T +FL ET   AR+ R+ TL +Y G   G++V +ALE   R++   Q+ IH+ELTA  FYENLGY   G  Y EDG  C +L K</pattern>
+      <matchSeq start="34" end="143">LTDEFDQNDTAETIYSVLFDGNLPVATARFLFETDEVARIGRVATLKEYRGKQLGSQVVKALEALARKKQIKQIVIHAELTAAEFYENLGYLRVGQPYEEDGVPCITLDK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0ABY7WRG1" ac="UniRef90_A0ABY7WRG1" length="145" description="GNAT family N-acetyltransferase n=1 Tax=Lacticaseibacillus pabuli TaxID=3025672 RepID=A0ABY7WRG1_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>256</score>
+      <bits>103.2</bits>
+      <expectation>1.8e-25</expectation>
+      <identity>46.4</identity>
+      <positives>61.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>D+FD ND     Y V+YD + PV+TG+FL E +   RLTRI TLADY G   G++V  ALE Y + +    L IH+E TA +FYE LGY+T    Y EDG  C+ + + +</pattern>
+      <matchSeq start="36" end="145">DEFDQNDVPGVTYVVIYDGETPVATGRFLREDEDSGRLTRIATLADYRGQHLGSQVVTALERYAQNQHVRHLEIHAEATAISFYERLGYKTISPVYDEDGVPCRKMARDL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_A0A0R2E1G8" ac="UniRef90_A0A0R2E1G8" length="151" description="N-acetyltransferase domain-containing protein n=2 Tax=Liquorilactobacillus sucicola TaxID=519050 RepID=A0A0R2E1G8_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>255</score>
+      <bits>102.8</bits>
+      <expectation>3e-25</expectation>
+      <identity>47.3</identity>
+      <positives>63.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>D+FD ND+  T+Y+V++D   PV+T +FL  TK  AR+TR+ TL +Y G   G+KV + LE      GF ++ IHSELTA  FYE LGY   G+ Y EDG  C +L K +</pattern>
+      <matchSeq start="41" end="150">DEFDQNDKEETIYSVLFDGTVPVATARFLPLTKNAARITRVATLKNYRGKQLGSKVIKGLERVAVVSGFKKILIHSELTAAGFYEKLGYVRTGTVYKEDGVSCTTLSKNL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_R2R2N9" ac="UniRef90_R2R2N9" length="145" description="N-acetyltransferase domain-containing protein n=1 Tax=Enterococcus raffinosus ATCC 49464 TaxID=1158602 RepID=R2R2N9_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>254</score>
+      <bits>102.4</bits>
+      <expectation>3.6e-25</expectation>
+      <identity>43.8</identity>
+      <positives>65.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>+ D+FD ND   T+Y+V++D  +PV+T + L E K  AR+ R+ T+A+Y G   G++V +ALE   +++ + Q+ IH EL+A  FYE+LGY   G  Y EDG  C +LVK I</pattern>
+      <matchSeq start="34" end="145">LADEFDRNDTLATIYSVLFDGSRPVATARLLTEAKDVARIGRVATIAEYRGNHLGSQVVKALEKAAKQKRYNQILIHGELSAAAFYESLGYLKRGEPYEEDGVSCITLVKMI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_A0A1H7JF56" ac="UniRef90_A0A1H7JF56" length="151" description="Predicted N-acyltransferase, GNAT family n=3 Tax=Alkalibacterium TaxID=99906 RepID=A0A1H7JF56_9LACT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>253</score>
+      <bits>102.1</bits>
+      <expectation>6e-25</expectation>
+      <identity>45.9</identity>
+      <positives>59.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="113">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>D+FD+ D   TVY V+YDND+PV+TG+F+   +   R  RI  L DY G G G +V + LE Y R  G     IH E++A  FYE LGY   G  YLEDG  C +L K ++</pattern>
+      <matchSeq start="41" end="151">DEFDSEDHDETVYVVLYDNDKPVATGRFIQMDEGTVRPGRIAVLNDYRGKGLGERVVKELEAYARTRGCRTSKIHGEMSAAPFYEKLGYTREGETYLEDGVPCITLKKVLI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_A0ABW1RFE7" ac="UniRef90_A0ABW1RFE7" length="142" description="GNAT family N-acetyltransferase n=1 Tax=Loigolactobacillus jiayinensis TaxID=2486016 RepID=A0ABW1RFE7_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>2.6e-24</expectation>
+      <identity>47.3</identity>
+      <positives>59.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>+ D+FD ND   T YAV+Y ND+PV+TG+F   +    R  RI TLA   G G GA++  ALE   R+ G     IHSELTAQ FY  LGYQ  G+ ++EDG  C  L K +</pattern>
+      <matchSeq start="31" end="142">LQDEFDDNDTDGTTYAVIYANDEPVATGRFQQISATTMRPGRIATLASQRGNGLGAQIIAALEAVGRQRGCTHSEIHSELTAQGFYAKLGYQPVGASFIEDGVACILLQKLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_A0A1Z5IRG0" ac="UniRef90_A0A1Z5IRG0" length="144" description="GNAT family acetyltransferase n=1 Tax=Secundilactobacillus pentosiphilus TaxID=1714682 RepID=A0A1Z5IRG0_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>2.8e-24</expectation>
+      <identity>48.2</identity>
+      <positives>58.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="113">MTDKFDANDETRTVYAVVYDND-QPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>M D+FD NDET  VY V+Y +D QPV+TG+F    K   R  RI T+ DY G   GAKV   LE Y R  G+ +  IHSE+TA+ FYE  GYQ     Y EDG    +L K +L</pattern>
+      <matchSeq start="31" end="144">MQDEFDDNDETNRVYTVIYTDDGQPVATGRFQTIDKTTMRPGRIATIKDYRGQRLGAKVISTLEAYGRTHGYGKSVIHSEMTAKGFYERQGYQVSSEPYEEDGVPAITLTKQLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_A0A242JZQ0" ac="UniRef90_A0A242JZQ0" length="148" description="N-acetyltransferase domain-containing protein n=1 Tax=Candidatus Enterococcus clewellii TaxID=1834193 RepID=A0A242JZQ0_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>248</score>
+      <bits>100.1</bits>
+      <expectation>3.1e-24</expectation>
+      <identity>45.0</identity>
+      <positives>60.4</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="113">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>D+FD ND   T YAV Y+ + PV+T +F       A++TR+ T+ DY G   G+K+ + +E Y   EG  +L IHSELTA  FY+  GY      YLEDG  CQ+L KTI+</pattern>
+      <matchSeq start="36" end="146">DEFDENDGDGTTYAVAYEGELPVATARFTKVADGFAKITRVATIKDYRGYHLGSKLIQLMEEYAASEGIEKLDIHSELTAVEFYKKNGYVLSSEVYLEDGVECQTLTKTII</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_A0A2D1KSE4" ac="UniRef90_A0A2D1KSE4" length="128" description="GNAT family N-acetyltransferase n=1 Tax=Loigolactobacillus coryniformis subsp. torquens DSM 20004 = KCTC 3535 TaxID=1423822 RepID=A0A2D1KSE4_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>246</score>
+      <bits>99.4</bits>
+      <expectation>3.6e-24</expectation>
+      <identity>48.2</identity>
+      <positives>58.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>+ D+FD  D   T+YAV+Y ND+PV+TG+F        R  RI TLA   G G GAK+  ALE   R+ G  Q  IHSELTAQ FY  LGYQ  G  + EDG  C  L K +</pattern>
+      <matchSeq start="12" end="123">LQDEFDDQDNDGTIYAVIYHNDEPVATGRFKQLDATTMRPGRIATLASQRGNGLGAKIIIALEQVGRQHGCTQSVIHSELTAQGFYAKLGYQPSGEPFSEDGVPCILLTKQL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_A0A2T0W8S0" ac="UniRef90_A0A2T0W8S0" length="142" description="Putative GNAT family N-acyltransferase n=1 Tax=Alkalibacterium olivapovliticus TaxID=99907 RepID=A0A2T0W8S0_9LACT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>247</score>
+      <bits>99.8</bits>
+      <expectation>3.7e-24</expectation>
+      <identity>46.4</identity>
+      <positives>58.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>+ D+FD +D  +TVY VVYD DQPV+TG+FL       R  RI  L DY   G+G  V   LE Y + EG +   IH EL+A  FYE LGY+     Y EDG  C +L KT+</pattern>
+      <matchSeq start="31" end="142">LEDEFDGHDHDQTVYVVVYDGDQPVATGRFLKTDDHAVRPGRIAVLKDYRNKGFGDLVITELEKYAKNEGCHTSVIHGELSAAGFYEKLGYRREPGVYEEDGVPCVTLKKTL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_A0ABU3F1A5" ac="UniRef90_A0ABU3F1A5" length="145" description="GNAT family N-acetyltransferase n=1 Tax=Enterococcus hulanensis TaxID=2559929 RepID=A0ABU3F1A5_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>246</score>
+      <bits>99.4</bits>
+      <expectation>5.7e-24</expectation>
+      <identity>43.6</identity>
+      <positives>62.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="110">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>+ D+FD ND + T+Y+V++D   PV+T + L E    AR+ R+ T+ +Y G   G++V  ALE   + + F Q+ IH+EL+A  FYENLGY   G  Y EDG  C +LVK</pattern>
+      <matchSeq start="34" end="143">LADEFDQNDTSDTIYSVLFDGSCPVATARLLMEDTETARIGRVATIEEYRGKQLGSRVVRALEDLAKSKNFKQILIHAELSAAGFYENLGYHKKGESYEEDGVPCITLVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_A0A9X3FRL0" ac="UniRef90_A0A9X3FRL0" length="143" description="GNAT family N-acetyltransferase n=1 Tax=Aerococcus kribbianus TaxID=2999064 RepID=A0A9X3FRL0_9LACT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>245</score>
+      <bits>99.0</bits>
+      <expectation>7.7e-24</expectation>
+      <identity>42.7</identity>
+      <positives>62.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>++FDAND  +TVYAV +  DQP++T + L  +  + R+TR+ TL    G  YG +V EALE   + + +  + IH+E+ A  FYE LGYQ     Y EDG+ CQS++K +</pattern>
+      <matchSeq start="33" end="142">EEFDANDLPQTVYAVAFSGDQPLATARLLNASDNQVRITRVATLKAARGKSYGRQVVEALEQEIKAQNYKSIEIHAEMDAIPFYEKLGYQINSEIYYEDGQACQSVIKYV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_A0A6G8ASF8" ac="UniRef90_A0A6G8ASF8" length="143" description="GNAT family N-acetyltransferase n=1 Tax=Vagococcus hydrophili TaxID=2714947 RepID=A0A6G8ASF8_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>242</score>
+      <bits>97.8</bits>
+      <expectation>2.2e-23</expectation>
+      <identity>47.3</identity>
+      <positives>58.2</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="110">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>+ D+FD  D   TVYAV+YD   P++TG+ L E     R TRI TL +Y G   GAK+  ALE Y   + F +  IHSELTA+ FYE  GY      Y EDG  CQ+L K</pattern>
+      <matchSeq start="31" end="140">LADEFDDADIDGTVYAVIYDQALPIATGRLLKEDDTLCRFTRIATLKEYRGQQRGAKIIHALEQYAISQNFKKAQIHSELTAKVFYEKQGYIAVSEVYDEDGVPCQTLEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_R2V780" ac="UniRef90_R2V780" length="145" description="N-acetyltransferase domain-containing protein n=1 Tax=Enterococcus gilvus ATCC BAA-350 TaxID=1158614 RepID=R2V780_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>240</score>
+      <bits>97.1</bits>
+      <expectation>4.6e-23</expectation>
+      <identity>43.8</identity>
+      <positives>60.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>MTD+FD ND   TVY+V++  D PV+T +FL + +  AR+ R+ T  DY G   G +    LE + + +   Q+ IH+ELTA  FYE LGY   G +Y EDG  C +LVK +</pattern>
+      <matchSeq start="34" end="145">MTDEFDQNDTPDTVYSVLFAGDLPVATARFLLDEEGTARIGRVATQKDYRGKQLGRQAVTVLEIFAKEKQTKQVLIHAELTAAAFYEQLGYVRMGERYEEDGVPCITLVKKL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_A0A1X6WP09" ac="UniRef90_A0A1X6WP09" length="143" description="Acetyltransferase n=1 Tax=Vagococcus fluvialis bH819 TaxID=1255619 RepID=A0A1X6WP09_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>239</score>
+      <bits>96.7</bits>
+      <expectation>6.2e-23</expectation>
+      <identity>42.5</identity>
+      <positives>56.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="113">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>+ D+FD  D   TVYAV+YD D P+ST + L E     R+TR+ TL +Y G   GA++   LE Y     + +  IHSE+ A+ FYE  GY      Y EDG  CQ+L K +L</pattern>
+      <matchSeq start="31" end="143">LQDEFDNFDTDETVYAVIYDQDFPISTARLLKEDHSTCRITRVATLKEYRGQQKGAEIIAGLEAYAMAHHYKKALIHSEVAAKGFYEKQGYTAISEVYKEDGVPCQTLTKVLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_S0KLU8" ac="UniRef90_S0KLU8" length="144" description="N-acetyltransferase domain-containing protein n=2 Tax=Enterococcus TaxID=1350 RepID=S0KLU8_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>239</score>
+      <bits>96.7</bits>
+      <expectation>6.3e-23</expectation>
+      <identity>43.0</identity>
+      <positives>57.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="114">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTILK</querySeq>
+      <pattern>+ ++FDA D     YAV+YD D PV+TG+   E +   R TRI TL +Y     GAK+  A+E Y    G+ Q  +H+E TA  FY+ LGY      Y EDG  CQSL K ++K</pattern>
+      <matchSeq start="31" end="144">LAEEFDAQDTPERFYAVIYDEDLPVATGRIFIEDEKTIRPTRIATLKEYRKQNLGAKIMTAIENYGVENGYVQSLVHAEQTAVGFYQKLGYTICSDIYYEDGVPCQSLEKRLVK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_UPI0019223ED6" ac="UniRef90_UPI0019223ED6" length="145" description="GNAT family N-acetyltransferase n=1 Tax=Enterococcus sp. BWR-S5 TaxID=2787714 RepID=UPI0019223ED6">
+    <alignments total="1">
+     <alignment number="1">
+      <score>236</score>
+      <bits>95.5</bits>
+      <expectation>1.8e-22</expectation>
+      <identity>43.6</identity>
+      <positives>59.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="110">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>+ D+FD  D   T YAV Y ++ PV+T +F+      A++TR+ TL +Y G   G+K+ + +E Y   EG  QL IH+ELTA  FYE  GY      YLEDG  CQ+L K</pattern>
+      <matchSeq start="34" end="143">IADEFDEKDVDGTTYAVAYKDNLPVATARFIKNEDKVAQITRVATLKEYRGRHLGSKLIQLMEEYAVSEGIVQLDIHAELTAVEFYEKNGYVQSSETYLEDGVACQTLTK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_A0AAV3J4Z0" ac="UniRef90_A0AAV3J4Z0" length="145" description="N-acetyltransferase domain-containing protein n=1 Tax=Enterococcus avium ATCC 14025 TaxID=1140002 RepID=A0AAV3J4Z0_ENTAV">
+    <alignments total="1">
+     <alignment number="1">
+      <score>233</score>
+      <bits>94.4</bits>
+      <expectation>5.2e-22</expectation>
+      <identity>41.8</identity>
+      <positives>63.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="110">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVK</querySeq>
+      <pattern>++D+FD  D++ T+Y+V++D   PV+T +FL E +  AR+ R+ TL DY G   G++V  +LE   + +   +L IH+E+TA  FYE LGY + G  Y EDG  C +L K</pattern>
+      <matchSeq start="34" end="143">LSDEFDQKDQSDTIYSVLFDEALPVATARFLQEDERVARIGRVATLKDYRGKQLGSRVVNSLEALAKEKQIERLLIHAEITAAGFYEGLGYCSVGKPYDEDGVPCITLEK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_A0A0R1ZID5" ac="UniRef90_A0A0R1ZID5" length="143" description="N-acetyltransferase domain-containing protein n=1 Tax=Lacticaseibacillus sharpeae JCM 1186 = DSM 20505 TaxID=1291052 RepID=A0A0R1ZID5_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>94.0</bits>
+      <expectation>7e-22</expectation>
+      <identity>44.5</identity>
+      <positives>60.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="112">DKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>D+FD ND    VYAV++D  +PV+TG+FL E    ARLTRI T AD+ G   G ++  ALE + +    + L IH+E+TA  FY +LGY   G  Y EDG  C+ L + +</pattern>
+      <matchSeq start="34" end="143">DEFDKNDVPGVVYAVIFDGKEPVATGRFLREGDDAARLTRIATRADHRGQHLGTQIICALERHAQDLHIHDLQIHAEVTAIPFYTSLGYHAIGPVYEEDGVPCRVLARML</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_UPI0007F12C5D" ac="UniRef90_UPI0007F12C5D" length="147" description="GNAT family N-acetyltransferase n=1 Tax=Loigolactobacillus backii TaxID=375175 RepID=UPI0007F12C5D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>232</score>
+      <bits>94.0</bits>
+      <expectation>7.8e-22</expectation>
+      <identity>46.7</identity>
+      <positives>63.3</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="117">MTDKFDANDETRTVYAVVY-DNDQPVSTG--QFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTILKWEK</querySeq>
+      <pattern>+ D+FD +D ++T YAV+Y DN+QPV+TG  QF+    I+    RI TL++Y G G GA+V  ALE   + +G+ +  IHSE TAQ FYE LGYQ     ++EDG  C  LV  IL  +K</pattern>
+      <matchSeq start="31" end="147">LIDEFDQHDTSKTSYAVIYADNEQPVATGRLQFIDAATIQPG--RIATLSEYRGQGLGAQVINALEEVGQHQGYQKSLIHSERTAQGFYEQLGYQPVSGTFIEDGIPC-VLVSKILFTKK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_A0A1Z5I903" ac="UniRef90_A0A1Z5I903" length="144" description="GNAT family acetyltransferase n=1 Tax=Secundilactobacillus mixtipabuli TaxID=1435342 RepID=A0A1Z5I903_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>231</score>
+      <bits>93.6</bits>
+      <expectation>1e-21</expectation>
+      <identity>46.5</identity>
+      <positives>57.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="113">MTDKFDANDETRTVYAVVYDND-QPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>M D+FD NDE   VY V Y +D QP +TG+F        R  RI TL DY G   GAKV +ALE Y    G+ +  IHSE+TAQ FYE  GYQ     Y EDG    +L K+++</pattern>
+      <matchSeq start="31" end="144">MQDEFDDNDEPDRVYVVAYTDDGQPAATGRFQTIDDTTMRPGRIATLKDYRGQHLGAKVIKALEDYGMAHGYTKSVIHSEMTAQGFYERQGYQVASEPYEEDGVPAITLTKSLV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_A0A679IJ90" ac="UniRef90_A0A679IJ90" length="143" description="N-acetyltransferase n=1 Tax=Enterococcus saigonensis TaxID=1805431 RepID=A0A679IJ90_9ENTE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>230</score>
+      <bits>93.2</bits>
+      <expectation>1.4e-21</expectation>
+      <identity>41.1</identity>
+      <positives>58.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="112">MTDKFDANDETRTVYAVVYDNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTI</querySeq>
+      <pattern>+ ++FD  D +  VYAV+YD + PV+TG+ + E +   R TRI TL +Y     GAK+ +A+E Y    G+    +H+E TA  FY+ LGY      Y EDG  CQSL K +</pattern>
+      <matchSeq start="31" end="142">LAEEFDGLDTSERVYAVIYDGELPVATGRIVIEDEKTIRPTRIATLKEYRKRNLGAKIMKAIEDYGVENGYSHSLVHAEQTALGFYQKLGYTICSDVYYEDGVSCQSLTKAL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0ABX1KWK6" ac="UniRef90_A0ABX1KWK6" length="144" description="GNAT family N-acetyltransferase n=1 Tax=Secundilactobacillus angelensis TaxID=2722706 RepID=A0ABX1KWK6_9LACO">
+    <alignments total="1">
+     <alignment number="1">
+      <score>230</score>
+      <bits>93.2</bits>
+      <expectation>1.4e-21</expectation>
+      <identity>45.5</identity>
+      <positives>59.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="3" end="113">DKFDANDETRTVYAVVY-DNDQPVSTGQFLAETKIEARLTRIVTLADYCGCGYGAKVTEALETYTRREGFYQLTIHSELTAQTFYENLGYQTYGSKYLEDGEYCQSLVKTIL</querySeq>
+      <pattern>D+FD NDE+  VY V Y D  +PV+TG+F        R  RI TL +Y G   GAK+ EALE Y R +G+ +  IHSE+TA+ FYE  GY+   + Y EDG    +L K +L</pattern>
+      <matchSeq start="33" end="144">DEFDDNDESDRVYVVAYSDEGKPVATGRFQTIDDTTMRPGRIATLKEYRGQHLGAKIIEALEKYGREQGYTKSIIHSEMTAKGFYERQGYEVSSAPYEEDGVPAITLTKKLL</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

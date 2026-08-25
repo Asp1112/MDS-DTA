@@ -1,0 +1,638 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q47187",
+  "secondaryAccessions": [
+    "E0SME6"
+  ],
+  "uniProtkbId": "EXPI_DICD3",
+  "entryAudit": {
+    "firstPublicDate": "1997-11-01",
+    "lastAnnotationUpdateDate": "2025-04-09",
+    "lastSequenceUpdateDate": "1997-11-01",
+    "entryVersion": 110,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 2.0,
+  "organism": {
+    "scientificName": "Dickeya dadantii (strain 3937)",
+    "commonName": "Erwinia chrysanthemi (strain 3937)",
+    "taxonId": 198628,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Pseudomonadota",
+      "Gammaproteobacteria",
+      "Enterobacterales",
+      "Pectobacteriaceae",
+      "Dickeya"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Acyl-homoserine-lactone synthase"
+      },
+      "ecNumbers": [
+        {
+          "value": "2.3.1.184"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "value": "Autoinducer synthesis protein ExpI"
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "expI"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "Dda3937_03219"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "value": "Required for the synthesis of OHHL (N-(3-oxohexanoyl)-L-homoserine lactone), an autoinducer molecule which binds to ExpR and thus acts in virulence (soft rot disease) through the activation of genes for plant tissue macerating enzymes"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "a fatty acyl-[ACP] + S-adenosyl-L-methionine = an N-acyl-L-homoserine lactone + S-methyl-5'-thioadenosine + holo-[ACP] + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:10096"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9685"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:14125"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:17509"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:55474"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:59789"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:64479"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:138651"
+          }
+        ],
+        "ecNumber": "2.3.1.184"
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00533"
+            }
+          ],
+          "value": "Belongs to the autoinducer synthase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 212,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Acyl-homoserine-lactone synthase",
+      "featureId": "PRO_0000210886"
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0071",
+      "category": "Biological process",
+      "name": "Autoinducer synthesis"
+    },
+    {
+      "id": "KW-0673",
+      "category": "Biological process",
+      "name": "Quorum sensing"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0949",
+      "category": "Ligand",
+      "name": "S-adenosyl-L-methionine"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    },
+    {
+      "id": "KW-0843",
+      "category": "Biological process",
+      "name": "Virulence"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "9781877",
+        "citationType": "journal article",
+        "authors": [
+          "Nasser W.",
+          "Bouillant M.L.",
+          "Salmond G.",
+          "Reverchon S."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9781877"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1046/j.1365-2958.1998.01022.x"
+          }
+        ],
+        "title": "Characterization of the Erwinia chrysanthemi expI-expR locus directing the synthesis of two N-acyl-homoserine lactone signal molecules.",
+        "publicationDate": "1998",
+        "journal": "Mol. Microbiol.",
+        "firstPage": "1391",
+        "lastPage": "1405",
+        "volume": "29"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "3937",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "21217001",
+        "citationType": "journal article",
+        "authors": [
+          "Glasner J.D.",
+          "Yang C.H.",
+          "Reverchon S.",
+          "Hugouvieux-Cotte-Pattat N.",
+          "Condemine G.",
+          "Bohin J.P.",
+          "Van Gijsegem F.",
+          "Yang S.",
+          "Franza T.",
+          "Expert D.",
+          "Plunkett G. III",
+          "San Francisco M.J.",
+          "Charkowski A.O.",
+          "Py B.",
+          "Bell K.",
+          "Rauscher L.",
+          "Rodriguez-Palenzuela P.",
+          "Toussaint A.",
+          "Holeva M.C.",
+          "He S.Y.",
+          "Douet V.",
+          "Boccara M.",
+          "Blanco C.",
+          "Toth I.",
+          "Anderson B.D.",
+          "Biehl B.S.",
+          "Mau B.",
+          "Flynn S.M.",
+          "Barras F.",
+          "Lindeberg M.",
+          "Birch P.R.",
+          "Tsuyumu S.",
+          "Shi X.",
+          "Hibbing M.",
+          "Yap M.N.",
+          "Carpentier M.",
+          "Dassa E.",
+          "Umehara M.",
+          "Kim J.F.",
+          "Rusch M.",
+          "Soni P.",
+          "Mayhew G.F.",
+          "Fouts D.E.",
+          "Gill S.R.",
+          "Blattner F.R.",
+          "Keen N.T.",
+          "Perna N.T."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "21217001"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/jb.01513-10"
+          }
+        ],
+        "title": "Genome sequence of the plant-pathogenic bacterium Dickeya dadantii 3937.",
+        "publicationDate": "2011",
+        "journal": "J. Bacteriol.",
+        "firstPage": "2076",
+        "lastPage": "2077",
+        "volume": "193"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "3937",
+          "type": "STRAIN"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "X96440",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAA65306.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "CP002038",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ADN00585.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_013319980.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_014500.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q47187",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q47187",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "198628.Dda3937_03219",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "ddd:Dda3937_03219",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PATRIC",
+      "id": "fig|198628.6.peg.4338",
+      "properties": [
+        {
+          "key": "GeneDesignation",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "COG3916",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_085711_4_1_6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "6169313at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000006859",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0061579",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:N-acyl homoserine lactone synthase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-EC"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0009372",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:quorum sensing"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-KW"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0007165",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:signal transduction"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:TreeGrafter"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.40.630.30",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR016181",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl_CoA_acyltransferase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR018311",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Autoind_synth_CS"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001690",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Autoind_synthase"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR39322",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ACYL-HOMOSERINE-LACTONE SYNTHASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR39322:SF1",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ISOVALERYL-HOMOSERINE LACTONE SYNTHASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00765",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Autoind_synth"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PRINTS",
+      "id": "PR01549",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "AUTOINDCRSYN"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF55729",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl-CoA N-acyltransferases (Nat)"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS00949",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "AUTOINDUCER_SYNTH_1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS51187",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "AUTOINDUCER_SYNTH_2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MLEIFDVSFSLMSNNKLDEVFALRKGTFKDRLDWTVNCINGMEFDEYDNEHTTYLLGVKEGKIICSVRFIEMKYPNMITGTFFSYFDGLNIPEGNYIESSRFFVDRDRVRNLIGTRNPACLTLFLAMINYARKYHYDGILTIVSHPMLTLLKRSGWRISIIQQGLSEKQEKIYLLHLPTDDESRYALIERITRITNAESEQLTTLPLLVPLA",
+    "length": 212,
+    "molWeight": 24670,
+    "crc64": "F3FA5D7457F7964A",
+    "md5": "F2CECF4B865851B61DE3BB62F906BC0C"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1
+    },
+    "uniParcId": "UPI000012A395"
+  }
+}

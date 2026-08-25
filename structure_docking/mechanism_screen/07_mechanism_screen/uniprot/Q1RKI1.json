@@ -1,0 +1,866 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q1RKI1",
+  "uniProtkbId": "LIPB_RICBR",
+  "entryAudit": {
+    "firstPublicDate": "2006-06-27",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "2006-05-16",
+    "entryVersion": 106,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Rickettsia bellii (strain RML369-C)",
+    "taxonId": 336407,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Pseudomonadota",
+      "Alphaproteobacteria",
+      "Rickettsiales",
+      "Rickettsiaceae",
+      "Rickettsieae",
+      "Rickettsia",
+      "belli group"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00013"
+          }
+        ],
+        "value": "Octanoyltransferase"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00013"
+            }
+          ],
+          "value": "2.3.1.181"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00013"
+            }
+          ],
+          "value": "Lipoate-protein ligase B"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00013"
+            }
+          ],
+          "value": "Lipoyl/octanoyl transferase"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00013"
+            }
+          ],
+          "value": "Octanoyl-[acyl-carrier-protein]-protein N-octanoyltransferase"
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00013"
+          }
+        ],
+        "value": "lipB"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "RBE_0052"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00013"
+            }
+          ],
+          "value": "Catalyzes the transfer of endogenously produced octanoic acid from octanoyl-acyl-carrier-protein onto the lipoyl domains of lipoate-dependent enzymes. Lipoyl-ACP can also act as a substrate although octanoyl-ACP is likely to be the physiological substrate"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "octanoyl-[ACP] + L-lysyl-[protein] = N(6)-octanoyl-L-lysyl-[protein] + holo-[ACP] + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:17665"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9636"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9685"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9752"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9928"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:29969"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:64479"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:78463"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:78809"
+          }
+        ],
+        "ecNumber": "2.3.1.181",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_00013"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00013"
+            }
+          ],
+          "value": "Protein modification; protein lipoylation via endogenous pathway; protein N(6)-(lipoyl)lysine from octanoyl-[acyl-carrier-protein]: step 1/2"
+        }
+      ],
+      "commentType": "PATHWAY"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_00013"
+              }
+            ],
+            "value": "Cytoplasm",
+            "id": "SL-0086"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00013"
+            }
+          ],
+          "value": "In the reaction, the free carboxyl group of octanoic acid is attached via an amide linkage to the epsilon-amino group of a specific lysine residue of lipoyl domains of lipoate-dependent enzymes"
+        }
+      ],
+      "commentType": "MISCELLANEOUS"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_00013"
+            }
+          ],
+          "value": "Belongs to the LipB family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 209,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Octanoyltransferase",
+      "featureId": "PRO_0000242759"
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 30,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 209,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "BPL/LPL catalytic",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU01067"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 174,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 174,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Acyl-thioester intermediate",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00013"
+        }
+      ]
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 69,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 76,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00013"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 143,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 145,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00013"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Binding site",
+      "location": {
+        "start": {
+          "value": 156,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 158,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00013"
+        }
+      ],
+      "ligand": {
+        "name": "substrate"
+      }
+    },
+    {
+      "type": "Site",
+      "location": {
+        "start": {
+          "value": 140,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 140,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Lowers pKa of active site Cys",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_00013"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0963",
+      "category": "Cellular component",
+      "name": "Cytoplasm"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "16703114",
+        "citationType": "journal article",
+        "authors": [
+          "Ogata H.",
+          "La Scola B.",
+          "Audic S.",
+          "Renesto P.",
+          "Blanc G.",
+          "Robert C.",
+          "Fournier P.-E.",
+          "Claverie J.-M.",
+          "Raoult D."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "16703114"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1371/journal.pgen.0020076"
+          }
+        ],
+        "title": "Genome sequence of Rickettsia bellii illuminates the role of amoebae in gene exchanges between intracellular pathogens.",
+        "publicationDate": "2006",
+        "journal": "PLoS Genet.",
+        "firstPage": "733",
+        "lastPage": "744",
+        "volume": "2"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "RML369-C",
+          "type": "STRAIN"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "CP000087",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ABE04133.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_011476748.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_007940.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q1RKI1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q1RKI1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "rbe:RBE_0052",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "COG0321",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_035168_3_0_5",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "9787061at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "UniPathway",
+      "id": "UPA00538",
+      "properties": [
+        {
+          "key": "RectionId",
+          "value": "UER00592"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000001951",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005737",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:cytoplasm"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0033819",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:lipoyl(octanoyl) transferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-EC"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0009249",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:protein lipoylation"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:InterPro"
+        }
+      ]
+    },
+    {
+      "database": "CDD",
+      "id": "cd16444",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LipB"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.30.930.10",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Bira Bifunctional Protein, Domain 2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "HAMAP",
+      "id": "MF_00013",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LipB"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR045864",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "aa-tRNA-synth_II/BPL/LPL"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR004143",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "BPL_LPL_catalytic"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR000544",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Octanoyltransferase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR020605",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Octanoyltransferase_CS"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "TIGR00214",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "lipB"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF010921",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PRK14341.1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF010925",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PRK14345.1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR10993:SF7",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LIPOYLTRANSFERASE 2, MITOCHONDRIAL-RELATED"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR10993",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "OCTANOYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF21948",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LplA-B_cat"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PIRSF",
+      "id": "PIRSF016262",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LPLase"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF55681",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Class II aaRS and biotin synthetases"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS51733",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "BPL_LPL_CATALYTIC"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS01313",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "LIPB"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MVQFITIPTPIDYQDSLMLMEDYVNKVIDGEAPEAVYLVEHLDVYTAGTNYKQEELLNHNNIPVIYTGRGGKFTFHGAGQRVIYPILNLALPNRTKDLKLYVRMLEEWIINSLDIFGIKAYIIKNKVGIWVKTNDDIPSKIAAIGVRVRKWVTYHGIAINISTDLSKFNGIIPCGLENSLVTSLNQLGVYIEMTEFDKILEVEFIKIFK",
+    "length": 209,
+    "molWeight": 23828,
+    "crc64": "FAD670FC862236D0",
+    "md5": "AA270C7BAF6C17319BDC0934C743A374"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "PATHWAY": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "MISCELLANEOUS": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Domain": 1,
+      "Active site": 1,
+      "Binding site": 3,
+      "Site": 1
+    },
+    "uniParcId": "UPI0000D500B6"
+  }
+}

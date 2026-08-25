@@ -1,0 +1,498 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q02736",
+  "uniProtkbId": "CAT_CLOBU",
+  "entryAudit": {
+    "firstPublicDate": "1993-07-01",
+    "lastAnnotationUpdateDate": "2025-06-18",
+    "lastSequenceUpdateDate": "1996-02-01",
+    "entryVersion": 81,
+    "sequenceVersion": 2
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Clostridium butyricum",
+    "taxonId": 1492,
+    "lineage": [
+      "Bacteria",
+      "Bacillati",
+      "Bacillota",
+      "Clostridia",
+      "Eubacteriales",
+      "Clostridiaceae",
+      "Clostridium"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Chloramphenicol acetyltransferase"
+      },
+      "shortNames": [
+        {
+          "value": "CAT"
+        }
+      ],
+      "ecNumbers": [
+        {
+          "value": "2.3.1.28"
+        }
+      ]
+    }
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "catB"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "value": "This enzyme is an effector of chloramphenicol resistance in bacteria"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "chloramphenicol + acetyl-CoA = chloramphenicol 3-acetate + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:18421"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:16730"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:17698"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          }
+        ],
+        "ecNumber": "2.3.1.28",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "PROSITE-ProRule",
+            "id": "PRU10021"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "value": "Homotrimer"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the chloramphenicol acetyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 219,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Chloramphenicol acetyltransferase",
+      "featureId": "PRO_0000165859"
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 190,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 190,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Proton acceptor",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU10021"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0046",
+      "category": "Biological process",
+      "name": "Antibiotic resistance"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "1489203",
+        "citationType": "journal article",
+        "authors": [
+          "Huggins A.S.",
+          "Bannam T.L.",
+          "Rood J.I."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "1489203"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/aac.36.11.2548"
+          }
+        ],
+        "title": "Comparative sequence analysis of the catB gene from Clostridium butyricum.",
+        "publicationDate": "1992",
+        "journal": "Antimicrob. Agents Chemother.",
+        "firstPage": "2548",
+        "lastPage": "2551",
+        "volume": "36"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "M93113",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAA73865.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "A48907",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "A48907"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_063843219.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NG_047589.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q02736",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q02736",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "CARD",
+      "id": "ARO:3002674",
+      "properties": [
+        {
+          "key": "CARD short name",
+          "value": "Cbut_catB"
+        },
+        {
+          "key": "Resistance mechanism identifier",
+          "value": "ARO:0001004"
+        },
+        {
+          "key": "Resistance mechanism name",
+          "value": "antibiotic inactivation"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "ag:AAA73865",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0008811",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:chloramphenicol O-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-EC"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0046677",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:response to antibiotic"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-KW"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.30.559.10",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Chloramphenicol acetyltransferase-like domain"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR023213",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT-like_dom_sf"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR018372",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Chloramphenicol_AcTrfase_AS"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001707",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Cmp_AcTrfase"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF000491",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "chloram_CatA"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR38474:SF2",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CHLORAMPHENICOL ACETYLTRANSFERASE"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR38474",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "SLR0299 PROTEIN"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00302",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PIRSF",
+      "id": "PIRSF000440",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SMART",
+      "id": "SM01059",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF52777",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CoA-dependent acyltransferases"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS00100",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MNFNLIDINHWSRKPYFEHYLNNVKCTYSMTANIEITDLLYEIKLKNIKFYPTLIYMIATVVNNHKEFRICFDHKGSLGYWDSMNPSYTIFHKENETFSSIWTEYNKSFLRFYSDYLDDIKNYGNIMKFTPKSNEPDNTFSVSSIPWVSFTGFNLNVYNEGTYLIPIFTAGKYFKQENKIFIPISIQVHHAICDGYHASRFINEMQELAFSFQEWLENK",
+    "length": 219,
+    "molWeight": 26144,
+    "crc64": "1D2BB096D2C4C183",
+    "md5": "5ABA86565B30170AD41641FF1DEF54FE"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "SUBUNIT": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Active site": 1
+    },
+    "uniParcId": "UPI00001270E1"
+  }
+}

@@ -1,0 +1,1404 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "P16691",
+  "secondaryAccessions": [
+    "Q2M6L0"
+  ],
+  "uniProtkbId": "PHNO_ECOLI",
+  "entryAudit": {
+    "firstPublicDate": "1990-08-01",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "1990-08-01",
+    "entryVersion": 163,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 4.0,
+  "organism": {
+    "scientificName": "Escherichia coli (strain K12)",
+    "taxonId": 83333,
+    "lineage": [
+      "Bacteria",
+      "Pseudomonadati",
+      "Pseudomonadota",
+      "Gammaproteobacteria",
+      "Enterobacterales",
+      "Enterobacteriaceae",
+      "Escherichia"
+    ]
+  },
+  "proteinExistence": "1: Evidence at protein level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000303",
+            "source": "PubMed",
+            "id": "23056305"
+          }
+        ],
+        "value": "Aminoalkylphosphonate N-acetyltransferase"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "23056305"
+            }
+          ],
+          "value": "2.3.1.280"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000303",
+              "source": "PubMed",
+              "id": "30352934"
+            }
+          ],
+          "value": "KAT"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Peptidyl-lysine N-acetyltransferase"
+        },
+        "ecNumbers": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "30352934"
+              }
+            ],
+            "value": "2.3.1.-"
+          }
+        ]
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000303",
+            "source": "PubMed",
+            "id": "2155230"
+          }
+        ],
+        "value": "phnO"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "b4093"
+        },
+        {
+          "value": "JW4054"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "23056305"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "30352934"
+            }
+          ],
+          "value": "Aminoalkylphosphonate N-acetyltransferase which is able to acetylate a range of aminoalkylphosphonic acids, including aminomethylphosphonate, (S)-1-aminoethylphosphonate and 2-aminoethyl- and 3-aminopropylphosphonate, using acetyl-CoA as acetyl donor. Is required for the utilization of aminomethylphosphonate and (S)-1-aminoethylphosphonate as a phosphate source via the C-P lyase pathway. Is also essential for the detoxification of (S)-1-aminoethylphosphonate, a structural analog of D-alanine that has bacteriocidal properties due to inhibition of cell wall synthesis (PubMed:23056305). Also acts as a N-epsilon-lysine acetyltransferase that catalyzes acetylation of several proteins (PubMed:30352934)"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "aminomethylphosphonate + acetyl-CoA = 2-N-acetamidomethylphosphonate + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:51428"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:133674"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:134093"
+          }
+        ],
+        "ecNumber": "2.3.1.280",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "23056305"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "(S)-1-aminoethylphosphonate + acetyl-CoA = [(1S)-1-acetamidoethyl]phosphonate + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:51432"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:134098"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:134099"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "23056305"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "L-lysyl-[protein] + acetyl-CoA = N(6)-acetyl-L-lysyl-[protein] + CoA + H(+)",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:45948"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:9752"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:10731"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:15378"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:29969"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57288"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:61930"
+          }
+        ],
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "30352934"
+          }
+        ]
+      }
+    },
+    {
+      "commentType": "COFACTOR",
+      "cofactors": [
+        {
+          "name": "a divalent metal cation",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q8ZKE6"
+            }
+          ],
+          "cofactorCrossReference": {
+            "database": "ChEBI",
+            "id": "CHEBI:60240"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q8ZKE6"
+            }
+          ],
+          "value": "Homodimer"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "23056305"
+            }
+          ],
+          "value": "Cells lacking this gene have lost the ability to utilize aminomethylphosphonate or (S)-1-aminoethylphosphonate as the sole source of phosphate for growth, but are still able to utilize the other aminoalkylphosphonates 2-aminoethyl- and 3-aminopropylphosphonate, and alkylphosphonates. They are also much more susceptible to the bacteriocidal effect of (S)-1-aminoethylphosphonate, even with phosphate or D-alanine present"
+        }
+      ],
+      "commentType": "DISRUPTION PHENOTYPE"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "The sequence shown is that of strains K12 and B"
+        }
+      ],
+      "commentType": "MISCELLANEOUS"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 144,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Aminoalkylphosphonate N-acetyltransferase",
+      "featureId": "PRO_0000058401"
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 4,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 144,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "N-acetyltransferase",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00532"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "2155230",
+        "citationType": "journal article",
+        "authors": [
+          "Chen C.-M.",
+          "Ye Q.-Z.",
+          "Zhu Z.",
+          "Wanner B.L.",
+          "Walsh C.T."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "2155230"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1016/s0021-9258(19)39587-0"
+          }
+        ],
+        "title": "Molecular biology of carbon-phosphorus bond cleavage. Cloning and sequencing of the phn (psiD) genes involved in alkylphosphonate uptake and C-P lyase activity in Escherichia coli B.",
+        "publicationDate": "1990",
+        "journal": "J. Biol. Chem.",
+        "firstPage": "4461",
+        "lastPage": "4471",
+        "volume": "265"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "B",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "1840580",
+        "citationType": "journal article",
+        "authors": [
+          "Makino K.",
+          "Kim S.K.",
+          "Shinagawa H.",
+          "Amemura M.",
+          "Nakata A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "1840580"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/jb.173.8.2665-2672.1991"
+          }
+        ],
+        "title": "Molecular analysis of the cryptic and functional phn operons for phosphonate use in Escherichia coli K-12.",
+        "publicationDate": "1991",
+        "journal": "J. Bacteriol.",
+        "firstPage": "2665",
+        "lastPage": "2672",
+        "volume": "173"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "K12",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 3,
+      "citation": {
+        "id": "7610040",
+        "citationType": "journal article",
+        "authors": [
+          "Burland V.D.",
+          "Plunkett G. III",
+          "Sofia H.J.",
+          "Daniels D.L.",
+          "Blattner F.R."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "7610040"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1093/nar/23.12.2105"
+          }
+        ],
+        "title": "Analysis of the Escherichia coli genome VI: DNA sequence of the region from 92.8 through 100 minutes.",
+        "publicationDate": "1995",
+        "journal": "Nucleic Acids Res.",
+        "firstPage": "2105",
+        "lastPage": "2119",
+        "volume": "23"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "K12 / MG1655 / ATCC 47076",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 4,
+      "citation": {
+        "id": "9278503",
+        "citationType": "journal article",
+        "authors": [
+          "Blattner F.R.",
+          "Plunkett G. III",
+          "Bloch C.A.",
+          "Perna N.T.",
+          "Burland V.",
+          "Riley M.",
+          "Collado-Vides J.",
+          "Glasner J.D.",
+          "Rode C.K.",
+          "Mayhew G.F.",
+          "Gregor J.",
+          "Davis N.W.",
+          "Kirkpatrick H.A.",
+          "Goeden M.A.",
+          "Rose D.J.",
+          "Mau B.",
+          "Shao Y."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9278503"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1126/science.277.5331.1453"
+          }
+        ],
+        "title": "The complete genome sequence of Escherichia coli K-12.",
+        "publicationDate": "1997",
+        "journal": "Science",
+        "firstPage": "1453",
+        "lastPage": "1462",
+        "volume": "277"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "K12 / MG1655 / ATCC 47076",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 5,
+      "citation": {
+        "id": "16738553",
+        "citationType": "journal article",
+        "authors": [
+          "Hayashi K.",
+          "Morooka N.",
+          "Yamamoto Y.",
+          "Fujita K.",
+          "Isono K.",
+          "Choi S.",
+          "Ohtsubo E.",
+          "Baba T.",
+          "Wanner B.L.",
+          "Mori H.",
+          "Horiuchi T."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "16738553"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1038/msb4100049"
+          }
+        ],
+        "title": "Highly accurate genome sequences of Escherichia coli K-12 strains MG1655 and W3110.",
+        "publicationDate": "2006",
+        "journal": "Mol. Syst. Biol.",
+        "firstPage": "E1",
+        "lastPage": "E5",
+        "volume": "2"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "K12 / W3110 / ATCC 27325 / DSM 5911",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 6,
+      "citation": {
+        "id": "23056305",
+        "citationType": "journal article",
+        "authors": [
+          "Hove-Jensen B.",
+          "McSorley F.R.",
+          "Zechel D.L."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "23056305"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1371/journal.pone.0046416"
+          }
+        ],
+        "title": "Catabolism and detoxification of 1-aminoalkylphosphonic acids: N-acetylation by the phnO gene product.",
+        "publicationDate": "2012",
+        "journal": "PLoS ONE",
+        "firstPage": "E46416",
+        "lastPage": "E46416",
+        "volume": "7"
+      },
+      "referencePositions": [
+        "FUNCTION",
+        "CATALYTIC ACTIVITY",
+        "DISRUPTION PHENOTYPE"
+      ],
+      "referenceComments": [
+        {
+          "value": "K12",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 7,
+      "citation": {
+        "id": "30352934",
+        "citationType": "journal article",
+        "authors": [
+          "Christensen D.G.",
+          "Meyer J.G.",
+          "Baumgartner J.T.",
+          "D'Souza A.K.",
+          "Nelson W.C.",
+          "Payne S.H.",
+          "Kuhn M.L.",
+          "Schilling B.",
+          "Wolfe A.J."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "30352934"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/mbio.01905-18"
+          }
+        ],
+        "title": "Identification of novel protein lysine acetyltransferases in Escherichia coli.",
+        "publicationDate": "2018",
+        "journal": "MBio",
+        "firstPage": "E01905",
+        "lastPage": "E01905",
+        "volume": "9"
+      },
+      "referencePositions": [
+        "FUNCTION AS A LYSINE ACETYLTRANSFERASE",
+        "CATALYTIC ACTIVITY"
+      ],
+      "referenceComments": [
+        {
+          "value": "K12",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 8,
+      "citation": {
+        "id": "30967468",
+        "citationType": "journal article",
+        "authors": [
+          "Christensen D.G.",
+          "Meyer J.G.",
+          "Baumgartner J.T.",
+          "D'Souza A.K.",
+          "Nelson W.C.",
+          "Payne S.H.",
+          "Kuhn M.L.",
+          "Schilling B.",
+          "Wolfe A.J."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "30967468"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/mbio.00592-19"
+          }
+        ],
+        "title": "Correction for Christensen et al., 'Identification of novel protein lysine acetyltransferases in Escherichia coli'.",
+        "publicationDate": "2019",
+        "journal": "MBio",
+        "firstPage": "0",
+        "lastPage": "0",
+        "volume": "10"
+      },
+      "referencePositions": [
+        "ERRATUM OF PUBMED:30352934"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "J05260",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAA24354.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "D90227",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "BAA14275.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "U14003",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAA96992.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "U00096",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAC77054.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AP009048",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "BAE78096.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "G35719",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "G35719"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_418517.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_000913.3"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_001110490.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NZ_CP009789.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "P16691",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "P16691",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioGRID",
+      "id": "4262023",
+      "properties": [
+        {
+          "key": "Interactions",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "database": "BioGRID",
+      "id": "852893",
+      "properties": [
+        {
+          "key": "Interactions",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "FunCoup",
+      "id": "P16691",
+      "properties": [
+        {
+          "key": "Number of interactors",
+          "value": "66"
+        }
+      ]
+    },
+    {
+      "database": "IntAct",
+      "id": "P16691",
+      "properties": [
+        {
+          "key": "Interactions",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "511145.b4093",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "jPOST",
+      "id": "P16691",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "511145-b4093",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "EnsemblBacteria",
+      "id": "AAC77054",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAC77054"
+        },
+        {
+          "key": "GeneId",
+          "value": "b4093"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "75169611",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "75203244",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "948599",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "ecj:JW4054",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "eco:b4093",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "ecoc:C3026_22125",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PATRIC",
+      "id": "fig|1411691.4.peg.2607",
+      "properties": [
+        {
+          "key": "GeneDesignation",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "EchoBASE",
+      "id": "EB0718",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "COG0456",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_013985_34_6_6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "InParanoid",
+      "id": "P16691",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OMA",
+      "id": "PNQHLVV",
+      "properties": [
+        {
+          "key": "Fingerprint",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "9797826at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PhylomeDB",
+      "id": "P16691",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioCyc",
+      "id": "EcoCyc:EG10724-MONOMER",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioCyc",
+      "id": "MetaCyc:EG10724-MONOMER",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BRENDA",
+      "id": "2.3.1.280",
+      "properties": [
+        {
+          "key": "OrganismId",
+          "value": "2026"
+        }
+      ]
+    },
+    {
+      "database": "BRENDA",
+      "id": "2.3.1.286",
+      "properties": [
+        {
+          "key": "OrganismId",
+          "value": "2026"
+        }
+      ]
+    },
+    {
+      "database": "PRO",
+      "id": "PR:P16691",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000000625",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "AbasyAtlas",
+      "id": "P16691",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0008080",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:N-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IDA:EcoCyc"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "23056305"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0061733",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:protein-lysine-acetyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IDA:EcoCyc"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "30352934"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0033051",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:aminophosphonate metabolic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:EcoCyc"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "23056305"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0018393",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:internal peptidyl-lysine acetylation"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:EcoCyc"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "30352934"
+        }
+      ]
+    },
+    {
+      "database": "CDD",
+      "id": "cd04301",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "NAT_SF"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "3.40.630.30:FF:000032",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Aminoalkylphosphonic acid N-acetyltransferase"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "3.40.630.30",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR016181",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl_CoA_acyltransferase"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR050832",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Bact_Acetyltransf"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR000182",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT_dom"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "NF007530",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PRK10146.1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR43877:SF2",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "AMINOALKYLPHOSPHONATE N-ACETYLTRANSFERASE-RELATED"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR43877",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "AMINOALKYLPHOSPHONATE N-ACETYLTRANSFERASE-RELATED-RELATED"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00583",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acetyltransf_1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF55729",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Acyl-CoA N-acyltransferases (Nat)"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS51186",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GNAT"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MPACELRPATQYDTDAVYALICELKQAEFDHHAFRVGFNANLRDPNMRYHLALLDGEVVGMIGLHLQFHLHHVNWIGEIQELVVMPQARGLNVGSKLLAWAEEEARQAGAEMTELSTNVKRHDAHRFYLREGYEQSHFRFTKAL",
+    "length": 144,
+    "molWeight": 16570,
+    "crc64": "B4BCBD253788737B",
+    "md5": "ED97BDA1E25DAC2E0837706AE13D09CB"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 3,
+      "COFACTOR": 1,
+      "SUBUNIT": 1,
+      "DISRUPTION PHENOTYPE": 1,
+      "MISCELLANEOUS": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Domain": 1
+    },
+    "uniParcId": "UPI00001319A4"
+  }
+}

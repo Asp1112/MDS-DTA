@@ -1,0 +1,877 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<EBIApplicationResult xmlns="http://www.ebi.ac.uk/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.ebi.ac.uk/Tools/common/schema/ApplicationResult.xsd">
+ <Header>
+  <program name="blastp" version="BLASTP 2.16.0+"/>
+  <commandLine command="singularity exec $APPBIN/singularity/ncbiblast:2.16.0 /ncbiblast/bin/blastp -db &quot;uniref90&quot; -query ncbiblast-R20260806-124738-0180-3783238-p1m.sequence  -num_threads 32 -outfmt 11 -out ncbiblast-R20260806-124738-0180-3783238-p1m.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 1e-5 -seg no -comp_based_stats F"/>
+  <parameters>
+   <sequences total="1">
+    <sequence number="1" name="EMBOSS_001" type="PROTEIN" length="209"/>
+   </sequences>
+   <databases total="1" sequences="121389642" letters="45514432807">
+    <database number="1" name="uniref90" type="PROTEIN" created="2026-05-22T12:56:00+01:00"/>
+   </databases>
+   <alignments>50</alignments>
+   <expectationUpper>1e-05</expectationUpper>
+   <filter>F</filter>
+   <gapExtension>1.0</gapExtension>
+   <gapOpen>11.0</gapOpen>
+   <matrix>BLOSUM62</matrix>
+   <scores>50</scores>
+  </parameters>
+  <timeInfo start="2026-08-06T12:47:38+01:00" end="2026-08-06T12:58:24+01:00" search="P0Y0M0DT0H0M646.000S"/>
+ </Header>
+ <SequenceSimilaritySearchResult>
+  <hits total="50">
+   <hit number="1" database="UR90" id="UniRef90_Q9ZC91" ac="UniRef90_Q9ZC91" length="209" description="Octanoyltransferase n=3 Tax=typhus group TaxID=114292 RepID=LIPB_RICPR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>1095</score>
+      <bits>426.4</bits>
+      <expectation>4.6e-151</expectation>
+      <identity>100.0</identity>
+      <positives>100.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</querySeq>
+      <pattern>MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</pattern>
+      <matchSeq start="1" end="209">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="2" database="UR90" id="UniRef90_Q92FX0" ac="UniRef90_Q92FX0" length="209" description="Octanoyltransferase n=42 Tax=Rickettsia TaxID=780 RepID=LIPB_RICCN">
+    <alignments total="1">
+     <alignment number="1">
+      <score>998</score>
+      <bits>389.0</bits>
+      <expectation>2.8e-136</expectation>
+      <identity>90.0</identity>
+      <positives>95.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</querySeq>
+      <pattern>MIRFIT+ +  DYQVTLKLMEDYVNKVI+D++PEI+YLVEHSEVYTAGTNYKQEELLNY DIPVIYTGRGGKFTFHGPGQRVIYPILNLA PNRHKDLKLYIKMLEEWIINSLNYFGIK Y+IKDKVGIW+KV K EFAKIAAIGVRVRKWVTYHG+AINISTDL KF+GIIPCGLE+SLVTSLNQLGI+VEMSEFDKIIQTEFNKIFK</pattern>
+      <matchSeq start="1" end="209">MIRFITIPDFADYQVTLKLMEDYVNKVISDHKPEIIYLVEHSEVYTAGTNYKQEELLNYGDIPVIYTGRGGKFTFHGPGQRVIYPILNLASPNRHKDLKLYIKMLEEWIINSLNYFGIKAYIIKDKVGIWVKVRKDEFAKIAAIGVRVRKWVTYHGVAINISTDLSKFSGIIPCGLENSLVTSLNQLGIHVEMSEFDKIIQTEFNKIFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="3" database="UR90" id="UniRef90_A8F0A0" ac="UniRef90_A8F0A0" length="209" description="Octanoyltransferase n=4 Tax=Rickettsia TaxID=780 RepID=LIPB_RICCK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>984</score>
+      <bits>383.6</bits>
+      <expectation>3.8e-134</expectation>
+      <identity>88.5</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M++F+T+ NL DYQVTLKLM++YVNKVIN NEPEIVYLVEHSEVYTAGTNYKQEELLNY DIPVIYTGRGGKFTFHGPGQRVIYPILNLA PNR KDLKLYIKMLEEWIINSLNYFGIK YLIKDKVGIW+KV K EFAKIAAIG+RVRKWVTYHG+AINISTDL KF GIIPCGLE+SLVTSLNQLG+++EMSEFDKIIQTEFNKIF</pattern>
+      <matchSeq start="1" end="208">MVQFVTIPNLTDYQVTLKLMQNYVNKVINVNEPEIVYLVEHSEVYTAGTNYKQEELLNYSDIPVIYTGRGGKFTFHGPGQRVIYPILNLASPNRSKDLKLYIKMLEEWIINSLNYFGIKAYLIKDKVGIWVKVRKDEFAKIAAIGIRVRKWVTYHGVAINISTDLSKFGGIIPCGLENSLVTSLNQLGVHIEMSEFDKIIQTEFNKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="4" database="UR90" id="UniRef90_UPI0031331694" ac="UniRef90_UPI0031331694" length="209" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Rickettsia endosymbiont of Cantharis rufa TaxID=3066248 RepID=UPI0031331694">
+    <alignments total="1">
+     <alignment number="1">
+      <score>979</score>
+      <bits>381.7</bits>
+      <expectation>2.2e-133</expectation>
+      <identity>88.5</identity>
+      <positives>94.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</querySeq>
+      <pattern>M +FIT+ +L DYQVTLKLMEDYVNKVIN NEPEIVYL+EHSEVYTAGTNYKQEELLNY DIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIK Y+IK+KVGIW+KV K +FAKIAAIGVRVR+WVTYHGIAINISTDL KF GIIPCGLE+SLVTSLN+LGIY+EM EFDKIIQTEF+KIFK</pattern>
+      <matchSeq start="1" end="209">MAQFITIPDLTDYQVTLKLMEDYVNKVINANEPEIVYLLEHSEVYTAGTNYKQEELLNYGDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKTYIIKNKVGIWVKVRKDKFAKIAAIGVRVRRWVTYHGIAINISTDLSKFGGIIPCGLENSLVTSLNKLGIYIEMPEFDKIIQTEFSKIFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="5" database="UR90" id="UniRef90_UPI00050A151F" ac="UniRef90_UPI00050A151F" length="209" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Rickettsia tamurae TaxID=334545 RepID=UPI00050A151F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>966</score>
+      <bits>376.7</bits>
+      <expectation>2.1e-131</expectation>
+      <identity>87.1</identity>
+      <positives>93.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</querySeq>
+      <pattern>M++FIT+  L DY VTLKLMED+VNKVIN NE EIVYLVEHSEVYTAGTNY  EE+L++ DIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIK Y+IKDKVGIW+KV K EFAKIAAIGVRVRKWVTYHG+AINISTDL KF+GIIPCGLE+SLVTSLNQLGI++EMSEFDKIIQTEFNKIFK</pattern>
+      <matchSeq start="1" end="209">MVQFITIPCLTDYSVTLKLMEDHVNKVINTNESEIVYLVEHSEVYTAGTNYNSEEVLDFGDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKAYIIKDKVGIWVKVRKDEFAKIAAIGVRVRKWVTYHGVAINISTDLSKFSGIIPCGLENSLVTSLNQLGIHIEMSEFDKIIQTEFNKIFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="6" database="UR90" id="UniRef90_A0A0B7J3R2" ac="UniRef90_A0A0B7J3R2" length="209" description="Octanoyltransferase n=1 Tax=Rickettsia monacensis TaxID=109232 RepID=A0A0B7J3R2_9RICK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>959</score>
+      <bits>374.0</bits>
+      <expectation>2.5e-130</expectation>
+      <identity>86.1</identity>
+      <positives>93.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</querySeq>
+      <pattern>M++FI +  L DY VTLKLMED+VNKVI+ NEPEIVYLVEHSEVYTAGTNY  EE+L++ DIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLE+WIINSLNYFGIK Y+IKDKVGIW+KV K EFAKIAAIGVRVRKWVTYHG+AINISTDL KF+GIIPCGLE+SLVTSLNQLGI++EMSEFDKIIQTEFNKIFK</pattern>
+      <matchSeq start="1" end="209">MVQFIIIPCLTDYSVTLKLMEDHVNKVIDTNEPEIVYLVEHSEVYTAGTNYNSEEVLDFGDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEKWIINSLNYFGIKAYIIKDKVGIWVKVRKDEFAKIAAIGVRVRKWVTYHGVAINISTDLSKFSGIIPCGLENSLVTSLNQLGIHIEMSEFDKIIQTEFNKIFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="7" database="UR90" id="UniRef90_Q1RKI1" ac="UniRef90_Q1RKI1" length="209" description="Octanoyltransferase n=9 Tax=Rickettsia TaxID=780 RepID=LIPB_RICBR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>871</score>
+      <bits>340.1</bits>
+      <expectation>6.4e-117</expectation>
+      <identity>78.5</identity>
+      <positives>89.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</querySeq>
+      <pattern>M++FIT+   +DYQ +L LMEDYVNKVI+   PE VYLVEH +VYTAGTNYKQEELLN+++IPVIYTGRGGKFTFHG GQRVIYPILNLALPNR KDLKLY++MLEEWIINSL+ FGIK Y+IK+KVGIW+K N    +KIAAIGVRVRKWVTYHGIAINISTDL KFNGIIPCGLE+SLVTSLNQLG+Y+EM+EFDKI++ EF KIFK</pattern>
+      <matchSeq start="1" end="209">MVQFITIPTPIDYQDSLMLMEDYVNKVIDGEAPEAVYLVEHLDVYTAGTNYKQEELLNHNNIPVIYTGRGGKFTFHGAGQRVIYPILNLALPNRTKDLKLYVRMLEEWIINSLDIFGIKAYIIKNKVGIWVKTNDDIPSKIAAIGVRVRKWVTYHGIAINISTDLSKFNGIIPCGLENSLVTSLNQLGVYIEMTEFDKILEVEFIKIFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="8" database="UR90" id="UniRef90_UPI003132B90D" ac="UniRef90_UPI003132B90D" length="222" description="lipoyl(octanoyl) transferase LipB n=2 Tax=unclassified Rickettsia TaxID=114295 RepID=UPI003132B90D">
+    <alignments total="1">
+     <alignment number="1">
+      <score>801</score>
+      <bits>313.2</bits>
+      <expectation>4.6e-106</expectation>
+      <identity>72.9</identity>
+      <positives>85.5</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="208">IRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>++FITL  L +Y+ TL LME++V+ VIN++  E VYLVEHSEVYTAGT+Y+Q ELLN D+IPVIYTGRGGKFTFHG GQR+IYPILNLA PNR KDLKLYIKMLEEW+INSL   GIK Y+I DKVGIW+K    +FAKIAAIGVRV+KWVTYHGIAINISTDL KF GIIPCGL  SLVTSL Q+G+ ++M++FDKI+QTEF K+F</pattern>
+      <matchSeq start="15" end="221">VQFITLPGLSNYRNTLNLMEEHVSGVINNSLAETVYLVEHSEVYTAGTSYRQNELLNPDNIPVIYTGRGGKFTFHGEGQRIIYPILNLAAPNRTKDLKLYIKMLEEWLINSLLCLGIKAYIISDKVGIWVKDKNNDFAKIAAIGVRVKKWVTYHGIAINISTDLDKFTGIIPCGLTDSLVTSLTQIGVNIKMNQFDKILQTEFKKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="9" database="UR90" id="UniRef90_UPI003BB1B4FC" ac="UniRef90_UPI003BB1B4FC" length="208" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Rickettsia endosymbiont of Halotydeus destructor TaxID=2996754 RepID=UPI003BB1B4FC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>775</score>
+      <bits>303.1</bits>
+      <expectation>2.6e-102</expectation>
+      <identity>70.7</identity>
+      <positives>85.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M++FIT+  L +Y  TLKLME++VN +I+ ++ E ++ VEHSEVYTAGT+Y+Q ELLN ++IPVIYTGRGGKFTFHG GQRVIYPILNLA  NR KDLKLYIKMLEEWIINSL Y GIK Y+I DKVGIW+K  K + AKIAAIGVRV+KWVTYHG+A+NISTDL KFNGIIPCGL +S VTSL+QLG+ ++M++FDKII+ EF K+F</pattern>
+      <matchSeq start="1" end="207">MVQFITIPGLSNYLDTLKLMEEHVNGIIDGSKTETIFFVEHSEVYTAGTSYRQNELLNPNNIPVIYTGRGGKFTFHGKGQRVIYPILNLASINRTKDLKLYIKMLEEWIINSLLYLGIKAYIISDKVGIWVK-EKNKPAKIAAIGVRVKKWVTYHGVAVNISTDLDKFNGIIPCGLMNSAVTSLSQLGVNIDMNQFDKIIEIEFKKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="10" database="UR90" id="UniRef90_UPI00292DCD31" ac="UniRef90_UPI00292DCD31" length="208" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Candidatus Trichorickettsia mobilis TaxID=1346319 RepID=UPI00292DCD31">
+    <alignments total="1">
+     <alignment number="1">
+      <score>670</score>
+      <bits>262.7</bits>
+      <expectation>2.4e-86</expectation>
+      <identity>61.8</identity>
+      <positives>77.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKI</querySeq>
+      <pattern>M+++ITL    DYQ T+KLMED V  VI+    E +YL+EH+EVYTAG+ +K  ELLN + IPV+YTGRGGKFT+HG GQR+IYP+LNL++  R KDLKLYI+MLE WIIN L    I+ + I DKVGIW++   G+ AKIAAIG+RVRKWVTYHGIA+NISTDL KF+GIIPCG+    V SL+ LG+ V + +FD I+Q EFNKI</pattern>
+      <matchSeq start="1" end="206">MVQWITLPGTSDYQQTIKLMEDTVASVISGAGFETIYLLEHNEVYTAGSGFKANELLNSNGIPVVYTGRGGKFTYHGKGQRIIYPVLNLSIARRSKDLKLYIRMLESWIINVLKQIDIEAFTIYDKVGIWVRY-LGQEAKIAAIGIRVRKWVTYHGIAVNISTDLRKFSGIIPCGIAGGHVLSLSALGVSVTLDQFDYILQQEFNKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="11" database="UR90" id="UniRef90_A0ABZ0UWE9" ac="UniRef90_A0ABZ0UWE9" length="221" description="Octanoyltransferase n=2 Tax=Candidatus Trichorickettsia mobilis TaxID=1346319 RepID=A0ABZ0UWE9_9RICK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>671</score>
+      <bits>263.1</bits>
+      <expectation>2.7e-86</expectation>
+      <identity>60.9</identity>
+      <positives>78.3</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKI</querySeq>
+      <pattern>M+++ITL  + DYQ T++LMED V  VI+    E +YL+EH+EVYTAG+++K  ELLN ++IPV+YTGRGGKFT+HG GQR+IYP+LNL++  R KDLKLYI MLE WIIN L    I+ + I +KVGIW++ + G+ AKIAAIG+RVRKWVTYHGIA+NISTDL KF+GIIPCG+E     SL+ LG  V + +FD I+Q EFNKI</pattern>
+      <matchSeq start="14" end="219">MVQWITLPGISDYQQTIELMEDTVASVISGTVDETIYLLEHNEVYTAGSSFKVNELLNSNEIPVVYTGRGGKFTYHGKGQRIIYPVLNLSIARRSKDLKLYIHMLENWIINVLRQIDIEAFTIHNKVGIWVR-HLGQEAKIAAIGIRVRKWVTYHGIAVNISTDLKKFSGIIPCGIEGGQTVSLSALGASVTLQQFDCILQQEFNKI</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="12" database="UR90" id="UniRef90_UPI00312C777A" ac="UniRef90_UPI00312C777A" length="210" description="lipoyl(octanoyl) transferase LipB n=9 Tax=unclassified Candidatus Tisiphia TaxID=2996318 RepID=UPI00312C777A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>669</score>
+      <bits>262.3</bits>
+      <expectation>3.7e-86</expectation>
+      <identity>60.9</identity>
+      <positives>78.7</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="207">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKI</querySeq>
+      <pattern>M++F+TL    +Y+ T+KLMED V  +IN +  EIVYLVE+ ++YTAGT++K  ELLN  DIPVIYTGRGGKFT+HG GQRVIYP+L+LA   R KDLKLYIK+LEEWIINSL YFGIK + I   VGIW+K  KG  AKIA+IG+RV+KWVTYHG+A+NIST+L  F+GI+ CGL+   VTSL +LG+ V   +FD++I+ +F ++</pattern>
+      <matchSeq start="1" end="206">MVQFVTLSGFSEYEDTVKLMEDKVTSLINKSSQEIVYLVEYKDIYTAGTSFKANELLNPRDIPVIYTGRGGKFTYHGSGQRVIYPLLDLASERRQKDLKLYIKLLEEWIINSLLYFGIKAFTISGIVGIWVK-EKGVPAKIASIGIRVKKWVTYHGVAVNISTNLDMFSGIVACGLKDMPVTSLKKLGVDVTFEQFDEVIKDKFFEV</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="13" database="UR90" id="UniRef90_UPI003CCB703B" ac="UniRef90_UPI003CCB703B" length="214" description="lipoyl(octanoyl) transferase LipB n=11 Tax=Rickettsieae TaxID=33988 RepID=UPI003CCB703B">
+    <alignments total="1">
+     <alignment number="1">
+      <score>642</score>
+      <bits>251.9</bits>
+      <expectation>5.4e-82</expectation>
+      <identity>59.6</identity>
+      <positives>76.9</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M++F TL  L +Y+ T+KLMED V  +IN +  E+VYLVE+ ++YTAGT++K  ELL+  DIPVIYT RGGKFT+HG GQRVIYPIL+LA     KDL+LYIK+LEEW+INSL Y GIK + I   VGIW K N G  AKIA+IGVRVRKW+TYHGIA+NIST+L  F+GII CGL    VTSL +LG+ + + +FD++I+ +F ++F</pattern>
+      <matchSeq start="1" end="207">MVQFFTLPGLSEYEDTVKLMEDKVASLINKSSKEVVYLVEYKDIYTAGTSFKANELLDPGDIPVIYTNRGGKFTYHGSGQRVIYPILDLASEWGQKDLRLYIKLLEEWVINSLLYLGIKAFTINGMVGIWGKEN-GVPAKIASIGVRVRKWITYHGIAVNISTNLDMFSGIIACGLRDMPVTSLKKLGVDITLEQFDEVIKDKFFEVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="14" database="UR90" id="UniRef90_UPI00312CAFCA" ac="UniRef90_UPI00312CAFCA" length="207" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Candidatus Tisiphia endosymbiont of Beris chalybata TaxID=3066262 RepID=UPI00312CAFCA">
+    <alignments total="1">
+     <alignment number="1">
+      <score>639</score>
+      <bits>250.8</bits>
+      <expectation>1.2e-81</expectation>
+      <identity>58.7</identity>
+      <positives>79.6</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="206">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNK</querySeq>
+      <pattern>M++FITL +  +Y+ T+KLME  VN+VIN     +VYLVE+ EVYTAGT++K+EELL+  DI VIYTGRGG FT+HG GQRVIYPIL+L+     KDLKLYI++LE+WII+SL ++GIK + +++K+G+W+K N G  AKIA+IGVRV+KWV YHGIA+NIST+L  F GII CGL+   +TSL +LG+ V +++FD++I+  FNK</pattern>
+      <matchSeq start="1" end="205">MVQFITLPDFSEYEDTIKLMEFKVNQVINKLLEGVVYLVEYKEVYTAGTSFKEEELLDPRDIAVIYTGRGGGFTYHGKGQRVIYPILDLSSQRCQKDLKLYIRLLEQWIISSLLHYGIKAFTVENKIGVWVKEN-GSPAKIASIGVRVKKWVAYHGIAVNISTNLKNFEGIIACGLKGLPITSLKKLGVDVTLAQFDQVIEDNFNK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="15" database="UR90" id="UniRef90_UPI0035C8F191" ac="UniRef90_UPI0035C8F191" length="207" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Candidatus Tisiphia endosymbiont of Nemotelus uliginosus TaxID=3077926 RepID=UPI0035C8F191">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <bits>246.9</bits>
+      <expectation>4e-80</expectation>
+      <identity>57.8</identity>
+      <positives>79.1</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="206">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNK</querySeq>
+      <pattern>M++F TL  L  Y+ T+KLMED V+++IN     +VYLVE+ ++YTAGT++K+EELLN  +IPVIYTGRGG FT+HG GQRVIYPIL+L+     KDLKLYI++LEEWII+SL+++G+K + I++KVGIW++ N G  AKIA+IGVRV+KWV YHGIA+NI  +L KF+GII CGL+   +TSL +LG+ V + +FD++I+  F K</pattern>
+      <matchSeq start="1" end="205">MVQFTTLSGLSQYEDTVKLMEDKVHQIINKLIEGMVYLVEYQDIYTAGTSFKEEELLNSREIPVIYTGRGGGFTYHGWGQRVIYPILDLSAQKCQKDLKLYIRLLEEWIISSLSHYGVKAFTIENKVGIWVEEN-GSPAKIASIGVRVKKWVAYHGIAVNIYPNLEKFDGIIACGLKELPITSLKKLGVDVTLEQFDQVIENNFCK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="16" database="UR90" id="UniRef90_UPI00249E6826" ac="UniRef90_UPI00249E6826" length="208" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Candidatus Megaera polyxenophila TaxID=988779 RepID=UPI00249E6826">
+    <alignments total="1">
+     <alignment number="1">
+      <score>629</score>
+      <bits>246.9</bits>
+      <expectation>4.2e-80</expectation>
+      <identity>55.8</identity>
+      <positives>76.0</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ +ITL  L+DYQ  +K+MED +++VIN  +P+ ++L+EH EVYTAGT++  EELL  D  PVIYTGRGGKFT+HGPGQR+IYPI+NL   ++ KDLKLYI  LE+WII +L    +  + I+ KVGIW+K +K   +KI AIG+RVRKWVTYHGIA+NIS +L  ++GIIPCG+    +TSL  +GI + M+EFD I++ +F +IF</pattern>
+      <matchSeq start="1" end="208">MVEWITLPGLVDYQEGIKIMEDQLDRVINSMQPDTIFLLEHKEVYTAGTSHNVEELLKPDLFPVIYTGRGGKFTYHGPGQRIIYPIINLNNTDKVKDLKLYITQLEKWIILTLAELAVHAFTIQGKVGIWVKNSKNIESKIGAIGIRVRKWVTYHGIAVNISPNLDNYSGIIPCGINDFPITSLEDMGINISMTEFDIILKKKFIEIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="17" database="UR90" id="UniRef90_A0ABU5NBW4" ac="UniRef90_A0ABU5NBW4" length="210" description="Octanoyltransferase n=1 Tax=Candidatus Megaera venefica TaxID=2055910 RepID=A0ABU5NBW4_9RICK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>619</score>
+      <bits>243.0</bits>
+      <expectation>1.5e-78</expectation>
+      <identity>55.3</identity>
+      <positives>76.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="208">IRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLN-YDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>I +I+L  L+DY   L LM+   N VI + + E V+L+EH +VYTAGT+YK +ELL+  ++IPVIYTGRGGKFT+HGPGQRVIYPILNLA  NR  DLKLYI +LE+WIIN+L+   +  Y I  ++GIW+ ++    AKI AIGVR++KW+TYHGIA+N++TD+ +++GIIPCG+    VTSL  +GI + MS+FD +++ EF K+F</pattern>
+      <matchSeq start="4" end="210">IDWISLPGLIDYNTGLDLMQQRTNDVILNKKKEAVFLLEHQDVYTAGTSYKDDELLSDSNNIPVIYTGRGGKFTYHGPGQRVIYPILNLAGKNRSPDLKLYISLLEQWIINTLDKLDVNAYTIDGRIGIWVNLDNAP-AKIGAIGVRIKKWITYHGIAVNLNTDISRYSGIIPCGINDFPVTSLINIGIEITMSDFDYLLKKEFEKLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="18" database="UR90" id="UniRef90_A0A0F3NQD4" ac="UniRef90_A0A0F3NQD4" length="210" description="Octanoyltransferase n=1 Tax=Candidatus Neoehrlichia procyonis str. RAC413 TaxID=1359163 RepID=A0A0F3NQD4_9RICK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>526</score>
+      <bits>207.2</bits>
+      <expectation>1.9e-64</expectation>
+      <identity>48.0</identity>
+      <positives>71.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="208">MDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>+ Y+  L  M + V  +   N+PE+++L+EH  +YTAGT+ K++ELL  D  PV+YT RGGK+++HGPGQRVIY +L+L   N+  D+KLY+  L  WI+N+L+YF I+ Y   +++G+W++ +  +  KIAA G+RV KWVTYHGI++NI TDL  + GIIPCG+ +  VTS+  LGI +  +EFDK+++ EF K+F</pattern>
+      <matchSeq start="14" end="210">VQYEEALNFMINRVKDIAKGNKPELIWLLEHPAMYTAGTSAKKDELLIEDLFPVVYTTRGGKYSYHGPGQRVIYVMLDLKRRNQC-DIKLYVANLGRWIVNTLSYFSIESYFNNERIGVWVRGSNCKEDKIAAFGIRVHKWVTYHGISVNIYTDLSHYYGIIPCGITNYGVTSIQNLGIKLSYAEFDKVLKEEFYKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="19" database="UR90" id="UniRef90_UPI001893738F" ac="UniRef90_UPI001893738F" length="213" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Rickettsia endosymbiont of Cardiosporidium cionae TaxID=2777155 RepID=UPI001893738F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>524</score>
+      <bits>206.5</bits>
+      <expectation>4.3e-64</expectation>
+      <identity>47.1</identity>
+      <positives>70.0</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAG--TNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>MI ++  Q+   YQ  + LME YV K+I+ N  + +YL+EH ++YT G  +N K+EE++N  +  VI T RGGK T+HGPGQR+IY I+NL      +DLK Y+ M+E+W+IN+L  + +  Y +++ +GIW K  K   +K+A IG+RVRKWV YHGIA+NI+TDL KF+ IIPCG+++  +TSL +L I    ++FD+I++ EF K+F</pattern>
+      <matchSeq start="1" end="209">MIDWVHFQSPQKYQEIILLMEQYVEKIISKNCNDSIYLLEHEDIYTIGRGSNNKEEEIVNNSNTAVIKTNRGGKVTYHGPGQRIIYTIINLDNEYYKRDLKYYLYMIEKWMINTLYNYDVISYRLENHIGIWTKY-KNRHSKLAFIGLRVRKWVVYHGIAVNINTDLTKFDQIIPCGMKNLSITSLQELNISTTTTKFDRILKAEFYKLF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="20" database="UR90" id="UniRef90_A0A0F3MNQ2" ac="UniRef90_A0A0F3MNQ2" length="209" description="Octanoyltransferase n=1 Tax=Orientia chuto str. Dubai TaxID=1359168 RepID=A0A0F3MNQ2_9RICK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>523</score>
+      <bits>206.1</bits>
+      <expectation>5.3e-64</expectation>
+      <identity>46.2</identity>
+      <positives>69.5</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="209">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQ-LGIYVEMSEFDKIIQTEFNKIFK</querySeq>
+      <pattern>MI +I +++ ++Y    K+M+  +  ++N +  E V+++EH +VYTAG ++K +ELLN  DIPV YT RGGKFT+HGPGQ +IYPI+NL+   R KD++ Y+  L   +INSL +F I G  +KD +G+W+   K    KIA+IGVR+ +WVTYHG+AIN+ +DL KF GIIPCG  ++ +TS+ + L   V++  +  I++ EF KIF+</pattern>
+      <matchSeq start="1" end="209">MIEWIEIEHPIEYSEAYKMMKARLTAILNGSASEAVFVLEHQDVYTAGISFKPDELLNNSDIPVYYTDRGGKFTYHGPGQVIIYPIINLSANGRLKDIRNYVNNLSLLVINSLKFFNITGITVKDAIGVWVN-GKFGIQKIASIGVRIHRWVTYHGVAINVCSDLKKFKGIIPCGDYNASITSIRELLNQKVDLDYYKAILRQEFYKIFE</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="21" database="UR90" id="UniRef90_A0A9Q9BUU3" ac="UniRef90_A0A9Q9BUU3" length="203" description="Octanoyltransferase n=1 Tax=Neoehrlichia mikurensis TaxID=89586 RepID=A0A9Q9BUU3_9RICK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>522</score>
+      <bits>205.7</bits>
+      <expectation>6.2e-64</expectation>
+      <identity>49.0</identity>
+      <positives>69.8</positives>
+      <gaps>0</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="7" end="208">LQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>L   + Y+  L  M + V+ +I  N+PE+++L+EH E YTAGT+ K++ELL     PVIYT RGGK+++HGPGQR+IY +L+L   N+  D+KLY+K L  WI+N+L  F IK Y   +++G+W+  +  +  KIAA G+RVRKWVTYHGI++NI TDL  + GIIPCG+ +  +TS+  LGI +   EFD I++ EF KIF</pattern>
+      <matchSeq start="2" end="202">LSGSIQYEEALDFMMNRVDSIIKGNDPELIWLLEHPESYTAGTSAKKDELLLEGLFPVIYTTRGGKYSYHGPGQRIIYVMLDLKRRNQC-DIKLYVKNLGTWIVNTLANFSIKSYFNNERIGVWVCSDDDKEDKIAAFGIRVRKWVTYHGISVNIYTDLSHYCGIIPCGITNYGITSVQNLGIELSYEEFDVILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="22" database="UR90" id="UniRef90_A5CEL3" ac="UniRef90_A5CEL3" length="208" description="Octanoyltransferase n=22 Tax=Orientia tsutsugamushi TaxID=784 RepID=LIPB_ORITB">
+    <alignments total="1">
+     <alignment number="1">
+      <score>517</score>
+      <bits>203.8</bits>
+      <expectation>4.2e-63</expectation>
+      <identity>46.4</identity>
+      <positives>67.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQ-LGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ +I +Q  ++Y    K+M+  +  ++N    E V+++EH +VYTAG + K +ELLN  DIPV +T RGGKFT+HGPGQ +IYP++NLA   R KD++ Y+  L   +INSL +F I G  ++D +G+WI    G   KIA+IGVR+ KW+TYHG+AIN+  DL KF GIIPCG   ++VTS+N+ L   +++  +  I++ EF KIF</pattern>
+      <matchSeq start="1" end="208">MVEWIEIQYPIEYSEAYKMMKSRLTGILNGTASEAVFILEHQDVYTAGISAKNDELLNCYDIPVHHTDRGGKFTYHGPGQIIIYPVINLAANGRVKDIRNYVNNLASLVINSLKFFNIIGITVQDTIGVWIDSEFGR-KKIASIGVRIHKWITYHGVAINVCPDLKKFKGIIPCGDRDTIVTSINELLDQKIDLDYYKAILKQEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="23" database="UR90" id="UniRef90_UPI001588E120" ac="UniRef90_UPI001588E120" length="205" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont of Dipetalonema caudispina TaxID=1812112 RepID=UPI001588E120">
+    <alignments total="1">
+     <alignment number="1">
+      <score>515</score>
+      <bits>203.0</bits>
+      <expectation>7.7e-63</expectation>
+      <identity>47.1</identity>
+      <positives>69.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>MI ++    L++Y+  +K ME  + K+ N+   E+++L++H  +YTAG +   +E++     PV  T RGGK+T+HGPGQR+IY +LNL   N+  D+KLYIK L +WIIN L +F I G   +DK+GIW+  N G   KIAA G+R+RKW+TYHGIA+N+S +L  + GIIPCGL+   +TS+ +LGI V+M+E D I++ EF K+F</pattern>
+      <matchSeq start="1" end="205">MIEWLICDQLIEYKCAIKFMETKIQKIYNNLSNELIWLLQHPSIYTAGISATNDEIIK-KLFPVHKTNRGGKYTYHGPGQRIIYLMLNLKKRNKC-DIKLYIKDLSKWIINVLKHFNIVGKFKEDKIGIWVN-NNGVEEKIAAFGIRLRKWITYHGIALNVSPNLSHYKGIIPCGLKDYGITSMEKLGIKVQMTELDLILKKEFYKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="24" database="UR90" id="UniRef90_UPI00165F6D12" ac="UniRef90_UPI00165F6D12" length="205" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont of Pentalonia nigronervosa TaxID=1301914 RepID=UPI00165F6D12">
+    <alignments total="1">
+     <alignment number="1">
+      <score>507</score>
+      <bits>199.9</bits>
+      <expectation>1.2e-61</expectation>
+      <identity>47.6</identity>
+      <positives>67.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++    L+DY   +K ME+ +  + +  E E+V+L+EH  +YTAG +    E++     P+  TGRGGK+T+HGPGQRV+Y +LNL   NR  D++LY++ L  WIIN L +FGI G   +D+VGIW+  N G   KIAA G+R+RKWVTYHGIAIN+S DL  + GIIPCGL+   VTS+ +L + +  SE D I++ EF +IF</pattern>
+      <matchSeq start="1" end="205">MVEWLISNQLVDYNDAVKFMEERIKLIHDGLENELVWLLEHPPLYTAGISATDAEIIE-KLFPIYKTGRGGKYTYHGPGQRVVYLMLNLKKRNRC-DIRLYVENLSNWIINVLKHFGIAGEYKRDRVGIWVS-NNGREEKIAAFGIRLRKWVTYHGIAINVSPDLAHYRGIIPCGLQGYGVTSMKKLRVEISFSELDDILKQEFYEIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="25" database="UR90" id="UniRef90_UPI00158E31B7" ac="UniRef90_UPI00158E31B7" length="205" description="lipoyl(octanoyl) transferase LipB n=2 Tax=unclassified Wolbachia TaxID=2640676 RepID=UPI00158E31B7">
+    <alignments total="1">
+     <alignment number="1">
+      <score>506</score>
+      <bits>199.5</bits>
+      <expectation>1.8e-61</expectation>
+      <identity>46.6</identity>
+      <positives>68.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++    L+DY+  +K ME  V ++ N+   E+V+L++H  +YTAG +   +E++  +  P+  T RGGK+T+HGPGQR+IY +LNL   N+  D+KLYI+ +  WIIN L YF I G   +D++G+W+  N G   KIAA G+R+RKWVTYHGIA+N+S DL  + GIIPCGL+   VTS+ +LG+   +SE D I++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MVEWLISNQLIDYKYAVKFMEAKVQEIYNNLSDELVWLLQHPSLYTAGISATDDEIVE-ELFPIHKTSRGGKYTYHGPGQRIIYLMLNLKKRNKC-DIKLYIRDISNWIINVLMYFNIFGKFKEDRIGVWV-TNTGVEEKIAAFGIRLRKWVTYHGIALNVSLDLSHYKGIIPCGLKDYGVTSMKELGVEAPLSELDDILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="26" database="UR90" id="UniRef90_T1H9N8" ac="UniRef90_T1H9N8" length="205" description="Octanoyl-[acyl-carrier-protein]:protein N-octanoyltransferase LIPT2, mitochondrial n=7 Tax=cellular organisms TaxID=131567 RepID=T1H9N8_RHOPR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>506</score>
+      <bits>199.5</bits>
+      <expectation>1.8e-61</expectation>
+      <identity>47.1</identity>
+      <positives>67.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M++++    L+DY   +K ME  + ++ +    E+V+L++H  +YTAG     ++++     PV  TGRGGK+T+HGPGQR+IY +LNL   N+  D+KLYI+ L  WIIN L YF I G   +D++GIW+  N G   KIAA G+RVRKW+TYHGIA+N+S DL  + GIIPCGL+   VTS+ +L + V +SE D I++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MVKWLISNQLIDYNHAVKFMEAKIQRIYDSLSDELVWLLQHPPLYTAGIRATDDDIVE-KLFPVYKTGRGGKYTYHGPGQRIIYLMLNLKKRNKC-DVKLYIRDLSNWIINVLKYFNITGEFKEDRIGIWVN-NNGVEEKIAAFGIRVRKWITYHGIALNVSPDLSHYRGIIPCGLKDYGVTSMKELEVEVSLSELDDILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="27" database="UR90" id="UniRef90_UPI0034E2B3B1" ac="UniRef90_UPI0034E2B3B1" length="214" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont of Atemnus politus TaxID=2682840 RepID=UPI0034E2B3B1">
+    <alignments total="1">
+     <alignment number="1">
+      <score>503</score>
+      <bits>198.4</bits>
+      <expectation>6.7e-61</expectation>
+      <identity>47.6</identity>
+      <positives>67.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++    L+DY   +K ME  + K+ N+   E+V+L++H  +YTAG +   +E++     PV  TGRGGK+T+HGPGQR+IY +LNL   N+  D+KLYI+ L  W IN L +F I G   +D++GIW+  N G   KIAA G+R+RKWVTYHGIA+N+S DL  + GIIPCGL+   VTS+ +LG+   +SE D I++ EF KIF</pattern>
+      <matchSeq start="10" end="214">MVEWLISDQLIDYTHAVKFMEVKIQKIYNNLSDELVWLLQHPSLYTAGISATDDEVVE-KLFPVHKTGRGGKYTYHGPGQRIIYLMLNLKKRNKC-DIKLYIRDLGNWTINVLRHFNILGEFKEDRIGIWVN-NNGVEKKIAAFGIRLRKWVTYHGIALNVSPDLSHYKGIIPCGLKDYGVTSMKELGVEASLSELDDILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="28" database="UR90" id="UniRef90_UPI00158F587F" ac="UniRef90_UPI00158F587F" length="205" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont of Cruorifilaria tuberocauda TaxID=1812111 RepID=UPI00158F587F">
+    <alignments total="1">
+     <alignment number="1">
+      <score>501</score>
+      <bits>197.6</bits>
+      <expectation>1e-60</expectation>
+      <identity>45.2</identity>
+      <positives>69.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++    ++DY+  +K ME  + ++ N+   E+V+L++H  +YTAG + K +E++  +  PV  T RGGK+T+HGPGQR+IY +LNL   ++  +++LYI+ L  WIIN L +F I G   +DK+GIW+  N G   KIAA G+R++KWVTYHG+A+N+S DL  +NGIIPCGL+   VTS+ +LG+ V + E D I++ EF K+F</pattern>
+      <matchSeq start="1" end="205">MVEWLIPDRIIDYKYAVKFMEVKIQEIYNNLSDELVWLIQHPSLYTAGISAKDDEIVE-ELFPVYKTSRGGKYTYHGPGQRIIYLMLNLKKRDKC-NIRLYIRELSNWIINVLRHFNILGKFKEDKIGIWVNDN-GVEKKIAAFGIRLKKWVTYHGVALNVSPDLSHYNGIIPCGLKDYGVTSMKELGVEVLLDELDDILKKEFYKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="29" database="UR90" id="UniRef90_A0ACG3PLB9" ac="UniRef90_A0ACG3PLB9" length="208" description="Lipoyl(Octanoyl) transferase LipB n=1 Tax=Anaplasma bovis TaxID=186733 RepID=A0ACG3PLB9_9RICK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>501</score>
+      <bits>197.6</bits>
+      <expectation>1.1e-60</expectation>
+      <identity>44.4</identity>
+      <positives>68.1</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="208">IRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>+ ++    L DY+  +  M D V  ++   + E+V+L+EH  +YTAGT+ K E+LL  D  PVI T RGGK+++HGPGQRVIY +L+L    R  D++ Y++ L EWI N+L  F ++ Y  +D++G+W+  + G+  KIAA G+R+ +WVTYHG+++NISTDL  ++GIIPCG+  + VTSL  LGI V   +FDK+++ +F + F</pattern>
+      <matchSeq start="3" end="207">VEWLVSDGLTDYEYAVNAMLDRVRGIVAGKKREMVWLLEHHPIYTAGTSAKPEDLLESDKFPVITTTRGGKYSYHGPGQRVIYVMLDLKKRGRC-DVRAYVRDLGEWIANTLKSFSVESYFSEDEIGVWVN-SCGQRKKIAAFGIRITRWVTYHGVSVNISTDLTHYSGIIPCGIVGAGVTSLKDLGITVSYEQFDKVLKNKFYETF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="30" database="UR90" id="UniRef90_UPI00376F21F8" ac="UniRef90_UPI00376F21F8" length="205" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont of Cantharis cryptica TaxID=3066132 RepID=UPI00376F21F8">
+    <alignments total="1">
+     <alignment number="1">
+      <score>500</score>
+      <bits>197.2</bits>
+      <expectation>1.4e-60</expectation>
+      <identity>46.6</identity>
+      <positives>66.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M  ++    L+DY   +K ME+ V ++ N++  E+V+L++H  +YTAGT    ++++     P+  TGRGGK T+HGPGQR+IY +LNL   N+  D+KLYI+ L  WIIN L +F I G   +D++GIW+  N G   KIAA G+R+RKWVTYHGIA+N+  DL  + GIIPCGL+   VTS+ +L +   +SE D I++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MTEWLISDQLIDYNYAVKFMEEKVRQIYNNSSDELVWLLQHPPLYTAGTGAADDDIVE-KLFPIYKTGRGGKHTYHGPGQRIIYLMLNLKKRNKC-DIKLYIRDLSNWIINVLKHFNILGEFKEDRIGIWVN-NNGVEEKIAAFGIRLRKWVTYHGIALNVFPDLSHYKGIIPCGLKDYGVTSMKELRVEASLSELDDILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="31" database="UR90" id="UniRef90_UPI0023D84283" ac="UniRef90_UPI0023D84283" length="205" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont of Onchocerca gibsoni TaxID=118986 RepID=UPI0023D84283">
+    <alignments total="1">
+     <alignment number="1">
+      <score>499</score>
+      <bits>196.8</bits>
+      <expectation>2e-60</expectation>
+      <identity>45.7</identity>
+      <positives>69.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M++++    L+DY+  ++ ME  V ++ N++  E+V+L++H  +YTAG +   +E++  +  PV  TGRGGK+T+HGPGQR+IY +LNL   N+  D+KLYI+ L  WII+ L +F I G   +D++G+W+  N G   KIAA G+R+RKWVTYHGIA+N+S DL  + GIIPCGL+   +TS+ +LG+   + E D I++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MVKWLIPDQLIDYKYAIEFMETKVQEIYNNSSDELVWLLQHPPLYTAGISAIDDEIVE-ELFPVHKTGRGGKYTYHGPGQRIIYLMLNLKKRNKC-DIKLYIRNLSNWIISVLRHFNIFGKFKEDRIGVWVTKN-GVEEKIAAFGIRLRKWVTYHGIALNVSPDLSHYKGIIPCGLKDYGITSMKKLGVEAPLPELDDILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="32" database="UR90" id="UniRef90_B3CLJ0" ac="UniRef90_B3CLJ0" length="205" description="Octanoyltransferase n=50 Tax=Wolbachia TaxID=953 RepID=LIPB_WOLPP">
+    <alignments total="1">
+     <alignment number="1">
+      <score>498</score>
+      <bits>196.4</bits>
+      <expectation>2.9e-60</expectation>
+      <identity>46.2</identity>
+      <positives>67.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M  ++      DY  ++K ME  + ++ N+   E+V+L++H  +YTAG     ++++     P+  TGRGGK+T+HGPGQR+IY +LNL   N+  D+KLYI+ L  WIIN L +F I G   +D++GIW+  NKG   KIAA G+R+RKWVTYHGIA+N+S +L  + GIIPCGL+   VTS+ +LG+ V + E D I++ EF+KIF</pattern>
+      <matchSeq start="1" end="205">MTEWLISNQFTDYNHSVKFMEAKIQQIYNNLSDELVWLLQHPPLYTAGIGATDDDIIE-KLFPIYKTGRGGKYTYHGPGQRIIYLMLNLKKRNKC-DIKLYIRDLSNWIINVLKHFNILGEFKEDRIGIWVN-NKGVEEKIAAFGIRLRKWVTYHGIALNVSPNLSHYEGIIPCGLKDYGVTSMEKLGVKVSLCELDDILKQEFHKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="33" database="UR90" id="UniRef90_UPI0025A4C274" ac="UniRef90_UPI0025A4C274" length="205" description="lipoyl(octanoyl) transferase LipB n=2 Tax=Wolbachia TaxID=953 RepID=UPI0025A4C274">
+    <alignments total="1">
+     <alignment number="1">
+      <score>497</score>
+      <bits>196.1</bits>
+      <expectation>4.1e-60</expectation>
+      <identity>45.7</identity>
+      <positives>67.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M  ++    L+DY   +K ME  + ++ N++  E+V+L++H  +YTAG +   +++   +  PV  TGRGGK+T+HGPGQR+IY +LNL   N+  D+KLYI+ L  WIIN L +F I G   +D++GIW+  N G   KIAA G+R+RKWVTYHGIA+N+S +L  + GI+PCGL+   VTS+ +L + V +SE D I++ EF +IF</pattern>
+      <matchSeq start="1" end="205">MTEWLISNQLIDYNYAVKFMEAKIQQIHNNSSDELVWLLQHPSLYTAGISATGDDIFE-ELFPVYKTGRGGKYTYHGPGQRIIYLMLNLKKRNKC-DIKLYIRNLSNWIINVLRHFNISGEFKEDRIGIWVN-NNGVEEKIAAFGIRLRKWVTYHGIALNVSPELSHYKGIVPCGLKEYGVTSMKKLEVEVSLSELDDILKKEFYEIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="34" database="UR90" id="UniRef90_Q73GE2" ac="UniRef90_Q73GE2" length="205" description="Octanoyltransferase n=66 Tax=cellular organisms TaxID=131567 RepID=LIPB_WOLPM">
+    <alignments total="1">
+     <alignment number="1">
+      <score>495</score>
+      <bits>195.3</bits>
+      <expectation>8.2e-60</expectation>
+      <identity>46.6</identity>
+      <positives>67.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M  ++    L+DY   +K ME+ + ++ N++  E+V+L++H  +YTAG +   ++++     P+  TGRGGK T+HGPGQR+IY +LNL   N+  D+KLYI+ L +WIIN L  F I G   +D++GIW+  N G   KIAA G+R+RKWVTYHGIA+N+  DL  + GIIPCGL+   VTS+ +LG+ V +SE D I++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MTEWLISNQLIDYNCAVKSMEEKIQQIHNNSADELVWLLQHPPLYTAGISATADDIVE-KLFPIYKTGRGGKHTYHGPGQRIIYLMLNLKKRNKC-DIKLYIRDLSKWIINVLKQFNILGEFREDRIGIWVNHN-GVEKKIAAFGIRLRKWVTYHGIALNVFPDLSHYKGIIPCGLQGYGVTSMEELGVKVPLSELDDILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="35" database="UR90" id="UniRef90_Q3YRI1" ac="UniRef90_Q3YRI1" length="214" description="Octanoyltransferase n=2 Tax=canis group TaxID=106178 RepID=LIPB_EHRCJ">
+    <alignments total="1">
+     <alignment number="1">
+      <score>495</score>
+      <bits>195.3</bits>
+      <expectation>1.1e-59</expectation>
+      <identity>46.5</identity>
+      <positives>69.7</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="208">MDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>+DYQ  +  M+  V+ + +  + E+V+L+EH  +YTAGT    E+LL  + +PV  T RGGK+T+HGPGQR+ Y +LNL   N+  +++LY+K L +WIIN+L++F IK Y   D +G+W+  N G   KIAA G+R+RKW+TYHG+++NI TDL  + GI+PCG++   VTS  QLG+ V   EFD +++ +FN+IF</pattern>
+      <matchSeq start="15" end="210">IDYQEAVYFMQRKVDSISDGLQKELVWLLEHPALYTAGTGATVEDLLASNLLPVYSTNRGGKYTYHGPGQRIAYVMLNLKTRNKC-NVRLYVKTLGDWIINTLSHFSIKSYFNPDLIGVWVTHN-GIEKKIAAFGIRIRKWITYHGVSVNIYTDLSHYLGIVPCGIKEYGVTSFKQLGVNVSYEEFDIVLEKKFNEIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="36" database="UR90" id="UniRef90_UPI000A761F61" ac="UniRef90_UPI000A761F61" length="205" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont of Folsomia candida TaxID=169402 RepID=UPI000A761F61">
+    <alignments total="1">
+     <alignment number="1">
+      <score>493</score>
+      <bits>194.5</bits>
+      <expectation>1.7e-59</expectation>
+      <identity>45.2</identity>
+      <positives>67.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++    L+DY   +K ME+ + ++ +    E+V+L+EH  +YTAG +   ++++     P+  TGRGGK T+HGPGQ +IY +LNL   N+  D+KLYI+ L +WIIN L YF I G   +D++G+W+  N G   KIAA G+R+RKWVTYHGIA+N+S DL  + GIIPCGL+   +TS+ +LG+ V +SE + +++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MVEWLVSNQLIDYNHAVKFMEEKIEQIQSGLADELVWLLEHPSLYTAGISATDDDIVE-KLFPIYKTGRGGKHTYHGPGQCIIYLMLNLKKRNKC-DIKLYIRNLSKWIINVLKYFNIFGEFKEDRIGVWVN-NGGVEKKIAAFGIRLRKWVTYHGIALNVSPDLSHYKGIIPCGLQDYGITSIEELGVKVSVSELNDVLKQEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="37" database="UR90" id="UniRef90_Q2GH92" ac="UniRef90_Q2GH92" length="214" description="Octanoyltransferase n=1 Tax=Ehrlichia chaffeensis (strain ATCC CRL-10679 / Arkansas) TaxID=205920 RepID=LIPB_EHRCR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>493</score>
+      <bits>194.5</bits>
+      <expectation>2.2e-59</expectation>
+      <identity>44.9</identity>
+      <positives>69.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="11" end="208">MDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>+DYQ  +  M+  +  + N  + E+V+L+EH  +YTAGT  K E+LL  +  PV  T RGGK+T+HGPGQR+ Y +LNL   N+  +++LY++ L  WI+ +L++F +K Y   D +G+W+  + G   KIAA G+R+RKWVTYHG++INI T+L  ++GI+PCG++   +TSL +LGI +   EFD ++Q +FN+IF</pattern>
+      <matchSeq start="15" end="210">IDYQEAICFMQQRIEDIYNGVQKELVWLLEHPPLYTAGTGAKVEDLLVDNLFPVYATNRGGKYTYHGPGQRIAYVMLNLKTRNKC-NIRLYVETLGNWIVETLSHFSVKSYFNPDLIGVWV-THGGTEKKIAAFGIRIRKWVTYHGVSINIDTNLSHYSGIVPCGIKDYGITSLRKLGINISYEEFDIVLQEKFNEIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="38" database="UR90" id="UniRef90_UPI0031DCA342" ac="UniRef90_UPI0031DCA342" length="230" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Carbonatibacter coralli TaxID=3141326 RepID=UPI0031DCA342">
+    <alignments total="1">
+     <alignment number="1">
+      <score>494</score>
+      <bits>194.9</bits>
+      <expectation>2.5e-59</expectation>
+      <identity>48.8</identity>
+      <positives>65.2</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="208">IRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>I +    +L+DY  +L+ ME+    +    E E V+L+EH  +YTAGT+ K+E+LL  D  PV   GRGG++T+HGPGQRV Y +L+L   +R KD++ Y+  LEEWII +L  F I+G   + +VGIWI    G   KIAAIGVRVRKWVT+HGIAIN+  DL  F GI+PCG+    VTSL+ LGI V   + D  +Q  F K+F</pattern>
+      <matchSeq start="24" end="228">IEWCVSDHLIDYDKSLEFMENRAAAIHAGQEQECVWLLEHPPLYTAGTSAKREDLLTPDRFPVYDAGRGGQYTYHGPGQRVGYSMLDLN--HRGKDVRKYVADLEEWIIQTLASFNIRGERREGRVGIWIDRGHGREDKIAAIGVRVRKWVTFHGIAINLDPDLDHFEGIVPCGISDHGVTSLHDLGIAVSTEDLDVAMQNAFRKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="39" database="UR90" id="UniRef90_UPI0030CB54D2" ac="UniRef90_UPI0030CB54D2" length="209" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Candidatus Mesenet endosymbiont of Phosphuga atrata TaxID=3066221 RepID=UPI0030CB54D2">
+    <alignments total="1">
+     <alignment number="1">
+      <score>492</score>
+      <bits>194.1</bits>
+      <expectation>2.7e-59</expectation>
+      <identity>43.8</identity>
+      <positives>65.9</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++     ++Y   ++ ME+ +  +    +PE+++L+EH  +YTAG +    E+     IPV  TGRGGK+T+HGPGQRVIY +L+L   N+  D++LYIK L  WIINSL +F I G    D +G+W+  N G+  KIAA G+++RKW+TYHGIA+N+  DL  +N IIPCG+    +TS+ +LGI   +S  D+++Q EF K+F</pattern>
+      <matchSeq start="1" end="206">MVEWLKSDEPIEYLNAVEFMEERIKLISGGIKPELIWLLEHPAIYTAGISADAAEISTNVTIPVFQTGRGGKYTYHGPGQRVIYAMLDLKKRNKC-DVRLYIKNLSTWIINSLRHFSIYGEFKSDLIGVWVNTN-GKEEKIAAFGIKIRKWITYHGIALNVHPDLSHYNSIIPCGISEYGITSMKKLGIKPSLSAVDEVLQKEFYKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="40" database="UR90" id="UniRef90_Q5GT50" ac="UniRef90_Q5GT50" length="205" description="Octanoyltransferase n=4 Tax=unclassified Wolbachia TaxID=2640676 RepID=LIPB_WOLTR">
+    <alignments total="1">
+     <alignment number="1">
+      <score>490</score>
+      <bits>193.4</bits>
+      <expectation>4.7e-59</expectation>
+      <identity>44.2</identity>
+      <positives>67.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++    L++Y   +K ME  + ++ N++  E+V+L++H  +YTAG +   ++++    +P+  TGRGGK+T+HGPGQR+IY +LNL   N+  D+KLYI+ L  WIIN L +F I G   +D++G+W+  N G   KIAA G+R+RKW+TYHGIA+N S DL  + GIIPCGL+   VTS+ +LG+   + + D I++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MVEWLISDQLINYNYAVKFMEKKIQQIHNNSSDELVWLLQHPPLYTAGISATDDDVVE-KLLPIYKTGRGGKYTYHGPGQRIIYLMLNLKKRNKC-DIKLYIRELGSWIINVLKHFNIFGEFKEDRIGVWVN-NNGVEEKIAAFGIRLRKWITYHGIALNFSPDLSHYKGIIPCGLKGYGVTSIKELGVKAPLFKLDNILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="41" database="UR90" id="UniRef90_UPI003D0AACDC" ac="UniRef90_UPI003D0AACDC" length="235" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Roseibium sp. TaxID=1936156 RepID=UPI003D0AACDC">
+    <alignments total="1">
+     <alignment number="1">
+      <score>492</score>
+      <bits>194.1</bits>
+      <expectation>6e-59</expectation>
+      <identity>47.5</identity>
+      <positives>70.3</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="208">LMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWI-KVNKGEFA--KIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>L+DY+  L+ M++ V ++I+   PE+V+L+EH  +YTAGT+  + +L++ D  PV +TGRGG+ T+HGPGQRV Y +L+  L  R KD++ ++  LE WIIN+L  + I+G   +D+VG+W+ + ++G     KIAAIG+RVRKWVT HGI+ N+  DL  F+GI+PCG+    VTSL  LGI V M+E D +++ EF KIF</pattern>
+      <matchSeq start="30" end="229">LVDYESALEEMDERVRRIISGEAPELVWLLEHPPLYTAGTSADESDLVSPDRFPVYHTGRGGQHTYHGPGQRVAYVMLD--LQRRQKDIRAFVSALEAWIINTLWNYHIRGERREDRVGVWVRRPDRGANVEDKIAAIGIRVRKWVTLHGISFNVEPDLEHFSGIVPCGISEHGVTSLVDLGIPVTMAENDSVLRAEFEKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="42" database="UR90" id="UniRef90_UPI00158EEA84" ac="UniRef90_UPI00158EEA84" length="205" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont of Litomosoides sigmodontis TaxID=80850 RepID=UPI00158EEA84">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>193.0</bits>
+      <expectation>6.7e-59</expectation>
+      <identity>46.2</identity>
+      <positives>66.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++    L+DY   +K ME  + ++ N+   E+V+L++H  +YTAG +   ++++     P+  TGRGGK+T+HGPGQR++Y +LNL   N+  D+KLYI+ L  WIIN L YF I G   +D+VG+W+  N G   KIAA G+R+RKWVTYHGIA+N+  DL  + GIIPCGL+   VTS+  LGI   +S+ D I++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MVEWLISDQLVDYNYAVKFMEKKIQQIHNNLSDELVWLLQHPPLYTAGISAADDDVVE-KLFPIHKTGRGGKYTYHGPGQRIMYLMLNLKKRNKC-DIKLYIRDLGSWIINVLKYFNIFGEFKEDRVGVWVD-NNGVEEKIAAFGIRLRKWVTYHGIALNVFPDLSHYKGIIPCGLKDYGVTSMKALGIRAPLSKLDDILKKEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="43" database="UR90" id="UniRef90_UPI0030D44DBE" ac="UniRef90_UPI0030D44DBE" length="211" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Candidatus Mesenet endosymbiont of Agriotes lineatus TaxID=3077948 RepID=UPI0030D44DBE">
+    <alignments total="1">
+     <alignment number="1">
+      <score>489</score>
+      <bits>193.0</bits>
+      <expectation>8.1e-59</expectation>
+      <identity>44.7</identity>
+      <positives>65.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++     ++Y   ++ ME  V  +    +PE+V+L+EHS +YTAG +    E+     IPV  TGRGG++T+HGPGQRVIY +L+L   N+  D+KLYIK L  WIINSL +  I G    D++G+W+  N G+  KIAA G+++RKWVTYHGIA+N+  DL  ++ IIPCG+    +TS+ +LGI   +   D+I+Q EF K+F</pattern>
+      <matchSeq start="3" end="208">MVEWLKSDKPVEYLSAVEFMEKRVKMISEGIKPELVWLLEHSAIYTAGISADAAEISANITIPVFQTGRGGRYTYHGPGQRVIYAMLDLKKRNKC-DIKLYIKNLSTWIINSLYHLSIYGEFKSDRIGVWVNTN-GKEEKIAAFGIKIRKWVTYHGIALNVHPDLSHYSSIIPCGIREYGITSMKKLGIETSLDAIDEILQKEFYKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="44" database="UR90" id="UniRef90_A0A7L9RUE5" ac="UniRef90_A0A7L9RUE5" length="215" description="Octanoyltransferase n=1 Tax=Candidatus Bodocaedibacter vickermanii TaxID=2741701 RepID=A0A7L9RUE5_9PROT">
+    <alignments total="1">
+     <alignment number="1">
+      <score>488</score>
+      <bits>192.6</bits>
+      <expectation>1.3e-58</expectation>
+      <identity>43.5</identity>
+      <positives>68.4</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="209">IRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEF-AKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIFK</querySeq>
+      <pattern>IR I     ++Y   +  ME+YV+ +IND  P  ++ +EH    T+GT+ +  +L+++ +IP+   GRGGK+T+HGPGQRV+Y +L+L L +R  D+K ++++LE+W+INS    G+  ++   ++GIWI  +  +  +KIAAIG+RV++WVTYHGIAIN+STDL +F  IIPCG++   VTS    GI +E+ + D ++  EF K+FK</pattern>
+      <matchSeq start="4" end="210">IRIIHSSEPVNYPDAITFMENYVDNIINDGAPGCLWFLEHPHTITSGTSAESSDLISHPNIPIYEAGRGGKYTYHGPGQRVVYVMLDLKLFDR--DIKNFVQLLEQWLINSFRKLGLTTHVKDKQIGIWINNSNNKIESKIAAIGLRVKRWVTYHGIAINVSTDLNRFQDIIPCGIKDLGVTSFQNEGISIELPQLDLLLIDEFCKLFK</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="45" database="UR90" id="UniRef90_UPI0031329CE7" ac="UniRef90_UPI0031329CE7" length="205" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Wolbachia endosymbiont (group E) of Neria commutata TaxID=3066149 RepID=UPI0031329CE7">
+    <alignments total="1">
+     <alignment number="1">
+      <score>487</score>
+      <bits>192.2</bits>
+      <expectation>1.3e-58</expectation>
+      <identity>46.2</identity>
+      <positives>66.8</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++    L+DY   +K ME+ + ++ + +  EIV+L+EH  +YTAG +    +++     P+  TGRGGK T+HGPGQRVIY +LNL   N+  ++KLYIK L EWIIN L  F I G   +D++G+W+  N  E  KIAA G+R+RKWVTYHGIA+NIS +L  + GIIPCGL+   VTS+ +LG+ +   + + I++ EF KIF</pattern>
+      <matchSeq start="1" end="205">MVEWLISDQLVDYNYAIKFMEEKIEQIQSGSADEIVWLLEHPPLYTAGISATDNDVVE-KLFPIYKTGRGGKHTYHGPGQRVIYLMLNLKKRNKC-NIKLYIKNLSEWIINVLKRFNILGEFKEDRIGVWVN-NGEEEKKIAAFGIRLRKWVTYHGIALNISPNLSHYKGIIPCGLQDCAVTSMEELGVKISPLKLNDILRQEFYKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="46" database="UR90" id="UniRef90_A0A8J3HVF8" ac="UniRef90_A0A8J3HVF8" length="207" description="Octanoyltransferase n=1 Tax=Candidatus Mesenet longicola TaxID=1892558 RepID=A0A8J3HVF8_9RICK">
+    <alignments total="1">
+     <alignment number="1">
+      <score>487</score>
+      <bits>192.2</bits>
+      <expectation>1.4e-58</expectation>
+      <identity>43.8</identity>
+      <positives>66.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="1" end="208">MIRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>M+ ++     ++Y   ++ ME+   ++    +PE+V+L+EH  +YTAG +    E+     IPV  TGRGGK+T+HGPGQR+IY +LNL   N+  D++LYIK L  WIINSL +F I G    D++G+WI  N G+  KIAA G+++RKWVTYHG+A+NI  DL  ++ IIPCG+    +TS+ +LGI   ++  D+++Q EF ++F</pattern>
+      <matchSeq start="1" end="206">MVEWLKSDEPIEYLSAVEFMEERTKQISEGIKPELVWLLEHPTIYTAGISANAAEISADVTIPVFQTGRGGKYTYHGPGQRIIYIMLNLKKRNKC-DVRLYIKNLSTWIINSLLHFSIYGEFKSDRIGVWINTN-GKEEKIAAFGIKIRKWVTYHGVALNICPDLFHYSNIIPCGISEYGITSMKKLGIETSLNAVDEVLQKEFYRVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="47" database="UR90" id="UniRef90_Q2GL91" ac="UniRef90_Q2GL91" length="208" description="Octanoyltransferase n=10 Tax=Anaplasma phagocytophilum TaxID=948 RepID=LIPB_ANAPZ">
+    <alignments total="1">
+     <alignment number="1">
+      <score>485</score>
+      <bits>191.4</bits>
+      <expectation>3e-58</expectation>
+      <identity>46.7</identity>
+      <positives>68.3</positives>
+      <gaps>1</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="208">LMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIKVNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>L++Y+V +  M   V+K++  +E E+V+L+EH  VYTAGT+    +LL  +  PVI T RGGK+++HGPGQRV+Y +L+L   NR  D++ Y++ L  WI+N+L  F I  Y   + +G+W++ N     KIAA G+R+R+WVTYHG+AINISTDL  ++GI+PCG+  S VTSL  LG  V   +FD  ++ EF K+F</pattern>
+      <matchSeq start="11" end="207">LVEYEVAVNAMVSRVDKIVQGSEREMVWLLEHPPVYTAGTSANSSDLLIDNLFPVIKTTRGGKYSYHGPGQRVVYVMLDLKRRNRC-DIRAYVRDLGVWIVNTLAEFAIDSYFSSENIGVWVQ-NDMHSEKIAAFGIRLRRWVTYHGVAINISTDLTHYSGIVPCGILGSGVTSLRALGKEVTFEQFDSALKKEFYKVF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="48" database="UR90" id="UniRef90_UPI001D09C323" ac="UniRef90_UPI001D09C323" length="242" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Microvirga rosea TaxID=2715425 RepID=UPI001D09C323">
+    <alignments total="1">
+     <alignment number="1">
+      <score>488</score>
+      <bits>192.6</bits>
+      <expectation>3e-58</expectation>
+      <identity>45.1</identity>
+      <positives>68.6</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="8" end="208">QNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIK---VNKGEFAKIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>+ L  Y+  ++ ME+ V  ++    PE+V+LVEH  +YTAGT+ ++ +L++ D  PV  TGRGG++T+HGPGQRV Y +L+LA   R KDL+ Y+  LE W+I++L+ F I+G   +D+VG+W++      G   K+AAIG+RVR+WVT+HG+++N+  +L  F+GIIPCG+    VTSL  LGI V M E D +++  F +IF</pattern>
+      <matchSeq start="27" end="228">EGLTGYEEAVRFMEERVAAIVEGRAPELVWLVEHPPLYTAGTSAQKSDLVDPDRFPVFETGRGGQYTYHGPGQRVAYVMLDLA--RRQKDLRRYVAALEAWLIDTLSEFNIRGERREDRVGVWVRRPEKGAGVEDKVAAIGIRVRRWVTFHGVSLNVEPELSHFSGIIPCGVHQHGVTSLVDLGIPVTMPEVDAMMRKTFEQIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="49" database="UR90" id="UniRef90_UPI000783409A" ac="UniRef90_UPI000783409A" length="247" description="lipoyl(octanoyl) transferase LipB n=1 Tax=Aureimonas sp. AU22 TaxID=1638162 RepID=UPI000783409A">
+    <alignments total="1">
+     <alignment number="1">
+      <score>488</score>
+      <bits>192.6</bits>
+      <expectation>3.5e-58</expectation>
+      <identity>43.7</identity>
+      <positives>65.6</positives>
+      <gaps>5</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="2" end="208">IRFITLQNLMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIK------VNKGEFA--KIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>+ ++ ++  +DY   + LMED   +V     PE V+LVEH  +YT+GT+   ++LL+    PV  +GRGG+FT+HGPGQRV Y +L+  L  R +D++ ++  LEEW+I++L  F I+G   +D+VG+W++      +  G  A  KIAAIG+RVRKWVT+HGI++N+  DL  F+GI+PCG+    VTSL  LGI V M E D  ++  F++IF</pattern>
+      <matchSeq start="24" end="236">VEWVVIEGTIDYPAAVALMEDRAERVAGGTAPEAVFLVEHPPLYTSGTSAHADDLLDARRFPVFRSGRGGEFTYHGPGQRVAYVVLD--LKRRRQDIRAFVAALEEWVISTLATFQIRGERREDRVGVWVRRPERAPLPDGAMAEDKIAAIGIRVRKWVTFHGISLNVDPDLSHFDGIVPCGIRGYGVTSLLDLGIVVSMPEVDGALRARFDEIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+   <hit number="50" database="UR90" id="UniRef90_A0ABY8EXZ6" ac="UniRef90_A0ABY8EXZ6" length="233" description="Octanoyltransferase n=1 Tax=Roseibium porphyridii TaxID=2866279 RepID=A0ABY8EXZ6_9HYPH">
+    <alignments total="1">
+     <alignment number="1">
+      <score>486</score>
+      <bits>191.8</bits>
+      <expectation>4.5e-58</expectation>
+      <identity>47.5</identity>
+      <positives>69.8</positives>
+      <gaps>2</gaps>
+      <strand>none/none</strand>
+      <frame>0/0</frame>
+      <querySeq start="10" end="208">LMDYQVTLKLMEDYVNKVINDNEPEIVYLVEHSEVYTAGTNYKQEELLNYDDIPVIYTGRGGKFTFHGPGQRVIYPILNLALPNRHKDLKLYIKMLEEWIINSLNYFGIKGYLIKDKVGIWIK-VNKGEFA--KIAAIGVRVRKWVTYHGIAINISTDLCKFNGIIPCGLESSLVTSLNQLGIYVEMSEFDKIIQTEFNKIF</querySeq>
+      <pattern>L+DY+  L  M + V ++I+ + PE V+L+EH  +YTAGT+    +L++ D  PV  TGRGG+ T+HGPGQRV Y +L+L    R +D++ ++  LE W+INSL ++ I+G   +D+VG+W++  ++G     KIAAIG+RVRKWVT+HGI+ N+  DL  F+GIIPCG+E   VTSL  LGI V ++E D +++ EF KIF</pattern>
+      <matchSeq start="30" end="229">LVDYETALAAMNERVERIISGDAPEQVWLLEHPPLYTAGTSADDSDLVSPDRFPVYRTGRGGQHTYHGPGQRVAYVMLDLK--RRQQDVRAFVAALEAWLINSLWHYHIRGERREDRVGVWVRRPDRGAQVEDKIAAIGIRVRKWVTFHGISFNVEPDLEHFSGIIPCGVEEHGVTSLVDLGIPVGLAENDSVLRAEFEKIF</matchSeq>
+     </alignment>
+    </alignments>
+   </hit>
+  </hits>
+ </SequenceSimilaritySearchResult>
+</EBIApplicationResult>

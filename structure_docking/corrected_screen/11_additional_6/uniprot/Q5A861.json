@@ -1,0 +1,990 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q5A861",
+  "secondaryAccessions": [
+    "A0A1D8PRU3"
+  ],
+  "uniProtkbId": "SWF1_CANAL",
+  "entryAudit": {
+    "firstPublicDate": "2005-11-22",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "2005-04-26",
+    "entryVersion": 100,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Candida albicans (strain SC5314 / ATCC MYA-2876)",
+    "commonName": "Yeast",
+    "taxonId": 237561,
+    "lineage": [
+      "Eukaryota",
+      "Fungi",
+      "Dikarya",
+      "Ascomycota",
+      "Saccharomycotina",
+      "Pichiomycetes",
+      "Debaryomycetaceae",
+      "Candida/Lodderomyces clade",
+      "Candida"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "value": "Palmitoyltransferase SWF1"
+      },
+      "ecNumbers": [
+        {
+          "value": "2.3.1.225"
+        }
+      ]
+    }
+  },
+  "genes": [
+    {
+      "geneName": {
+        "value": "SWF1"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "CAALFM_CR00870CA"
+        }
+      ],
+      "orfNames": [
+        {
+          "value": "CaO19.10777"
+        },
+        {
+          "value": "CaO19.3267"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250"
+            }
+          ],
+          "value": "Palmitoyltransferase that targets several endosomal SNAREs. Palmitoylates the SNAREs at cysteine residues close to the cytoplasmic end of their transmembrane domain. May have a role in the cellular quality control of transmembrane domain-containing proteins (By similarity)"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "L-cysteinyl-[protein] + hexadecanoyl-CoA = S-hexadecanoyl-L-cysteinyl-[protein] + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:36683"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:10131"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:11032"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:29950"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57379"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:74151"
+          }
+        ],
+        "ecNumber": "2.3.1.225"
+      }
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250"
+              }
+            ],
+            "value": "Endoplasmic reticulum membrane",
+            "id": "SL-0097"
+          },
+          "topology": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250"
+              }
+            ],
+            "value": "Multi-pass membrane protein",
+            "id": "SL-9909"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250"
+            }
+          ],
+          "value": "The DHHC domain is required for palmitoyltransferase activity"
+        }
+      ],
+      "commentType": "DOMAIN"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the DHHC palmitoyltransferase family. SWF1 subfamily"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 353,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Palmitoyltransferase SWF1",
+      "featureId": "PRO_0000212986"
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Lumenal",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 2,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 22,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 23,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 61,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Cytoplasmic",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 62,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 82,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 83,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 100,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Lumenal",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 101,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 121,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 122,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 190,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Cytoplasmic",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 191,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 211,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 212,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 233,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Lumenal",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 234,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 254,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 255,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 353,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Cytoplasmic",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 147,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 197,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "DHHC",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00067"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 177,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 177,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "S-palmitoyl cysteine intermediate",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000250"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-0256",
+      "category": "Cellular component",
+      "name": "Endoplasmic reticulum"
+    },
+    {
+      "id": "KW-0449",
+      "category": "PTM",
+      "name": "Lipoprotein"
+    },
+    {
+      "id": "KW-0472",
+      "category": "Cellular component",
+      "name": "Membrane"
+    },
+    {
+      "id": "KW-0564",
+      "category": "PTM",
+      "name": "Palmitate"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    },
+    {
+      "id": "KW-0812",
+      "category": "Domain",
+      "name": "Transmembrane"
+    },
+    {
+      "id": "KW-1133",
+      "category": "Domain",
+      "name": "Transmembrane helix"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "15123810",
+        "citationType": "journal article",
+        "authors": [
+          "Jones T.",
+          "Federspiel N.A.",
+          "Chibana H.",
+          "Dungan J.",
+          "Kalman S.",
+          "Magee B.B.",
+          "Newport G.",
+          "Thorstenson Y.R.",
+          "Agabian N.",
+          "Magee P.T.",
+          "Davis R.W.",
+          "Scherer S."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "15123810"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1073/pnas.0401648101"
+          }
+        ],
+        "title": "The diploid genome sequence of Candida albicans.",
+        "publicationDate": "2004",
+        "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+        "firstPage": "7329",
+        "lastPage": "7334",
+        "volume": "101"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "SC5314 / ATCC MYA-2876",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "17419877",
+        "citationType": "journal article",
+        "authors": [
+          "van het Hoog M.",
+          "Rast T.J.",
+          "Martchenko M.",
+          "Grindle S.",
+          "Dignard D.",
+          "Hogues H.",
+          "Cuomo C.",
+          "Berriman M.",
+          "Scherer S.",
+          "Magee B.B.",
+          "Whiteway M.",
+          "Chibana H.",
+          "Nantel A.",
+          "Magee P.T."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "17419877"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1186/gb-2007-8-4-r52"
+          }
+        ],
+        "title": "Assembly of the Candida albicans genome into sixteen supercontigs aligned on the eight chromosomes.",
+        "publicationDate": "2007",
+        "journal": "Genome Biol.",
+        "firstPage": "RESEARCH52.1",
+        "lastPage": "RESEARCH52.12",
+        "volume": "8"
+      },
+      "referencePositions": [
+        "GENOME REANNOTATION"
+      ],
+      "referenceComments": [
+        {
+          "value": "SC5314 / ATCC MYA-2876",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 3,
+      "citation": {
+        "id": "24025428",
+        "citationType": "journal article",
+        "authors": [
+          "Muzzey D.",
+          "Schwartz K.",
+          "Weissman J.S.",
+          "Sherlock G."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "24025428"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1186/gb-2013-14-9-r97"
+          }
+        ],
+        "title": "Assembly of a phased diploid Candida albicans genome facilitates allele-specific measurements and provides a simple model for repeat and indel structure.",
+        "publicationDate": "2013",
+        "journal": "Genome Biol.",
+        "firstPage": "RESEARCH97.1",
+        "lastPage": "RESEARCH97.14",
+        "volume": "14"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]",
+        "GENOME REANNOTATION"
+      ],
+      "referenceComments": [
+        {
+          "value": "SC5314 / ATCC MYA-2876",
+          "type": "STRAIN"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "CP017630",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AOW30852.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_717957.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_712864.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q5A861",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q5A861",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "FunCoup",
+      "id": "Q5A861",
+      "properties": [
+        {
+          "key": "Number of interactors",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "237561.Q5A861",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "237561-Q5A861",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "EnsemblFungi",
+      "id": "CR_00870C_A-T",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CR_00870C_A-T-p1"
+        },
+        {
+          "key": "GeneId",
+          "value": "CR_00870C_A"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "3640398",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "cal:CAALFM_CR00870CA",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "CGD",
+      "id": "CAL0000193712",
+      "properties": [
+        {
+          "key": "GeneName",
+          "value": "orf19.3267"
+        }
+      ]
+    },
+    {
+      "database": "VEuPathDB",
+      "id": "FungiDB:CR_00870C_A",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "KOG1312",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Eukaryota"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_042181_2_0_1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "InParanoid",
+      "id": "Q5A861",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OMA",
+      "id": "HIYLIWA",
+      "properties": [
+        {
+          "key": "Fingerprint",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "9909019at2759",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PRO",
+      "id": "PR:Q5A861",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000000559",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome R"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005783",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:endoplasmic reticulum"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005789",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:endoplasmic reticulum membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005794",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:Golgi apparatus"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0019706",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:protein-cysteine S-palmitoyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0006612",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:protein targeting to membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001594",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Palmitoyltrfase_DHHC"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR039859",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PFA4/ZDH16/20/ERF2-like"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR22883:SF489",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PALMITOYLTRANSFERASE SWF1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR22883",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "ZINC FINGER DHHC DOMAIN CONTAINING PROTEIN"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF01529",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "DHHC"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS50216",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "DHHC"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MLFTLIVCLTIISSLATFLLLFGDSPSFRNTPIQKLRNSLLSISRDIFQFYHWLDEKLNGQLLKILNWLVPVGYVMVVTVCFQQFLTHTLPMLSSPGLFRLFTIYFSMVLIYASTILAAFSDPGRITTINLKSYPYTPNQLIFFDGKTCSTCHIAKPARSKHCSVCNQCFLLYDHHCVWINNCVGYYNYKWFMLFLISNINMLGYGGWLCYWALTPVSWRKITSTNNANKVTGIFLILCSIFIVITTLFTFLHLRYIYLGVTTNELDKWSEIDHLVGLGVLYQIEPSIANENYVERAILDGNAVYISLKDERILIYNSNVKNFKLQLIQSVEDDLVNIYDHGFWNNLIERLKW",
+    "length": 353,
+    "molWeight": 40906,
+    "crc64": "F0F11ED41586D6F1",
+    "md5": "236E5912A2AA74C0AEECFF8CA0233C2A"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "DOMAIN": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Topological domain": 6,
+      "Transmembrane": 5,
+      "Domain": 1,
+      "Active site": 1
+    },
+    "uniParcId": "UPI000042CDC6"
+  }
+}

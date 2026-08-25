@@ -1,0 +1,861 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "P47489",
+  "uniProtkbId": "PLSY_MYCGE",
+  "entryAudit": {
+    "firstPublicDate": "1996-02-01",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "1996-02-01",
+    "entryVersion": 131,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 3.0,
+  "organism": {
+    "scientificName": "Mycoplasmoides genitalium (strain ATCC 33530 / DSM 19775 / NCTC 10195 / G37)",
+    "commonName": "Mycoplasma genitalium",
+    "taxonId": 243273,
+    "lineage": [
+      "Bacteria",
+      "Bacillati",
+      "Mycoplasmatota",
+      "Mycoplasmoidales",
+      "Mycoplasmoidaceae",
+      "Mycoplasmoides"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_01043"
+          }
+        ],
+        "value": "Glycerol-3-phosphate acyltransferase"
+      }
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01043"
+            }
+          ],
+          "value": "Acyl-PO4 G3P acyltransferase"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01043"
+            }
+          ],
+          "value": "Acyl-phosphate--glycerol-3-phosphate acyltransferase"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01043"
+            }
+          ],
+          "value": "G3P acyltransferase"
+        },
+        "shortNames": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_01043"
+              }
+            ],
+            "value": "GPAT"
+          }
+        ],
+        "ecNumbers": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_01043"
+              }
+            ],
+            "value": "2.3.1.275"
+          }
+        ]
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01043"
+            }
+          ],
+          "value": "Lysophosphatidic acid synthase"
+        },
+        "shortNames": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_01043"
+              }
+            ],
+            "value": "LPA synthase"
+          }
+        ]
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_01043"
+          }
+        ],
+        "value": "plsY"
+      },
+      "orderedLocusNames": [
+        {
+          "value": "MG247"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01043"
+            }
+          ],
+          "value": "Catalyzes the transfer of an acyl group from acyl-phosphate (acyl-PO(4)) to glycerol-3-phosphate (G3P) to form lysophosphatidic acid (LPA). This enzyme utilizes acyl-phosphate as fatty acyl donor, but not acyl-CoA or acyl-ACP"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "an acyl phosphate + sn-glycerol 3-phosphate = a 1-acyl-sn-glycero-3-phosphate + phosphate",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:34075"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:43474"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57597"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57970"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:59918"
+          }
+        ],
+        "ecNumber": "2.3.1.275",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000255",
+            "source": "HAMAP-Rule",
+            "id": "MF_01043"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01043"
+            }
+          ],
+          "value": "Lipid metabolism; phospholipid metabolism"
+        }
+      ],
+      "commentType": "PATHWAY"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01043"
+            }
+          ],
+          "value": "Probably interacts with PlsX"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_01043"
+              }
+            ],
+            "value": "Cell membrane",
+            "id": "SL-0039"
+          },
+          "topology": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "HAMAP-Rule",
+                "id": "MF_01043"
+              }
+            ],
+            "value": "Multi-pass membrane protein",
+            "id": "SL-9909"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "source": "HAMAP-Rule",
+              "id": "MF_01043"
+            }
+          ],
+          "value": "Belongs to the PlsY family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 239,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Glycerol-3-phosphate acyltransferase",
+      "featureId": "PRO_0000188402"
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 6,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 26,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_01043"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 61,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 81,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_01043"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 99,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 119,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_01043"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 135,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 155,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_01043"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 159,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 179,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_01043"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 199,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 219,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "HAMAP-Rule",
+          "id": "MF_01043"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-1003",
+      "category": "Cellular component",
+      "name": "Cell membrane"
+    },
+    {
+      "id": "KW-0444",
+      "category": "Biological process",
+      "name": "Lipid biosynthesis"
+    },
+    {
+      "id": "KW-0443",
+      "category": "Biological process",
+      "name": "Lipid metabolism"
+    },
+    {
+      "id": "KW-0472",
+      "category": "Cellular component",
+      "name": "Membrane"
+    },
+    {
+      "id": "KW-0594",
+      "category": "Biological process",
+      "name": "Phospholipid biosynthesis"
+    },
+    {
+      "id": "KW-1208",
+      "category": "Biological process",
+      "name": "Phospholipid metabolism"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    },
+    {
+      "id": "KW-0812",
+      "category": "Domain",
+      "name": "Transmembrane"
+    },
+    {
+      "id": "KW-1133",
+      "category": "Domain",
+      "name": "Transmembrane helix"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "7569993",
+        "citationType": "journal article",
+        "authors": [
+          "Fraser C.M.",
+          "Gocayne J.D.",
+          "White O.",
+          "Adams M.D.",
+          "Clayton R.A.",
+          "Fleischmann R.D.",
+          "Bult C.J.",
+          "Kerlavage A.R.",
+          "Sutton G.G.",
+          "Kelley J.M.",
+          "Fritchman J.L.",
+          "Weidman J.F.",
+          "Small K.V.",
+          "Sandusky M.",
+          "Fuhrmann J.L.",
+          "Nguyen D.T.",
+          "Utterback T.R.",
+          "Saudek D.M.",
+          "Phillips C.A.",
+          "Merrick J.M.",
+          "Tomb J.-F.",
+          "Dougherty B.A.",
+          "Bott K.F.",
+          "Hu P.-C.",
+          "Lucier T.S.",
+          "Peterson S.N.",
+          "Smith H.O.",
+          "Hutchison C.A. III",
+          "Venter J.C."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "7569993"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1126/science.270.5235.397"
+          }
+        ],
+        "title": "The minimal gene complement of Mycoplasma genitalium.",
+        "publicationDate": "1995",
+        "journal": "Science",
+        "firstPage": "397",
+        "lastPage": "403",
+        "volume": "270"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "ATCC 33530 / DSM 19775 / NCTC 10195 / G37",
+          "type": "STRAIN"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "L43967",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAC71467.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "PIR",
+      "id": "C64227",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "C64227"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_009885785.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_000908.2"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "P47489",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "P47489",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "FunCoup",
+      "id": "P47489",
+      "properties": [
+        {
+          "key": "Number of interactors",
+          "value": "65"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "243273.MG_247",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "99647103",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "mge:MG_247",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "COG0344",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_081254_4_0_14",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "InParanoid",
+      "id": "P47489",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "9777124at2",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioCyc",
+      "id": "MGEN243273:G1GJ2-294-MONOMER",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "UniPathway",
+      "id": "UPA00085",
+      "properties": [
+        {
+          "key": "RectionId",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000000807",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005886",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:plasma membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0043772",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:acyl-phosphate glycerol-3-phosphate acyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0008654",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:phospholipid biosynthetic process"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-UniRule"
+        }
+      ]
+    },
+    {
+      "database": "HAMAP",
+      "id": "MF_01043",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PlsY"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR003811",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "G3P_acylTferase_PlsY"
+        }
+      ]
+    },
+    {
+      "database": "NCBIfam",
+      "id": "TIGR00023",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "glycerol-3-phosphate 1-O-acyltransferase PlsY"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR30309:SF0",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "GLYCEROL-3-PHOSPHATE ACYLTRANSFERASE-RELATED"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR30309",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "INNER MEMBRANE PROTEIN YGIH"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF02660",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "G3P_acyltransf"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SMART",
+      "id": "SM01207",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "G3P_acyltransf"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MNQASAIAILVIFSLASGYLLGSIIFADIFSKILKKNVREFGSKNPGATNSMRVFGLKIGFLVAIFDAFKGFFAFLLTWILFRFGLQGYLTEKVYQSTYFLSYLSCFAATIGHIFPLYFKFKGGKAIATTGGSLLAISLWWFLICLLIWIMITLITKYVSLASLITFFVLAVIILIPWLDYLYFFNSDPLKSITYQNEWYIILFFCLWYWPLTVVVFWLHRANIIRILHGKESKITQLN",
+    "length": 239,
+    "molWeight": 27489,
+    "crc64": "D78CE976DEF621FD",
+    "md5": "2B3DD181D865D278AC441A09461D6052"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "PATHWAY": 1,
+      "SUBUNIT": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Transmembrane": 6
+    },
+    "uniParcId": "UPI00001394F7"
+  }
+}

@@ -1,0 +1,2354 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "Q9D270",
+  "secondaryAccessions": [
+    "Q6EMK1",
+    "Q80XQ3"
+  ],
+  "uniProtkbId": "ZDH21_MOUSE",
+  "entryAudit": {
+    "firstPublicDate": "2003-10-24",
+    "lastAnnotationUpdateDate": "2026-06-10",
+    "lastSequenceUpdateDate": "2005-11-22",
+    "entryVersion": 159,
+    "sequenceVersion": 2
+  },
+  "annotationScore": 5.0,
+  "organism": {
+    "scientificName": "Mus musculus",
+    "commonName": "Mouse",
+    "taxonId": 10090,
+    "lineage": [
+      "Eukaryota",
+      "Metazoa",
+      "Chordata",
+      "Craniata",
+      "Vertebrata",
+      "Euteleostomi",
+      "Mammalia",
+      "Eutheria",
+      "Euarchontoglires",
+      "Glires",
+      "Rodentia",
+      "Myomorpha",
+      "Muroidea",
+      "Muridae",
+      "Murinae",
+      "Mus",
+      "Mus"
+    ]
+  },
+  "proteinExistence": "1: Evidence at protein level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000305",
+            "source": "PubMed",
+            "id": "19956733"
+          }
+        ],
+        "value": "Palmitoyltransferase ZDHHC21"
+      },
+      "ecNumbers": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "19956733"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "26715683"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "27653213"
+            }
+          ],
+          "value": "2.3.1.225"
+        }
+      ]
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000303",
+              "source": "PubMed",
+              "id": "27653213"
+            }
+          ],
+          "value": "DHHC domain-containing cysteine-rich protein 21"
+        },
+        "shortNames": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000303",
+                "source": "PubMed",
+                "id": "27653213"
+              }
+            ],
+            "value": "DHHC21"
+          }
+        ]
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000303",
+              "source": "PubMed",
+              "id": "15229235"
+            }
+          ],
+          "value": "GABA-A receptor-associated membrane protein 3"
+        }
+      },
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000312",
+              "source": "MGI",
+              "id": "MGI:1915518"
+            }
+          ],
+          "value": "Zinc finger DHHC domain-containing protein 21"
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000312",
+            "source": "MGI",
+            "id": "MGI:1915518"
+          }
+        ],
+        "value": "Zdhhc21"
+      },
+      "synonyms": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000303",
+              "source": "PubMed",
+              "id": "15229235"
+            }
+          ],
+          "value": "Gramp3"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q8IVQ6"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "19956733"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "26715683"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "27653213"
+            }
+          ],
+          "value": "Palmitoyltransferase that catalyzes the addition of palmitate onto various protein substrates (PubMed:19956733, PubMed:26715683, PubMed:27653213). Palmitoylates sex steroid hormone receptors, including ESR1, PGR and AR, thereby regulating their targeting to the plasma membrane. This affects rapid intracellular signaling by sex hormones via ERK and AKT kinases and the generation of cAMP, but does not affect that mediated by their nuclear receptor (By similarity). Palmitoylates FYN, regulates its localization in hair follicles and plays a key role in epidermal homeostasis and hair follicle differentiation (PubMed:19956733). Through the palmitoylation of PLCB1 and the regulation of PLCB1 downstream signaling may indirectly regulate the function of the endothelial barrier and the adhesion of leukocytes to the endothelium (PubMed:27653213). Also has a palmitoyltransferase activity toward ADRA1D, positively regulating its activity and expression and may thereby play a role in vascular contraction (PubMed:26715683). May also palmitoylate eNOS and LCK (PubMed:19956733)"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "commentType": "CATALYTIC ACTIVITY",
+      "reaction": {
+        "name": "L-cysteinyl-[protein] + hexadecanoyl-CoA = S-hexadecanoyl-L-cysteinyl-[protein] + CoA",
+        "reactionCrossReferences": [
+          {
+            "database": "Rhea",
+            "id": "RHEA:36683"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:10131"
+          },
+          {
+            "database": "Rhea",
+            "id": "RHEA-COMP:11032"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:29950"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57287"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:57379"
+          },
+          {
+            "database": "ChEBI",
+            "id": "CHEBI:74151"
+          }
+        ],
+        "ecNumber": "2.3.1.225",
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "19956733"
+          },
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "26715683"
+          },
+          {
+            "evidenceCode": "ECO:0000269",
+            "source": "PubMed",
+            "id": "27653213"
+          }
+        ]
+      },
+      "physiologicalReactions": [
+        {
+          "directionType": "left-to-right",
+          "reactionCrossReference": {
+            "database": "Rhea",
+            "id": "RHEA:36684"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "19956733"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "Q8IVQ6"
+              }
+            ],
+            "value": "Golgi apparatus membrane",
+            "id": "SL-0134"
+          },
+          "topology": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255"
+              }
+            ],
+            "value": "Multi-pass membrane protein",
+            "id": "SL-9909"
+          }
+        },
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "19956733"
+              }
+            ],
+            "value": "Golgi apparatus, cis-Golgi network membrane",
+            "id": "SL-0068"
+          },
+          "topology": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255"
+              }
+            ],
+            "value": "Multi-pass membrane protein",
+            "id": "SL-9909"
+          }
+        },
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "Q8IVQ6"
+              }
+            ],
+            "value": "Cell membrane",
+            "id": "SL-0039"
+          },
+          "topology": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255"
+              }
+            ],
+            "value": "Multi-pass membrane protein",
+            "id": "SL-9909"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "19956733"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "26715683"
+            }
+          ],
+          "value": "Widely expressed (PubMed:26715683). Expressed in Henle's layer within the hair bulb and the hair shaft cuticle (at protein level) (PubMed:19956733). Expression is limited to the post-mitotic lineages of inner root sheath (IRS) and cuticle (PubMed:19956733)"
+        }
+      ],
+      "commentType": "TISSUE SPECIFICITY"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "19956733"
+            }
+          ],
+          "value": "In the developing skin, expression is not be detected prior to hair follicle induction (13 dpc). Expression is initially detected in the inner root sheath (IRS) of developing vibrissae follicles at 16 dpc and later in the developing IRS of 18.5 dpc pelage follicles"
+        }
+      ],
+      "commentType": "DEVELOPMENTAL STAGE"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "Q8IUH5"
+            }
+          ],
+          "value": "The DHHC domain is required for palmitoyltransferase activity"
+        }
+      ],
+      "commentType": "DOMAIN"
+    },
+    {
+      "commentType": "DISEASE",
+      "note": {
+        "texts": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "19956733"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "26715683"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "27653213"
+              }
+            ],
+            "value": "Defects in zdhhc21 are the cause of the depilated (dep) phenotype. It is a recessive phenotype characterized by variable hair loss, with thinner and shorter hairs remaining in a greasy coat which is due to a defect in the epidermis, rather than the dermis (PubMed:19956733). Depilated (dep) mutant mice are protected against endothelial dysfunction in systemic inflammatory response syndrome (PubMed:27653213). They are also tachycardic and hypotensive (PubMed:26715683)"
+          }
+        ]
+      }
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the DHHC palmitoyltransferase family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 265,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Palmitoyltransferase ZDHHC21",
+      "featureId": "PRO_0000212909"
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 16,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Cytoplasmic",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000305"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 17,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 37,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 38,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 44,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Extracellular",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000305"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 45,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 65,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 66,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 133,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Cytoplasmic",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000305"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 134,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 154,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 155,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 185,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Extracellular",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000305"
+        }
+      ]
+    },
+    {
+      "type": "Transmembrane",
+      "location": {
+        "start": {
+          "value": 186,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 206,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Helical",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255"
+        }
+      ]
+    },
+    {
+      "type": "Topological domain",
+      "location": {
+        "start": {
+          "value": 207,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 265,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Cytoplasmic",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000305"
+        }
+      ]
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 90,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 140,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "DHHC",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00067"
+        }
+      ]
+    },
+    {
+      "type": "Active site",
+      "location": {
+        "start": {
+          "value": 120,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 120,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "S-palmitoyl cysteine intermediate",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "19956733"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "26715683"
+        }
+      ]
+    },
+    {
+      "type": "Mutagenesis",
+      "location": {
+        "start": {
+          "value": 91,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 91,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "No effect on protein-cysteine S-palmitoyltransferase activity. No effect on localization to the cis-Golgi network.",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "19956733"
+        }
+      ],
+      "alternativeSequence": {
+        "originalSequence": "L",
+        "alternativeSequences": [
+          "F"
+        ]
+      }
+    },
+    {
+      "type": "Mutagenesis",
+      "location": {
+        "start": {
+          "value": 95,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 95,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Loss of protein-cysteine S-palmitoyltransferase activity. Decreased localization to the cis-Golgi network. Relocalized to the endoplasmic reticulum.",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "19956733"
+        }
+      ],
+      "alternativeSequence": {
+        "originalSequence": "C",
+        "alternativeSequences": [
+          "S"
+        ]
+      }
+    },
+    {
+      "type": "Mutagenesis",
+      "location": {
+        "start": {
+          "value": 106,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 106,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Loss of protein-cysteine S-palmitoyltransferase activity. Decreased localization to the cis-Golgi network. Relocalized to the endoplasmic reticulum.",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "19956733"
+        }
+      ],
+      "alternativeSequence": {
+        "originalSequence": "C",
+        "alternativeSequences": [
+          "S"
+        ]
+      }
+    },
+    {
+      "type": "Mutagenesis",
+      "location": {
+        "start": {
+          "value": 120,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 120,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Loss of protein-cysteine S-palmitoyltransferase activity. Decreased localization to the cis-Golgi network. Relocalized to the endoplasmic reticulum.",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "19956733"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "26715683"
+        }
+      ],
+      "alternativeSequence": {
+        "originalSequence": "C",
+        "alternativeSequences": [
+          "S"
+        ]
+      }
+    },
+    {
+      "type": "Mutagenesis",
+      "location": {
+        "start": {
+          "value": 233,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 233,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "In depilated (dep) mutant mice. Loss of protein-cysteine S-palmitoyltransferase activity. Relocalized to the endoplasmic reticulum.",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "19956733"
+        },
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "26715683"
+        }
+      ],
+      "alternativeSequence": {}
+    },
+    {
+      "type": "Sequence conflict",
+      "location": {
+        "start": {
+          "value": 67,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 67,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in Ref. 1; AAO27361 and 2; BAB32059",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000305"
+        }
+      ],
+      "alternativeSequence": {
+        "originalSequence": "A",
+        "alternativeSequences": [
+          "T"
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-0012",
+      "category": "Molecular function",
+      "name": "Acyltransferase"
+    },
+    {
+      "id": "KW-1003",
+      "category": "Cellular component",
+      "name": "Cell membrane"
+    },
+    {
+      "id": "KW-0333",
+      "category": "Cellular component",
+      "name": "Golgi apparatus"
+    },
+    {
+      "id": "KW-0449",
+      "category": "PTM",
+      "name": "Lipoprotein"
+    },
+    {
+      "id": "KW-0472",
+      "category": "Cellular component",
+      "name": "Membrane"
+    },
+    {
+      "id": "KW-0564",
+      "category": "PTM",
+      "name": "Palmitate"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0808",
+      "category": "Molecular function",
+      "name": "Transferase"
+    },
+    {
+      "id": "KW-0812",
+      "category": "Domain",
+      "name": "Transmembrane"
+    },
+    {
+      "id": "KW-1133",
+      "category": "Domain",
+      "name": "Transmembrane helix"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "15229235",
+        "citationType": "journal article",
+        "authors": [
+          "Keller C.A.",
+          "Yuan X.",
+          "Panzanelli P.",
+          "Martin M.L.",
+          "Alldred M.",
+          "Sassoe-Pognetto M.",
+          "Luescher B."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "15229235"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1523/jneurosci.1037-04.2004"
+          }
+        ],
+        "title": "The gamma2 subunit of GABA(A) receptors is a substrate for palmitoylation by GODZ.",
+        "publicationDate": "2004",
+        "journal": "J. Neurosci.",
+        "firstPage": "5881",
+        "lastPage": "5891",
+        "volume": "24"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [MRNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "C57BL/6J",
+          "type": "STRAIN"
+        },
+        {
+          "value": "Cecum",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 2,
+      "citation": {
+        "id": "16141072",
+        "citationType": "journal article",
+        "authors": [
+          "Carninci P.",
+          "Kasukawa T.",
+          "Katayama S.",
+          "Gough J.",
+          "Frith M.C.",
+          "Maeda N.",
+          "Oyama R.",
+          "Ravasi T.",
+          "Lenhard B.",
+          "Wells C.",
+          "Kodzius R.",
+          "Shimokawa K.",
+          "Bajic V.B.",
+          "Brenner S.E.",
+          "Batalov S.",
+          "Forrest A.R.",
+          "Zavolan M.",
+          "Davis M.J.",
+          "Wilming L.G.",
+          "Aidinis V.",
+          "Allen J.E.",
+          "Ambesi-Impiombato A.",
+          "Apweiler R.",
+          "Aturaliya R.N.",
+          "Bailey T.L.",
+          "Bansal M.",
+          "Baxter L.",
+          "Beisel K.W.",
+          "Bersano T.",
+          "Bono H.",
+          "Chalk A.M.",
+          "Chiu K.P.",
+          "Choudhary V.",
+          "Christoffels A.",
+          "Clutterbuck D.R.",
+          "Crowe M.L.",
+          "Dalla E.",
+          "Dalrymple B.P.",
+          "de Bono B.",
+          "Della Gatta G.",
+          "di Bernardo D.",
+          "Down T.",
+          "Engstrom P.",
+          "Fagiolini M.",
+          "Faulkner G.",
+          "Fletcher C.F.",
+          "Fukushima T.",
+          "Furuno M.",
+          "Futaki S.",
+          "Gariboldi M.",
+          "Georgii-Hemming P.",
+          "Gingeras T.R.",
+          "Gojobori T.",
+          "Green R.E.",
+          "Gustincich S.",
+          "Harbers M.",
+          "Hayashi Y.",
+          "Hensch T.K.",
+          "Hirokawa N.",
+          "Hill D.",
+          "Huminiecki L.",
+          "Iacono M.",
+          "Ikeo K.",
+          "Iwama A.",
+          "Ishikawa T.",
+          "Jakt M.",
+          "Kanapin A.",
+          "Katoh M.",
+          "Kawasawa Y.",
+          "Kelso J.",
+          "Kitamura H.",
+          "Kitano H.",
+          "Kollias G.",
+          "Krishnan S.P.",
+          "Kruger A.",
+          "Kummerfeld S.K.",
+          "Kurochkin I.V.",
+          "Lareau L.F.",
+          "Lazarevic D.",
+          "Lipovich L.",
+          "Liu J.",
+          "Liuni S.",
+          "McWilliam S.",
+          "Madan Babu M.",
+          "Madera M.",
+          "Marchionni L.",
+          "Matsuda H.",
+          "Matsuzawa S.",
+          "Miki H.",
+          "Mignone F.",
+          "Miyake S.",
+          "Morris K.",
+          "Mottagui-Tabar S.",
+          "Mulder N.",
+          "Nakano N.",
+          "Nakauchi H.",
+          "Ng P.",
+          "Nilsson R.",
+          "Nishiguchi S.",
+          "Nishikawa S.",
+          "Nori F.",
+          "Ohara O.",
+          "Okazaki Y.",
+          "Orlando V.",
+          "Pang K.C.",
+          "Pavan W.J.",
+          "Pavesi G.",
+          "Pesole G.",
+          "Petrovsky N.",
+          "Piazza S.",
+          "Reed J.",
+          "Reid J.F.",
+          "Ring B.Z.",
+          "Ringwald M.",
+          "Rost B.",
+          "Ruan Y.",
+          "Salzberg S.L.",
+          "Sandelin A.",
+          "Schneider C.",
+          "Schoenbach C.",
+          "Sekiguchi K.",
+          "Semple C.A.",
+          "Seno S.",
+          "Sessa L.",
+          "Sheng Y.",
+          "Shibata Y.",
+          "Shimada H.",
+          "Shimada K.",
+          "Silva D.",
+          "Sinclair B.",
+          "Sperling S.",
+          "Stupka E.",
+          "Sugiura K.",
+          "Sultana R.",
+          "Takenaka Y.",
+          "Taki K.",
+          "Tammoja K.",
+          "Tan S.L.",
+          "Tang S.",
+          "Taylor M.S.",
+          "Tegner J.",
+          "Teichmann S.A.",
+          "Ueda H.R.",
+          "van Nimwegen E.",
+          "Verardo R.",
+          "Wei C.L.",
+          "Yagi K.",
+          "Yamanishi H.",
+          "Zabarovsky E.",
+          "Zhu S.",
+          "Zimmer A.",
+          "Hide W.",
+          "Bult C.",
+          "Grimmond S.M.",
+          "Teasdale R.D.",
+          "Liu E.T.",
+          "Brusic V.",
+          "Quackenbush J.",
+          "Wahlestedt C.",
+          "Mattick J.S.",
+          "Hume D.A.",
+          "Kai C.",
+          "Sasaki D.",
+          "Tomaru Y.",
+          "Fukuda S.",
+          "Kanamori-Katayama M.",
+          "Suzuki M.",
+          "Aoki J.",
+          "Arakawa T.",
+          "Iida J.",
+          "Imamura K.",
+          "Itoh M.",
+          "Kato T.",
+          "Kawaji H.",
+          "Kawagashira N.",
+          "Kawashima T.",
+          "Kojima M.",
+          "Kondo S.",
+          "Konno H.",
+          "Nakano K.",
+          "Ninomiya N.",
+          "Nishio T.",
+          "Okada M.",
+          "Plessy C.",
+          "Shibata K.",
+          "Shiraki T.",
+          "Suzuki S.",
+          "Tagami M.",
+          "Waki K.",
+          "Watahiki A.",
+          "Okamura-Oho Y.",
+          "Suzuki H.",
+          "Kawai J.",
+          "Hayashizaki Y."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "16141072"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1126/science.1112014"
+          }
+        ],
+        "title": "The transcriptional landscape of the mammalian genome.",
+        "publicationDate": "2005",
+        "journal": "Science",
+        "firstPage": "1559",
+        "lastPage": "1563",
+        "volume": "309"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "C57BL/6J",
+          "type": "STRAIN"
+        },
+        {
+          "value": "Cecum",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 3,
+      "citation": {
+        "id": "19468303",
+        "citationType": "journal article",
+        "authors": [
+          "Church D.M.",
+          "Goodstadt L.",
+          "Hillier L.W.",
+          "Zody M.C.",
+          "Goldstein S.",
+          "She X.",
+          "Bult C.J.",
+          "Agarwala R.",
+          "Cherry J.L.",
+          "DiCuccio M.",
+          "Hlavina W.",
+          "Kapustin Y.",
+          "Meric P.",
+          "Maglott D.",
+          "Birtle Z.",
+          "Marques A.C.",
+          "Graves T.",
+          "Zhou S.",
+          "Teague B.",
+          "Potamousis K.",
+          "Churas C.",
+          "Place M.",
+          "Herschleb J.",
+          "Runnheim R.",
+          "Forrest D.",
+          "Amos-Landgraf J.",
+          "Schwartz D.C.",
+          "Cheng Z.",
+          "Lindblad-Toh K.",
+          "Eichler E.E.",
+          "Ponting C.P."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "19468303"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1371/journal.pbio.1000112"
+          }
+        ],
+        "title": "Lineage-specific biology revealed by a finished genome assembly of the mouse.",
+        "publicationDate": "2009",
+        "journal": "PLoS Biol.",
+        "firstPage": "E1000112",
+        "lastPage": "E1000112",
+        "volume": "7"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "C57BL/6J",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 4,
+      "citation": {
+        "id": "15489334",
+        "citationType": "journal article",
+        "authoringGroup": [
+          "The MGC Project Team"
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "15489334"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1101/gr.2596504"
+          }
+        ],
+        "title": "The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).",
+        "publicationDate": "2004",
+        "journal": "Genome Res.",
+        "firstPage": "2121",
+        "lastPage": "2127",
+        "volume": "14"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "C57BL/6J",
+          "type": "STRAIN"
+        },
+        {
+          "value": "Brain",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 5,
+      "citation": {
+        "id": "19956733",
+        "citationType": "journal article",
+        "authors": [
+          "Mill P.",
+          "Lee A.W.",
+          "Fukata Y.",
+          "Tsutsumi R.",
+          "Fukata M.",
+          "Keighren M.",
+          "Porter R.M.",
+          "McKie L.",
+          "Smyth I.",
+          "Jackson I.J."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "19956733"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1371/journal.pgen.1000748"
+          }
+        ],
+        "title": "Palmitoylation regulates epidermal homeostasis and hair follicle differentiation.",
+        "publicationDate": "2009",
+        "journal": "PLoS Genet.",
+        "firstPage": "e1000748",
+        "lastPage": "e1000748",
+        "volume": "5"
+      },
+      "referencePositions": [
+        "FUNCTION",
+        "CATALYTIC ACTIVITY",
+        "SUBCELLULAR LOCATION",
+        "TISSUE SPECIFICITY",
+        "DEVELOPMENTAL STAGE",
+        "INVOLVEMENT IN DEP",
+        "MUTAGENESIS OF LEU-91; CYS-95; CYS-106; CYS-120 AND PHE-233",
+        "ACTIVE SITE"
+      ]
+    },
+    {
+      "referenceNumber": 6,
+      "citation": {
+        "id": "21183079",
+        "citationType": "journal article",
+        "authors": [
+          "Huttlin E.L.",
+          "Jedrychowski M.P.",
+          "Elias J.E.",
+          "Goswami T.",
+          "Rad R.",
+          "Beausoleil S.A.",
+          "Villen J.",
+          "Haas W.",
+          "Sowa M.E.",
+          "Gygi S.P."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "21183079"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1016/j.cell.2010.12.001"
+          }
+        ],
+        "title": "A tissue-specific atlas of mouse protein phosphorylation and expression.",
+        "publicationDate": "2010",
+        "journal": "Cell",
+        "firstPage": "1174",
+        "lastPage": "1189",
+        "volume": "143"
+      },
+      "referencePositions": [
+        "IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS]"
+      ],
+      "referenceComments": [
+        {
+          "value": "Testis",
+          "type": "TISSUE"
+        }
+      ]
+    },
+    {
+      "referenceNumber": 7,
+      "citation": {
+        "id": "26715683",
+        "citationType": "journal article",
+        "authors": [
+          "Marin E.P.",
+          "Jozsef L.",
+          "Di Lorenzo A.",
+          "Held K.F.",
+          "Luciano A.K.",
+          "Melendez J.",
+          "Milstone L.M.",
+          "Velazquez H.",
+          "Sessa W.C."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "26715683"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1161/atvbaha.115.306942"
+          }
+        ],
+        "title": "The Protein Acyl Transferase ZDHHC21 Modulates alpha1 Adrenergic Receptor Function and Regulates Hemodynamics.",
+        "publicationDate": "2016",
+        "journal": "Arterioscler. Thromb. Vasc. Biol.",
+        "firstPage": "370",
+        "lastPage": "379",
+        "volume": "36"
+      },
+      "referencePositions": [
+        "FUNCTION",
+        "CATALYTIC ACTIVITY",
+        "DISEASE",
+        "TISSUE SPECIFICITY",
+        "MUTAGENESIS OF CYS-120 AND PHE-233",
+        "ACTIVE SITE"
+      ]
+    },
+    {
+      "referenceNumber": 8,
+      "citation": {
+        "id": "27653213",
+        "citationType": "journal article",
+        "authors": [
+          "Beard R.S. Jr.",
+          "Yang X.",
+          "Meegan J.E.",
+          "Overstreet J.W.",
+          "Yang C.G.",
+          "Elliott J.A.",
+          "Reynolds J.J.",
+          "Cha B.J.",
+          "Pivetti C.D.",
+          "Mitchell D.A.",
+          "Wu M.H.",
+          "Deschenes R.J.",
+          "Yuan S.Y."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "27653213"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1038/ncomms12823"
+          }
+        ],
+        "title": "Palmitoyl acyltransferase DHHC21 mediates endothelial dysfunction in systemic inflammatory response syndrome.",
+        "publicationDate": "2016",
+        "journal": "Nat. Commun.",
+        "firstPage": "12823",
+        "lastPage": "12823",
+        "volume": "7"
+      },
+      "referencePositions": [
+        "FUNCTION",
+        "CATALYTIC ACTIVITY",
+        "DISEASE"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "AY166674",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAO27361.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AK020293",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "BAB32059.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AL671005",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "-"
+        },
+        {
+          "key": "Status",
+          "value": "NOT_ANNOTATED_CDS"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "BC043110",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "AAH43110.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "mRNA"
+        }
+      ]
+    },
+    {
+      "database": "CCDS",
+      "id": "CCDS18294.1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_080923.2",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NM_026647.3"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_006538279.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_006538216.4"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_011248395.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_011250093.4"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_011248396.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_011250094.4"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_036020274.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_036164381.1"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_036020275.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_036164382.1"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_036020276.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_036164383.1"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_036020277.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_036164384.1"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "XP_036020278.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_036164385.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "BioGRID",
+      "id": "212771",
+      "properties": [
+        {
+          "key": "Interactions",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "database": "FunCoup",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Number of interactors",
+          "value": "1954"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "10090.ENSMUSP00000030110",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PhosphoSitePlus",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SwissPalm",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "10090-ENSMUSP00000030110",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PeptideAtlas",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "ProteomicsDB",
+      "id": "274973",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Pumba",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Antibodypedia",
+      "id": "42748",
+      "properties": [
+        {
+          "key": "antibodies",
+          "value": "113 antibodies from 19 providers"
+        }
+      ]
+    },
+    {
+      "database": "DNASU",
+      "id": "68268",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSMUST00000030110.15",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSMUSP00000030110.9"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSMUSG00000028403.16"
+        }
+      ]
+    },
+    {
+      "database": "Ensembl",
+      "id": "ENSMUST00000107239.8",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "ENSMUSP00000102859.2"
+        },
+        {
+          "key": "GeneId",
+          "value": "ENSMUSG00000028403.16"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "68268",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "mmu:68268",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "UCSC",
+      "id": "uc008tkj.2",
+      "properties": [
+        {
+          "key": "OrganismName",
+          "value": "mouse"
+        }
+      ]
+    },
+    {
+      "database": "AGR",
+      "id": "MGI:1915518",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "CTD",
+      "id": "340481",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "MGI",
+      "id": "MGI:1915518",
+      "properties": [
+        {
+          "key": "GeneName",
+          "value": "Zdhhc21"
+        }
+      ]
+    },
+    {
+      "database": "VEuPathDB",
+      "id": "HostDB:ENSMUSG00000028403",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "KOG1311",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Eukaryota"
+        }
+      ]
+    },
+    {
+      "database": "GeneTree",
+      "id": "ENSGT00940000158006",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "HOGENOM",
+      "id": "CLU_048061_3_0_1",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "InParanoid",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OMA",
+      "id": "HGERELW",
+      "properties": [
+        {
+          "key": "Fingerprint",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "331948at2759",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PhylomeDB",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Reactome",
+      "id": "R-MMU-203615",
+      "properties": [
+        {
+          "key": "PathwayName",
+          "value": "eNOS activation"
+        }
+      ]
+    },
+    {
+      "database": "Reactome",
+      "id": "R-MMU-9009391",
+      "properties": [
+        {
+          "key": "PathwayName",
+          "value": "Extra-nuclear estrogen signaling"
+        }
+      ]
+    },
+    {
+      "database": "BioGRID-ORCS",
+      "id": "68268",
+      "properties": [
+        {
+          "key": "hits",
+          "value": "5 hits in 78 CRISPR screens"
+        }
+      ]
+    },
+    {
+      "database": "PRO",
+      "id": "PR:Q9D270",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000000589",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome 4"
+        }
+      ]
+    },
+    {
+      "database": "RNAct",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "moleculeType",
+          "value": "protein"
+        }
+      ]
+    },
+    {
+      "database": "Bgee",
+      "id": "ENSMUSG00000028403",
+      "properties": [
+        {
+          "key": "ExpressionPatterns",
+          "value": "Expressed in otolith organ and 225 other cell types or tissues"
+        }
+      ]
+    },
+    {
+      "database": "ExpressionAtlas",
+      "id": "Q9D270",
+      "properties": [
+        {
+          "key": "ExpressionPatterns",
+          "value": "baseline and differential"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005783",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:endoplasmic reticulum"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005794",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:Golgi apparatus"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISS:UniProtKB"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0000139",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:Golgi membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005886",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:plasma membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "ISO:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0016409",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:palmitoyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IDA:MGI"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "19956733"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0019706",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:protein-cysteine S-palmitoyltransferase activity"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "26715683"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0071875",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:adrenergic receptor signaling pathway"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "26715683"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0001942",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:hair follicle development"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:MGI"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "19956733"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0018230",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:peptidyl-L-cysteine S-palmitoylation"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "26715683"
+        },
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "27653213"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0018345",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:protein palmitoylation"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:MGI"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "19997487"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0006612",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:protein targeting to membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IBA:GO_Central"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:1903140",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:regulation of establishment of endothelial barrier"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "27653213"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:1904997",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:regulation of leukocyte adhesion to arterial endothelial cell"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "27653213"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0003056",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:regulation of vascular associated smooth muscle contraction"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "26715683"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0048733",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "P:sebaceous gland development"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IMP:MGI"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000315",
+          "source": "PubMed",
+          "id": "19956733"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001594",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Palmitoyltrfase_DHHC"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR039859",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PFA4/ZDH16/20/ERF2-like"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR12246",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "PALMITOYLTRANSFERASE ZDHHC16"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF01529",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "DHHC"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS50216",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "DHHC"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MGLRIHFVVDPHGWCCMGLIVFVWLYNIVIIPKIVLFPHYEEGHIPGILIIIFYGISIFCLVALVRASLTDPGRLPENPKIPHAERELWELCNKCNLMRPKRSHHCSRCGHCVRRMDHHCPWINNCVGEDNHWLFLQLCFYTELLTCYALMFSFCHYYYFLPLKKRNLDLFVVRHELAIMRLAAFMGITMLVGITGLFYTQLIGIITDTTSIEKMSNCCEEISRPRKPWQQTFSEVFGTRWKILWFIPFRQRQPLRVPYHFANHV",
+    "length": 265,
+    "molWeight": 31331,
+    "crc64": "BA3F428AAE4637DB",
+    "md5": "AD5F74E892B6E85CBEDFBEAEA4E94FAE"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "CATALYTIC ACTIVITY": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "TISSUE SPECIFICITY": 1,
+      "DEVELOPMENTAL STAGE": 1,
+      "DOMAIN": 1,
+      "DISEASE": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 1,
+      "Topological domain": 5,
+      "Transmembrane": 4,
+      "Domain": 1,
+      "Active site": 1,
+      "Mutagenesis": 5,
+      "Sequence conflict": 1
+    },
+    "uniParcId": "UPI000000B300"
+  }
+}
