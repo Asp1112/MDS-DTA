@@ -1,0 +1,248 @@
+{
+  "dataset": "bindingdb",
+  "experiment": "fewshot",
+  "seed": 42,
+  "n_samples": 53824,
+  "fractions": {
+    "fs50": [
+      {
+        "fold": 0,
+        "sizes": {
+          "train": 17941,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.5
+        }
+      },
+      {
+        "fold": 1,
+        "sizes": {
+          "train": 17941,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.5
+        }
+      },
+      {
+        "fold": 2,
+        "sizes": {
+          "train": 17941,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.5
+        }
+      },
+      {
+        "fold": 3,
+        "sizes": {
+          "train": 17942,
+          "validation": 8970,
+          "test": 8971,
+          "train_pool": 35883
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.500014
+        }
+      },
+      {
+        "fold": 4,
+        "sizes": {
+          "train": 17942,
+          "validation": 8970,
+          "test": 8970,
+          "train_pool": 35884
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.5
+        }
+      },
+      {
+        "fold": 5,
+        "sizes": {
+          "train": 17942,
+          "validation": 8971,
+          "test": 8970,
+          "train_pool": 35883
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.500014
+        }
+      }
+    ],
+    "fs25": [
+      {
+        "fold": 0,
+        "sizes": {
+          "train": 8970,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.249986
+        }
+      },
+      {
+        "fold": 1,
+        "sizes": {
+          "train": 8970,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.249986
+        }
+      },
+      {
+        "fold": 2,
+        "sizes": {
+          "train": 8970,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.249986
+        }
+      },
+      {
+        "fold": 3,
+        "sizes": {
+          "train": 8971,
+          "validation": 8970,
+          "test": 8971,
+          "train_pool": 35883
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.250007
+        }
+      },
+      {
+        "fold": 4,
+        "sizes": {
+          "train": 8971,
+          "validation": 8970,
+          "test": 8970,
+          "train_pool": 35884
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.25
+        }
+      },
+      {
+        "fold": 5,
+        "sizes": {
+          "train": 8971,
+          "validation": 8971,
+          "test": 8970,
+          "train_pool": 35883
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.250007
+        }
+      }
+    ],
+    "fs10": [
+      {
+        "fold": 0,
+        "sizes": {
+          "train": 3588,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.099994
+        }
+      },
+      {
+        "fold": 1,
+        "sizes": {
+          "train": 3588,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.099994
+        }
+      },
+      {
+        "fold": 2,
+        "sizes": {
+          "train": 3588,
+          "validation": 8971,
+          "test": 8971,
+          "train_pool": 35882
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.099994
+        }
+      },
+      {
+        "fold": 3,
+        "sizes": {
+          "train": 3588,
+          "validation": 8970,
+          "test": 8971,
+          "train_pool": 35883
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.099992
+        }
+      },
+      {
+        "fold": 4,
+        "sizes": {
+          "train": 3588,
+          "validation": 8970,
+          "test": 8970,
+          "train_pool": 35884
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.099989
+        }
+      },
+      {
+        "fold": 5,
+        "sizes": {
+          "train": 3588,
+          "validation": 8971,
+          "test": 8970,
+          "train_pool": 35883
+        },
+        "audit": {
+          "subset_of_train_pool": true,
+          "train_fraction": 0.099992
+        }
+      }
+    ]
+  }
+}

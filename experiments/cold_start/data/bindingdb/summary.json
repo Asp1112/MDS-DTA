@@ -1,0 +1,244 @@
+{
+  "dataset": "bindingdb",
+  "experiment": "cold_start",
+  "seed": 42,
+  "n_samples": 53824,
+  "n_unique_drugs": 15501,
+  "n_unique_targets": 1709,
+  "settings": {
+    "cold_drug": [
+      {
+        "fold": 0,
+        "sizes": {
+          "train": 37559,
+          "validation": 7030,
+          "test": 9235
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_drug_count": 2584
+        }
+      },
+      {
+        "fold": 1,
+        "sizes": {
+          "train": 37773,
+          "validation": 9021,
+          "test": 7030
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_drug_count": 2584
+        }
+      },
+      {
+        "fold": 2,
+        "sizes": {
+          "train": 33825,
+          "validation": 10978,
+          "test": 9021
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_drug_count": 2584
+        }
+      },
+      {
+        "fold": 3,
+        "sizes": {
+          "train": 33373,
+          "validation": 9473,
+          "test": 10978
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_drug_count": 2583
+        }
+      },
+      {
+        "fold": 4,
+        "sizes": {
+          "train": 36264,
+          "validation": 8087,
+          "test": 9473
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_drug_count": 2583
+        }
+      },
+      {
+        "fold": 5,
+        "sizes": {
+          "train": 36502,
+          "validation": 9235,
+          "test": 8087
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_drug_count": 2583
+        }
+      }
+    ],
+    "cold_target": [
+      {
+        "fold": 0,
+        "sizes": {
+          "train": 35051,
+          "validation": 9488,
+          "test": 9285
+        },
+        "audit": {
+          "test_targets_unseen_in_train": true,
+          "test_target_count": 285
+        }
+      },
+      {
+        "fold": 1,
+        "sizes": {
+          "train": 35494,
+          "validation": 8842,
+          "test": 9488
+        },
+        "audit": {
+          "test_targets_unseen_in_train": true,
+          "test_target_count": 285
+        }
+      },
+      {
+        "fold": 2,
+        "sizes": {
+          "train": 36688,
+          "validation": 8294,
+          "test": 8842
+        },
+        "audit": {
+          "test_targets_unseen_in_train": true,
+          "test_target_count": 285
+        }
+      },
+      {
+        "fold": 3,
+        "sizes": {
+          "train": 35641,
+          "validation": 9889,
+          "test": 8294
+        },
+        "audit": {
+          "test_targets_unseen_in_train": true,
+          "test_target_count": 285
+        }
+      },
+      {
+        "fold": 4,
+        "sizes": {
+          "train": 35909,
+          "validation": 8026,
+          "test": 9889
+        },
+        "audit": {
+          "test_targets_unseen_in_train": true,
+          "test_target_count": 285
+        }
+      },
+      {
+        "fold": 5,
+        "sizes": {
+          "train": 36513,
+          "validation": 9285,
+          "test": 8026
+        },
+        "audit": {
+          "test_targets_unseen_in_train": true,
+          "test_target_count": 284
+        }
+      }
+    ],
+    "cold_both": [
+      {
+        "fold": 0,
+        "sizes": {
+          "train": 24439,
+          "validation": 1245,
+          "test": 1608
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_targets_unseen_in_train": true,
+          "test_drug_count": 530,
+          "test_target_count": 184
+        }
+      },
+      {
+        "fold": 1,
+        "sizes": {
+          "train": 24994,
+          "validation": 1531,
+          "test": 1245
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_targets_unseen_in_train": true,
+          "test_drug_count": 586,
+          "test_target_count": 176
+        }
+      },
+      {
+        "fold": 2,
+        "sizes": {
+          "train": 23020,
+          "validation": 1643,
+          "test": 1531
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_targets_unseen_in_train": true,
+          "test_drug_count": 656,
+          "test_target_count": 171
+        }
+      },
+      {
+        "fold": 3,
+        "sizes": {
+          "train": 22097,
+          "validation": 1781,
+          "test": 1643
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_targets_unseen_in_train": true,
+          "test_drug_count": 629,
+          "test_target_count": 183
+        }
+      },
+      {
+        "fold": 4,
+        "sizes": {
+          "train": 24198,
+          "validation": 1228,
+          "test": 1781
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_targets_unseen_in_train": true,
+          "test_drug_count": 696,
+          "test_target_count": 194
+        }
+      },
+      {
+        "fold": 5,
+        "sizes": {
+          "train": 24791,
+          "validation": 1608,
+          "test": 1228
+        },
+        "audit": {
+          "test_drugs_unseen_in_train": true,
+          "test_targets_unseen_in_train": true,
+          "test_drug_count": 511,
+          "test_target_count": 189
+        }
+      }
+    ]
+  }
+}
