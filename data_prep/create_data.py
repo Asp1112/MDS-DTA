@@ -22,22 +22,18 @@ import json
 import pickle
 from collections import OrderedDict
 from tqdm import tqdm
-
 import numpy as np
 import pandas as pd
 from rdkit import Chem
 from rdkit.Chem import rdchem
-
 from utils import TestbedDataset
 
-# ------------------ user settings ------------------
-DATASET = 'pAAP_y'  # choose 'davis','kiba','bindingdb'
+DATASET = 'pAAP_y'
 ROOT = 'data'
 PROCESSED_DIR = os.path.join(ROOT, 'processed')
 MAX_SEQ_LEN = 1000
 SEQ_VOC = "ACDEFGHIKLMNPQRSTVWY"
 SEQ_DICT = {v: (i + 1) for i, v in enumerate(SEQ_VOC)}
-# ---------------------------------------------------
 
 
 def one_of_k_encoding(x, allowable_set):
@@ -54,7 +50,6 @@ def one_of_k_encoding_unk(x, allowable_set):
 
 def atom_features(atom):
     """Return the 94-dimensional atom feature vector used by MDS.
-
     Features comprise atom type (44), degree (11), total hydrogens (11),
     implicit valence (11), formal charge (11), hybridization (5), and
     aromaticity (1). Features are kept as binary 0/1 values (no L1
@@ -80,7 +75,6 @@ def atom_features(atom):
     ]
     hybridization_feat = [atom.GetHybridization() == value for value in hybridization_types]
     aromatic = [atom.GetIsAromatic()]
-
     feats = (
         symbol_feat
         + degree_feat
@@ -105,7 +99,6 @@ def smiles_to_graph(smiles):
         return None
     num_atoms = mol.GetNumAtoms()
     features = [atom_features(a) for a in mol.GetAtoms()]
-
     edges = []
     edge_attrs = []
     for b in mol.GetBonds():
@@ -122,12 +115,10 @@ def smiles_to_graph(smiles):
             btype = 3
         else:
             btype = 4
-        # add both directions
         edges.append([i, j])
         edges.append([j, i])
         edge_attrs.append(btype)
         edge_attrs.append(btype)
-
     return num_atoms, features, edges, edge_attrs
 
 
@@ -152,28 +143,20 @@ def build_deepdta_csv(dataset: str):
     ligands_file = os.path.join(fpath, 'ligands_can.txt')
     proteins_file = os.path.join(fpath, 'proteins.txt')
     y_file = os.path.join(fpath, 'Y')
-
     for p in (train_fold_file, test_fold_file, ligands_file, proteins_file, y_file):
         if not os.path.exists(p):
             raise FileNotFoundError(f"Required file not found: {p}")
-
     train_fold = json.load(open(train_fold_file))
-    # train_fold is list of lists; flatten
     train_idx = [i for fold in train_fold for i in fold]
     test_idx = json.load(open(test_fold_file))
-
     ligands = json.load(open(ligands_file), object_pairs_hook=OrderedDict)
     proteins = json.load(open(proteins_file), object_pairs_hook=OrderedDict)
     affinity = pickle.load(open(y_file, 'rb'), encoding='latin1')
-
     drugs = [Chem.MolToSmiles(Chem.MolFromSmiles(ligands[k]), isomericSmiles=True) for k in ligands.keys()]
     prots = [proteins[k] for k in proteins.keys()]
-
     affinity = np.asarray(affinity)
     if dataset == 'davis':
         affinity = np.asarray([-np.log10(y / 1e9) for y in affinity])
-
-    # helper to write CSV for given indices
     def write_csv(indices_rows, indices_cols, outpath):
         ensure_dir(os.path.dirname(outpath))
         with open(outpath, 'w') as fw:
@@ -183,24 +166,16 @@ def build_deepdta_csv(dataset: str):
                 seq = prots[c]
                 val = affinity[r, c]
                 fw.write(f"{smi},{seq},{val}\n")
-
-    # build train/test pairs selection
     rows, cols = np.where(~np.isnan(affinity))
     rows = rows.tolist(); cols = cols.tolist()
-
-    # According to original logic, train pairs are those where both row & col in train_fold indices
-    # In original script they selected rows[train_fold], cols[train_fold] (indexing by row index list)
-    # We'll follow same behavior: select pairs by index positions.
     train_rows = [rows[i] for i in train_idx]
     train_cols = [cols[i] for i in train_idx]
     test_rows = [rows[i] for i in test_idx]
     test_cols = [cols[i] for i in test_idx]
-
     train_csv = os.path.join(ROOT, f"{dataset}_train.csv")
     test_csv = os.path.join(ROOT, f"{dataset}_test.csv")
     write_csv(train_rows, train_cols, train_csv)
     write_csv(test_rows, test_cols, test_csv)
-
     return train_csv, test_csv
 
 
@@ -227,40 +202,29 @@ def prepare_processed(dataset: str):
     if not (os.path.exists(train_csv) and os.path.exists(test_csv)):
         print('Building CSV files from DeepDTA raw files...')
         build_deepdta_csv(dataset)
-
     df_train = pd.read_csv(train_csv)
     df_test = pd.read_csv(test_csv)
-
-    # collect unique smiles
     all_smiles = pd.concat([df_train['compound_iso_smiles'], df_test['compound_iso_smiles']]).unique()
     smile_graph = build_smile_graphs(all_smiles)
-
-    # prepare protein arrays (padded/truncated)
     train_prots = [seq_to_array(s) for s in df_train['target_sequence']]
     test_prots = [seq_to_array(s) for s in df_test['target_sequence']]
-
     train_drugs = df_train['compound_iso_smiles'].tolist()
     test_drugs = df_test['compound_iso_smiles'].tolist()
     train_Y = df_train['affinity'].values
     test_Y = df_test['affinity'].values
-
-    # create processed dataset via TestbedDataset helper (it will save .pt files under data/processed)
     print('Saving processed PyG dataset using TestbedDataset...')
     ensure_dir(PROCESSED_DIR)
     _ = TestbedDataset(root=ROOT, dataset=dataset + '_train', xd=np.array(train_drugs), xt=np.array(train_prots), y=np.array(train_Y), smile_graph=smile_graph)
     _ = TestbedDataset(root=ROOT, dataset=dataset + '_test', xd=np.array(test_drugs), xt=np.array(test_prots), y=np.array(test_Y), smile_graph=smile_graph)
-
     print('Done. Processed files written to', PROCESSED_DIR)
 
 
 def _canonical_or_seeded_six_folds(dataset: str, root: str, seed: int):
     """Return six disjoint folds in processed-dataset index space.
-
     Davis and KIBA retain the five published DeepDTA training folds and use
     the published held-out fold as fold 5. Their processed files are ordered
     as flattened training folds followed by the held-out fold, so the mapping
     to the concatenated ``*_train`` + ``*_test`` datasets is exact.
-
     BindingDB has no raw DeepDTA fold files in this project snapshot. Its
     existing processed train/test samples are therefore pooled and assigned
     once to six deterministic, size-balanced pair-level folds.
@@ -268,7 +232,6 @@ def _canonical_or_seeded_six_folds(dataset: str, root: str, seed: int):
     dataset_dir = os.path.join(root, dataset)
     train_fold_file = os.path.join(dataset_dir, 'folds', 'train_fold_setting1.txt')
     test_fold_file = os.path.join(dataset_dir, 'folds', 'test_fold_setting1.txt')
-
     if os.path.exists(train_fold_file) and os.path.exists(test_fold_file):
         with open(train_fold_file) as fh:
             source_folds = json.load(fh)
@@ -291,13 +254,11 @@ def _canonical_or_seeded_six_folds(dataset: str, root: str, seed: int):
         processed_folds = [sorted(chunk.tolist()) for chunk in np.array_split(rng.permutation(n_samples), 6)]
         source_folds = None
         provenance = 'deterministic_seeded_balanced_pair_folds_from_processed_train_plus_test'
-
     return processed_folds, source_folds, provenance
 
 
 def generate_sixfold_manifests(datasets, root: str, output_dir: str, seed: int = 42):
     """Create exact 4/1/1 train/validation/test indices for six-fold CV.
-
     In outer run i, fold i is the one-time test set, fold (i+1) mod 6 is the
     validation set, and the other four folds are training data. Thus every
     sample is test data exactly once and validation data exactly once, and no
@@ -311,7 +272,6 @@ def generate_sixfold_manifests(datasets, root: str, output_dir: str, seed: int =
         flat = [idx for fold in fold_members for idx in fold]
         if len(flat) != len(set(flat)) or set(flat) != set(range(len(flat))):
             raise ValueError(f'{dataset}: folds are not a disjoint complete partition')
-
         dataset_out = os.path.join(output_dir, dataset)
         os.makedirs(dataset_out, exist_ok=True)
         fold_sizes = [len(fold) for fold in fold_members]
@@ -331,7 +291,6 @@ def generate_sixfold_manifests(datasets, root: str, output_dir: str, seed: int =
             membership['source_pair_fold_members'] = source_folds
         with open(os.path.join(dataset_out, 'fold_membership.json'), 'w') as fh:
             json.dump(membership, fh, indent=2)
-
         test_counts = np.zeros(len(flat), dtype=np.int8)
         val_counts = np.zeros(len(flat), dtype=np.int8)
         for fold_id in range(6):
@@ -363,7 +322,6 @@ def generate_sixfold_manifests(datasets, root: str, output_dir: str, seed: int =
             }
             with open(os.path.join(dataset_out, f'fold_{fold_id}.json'), 'w') as fh:
                 json.dump(split, fh, indent=2)
-
         if not (np.all(test_counts == 1) and np.all(val_counts == 1)):
             raise AssertionError(f'{dataset}: each sample must be test and validation exactly once')
         summary = {
@@ -381,9 +339,6 @@ def generate_sixfold_manifests(datasets, root: str, output_dir: str, seed: int =
         }
         with open(os.path.join(dataset_out, 'audit_summary.json'), 'w') as fh:
             json.dump(summary, fh, indent=2)
-        # The time-constrained primary experiment uses one fixed 4/1/1 split:
-        # parts 2-5 train, part 1 validates, and part 0 tests. Rotation files
-        # remain available for a future full six-run cross-validation study.
         fixed_split_path = os.path.join(dataset_out, 'fixed_six_part_split.json')
         with open(os.path.join(dataset_out, 'fold_0.json')) as source_fh:
             fixed_split = json.load(source_fh)
@@ -397,7 +352,6 @@ def generate_sixfold_manifests(datasets, root: str, output_dir: str, seed: int =
 
 def prepare_sixfold_processed(dataset: str, root: str, force_rebuild: bool = False):
     """Build a fresh all-sample PyG file in canonical six-fold order.
-
     This deliberately uses a new ``*_sixfold_all.pt`` name so stale legacy
     train/test artifacts are never overwritten or silently reused.
     """
@@ -420,7 +374,6 @@ def prepare_sixfold_processed(dataset: str, root: str, force_rebuild: bool = Fal
     source_order = [int(idx) for fold in source_folds for idx in fold] + [int(idx) for idx in held_out]
     if len(source_order) != len(set(source_order)):
         raise ValueError(f'{dataset}: duplicate source indices')
-
     with open(required[2]) as fh:
         ligands = json.load(fh, object_pairs_hook=OrderedDict)
     with open(required[3]) as fh:
@@ -439,13 +392,11 @@ def prepare_sixfold_processed(dataset: str, root: str, force_rebuild: bool = Fal
     rows, cols = np.where(~np.isnan(affinity))
     if set(source_order) != set(range(len(rows))):
         raise ValueError(f'{dataset}: canonical folds do not cover all non-missing affinity pairs')
-
     ordered_drugs = np.asarray([drugs[rows[idx]] for idx in source_order])
     ordered_sequences = [prots[cols[idx]] for idx in source_order]
     ordered_targets = np.asarray([seq_to_array(seq) for seq in ordered_sequences])
     ordered_y = np.asarray([affinity[rows[idx], cols[idx]] for idx in source_order], dtype=float)
     smile_graph = build_smile_graphs(ordered_drugs)
-
     csv_path = os.path.join(root, f'{dataset}_sixfold_all.csv')
     pd.DataFrame({
         'source_pair_index': source_order,

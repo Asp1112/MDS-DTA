@@ -1,10 +1,7 @@
-#!/usr/bin/env python3
 import argparse, csv, json, os, platform, subprocess, time
 from pathlib import Path
-
 import numpy as np
 import torch
-
 from train_test import averaged_state, build_model, make_loaders
 
 
@@ -18,7 +15,6 @@ def main():
     ap.add_argument("--repeats", type=int, default=40)
     ap.add_argument("--out", default="efficiency_cost_davis.json")
     args = ap.parse_args()
-
     run = Path(args.run_dir)
     cfg = json.loads((run / "config.json").read_text())
     model, _, _, applied, _ = build_model(cfg["model_module"].split("models.")[-1], json.dumps(cfg.get("model_parameters", {})))
@@ -31,16 +27,13 @@ def main():
     if not checkpoints:
         raise SystemExit("No checkpoint files in run directory")
     model.load_state_dict(averaged_state(checkpoints[:3]))
-
     split = Path("splits") / args.dataset / f"fold_{args.fold}.json"
     _, _, test_loader, sizes, _ = make_loaders(device, args.dataset, split, args.batch_size, args.batch_size)
     batch = next(iter(test_loader)).to(device)
     pairs = int(batch.y.numel())
-
     def forward():
         with torch.inference_mode(), torch.amp.autocast("cuda", enabled=True):
             return model(batch)
-
     for _ in range(args.warmup): forward()
     torch.cuda.synchronize()
     torch.cuda.reset_peak_memory_stats()
@@ -51,12 +44,10 @@ def main():
         times.append(a.elapsed_time(b))
     peak_gb = torch.cuda.max_memory_allocated() / 1024**3
     median_batch_ms = float(np.median(times))
-
     activities = [torch.profiler.ProfilerActivity.CPU, torch.profiler.ProfilerActivity.CUDA]
     with torch.profiler.profile(activities=activities, with_flops=True) as prof:
         forward(); torch.cuda.synchronize()
     flops_batch = float(sum((e.flops or 0) for e in prof.key_averages()))
-
     hist = list(csv.DictReader((run / "history.csv").open()))
     seconds = [float(r["seconds"]) for r in hist if r.get("seconds")]
     total_s = float(sum(seconds))

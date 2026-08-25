@@ -23,10 +23,8 @@ import argparse
 import json
 import os
 import shutil
-
 import torch
 from torch_geometric.data import InMemoryDataset
-
 import create_data
 from utils import TestbedDataset
 
@@ -98,14 +96,12 @@ def build(dataset, root, output_dir):
         del data_list
         src = os.path.join(root, "processed", dataset + "_sixfold_all.pt")
         torch.save((data, slices), src)
-
     dest = os.path.join(output_dir, dataset + "_sixfold_all.pt")
     if os.path.abspath(src) != os.path.abspath(dest):
         shutil.move(src, dest)
         link = link_into_processed(dataset, root, dest)
     else:
         link = src
-
     ok, msg = verify(dataset, root)
     if not ok:
         raise RuntimeError(f"{dataset}: build failed verification ({msg})")
@@ -121,7 +117,6 @@ def main():
                         help="Directory for the sixfold .pt files "
                              "(default: <root>/processed)")
     args = parser.parse_args()
-
     output_dir = args.output_dir or os.path.join(args.root, "processed")
     for dataset in args.datasets:
         dataset = dataset.lower()

@@ -14,5 +14,5 @@ Supplementary Table 11). Each file defines an `nn.Module` class
 * `MDS_dta_protein_transformer.py` — BiLSTM protein encoder replaced by a
   Transformer encoder.
 
-The reported six-fold results are listed in `ablation/ablation_results.csv`
-and the per-fold summaries under `ablation/results/`.
+These variants are invoked through the training harness, e.g.
+`python train_test.py --dataset davis --model MDS_dta_both_1dcnn --test-fold 0`.

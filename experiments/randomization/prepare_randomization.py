@@ -103,7 +103,6 @@ def prepare_dataset(dataset, seed):
                   f"test={len(test)} positions_changed={shuffled_differ}",
                   flush=True)
         summaries["rand_" + mode] = fold_summaries
-
     summary_dir = OUTPUT_ROOT / dataset
     ensure_dir(summary_dir)
     with (summary_dir / "summary.json").open("w", encoding="utf-8") as fh:
@@ -130,4 +129,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

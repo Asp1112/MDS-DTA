@@ -2,12 +2,10 @@
 
 Runs on server2 with the mds environment (has rdkit + torch_geometric) from
 the project root:
-
   /root/miniconda3/envs/mds/bin/python baselines/prepare_baseline_data.py
 
 Builds (all in canonical davis_sixfold_all.csv order, i.e. the same index
 space as davis_sixfold_all.pt and splits/davis/fold_*.json):
-
   data/baselines/davis_graphdta_all.pt   78-dim GraphDTA graphs (rdkit)
   data/baselines/davis_deepdtagen_all.pt 94-dim graphs + tokenized drug SMILES
   data/baselines/davis_tokenizer.pkl     DeepDTAGen SMILES tokenizer
@@ -21,7 +19,6 @@ import sys
 from collections import OrderedDict
 from concurrent.futures import ProcessPoolExecutor
 from collections import deque
-
 import numpy as np
 import pandas as pd
 from rdkit import Chem
@@ -41,7 +38,7 @@ from utils import Tokenizer  # noqa: E402
 MAX_SEQ_LEN = 1000
 SEQ_VOC = "ABCDEFGHIKLMNOPQRSTUVWXYZ"
 SEQ_DICT = {v: (i + 1) for i, v in enumerate(SEQ_VOC)}
-MAX_TOKENS = 138  # DeepDTAGen positional encoding supports 138 positions
+MAX_TOKENS = 138
 MAX_PROT_LEN = 1000
 MCGEN_HOPS = 3
 
@@ -125,7 +122,6 @@ def build_graphdta_all(df, out_path):
                 ex.map(_convert_78, unique, chunksize=10),
                 total=len(unique)):
             smile_graph[smile] = graph
-
     data_list = []
     for _, row in tqdm(df.iterrows(), total=len(df), desc="GraphDTA samples"):
         c_size, features, edge_index = smile_graph[row["compound_iso_smiles"]]
@@ -149,13 +145,11 @@ def build_deepdtagen_all(df, base_pt_path, out_path, tokenizer_path):
     n = int(slices["y"][-1].item())
     if n != len(df):
         raise ValueError(f"sample mismatch: {n} != {len(df)}")
-
     all_smiles = set(df["compound_iso_smiles"])
     tokenizer = Tokenizer(Tokenizer.gen_vocabs(all_smiles))
     with open(tokenizer_path, "wb") as fh:
         pickle.dump(tokenizer, fh)
     print(f"Tokenizer vocab size: {len(tokenizer)}", flush=True)
-
     token_seqs = []
     max_len = 0
     for smile in tqdm(df["compound_iso_smiles"], desc="Tokenize SMILES"):
@@ -166,7 +160,6 @@ def build_deepdtagen_all(df, base_pt_path, out_path, tokenizer_path):
         token_seqs.append(toks)
     print(f"Max tokenized SMILES length: {max_len} (cap {MAX_TOKENS})",
           flush=True)
-
     pad = tokenizer.s2i["<pad>"]
     data_list = []
     for i in tqdm(range(n), desc="DeepDTAGen samples"):
@@ -232,16 +225,13 @@ def build_gdilateddta_all(df, out_path, meta_path):
     atom_vocab = {sym: i + 1 for i, sym in enumerate(sorted(symbols))}
     print(f"GDilatedDTA: {len(unique)} unique SMILES, "
           f"atom vocab size={len(atom_vocab)}", flush=True)
-
     def edge_tensor(hop_list):
         if hop_list:
             return torch.LongTensor(hop_list).transpose(1, 0)
         return torch.empty((2, 0), dtype=torch.long)
-
     smile_graph = {}
     for smile in tqdm(unique, desc="GDilatedDTA graphs"):
         smile_graph[smile] = smile_to_int_graph(smile, atom_vocab)
-
     data_list = []
     for _, row in tqdm(df.iterrows(), total=len(df), desc="GDilatedDTA samples"):
         c_size, x, hops = smile_graph[row["compound_iso_smiles"]]

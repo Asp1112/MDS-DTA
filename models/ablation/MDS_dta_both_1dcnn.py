@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -13,13 +10,11 @@ class Protein1DCNNEncoder(nn.Module):
         self.embed = nn.Embedding(vocab_size, embed_dim, padding_idx=padding_idx)
         self.conv = nn.Conv1d(in_channels=embed_dim, out_channels=proj_dim, kernel_size=3, padding=1)
         self.act = nn.ReLU()
-
     def forward(self, tokens):
-        # tokens: (B, L)
-        x = self.embed(tokens)              # (B, L, E)
-        x = x.transpose(1, 2)               # (B, E, L)
-        x = self.act(self.conv(x))          # (B, proj_dim, L)
-        feat = x.mean(dim=2)                # (B, proj_dim)
+        x = self.embed(tokens)
+        x = x.transpose(1, 2)
+        x = self.act(self.conv(x))
+        feat = x.mean(dim=2)
         return feat
 
 
@@ -33,7 +28,6 @@ class Compound1DCNNEncoder(nn.Module):
         self.dropout = nn.Dropout(dropout)
         self.pool = global_mean_pool
         self.proj = nn.Linear(hidden_dim, proj_dim)
-
     def forward(self, data):
         x = data.x.unsqueeze(-1)
         x = self.conv1(x)
@@ -75,7 +69,6 @@ class CrossAttentionFusion(nn.Module):
         self.gate_d1 = nn.Parameter(torch.tensor(0.5))
         self.gate_p2 = nn.Parameter(torch.tensor(0.5))
         self.gate_d2 = nn.Parameter(torch.tensor(0.5))
-
     def forward(self, prot_seq, drug_seq):
         p_att1, _ = self.prot_to_drug_1(query=prot_seq, key=drug_seq, value=drug_seq)
         prot_seq = self.ln1_p(prot_seq + self.dropout(self.gate_p1 * p_att1))
@@ -119,7 +112,6 @@ class MDSDTABoth1DCNN(nn.Module):
             nn.Linear(common_dim, common_dim // 2), nn.GELU(), nn.Dropout(dropout),
             nn.Linear(common_dim // 2, 1)
         )
-
     def forward(self, data):
         device = next(self.parameters()).device
         data = data.to(device, non_blocking=True)
@@ -134,6 +126,3 @@ class MDSDTABoth1DCNN(nn.Module):
         x = torch.cat([prot_pooled, drug_pooled], dim=1)
         out = self.head(x)
         return out
-
-
-

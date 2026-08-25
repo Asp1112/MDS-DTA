@@ -26,7 +26,6 @@ import shutil
 import sys
 import time
 from pathlib import Path
-
 import numpy as np
 import pandas as pd
 from scipy import stats
@@ -64,30 +63,24 @@ DEFAULT_MODEL_PARAMS = {
 
 class SavedGraphDataset(InMemoryDataset):
     """Load a collated (data, slices) PyG file and index it like a dataset."""
-
     def __init__(self, path):
         super().__init__()
         self.data, self.slices = torch.load(
             path, map_location="cpu", weights_only=False)
-
     def len(self):
         return int(self.slices["y"][-1].item())
 
 
 class IndexedSubset(torch.utils.data.Dataset):
     """Subset that attaches the global dataset index to each sample.
-
     Needed by models that look up extra per-sample information (for example
     precomputed ESM features) aligned with the full dataset order.
     """
-
     def __init__(self, base, indices):
         self.base = base
         self.indices = list(indices)
-
     def __len__(self):
         return len(self.indices)
-
     def __getitem__(self, idx):
         data = self.base[self.indices[idx]]
         data.esm_idx = torch.tensor([self.indices[idx]])
@@ -112,13 +105,11 @@ def ci_index(y, f):
     m = f_unique.size
     bit = np.zeros(m + 1, dtype=np.int64)
     freq = np.zeros(m, dtype=np.int64)
-
     def update(idx, delta=1):
         i = idx + 1
         while i <= m:
             bit[i] += delta
             i += i & -i
-
     def query(idx):
         if idx < 0:
             return 0
@@ -128,7 +119,6 @@ def ci_index(y, f):
             s += bit[i]
             i -= i & -i
         return s
-
     start = total_processed = comparable = concordant = ties = 0
     for c in counts:
         end = start + c
@@ -242,7 +232,6 @@ def resolve_model(model_spec):
             raise SystemExit(
                 f"Model module not found: {model_spec!r} "
                 f"(tried models.{model_spec} and {model_spec}).") from exc
-
     candidates = [
         value for value in vars(module).values()
         if isinstance(value, type)
@@ -354,7 +343,6 @@ def run_training(args, experiment, prefix, split, split_sizes, model,
                  model_module_name, model_class_name, applied_params,
                  requested_params, family_info, split_source):
     """Validation-driven training + one-time test evaluation.
-
     forward_loss(model, batch, loss_fn, device) -> (loss, target, output)
     predict_fn(model, batch, device) -> (labels, preds)
     """
@@ -394,7 +382,6 @@ def run_training(args, experiment, prefix, split, split_sizes, model,
     else:
         (run_dir / "split_indices.json").write_text(
             json.dumps(split, indent=2), encoding="utf-8")
-
     fields = ["epoch", "train_loss", "mse", "rmse", "pearson", "spearman",
               "ci", "r2", "rm2", "mae", "lr", "max_grad", "seconds"]
     history = []
@@ -405,7 +392,6 @@ def run_training(args, experiment, prefix, split, split_sizes, model,
     early_stop = False
     use_amp = bool(family_info.get("amp", True)) and device.type == "cuda"
     scaler = torch.amp.GradScaler("cuda", enabled=use_amp, init_scale=4096.0)
-
     for epoch in range(1, args.epochs + 1):
         start = time.time()
         model.train()
@@ -432,12 +418,10 @@ def run_training(args, experiment, prefix, split, split_sizes, model,
                 optimizer.step()
             loss_sum += float(loss.detach())
         train_loss = loss_sum / max(1, len(train_loader))
-
         y_true, y_pred = predict_fn(model, validation_loader, device)
         validation_mse = float(np.mean((y_true - y_pred) ** 2))
         scheduler.step(validation_mse)
         retain_top_k(top_k, model, run_dir, epoch, validation_mse)
-
         improved = validation_mse < best_mse
         if improved:
             best_mse = validation_mse
@@ -445,7 +429,6 @@ def run_training(args, experiment, prefix, split, split_sizes, model,
             stale = 0
         else:
             stale += 1
-
         seconds = time.time() - start
         if hasattr(optimizer, "optimizer"):
             lr = optimizer.optimizer.param_groups[0]["lr"]
@@ -466,7 +449,6 @@ def run_training(args, experiment, prefix, split, split_sizes, model,
             print(f"Early stopping at epoch {epoch}.", flush=True)
             early_stop = True
             break
-
     write_history(run_dir, history, fields)
     summary = {
         "dataset": args.dataset,
@@ -482,12 +464,10 @@ def run_training(args, experiment, prefix, split, split_sizes, model,
     }
     (run_dir / "validation_summary.json").write_text(
         json.dumps(summary, indent=2), encoding="utf-8")
-
     def evaluate(state):
         model.load_state_dict(state)
         labels, preds = predict_fn(model, test_loader, device)
         return metrics(labels, preds), labels, preds
-
     best_state = torch.load(top_k[0]["path"], map_location="cpu",
                             weights_only=True)["model_state_dict"]
     best_result, labels, best_pred = evaluate(best_state)

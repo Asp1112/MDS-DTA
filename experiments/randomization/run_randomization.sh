@@ -1,10 +1,3 @@
-#!/bin/bash
-# Run the randomization-control experiments (six-fold, train-side shuffle).
-#
-# Usage:
-#   bash run_randomization.sh --datasets davis kiba bindingdb
-#   bash run_randomization.sh --datasets davis --dry
-
 set -u
 
 cd "$(dirname "$0")" || exit 1
@@ -16,13 +9,13 @@ FOLDS=(0 1 2 3 4 5)
 DRY=0
 EXTRA=()
 
-while [ $# -gt 0 ]; do
+while [ $
   case "$1" in
     --model) MODEL="$2"; shift 2 ;;
-    --datasets) shift; DATASETS=(); while [ $# -gt 0 ] && [[ "$1" != --* ]]; do DATASETS+=("$1"); shift; done ;;
-    --folds) shift; FOLDS=(); while [ $# -gt 0 ] && [[ "$1" != --* ]]; do FOLDS+=("$1"); shift; done ;;
+    --datasets) shift; DATASETS=(); while [ $
+    --folds) shift; FOLDS=(); while [ $
     --dry) DRY=1; shift ;;
-    --*) EXTRA+=("$1"); if [ $# -gt 1 ] && [[ "$2" != --* ]]; then EXTRA+=("$2"); shift; fi; shift ;;
+    --*) EXTRA+=("$1"); if [ $
     *) echo "unknown option: $1"; exit 2 ;;
   esac
 done
@@ -49,4 +42,3 @@ for ds in "${DATASETS[@]}"; do
   done
 done
 echo "=== randomization done (model=$MODEL) ==="
-

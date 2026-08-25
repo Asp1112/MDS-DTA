@@ -11,10 +11,8 @@ import argparse
 import json
 import statistics
 import time
-
 import torch
 from torch_geometric.data import DataLoader
-
 from models.MDS_DTA import MDSDTA
 from utils import TestbedDataset
 
@@ -44,18 +42,15 @@ def main():
     parser.add_argument("--cuda", type=int, default=0)
     parser.add_argument("--output", default="efficiency_metrics.json")
     args = parser.parse_args()
-
     device = torch.device(f"cuda:{args.cuda}" if torch.cuda.is_available() else "cpu")
     dataset = TestbedDataset(root="data", dataset=args.dataset)
     loader = DataLoader(dataset, batch_size=args.batch_size, shuffle=False, num_workers=0)
     batch = next(iter(loader)).to(device)
     model = load_model(args.checkpoint, device)
-
     with torch.inference_mode():
         for _ in range(args.warmup):
             model(batch)
         synchronize(device)
-
         if device.type == "cuda":
             torch.cuda.reset_peak_memory_stats(device)
         times = []
@@ -64,7 +59,6 @@ def main():
             model(batch)
             synchronize(device)
             times.append(time.perf_counter() - start)
-
     pairs = int(batch.num_graphs)
     mean_batch_s = statistics.mean(times)
     result = {

@@ -18,7 +18,6 @@ import argparse
 import os
 import sys
 from pathlib import Path
-
 import torch
 from torch import nn
 
@@ -40,16 +39,13 @@ MODES = ["x1", "x2", "y"]
 
 class PermutedDataset(torch.utils.data.Dataset):
     """Apply the stored train-side permutation to one input/label channel."""
-
     def __init__(self, base, train_indices, permutation, mode):
         self.base = base
         self.indices = list(train_indices)
         self.permutation = list(permutation)
         self.mode = mode
-
     def __len__(self):
         return len(self.indices)
-
     def __getitem__(self, idx):
         data = self.base[self.indices[idx]]
         source = self.base[self.permutation[idx]]
@@ -99,7 +95,6 @@ def main():
                         help="CombinedDTA-family model module under models/.")
     parser.add_argument("--model-params", default=None)
     args = parser.parse_args()
-
     dataset = args.dataset.strip().lower()
     mode = args.mode
     fold = args.fold
@@ -112,12 +107,10 @@ def main():
     split = load_manifest(manifest_path)
     if not split.get("train_permutation"):
         raise SystemExit("Manifest has no train_permutation; regenerate it.")
-
     seed_everything(args.seed)
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     if device.type == "cuda":
         torch.backends.cudnn.benchmark = True
-
     epochs = 2 if args.dry else args.epochs
     batch_size = args.batch_size or 256
     eval_batch_size = args.eval_batch_size or 256
@@ -128,7 +121,6 @@ def main():
     args.batch_size = batch_size
     args.eval_batch_size = eval_batch_size
     args.epochs = epochs
-
     base = load_mds_dataset(dataset)
     train_set = PermutedDataset(base, split["train_indices"],
                                 split["train_permutation"], mode)
@@ -144,7 +136,6 @@ def main():
     test_loader = PyGDataLoader(
         IndexedSubset(base, split["test_indices"]),
         batch_size=eval_batch_size, shuffle=False, **options)
-
     model, model_module, model_class, applied, requested = build_model(
         args.model, args.model_params)
     model = model.to(device)
@@ -153,7 +144,6 @@ def main():
           f"model={args.model} device={device} params={n_params:,}",
           flush=True)
     print(f"Split sizes train/val/test: {split['sizes']}", flush=True)
-
     optimizer = torch.optim.AdamW(
         model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
@@ -164,7 +154,6 @@ def main():
     if args.skip_done and results_root and check_done(results_root, prefix):
         print(f"[skip] {prefix}: completed run already exists.", flush=True)
         return
-
     run_training(
         args, EXPERIMENT, prefix, split, list(split["sizes"].values()),
         model, device, train_loader, validation_loader, test_loader,
@@ -176,4 +165,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

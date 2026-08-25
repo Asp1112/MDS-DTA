@@ -27,7 +27,6 @@ import json
 import os
 import random
 from pathlib import Path
-
 import pandas as pd
 
 
@@ -122,12 +121,9 @@ def prepare_dataset(dataset, seed):
     drugs = df["compound_iso_smiles"].tolist()
     targets = df["target_sequence"].tolist()
     rng = random.Random(seed)
-    # sorted() keeps the grouping identical across machines and Python
-    # versions (set iteration order is hash-randomized and not stable).
     drug_groups = group_entities(rng, sorted(set(drugs)))
     target_groups = group_entities(rng, sorted(set(targets)))
     groups = {"drug": drug_groups, "target": target_groups}
-
     summaries = {}
     for setting in SETTINGS:
         setting_dir = OUTPUT_ROOT / "splits" / dataset / setting
@@ -173,7 +169,6 @@ def prepare_dataset(dataset, seed):
                   f"train={len(tr)} val={len(va)} test={len(te)} "
                   f"audit={audit}", flush=True)
         summaries[setting] = fold_summaries
-
     summary_dir = OUTPUT_ROOT / dataset
     ensure_dir(summary_dir)
     with (summary_dir / "summary.json").open("w", encoding="utf-8") as fh:
@@ -205,4 +200,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

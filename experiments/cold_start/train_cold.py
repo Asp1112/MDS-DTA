@@ -1,7 +1,6 @@
 """Cold-start training entry (entity-level six-fold manifests).
 
 Supports the MDS CombinedDTA-family models and the three public baselines:
-
   * DeepDTA      --model deepdta
   * GraphDTA     --model graphdta_gcn|graphdta_gat|graphdta_gat_gcn|
                           graphdta_ginconv
@@ -25,7 +24,6 @@ import json
 import os
 import sys
 from pathlib import Path
-
 import numpy as np
 import torch
 from torch import nn
@@ -76,7 +74,6 @@ def build_deepdta_loaders(dataset, split, batch_size, eval_batch_size,
                           workers, device):
     from baselines.deepdta_baseline import label_sequence, label_smiles
     df = load_rows(dataset)
-
     def encode(indices):
         drugs = np.stack([label_smiles(s)
                           for s in df["compound_iso_smiles"].iloc[indices]])
@@ -85,7 +82,6 @@ def build_deepdta_loaders(dataset, split, batch_size, eval_batch_size,
         y = df["affinity"].iloc[indices].to_numpy(dtype=np.float32)
         return (torch.from_numpy(drugs), torch.from_numpy(prots),
                 torch.from_numpy(y))
-
     tr_x, tr_p, tr_y = encode(split["train_indices"])
     va_x, va_p, va_y = encode(split["validation_indices"])
     te_x, te_p, te_y = encode(split["test_indices"])
@@ -203,14 +199,12 @@ def main():
                              "deepdtagen | <models.* module>")
     parser.add_argument("--model-params", default=None)
     args = parser.parse_args()
-
     dataset = args.dataset.strip().lower()
     setting = args.setting
     fold = args.fold
     model_spec = args.model
     family = family_of(model_spec)
     defaults = FAMILY_DEFAULTS[family]
-
     manifest_path = HERE / "data" / "splits" / dataset / setting / \
         f"fold_{fold}.json"
     if not manifest_path.exists():
@@ -218,12 +212,10 @@ def main():
             f"Missing split manifest: {manifest_path} "
             "(run prepare_cold_start.py first).")
     split = load_manifest(manifest_path)
-
     seed_everything(args.seed)
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     if device.type == "cuda":
         torch.backends.cudnn.benchmark = True
-
     epochs = 2 if args.dry else args.epochs
     batch_size = args.batch_size or defaults["batch_size"]
     if args.dry and args.batch_size is None:
@@ -235,8 +227,6 @@ def main():
     args.batch_size = batch_size
     args.eval_batch_size = eval_batch_size
     args.epochs = epochs
-
-    # ------------------------------------------------------------------
     if family == "deepdta":
         from baselines.deepdta_baseline import DeepDTAModel
         model = DeepDTAModel().to(device)
@@ -287,13 +277,11 @@ def main():
         forward_loss, predict_fn = forward_loss_mds, predict_mds
         model_label = model_class
         requested = args.model_params
-
     n_params = sum(p.numel() for p in model.parameters())
     print(f"Cold start | dataset={dataset} setting={setting} fold={fold} "
           f"family={family} model={model_spec} device={device} "
           f"params={n_params:,}", flush=True)
     print(f"Split sizes train/val/test: {split['sizes']}", flush=True)
-
     if family == "deepdtagen":
         from FetterGrad import FetterGrad
         optimizer = FetterGrad(torch.optim.Adam(
@@ -310,14 +298,12 @@ def main():
                 model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
             optimizer, mode="min", factor=0.5, patience=args.scheduler_patience)
-
     loss_fn = nn.MSELoss()
     prefix = f"{model_label}_{dataset}_{setting}_fold{fold}"
     results_root = args.results_root
     if args.skip_done and results_root and check_done(results_root, prefix):
         print(f"[skip] {prefix}: completed run already exists.", flush=True)
         return
-
     run_training(
         args, EXPERIMENT, prefix, split, list(split["sizes"].values()),
         model, device, train_loader, validation_loader, test_loader,
@@ -331,4 +317,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

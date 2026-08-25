@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """run_sixfold_cv.py - six-fold rotation for the CombinedDTA-family formal runs.
 
 Protocol (as encoded in splits/<dataset>/fold_<N>.json by create_data.py):
@@ -17,7 +16,7 @@ example the currently running MDS_dta experiment) to finish
 before starting.
 
 Examples:
-  python run_sixfold_cv.py --model MDS_dta            # davis, folds 1-5
+  python run_sixfold_cv.py --model MDS_dta
   python run_sixfold_cv.py --model MDS_dta --dataset davis --folds 1 2 3 4 5
   python run_sixfold_cv.py --model MDS_dta --entry train_test.py
   python run_sixfold_cv.py --model MDS_dta --entry train.py
@@ -92,7 +91,6 @@ def run_fold(dataset, fold, model, entry, model_params):
               % (dataset, fold, dataset, model), flush=True)
         write_status("skipped_%s_fold%d" % (dataset, fold), "already completed")
         return True
-
     log_path = os.path.join(LOG_DIR, "%s_fold%d_%s.log"
                             % (dataset, fold, time.strftime("%Y%m%d-%H%M%S")))
     print("=== [%s fold %d] %s - starting (log: %s) ==="
@@ -100,12 +98,10 @@ def run_fold(dataset, fold, model, entry, model_params):
           flush=True)
     write_status("training_%s_fold%d" % (dataset, fold),
                  "model=%s, log: %s" % (model, log_path))
-
     command = [PYTHON, entry, "--dataset", dataset, "--model", model]
     if model_params:
         command += ["--model-params", model_params]
     command += ["--test-fold", str(fold), "--results-root", out_root]
-
     with open(log_path, "w", encoding="utf-8") as log_file:
         proc = subprocess.Popen(
             command, cwd=ROOT, stdout=subprocess.PIPE,
@@ -115,7 +111,6 @@ def run_fold(dataset, fold, model, entry, model_params):
             sys.stdout.flush()
             log_file.write(line)
         rc = proc.wait()
-
     if rc != 0:
         print("[FAILED] %s fold %d: exit code %d (see %s)"
               % (dataset, fold, rc, log_path), flush=True)
@@ -222,7 +217,6 @@ def main():
     parser.add_argument("--dry-run", action="store_true",
                         help="Print the plan and exit without training.")
     args = parser.parse_args()
-
     if args.all_folds:
         args.folds = [0, 1, 2, 3, 4, 5]
     args.folds = sorted(set(args.folds))
@@ -233,7 +227,6 @@ def main():
     if not args.folds:
         print("No folds selected.")
         sys.exit(1)
-
     if os.path.exists(LOCK_FILE):
         with open(LOCK_FILE, encoding="utf-8") as fh:
             print("Another six-fold run is already active (%s). Exiting."
@@ -249,9 +242,7 @@ def main():
                  args.entry, args.model,
                  (" | params: " + args.model_params) if args.model_params else ""))
         print("Start: %s" % time.strftime("%Y-%m-%d %H:%M:%S"), flush=True)
-
         preflight(args.datasets, args.folds, args.model, args.entry)
-
         if args.dry_run:
             print("DRY RUN - planned jobs:")
             for dataset in args.datasets:
@@ -263,15 +254,12 @@ def main():
                         print("  [run ] %s fold %d -> results/cv/%s/%s/"
                               % (dataset, fold, dataset, args.model))
             sys.exit(0)
-
         wait_for_gpu(args.start_now)
-
         for dataset in args.datasets:
             print("\n########## Dataset: %s ##########" % dataset, flush=True)
             for fold in args.folds:
                 run_fold(dataset, fold, args.model, args.entry, args.model_params)
             write_summary(dataset, args.model)
-
         write_status("done", "all requested folds completed")
         print("\nAll done: %s" % time.strftime("%Y-%m-%d %H:%M:%S"))
         print("Per-model summaries: results/cv/<dataset>_<model>_sixfold_summary.json")
@@ -284,4 +272,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

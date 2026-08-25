@@ -98,7 +98,6 @@ def prepare_dataset(dataset, seed):
                   f"train={len(subset)}/{len(train_pool)} val={len(validation)} "
                   f"test={len(test)}", flush=True)
         summaries[tag] = fold_summaries
-
     summary_dir = OUTPUT_ROOT / dataset
     ensure_dir(summary_dir)
     with (summary_dir / "summary.json").open("w", encoding="utf-8") as fh:
@@ -125,4 +124,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -22,7 +19,6 @@ class ProteinBiLSTMEncoder(nn.Module):
         self.proj = nn.Linear(seq_dim * 2, proj_dim)
         self.ln = nn.LayerNorm(proj_dim)
         self.dropout = nn.Dropout(dropout)
-
     def forward(self, tokens):
         x = self.embed(tokens)
         seq, _ = self.lstm(x)
@@ -56,7 +52,6 @@ class GraphEncoder(nn.Module):
         self.edgeconv = EdgeConv(nn=mlp)
         self.pool = global_mean_pool
         self.proj = nn.Linear(hidden_dim, proj_dim)
-
     def forward(self, data):
         x0 = self.in_proj(data.x)
         x0 = self.gnorm(x0, data.batch)
@@ -100,7 +95,6 @@ class CrossAttentionFusion(nn.Module):
         self.gate_d1 = nn.Parameter(torch.tensor(0.5))
         self.gate_p2 = nn.Parameter(torch.tensor(0.5))
         self.gate_d2 = nn.Parameter(torch.tensor(0.5))
-
     def forward(self, prot_seq, drug_seq):
         p_att1, _ = self.prot_to_drug_1(query=prot_seq, key=drug_seq, value=drug_seq)
         prot_seq = self.ln1_p(prot_seq + self.dropout(self.gate_p1 * p_att1))
@@ -129,7 +123,6 @@ class MDSDTA_output(nn.Module):
                  heads=4,
                  dropout=0.1):
         super().__init__()
-
         self.prot_encoder = ProteinBiLSTMEncoder(vocab_size=protein_vocab,
                                                  embed_dim=embed_dim,
                                                  lstm_hidden=common_dim // 2,
@@ -137,32 +130,22 @@ class MDSDTA_output(nn.Module):
                                                  proj_dim=common_dim,
                                                  dropout=dropout,
                                                  padding_idx=0)
-
         self.drug_encoder = GraphEncoder(in_dim=drug_atom_feat_dim, hidden_dim=graph_hidden,
                                          n_steps=graph_steps, proj_dim=common_dim, dropout=dropout)
-
         self.fusion = CrossAttentionFusion(embed_dim=common_dim, heads=heads, dropout=dropout)
-
         self.head = nn.Linear(common_dim * 2, 1)
-
     def forward(self, data=None):
         device = next(self.parameters()).device
         data = data.to(device, non_blocking=True)
-
         prot_tokens = data.target
         protein_seq = prot_tokens.long().to(device)
-
         prot_vec = self.prot_encoder(protein_seq)
         prot_seq = prot_vec.unsqueeze(1)
-
         drug_vec = self.drug_encoder(data)
         drug_seq = drug_vec.unsqueeze(1)
-
         prot_after, drug_after = self.fusion(prot_seq, drug_seq)
         prot_pooled = prot_after.mean(dim=1)
         drug_pooled = drug_after.mean(dim=1)
         x = torch.cat([prot_pooled, drug_pooled], dim=1)
         out = self.head(x)
         return out
-
-

@@ -1,14 +1,3 @@
-#!/bin/bash
-# Run the cold-start experiments (entity-level six-fold) for the selected
-# model and datasets.  Defaults to the MDS family model; pass one of
-# deepdta / graphdta / deepdtagen to run the corresponding baseline.
-#
-# Usage:
-#   bash run_cold_start.sh --model deepdta --datasets davis kiba
-#   bash run_cold_start.sh --model graphdta_gcn --datasets davis kiba bindingdb
-#   bash run_cold_start.sh --model deepdtagen --datasets davis kiba
-#   bash run_cold_start.sh --model MDS_dta --datasets davis --dry
-
 set -u
 
 cd "$(dirname "$0")" || exit 1
@@ -20,14 +9,14 @@ FOLDS=(0 1 2 3 4 5)
 DRY=0
 EXTRA=()
 
-while [ $# -gt 0 ]; do
+while [ $
   case "$1" in
     --model) MODEL="$2"; shift 2 ;;
-    --datasets) shift; DATASETS=(); while [ $# -gt 0 ] && [[ "$1" != --* ]]; do DATASETS+=("$1"); shift; done ;;
-    --folds) shift; FOLDS=(); while [ $# -gt 0 ] && [[ "$1" != --* ]]; do FOLDS+=("$1"); shift; done ;;
-    --settings) shift; SETTINGS=(); while [ $# -gt 0 ] && [[ "$1" != --* ]]; do SETTINGS+=("$1"); shift; done ;;
+    --datasets) shift; DATASETS=(); while [ $
+    --folds) shift; FOLDS=(); while [ $
+    --settings) shift; SETTINGS=(); while [ $
     --dry) DRY=1; shift ;;
-    --*) EXTRA+=("$1"); if [ $# -gt 1 ] && [[ "$2" != --* ]]; then EXTRA+=("$2"); shift; fi; shift ;;
+    --*) EXTRA+=("$1"); if [ $
     *) echo "unknown option: $1"; exit 2 ;;
   esac
 done
@@ -54,4 +43,3 @@ for ds in "${DATASETS[@]}"; do
   done
 done
 echo "=== cold-start done (model=$MODEL) ==="
-

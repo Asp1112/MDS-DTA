@@ -85,7 +85,6 @@ See [`data_prep/README.md`](data_prep/README.md) for details.
 ├── predict_affinity.py       # single-sample / batch inference
 ├── utils.py                  # dataset and evaluation utilities
 ├── models/                   # MDS model (MDS_dta.py), checkpoints, ablation variants
-├── ablation/                 # ablation results and per-fold summaries
 ├── data_prep/                # data preparation and split-generation scripts
 ├── experiments/              # cold-start / randomization / reduced-data experiments
 ├── data/
@@ -101,9 +100,7 @@ See [`data_prep/README.md`](data_prep/README.md) for details.
 ## Experiments
 
 - **Ablation** — [`models/ablation/`](models/ablation/) contains the six
-  variants; reported results in
-  [`ablation/ablation_results.csv`](ablation/ablation_results.csv) and
-  per-fold summaries in [`ablation/results/`](ablation/results/).
+  architectural variants used for the ablation study.
 - **Cold start / randomization / reduced data** —
   [`experiments/`](experiments/) provides preparation and training scripts
   together with the prepared datasets and splits
