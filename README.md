@@ -18,7 +18,7 @@ conda activate mds-affinity
 ## Repository structure
 
 ```
-├── train.py                  # training entry point
+├── train_test.py             # training entry point (six-fold CV harness)
 ├── predict_affinity.py       # single-sample / batch inference
 ├── utils.py                  # dataset and evaluation utilities
 ├── models/                   # model definition (models/MDS_dta.py) and checkpoints
@@ -36,13 +36,15 @@ conda activate mds-affinity
 
 ### Training
 
-Set the dataset and hyper-parameters in the settings block of `train.py`, then:
+Run the six-fold training harness (dataset, model and hyper-parameters are
+command-line arguments):
 
 ```bash
-python train.py
+python train_test.py --dataset davis --model MDS_dta --test-fold 0
 ```
 
-Supported datasets: `davis`, `kiba`, `bindingdb`.
+Supported datasets: `davis`, `kiba`, `bindingdb`; models are selected with
+`--model` (e.g. `MDS_dta`, `MDS_dta_both_1dcnn`).
 
 ### Inference
 
