@@ -80,7 +80,6 @@ See [`data_prep/README.md`](data_prep/README.md) for details.
 
 ```
 ├── train_test.py             # six-fold training harness
-├── train_test_swa.py         # SWA-averaged training variant
 ├── run_sixfold_cv.py         # six-fold cross-validation driver
 ├── predict_affinity.py       # single-sample / batch inference
 ├── utils.py                  # dataset and evaluation utilities

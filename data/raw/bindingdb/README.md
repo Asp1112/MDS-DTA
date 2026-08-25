@@ -7,7 +7,6 @@ BindingDB download into the six-fold format used by the benchmark:
 
 * processed six-fold data: `data/processed/bindingdb_sixfold_all.csv`
 * fold indices: `data/splits/bindingdb/`
-* reconstruction tooling: `data_prep/reconstruct_bindingdb_csv.py`
 
 This matches the manuscript Data Availability statement (processed benchmark
 data, fold indices and split-generation code are provided for all three
