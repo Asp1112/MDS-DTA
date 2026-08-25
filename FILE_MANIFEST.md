@@ -1,8 +1,8 @@
-﻿# File manifest (reviewer-required items → repository files)
+# File manifest (reviewer-required items → repository files)
 
 This manifest maps every item requested by Reviewer 1, comment 11, and by the
 manuscript Data Availability statement to its exact location in this
-repository. Fixed release commit: `cb578e2a80e8f8d7f6cdbcabbfcd7e8cb62d98b0`.
+repository. Fixed release commit: `92c5117363f9b0c795d3a46cca26835eeb68a3cd`.
 
 | Reviewer-requested item | Repository location |
 | --- | --- |
@@ -19,6 +19,6 @@ repository. Fixed release commit: `cb578e2a80e8f8d7f6cdbcabbfcd7e8cb62d98b0`.
 | Structure and docking files | `structure_docking/` (AlphaFold3 structures, AutoDock Vina outputs, mechanism/geometry screening, reports) |
 | Raw HPLC data | `wetlab/HPLC_data.xlsx` |
 | Raw kinetic data | `wetlab/kinetics_raw_data.xlsx` |
-| Fixed repository commit | this file and `README.md` (`cb578e2a80e8f8d7f6cdbcabbfcd7e8cb62d98b0`), git tag `release-v1.0` |
+| Fixed repository commit | this file and `README.md` (`92c5117363f9b0c795d3a46cca26835eeb68a3cd`), git tag `release-v1.0` |
 | Environment file | `environment.yml`, `requirements.txt` |
 | Explicit commands reproducing each table and figure | `reproduce/REPRODUCE.md` |

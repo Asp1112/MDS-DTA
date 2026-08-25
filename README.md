@@ -1,4 +1,4 @@
-﻿# MDSAffinity
+# MDSAffinity
 
 MDS is a deep-learning framework for protein–ligand affinity prediction and
 enzyme screening. It encodes compounds as molecular graphs and protein
@@ -14,7 +14,7 @@ scores, the Top-100 candidate list, structure/docking files, raw HPLC and
 kinetic data, environment configuration, and the explicit commands required to
 reproduce the main results under a unified workflow.
 
-> **Fixed release commit:** `cb578e2a80e8f8d7f6cdbcabbfcd7e8cb62d98b0` (see [Data Availability](#data-availability)).
+> **Fixed release commit:** `92c5117363f9b0c795d3a46cca26835eeb68a3cd` (see [Data Availability](#data-availability)).
 
 ## Repository layout
 
@@ -189,7 +189,7 @@ dataset, 10,026-sequence candidate library, screening scores, structure/docking
 files, raw experimental data, and analysis scripts are available in this
 repository at https://github.com/Asp1112/MDSAffinity.
 
-* Fixed release commit: `cb578e2a80e8f8d7f6cdbcabbfcd7e8cb62d98b0`
+* Fixed release commit: `92c5117363f9b0c795d3a46cca26835eeb68a3cd`
 * Environment files: `environment.yml`, `requirements.txt`
 * Reproduction commands: `reproduce/REPRODUCE.md`
 
