@@ -1,0 +1,152 @@
+REMARK  27 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C2_2  and  S1_4 
+REMARK    2  A    between atoms: S1_4  and  C3_5 
+REMARK    3  A    between atoms: C3_5  and  C4_6 
+REMARK    4  A    between atoms: C4_6  and  N1_7 
+REMARK       I    between atoms: N1_7  and  C5_8 
+REMARK    5  A    between atoms: C5_8  and  C6_11 
+REMARK    6  A    between atoms: C6_11  and  C7_12 
+REMARK    7  A    between atoms: C7_12  and  N2_13 
+REMARK       I    between atoms: N2_13  and  C8_14 
+REMARK    8  A    between atoms: C8_14  and  C9_17 
+REMARK    9  A    between atoms: C9_17  and  C10_18 
+REMARK   10  A    between atoms: C9_17  and  O17_63 
+REMARK   11  A    between atoms: C10_18  and  C13_21 
+REMARK   12  A    between atoms: C13_21  and  O4_22 
+REMARK   13  A    between atoms: O4_22  and  P1_23 
+REMARK   14  A    between atoms: P1_23  and  O6_25 
+REMARK   15  A    between atoms: P1_23  and  O7_27 
+REMARK   16  A    between atoms: O7_27  and  P2_28 
+REMARK   17  A    between atoms: P2_28  and  O10_32 
+REMARK   18  A    between atoms: P2_28  and  O9_30 
+REMARK   19  A    between atoms: O10_32  and  C14_33 
+REMARK   20  A    between atoms: C14_33  and  C15_34 
+REMARK   21  A    between atoms: C16_35  and  O13_39 
+REMARK   22  A    between atoms: C17_36  and  O12_46 
+REMARK   23  A    between atoms: C18_37  and  N3_48 
+REMARK   24  A    between atoms: O13_39  and  P3_40 
+REMARK   25  A    between atoms: P3_40  and  O15_42 
+REMARK   26  A    between atoms: P3_40  and  O16_44 
+REMARK   27  A    between atoms: C21_53  and  N7_60 
+ROOT
+HETATM    1  P2  ACO L   1      -0.631   7.851   1.180  1.00  0.00     0.401 P 
+HETATM    2  O8  ACO L   1       0.400   8.369   0.231  1.00  0.00    -0.631 OA
+ENDROOT
+BRANCH   1   3
+HETATM    3  O10 ACO L   1      -1.914   8.777   1.389  1.00  0.00    -0.294 OA
+BRANCH   3   4
+HETATM    4  C14 ACO L   1      -3.148   8.201   1.729  1.00  0.00     0.215 C 
+BRANCH   4   5
+HETATM    5  C15 ACO L   1      -4.186   8.840   0.807  1.00  0.00     0.180 C 
+HETATM    6  O11 ACO L   1      -5.417   9.140   1.475  1.00  0.00    -0.353 OA
+HETATM    7  C18 ACO L   1      -5.868  10.426   0.995  1.00  0.00     0.262 C 
+HETATM    8  C17 ACO L   1      -4.577  11.214   0.759  1.00  0.00     0.199 C 
+HETATM    9  C16 ACO L   1      -3.638  10.143   0.239  1.00  0.00     0.197 C 
+BRANCH   7  10
+HETATM   10  N3  ACO L   1      -6.713  11.031   2.005  1.00  0.00    -0.297 N 
+HETATM   11  C19 ACO L   1      -7.548  12.113   1.851  1.00  0.00     0.188 A 
+HETATM   12  N4  ACO L   1      -8.275  12.338   2.923  1.00  0.00    -0.346 N 
+HETATM   13  H4  ACO L   1      -8.965  13.075   3.066  1.00  0.00     0.167 HD
+HETATM   14  C20 ACO L   1      -7.897  11.349   3.815  1.00  0.00     0.116 A 
+HETATM   15  C21 ACO L   1      -8.330  11.018   5.111  1.00  0.00     0.109 A 
+HETATM   16  C23 ACO L   1      -6.902  10.557   3.273  1.00  0.00     0.142 A 
+HETATM   17  N5  ACO L   1      -7.743   9.974   5.745  1.00  0.00    -0.341 N 
+HETATM   18  C22 ACO L   1      -6.766   9.305   5.101  1.00  0.00     0.183 A 
+HETATM   19  H5  ACO L   1      -8.033   9.702   6.684  1.00  0.00     0.167 HD
+HETATM   20  N6  ACO L   1      -6.276   9.523   3.863  1.00  0.00    -0.336 N 
+HETATM   21  H6  ACO L   1      -5.531   8.976   3.432  1.00  0.00     0.168 HD
+BRANCH  15  22
+HETATM   22  N7  ACO L   1      -9.324  11.712   5.783  1.00  0.00    -0.287 NA
+HETATM   23  H33 ACO L   1     -10.221  11.731   5.302  1.00  0.00     0.125 HD
+HETATM   24  H34 ACO L   1      -8.999  12.586   6.174  1.00  0.00     0.125 HD
+ENDBRANCH  15  22
+ENDBRANCH   7  10
+BRANCH   8  25
+HETATM   25  O12 ACO L   1      -4.635  12.310  -0.157  1.00  0.00    -0.388 OA
+HETATM   26  H35 ACO L   1      -3.724  12.685  -0.201  1.00  0.00     0.210 HD
+ENDBRANCH   8  25
+BRANCH   9  27
+HETATM   27  O13 ACO L   1      -3.663  10.050  -1.181  1.00  0.00    -0.286 OA
+BRANCH  27  28
+HETATM   28  P3  ACO L   1      -2.235  10.059  -1.898  1.00  0.00     0.391 P 
+HETATM   29  O14 ACO L   1      -2.241  10.704  -3.246  1.00  0.00    -0.632 OA
+BRANCH  28  30
+HETATM   30  O15 ACO L   1      -1.851   8.508  -1.821  1.00  0.00    -0.307 OA
+HETATM   31  H36 ACO L   1      -1.181   8.349  -1.114  1.00  0.00     0.222 HD
+ENDBRANCH  28  30
+BRANCH  28  32
+HETATM   32  O16 ACO L   1      -1.322  10.714  -0.773  1.00  0.00    -0.307 OA
+HETATM   33  H37 ACO L   1      -1.195  10.134  -0.005  1.00  0.00     0.222 HD
+ENDBRANCH  28  32
+ENDBRANCH  27  28
+ENDBRANCH   9  27
+ENDBRANCH   4   5
+ENDBRANCH   3   4
+ENDBRANCH   1   3
+BRANCH   1  34
+HETATM   34  O9  ACO L   1      -1.323   6.491   0.709  1.00  0.00    -0.307 OA
+HETATM   35  H24 ACO L   1      -1.058   6.195  -0.195  1.00  0.00     0.222 HD
+ENDBRANCH   1  34
+BRANCH   1  36
+HETATM   36  O7  ACO L   1      -0.147   7.522   2.662  1.00  0.00    -0.195 OA
+BRANCH  36  37
+HETATM   37  P1  ACO L   1       0.547   8.670   3.517  1.00  0.00     0.401 P 
+HETATM   38  O5  ACO L   1       1.998   8.445   3.803  1.00  0.00    -0.631 OA
+BRANCH  37  39
+HETATM   39  O4  ACO L   1      -0.365   8.819   4.827  1.00  0.00    -0.296 OA
+BRANCH  39  40
+HETATM   40  C13 ACO L   1      -1.548   8.072   5.028  1.00  0.00     0.192 C 
+BRANCH  40  41
+HETATM   41  C10 ACO L   1      -1.681   7.554   6.488  1.00  0.00     0.009 C 
+HETATM   42  C11 ACO L   1      -3.158   7.278   6.806  1.00  0.00     0.020 C 
+HETATM   43  C12 ACO L   1      -1.177   8.631   7.470  1.00  0.00     0.020 C 
+BRANCH  41  44
+HETATM   44  C9  ACO L   1      -0.818   6.267   6.564  1.00  0.00     0.219 C 
+BRANCH  44  45
+HETATM   45  O17 ACO L   1      -0.608   5.782   5.233  1.00  0.00    -0.385 OA
+HETATM   46  H38 ACO L   1      -1.390   6.009   4.702  1.00  0.00     0.210 HD
+ENDBRANCH  44  45
+BRANCH  44  47
+HETATM   47  C8  ACO L   1       0.529   6.445   7.280  1.00  0.00     0.247 C 
+HETATM   48  O3  ACO L   1       0.705   6.150   8.456  1.00  0.00    -0.271 OA
+HETATM   49  N2  ACO L   1       1.535   6.985   6.499  1.00  0.00    -0.358 N 
+HETATM   50  H13 ACO L   1       1.251   7.539   5.693  1.00  0.00     0.162 HD
+BRANCH  49  51
+HETATM   51  C7  ACO L   1       2.802   7.353   7.093  1.00  0.00     0.132 C 
+BRANCH  51  52
+HETATM   52  C6  ACO L   1       3.968   6.500   6.594  1.00  0.00     0.122 C 
+BRANCH  52  53
+HETATM   53  C5  ACO L   1       3.496   5.195   5.989  1.00  0.00     0.219 C 
+HETATM   54  O2  ACO L   1       3.219   5.048   4.804  1.00  0.00    -0.274 OA
+HETATM   55  N1  ACO L   1       3.449   4.161   6.895  1.00  0.00    -0.360 N 
+HETATM   56  H8  ACO L   1       3.745   4.320   7.848  1.00  0.00     0.162 HD
+BRANCH  55  57
+HETATM   57  C4  ACO L   1       2.975   2.843   6.523  1.00  0.00     0.133 C 
+BRANCH  57  58
+HETATM   58  C3  ACO L   1       1.972   2.271   7.527  1.00  0.00     0.102 C 
+BRANCH  58  59
+HETATM   59  S1  ACO L   1       1.449   0.585   7.077  1.00  0.00    -0.091 SA
+BRANCH  59  60
+HETATM   60  C2  ACO L   1       3.016  -0.180   6.855  1.00  0.00     0.182 C 
+HETATM   61  C1  ACO L   1       3.429  -0.339   5.423  1.00  0.00     0.104 C 
+HETATM   62  O1  ACO L   1       3.696  -0.572   7.800  1.00  0.00    -0.286 OA
+ENDBRANCH  59  60
+ENDBRANCH  58  59
+ENDBRANCH  57  58
+ENDBRANCH  55  57
+ENDBRANCH  52  53
+ENDBRANCH  51  52
+ENDBRANCH  49  51
+ENDBRANCH  44  47
+ENDBRANCH  41  44
+ENDBRANCH  40  41
+ENDBRANCH  39  40
+ENDBRANCH  37  39
+BRANCH  37  63
+HETATM   63  O6  ACO L   1       0.258   9.961   2.600  1.00  0.00    -0.307 OA
+HETATM   64  H23 ACO L   1       0.734   9.922   1.760  1.00  0.00     0.222 HD
+ENDBRANCH  37  63
+ENDBRANCH  36  37
+ENDBRANCH   1  36
+TORSDOF 27
